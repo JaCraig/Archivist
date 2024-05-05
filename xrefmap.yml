@@ -7,9 +7,40 @@ references:
   commentId: N:Archivist
   fullName: Archivist
   nameWithType: Archivist
-- uid: Archivist.Class1
-  name: Class1
-  href: api/Archivist.Class1.html
-  commentId: T:Archivist.Class1
-  fullName: Archivist.Class1
-  nameWithType: Class1
+- uid: Archivist.FormatManager
+  name: FormatManager
+  href: api/Archivist.FormatManager.html
+  commentId: T:Archivist.FormatManager
+  fullName: Archivist.FormatManager
+  nameWithType: FormatManager
+- uid: Archivist.FormatManager.#ctor(System.Collections.Generic.IEnumerable{Archivist.Interfaces.IFormat})
+  name: FormatManager(IEnumerable<IFormat>?)
+  href: api/Archivist.FormatManager.html#Archivist_FormatManager__ctor_System_Collections_Generic_IEnumerable_Archivist_Interfaces_IFormat__
+  commentId: M:Archivist.FormatManager.#ctor(System.Collections.Generic.IEnumerable{Archivist.Interfaces.IFormat})
+  name.vb: New(IEnumerable(Of IFormat))
+  fullName: Archivist.FormatManager.FormatManager(System.Collections.Generic.IEnumerable<Archivist.Interfaces.IFormat>?)
+  fullName.vb: Archivist.FormatManager.New(System.Collections.Generic.IEnumerable(Of Archivist.Interfaces.IFormat))
+  nameWithType: FormatManager.FormatManager(IEnumerable<IFormat>?)
+  nameWithType.vb: FormatManager.New(IEnumerable(Of IFormat))
+- uid: Archivist.FormatManager.#ctor*
+  name: FormatManager
+  href: api/Archivist.FormatManager.html#Archivist_FormatManager__ctor_
+  commentId: Overload:Archivist.FormatManager.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.FormatManager.FormatManager
+  fullName.vb: Archivist.FormatManager.New
+  nameWithType: FormatManager.FormatManager
+  nameWithType.vb: FormatManager.New
+- uid: Archivist.Interfaces
+  name: Archivist.Interfaces
+  href: api/Archivist.Interfaces.html
+  commentId: N:Archivist.Interfaces
+  fullName: Archivist.Interfaces
+  nameWithType: Archivist.Interfaces
+- uid: Archivist.Interfaces.IFormat
+  name: IFormat
+  href: api/Archivist.Interfaces.IFormat.html
+  commentId: T:Archivist.Interfaces.IFormat
+  fullName: Archivist.Interfaces.IFormat
+  nameWithType: IFormat
