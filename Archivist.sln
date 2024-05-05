@@ -5,7 +5,11 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archivist", "Archivist\Archivist.csproj", "{68FCE794-E606-4ACE-A5DA-F5BA2DB94167}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archivist.Tests", "Archivist.Tests\Archivist.Tests.csproj", "{EB18468A-211E-4C64-BE4E-CCB89EDD9013}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archivist.Tests", "Archivist.Tests\Archivist.Tests.csproj", "{EB18468A-211E-4C64-BE4E-CCB89EDD9013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archivist.Example", "Archivist.Example\Archivist.Example.csproj", "{904DFD77-CC9C-48B0-BB76-CC5383EA0ED8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archivist.Benchmarks", "Archivist.Benchmarks\Archivist.Benchmarks.csproj", "{13DC156D-1331-4991-8AA7-750BBC781946}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{EB18468A-211E-4C64-BE4E-CCB89EDD9013}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB18468A-211E-4C64-BE4E-CCB89EDD9013}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB18468A-211E-4C64-BE4E-CCB89EDD9013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{904DFD77-CC9C-48B0-BB76-CC5383EA0ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{904DFD77-CC9C-48B0-BB76-CC5383EA0ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{904DFD77-CC9C-48B0-BB76-CC5383EA0ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{904DFD77-CC9C-48B0-BB76-CC5383EA0ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13DC156D-1331-4991-8AA7-750BBC781946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13DC156D-1331-4991-8AA7-750BBC781946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13DC156D-1331-4991-8AA7-750BBC781946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13DC156D-1331-4991-8AA7-750BBC781946}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
