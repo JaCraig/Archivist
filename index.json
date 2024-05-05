@@ -1,0 +1,27 @@
+{
+  "api/Archivist.Class1.html": {
+    "href": "api/Archivist.Class1.html",
+    "title": "Class Class1 | Archivist API Reference",
+    "keywords": "Class Class1 Namespace Archivist Assembly Archivist.dll public class Class1 Inheritance object Class1 Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString()"
+  },
+  "api/Archivist.html": {
+    "href": "api/Archivist.html",
+    "title": "Namespace Archivist | Archivist API Reference",
+    "keywords": "Namespace Archivist Classes Class1"
+  },
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "Welcome | Archivist API Reference",
+    "keywords": "Welcome Welcome to the API browser."
+  },
+  "articles/intro.html": {
+    "href": "articles/intro.html",
+    "title": "Code | Archivist API Reference",
+    "keywords": "Code Warning It looks like the sample you are looking for does not exist. Output Number of registered classes found: 2 Number of services found: 2 ExampleService1 ExampleService2 SimpleExampleClass"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Archivist | Archivist API Reference",
+    "keywords": "Archivist Archivist is a C# open-source library designed to simplify file loading tasks by providing a unified interface for accessing files of various formats."
+  }
+}
