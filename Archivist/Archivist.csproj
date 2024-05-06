@@ -52,6 +52,30 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BaseClasses\" />
+    <Folder Include="Formats\Delimited\" />
+    <Folder Include="Formats\Excel\" />
+    <Folder Include="Formats\HTML\" />
+    <Folder Include="Formats\ICal\" />
+    <Folder Include="Formats\Mime\" />
+    <Folder Include="Formats\MSG\" />
+    <Folder Include="Formats\JSON\" />
+    <Folder Include="Formats\Markdown\" />
+    <Folder Include="Formats\FixedLength\" />
+    <Folder Include="Formats\Image\" />
+    <Folder Include="Formats\PNG\" />
+    <Folder Include="Formats\YAML\" />
+    <Folder Include="Formats\XML\" />
+    <Folder Include="Formats\Word\" />
+    <Folder Include="Formats\VCard\" />
+    <Folder Include="Formats\VCalendar\" />
+    <Folder Include="Formats\Txt\" />
+    <Folder Include="Formats\RTF\" />
+    <Folder Include="Formats\RSS\" />
+    <Folder Include="Formats\PowerPoint\" />
+    <Folder Include="Formats\PDF\" />
+  </ItemGroup>
   <Target Name="Husky" BeforeTargets="Restore;CollectPackageReferences" Condition="'$(HUSKY)' != 0">
     <Exec Command="dotnet tool restore" StandardOutputImportance="Low" StandardErrorImportance="High" />
     <Exec Command="dotnet husky install" StandardOutputImportance="Low" StandardErrorImportance="High" WorkingDirectory=".." />
