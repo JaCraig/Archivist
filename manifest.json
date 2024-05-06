@@ -32,6 +32,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Interfaces.IFormatReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Interfaces.IFormatReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Interfaces.IFormatWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Interfaces.IFormatWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Interfaces.IGenericFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Interfaces.IGenericFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.Interfaces.yml",
       "output": {
         ".html": {

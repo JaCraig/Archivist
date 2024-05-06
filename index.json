@@ -9,10 +9,25 @@
     "title": "Interface IFormat | Archivist API Reference",
     "keywords": "Interface IFormat Namespace Archivist.Interfaces Assembly Archivist.dll Represents a file format. public interface IFormat"
   },
+  "api/Archivist.Interfaces.IFormatReader.html": {
+    "href": "api/Archivist.Interfaces.IFormatReader.html",
+    "title": "Interface IFormatReader | Archivist API Reference",
+    "keywords": "Interface IFormatReader Namespace Archivist.Interfaces Assembly Archivist.dll Represents a format reader. public interface IFormatReader"
+  },
+  "api/Archivist.Interfaces.IFormatWriter.html": {
+    "href": "api/Archivist.Interfaces.IFormatWriter.html",
+    "title": "Interface IFormatWriter | Archivist API Reference",
+    "keywords": "Interface IFormatWriter Namespace Archivist.Interfaces Assembly Archivist.dll Represents a format writer. public interface IFormatWriter"
+  },
+  "api/Archivist.Interfaces.IGenericFile.html": {
+    "href": "api/Archivist.Interfaces.IGenericFile.html",
+    "title": "Interface IGenericFile | Archivist API Reference",
+    "keywords": "Interface IGenericFile Namespace Archivist.Interfaces Assembly Archivist.dll Represents a generic file. public interface IGenericFile"
+  },
   "api/Archivist.Interfaces.html": {
     "href": "api/Archivist.Interfaces.html",
     "title": "Namespace Archivist.Interfaces | Archivist API Reference",
-    "keywords": "Namespace Archivist.Interfaces Interfaces IFormat Represents a file format."
+    "keywords": "Namespace Archivist.Interfaces Interfaces IFormat Represents a file format. IFormatReader Represents a format reader. IFormatWriter Represents a format writer. IGenericFile Represents a generic file."
   },
   "api/Archivist.html": {
     "href": "api/Archivist.html",

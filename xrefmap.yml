@@ -44,3 +44,21 @@ references:
   commentId: T:Archivist.Interfaces.IFormat
   fullName: Archivist.Interfaces.IFormat
   nameWithType: IFormat
+- uid: Archivist.Interfaces.IFormatReader
+  name: IFormatReader
+  href: api/Archivist.Interfaces.IFormatReader.html
+  commentId: T:Archivist.Interfaces.IFormatReader
+  fullName: Archivist.Interfaces.IFormatReader
+  nameWithType: IFormatReader
+- uid: Archivist.Interfaces.IFormatWriter
+  name: IFormatWriter
+  href: api/Archivist.Interfaces.IFormatWriter.html
+  commentId: T:Archivist.Interfaces.IFormatWriter
+  fullName: Archivist.Interfaces.IFormatWriter
+  nameWithType: IFormatWriter
+- uid: Archivist.Interfaces.IGenericFile
+  name: IGenericFile
+  href: api/Archivist.Interfaces.IGenericFile.html
+  commentId: T:Archivist.Interfaces.IGenericFile
+  fullName: Archivist.Interfaces.IGenericFile
+  nameWithType: IGenericFile
