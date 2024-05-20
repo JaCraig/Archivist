@@ -53,7 +53,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BaseClasses\" />
     <Folder Include="Formats\Delimited\" />
     <Folder Include="Formats\Excel\" />
     <Folder Include="Formats\HTML\" />
@@ -70,7 +69,6 @@
     <Folder Include="Formats\Word\" />
     <Folder Include="Formats\VCard\" />
     <Folder Include="Formats\VCalendar\" />
-    <Folder Include="Formats\Txt\" />
     <Folder Include="Formats\RTF\" />
     <Folder Include="Formats\RSS\" />
     <Folder Include="Formats\PowerPoint\" />
