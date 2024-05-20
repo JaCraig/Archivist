@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Interfaces_IFormat" data-uid="Archivist.Interfaces.IFormat" class="text-break">
-Interface IFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Interface IFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -117,11 +117,418 @@ Interface IFormat  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Archivist_Interfaces_IFormat_DisplayName_" data-uid="Archivist.Interfaces.IFormat.DisplayName*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormat_DisplayName" data-uid="Archivist.Interfaces.IFormat.DisplayName">
+  DisplayName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the display name of this file format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DisplayName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_Interfaces_IFormat_Extensions_" data-uid="Archivist.Interfaces.IFormat.Extensions*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormat_Extensions" data-uid="Archivist.Interfaces.IFormat.Extensions">
+  Extensions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the file extensions associated with this file format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string[] Extensions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_Interfaces_IFormat_HeaderInfo_" data-uid="Archivist.Interfaces.IFormat.HeaderInfo*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormat_HeaderInfo" data-uid="Archivist.Interfaces.IFormat.HeaderInfo">
+  HeaderInfo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the header information of this file format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] HeaderInfo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_Interfaces_IFormat_MimeTypes_" data-uid="Archivist.Interfaces.IFormat.MimeTypes*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormat_MimeTypes" data-uid="Archivist.Interfaces.IFormat.MimeTypes">
+  MimeTypes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the content types supported by this file format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string[] MimeTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_Interfaces_IFormat_Order_" data-uid="Archivist.Interfaces.IFormat.Order*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormat_Order" data-uid="Archivist.Interfaces.IFormat.Order">
+  Order
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the order that the file format should be checked. The lower the value, the higher the priority.
+Note that the order is only relevant when multiple file formats have the same HeaderInfo length.
+The system uses HeaderInfo to determine the order to check first, with longer headers checked first.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Order { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Archivist_Interfaces_IFormat_CanRead_" data-uid="Archivist.Interfaces.IFormat.CanRead*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormat_CanRead_System_IO_Stream_" data-uid="Archivist.Interfaces.IFormat.CanRead(System.IO.Stream)">
+  CanRead(Stream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether this file format can read the specified stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanRead(Stream stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The stream to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if this file format can read the specified stream; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_Interfaces_IFormat_CanRead_" data-uid="Archivist.Interfaces.IFormat.CanRead*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormat_CanRead_System_String_" data-uid="Archivist.Interfaces.IFormat.CanRead(System.String)">
+  CanRead(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether this file format can read the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanRead(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the file to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if this file format can read the specified file; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_Interfaces_IFormat_CanWrite_" data-uid="Archivist.Interfaces.IFormat.CanWrite*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormat_CanWrite_Archivist_Interfaces_IGenericFile_" data-uid="Archivist.Interfaces.IFormat.CanWrite(Archivist.Interfaces.IGenericFile)">
+  CanWrite(IGenericFile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether this file format can write the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanWrite(IGenericFile file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a></dt>
+    <dd><p>The file to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if this file format can write the specified file; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_Interfaces_IFormat_CanWrite_" data-uid="Archivist.Interfaces.IFormat.CanWrite*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormat_CanWrite_System_String_" data-uid="Archivist.Interfaces.IFormat.CanWrite(System.String)">
+  CanWrite(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether this file format can write the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanWrite(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the file to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if this file format can write the specified file; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_Interfaces_IFormat_ReadAsync_" data-uid="Archivist.Interfaces.IFormat.ReadAsync*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormat_ReadAsync_System_IO_Stream_" data-uid="Archivist.Interfaces.IFormat.ReadAsync(System.IO.Stream)">
+  ReadAsync(Stream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously reads the specified stream and returns an instance of <a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IGenericFile&gt; ReadAsync(Stream stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The stream to read.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains an instance of <a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_Interfaces_IFormat_WriteAsync_" data-uid="Archivist.Interfaces.IFormat.WriteAsync*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormat_WriteAsync_System_IO_Stream_Archivist_Interfaces_IGenericFile_" data-uid="Archivist.Interfaces.IFormat.WriteAsync(System.IO.Stream,Archivist.Interfaces.IGenericFile)">
+  WriteAsync(Stream, IGenericFile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously writes the specified <a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a> to the specified stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; WriteAsync(Stream writer, IGenericFile file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The stream to write to.</p>
+</dd>
+    <dt><code>file</code> <a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a></dt>
+    <dd><p>The file to write.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains a boolean value indicating whether the write operation is successful.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

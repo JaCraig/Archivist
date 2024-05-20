@@ -12,10 +12,140 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.BaseClasses.FileBaseClass-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.BaseClasses.FileBaseClass-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.BaseClasses.FormatBaseClass-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.BaseClasses.FormatBaseClass-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.BaseClasses.ReaderBaseClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.BaseClasses.ReaderBaseClass.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.BaseClasses.WriterBaseClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.BaseClasses.WriterBaseClass.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.BaseClasses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.BaseClasses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.Text.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.Text.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.ExtensionMethods.InternalExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.ExtensionMethods.InternalExtensionMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.ExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.ExtensionMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.FormatManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/Archivist.FormatManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Txt.TextFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Txt.TextFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Txt.TextReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Txt.TextReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Txt.TextWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Txt.TextWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Txt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Txt.html"
         }
       },
       "version": ""

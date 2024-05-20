@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Interfaces_IFormatWriter" data-uid="Archivist.Interfaces.IFormatWriter" class="text-break">
-Interface IFormatWriter  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormatWriter.cs/#L6"><i class="bi bi-code-slash"></i></a>
+Interface IFormatWriter  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormatWriter.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -117,11 +117,96 @@ Interface IFormatWriter  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Archivist_Interfaces_IFormatWriter_CanWrite_" data-uid="Archivist.Interfaces.IFormatWriter.CanWrite*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormatWriter_CanWrite_Archivist_Interfaces_IGenericFile_" data-uid="Archivist.Interfaces.IFormatWriter.CanWrite(Archivist.Interfaces.IGenericFile)">
+  CanWrite(IGenericFile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormatWriter.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the format writer can write the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanWrite(IGenericFile file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a></dt>
+    <dd><p>The file to write.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the format writer can write the file; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_Interfaces_IFormatWriter_WriteAsync_" data-uid="Archivist.Interfaces.IFormatWriter.WriteAsync*"></a>
+
+  <h3 id="Archivist_Interfaces_IFormatWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_" data-uid="Archivist.Interfaces.IFormatWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)">
+  WriteAsync(IGenericFile, Stream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormatWriter.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously writes the specified file to the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; WriteAsync(IGenericFile file, Stream stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a></dt>
+    <dd><p>The file to write.</p>
+</dd>
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The stream to write to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormatWriter.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormatWriter.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

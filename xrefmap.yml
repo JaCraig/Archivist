@@ -7,6 +7,743 @@ references:
   commentId: N:Archivist
   fullName: Archivist
   nameWithType: Archivist
+- uid: Archivist.BaseClasses
+  name: Archivist.BaseClasses
+  href: api/Archivist.BaseClasses.html
+  commentId: N:Archivist.BaseClasses
+  fullName: Archivist.BaseClasses
+  nameWithType: Archivist.BaseClasses
+- uid: Archivist.BaseClasses.FileBaseClass`1
+  name: FileBaseClass<TFileType>
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html
+  commentId: T:Archivist.BaseClasses.FileBaseClass`1
+  name.vb: FileBaseClass(Of TFileType)
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType)
+  nameWithType: FileBaseClass<TFileType>
+  nameWithType.vb: FileBaseClass(Of TFileType)
+- uid: Archivist.BaseClasses.FileBaseClass`1.CompareTo(System.Object)
+  name: CompareTo(object?)
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_CompareTo_System_Object_
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.CompareTo(System.Object)
+  name.vb: CompareTo(Object)
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.CompareTo(object?)
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).CompareTo(Object)
+  nameWithType: FileBaseClass<TFileType>.CompareTo(object?)
+  nameWithType.vb: FileBaseClass(Of TFileType).CompareTo(Object)
+- uid: Archivist.BaseClasses.FileBaseClass`1.CompareTo(`0)
+  name: CompareTo(TFileType?)
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_CompareTo__0_
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.CompareTo(`0)
+  name.vb: CompareTo(TFileType)
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.CompareTo(TFileType?)
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).CompareTo(TFileType)
+  nameWithType: FileBaseClass<TFileType>.CompareTo(TFileType?)
+  nameWithType.vb: FileBaseClass(Of TFileType).CompareTo(TFileType)
+- uid: Archivist.BaseClasses.FileBaseClass`1.CompareTo*
+  name: CompareTo
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_CompareTo_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.CompareTo
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.CompareTo
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).CompareTo
+  nameWithType: FileBaseClass<TFileType>.CompareTo
+  nameWithType.vb: FileBaseClass(Of TFileType).CompareTo
+- uid: Archivist.BaseClasses.FileBaseClass`1.Content
+  name: Content
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Content
+  commentId: P:Archivist.BaseClasses.FileBaseClass`1.Content
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Content
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Content
+  nameWithType: FileBaseClass<TFileType>.Content
+  nameWithType.vb: FileBaseClass(Of TFileType).Content
+- uid: Archivist.BaseClasses.FileBaseClass`1.Content*
+  name: Content
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Content_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.Content
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Content
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Content
+  nameWithType: FileBaseClass<TFileType>.Content
+  nameWithType.vb: FileBaseClass(Of TFileType).Content
+- uid: Archivist.BaseClasses.FileBaseClass`1.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Equals_System_Object_
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Equals(object?)
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Equals(Object)
+  nameWithType: FileBaseClass<TFileType>.Equals(object?)
+  nameWithType.vb: FileBaseClass(Of TFileType).Equals(Object)
+- uid: Archivist.BaseClasses.FileBaseClass`1.Equals(`0)
+  name: Equals(TFileType?)
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Equals__0_
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.Equals(`0)
+  name.vb: Equals(TFileType)
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Equals(TFileType?)
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Equals(TFileType)
+  nameWithType: FileBaseClass<TFileType>.Equals(TFileType?)
+  nameWithType.vb: FileBaseClass(Of TFileType).Equals(TFileType)
+- uid: Archivist.BaseClasses.FileBaseClass`1.Equals*
+  name: Equals
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Equals_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.Equals
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Equals
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Equals
+  nameWithType: FileBaseClass<TFileType>.Equals
+  nameWithType.vb: FileBaseClass(Of TFileType).Equals
+- uid: Archivist.BaseClasses.FileBaseClass`1.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_GetHashCode
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.GetHashCode
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.GetHashCode()
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).GetHashCode()
+  nameWithType: FileBaseClass<TFileType>.GetHashCode()
+  nameWithType.vb: FileBaseClass(Of TFileType).GetHashCode()
+- uid: Archivist.BaseClasses.FileBaseClass`1.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_GetHashCode_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.GetHashCode
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).GetHashCode
+  nameWithType: FileBaseClass<TFileType>.GetHashCode
+  nameWithType.vb: FileBaseClass(Of TFileType).GetHashCode
+- uid: Archivist.BaseClasses.FileBaseClass`1.Metadata
+  name: Metadata
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Metadata
+  commentId: P:Archivist.BaseClasses.FileBaseClass`1.Metadata
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Metadata
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Metadata
+  nameWithType: FileBaseClass<TFileType>.Metadata
+  nameWithType.vb: FileBaseClass(Of TFileType).Metadata
+- uid: Archivist.BaseClasses.FileBaseClass`1.Metadata*
+  name: Metadata
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Metadata_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.Metadata
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Metadata
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Metadata
+  nameWithType: FileBaseClass<TFileType>.Metadata
+  nameWithType.vb: FileBaseClass(Of TFileType).Metadata
+- uid: Archivist.BaseClasses.FileBaseClass`1.Title
+  name: Title
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Title
+  commentId: P:Archivist.BaseClasses.FileBaseClass`1.Title
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Title
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Title
+  nameWithType: FileBaseClass<TFileType>.Title
+  nameWithType.vb: FileBaseClass(Of TFileType).Title
+- uid: Archivist.BaseClasses.FileBaseClass`1.Title*
+  name: Title
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Title_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.Title
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Title
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Title
+  nameWithType: FileBaseClass<TFileType>.Title
+  nameWithType.vb: FileBaseClass(Of TFileType).Title
+- uid: Archivist.BaseClasses.FileBaseClass`1.ToString
+  name: ToString()
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_ToString
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.ToString
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.ToString()
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).ToString()
+  nameWithType: FileBaseClass<TFileType>.ToString()
+  nameWithType.vb: FileBaseClass(Of TFileType).ToString()
+- uid: Archivist.BaseClasses.FileBaseClass`1.ToString*
+  name: ToString
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_ToString_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.ToString
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.ToString
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).ToString
+  nameWithType: FileBaseClass<TFileType>.ToString
+  nameWithType.vb: FileBaseClass(Of TFileType).ToString
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_Equality(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name: operator ==(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_Equality_Archivist_BaseClasses_FileBaseClass__0__Archivist_BaseClasses_FileBaseClass__0__
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.op_Equality(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name.vb: =(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator ==(Archivist.BaseClasses.FileBaseClass<TFileType>?, Archivist.BaseClasses.FileBaseClass<TFileType>?)
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).=(Archivist.BaseClasses.FileBaseClass(Of TFileType), Archivist.BaseClasses.FileBaseClass(Of TFileType))
+  nameWithType: FileBaseClass<TFileType>.operator ==(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  nameWithType.vb: FileBaseClass(Of TFileType).=(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_Equality*
+  name: operator ==
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_Equality_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator ==
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).=
+  nameWithType: FileBaseClass<TFileType>.operator ==
+  nameWithType.vb: FileBaseClass(Of TFileType).=
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_GreaterThan(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name: operator >(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_GreaterThan_Archivist_BaseClasses_FileBaseClass__0__Archivist_BaseClasses_FileBaseClass__0__
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.op_GreaterThan(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name.vb: '>(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))'
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator >(Archivist.BaseClasses.FileBaseClass<TFileType>?, Archivist.BaseClasses.FileBaseClass<TFileType>?)
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).>(Archivist.BaseClasses.FileBaseClass(Of TFileType), Archivist.BaseClasses.FileBaseClass(Of TFileType))
+  nameWithType: FileBaseClass<TFileType>.operator >(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  nameWithType.vb: FileBaseClass(Of TFileType).>(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_GreaterThan_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator >
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).>
+  nameWithType: FileBaseClass<TFileType>.operator >
+  nameWithType.vb: FileBaseClass(Of TFileType).>
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_GreaterThanOrEqual(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name: operator >=(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_GreaterThanOrEqual_Archivist_BaseClasses_FileBaseClass__0__Archivist_BaseClasses_FileBaseClass__0__
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.op_GreaterThanOrEqual(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name.vb: '>=(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))'
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator >=(Archivist.BaseClasses.FileBaseClass<TFileType>?, Archivist.BaseClasses.FileBaseClass<TFileType>?)
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).>=(Archivist.BaseClasses.FileBaseClass(Of TFileType), Archivist.BaseClasses.FileBaseClass(Of TFileType))
+  nameWithType: FileBaseClass<TFileType>.operator >=(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  nameWithType.vb: FileBaseClass(Of TFileType).>=(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator >=
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).>=
+  nameWithType: FileBaseClass<TFileType>.operator >=
+  nameWithType.vb: FileBaseClass(Of TFileType).>=
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_Inequality(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name: operator !=(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_Inequality_Archivist_BaseClasses_FileBaseClass__0__Archivist_BaseClasses_FileBaseClass__0__
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.op_Inequality(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name.vb: <>(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator !=(Archivist.BaseClasses.FileBaseClass<TFileType>?, Archivist.BaseClasses.FileBaseClass<TFileType>?)
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).<>(Archivist.BaseClasses.FileBaseClass(Of TFileType), Archivist.BaseClasses.FileBaseClass(Of TFileType))
+  nameWithType: FileBaseClass<TFileType>.operator !=(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  nameWithType.vb: FileBaseClass(Of TFileType).<>(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_Inequality*
+  name: operator !=
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_Inequality_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator !=
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).<>
+  nameWithType: FileBaseClass<TFileType>.operator !=
+  nameWithType.vb: FileBaseClass(Of TFileType).<>
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_LessThan(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name: operator <(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_LessThan_Archivist_BaseClasses_FileBaseClass__0__Archivist_BaseClasses_FileBaseClass__0__
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.op_LessThan(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name.vb: <(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator <(Archivist.BaseClasses.FileBaseClass<TFileType>?, Archivist.BaseClasses.FileBaseClass<TFileType>?)
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).<(Archivist.BaseClasses.FileBaseClass(Of TFileType), Archivist.BaseClasses.FileBaseClass(Of TFileType))
+  nameWithType: FileBaseClass<TFileType>.operator <(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  nameWithType.vb: FileBaseClass(Of TFileType).<(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_LessThan*
+  name: operator <
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_LessThan_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator <
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).<
+  nameWithType: FileBaseClass<TFileType>.operator <
+  nameWithType.vb: FileBaseClass(Of TFileType).<
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_LessThanOrEqual(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name: operator <=(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_LessThanOrEqual_Archivist_BaseClasses_FileBaseClass__0__Archivist_BaseClasses_FileBaseClass__0__
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.op_LessThanOrEqual(Archivist.BaseClasses.FileBaseClass{`0},Archivist.BaseClasses.FileBaseClass{`0})
+  name.vb: <=(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator <=(Archivist.BaseClasses.FileBaseClass<TFileType>?, Archivist.BaseClasses.FileBaseClass<TFileType>?)
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).<=(Archivist.BaseClasses.FileBaseClass(Of TFileType), Archivist.BaseClasses.FileBaseClass(Of TFileType))
+  nameWithType: FileBaseClass<TFileType>.operator <=(FileBaseClass<TFileType>?, FileBaseClass<TFileType>?)
+  nameWithType.vb: FileBaseClass(Of TFileType).<=(FileBaseClass(Of TFileType), FileBaseClass(Of TFileType))
+- uid: Archivist.BaseClasses.FileBaseClass`1.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_op_LessThanOrEqual_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.operator <=
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).<=
+  nameWithType: FileBaseClass<TFileType>.operator <=
+  nameWithType.vb: FileBaseClass(Of TFileType).<=
+- uid: Archivist.BaseClasses.FormatBaseClass`3
+  name: FormatBaseClass<TFormat, TFileReader, TFileWriter>
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html
+  commentId: T:Archivist.BaseClasses.FormatBaseClass`3
+  name.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter)
+- uid: Archivist.BaseClasses.FormatBaseClass`3.#ctor(`1,`2)
+  name: FormatBaseClass(TFileReader, TFileWriter)
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3__ctor__1__2_
+  commentId: M:Archivist.BaseClasses.FormatBaseClass`3.#ctor(`1,`2)
+  name.vb: New(TFileReader, TFileWriter)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.FormatBaseClass(TFileReader, TFileWriter)
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).New(TFileReader, TFileWriter)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.FormatBaseClass(TFileReader, TFileWriter)
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).New(TFileReader, TFileWriter)
+- uid: Archivist.BaseClasses.FormatBaseClass`3.#ctor*
+  name: FormatBaseClass
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3__ctor_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.FormatBaseClass
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).New
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.FormatBaseClass
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).New
+- uid: Archivist.BaseClasses.FormatBaseClass`3.CanRead(System.IO.Stream)
+  name: CanRead(Stream)
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_CanRead_System_IO_Stream_
+  commentId: M:Archivist.BaseClasses.FormatBaseClass`3.CanRead(System.IO.Stream)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(System.IO.Stream)
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanRead(System.IO.Stream)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(Stream)
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanRead(Stream)
+- uid: Archivist.BaseClasses.FormatBaseClass`3.CanRead(System.String)
+  name: CanRead(string)
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_CanRead_System_String_
+  commentId: M:Archivist.BaseClasses.FormatBaseClass`3.CanRead(System.String)
+  name.vb: CanRead(String)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(string)
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanRead(String)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(string)
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanRead(String)
+- uid: Archivist.BaseClasses.FormatBaseClass`3.CanRead*
+  name: CanRead
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_CanRead_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.CanRead
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanRead
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanRead
+- uid: Archivist.BaseClasses.FormatBaseClass`3.CanWrite(Archivist.Interfaces.IGenericFile)
+  name: CanWrite(IGenericFile)
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_CanWrite_Archivist_Interfaces_IGenericFile_
+  commentId: M:Archivist.BaseClasses.FormatBaseClass`3.CanWrite(Archivist.Interfaces.IGenericFile)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(Archivist.Interfaces.IGenericFile)
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanWrite(Archivist.Interfaces.IGenericFile)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(IGenericFile)
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanWrite(IGenericFile)
+- uid: Archivist.BaseClasses.FormatBaseClass`3.CanWrite(System.String)
+  name: CanWrite(string)
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_CanWrite_System_String_
+  commentId: M:Archivist.BaseClasses.FormatBaseClass`3.CanWrite(System.String)
+  name.vb: CanWrite(String)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(string)
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanWrite(String)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(string)
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanWrite(String)
+- uid: Archivist.BaseClasses.FormatBaseClass`3.CanWrite*
+  name: CanWrite
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_CanWrite_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.CanWrite
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanWrite
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanWrite
+- uid: Archivist.BaseClasses.FormatBaseClass`3.DisplayName
+  name: DisplayName
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_DisplayName
+  commentId: P:Archivist.BaseClasses.FormatBaseClass`3.DisplayName
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.DisplayName
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).DisplayName
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.DisplayName
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).DisplayName
+- uid: Archivist.BaseClasses.FormatBaseClass`3.DisplayName*
+  name: DisplayName
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_DisplayName_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.DisplayName
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.DisplayName
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).DisplayName
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.DisplayName
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).DisplayName
+- uid: Archivist.BaseClasses.FormatBaseClass`3.Extensions
+  name: Extensions
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_Extensions
+  commentId: P:Archivist.BaseClasses.FormatBaseClass`3.Extensions
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.Extensions
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Extensions
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.Extensions
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Extensions
+- uid: Archivist.BaseClasses.FormatBaseClass`3.Extensions*
+  name: Extensions
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_Extensions_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.Extensions
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.Extensions
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Extensions
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.Extensions
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Extensions
+- uid: Archivist.BaseClasses.FormatBaseClass`3.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_HeaderInfo
+  commentId: P:Archivist.BaseClasses.FormatBaseClass`3.HeaderInfo
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.HeaderInfo
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).HeaderInfo
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.HeaderInfo
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).HeaderInfo
+- uid: Archivist.BaseClasses.FormatBaseClass`3.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_HeaderInfo_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.HeaderInfo
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).HeaderInfo
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.HeaderInfo
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).HeaderInfo
+- uid: Archivist.BaseClasses.FormatBaseClass`3.MimeTypes
+  name: MimeTypes
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_MimeTypes
+  commentId: P:Archivist.BaseClasses.FormatBaseClass`3.MimeTypes
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.MimeTypes
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).MimeTypes
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.MimeTypes
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).MimeTypes
+- uid: Archivist.BaseClasses.FormatBaseClass`3.MimeTypes*
+  name: MimeTypes
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_MimeTypes_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.MimeTypes
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.MimeTypes
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).MimeTypes
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.MimeTypes
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).MimeTypes
+- uid: Archivist.BaseClasses.FormatBaseClass`3.Order
+  name: Order
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_Order
+  commentId: P:Archivist.BaseClasses.FormatBaseClass`3.Order
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.Order
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Order
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.Order
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Order
+- uid: Archivist.BaseClasses.FormatBaseClass`3.Order*
+  name: Order
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_Order_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.Order
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.Order
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Order
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.Order
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Order
+- uid: Archivist.BaseClasses.FormatBaseClass`3.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream)
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.BaseClasses.FormatBaseClass`3.ReadAsync(System.IO.Stream)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.ReadAsync(System.IO.Stream)
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).ReadAsync(System.IO.Stream)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.ReadAsync(Stream)
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).ReadAsync(Stream)
+- uid: Archivist.BaseClasses.FormatBaseClass`3.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_ReadAsync_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.ReadAsync
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).ReadAsync
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.ReadAsync
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).ReadAsync
+- uid: Archivist.BaseClasses.FormatBaseClass`3.Reader
+  name: Reader
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_Reader
+  commentId: P:Archivist.BaseClasses.FormatBaseClass`3.Reader
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.Reader
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Reader
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.Reader
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Reader
+- uid: Archivist.BaseClasses.FormatBaseClass`3.Reader*
+  name: Reader
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_Reader_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.Reader
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.Reader
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Reader
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.Reader
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Reader
+- uid: Archivist.BaseClasses.FormatBaseClass`3.WriteAsync(System.IO.Stream,Archivist.Interfaces.IGenericFile)
+  name: WriteAsync(Stream, IGenericFile)
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_WriteAsync_System_IO_Stream_Archivist_Interfaces_IGenericFile_
+  commentId: M:Archivist.BaseClasses.FormatBaseClass`3.WriteAsync(System.IO.Stream,Archivist.Interfaces.IGenericFile)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.WriteAsync(System.IO.Stream, Archivist.Interfaces.IGenericFile)
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).WriteAsync(System.IO.Stream, Archivist.Interfaces.IGenericFile)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.WriteAsync(Stream, IGenericFile)
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).WriteAsync(Stream, IGenericFile)
+- uid: Archivist.BaseClasses.FormatBaseClass`3.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_WriteAsync_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.WriteAsync
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).WriteAsync
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.WriteAsync
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).WriteAsync
+- uid: Archivist.BaseClasses.FormatBaseClass`3.Writer
+  name: Writer
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_Writer
+  commentId: P:Archivist.BaseClasses.FormatBaseClass`3.Writer
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.Writer
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Writer
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.Writer
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Writer
+- uid: Archivist.BaseClasses.FormatBaseClass`3.Writer*
+  name: Writer
+  href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_Writer_
+  commentId: Overload:Archivist.BaseClasses.FormatBaseClass`3.Writer
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.Writer
+  fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Writer
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.Writer
+  nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Writer
+- uid: Archivist.BaseClasses.ReaderBaseClass
+  name: ReaderBaseClass
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html
+  commentId: T:Archivist.BaseClasses.ReaderBaseClass
+  fullName: Archivist.BaseClasses.ReaderBaseClass
+  nameWithType: ReaderBaseClass
+- uid: Archivist.BaseClasses.ReaderBaseClass.CanRead(System.IO.Stream)
+  name: CanRead(Stream)
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_CanRead_System_IO_Stream_
+  commentId: M:Archivist.BaseClasses.ReaderBaseClass.CanRead(System.IO.Stream)
+  fullName: Archivist.BaseClasses.ReaderBaseClass.CanRead(System.IO.Stream)
+  nameWithType: ReaderBaseClass.CanRead(Stream)
+- uid: Archivist.BaseClasses.ReaderBaseClass.CanRead*
+  name: CanRead
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_CanRead_
+  commentId: Overload:Archivist.BaseClasses.ReaderBaseClass.CanRead
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.ReaderBaseClass.CanRead
+  nameWithType: ReaderBaseClass.CanRead
+- uid: Archivist.BaseClasses.ReaderBaseClass.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_HeaderInfo
+  commentId: P:Archivist.BaseClasses.ReaderBaseClass.HeaderInfo
+  fullName: Archivist.BaseClasses.ReaderBaseClass.HeaderInfo
+  nameWithType: ReaderBaseClass.HeaderInfo
+- uid: Archivist.BaseClasses.ReaderBaseClass.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_HeaderInfo_
+  commentId: Overload:Archivist.BaseClasses.ReaderBaseClass.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.ReaderBaseClass.HeaderInfo
+  nameWithType: ReaderBaseClass.HeaderInfo
+- uid: Archivist.BaseClasses.ReaderBaseClass.InternalCanRead(System.IO.Stream)
+  name: InternalCanRead(Stream)
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_InternalCanRead_System_IO_Stream_
+  commentId: M:Archivist.BaseClasses.ReaderBaseClass.InternalCanRead(System.IO.Stream)
+  fullName: Archivist.BaseClasses.ReaderBaseClass.InternalCanRead(System.IO.Stream)
+  nameWithType: ReaderBaseClass.InternalCanRead(Stream)
+- uid: Archivist.BaseClasses.ReaderBaseClass.InternalCanRead*
+  name: InternalCanRead
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_InternalCanRead_
+  commentId: Overload:Archivist.BaseClasses.ReaderBaseClass.InternalCanRead
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.ReaderBaseClass.InternalCanRead
+  nameWithType: ReaderBaseClass.InternalCanRead
+- uid: Archivist.BaseClasses.ReaderBaseClass.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream)
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.BaseClasses.ReaderBaseClass.ReadAsync(System.IO.Stream)
+  fullName: Archivist.BaseClasses.ReaderBaseClass.ReadAsync(System.IO.Stream)
+  nameWithType: ReaderBaseClass.ReadAsync(Stream)
+- uid: Archivist.BaseClasses.ReaderBaseClass.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_ReadAsync_
+  commentId: Overload:Archivist.BaseClasses.ReaderBaseClass.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.ReaderBaseClass.ReadAsync
+  nameWithType: ReaderBaseClass.ReadAsync
+- uid: Archivist.BaseClasses.WriterBaseClass
+  name: WriterBaseClass
+  href: api/Archivist.BaseClasses.WriterBaseClass.html
+  commentId: T:Archivist.BaseClasses.WriterBaseClass
+  fullName: Archivist.BaseClasses.WriterBaseClass
+  nameWithType: WriterBaseClass
+- uid: Archivist.BaseClasses.WriterBaseClass.CanWrite(Archivist.Interfaces.IGenericFile)
+  name: CanWrite(IGenericFile)
+  href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_CanWrite_Archivist_Interfaces_IGenericFile_
+  commentId: M:Archivist.BaseClasses.WriterBaseClass.CanWrite(Archivist.Interfaces.IGenericFile)
+  fullName: Archivist.BaseClasses.WriterBaseClass.CanWrite(Archivist.Interfaces.IGenericFile)
+  nameWithType: WriterBaseClass.CanWrite(IGenericFile)
+- uid: Archivist.BaseClasses.WriterBaseClass.CanWrite*
+  name: CanWrite
+  href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_CanWrite_
+  commentId: Overload:Archivist.BaseClasses.WriterBaseClass.CanWrite
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.WriterBaseClass.CanWrite
+  nameWithType: WriterBaseClass.CanWrite
+- uid: Archivist.BaseClasses.WriterBaseClass.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: WriteAsync(IGenericFile, Stream)
+  href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.BaseClasses.WriterBaseClass.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  fullName: Archivist.BaseClasses.WriterBaseClass.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: WriterBaseClass.WriteAsync(IGenericFile, Stream)
+- uid: Archivist.BaseClasses.WriterBaseClass.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_WriteAsync_
+  commentId: Overload:Archivist.BaseClasses.WriterBaseClass.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.WriterBaseClass.WriteAsync
+  nameWithType: WriterBaseClass.WriteAsync
+- uid: Archivist.DataTypes
+  name: Archivist.DataTypes
+  href: api/Archivist.DataTypes.html
+  commentId: N:Archivist.DataTypes
+  fullName: Archivist.DataTypes
+  nameWithType: Archivist.DataTypes
+- uid: Archivist.DataTypes.Text
+  name: Text
+  href: api/Archivist.DataTypes.Text.html
+  commentId: T:Archivist.DataTypes.Text
+  fullName: Archivist.DataTypes.Text
+  nameWithType: Text
+- uid: Archivist.DataTypes.Text.CompareTo(Archivist.DataTypes.Text)
+  name: CompareTo(Text?)
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_CompareTo_Archivist_DataTypes_Text_
+  commentId: M:Archivist.DataTypes.Text.CompareTo(Archivist.DataTypes.Text)
+  name.vb: CompareTo(Text)
+  fullName: Archivist.DataTypes.Text.CompareTo(Archivist.DataTypes.Text?)
+  fullName.vb: Archivist.DataTypes.Text.CompareTo(Archivist.DataTypes.Text)
+  nameWithType: Text.CompareTo(Text?)
+  nameWithType.vb: Text.CompareTo(Text)
+- uid: Archivist.DataTypes.Text.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_CompareTo_
+  commentId: Overload:Archivist.DataTypes.Text.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Text.CompareTo
+  nameWithType: Text.CompareTo
+- uid: Archivist.DataTypes.Text.Content
+  name: Content
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_Content
+  commentId: P:Archivist.DataTypes.Text.Content
+  fullName: Archivist.DataTypes.Text.Content
+  nameWithType: Text.Content
+- uid: Archivist.DataTypes.Text.Content*
+  name: Content
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_Content_
+  commentId: Overload:Archivist.DataTypes.Text.Content
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Text.Content
+  nameWithType: Text.Content
+- uid: Archivist.DataTypes.Text.Equals(Archivist.DataTypes.Text)
+  name: Equals(Text?)
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_Equals_Archivist_DataTypes_Text_
+  commentId: M:Archivist.DataTypes.Text.Equals(Archivist.DataTypes.Text)
+  name.vb: Equals(Text)
+  fullName: Archivist.DataTypes.Text.Equals(Archivist.DataTypes.Text?)
+  fullName.vb: Archivist.DataTypes.Text.Equals(Archivist.DataTypes.Text)
+  nameWithType: Text.Equals(Text?)
+  nameWithType.vb: Text.Equals(Text)
+- uid: Archivist.DataTypes.Text.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_Equals_
+  commentId: Overload:Archivist.DataTypes.Text.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Text.Equals
+  nameWithType: Text.Equals
+- uid: Archivist.ExtensionMethods
+  name: Archivist.ExtensionMethods
+  href: api/Archivist.ExtensionMethods.html
+  commentId: N:Archivist.ExtensionMethods
+  fullName: Archivist.ExtensionMethods
+  nameWithType: Archivist.ExtensionMethods
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods
+  name: InternalExtensionMethods
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html
+  commentId: T:Archivist.ExtensionMethods.InternalExtensionMethods
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods
+  nameWithType: InternalExtensionMethods
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces(System.String)
+  name: AddSpaces(string)
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_AddSpaces_System_String_
+  commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces(System.String)
+  name.vb: AddSpaces(String)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces(string)
+  fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces(String)
+  nameWithType: InternalExtensionMethods.AddSpaces(string)
+  nameWithType.vb: InternalExtensionMethods.AddSpaces(String)
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces*
+  name: AddSpaces
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_AddSpaces_
+  commentId: Overload:Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces
+  isSpec: "True"
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces
+  nameWithType: InternalExtensionMethods.AddSpaces
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.Left(System.String,System.Int32)
+  name: Left(string?, int)
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_Left_System_String_System_Int32_
+  commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.Left(System.String,System.Int32)
+  name.vb: Left(String, Integer)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.Left(string?, int)
+  fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.Left(String, Integer)
+  nameWithType: InternalExtensionMethods.Left(string?, int)
+  nameWithType.vb: InternalExtensionMethods.Left(String, Integer)
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.Left*
+  name: Left
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_Left_
+  commentId: Overload:Archivist.ExtensionMethods.InternalExtensionMethods.Left
+  isSpec: "True"
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.Left
+  nameWithType: InternalExtensionMethods.Left
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream,System.Text.Encoding)
+  name: ReadAllAsync(Stream, Encoding?)
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllAsync_System_IO_Stream_System_Text_Encoding_
+  commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream,System.Text.Encoding)
+  name.vb: ReadAllAsync(Stream, Encoding)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream, System.Text.Encoding?)
+  fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream, System.Text.Encoding)
+  nameWithType: InternalExtensionMethods.ReadAllAsync(Stream, Encoding?)
+  nameWithType.vb: InternalExtensionMethods.ReadAllAsync(Stream, Encoding)
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync*
+  name: ReadAllAsync
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllAsync_
+  commentId: Overload:Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync
+  isSpec: "True"
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync
+  nameWithType: InternalExtensionMethods.ReadAllAsync
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync(System.IO.Stream)
+  name: ReadAllBinaryAsync(Stream)
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinaryAsync_System_IO_Stream_
+  commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync(System.IO.Stream)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync(System.IO.Stream)
+  nameWithType: InternalExtensionMethods.ReadAllBinaryAsync(Stream)
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync*
+  name: ReadAllBinaryAsync
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinaryAsync_
+  commentId: Overload:Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync
+  isSpec: "True"
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync
+  nameWithType: InternalExtensionMethods.ReadAllBinaryAsync
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ToString(System.Byte[],System.Text.Encoding,System.Int32,System.Int32)
+  name: ToString(byte[], Encoding?, int, int)
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ToString_System_Byte___System_Text_Encoding_System_Int32_System_Int32_
+  commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.ToString(System.Byte[],System.Text.Encoding,System.Int32,System.Int32)
+  name.vb: ToString(Byte(), Encoding, Integer, Integer)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ToString(byte[], System.Text.Encoding?, int, int)
+  fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.ToString(Byte(), System.Text.Encoding, Integer, Integer)
+  nameWithType: InternalExtensionMethods.ToString(byte[], Encoding?, int, int)
+  nameWithType.vb: InternalExtensionMethods.ToString(Byte(), Encoding, Integer, Integer)
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ToString*
+  name: ToString
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ToString_
+  commentId: Overload:Archivist.ExtensionMethods.InternalExtensionMethods.ToString
+  isSpec: "True"
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ToString
+  nameWithType: InternalExtensionMethods.ToString
 - uid: Archivist.FormatManager
   name: FormatManager
   href: api/Archivist.FormatManager.html
@@ -32,6 +769,140 @@ references:
   fullName.vb: Archivist.FormatManager.New
   nameWithType: FormatManager.FormatManager
   nameWithType.vb: FormatManager.New
+- uid: Archivist.Formats.Txt
+  name: Archivist.Formats.Txt
+  href: api/Archivist.Formats.Txt.html
+  commentId: N:Archivist.Formats.Txt
+  fullName: Archivist.Formats.Txt
+  nameWithType: Archivist.Formats.Txt
+- uid: Archivist.Formats.Txt.TextFormat
+  name: TextFormat
+  href: api/Archivist.Formats.Txt.TextFormat.html
+  commentId: T:Archivist.Formats.Txt.TextFormat
+  fullName: Archivist.Formats.Txt.TextFormat
+  nameWithType: TextFormat
+- uid: Archivist.Formats.Txt.TextFormat.#ctor
+  name: TextFormat()
+  href: api/Archivist.Formats.Txt.TextFormat.html#Archivist_Formats_Txt_TextFormat__ctor
+  commentId: M:Archivist.Formats.Txt.TextFormat.#ctor
+  name.vb: New()
+  fullName: Archivist.Formats.Txt.TextFormat.TextFormat()
+  fullName.vb: Archivist.Formats.Txt.TextFormat.New()
+  nameWithType: TextFormat.TextFormat()
+  nameWithType.vb: TextFormat.New()
+- uid: Archivist.Formats.Txt.TextFormat.#ctor*
+  name: TextFormat
+  href: api/Archivist.Formats.Txt.TextFormat.html#Archivist_Formats_Txt_TextFormat__ctor_
+  commentId: Overload:Archivist.Formats.Txt.TextFormat.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.Txt.TextFormat.TextFormat
+  fullName.vb: Archivist.Formats.Txt.TextFormat.New
+  nameWithType: TextFormat.TextFormat
+  nameWithType.vb: TextFormat.New
+- uid: Archivist.Formats.Txt.TextFormat.Extensions
+  name: Extensions
+  href: api/Archivist.Formats.Txt.TextFormat.html#Archivist_Formats_Txt_TextFormat_Extensions
+  commentId: P:Archivist.Formats.Txt.TextFormat.Extensions
+  fullName: Archivist.Formats.Txt.TextFormat.Extensions
+  nameWithType: TextFormat.Extensions
+- uid: Archivist.Formats.Txt.TextFormat.Extensions*
+  name: Extensions
+  href: api/Archivist.Formats.Txt.TextFormat.html#Archivist_Formats_Txt_TextFormat_Extensions_
+  commentId: Overload:Archivist.Formats.Txt.TextFormat.Extensions
+  isSpec: "True"
+  fullName: Archivist.Formats.Txt.TextFormat.Extensions
+  nameWithType: TextFormat.Extensions
+- uid: Archivist.Formats.Txt.TextFormat.MimeTypes
+  name: MimeTypes
+  href: api/Archivist.Formats.Txt.TextFormat.html#Archivist_Formats_Txt_TextFormat_MimeTypes
+  commentId: P:Archivist.Formats.Txt.TextFormat.MimeTypes
+  fullName: Archivist.Formats.Txt.TextFormat.MimeTypes
+  nameWithType: TextFormat.MimeTypes
+- uid: Archivist.Formats.Txt.TextFormat.MimeTypes*
+  name: MimeTypes
+  href: api/Archivist.Formats.Txt.TextFormat.html#Archivist_Formats_Txt_TextFormat_MimeTypes_
+  commentId: Overload:Archivist.Formats.Txt.TextFormat.MimeTypes
+  isSpec: "True"
+  fullName: Archivist.Formats.Txt.TextFormat.MimeTypes
+  nameWithType: TextFormat.MimeTypes
+- uid: Archivist.Formats.Txt.TextFormat.Order
+  name: Order
+  href: api/Archivist.Formats.Txt.TextFormat.html#Archivist_Formats_Txt_TextFormat_Order
+  commentId: P:Archivist.Formats.Txt.TextFormat.Order
+  fullName: Archivist.Formats.Txt.TextFormat.Order
+  nameWithType: TextFormat.Order
+- uid: Archivist.Formats.Txt.TextFormat.Order*
+  name: Order
+  href: api/Archivist.Formats.Txt.TextFormat.html#Archivist_Formats_Txt_TextFormat_Order_
+  commentId: Overload:Archivist.Formats.Txt.TextFormat.Order
+  isSpec: "True"
+  fullName: Archivist.Formats.Txt.TextFormat.Order
+  nameWithType: TextFormat.Order
+- uid: Archivist.Formats.Txt.TextReader
+  name: TextReader
+  href: api/Archivist.Formats.Txt.TextReader.html
+  commentId: T:Archivist.Formats.Txt.TextReader
+  fullName: Archivist.Formats.Txt.TextReader
+  nameWithType: TextReader
+- uid: Archivist.Formats.Txt.TextReader.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.Formats.Txt.TextReader.html#Archivist_Formats_Txt_TextReader_HeaderInfo
+  commentId: P:Archivist.Formats.Txt.TextReader.HeaderInfo
+  fullName: Archivist.Formats.Txt.TextReader.HeaderInfo
+  nameWithType: TextReader.HeaderInfo
+- uid: Archivist.Formats.Txt.TextReader.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.Formats.Txt.TextReader.html#Archivist_Formats_Txt_TextReader_HeaderInfo_
+  commentId: Overload:Archivist.Formats.Txt.TextReader.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.Formats.Txt.TextReader.HeaderInfo
+  nameWithType: TextReader.HeaderInfo
+- uid: Archivist.Formats.Txt.TextReader.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream)
+  href: api/Archivist.Formats.Txt.TextReader.html#Archivist_Formats_Txt_TextReader_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.Formats.Txt.TextReader.ReadAsync(System.IO.Stream)
+  fullName: Archivist.Formats.Txt.TextReader.ReadAsync(System.IO.Stream)
+  nameWithType: TextReader.ReadAsync(Stream)
+- uid: Archivist.Formats.Txt.TextReader.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.Formats.Txt.TextReader.html#Archivist_Formats_Txt_TextReader_ReadAsync_
+  commentId: Overload:Archivist.Formats.Txt.TextReader.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.Txt.TextReader.ReadAsync
+  nameWithType: TextReader.ReadAsync
+- uid: Archivist.Formats.Txt.TextWriter
+  name: TextWriter
+  href: api/Archivist.Formats.Txt.TextWriter.html
+  commentId: T:Archivist.Formats.Txt.TextWriter
+  fullName: Archivist.Formats.Txt.TextWriter
+  nameWithType: TextWriter
+- uid: Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile)
+  name: CanWrite(IGenericFile)
+  href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_CanWrite_Archivist_Interfaces_IGenericFile_
+  commentId: M:Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile)
+  fullName: Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile)
+  nameWithType: TextWriter.CanWrite(IGenericFile)
+- uid: Archivist.Formats.Txt.TextWriter.CanWrite*
+  name: CanWrite
+  href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_CanWrite_
+  commentId: Overload:Archivist.Formats.Txt.TextWriter.CanWrite
+  isSpec: "True"
+  fullName: Archivist.Formats.Txt.TextWriter.CanWrite
+  nameWithType: TextWriter.CanWrite
+- uid: Archivist.Formats.Txt.TextWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: WriteAsync(IGenericFile, Stream)
+  href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.Formats.Txt.TextWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  fullName: Archivist.Formats.Txt.TextWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: TextWriter.WriteAsync(IGenericFile, Stream)
+- uid: Archivist.Formats.Txt.TextWriter.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_WriteAsync_
+  commentId: Overload:Archivist.Formats.Txt.TextWriter.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.Txt.TextWriter.WriteAsync
+  nameWithType: TextWriter.WriteAsync
 - uid: Archivist.Interfaces
   name: Archivist.Interfaces
   href: api/Archivist.Interfaces.html
@@ -44,21 +915,260 @@ references:
   commentId: T:Archivist.Interfaces.IFormat
   fullName: Archivist.Interfaces.IFormat
   nameWithType: IFormat
+- uid: Archivist.Interfaces.IFormat.CanRead(System.IO.Stream)
+  name: CanRead(Stream)
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_CanRead_System_IO_Stream_
+  commentId: M:Archivist.Interfaces.IFormat.CanRead(System.IO.Stream)
+  fullName: Archivist.Interfaces.IFormat.CanRead(System.IO.Stream)
+  nameWithType: IFormat.CanRead(Stream)
+- uid: Archivist.Interfaces.IFormat.CanRead(System.String)
+  name: CanRead(string)
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_CanRead_System_String_
+  commentId: M:Archivist.Interfaces.IFormat.CanRead(System.String)
+  name.vb: CanRead(String)
+  fullName: Archivist.Interfaces.IFormat.CanRead(string)
+  fullName.vb: Archivist.Interfaces.IFormat.CanRead(String)
+  nameWithType: IFormat.CanRead(string)
+  nameWithType.vb: IFormat.CanRead(String)
+- uid: Archivist.Interfaces.IFormat.CanRead*
+  name: CanRead
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_CanRead_
+  commentId: Overload:Archivist.Interfaces.IFormat.CanRead
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormat.CanRead
+  nameWithType: IFormat.CanRead
+- uid: Archivist.Interfaces.IFormat.CanWrite(Archivist.Interfaces.IGenericFile)
+  name: CanWrite(IGenericFile)
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_CanWrite_Archivist_Interfaces_IGenericFile_
+  commentId: M:Archivist.Interfaces.IFormat.CanWrite(Archivist.Interfaces.IGenericFile)
+  fullName: Archivist.Interfaces.IFormat.CanWrite(Archivist.Interfaces.IGenericFile)
+  nameWithType: IFormat.CanWrite(IGenericFile)
+- uid: Archivist.Interfaces.IFormat.CanWrite(System.String)
+  name: CanWrite(string)
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_CanWrite_System_String_
+  commentId: M:Archivist.Interfaces.IFormat.CanWrite(System.String)
+  name.vb: CanWrite(String)
+  fullName: Archivist.Interfaces.IFormat.CanWrite(string)
+  fullName.vb: Archivist.Interfaces.IFormat.CanWrite(String)
+  nameWithType: IFormat.CanWrite(string)
+  nameWithType.vb: IFormat.CanWrite(String)
+- uid: Archivist.Interfaces.IFormat.CanWrite*
+  name: CanWrite
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_CanWrite_
+  commentId: Overload:Archivist.Interfaces.IFormat.CanWrite
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormat.CanWrite
+  nameWithType: IFormat.CanWrite
+- uid: Archivist.Interfaces.IFormat.DisplayName
+  name: DisplayName
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_DisplayName
+  commentId: P:Archivist.Interfaces.IFormat.DisplayName
+  fullName: Archivist.Interfaces.IFormat.DisplayName
+  nameWithType: IFormat.DisplayName
+- uid: Archivist.Interfaces.IFormat.DisplayName*
+  name: DisplayName
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_DisplayName_
+  commentId: Overload:Archivist.Interfaces.IFormat.DisplayName
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormat.DisplayName
+  nameWithType: IFormat.DisplayName
+- uid: Archivist.Interfaces.IFormat.Extensions
+  name: Extensions
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_Extensions
+  commentId: P:Archivist.Interfaces.IFormat.Extensions
+  fullName: Archivist.Interfaces.IFormat.Extensions
+  nameWithType: IFormat.Extensions
+- uid: Archivist.Interfaces.IFormat.Extensions*
+  name: Extensions
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_Extensions_
+  commentId: Overload:Archivist.Interfaces.IFormat.Extensions
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormat.Extensions
+  nameWithType: IFormat.Extensions
+- uid: Archivist.Interfaces.IFormat.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_HeaderInfo
+  commentId: P:Archivist.Interfaces.IFormat.HeaderInfo
+  fullName: Archivist.Interfaces.IFormat.HeaderInfo
+  nameWithType: IFormat.HeaderInfo
+- uid: Archivist.Interfaces.IFormat.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_HeaderInfo_
+  commentId: Overload:Archivist.Interfaces.IFormat.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormat.HeaderInfo
+  nameWithType: IFormat.HeaderInfo
+- uid: Archivist.Interfaces.IFormat.MimeTypes
+  name: MimeTypes
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_MimeTypes
+  commentId: P:Archivist.Interfaces.IFormat.MimeTypes
+  fullName: Archivist.Interfaces.IFormat.MimeTypes
+  nameWithType: IFormat.MimeTypes
+- uid: Archivist.Interfaces.IFormat.MimeTypes*
+  name: MimeTypes
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_MimeTypes_
+  commentId: Overload:Archivist.Interfaces.IFormat.MimeTypes
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormat.MimeTypes
+  nameWithType: IFormat.MimeTypes
+- uid: Archivist.Interfaces.IFormat.Order
+  name: Order
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_Order
+  commentId: P:Archivist.Interfaces.IFormat.Order
+  fullName: Archivist.Interfaces.IFormat.Order
+  nameWithType: IFormat.Order
+- uid: Archivist.Interfaces.IFormat.Order*
+  name: Order
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_Order_
+  commentId: Overload:Archivist.Interfaces.IFormat.Order
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormat.Order
+  nameWithType: IFormat.Order
+- uid: Archivist.Interfaces.IFormat.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream)
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.Interfaces.IFormat.ReadAsync(System.IO.Stream)
+  fullName: Archivist.Interfaces.IFormat.ReadAsync(System.IO.Stream)
+  nameWithType: IFormat.ReadAsync(Stream)
+- uid: Archivist.Interfaces.IFormat.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_ReadAsync_
+  commentId: Overload:Archivist.Interfaces.IFormat.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormat.ReadAsync
+  nameWithType: IFormat.ReadAsync
+- uid: Archivist.Interfaces.IFormat.WriteAsync(System.IO.Stream,Archivist.Interfaces.IGenericFile)
+  name: WriteAsync(Stream, IGenericFile)
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_WriteAsync_System_IO_Stream_Archivist_Interfaces_IGenericFile_
+  commentId: M:Archivist.Interfaces.IFormat.WriteAsync(System.IO.Stream,Archivist.Interfaces.IGenericFile)
+  fullName: Archivist.Interfaces.IFormat.WriteAsync(System.IO.Stream, Archivist.Interfaces.IGenericFile)
+  nameWithType: IFormat.WriteAsync(Stream, IGenericFile)
+- uid: Archivist.Interfaces.IFormat.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_WriteAsync_
+  commentId: Overload:Archivist.Interfaces.IFormat.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormat.WriteAsync
+  nameWithType: IFormat.WriteAsync
 - uid: Archivist.Interfaces.IFormatReader
   name: IFormatReader
   href: api/Archivist.Interfaces.IFormatReader.html
   commentId: T:Archivist.Interfaces.IFormatReader
   fullName: Archivist.Interfaces.IFormatReader
   nameWithType: IFormatReader
+- uid: Archivist.Interfaces.IFormatReader.CanRead(System.IO.Stream)
+  name: CanRead(Stream)
+  href: api/Archivist.Interfaces.IFormatReader.html#Archivist_Interfaces_IFormatReader_CanRead_System_IO_Stream_
+  commentId: M:Archivist.Interfaces.IFormatReader.CanRead(System.IO.Stream)
+  fullName: Archivist.Interfaces.IFormatReader.CanRead(System.IO.Stream)
+  nameWithType: IFormatReader.CanRead(Stream)
+- uid: Archivist.Interfaces.IFormatReader.CanRead*
+  name: CanRead
+  href: api/Archivist.Interfaces.IFormatReader.html#Archivist_Interfaces_IFormatReader_CanRead_
+  commentId: Overload:Archivist.Interfaces.IFormatReader.CanRead
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormatReader.CanRead
+  nameWithType: IFormatReader.CanRead
+- uid: Archivist.Interfaces.IFormatReader.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.Interfaces.IFormatReader.html#Archivist_Interfaces_IFormatReader_HeaderInfo
+  commentId: P:Archivist.Interfaces.IFormatReader.HeaderInfo
+  fullName: Archivist.Interfaces.IFormatReader.HeaderInfo
+  nameWithType: IFormatReader.HeaderInfo
+- uid: Archivist.Interfaces.IFormatReader.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.Interfaces.IFormatReader.html#Archivist_Interfaces_IFormatReader_HeaderInfo_
+  commentId: Overload:Archivist.Interfaces.IFormatReader.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormatReader.HeaderInfo
+  nameWithType: IFormatReader.HeaderInfo
+- uid: Archivist.Interfaces.IFormatReader.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream)
+  href: api/Archivist.Interfaces.IFormatReader.html#Archivist_Interfaces_IFormatReader_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.Interfaces.IFormatReader.ReadAsync(System.IO.Stream)
+  fullName: Archivist.Interfaces.IFormatReader.ReadAsync(System.IO.Stream)
+  nameWithType: IFormatReader.ReadAsync(Stream)
+- uid: Archivist.Interfaces.IFormatReader.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.Interfaces.IFormatReader.html#Archivist_Interfaces_IFormatReader_ReadAsync_
+  commentId: Overload:Archivist.Interfaces.IFormatReader.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormatReader.ReadAsync
+  nameWithType: IFormatReader.ReadAsync
 - uid: Archivist.Interfaces.IFormatWriter
   name: IFormatWriter
   href: api/Archivist.Interfaces.IFormatWriter.html
   commentId: T:Archivist.Interfaces.IFormatWriter
   fullName: Archivist.Interfaces.IFormatWriter
   nameWithType: IFormatWriter
+- uid: Archivist.Interfaces.IFormatWriter.CanWrite(Archivist.Interfaces.IGenericFile)
+  name: CanWrite(IGenericFile)
+  href: api/Archivist.Interfaces.IFormatWriter.html#Archivist_Interfaces_IFormatWriter_CanWrite_Archivist_Interfaces_IGenericFile_
+  commentId: M:Archivist.Interfaces.IFormatWriter.CanWrite(Archivist.Interfaces.IGenericFile)
+  fullName: Archivist.Interfaces.IFormatWriter.CanWrite(Archivist.Interfaces.IGenericFile)
+  nameWithType: IFormatWriter.CanWrite(IGenericFile)
+- uid: Archivist.Interfaces.IFormatWriter.CanWrite*
+  name: CanWrite
+  href: api/Archivist.Interfaces.IFormatWriter.html#Archivist_Interfaces_IFormatWriter_CanWrite_
+  commentId: Overload:Archivist.Interfaces.IFormatWriter.CanWrite
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormatWriter.CanWrite
+  nameWithType: IFormatWriter.CanWrite
+- uid: Archivist.Interfaces.IFormatWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: WriteAsync(IGenericFile, Stream)
+  href: api/Archivist.Interfaces.IFormatWriter.html#Archivist_Interfaces_IFormatWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.Interfaces.IFormatWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  fullName: Archivist.Interfaces.IFormatWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: IFormatWriter.WriteAsync(IGenericFile, Stream)
+- uid: Archivist.Interfaces.IFormatWriter.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.Interfaces.IFormatWriter.html#Archivist_Interfaces_IFormatWriter_WriteAsync_
+  commentId: Overload:Archivist.Interfaces.IFormatWriter.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IFormatWriter.WriteAsync
+  nameWithType: IFormatWriter.WriteAsync
 - uid: Archivist.Interfaces.IGenericFile
   name: IGenericFile
   href: api/Archivist.Interfaces.IGenericFile.html
   commentId: T:Archivist.Interfaces.IGenericFile
   fullName: Archivist.Interfaces.IGenericFile
   nameWithType: IGenericFile
+- uid: Archivist.Interfaces.IGenericFile.Content
+  name: Content
+  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_Content
+  commentId: P:Archivist.Interfaces.IGenericFile.Content
+  fullName: Archivist.Interfaces.IGenericFile.Content
+  nameWithType: IGenericFile.Content
+- uid: Archivist.Interfaces.IGenericFile.Content*
+  name: Content
+  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_Content_
+  commentId: Overload:Archivist.Interfaces.IGenericFile.Content
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IGenericFile.Content
+  nameWithType: IGenericFile.Content
+- uid: Archivist.Interfaces.IGenericFile.Metadata
+  name: Metadata
+  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_Metadata
+  commentId: P:Archivist.Interfaces.IGenericFile.Metadata
+  fullName: Archivist.Interfaces.IGenericFile.Metadata
+  nameWithType: IGenericFile.Metadata
+- uid: Archivist.Interfaces.IGenericFile.Metadata*
+  name: Metadata
+  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_Metadata_
+  commentId: Overload:Archivist.Interfaces.IGenericFile.Metadata
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IGenericFile.Metadata
+  nameWithType: IGenericFile.Metadata
+- uid: Archivist.Interfaces.IGenericFile.Title
+  name: Title
+  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_Title
+  commentId: P:Archivist.Interfaces.IGenericFile.Title
+  fullName: Archivist.Interfaces.IGenericFile.Title
+  nameWithType: IGenericFile.Title
+- uid: Archivist.Interfaces.IGenericFile.Title*
+  name: Title
+  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_Title_
+  commentId: Overload:Archivist.Interfaces.IGenericFile.Title
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IGenericFile.Title
+  nameWithType: IGenericFile.Title
