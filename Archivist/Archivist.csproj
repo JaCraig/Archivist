@@ -67,7 +67,6 @@
     <Folder Include="Formats\YAML\" />
     <Folder Include="Formats\XML\" />
     <Folder Include="Formats\Word\" />
-    <Folder Include="Formats\VCard\" />
     <Folder Include="Formats\VCalendar\" />
     <Folder Include="Formats\RTF\" />
     <Folder Include="Formats\RSS\" />
