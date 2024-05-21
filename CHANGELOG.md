@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.0.3"></a>
+## [0.0.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.0.3) (2024-05-21)
+
+### Bug Fixes
+
+* Adding tests and finishing the txt format ([ec1cbf5](https://www.github.com/JaCraig/Archivist/commit/ec1cbf5673f626a8caa6d0ff089bd81652183bc9))
+
+### Other
+
+* --- ([804fdba](https://www.github.com/JaCraig/Archivist/commit/804fdbad72e7f51213b6164af2f5545e653d66d3))
+* Merge pull request #9 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-17bfdebd43 ([e1f1ad1](https://www.github.com/JaCraig/Archivist/commit/e1f1ad1571a8a82d1150f5e569de9a5ea53e6313))
+* merge ([564165d](https://www.github.com/JaCraig/Archivist/commit/564165d5195e642f8c964c9ec23c038ac95e19da))
+
 <a name="0.0.2"></a>
 ## [0.0.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.0.2) (2024-05-20)
 
