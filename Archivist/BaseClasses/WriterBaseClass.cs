@@ -15,7 +15,7 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="file"></param>
         /// <returns></returns>
-        public bool CanWrite(IGenericFile file) => throw new NotImplementedException();
+        public bool CanWrite(IGenericFile? file) => throw new NotImplementedException();
 
         /// <summary>
         ///
@@ -23,6 +23,6 @@ namespace Archivist.BaseClasses
         /// <param name="file"></param>
         /// <param name="stream"></param>
         /// <returns></returns>
-        public Task<bool> WriteAsync(IGenericFile file, Stream stream) => throw new NotImplementedException();
+        public Task<bool> WriteAsync(IGenericFile? file, Stream? stream) => throw new NotImplementedException();
     }
 }

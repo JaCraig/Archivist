@@ -18,13 +18,13 @@ namespace Archivist.Interfaces
         /// </summary>
         /// <param name="stream">The stream to read.</param>
         /// <returns><c>true</c> if the format reader can read the stream; otherwise, <c>false</c>.</returns>
-        bool CanRead(Stream stream);
+        bool CanRead(Stream? stream);
 
         /// <summary>
         /// Asynchronously reads the specified stream and returns the generic file.
         /// </summary>
         /// <param name="stream">The stream to read.</param>
         /// <returns>A task that represents the asynchronous operation. The task result contains the generic file read from the stream.</returns>
-        Task<IGenericFile> ReadAsync(Stream stream);
+        Task<IGenericFile?> ReadAsync(Stream? stream);
     }
 }

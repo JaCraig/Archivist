@@ -40,35 +40,35 @@ namespace Archivist.Interfaces
         /// </summary>
         /// <param name="fileName">The name of the file to check.</param>
         /// <returns><c>true</c> if this file format can read the specified file; otherwise, <c>false</c>.</returns>
-        bool CanRead(string fileName);
+        bool CanRead(string? fileName);
 
         /// <summary>
         /// Determines whether this file format can read the specified stream.
         /// </summary>
         /// <param name="stream">The stream to check.</param>
         /// <returns><c>true</c> if this file format can read the specified stream; otherwise, <c>false</c>.</returns>
-        bool CanRead(Stream stream);
+        bool CanRead(Stream? stream);
 
         /// <summary>
         /// Determines whether this file format can write the specified file.
         /// </summary>
         /// <param name="fileName">The name of the file to check.</param>
         /// <returns><c>true</c> if this file format can write the specified file; otherwise, <c>false</c>.</returns>
-        bool CanWrite(string fileName);
+        bool CanWrite(string? fileName);
 
         /// <summary>
         /// Determines whether this file format can write the specified file.
         /// </summary>
         /// <param name="file">The file to check.</param>
         /// <returns><c>true</c> if this file format can write the specified file; otherwise, <c>false</c>.</returns>
-        bool CanWrite(IGenericFile file);
+        bool CanWrite(IGenericFile? file);
 
         /// <summary>
         /// Asynchronously reads the specified stream and returns an instance of <see cref="IGenericFile"/>.
         /// </summary>
         /// <param name="stream">The stream to read.</param>
         /// <returns>A task that represents the asynchronous operation. The task result contains an instance of <see cref="IGenericFile"/>.</returns>
-        Task<IGenericFile> ReadAsync(Stream stream);
+        Task<IGenericFile?> ReadAsync(Stream? stream);
 
         /// <summary>
         /// Asynchronously writes the specified <see cref="IGenericFile"/> to the specified stream.
@@ -76,6 +76,6 @@ namespace Archivist.Interfaces
         /// <param name="writer">The stream to write to.</param>
         /// <param name="file">The file to write.</param>
         /// <returns>A task that represents the asynchronous operation. The task result contains a boolean value indicating whether the write operation is successful.</returns>
-        Task<bool> WriteAsync(Stream writer, IGenericFile file);
+        Task<bool> WriteAsync(Stream? writer, IGenericFile? file);
     }
 }

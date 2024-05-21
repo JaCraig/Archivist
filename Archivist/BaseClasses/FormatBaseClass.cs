@@ -72,35 +72,35 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="fileName">The name of the file.</param>
         /// <returns><c>true</c> if the format can read the file; otherwise, <c>false</c>.</returns>
-        public bool CanRead(string fileName) => !string.IsNullOrEmpty(fileName) && Extensions.Any(x => fileName.EndsWith(x, StringComparison.Ordinal));
+        public bool CanRead(string? fileName) => !string.IsNullOrEmpty(fileName) && Extensions.Any(x => fileName.EndsWith(x, StringComparison.Ordinal));
 
         /// <summary>
         /// Determines whether the format can read the specified stream.
         /// </summary>
         /// <param name="stream">The stream to read.</param>
         /// <returns><c>true</c> if the format can read the stream; otherwise, <c>false</c>.</returns>
-        public bool CanRead(Stream stream) => Reader.CanRead(stream);
+        public bool CanRead(Stream? stream) => Reader.CanRead(stream);
 
         /// <summary>
         /// Determines whether the format can write the specified file.
         /// </summary>
         /// <param name="fileName">The name of the file.</param>
         /// <returns><c>true</c> if the format can write the file; otherwise, <c>false</c>.</returns>
-        public bool CanWrite(string fileName) => !string.IsNullOrEmpty(fileName) && Extensions.Any(x => fileName.EndsWith(x, StringComparison.Ordinal));
+        public bool CanWrite(string? fileName) => !string.IsNullOrEmpty(fileName) && Extensions.Any(x => fileName.EndsWith(x, StringComparison.Ordinal));
 
         /// <summary>
         /// Determines whether the format can write the specified file.
         /// </summary>
         /// <param name="file">The file to write.</param>
         /// <returns><c>true</c> if the format can write the file; otherwise, <c>false</c>.</returns>
-        public bool CanWrite(IGenericFile file) => Writer.CanWrite(file);
+        public bool CanWrite(IGenericFile? file) => Writer.CanWrite(file);
 
         /// <summary>
         /// Reads the file asynchronously from the specified stream.
         /// </summary>
         /// <param name="stream">The stream to read.</param>
         /// <returns>A task that represents the asynchronous read operation. The task result contains the generic file.</returns>
-        public Task<IGenericFile> ReadAsync(Stream stream) => Reader.ReadAsync(stream);
+        public Task<IGenericFile?> ReadAsync(Stream? stream) => Reader.ReadAsync(stream);
 
         /// <summary>
         /// Writes the file asynchronously to the specified stream.
@@ -108,6 +108,6 @@ namespace Archivist.BaseClasses
         /// <param name="writer">The stream to write.</param>
         /// <param name="file">The file to write.</param>
         /// <returns>A task that represents the asynchronous write operation. The task result contains a value indicating whether the write operation was successful.</returns>
-        public Task<bool> WriteAsync(Stream writer, IGenericFile file) => Writer.WriteAsync(file, writer);
+        public Task<bool> WriteAsync(Stream? writer, IGenericFile? file) => Writer.WriteAsync(file, writer);
     }
 }

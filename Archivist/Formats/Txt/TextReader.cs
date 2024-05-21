@@ -23,7 +23,7 @@ namespace Archivist.Formats.Txt
         /// </summary>
         /// <param name="stream">The stream to read the text file from.</param>
         /// <returns>A task representing the asynchronous operation. The task result contains the generic file representation of the text file.</returns>
-        public override async Task<IGenericFile> ReadAsync(Stream stream)
+        public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             var Content = await GetDataAsync(stream).ConfigureAwait(false);
             return new Text

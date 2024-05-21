@@ -21,7 +21,7 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="stream">The stream to read.</param>
         /// <returns><c>true</c> if the reader can read the stream; otherwise, <c>false</c>.</returns>
-        public bool CanRead(Stream stream)
+        public bool CanRead(Stream? stream)
         {
             if (stream is null)
                 return false;
@@ -64,7 +64,7 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="stream">The stream to read.</param>
         /// <returns>A task representing the asynchronous operation that returns the generic file.</returns>
-        public abstract Task<IGenericFile> ReadAsync(Stream stream);
+        public abstract Task<IGenericFile?> ReadAsync(Stream? stream);
 
         /// <summary>
         /// Finds the start index of the file.

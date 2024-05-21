@@ -16,7 +16,7 @@ namespace Archivist.ExtensionMethods
         /// </summary>
         /// <param name="input">Input string</param>
         /// <returns>String with spaces before each capital letter</returns>
-        public static string AddSpaces(this string input)
+        public static string AddSpaces(this string? input)
         {
             if (string.IsNullOrWhiteSpace(input))
             {
@@ -56,7 +56,7 @@ namespace Archivist.ExtensionMethods
         /// <param name="input">Input stream</param>
         /// <param name="encodingUsing">Encoding that the string should be in (defaults to UTF8)</param>
         /// <returns>A string containing the content of the stream</returns>
-        public static async Task<string> ReadAllAsync(this Stream input, Encoding? encodingUsing = null)
+        public static async Task<string> ReadAllAsync(this Stream? input, Encoding? encodingUsing = null)
         {
             if (input is null)
                 return "";
@@ -68,7 +68,7 @@ namespace Archivist.ExtensionMethods
         /// </summary>
         /// <param name="input">Input stream</param>
         /// <returns>A byte array</returns>
-        public static async Task<byte[]> ReadAllBinaryAsync(this Stream input)
+        public static async Task<byte[]> ReadAllBinaryAsync(this Stream? input)
         {
             if (input is null)
                 return Array.Empty<byte>();
@@ -78,17 +78,23 @@ namespace Archivist.ExtensionMethods
 
             ArrayPool<byte> Pool = ArrayPool<byte>.Shared;
             var Buffer = Pool.Rent(4096);
-            using var Temp = new MemoryStream();
+            await using var Temp = new MemoryStream();
             while (true)
             {
-                var Count = await input.ReadAsync(Buffer.AsMemory(0, Buffer.Length)).ConfigureAwait(false);
-                if (Count <= 0)
+                try
                 {
-                    Pool.Return(Buffer);
-                    return Temp.ToArray();
+                    var Count = await input.ReadAsync(Buffer.AsMemory(0, Buffer.Length)).ConfigureAwait(false);
+                    if (Count <= 0)
+                        break;
+                    Temp.Write(Buffer, 0, Count);
                 }
-                Temp.Write(Buffer, 0, Count);
+                catch
+                {
+                    break;
+                }
             }
+            Pool.Return(Buffer);
+            return Temp.ToArray();
         }
 
         /// <summary>
@@ -99,7 +105,7 @@ namespace Archivist.ExtensionMethods
         /// <param name="index">Index to start at</param>
         /// <param name="count">Number of bytes to convert</param>
         /// <returns>A string containing the content of the byte array</returns>
-        public static string ToString(this byte[] input, Encoding? encodingUsing, int index = 0, int count = -1)
+        public static string ToString(this byte[]? input, Encoding? encodingUsing, int index = 0, int count = -1)
         {
             if (input is null)
                 return "";

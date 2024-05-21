@@ -13,7 +13,7 @@ namespace Archivist.Interfaces
         /// </summary>
         /// <param name="file">The file to write.</param>
         /// <returns><c>true</c> if the format writer can write the file; otherwise, <c>false</c>.</returns>
-        bool CanWrite(IGenericFile file);
+        bool CanWrite(IGenericFile? file);
 
         /// <summary>
         /// Asynchronously writes the specified file to the stream.
@@ -21,6 +21,6 @@ namespace Archivist.Interfaces
         /// <param name="file">The file to write.</param>
         /// <param name="stream">The stream to write to.</param>
         /// <returns>A task that represents the asynchronous operation.</returns>
-        Task<bool> WriteAsync(IGenericFile file, Stream stream);
+        Task<bool> WriteAsync(IGenericFile? file, Stream? stream);
     }
 }
