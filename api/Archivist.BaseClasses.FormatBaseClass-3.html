@@ -450,7 +450,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_BaseClasses_FormatBaseClass_3_CanRead_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.CanRead*"></a>
 
   <h3 id="Archivist_BaseClasses_FormatBaseClass_3_CanRead_System_IO_Stream_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.CanRead(System.IO.Stream)">
-  CanRead(Stream)
+  CanRead(Stream?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FormatBaseClass.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -459,7 +459,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanRead(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool CanRead(Stream? stream)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -489,7 +489,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_BaseClasses_FormatBaseClass_3_CanRead_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.CanRead*"></a>
 
   <h3 id="Archivist_BaseClasses_FormatBaseClass_3_CanRead_System_String_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.CanRead(System.String)">
-  CanRead(string)
+  CanRead(string?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FormatBaseClass.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -498,7 +498,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanRead(string fileName)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool CanRead(string? fileName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -528,7 +528,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_BaseClasses_FormatBaseClass_3_CanWrite_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.CanWrite*"></a>
 
   <h3 id="Archivist_BaseClasses_FormatBaseClass_3_CanWrite_Archivist_Interfaces_IGenericFile_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.CanWrite(Archivist.Interfaces.IGenericFile)">
-  CanWrite(IGenericFile)
+  CanWrite(IGenericFile?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FormatBaseClass.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -537,7 +537,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanWrite(IGenericFile file)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool CanWrite(IGenericFile? file)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -567,7 +567,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_BaseClasses_FormatBaseClass_3_CanWrite_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.CanWrite*"></a>
 
   <h3 id="Archivist_BaseClasses_FormatBaseClass_3_CanWrite_System_String_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.CanWrite(System.String)">
-  CanWrite(string)
+  CanWrite(string?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FormatBaseClass.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -576,7 +576,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanWrite(string fileName)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool CanWrite(string? fileName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -606,7 +606,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_BaseClasses_FormatBaseClass_3_ReadAsync_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.ReadAsync*"></a>
 
   <h3 id="Archivist_BaseClasses_FormatBaseClass_3_ReadAsync_System_IO_Stream_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.ReadAsync(System.IO.Stream)">
-  ReadAsync(Stream)
+  ReadAsync(Stream?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FormatBaseClass.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -615,7 +615,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;IGenericFile&gt; ReadAsync(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;IGenericFile?&gt; ReadAsync(Stream? stream)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -645,7 +645,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_BaseClasses_FormatBaseClass_3_WriteAsync_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.WriteAsync*"></a>
 
   <h3 id="Archivist_BaseClasses_FormatBaseClass_3_WriteAsync_System_IO_Stream_Archivist_Interfaces_IGenericFile_" data-uid="Archivist.BaseClasses.FormatBaseClass`3.WriteAsync(System.IO.Stream,Archivist.Interfaces.IGenericFile)">
-  WriteAsync(Stream, IGenericFile)
+  WriteAsync(Stream?, IGenericFile?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FormatBaseClass.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -654,7 +654,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; WriteAsync(Stream writer, IGenericFile file)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; WriteAsync(Stream? writer, IGenericFile? file)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

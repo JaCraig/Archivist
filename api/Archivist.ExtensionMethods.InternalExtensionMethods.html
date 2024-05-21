@@ -156,7 +156,7 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
   <a id="Archivist_ExtensionMethods_InternalExtensionMethods_AddSpaces_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces*"></a>
 
   <h3 id="Archivist_ExtensionMethods_InternalExtensionMethods_AddSpaces_System_String_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces(System.String)">
-  AddSpaces(string)
+  AddSpaces(string?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -165,7 +165,7 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string AddSpaces(this string input)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string AddSpaces(this string? input)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -237,7 +237,7 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
   <a id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllAsync_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync*"></a>
 
   <h3 id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllAsync_System_IO_Stream_System_Text_Encoding_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream,System.Text.Encoding)">
-  ReadAllAsync(Stream, Encoding?)
+  ReadAllAsync(Stream?, Encoding?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -246,7 +246,7 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;string&gt; ReadAllAsync(this Stream input, Encoding? encodingUsing = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;string&gt; ReadAllAsync(this Stream? input, Encoding? encodingUsing = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -279,7 +279,7 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
   <a id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinaryAsync_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync*"></a>
 
   <h3 id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinaryAsync_System_IO_Stream_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync(System.IO.Stream)">
-  ReadAllBinaryAsync(Stream)
+  ReadAllBinaryAsync(Stream?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -288,7 +288,7 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Task&lt;byte[]&gt; ReadAllBinaryAsync(this Stream input)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task&lt;byte[]&gt; ReadAllBinaryAsync(this Stream? input)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -318,8 +318,8 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
   <a id="Archivist_ExtensionMethods_InternalExtensionMethods_ToString_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ToString*"></a>
 
   <h3 id="Archivist_ExtensionMethods_InternalExtensionMethods_ToString_System_Byte___System_Text_Encoding_System_Int32_System_Int32_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ToString(System.Byte[],System.Text.Encoding,System.Int32,System.Int32)">
-  ToString(byte[], Encoding?, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  ToString(byte[]?, Encoding?, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts a byte array to a string</p>
@@ -327,7 +327,7 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ToString(this byte[] input, Encoding? encodingUsing, int index = 0, int count = -1)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string ToString(this byte[]? input, Encoding? encodingUsing, int index = 0, int count = -1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

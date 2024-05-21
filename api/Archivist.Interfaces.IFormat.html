@@ -290,7 +290,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_Interfaces_IFormat_CanRead_" data-uid="Archivist.Interfaces.IFormat.CanRead*"></a>
 
   <h3 id="Archivist_Interfaces_IFormat_CanRead_System_IO_Stream_" data-uid="Archivist.Interfaces.IFormat.CanRead(System.IO.Stream)">
-  CanRead(Stream)
+  CanRead(Stream?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -299,7 +299,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool CanRead(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">bool CanRead(Stream? stream)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -329,7 +329,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_Interfaces_IFormat_CanRead_" data-uid="Archivist.Interfaces.IFormat.CanRead*"></a>
 
   <h3 id="Archivist_Interfaces_IFormat_CanRead_System_String_" data-uid="Archivist.Interfaces.IFormat.CanRead(System.String)">
-  CanRead(string)
+  CanRead(string?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -338,7 +338,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool CanRead(string fileName)</code></pre>
+    <pre><code class="lang-csharp hljs">bool CanRead(string? fileName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -368,7 +368,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_Interfaces_IFormat_CanWrite_" data-uid="Archivist.Interfaces.IFormat.CanWrite*"></a>
 
   <h3 id="Archivist_Interfaces_IFormat_CanWrite_Archivist_Interfaces_IGenericFile_" data-uid="Archivist.Interfaces.IFormat.CanWrite(Archivist.Interfaces.IGenericFile)">
-  CanWrite(IGenericFile)
+  CanWrite(IGenericFile?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -377,7 +377,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool CanWrite(IGenericFile file)</code></pre>
+    <pre><code class="lang-csharp hljs">bool CanWrite(IGenericFile? file)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -407,7 +407,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_Interfaces_IFormat_CanWrite_" data-uid="Archivist.Interfaces.IFormat.CanWrite*"></a>
 
   <h3 id="Archivist_Interfaces_IFormat_CanWrite_System_String_" data-uid="Archivist.Interfaces.IFormat.CanWrite(System.String)">
-  CanWrite(string)
+  CanWrite(string?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -416,7 +416,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool CanWrite(string fileName)</code></pre>
+    <pre><code class="lang-csharp hljs">bool CanWrite(string? fileName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -446,7 +446,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_Interfaces_IFormat_ReadAsync_" data-uid="Archivist.Interfaces.IFormat.ReadAsync*"></a>
 
   <h3 id="Archivist_Interfaces_IFormat_ReadAsync_System_IO_Stream_" data-uid="Archivist.Interfaces.IFormat.ReadAsync(System.IO.Stream)">
-  ReadAsync(Stream)
+  ReadAsync(Stream?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -455,7 +455,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;IGenericFile&gt; ReadAsync(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;IGenericFile?&gt; ReadAsync(Stream? stream)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -485,7 +485,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <a id="Archivist_Interfaces_IFormat_WriteAsync_" data-uid="Archivist.Interfaces.IFormat.WriteAsync*"></a>
 
   <h3 id="Archivist_Interfaces_IFormat_WriteAsync_System_IO_Stream_Archivist_Interfaces_IGenericFile_" data-uid="Archivist.Interfaces.IFormat.WriteAsync(System.IO.Stream,Archivist.Interfaces.IGenericFile)">
-  WriteAsync(Stream, IGenericFile)
+  WriteAsync(Stream?, IGenericFile?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormat.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -494,7 +494,7 @@ The system uses HeaderInfo to determine the order to check first, with longer he
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; WriteAsync(Stream writer, IGenericFile file)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; WriteAsync(Stream? writer, IGenericFile? file)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

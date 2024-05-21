@@ -304,21 +304,22 @@ references:
   nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.FormatBaseClass
   nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).New
 - uid: Archivist.BaseClasses.FormatBaseClass`3.CanRead(System.IO.Stream)
-  name: CanRead(Stream)
+  name: CanRead(Stream?)
   href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_CanRead_System_IO_Stream_
   commentId: M:Archivist.BaseClasses.FormatBaseClass`3.CanRead(System.IO.Stream)
-  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(System.IO.Stream)
+  name.vb: CanRead(Stream)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(System.IO.Stream?)
   fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanRead(System.IO.Stream)
-  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(Stream)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(Stream?)
   nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanRead(Stream)
 - uid: Archivist.BaseClasses.FormatBaseClass`3.CanRead(System.String)
-  name: CanRead(string)
+  name: CanRead(string?)
   href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_CanRead_System_String_
   commentId: M:Archivist.BaseClasses.FormatBaseClass`3.CanRead(System.String)
   name.vb: CanRead(String)
-  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(string)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(string?)
   fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanRead(String)
-  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(string)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead(string?)
   nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanRead(String)
 - uid: Archivist.BaseClasses.FormatBaseClass`3.CanRead*
   name: CanRead
@@ -330,21 +331,22 @@ references:
   nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanRead
   nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanRead
 - uid: Archivist.BaseClasses.FormatBaseClass`3.CanWrite(Archivist.Interfaces.IGenericFile)
-  name: CanWrite(IGenericFile)
+  name: CanWrite(IGenericFile?)
   href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_CanWrite_Archivist_Interfaces_IGenericFile_
   commentId: M:Archivist.BaseClasses.FormatBaseClass`3.CanWrite(Archivist.Interfaces.IGenericFile)
-  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(Archivist.Interfaces.IGenericFile)
+  name.vb: CanWrite(IGenericFile)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(Archivist.Interfaces.IGenericFile?)
   fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanWrite(Archivist.Interfaces.IGenericFile)
-  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(IGenericFile)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(IGenericFile?)
   nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanWrite(IGenericFile)
 - uid: Archivist.BaseClasses.FormatBaseClass`3.CanWrite(System.String)
-  name: CanWrite(string)
+  name: CanWrite(string?)
   href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_CanWrite_System_String_
   commentId: M:Archivist.BaseClasses.FormatBaseClass`3.CanWrite(System.String)
   name.vb: CanWrite(String)
-  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(string)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(string?)
   fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanWrite(String)
-  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(string)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.CanWrite(string?)
   nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).CanWrite(String)
 - uid: Archivist.BaseClasses.FormatBaseClass`3.CanWrite*
   name: CanWrite
@@ -441,12 +443,13 @@ references:
   nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.Order
   nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Order
 - uid: Archivist.BaseClasses.FormatBaseClass`3.ReadAsync(System.IO.Stream)
-  name: ReadAsync(Stream)
+  name: ReadAsync(Stream?)
   href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_ReadAsync_System_IO_Stream_
   commentId: M:Archivist.BaseClasses.FormatBaseClass`3.ReadAsync(System.IO.Stream)
-  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.ReadAsync(System.IO.Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.ReadAsync(System.IO.Stream?)
   fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).ReadAsync(System.IO.Stream)
-  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.ReadAsync(Stream)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.ReadAsync(Stream?)
   nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).ReadAsync(Stream)
 - uid: Archivist.BaseClasses.FormatBaseClass`3.ReadAsync*
   name: ReadAsync
@@ -475,12 +478,13 @@ references:
   nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.Reader
   nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).Reader
 - uid: Archivist.BaseClasses.FormatBaseClass`3.WriteAsync(System.IO.Stream,Archivist.Interfaces.IGenericFile)
-  name: WriteAsync(Stream, IGenericFile)
+  name: WriteAsync(Stream?, IGenericFile?)
   href: api/Archivist.BaseClasses.FormatBaseClass-3.html#Archivist_BaseClasses_FormatBaseClass_3_WriteAsync_System_IO_Stream_Archivist_Interfaces_IGenericFile_
   commentId: M:Archivist.BaseClasses.FormatBaseClass`3.WriteAsync(System.IO.Stream,Archivist.Interfaces.IGenericFile)
-  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.WriteAsync(System.IO.Stream, Archivist.Interfaces.IGenericFile)
+  name.vb: WriteAsync(Stream, IGenericFile)
+  fullName: Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>.WriteAsync(System.IO.Stream?, Archivist.Interfaces.IGenericFile?)
   fullName.vb: Archivist.BaseClasses.FormatBaseClass(Of TFormat, TFileReader, TFileWriter).WriteAsync(System.IO.Stream, Archivist.Interfaces.IGenericFile)
-  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.WriteAsync(Stream, IGenericFile)
+  nameWithType: FormatBaseClass<TFormat, TFileReader, TFileWriter>.WriteAsync(Stream?, IGenericFile?)
   nameWithType.vb: FormatBaseClass(Of TFormat, TFileReader, TFileWriter).WriteAsync(Stream, IGenericFile)
 - uid: Archivist.BaseClasses.FormatBaseClass`3.WriteAsync*
   name: WriteAsync
@@ -515,11 +519,14 @@ references:
   fullName: Archivist.BaseClasses.ReaderBaseClass
   nameWithType: ReaderBaseClass
 - uid: Archivist.BaseClasses.ReaderBaseClass.CanRead(System.IO.Stream)
-  name: CanRead(Stream)
+  name: CanRead(Stream?)
   href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_CanRead_System_IO_Stream_
   commentId: M:Archivist.BaseClasses.ReaderBaseClass.CanRead(System.IO.Stream)
-  fullName: Archivist.BaseClasses.ReaderBaseClass.CanRead(System.IO.Stream)
-  nameWithType: ReaderBaseClass.CanRead(Stream)
+  name.vb: CanRead(Stream)
+  fullName: Archivist.BaseClasses.ReaderBaseClass.CanRead(System.IO.Stream?)
+  fullName.vb: Archivist.BaseClasses.ReaderBaseClass.CanRead(System.IO.Stream)
+  nameWithType: ReaderBaseClass.CanRead(Stream?)
+  nameWithType.vb: ReaderBaseClass.CanRead(Stream)
 - uid: Archivist.BaseClasses.ReaderBaseClass.CanRead*
   name: CanRead
   href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_CanRead_
@@ -554,11 +561,14 @@ references:
   fullName: Archivist.BaseClasses.ReaderBaseClass.InternalCanRead
   nameWithType: ReaderBaseClass.InternalCanRead
 - uid: Archivist.BaseClasses.ReaderBaseClass.ReadAsync(System.IO.Stream)
-  name: ReadAsync(Stream)
+  name: ReadAsync(Stream?)
   href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_ReadAsync_System_IO_Stream_
   commentId: M:Archivist.BaseClasses.ReaderBaseClass.ReadAsync(System.IO.Stream)
-  fullName: Archivist.BaseClasses.ReaderBaseClass.ReadAsync(System.IO.Stream)
-  nameWithType: ReaderBaseClass.ReadAsync(Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.BaseClasses.ReaderBaseClass.ReadAsync(System.IO.Stream?)
+  fullName.vb: Archivist.BaseClasses.ReaderBaseClass.ReadAsync(System.IO.Stream)
+  nameWithType: ReaderBaseClass.ReadAsync(Stream?)
+  nameWithType.vb: ReaderBaseClass.ReadAsync(Stream)
 - uid: Archivist.BaseClasses.ReaderBaseClass.ReadAsync*
   name: ReadAsync
   href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_ReadAsync_
@@ -573,11 +583,14 @@ references:
   fullName: Archivist.BaseClasses.WriterBaseClass
   nameWithType: WriterBaseClass
 - uid: Archivist.BaseClasses.WriterBaseClass.CanWrite(Archivist.Interfaces.IGenericFile)
-  name: CanWrite(IGenericFile)
+  name: CanWrite(IGenericFile?)
   href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_CanWrite_Archivist_Interfaces_IGenericFile_
   commentId: M:Archivist.BaseClasses.WriterBaseClass.CanWrite(Archivist.Interfaces.IGenericFile)
-  fullName: Archivist.BaseClasses.WriterBaseClass.CanWrite(Archivist.Interfaces.IGenericFile)
-  nameWithType: WriterBaseClass.CanWrite(IGenericFile)
+  name.vb: CanWrite(IGenericFile)
+  fullName: Archivist.BaseClasses.WriterBaseClass.CanWrite(Archivist.Interfaces.IGenericFile?)
+  fullName.vb: Archivist.BaseClasses.WriterBaseClass.CanWrite(Archivist.Interfaces.IGenericFile)
+  nameWithType: WriterBaseClass.CanWrite(IGenericFile?)
+  nameWithType.vb: WriterBaseClass.CanWrite(IGenericFile)
 - uid: Archivist.BaseClasses.WriterBaseClass.CanWrite*
   name: CanWrite
   href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_CanWrite_
@@ -586,11 +599,14 @@ references:
   fullName: Archivist.BaseClasses.WriterBaseClass.CanWrite
   nameWithType: WriterBaseClass.CanWrite
 - uid: Archivist.BaseClasses.WriterBaseClass.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  name: WriteAsync(IGenericFile, Stream)
+  name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
   commentId: M:Archivist.BaseClasses.WriterBaseClass.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  fullName: Archivist.BaseClasses.WriterBaseClass.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
-  nameWithType: WriterBaseClass.WriteAsync(IGenericFile, Stream)
+  name.vb: WriteAsync(IGenericFile, Stream)
+  fullName: Archivist.BaseClasses.WriterBaseClass.WriteAsync(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.BaseClasses.WriterBaseClass.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: WriterBaseClass.WriteAsync(IGenericFile?, Stream?)
+  nameWithType.vb: WriterBaseClass.WriteAsync(IGenericFile, Stream)
 - uid: Archivist.BaseClasses.WriterBaseClass.WriteAsync*
   name: WriteAsync
   href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_WriteAsync_
@@ -668,13 +684,13 @@ references:
   fullName: Archivist.ExtensionMethods.InternalExtensionMethods
   nameWithType: InternalExtensionMethods
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces(System.String)
-  name: AddSpaces(string)
+  name: AddSpaces(string?)
   href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_AddSpaces_System_String_
   commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces(System.String)
   name.vb: AddSpaces(String)
-  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces(string)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces(string?)
   fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces(String)
-  nameWithType: InternalExtensionMethods.AddSpaces(string)
+  nameWithType: InternalExtensionMethods.AddSpaces(string?)
   nameWithType.vb: InternalExtensionMethods.AddSpaces(String)
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.AddSpaces*
   name: AddSpaces
@@ -700,13 +716,13 @@ references:
   fullName: Archivist.ExtensionMethods.InternalExtensionMethods.Left
   nameWithType: InternalExtensionMethods.Left
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream,System.Text.Encoding)
-  name: ReadAllAsync(Stream, Encoding?)
+  name: ReadAllAsync(Stream?, Encoding?)
   href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllAsync_System_IO_Stream_System_Text_Encoding_
   commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream,System.Text.Encoding)
   name.vb: ReadAllAsync(Stream, Encoding)
-  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream, System.Text.Encoding?)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream?, System.Text.Encoding?)
   fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream, System.Text.Encoding)
-  nameWithType: InternalExtensionMethods.ReadAllAsync(Stream, Encoding?)
+  nameWithType: InternalExtensionMethods.ReadAllAsync(Stream?, Encoding?)
   nameWithType.vb: InternalExtensionMethods.ReadAllAsync(Stream, Encoding)
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync*
   name: ReadAllAsync
@@ -716,11 +732,14 @@ references:
   fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync
   nameWithType: InternalExtensionMethods.ReadAllAsync
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync(System.IO.Stream)
-  name: ReadAllBinaryAsync(Stream)
+  name: ReadAllBinaryAsync(Stream?)
   href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinaryAsync_System_IO_Stream_
   commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync(System.IO.Stream)
-  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync(System.IO.Stream)
-  nameWithType: InternalExtensionMethods.ReadAllBinaryAsync(Stream)
+  name.vb: ReadAllBinaryAsync(Stream)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync(System.IO.Stream?)
+  fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync(System.IO.Stream)
+  nameWithType: InternalExtensionMethods.ReadAllBinaryAsync(Stream?)
+  nameWithType.vb: InternalExtensionMethods.ReadAllBinaryAsync(Stream)
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync*
   name: ReadAllBinaryAsync
   href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinaryAsync_
@@ -729,13 +748,13 @@ references:
   fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync
   nameWithType: InternalExtensionMethods.ReadAllBinaryAsync
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.ToString(System.Byte[],System.Text.Encoding,System.Int32,System.Int32)
-  name: ToString(byte[], Encoding?, int, int)
+  name: ToString(byte[]?, Encoding?, int, int)
   href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ToString_System_Byte___System_Text_Encoding_System_Int32_System_Int32_
   commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.ToString(System.Byte[],System.Text.Encoding,System.Int32,System.Int32)
   name.vb: ToString(Byte(), Encoding, Integer, Integer)
-  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ToString(byte[], System.Text.Encoding?, int, int)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ToString(byte[]?, System.Text.Encoding?, int, int)
   fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.ToString(Byte(), System.Text.Encoding, Integer, Integer)
-  nameWithType: InternalExtensionMethods.ToString(byte[], Encoding?, int, int)
+  nameWithType: InternalExtensionMethods.ToString(byte[]?, Encoding?, int, int)
   nameWithType.vb: InternalExtensionMethods.ToString(Byte(), Encoding, Integer, Integer)
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.ToString*
   name: ToString
@@ -859,11 +878,14 @@ references:
   fullName: Archivist.Formats.Txt.TextReader.HeaderInfo
   nameWithType: TextReader.HeaderInfo
 - uid: Archivist.Formats.Txt.TextReader.ReadAsync(System.IO.Stream)
-  name: ReadAsync(Stream)
+  name: ReadAsync(Stream?)
   href: api/Archivist.Formats.Txt.TextReader.html#Archivist_Formats_Txt_TextReader_ReadAsync_System_IO_Stream_
   commentId: M:Archivist.Formats.Txt.TextReader.ReadAsync(System.IO.Stream)
-  fullName: Archivist.Formats.Txt.TextReader.ReadAsync(System.IO.Stream)
-  nameWithType: TextReader.ReadAsync(Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.Formats.Txt.TextReader.ReadAsync(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.Txt.TextReader.ReadAsync(System.IO.Stream)
+  nameWithType: TextReader.ReadAsync(Stream?)
+  nameWithType.vb: TextReader.ReadAsync(Stream)
 - uid: Archivist.Formats.Txt.TextReader.ReadAsync*
   name: ReadAsync
   href: api/Archivist.Formats.Txt.TextReader.html#Archivist_Formats_Txt_TextReader_ReadAsync_
@@ -878,11 +900,14 @@ references:
   fullName: Archivist.Formats.Txt.TextWriter
   nameWithType: TextWriter
 - uid: Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile)
-  name: CanWrite(IGenericFile)
+  name: CanWrite(IGenericFile?)
   href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_CanWrite_Archivist_Interfaces_IGenericFile_
   commentId: M:Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile)
-  fullName: Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile)
-  nameWithType: TextWriter.CanWrite(IGenericFile)
+  name.vb: CanWrite(IGenericFile)
+  fullName: Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile?)
+  fullName.vb: Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile)
+  nameWithType: TextWriter.CanWrite(IGenericFile?)
+  nameWithType.vb: TextWriter.CanWrite(IGenericFile)
 - uid: Archivist.Formats.Txt.TextWriter.CanWrite*
   name: CanWrite
   href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_CanWrite_
@@ -891,11 +916,14 @@ references:
   fullName: Archivist.Formats.Txt.TextWriter.CanWrite
   nameWithType: TextWriter.CanWrite
 - uid: Archivist.Formats.Txt.TextWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  name: WriteAsync(IGenericFile, Stream)
+  name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
   commentId: M:Archivist.Formats.Txt.TextWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  fullName: Archivist.Formats.Txt.TextWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
-  nameWithType: TextWriter.WriteAsync(IGenericFile, Stream)
+  name.vb: WriteAsync(IGenericFile, Stream)
+  fullName: Archivist.Formats.Txt.TextWriter.WriteAsync(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.Formats.Txt.TextWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: TextWriter.WriteAsync(IGenericFile?, Stream?)
+  nameWithType.vb: TextWriter.WriteAsync(IGenericFile, Stream)
 - uid: Archivist.Formats.Txt.TextWriter.WriteAsync*
   name: WriteAsync
   href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_WriteAsync_
@@ -916,19 +944,22 @@ references:
   fullName: Archivist.Interfaces.IFormat
   nameWithType: IFormat
 - uid: Archivist.Interfaces.IFormat.CanRead(System.IO.Stream)
-  name: CanRead(Stream)
+  name: CanRead(Stream?)
   href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_CanRead_System_IO_Stream_
   commentId: M:Archivist.Interfaces.IFormat.CanRead(System.IO.Stream)
-  fullName: Archivist.Interfaces.IFormat.CanRead(System.IO.Stream)
-  nameWithType: IFormat.CanRead(Stream)
+  name.vb: CanRead(Stream)
+  fullName: Archivist.Interfaces.IFormat.CanRead(System.IO.Stream?)
+  fullName.vb: Archivist.Interfaces.IFormat.CanRead(System.IO.Stream)
+  nameWithType: IFormat.CanRead(Stream?)
+  nameWithType.vb: IFormat.CanRead(Stream)
 - uid: Archivist.Interfaces.IFormat.CanRead(System.String)
-  name: CanRead(string)
+  name: CanRead(string?)
   href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_CanRead_System_String_
   commentId: M:Archivist.Interfaces.IFormat.CanRead(System.String)
   name.vb: CanRead(String)
-  fullName: Archivist.Interfaces.IFormat.CanRead(string)
+  fullName: Archivist.Interfaces.IFormat.CanRead(string?)
   fullName.vb: Archivist.Interfaces.IFormat.CanRead(String)
-  nameWithType: IFormat.CanRead(string)
+  nameWithType: IFormat.CanRead(string?)
   nameWithType.vb: IFormat.CanRead(String)
 - uid: Archivist.Interfaces.IFormat.CanRead*
   name: CanRead
@@ -938,19 +969,22 @@ references:
   fullName: Archivist.Interfaces.IFormat.CanRead
   nameWithType: IFormat.CanRead
 - uid: Archivist.Interfaces.IFormat.CanWrite(Archivist.Interfaces.IGenericFile)
-  name: CanWrite(IGenericFile)
+  name: CanWrite(IGenericFile?)
   href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_CanWrite_Archivist_Interfaces_IGenericFile_
   commentId: M:Archivist.Interfaces.IFormat.CanWrite(Archivist.Interfaces.IGenericFile)
-  fullName: Archivist.Interfaces.IFormat.CanWrite(Archivist.Interfaces.IGenericFile)
-  nameWithType: IFormat.CanWrite(IGenericFile)
+  name.vb: CanWrite(IGenericFile)
+  fullName: Archivist.Interfaces.IFormat.CanWrite(Archivist.Interfaces.IGenericFile?)
+  fullName.vb: Archivist.Interfaces.IFormat.CanWrite(Archivist.Interfaces.IGenericFile)
+  nameWithType: IFormat.CanWrite(IGenericFile?)
+  nameWithType.vb: IFormat.CanWrite(IGenericFile)
 - uid: Archivist.Interfaces.IFormat.CanWrite(System.String)
-  name: CanWrite(string)
+  name: CanWrite(string?)
   href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_CanWrite_System_String_
   commentId: M:Archivist.Interfaces.IFormat.CanWrite(System.String)
   name.vb: CanWrite(String)
-  fullName: Archivist.Interfaces.IFormat.CanWrite(string)
+  fullName: Archivist.Interfaces.IFormat.CanWrite(string?)
   fullName.vb: Archivist.Interfaces.IFormat.CanWrite(String)
-  nameWithType: IFormat.CanWrite(string)
+  nameWithType: IFormat.CanWrite(string?)
   nameWithType.vb: IFormat.CanWrite(String)
 - uid: Archivist.Interfaces.IFormat.CanWrite*
   name: CanWrite
@@ -1025,11 +1059,14 @@ references:
   fullName: Archivist.Interfaces.IFormat.Order
   nameWithType: IFormat.Order
 - uid: Archivist.Interfaces.IFormat.ReadAsync(System.IO.Stream)
-  name: ReadAsync(Stream)
+  name: ReadAsync(Stream?)
   href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_ReadAsync_System_IO_Stream_
   commentId: M:Archivist.Interfaces.IFormat.ReadAsync(System.IO.Stream)
-  fullName: Archivist.Interfaces.IFormat.ReadAsync(System.IO.Stream)
-  nameWithType: IFormat.ReadAsync(Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.Interfaces.IFormat.ReadAsync(System.IO.Stream?)
+  fullName.vb: Archivist.Interfaces.IFormat.ReadAsync(System.IO.Stream)
+  nameWithType: IFormat.ReadAsync(Stream?)
+  nameWithType.vb: IFormat.ReadAsync(Stream)
 - uid: Archivist.Interfaces.IFormat.ReadAsync*
   name: ReadAsync
   href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_ReadAsync_
@@ -1038,11 +1075,14 @@ references:
   fullName: Archivist.Interfaces.IFormat.ReadAsync
   nameWithType: IFormat.ReadAsync
 - uid: Archivist.Interfaces.IFormat.WriteAsync(System.IO.Stream,Archivist.Interfaces.IGenericFile)
-  name: WriteAsync(Stream, IGenericFile)
+  name: WriteAsync(Stream?, IGenericFile?)
   href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_WriteAsync_System_IO_Stream_Archivist_Interfaces_IGenericFile_
   commentId: M:Archivist.Interfaces.IFormat.WriteAsync(System.IO.Stream,Archivist.Interfaces.IGenericFile)
-  fullName: Archivist.Interfaces.IFormat.WriteAsync(System.IO.Stream, Archivist.Interfaces.IGenericFile)
-  nameWithType: IFormat.WriteAsync(Stream, IGenericFile)
+  name.vb: WriteAsync(Stream, IGenericFile)
+  fullName: Archivist.Interfaces.IFormat.WriteAsync(System.IO.Stream?, Archivist.Interfaces.IGenericFile?)
+  fullName.vb: Archivist.Interfaces.IFormat.WriteAsync(System.IO.Stream, Archivist.Interfaces.IGenericFile)
+  nameWithType: IFormat.WriteAsync(Stream?, IGenericFile?)
+  nameWithType.vb: IFormat.WriteAsync(Stream, IGenericFile)
 - uid: Archivist.Interfaces.IFormat.WriteAsync*
   name: WriteAsync
   href: api/Archivist.Interfaces.IFormat.html#Archivist_Interfaces_IFormat_WriteAsync_
@@ -1057,11 +1097,14 @@ references:
   fullName: Archivist.Interfaces.IFormatReader
   nameWithType: IFormatReader
 - uid: Archivist.Interfaces.IFormatReader.CanRead(System.IO.Stream)
-  name: CanRead(Stream)
+  name: CanRead(Stream?)
   href: api/Archivist.Interfaces.IFormatReader.html#Archivist_Interfaces_IFormatReader_CanRead_System_IO_Stream_
   commentId: M:Archivist.Interfaces.IFormatReader.CanRead(System.IO.Stream)
-  fullName: Archivist.Interfaces.IFormatReader.CanRead(System.IO.Stream)
-  nameWithType: IFormatReader.CanRead(Stream)
+  name.vb: CanRead(Stream)
+  fullName: Archivist.Interfaces.IFormatReader.CanRead(System.IO.Stream?)
+  fullName.vb: Archivist.Interfaces.IFormatReader.CanRead(System.IO.Stream)
+  nameWithType: IFormatReader.CanRead(Stream?)
+  nameWithType.vb: IFormatReader.CanRead(Stream)
 - uid: Archivist.Interfaces.IFormatReader.CanRead*
   name: CanRead
   href: api/Archivist.Interfaces.IFormatReader.html#Archivist_Interfaces_IFormatReader_CanRead_
@@ -1083,11 +1126,14 @@ references:
   fullName: Archivist.Interfaces.IFormatReader.HeaderInfo
   nameWithType: IFormatReader.HeaderInfo
 - uid: Archivist.Interfaces.IFormatReader.ReadAsync(System.IO.Stream)
-  name: ReadAsync(Stream)
+  name: ReadAsync(Stream?)
   href: api/Archivist.Interfaces.IFormatReader.html#Archivist_Interfaces_IFormatReader_ReadAsync_System_IO_Stream_
   commentId: M:Archivist.Interfaces.IFormatReader.ReadAsync(System.IO.Stream)
-  fullName: Archivist.Interfaces.IFormatReader.ReadAsync(System.IO.Stream)
-  nameWithType: IFormatReader.ReadAsync(Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.Interfaces.IFormatReader.ReadAsync(System.IO.Stream?)
+  fullName.vb: Archivist.Interfaces.IFormatReader.ReadAsync(System.IO.Stream)
+  nameWithType: IFormatReader.ReadAsync(Stream?)
+  nameWithType.vb: IFormatReader.ReadAsync(Stream)
 - uid: Archivist.Interfaces.IFormatReader.ReadAsync*
   name: ReadAsync
   href: api/Archivist.Interfaces.IFormatReader.html#Archivist_Interfaces_IFormatReader_ReadAsync_
@@ -1102,11 +1148,14 @@ references:
   fullName: Archivist.Interfaces.IFormatWriter
   nameWithType: IFormatWriter
 - uid: Archivist.Interfaces.IFormatWriter.CanWrite(Archivist.Interfaces.IGenericFile)
-  name: CanWrite(IGenericFile)
+  name: CanWrite(IGenericFile?)
   href: api/Archivist.Interfaces.IFormatWriter.html#Archivist_Interfaces_IFormatWriter_CanWrite_Archivist_Interfaces_IGenericFile_
   commentId: M:Archivist.Interfaces.IFormatWriter.CanWrite(Archivist.Interfaces.IGenericFile)
-  fullName: Archivist.Interfaces.IFormatWriter.CanWrite(Archivist.Interfaces.IGenericFile)
-  nameWithType: IFormatWriter.CanWrite(IGenericFile)
+  name.vb: CanWrite(IGenericFile)
+  fullName: Archivist.Interfaces.IFormatWriter.CanWrite(Archivist.Interfaces.IGenericFile?)
+  fullName.vb: Archivist.Interfaces.IFormatWriter.CanWrite(Archivist.Interfaces.IGenericFile)
+  nameWithType: IFormatWriter.CanWrite(IGenericFile?)
+  nameWithType.vb: IFormatWriter.CanWrite(IGenericFile)
 - uid: Archivist.Interfaces.IFormatWriter.CanWrite*
   name: CanWrite
   href: api/Archivist.Interfaces.IFormatWriter.html#Archivist_Interfaces_IFormatWriter_CanWrite_
@@ -1115,11 +1164,14 @@ references:
   fullName: Archivist.Interfaces.IFormatWriter.CanWrite
   nameWithType: IFormatWriter.CanWrite
 - uid: Archivist.Interfaces.IFormatWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  name: WriteAsync(IGenericFile, Stream)
+  name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.Interfaces.IFormatWriter.html#Archivist_Interfaces_IFormatWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
   commentId: M:Archivist.Interfaces.IFormatWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  fullName: Archivist.Interfaces.IFormatWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
-  nameWithType: IFormatWriter.WriteAsync(IGenericFile, Stream)
+  name.vb: WriteAsync(IGenericFile, Stream)
+  fullName: Archivist.Interfaces.IFormatWriter.WriteAsync(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.Interfaces.IFormatWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: IFormatWriter.WriteAsync(IGenericFile?, Stream?)
+  nameWithType.vb: IFormatWriter.WriteAsync(IGenericFile, Stream)
 - uid: Archivist.Interfaces.IFormatWriter.WriteAsync*
   name: WriteAsync
   href: api/Archivist.Interfaces.IFormatWriter.html#Archivist_Interfaces_IFormatWriter_WriteAsync_

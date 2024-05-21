@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class TextWriter | Archivist API Reference ">
       
-      
+      <meta name="description" content="Represents a text writer for the Txt format.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_Txt_TextWriter" data-uid="Archivist.Formats.Txt.TextWriter" class="text-break">
-Class TextWriter  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Txt/TextWriter.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class TextWriter  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Txt/TextWriter.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class TextWriter  <a class="header-action link-secondary" title="View source" hr
   <dl><dt>Assembly</dt><dd>Archivist.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a text writer for the Txt format.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -161,27 +162,30 @@ Class TextWriter  <a class="header-action link-secondary" title="View source" hr
   <a id="Archivist_Formats_Txt_TextWriter_CanWrite_" data-uid="Archivist.Formats.Txt.TextWriter.CanWrite*"></a>
 
   <h3 id="Archivist_Formats_Txt_TextWriter_CanWrite_Archivist_Interfaces_IGenericFile_" data-uid="Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile)">
-  CanWrite(IGenericFile)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Txt/TextWriter.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  CanWrite(IGenericFile?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Txt/TextWriter.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines if the TextWriter can write the specified file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanWrite(IGenericFile file)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool CanWrite(IGenericFile? file)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>file</code> <a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a></dt>
-    <dd></dd>
+    <dd><p>The file to be written.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>True if the TextWriter can write the file; otherwise, false.</p>
+</dd>
   </dl>
 
 
@@ -197,29 +201,33 @@ Class TextWriter  <a class="header-action link-secondary" title="View source" hr
   <a id="Archivist_Formats_Txt_TextWriter_WriteAsync_" data-uid="Archivist.Formats.Txt.TextWriter.WriteAsync*"></a>
 
   <h3 id="Archivist_Formats_Txt_TextWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_" data-uid="Archivist.Formats.Txt.TextWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)">
-  WriteAsync(IGenericFile, Stream)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Txt/TextWriter.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  WriteAsync(IGenericFile?, Stream?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Txt/TextWriter.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the content of the specified file to the provided stream asynchronously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; WriteAsync(IGenericFile file, Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; WriteAsync(IGenericFile? file, Stream? stream)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>file</code> <a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a></dt>
-    <dd></dd>
+    <dd><p>The file to be written.</p>
+</dd>
     <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd></dd>
+    <dd><p>The stream to write the file content to.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>True if the file was written successfully; otherwise, false.</p>
+</dd>
   </dl>
 
 
@@ -236,7 +244,7 @@ Class TextWriter  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Txt/TextWriter.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Txt/TextWriter.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

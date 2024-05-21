@@ -124,7 +124,7 @@ Interface IFormatWriter  <a class="header-action link-secondary" title="View sou
   <a id="Archivist_Interfaces_IFormatWriter_CanWrite_" data-uid="Archivist.Interfaces.IFormatWriter.CanWrite*"></a>
 
   <h3 id="Archivist_Interfaces_IFormatWriter_CanWrite_Archivist_Interfaces_IGenericFile_" data-uid="Archivist.Interfaces.IFormatWriter.CanWrite(Archivist.Interfaces.IGenericFile)">
-  CanWrite(IGenericFile)
+  CanWrite(IGenericFile?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormatWriter.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -133,7 +133,7 @@ Interface IFormatWriter  <a class="header-action link-secondary" title="View sou
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool CanWrite(IGenericFile file)</code></pre>
+    <pre><code class="lang-csharp hljs">bool CanWrite(IGenericFile? file)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -163,7 +163,7 @@ Interface IFormatWriter  <a class="header-action link-secondary" title="View sou
   <a id="Archivist_Interfaces_IFormatWriter_WriteAsync_" data-uid="Archivist.Interfaces.IFormatWriter.WriteAsync*"></a>
 
   <h3 id="Archivist_Interfaces_IFormatWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_" data-uid="Archivist.Interfaces.IFormatWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)">
-  WriteAsync(IGenericFile, Stream)
+  WriteAsync(IGenericFile?, Stream?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Interfaces/IFormatWriter.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -172,7 +172,7 @@ Interface IFormatWriter  <a class="header-action link-secondary" title="View sou
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; WriteAsync(IGenericFile file, Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; WriteAsync(IGenericFile? file, Stream? stream)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
