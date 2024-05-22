@@ -62,6 +62,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.Card.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.Card.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.CardField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.CardField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.CardFieldParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.CardFieldParameter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.DataTypes.Text.yml",
       "output": {
         ".html": {
@@ -76,6 +106,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.DataTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Enums.CommonCardFields.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Enums.CommonCardFields.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Enums.html"
         }
       },
       "version": ""
@@ -146,6 +196,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.Formats.Txt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.VCard.VCardFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.VCard.VCardFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.VCard.VCardReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.VCard.VCardReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.VCard.VCardWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.VCard.VCardWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.VCard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.VCard.html"
         }
       },
       "version": ""

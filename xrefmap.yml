@@ -620,12 +620,500 @@ references:
   commentId: N:Archivist.DataTypes
   fullName: Archivist.DataTypes
   nameWithType: Archivist.DataTypes
+- uid: Archivist.DataTypes.Card
+  name: Card
+  href: api/Archivist.DataTypes.Card.html
+  commentId: T:Archivist.DataTypes.Card
+  fullName: Archivist.DataTypes.Card
+  nameWithType: Card
+- uid: Archivist.DataTypes.Card.CompareTo(Archivist.DataTypes.Card)
+  name: CompareTo(Card?)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_CompareTo_Archivist_DataTypes_Card_
+  commentId: M:Archivist.DataTypes.Card.CompareTo(Archivist.DataTypes.Card)
+  name.vb: CompareTo(Card)
+  fullName: Archivist.DataTypes.Card.CompareTo(Archivist.DataTypes.Card?)
+  fullName.vb: Archivist.DataTypes.Card.CompareTo(Archivist.DataTypes.Card)
+  nameWithType: Card.CompareTo(Card?)
+  nameWithType.vb: Card.CompareTo(Card)
+- uid: Archivist.DataTypes.Card.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_CompareTo_
+  commentId: Overload:Archivist.DataTypes.Card.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.CompareTo
+  nameWithType: Card.CompareTo
+- uid: Archivist.DataTypes.Card.Content
+  name: Content
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Content
+  commentId: P:Archivist.DataTypes.Card.Content
+  fullName: Archivist.DataTypes.Card.Content
+  nameWithType: Card.Content
+- uid: Archivist.DataTypes.Card.Content*
+  name: Content
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Content_
+  commentId: Overload:Archivist.DataTypes.Card.Content
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Content
+  nameWithType: Card.Content
+- uid: Archivist.DataTypes.Card.Count
+  name: Count
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Count
+  commentId: P:Archivist.DataTypes.Card.Count
+  fullName: Archivist.DataTypes.Card.Count
+  nameWithType: Card.Count
+- uid: Archivist.DataTypes.Card.Count*
+  name: Count
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Count_
+  commentId: Overload:Archivist.DataTypes.Card.Count
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Count
+  nameWithType: Card.Count
+- uid: Archivist.DataTypes.Card.Equals(Archivist.DataTypes.Card)
+  name: Equals(Card?)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Equals_Archivist_DataTypes_Card_
+  commentId: M:Archivist.DataTypes.Card.Equals(Archivist.DataTypes.Card)
+  name.vb: Equals(Card)
+  fullName: Archivist.DataTypes.Card.Equals(Archivist.DataTypes.Card?)
+  fullName.vb: Archivist.DataTypes.Card.Equals(Archivist.DataTypes.Card)
+  nameWithType: Card.Equals(Card?)
+  nameWithType.vb: Card.Equals(Card)
+- uid: Archivist.DataTypes.Card.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.Card.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.Card.Equals(object?)
+  fullName.vb: Archivist.DataTypes.Card.Equals(Object)
+  nameWithType: Card.Equals(object?)
+  nameWithType.vb: Card.Equals(Object)
+- uid: Archivist.DataTypes.Card.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Equals_
+  commentId: Overload:Archivist.DataTypes.Card.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Equals
+  nameWithType: Card.Equals
+- uid: Archivist.DataTypes.Card.Fields
+  name: Fields
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Fields
+  commentId: P:Archivist.DataTypes.Card.Fields
+  fullName: Archivist.DataTypes.Card.Fields
+  nameWithType: Card.Fields
+- uid: Archivist.DataTypes.Card.Fields*
+  name: Fields
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Fields_
+  commentId: Overload:Archivist.DataTypes.Card.Fields
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Fields
+  nameWithType: Card.Fields
+- uid: Archivist.DataTypes.Card.FirstName
+  name: FirstName
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_FirstName
+  commentId: P:Archivist.DataTypes.Card.FirstName
+  fullName: Archivist.DataTypes.Card.FirstName
+  nameWithType: Card.FirstName
+- uid: Archivist.DataTypes.Card.FirstName*
+  name: FirstName
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_FirstName_
+  commentId: Overload:Archivist.DataTypes.Card.FirstName
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.FirstName
+  nameWithType: Card.FirstName
+- uid: Archivist.DataTypes.Card.GetEnumerator
+  name: GetEnumerator()
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_GetEnumerator
+  commentId: M:Archivist.DataTypes.Card.GetEnumerator
+  fullName: Archivist.DataTypes.Card.GetEnumerator()
+  nameWithType: Card.GetEnumerator()
+- uid: Archivist.DataTypes.Card.GetEnumerator*
+  name: GetEnumerator
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_GetEnumerator_
+  commentId: Overload:Archivist.DataTypes.Card.GetEnumerator
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.GetEnumerator
+  nameWithType: Card.GetEnumerator
+- uid: Archivist.DataTypes.Card.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_GetHashCode
+  commentId: M:Archivist.DataTypes.Card.GetHashCode
+  fullName: Archivist.DataTypes.Card.GetHashCode()
+  nameWithType: Card.GetHashCode()
+- uid: Archivist.DataTypes.Card.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.Card.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.GetHashCode
+  nameWithType: Card.GetHashCode
+- uid: Archivist.DataTypes.Card.Item(System.Int32)
+  name: this[int]
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Item_System_Int32_
+  commentId: P:Archivist.DataTypes.Card.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: Archivist.DataTypes.Card.this[int]
+  fullName.vb: Archivist.DataTypes.Card.this[](Integer)
+  nameWithType: Card.this[int]
+  nameWithType.vb: Card.this[](Integer)
+- uid: Archivist.DataTypes.Card.Item(System.String)
+  name: this[string]
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Item_System_String_
+  commentId: P:Archivist.DataTypes.Card.Item(System.String)
+  name.vb: this[](String)
+  fullName: Archivist.DataTypes.Card.this[string]
+  fullName.vb: Archivist.DataTypes.Card.this[](String)
+  nameWithType: Card.this[string]
+  nameWithType.vb: Card.this[](String)
+- uid: Archivist.DataTypes.Card.Item(System.String,System.String)
+  name: this[string, string?]
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Item_System_String_System_String_
+  commentId: P:Archivist.DataTypes.Card.Item(System.String,System.String)
+  name.vb: this[](String, String)
+  fullName: Archivist.DataTypes.Card.this[string, string?]
+  fullName.vb: Archivist.DataTypes.Card.this[](String, String)
+  nameWithType: Card.this[string, string?]
+  nameWithType.vb: Card.this[](String, String)
+- uid: Archivist.DataTypes.Card.Item*
+  name: this
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Item_
+  commentId: Overload:Archivist.DataTypes.Card.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: Archivist.DataTypes.Card.this
+  fullName.vb: Archivist.DataTypes.Card.this[]
+  nameWithType: Card.this
+  nameWithType.vb: Card.this[]
+- uid: Archivist.DataTypes.Card.LastName
+  name: LastName
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_LastName
+  commentId: P:Archivist.DataTypes.Card.LastName
+  fullName: Archivist.DataTypes.Card.LastName
+  nameWithType: Card.LastName
+- uid: Archivist.DataTypes.Card.LastName*
+  name: LastName
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_LastName_
+  commentId: Overload:Archivist.DataTypes.Card.LastName
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.LastName
+  nameWithType: Card.LastName
+- uid: Archivist.DataTypes.Card.MiddleName
+  name: MiddleName
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_MiddleName
+  commentId: P:Archivist.DataTypes.Card.MiddleName
+  fullName: Archivist.DataTypes.Card.MiddleName
+  nameWithType: Card.MiddleName
+- uid: Archivist.DataTypes.Card.MiddleName*
+  name: MiddleName
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_MiddleName_
+  commentId: Overload:Archivist.DataTypes.Card.MiddleName
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.MiddleName
+  nameWithType: Card.MiddleName
+- uid: Archivist.DataTypes.Card.Prefix
+  name: Prefix
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Prefix
+  commentId: P:Archivist.DataTypes.Card.Prefix
+  fullName: Archivist.DataTypes.Card.Prefix
+  nameWithType: Card.Prefix
+- uid: Archivist.DataTypes.Card.Prefix*
+  name: Prefix
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Prefix_
+  commentId: Overload:Archivist.DataTypes.Card.Prefix
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Prefix
+  nameWithType: Card.Prefix
+- uid: Archivist.DataTypes.Card.Suffix
+  name: Suffix
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Suffix
+  commentId: P:Archivist.DataTypes.Card.Suffix
+  fullName: Archivist.DataTypes.Card.Suffix
+  nameWithType: Card.Suffix
+- uid: Archivist.DataTypes.Card.Suffix*
+  name: Suffix
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Suffix_
+  commentId: Overload:Archivist.DataTypes.Card.Suffix
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Suffix
+  nameWithType: Card.Suffix
+- uid: Archivist.DataTypes.Card.op_Equality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name: operator ==(Card, Card)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Equality_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
+  commentId: M:Archivist.DataTypes.Card.op_Equality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name.vb: =(Card, Card)
+  fullName: Archivist.DataTypes.Card.operator ==(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName.vb: Archivist.DataTypes.Card.=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  nameWithType: Card.operator ==(Card, Card)
+  nameWithType.vb: Card.=(Card, Card)
+- uid: Archivist.DataTypes.Card.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Equality_
+  commentId: Overload:Archivist.DataTypes.Card.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.Card.operator ==
+  fullName.vb: Archivist.DataTypes.Card.=
+  nameWithType: Card.operator ==
+  nameWithType.vb: Card.=
+- uid: Archivist.DataTypes.Card.op_GreaterThan(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name: operator >(Card, Card)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_GreaterThan_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
+  commentId: M:Archivist.DataTypes.Card.op_GreaterThan(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name.vb: '>(Card, Card)'
+  fullName: Archivist.DataTypes.Card.operator >(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName.vb: Archivist.DataTypes.Card.>(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  nameWithType: Card.operator >(Card, Card)
+  nameWithType.vb: Card.>(Card, Card)
+- uid: Archivist.DataTypes.Card.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.Card.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.Card.operator >
+  fullName.vb: Archivist.DataTypes.Card.>
+  nameWithType: Card.operator >
+  nameWithType.vb: Card.>
+- uid: Archivist.DataTypes.Card.op_GreaterThanOrEqual(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name: operator >=(Card, Card)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_GreaterThanOrEqual_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
+  commentId: M:Archivist.DataTypes.Card.op_GreaterThanOrEqual(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name.vb: '>=(Card, Card)'
+  fullName: Archivist.DataTypes.Card.operator >=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName.vb: Archivist.DataTypes.Card.>=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  nameWithType: Card.operator >=(Card, Card)
+  nameWithType.vb: Card.>=(Card, Card)
+- uid: Archivist.DataTypes.Card.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Card.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.Card.operator >=
+  fullName.vb: Archivist.DataTypes.Card.>=
+  nameWithType: Card.operator >=
+  nameWithType.vb: Card.>=
+- uid: Archivist.DataTypes.Card.op_Inequality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name: operator !=(Card, Card)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Inequality_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
+  commentId: M:Archivist.DataTypes.Card.op_Inequality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name.vb: <>(Card, Card)
+  fullName: Archivist.DataTypes.Card.operator !=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName.vb: Archivist.DataTypes.Card.<>(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  nameWithType: Card.operator !=(Card, Card)
+  nameWithType.vb: Card.<>(Card, Card)
+- uid: Archivist.DataTypes.Card.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.Card.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.Card.operator !=
+  fullName.vb: Archivist.DataTypes.Card.<>
+  nameWithType: Card.operator !=
+  nameWithType.vb: Card.<>
+- uid: Archivist.DataTypes.Card.op_LessThan(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name: operator <(Card, Card)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_LessThan_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
+  commentId: M:Archivist.DataTypes.Card.op_LessThan(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name.vb: <(Card, Card)
+  fullName: Archivist.DataTypes.Card.operator <(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName.vb: Archivist.DataTypes.Card.<(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  nameWithType: Card.operator <(Card, Card)
+  nameWithType.vb: Card.<(Card, Card)
+- uid: Archivist.DataTypes.Card.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.Card.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.Card.operator <
+  fullName.vb: Archivist.DataTypes.Card.<
+  nameWithType: Card.operator <
+  nameWithType.vb: Card.<
+- uid: Archivist.DataTypes.Card.op_LessThanOrEqual(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name: operator <=(Card, Card)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_LessThanOrEqual_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
+  commentId: M:Archivist.DataTypes.Card.op_LessThanOrEqual(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
+  name.vb: <=(Card, Card)
+  fullName: Archivist.DataTypes.Card.operator <=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName.vb: Archivist.DataTypes.Card.<=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  nameWithType: Card.operator <=(Card, Card)
+  nameWithType.vb: Card.<=(Card, Card)
+- uid: Archivist.DataTypes.Card.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Card.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.Card.operator <=
+  fullName.vb: Archivist.DataTypes.Card.<=
+  nameWithType: Card.operator <=
+  nameWithType.vb: Card.<=
+- uid: Archivist.DataTypes.CardField
+  name: CardField
+  href: api/Archivist.DataTypes.CardField.html
+  commentId: T:Archivist.DataTypes.CardField
+  fullName: Archivist.DataTypes.CardField
+  nameWithType: CardField
+- uid: Archivist.DataTypes.CardField.#ctor(System.String,System.Collections.Generic.IEnumerable{Archivist.DataTypes.CardFieldParameter},System.String)
+  name: CardField(string, IEnumerable<CardFieldParameter>?, string?)
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField__ctor_System_String_System_Collections_Generic_IEnumerable_Archivist_DataTypes_CardFieldParameter__System_String_
+  commentId: M:Archivist.DataTypes.CardField.#ctor(System.String,System.Collections.Generic.IEnumerable{Archivist.DataTypes.CardFieldParameter},System.String)
+  name.vb: New(String, IEnumerable(Of CardFieldParameter), String)
+  fullName: Archivist.DataTypes.CardField.CardField(string, System.Collections.Generic.IEnumerable<Archivist.DataTypes.CardFieldParameter>?, string?)
+  fullName.vb: Archivist.DataTypes.CardField.New(String, System.Collections.Generic.IEnumerable(Of Archivist.DataTypes.CardFieldParameter), String)
+  nameWithType: CardField.CardField(string, IEnumerable<CardFieldParameter>?, string?)
+  nameWithType.vb: CardField.New(String, IEnumerable(Of CardFieldParameter), String)
+- uid: Archivist.DataTypes.CardField.#ctor*
+  name: CardField
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField__ctor_
+  commentId: Overload:Archivist.DataTypes.CardField.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.CardField.CardField
+  fullName.vb: Archivist.DataTypes.CardField.New
+  nameWithType: CardField.CardField
+  nameWithType.vb: CardField.New
+- uid: Archivist.DataTypes.CardField.Parameters
+  name: Parameters
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_Parameters
+  commentId: P:Archivist.DataTypes.CardField.Parameters
+  fullName: Archivist.DataTypes.CardField.Parameters
+  nameWithType: CardField.Parameters
+- uid: Archivist.DataTypes.CardField.Parameters*
+  name: Parameters
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_Parameters_
+  commentId: Overload:Archivist.DataTypes.CardField.Parameters
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardField.Parameters
+  nameWithType: CardField.Parameters
+- uid: Archivist.DataTypes.CardField.Property
+  name: Property
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_Property
+  commentId: P:Archivist.DataTypes.CardField.Property
+  fullName: Archivist.DataTypes.CardField.Property
+  nameWithType: CardField.Property
+- uid: Archivist.DataTypes.CardField.Property*
+  name: Property
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_Property_
+  commentId: Overload:Archivist.DataTypes.CardField.Property
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardField.Property
+  nameWithType: CardField.Property
+- uid: Archivist.DataTypes.CardField.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_ToString
+  commentId: M:Archivist.DataTypes.CardField.ToString
+  fullName: Archivist.DataTypes.CardField.ToString()
+  nameWithType: CardField.ToString()
+- uid: Archivist.DataTypes.CardField.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_ToString_
+  commentId: Overload:Archivist.DataTypes.CardField.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardField.ToString
+  nameWithType: CardField.ToString
+- uid: Archivist.DataTypes.CardField.Value
+  name: Value
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_Value
+  commentId: P:Archivist.DataTypes.CardField.Value
+  fullName: Archivist.DataTypes.CardField.Value
+  nameWithType: CardField.Value
+- uid: Archivist.DataTypes.CardField.Value*
+  name: Value
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_Value_
+  commentId: Overload:Archivist.DataTypes.CardField.Value
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardField.Value
+  nameWithType: CardField.Value
+- uid: Archivist.DataTypes.CardFieldParameter
+  name: CardFieldParameter
+  href: api/Archivist.DataTypes.CardFieldParameter.html
+  commentId: T:Archivist.DataTypes.CardFieldParameter
+  fullName: Archivist.DataTypes.CardFieldParameter
+  nameWithType: CardFieldParameter
+- uid: Archivist.DataTypes.CardFieldParameter.#ctor(System.String,System.String)
+  name: CardFieldParameter(string?, string?)
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter__ctor_System_String_System_String_
+  commentId: M:Archivist.DataTypes.CardFieldParameter.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: Archivist.DataTypes.CardFieldParameter.CardFieldParameter(string?, string?)
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.New(String, String)
+  nameWithType: CardFieldParameter.CardFieldParameter(string?, string?)
+  nameWithType.vb: CardFieldParameter.New(String, String)
+- uid: Archivist.DataTypes.CardFieldParameter.#ctor*
+  name: CardFieldParameter
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter__ctor_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.CardFieldParameter.CardFieldParameter
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.New
+  nameWithType: CardFieldParameter.CardFieldParameter
+  nameWithType.vb: CardFieldParameter.New
+- uid: Archivist.DataTypes.CardFieldParameter.Name
+  name: Name
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_Name
+  commentId: P:Archivist.DataTypes.CardFieldParameter.Name
+  fullName: Archivist.DataTypes.CardFieldParameter.Name
+  nameWithType: CardFieldParameter.Name
+- uid: Archivist.DataTypes.CardFieldParameter.Name*
+  name: Name
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_Name_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.Name
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardFieldParameter.Name
+  nameWithType: CardFieldParameter.Name
+- uid: Archivist.DataTypes.CardFieldParameter.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_ToString
+  commentId: M:Archivist.DataTypes.CardFieldParameter.ToString
+  fullName: Archivist.DataTypes.CardFieldParameter.ToString()
+  nameWithType: CardFieldParameter.ToString()
+- uid: Archivist.DataTypes.CardFieldParameter.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_ToString_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardFieldParameter.ToString
+  nameWithType: CardFieldParameter.ToString
+- uid: Archivist.DataTypes.CardFieldParameter.Value
+  name: Value
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_Value
+  commentId: P:Archivist.DataTypes.CardFieldParameter.Value
+  fullName: Archivist.DataTypes.CardFieldParameter.Value
+  nameWithType: CardFieldParameter.Value
+- uid: Archivist.DataTypes.CardFieldParameter.Value*
+  name: Value
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_Value_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.Value
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardFieldParameter.Value
+  nameWithType: CardFieldParameter.Value
 - uid: Archivist.DataTypes.Text
   name: Text
   href: api/Archivist.DataTypes.Text.html
   commentId: T:Archivist.DataTypes.Text
   fullName: Archivist.DataTypes.Text
   nameWithType: Text
+- uid: Archivist.DataTypes.Text.#ctor(System.String,System.String)
+  name: Text(string?, string?)
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text__ctor_System_String_System_String_
+  commentId: M:Archivist.DataTypes.Text.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: Archivist.DataTypes.Text.Text(string?, string?)
+  fullName.vb: Archivist.DataTypes.Text.New(String, String)
+  nameWithType: Text.Text(string?, string?)
+  nameWithType.vb: Text.New(String, String)
+- uid: Archivist.DataTypes.Text.#ctor*
+  name: Text
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text__ctor_
+  commentId: Overload:Archivist.DataTypes.Text.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.Text.Text
+  fullName.vb: Archivist.DataTypes.Text.New
+  nameWithType: Text.Text
+  nameWithType.vb: Text.New
 - uid: Archivist.DataTypes.Text.CompareTo(Archivist.DataTypes.Text)
   name: CompareTo(Text?)
   href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_CompareTo_Archivist_DataTypes_Text_
@@ -671,6 +1159,411 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Text.Equals
   nameWithType: Text.Equals
+- uid: Archivist.DataTypes.Text.SetContent(System.String)
+  name: SetContent(string)
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_SetContent_System_String_
+  commentId: M:Archivist.DataTypes.Text.SetContent(System.String)
+  name.vb: SetContent(String)
+  fullName: Archivist.DataTypes.Text.SetContent(string)
+  fullName.vb: Archivist.DataTypes.Text.SetContent(String)
+  nameWithType: Text.SetContent(string)
+  nameWithType.vb: Text.SetContent(String)
+- uid: Archivist.DataTypes.Text.SetContent*
+  name: SetContent
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_SetContent_
+  commentId: Overload:Archivist.DataTypes.Text.SetContent
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Text.SetContent
+  nameWithType: Text.SetContent
+- uid: Archivist.Enums
+  name: Archivist.Enums
+  href: api/Archivist.Enums.html
+  commentId: N:Archivist.Enums
+  fullName: Archivist.Enums
+  nameWithType: Archivist.Enums
+- uid: Archivist.Enums.CommonCardFields
+  name: CommonCardFields
+  href: api/Archivist.Enums.CommonCardFields.html
+  commentId: T:Archivist.Enums.CommonCardFields
+  fullName: Archivist.Enums.CommonCardFields
+  nameWithType: CommonCardFields
+- uid: Archivist.Enums.CommonCardFields.Address
+  name: Address
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Address
+  commentId: P:Archivist.Enums.CommonCardFields.Address
+  fullName: Archivist.Enums.CommonCardFields.Address
+  nameWithType: CommonCardFields.Address
+- uid: Archivist.Enums.CommonCardFields.Address*
+  name: Address
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Address_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Address
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Address
+  nameWithType: CommonCardFields.Address
+- uid: Archivist.Enums.CommonCardFields.Anniversary
+  name: Anniversary
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Anniversary
+  commentId: P:Archivist.Enums.CommonCardFields.Anniversary
+  fullName: Archivist.Enums.CommonCardFields.Anniversary
+  nameWithType: CommonCardFields.Anniversary
+- uid: Archivist.Enums.CommonCardFields.Anniversary*
+  name: Anniversary
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Anniversary_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Anniversary
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Anniversary
+  nameWithType: CommonCardFields.Anniversary
+- uid: Archivist.Enums.CommonCardFields.Birthday
+  name: Birthday
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Birthday
+  commentId: P:Archivist.Enums.CommonCardFields.Birthday
+  fullName: Archivist.Enums.CommonCardFields.Birthday
+  nameWithType: CommonCardFields.Birthday
+- uid: Archivist.Enums.CommonCardFields.Birthday*
+  name: Birthday
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Birthday_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Birthday
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Birthday
+  nameWithType: CommonCardFields.Birthday
+- uid: Archivist.Enums.CommonCardFields.Birthplace
+  name: Birthplace
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Birthplace
+  commentId: P:Archivist.Enums.CommonCardFields.Birthplace
+  fullName: Archivist.Enums.CommonCardFields.Birthplace
+  nameWithType: CommonCardFields.Birthplace
+- uid: Archivist.Enums.CommonCardFields.Birthplace*
+  name: Birthplace
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Birthplace_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Birthplace
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Birthplace
+  nameWithType: CommonCardFields.Birthplace
+- uid: Archivist.Enums.CommonCardFields.Deathdate
+  name: Deathdate
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Deathdate
+  commentId: P:Archivist.Enums.CommonCardFields.Deathdate
+  fullName: Archivist.Enums.CommonCardFields.Deathdate
+  nameWithType: CommonCardFields.Deathdate
+- uid: Archivist.Enums.CommonCardFields.Deathdate*
+  name: Deathdate
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Deathdate_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Deathdate
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Deathdate
+  nameWithType: CommonCardFields.Deathdate
+- uid: Archivist.Enums.CommonCardFields.Deathplace
+  name: Deathplace
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Deathplace
+  commentId: P:Archivist.Enums.CommonCardFields.Deathplace
+  fullName: Archivist.Enums.CommonCardFields.Deathplace
+  nameWithType: CommonCardFields.Deathplace
+- uid: Archivist.Enums.CommonCardFields.Deathplace*
+  name: Deathplace
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Deathplace_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Deathplace
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Deathplace
+  nameWithType: CommonCardFields.Deathplace
+- uid: Archivist.Enums.CommonCardFields.Email
+  name: Email
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Email
+  commentId: P:Archivist.Enums.CommonCardFields.Email
+  fullName: Archivist.Enums.CommonCardFields.Email
+  nameWithType: CommonCardFields.Email
+- uid: Archivist.Enums.CommonCardFields.Email*
+  name: Email
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Email_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Email
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Email
+  nameWithType: CommonCardFields.Email
+- uid: Archivist.Enums.CommonCardFields.Expertise
+  name: Expertise
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Expertise
+  commentId: P:Archivist.Enums.CommonCardFields.Expertise
+  fullName: Archivist.Enums.CommonCardFields.Expertise
+  nameWithType: CommonCardFields.Expertise
+- uid: Archivist.Enums.CommonCardFields.Expertise*
+  name: Expertise
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Expertise_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Expertise
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Expertise
+  nameWithType: CommonCardFields.Expertise
+- uid: Archivist.Enums.CommonCardFields.FullName
+  name: FullName
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_FullName
+  commentId: P:Archivist.Enums.CommonCardFields.FullName
+  fullName: Archivist.Enums.CommonCardFields.FullName
+  nameWithType: CommonCardFields.FullName
+- uid: Archivist.Enums.CommonCardFields.FullName*
+  name: FullName
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_FullName_
+  commentId: Overload:Archivist.Enums.CommonCardFields.FullName
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.FullName
+  nameWithType: CommonCardFields.FullName
+- uid: Archivist.Enums.CommonCardFields.Gender
+  name: Gender
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Gender
+  commentId: P:Archivist.Enums.CommonCardFields.Gender
+  fullName: Archivist.Enums.CommonCardFields.Gender
+  nameWithType: CommonCardFields.Gender
+- uid: Archivist.Enums.CommonCardFields.Gender*
+  name: Gender
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Gender_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Gender
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Gender
+  nameWithType: CommonCardFields.Gender
+- uid: Archivist.Enums.CommonCardFields.Geo
+  name: Geo
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Geo
+  commentId: P:Archivist.Enums.CommonCardFields.Geo
+  fullName: Archivist.Enums.CommonCardFields.Geo
+  nameWithType: CommonCardFields.Geo
+- uid: Archivist.Enums.CommonCardFields.Geo*
+  name: Geo
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Geo_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Geo
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Geo
+  nameWithType: CommonCardFields.Geo
+- uid: Archivist.Enums.CommonCardFields.Hobby
+  name: Hobby
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Hobby
+  commentId: P:Archivist.Enums.CommonCardFields.Hobby
+  fullName: Archivist.Enums.CommonCardFields.Hobby
+  nameWithType: CommonCardFields.Hobby
+- uid: Archivist.Enums.CommonCardFields.Hobby*
+  name: Hobby
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Hobby_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Hobby
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Hobby
+  nameWithType: CommonCardFields.Hobby
+- uid: Archivist.Enums.CommonCardFields.IMPP
+  name: IMPP
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_IMPP
+  commentId: P:Archivist.Enums.CommonCardFields.IMPP
+  fullName: Archivist.Enums.CommonCardFields.IMPP
+  nameWithType: CommonCardFields.IMPP
+- uid: Archivist.Enums.CommonCardFields.IMPP*
+  name: IMPP
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_IMPP_
+  commentId: Overload:Archivist.Enums.CommonCardFields.IMPP
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.IMPP
+  nameWithType: CommonCardFields.IMPP
+- uid: Archivist.Enums.CommonCardFields.Interest
+  name: Interest
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Interest
+  commentId: P:Archivist.Enums.CommonCardFields.Interest
+  fullName: Archivist.Enums.CommonCardFields.Interest
+  nameWithType: CommonCardFields.Interest
+- uid: Archivist.Enums.CommonCardFields.Interest*
+  name: Interest
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Interest_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Interest
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Interest
+  nameWithType: CommonCardFields.Interest
+- uid: Archivist.Enums.CommonCardFields.Key
+  name: Key
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Key
+  commentId: P:Archivist.Enums.CommonCardFields.Key
+  fullName: Archivist.Enums.CommonCardFields.Key
+  nameWithType: CommonCardFields.Key
+- uid: Archivist.Enums.CommonCardFields.Key*
+  name: Key
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Key_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Key
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Key
+  nameWithType: CommonCardFields.Key
+- uid: Archivist.Enums.CommonCardFields.Label
+  name: Label
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Label
+  commentId: P:Archivist.Enums.CommonCardFields.Label
+  fullName: Archivist.Enums.CommonCardFields.Label
+  nameWithType: CommonCardFields.Label
+- uid: Archivist.Enums.CommonCardFields.Label*
+  name: Label
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Label_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Label
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Label
+  nameWithType: CommonCardFields.Label
+- uid: Archivist.Enums.CommonCardFields.Language
+  name: Language
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Language
+  commentId: P:Archivist.Enums.CommonCardFields.Language
+  fullName: Archivist.Enums.CommonCardFields.Language
+  nameWithType: CommonCardFields.Language
+- uid: Archivist.Enums.CommonCardFields.Language*
+  name: Language
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Language_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Language
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Language
+  nameWithType: CommonCardFields.Language
+- uid: Archivist.Enums.CommonCardFields.Logo
+  name: Logo
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Logo
+  commentId: P:Archivist.Enums.CommonCardFields.Logo
+  fullName: Archivist.Enums.CommonCardFields.Logo
+  nameWithType: CommonCardFields.Logo
+- uid: Archivist.Enums.CommonCardFields.Logo*
+  name: Logo
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Logo_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Logo
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Logo
+  nameWithType: CommonCardFields.Logo
+- uid: Archivist.Enums.CommonCardFields.Name
+  name: Name
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Name
+  commentId: P:Archivist.Enums.CommonCardFields.Name
+  fullName: Archivist.Enums.CommonCardFields.Name
+  nameWithType: CommonCardFields.Name
+- uid: Archivist.Enums.CommonCardFields.Name*
+  name: Name
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Name_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Name
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Name
+  nameWithType: CommonCardFields.Name
+- uid: Archivist.Enums.CommonCardFields.Nickname
+  name: Nickname
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Nickname
+  commentId: P:Archivist.Enums.CommonCardFields.Nickname
+  fullName: Archivist.Enums.CommonCardFields.Nickname
+  nameWithType: CommonCardFields.Nickname
+- uid: Archivist.Enums.CommonCardFields.Nickname*
+  name: Nickname
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Nickname_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Nickname
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Nickname
+  nameWithType: CommonCardFields.Nickname
+- uid: Archivist.Enums.CommonCardFields.Note
+  name: Note
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Note
+  commentId: P:Archivist.Enums.CommonCardFields.Note
+  fullName: Archivist.Enums.CommonCardFields.Note
+  nameWithType: CommonCardFields.Note
+- uid: Archivist.Enums.CommonCardFields.Note*
+  name: Note
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Note_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Note
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Note
+  nameWithType: CommonCardFields.Note
+- uid: Archivist.Enums.CommonCardFields.Organization
+  name: Organization
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Organization
+  commentId: P:Archivist.Enums.CommonCardFields.Organization
+  fullName: Archivist.Enums.CommonCardFields.Organization
+  nameWithType: CommonCardFields.Organization
+- uid: Archivist.Enums.CommonCardFields.Organization*
+  name: Organization
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Organization_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Organization
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Organization
+  nameWithType: CommonCardFields.Organization
+- uid: Archivist.Enums.CommonCardFields.Phone
+  name: Phone
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Phone
+  commentId: P:Archivist.Enums.CommonCardFields.Phone
+  fullName: Archivist.Enums.CommonCardFields.Phone
+  nameWithType: CommonCardFields.Phone
+- uid: Archivist.Enums.CommonCardFields.Phone*
+  name: Phone
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Phone_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Phone
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Phone
+  nameWithType: CommonCardFields.Phone
+- uid: Archivist.Enums.CommonCardFields.Photo
+  name: Photo
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Photo
+  commentId: P:Archivist.Enums.CommonCardFields.Photo
+  fullName: Archivist.Enums.CommonCardFields.Photo
+  nameWithType: CommonCardFields.Photo
+- uid: Archivist.Enums.CommonCardFields.Photo*
+  name: Photo
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Photo_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Photo
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Photo
+  nameWithType: CommonCardFields.Photo
+- uid: Archivist.Enums.CommonCardFields.Role
+  name: Role
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Role
+  commentId: P:Archivist.Enums.CommonCardFields.Role
+  fullName: Archivist.Enums.CommonCardFields.Role
+  nameWithType: CommonCardFields.Role
+- uid: Archivist.Enums.CommonCardFields.Role*
+  name: Role
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Role_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Role
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Role
+  nameWithType: CommonCardFields.Role
+- uid: Archivist.Enums.CommonCardFields.Sound
+  name: Sound
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Sound
+  commentId: P:Archivist.Enums.CommonCardFields.Sound
+  fullName: Archivist.Enums.CommonCardFields.Sound
+  nameWithType: CommonCardFields.Sound
+- uid: Archivist.Enums.CommonCardFields.Sound*
+  name: Sound
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Sound_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Sound
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Sound
+  nameWithType: CommonCardFields.Sound
+- uid: Archivist.Enums.CommonCardFields.TimeZone
+  name: TimeZone
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_TimeZone
+  commentId: P:Archivist.Enums.CommonCardFields.TimeZone
+  fullName: Archivist.Enums.CommonCardFields.TimeZone
+  nameWithType: CommonCardFields.TimeZone
+- uid: Archivist.Enums.CommonCardFields.TimeZone*
+  name: TimeZone
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_TimeZone_
+  commentId: Overload:Archivist.Enums.CommonCardFields.TimeZone
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.TimeZone
+  nameWithType: CommonCardFields.TimeZone
+- uid: Archivist.Enums.CommonCardFields.Title
+  name: Title
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Title
+  commentId: P:Archivist.Enums.CommonCardFields.Title
+  fullName: Archivist.Enums.CommonCardFields.Title
+  nameWithType: CommonCardFields.Title
+- uid: Archivist.Enums.CommonCardFields.Title*
+  name: Title
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_Title_
+  commentId: Overload:Archivist.Enums.CommonCardFields.Title
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.Title
+  nameWithType: CommonCardFields.Title
+- uid: Archivist.Enums.CommonCardFields.URL
+  name: URL
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_URL
+  commentId: P:Archivist.Enums.CommonCardFields.URL
+  fullName: Archivist.Enums.CommonCardFields.URL
+  nameWithType: CommonCardFields.URL
+- uid: Archivist.Enums.CommonCardFields.URL*
+  name: URL
+  href: api/Archivist.Enums.CommonCardFields.html#Archivist_Enums_CommonCardFields_URL_
+  commentId: Overload:Archivist.Enums.CommonCardFields.URL
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonCardFields.URL
+  nameWithType: CommonCardFields.URL
 - uid: Archivist.ExtensionMethods
   name: Archivist.ExtensionMethods
   href: api/Archivist.ExtensionMethods.html
@@ -899,22 +1792,6 @@ references:
   commentId: T:Archivist.Formats.Txt.TextWriter
   fullName: Archivist.Formats.Txt.TextWriter
   nameWithType: TextWriter
-- uid: Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile)
-  name: CanWrite(IGenericFile?)
-  href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_CanWrite_Archivist_Interfaces_IGenericFile_
-  commentId: M:Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile)
-  name.vb: CanWrite(IGenericFile)
-  fullName: Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile?)
-  fullName.vb: Archivist.Formats.Txt.TextWriter.CanWrite(Archivist.Interfaces.IGenericFile)
-  nameWithType: TextWriter.CanWrite(IGenericFile?)
-  nameWithType.vb: TextWriter.CanWrite(IGenericFile)
-- uid: Archivist.Formats.Txt.TextWriter.CanWrite*
-  name: CanWrite
-  href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_CanWrite_
-  commentId: Overload:Archivist.Formats.Txt.TextWriter.CanWrite
-  isSpec: "True"
-  fullName: Archivist.Formats.Txt.TextWriter.CanWrite
-  nameWithType: TextWriter.CanWrite
 - uid: Archivist.Formats.Txt.TextWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
   name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
@@ -931,6 +1808,133 @@ references:
   isSpec: "True"
   fullName: Archivist.Formats.Txt.TextWriter.WriteAsync
   nameWithType: TextWriter.WriteAsync
+- uid: Archivist.Formats.VCard
+  name: Archivist.Formats.VCard
+  href: api/Archivist.Formats.VCard.html
+  commentId: N:Archivist.Formats.VCard
+  fullName: Archivist.Formats.VCard
+  nameWithType: Archivist.Formats.VCard
+- uid: Archivist.Formats.VCard.VCardFormat
+  name: VCardFormat
+  href: api/Archivist.Formats.VCard.VCardFormat.html
+  commentId: T:Archivist.Formats.VCard.VCardFormat
+  fullName: Archivist.Formats.VCard.VCardFormat
+  nameWithType: VCardFormat
+- uid: Archivist.Formats.VCard.VCardFormat.#ctor
+  name: VCardFormat()
+  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat__ctor
+  commentId: M:Archivist.Formats.VCard.VCardFormat.#ctor
+  name.vb: New()
+  fullName: Archivist.Formats.VCard.VCardFormat.VCardFormat()
+  fullName.vb: Archivist.Formats.VCard.VCardFormat.New()
+  nameWithType: VCardFormat.VCardFormat()
+  nameWithType.vb: VCardFormat.New()
+- uid: Archivist.Formats.VCard.VCardFormat.#ctor*
+  name: VCardFormat
+  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat__ctor_
+  commentId: Overload:Archivist.Formats.VCard.VCardFormat.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.VCard.VCardFormat.VCardFormat
+  fullName.vb: Archivist.Formats.VCard.VCardFormat.New
+  nameWithType: VCardFormat.VCardFormat
+  nameWithType.vb: VCardFormat.New
+- uid: Archivist.Formats.VCard.VCardFormat.Extensions
+  name: Extensions
+  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat_Extensions
+  commentId: P:Archivist.Formats.VCard.VCardFormat.Extensions
+  fullName: Archivist.Formats.VCard.VCardFormat.Extensions
+  nameWithType: VCardFormat.Extensions
+- uid: Archivist.Formats.VCard.VCardFormat.Extensions*
+  name: Extensions
+  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat_Extensions_
+  commentId: Overload:Archivist.Formats.VCard.VCardFormat.Extensions
+  isSpec: "True"
+  fullName: Archivist.Formats.VCard.VCardFormat.Extensions
+  nameWithType: VCardFormat.Extensions
+- uid: Archivist.Formats.VCard.VCardFormat.MimeTypes
+  name: MimeTypes
+  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat_MimeTypes
+  commentId: P:Archivist.Formats.VCard.VCardFormat.MimeTypes
+  fullName: Archivist.Formats.VCard.VCardFormat.MimeTypes
+  nameWithType: VCardFormat.MimeTypes
+- uid: Archivist.Formats.VCard.VCardFormat.MimeTypes*
+  name: MimeTypes
+  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat_MimeTypes_
+  commentId: Overload:Archivist.Formats.VCard.VCardFormat.MimeTypes
+  isSpec: "True"
+  fullName: Archivist.Formats.VCard.VCardFormat.MimeTypes
+  nameWithType: VCardFormat.MimeTypes
+- uid: Archivist.Formats.VCard.VCardFormat.Order
+  name: Order
+  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat_Order
+  commentId: P:Archivist.Formats.VCard.VCardFormat.Order
+  fullName: Archivist.Formats.VCard.VCardFormat.Order
+  nameWithType: VCardFormat.Order
+- uid: Archivist.Formats.VCard.VCardFormat.Order*
+  name: Order
+  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat_Order_
+  commentId: Overload:Archivist.Formats.VCard.VCardFormat.Order
+  isSpec: "True"
+  fullName: Archivist.Formats.VCard.VCardFormat.Order
+  nameWithType: VCardFormat.Order
+- uid: Archivist.Formats.VCard.VCardReader
+  name: VCardReader
+  href: api/Archivist.Formats.VCard.VCardReader.html
+  commentId: T:Archivist.Formats.VCard.VCardReader
+  fullName: Archivist.Formats.VCard.VCardReader
+  nameWithType: VCardReader
+- uid: Archivist.Formats.VCard.VCardReader.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.Formats.VCard.VCardReader.html#Archivist_Formats_VCard_VCardReader_HeaderInfo
+  commentId: P:Archivist.Formats.VCard.VCardReader.HeaderInfo
+  fullName: Archivist.Formats.VCard.VCardReader.HeaderInfo
+  nameWithType: VCardReader.HeaderInfo
+- uid: Archivist.Formats.VCard.VCardReader.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.Formats.VCard.VCardReader.html#Archivist_Formats_VCard_VCardReader_HeaderInfo_
+  commentId: Overload:Archivist.Formats.VCard.VCardReader.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.Formats.VCard.VCardReader.HeaderInfo
+  nameWithType: VCardReader.HeaderInfo
+- uid: Archivist.Formats.VCard.VCardReader.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream?)
+  href: api/Archivist.Formats.VCard.VCardReader.html#Archivist_Formats_VCard_VCardReader_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.Formats.VCard.VCardReader.ReadAsync(System.IO.Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.Formats.VCard.VCardReader.ReadAsync(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.VCard.VCardReader.ReadAsync(System.IO.Stream)
+  nameWithType: VCardReader.ReadAsync(Stream?)
+  nameWithType.vb: VCardReader.ReadAsync(Stream)
+- uid: Archivist.Formats.VCard.VCardReader.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.Formats.VCard.VCardReader.html#Archivist_Formats_VCard_VCardReader_ReadAsync_
+  commentId: Overload:Archivist.Formats.VCard.VCardReader.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.VCard.VCardReader.ReadAsync
+  nameWithType: VCardReader.ReadAsync
+- uid: Archivist.Formats.VCard.VCardWriter
+  name: VCardWriter
+  href: api/Archivist.Formats.VCard.VCardWriter.html
+  commentId: T:Archivist.Formats.VCard.VCardWriter
+  fullName: Archivist.Formats.VCard.VCardWriter
+  nameWithType: VCardWriter
+- uid: Archivist.Formats.VCard.VCardWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: WriteAsync(IGenericFile?, Stream?)
+  href: api/Archivist.Formats.VCard.VCardWriter.html#Archivist_Formats_VCard_VCardWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.Formats.VCard.VCardWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name.vb: WriteAsync(IGenericFile, Stream)
+  fullName: Archivist.Formats.VCard.VCardWriter.WriteAsync(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.Formats.VCard.VCardWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: VCardWriter.WriteAsync(IGenericFile?, Stream?)
+  nameWithType.vb: VCardWriter.WriteAsync(IGenericFile, Stream)
+- uid: Archivist.Formats.VCard.VCardWriter.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.Formats.VCard.VCardWriter.html#Archivist_Formats_VCard_VCardWriter_WriteAsync_
+  commentId: Overload:Archivist.Formats.VCard.VCardWriter.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.VCard.VCardWriter.WriteAsync
+  nameWithType: VCardWriter.WriteAsync
 - uid: Archivist.Interfaces
   name: Archivist.Interfaces
   href: api/Archivist.Interfaces.html

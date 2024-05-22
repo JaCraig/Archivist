@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class WriterBaseClass | Archivist API Reference ">
       
-      
+      <meta name="description" content="Base class for format writers.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_BaseClasses_WriterBaseClass" data-uid="Archivist.BaseClasses.WriterBaseClass" class="text-break">
-Class WriterBaseClass  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/WriterBaseClass.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class WriterBaseClass  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/WriterBaseClass.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class WriterBaseClass  <a class="header-action link-secondary" title="View sourc
   <dl><dt>Assembly</dt><dd>Archivist.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Base class for format writers.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -122,6 +123,13 @@ Class WriterBaseClass  <a class="header-action link-secondary" title="View sourc
     </dd>
   </dl>
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Archivist.Formats.Txt.TextWriter.html">TextWriter</a></div>
+      <div><a class="xref" href="Archivist.Formats.VCard.VCardWriter.html">VCardWriter</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
@@ -162,26 +170,29 @@ Class WriterBaseClass  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Archivist_BaseClasses_WriterBaseClass_CanWrite_Archivist_Interfaces_IGenericFile_" data-uid="Archivist.BaseClasses.WriterBaseClass.CanWrite(Archivist.Interfaces.IGenericFile)">
   CanWrite(IGenericFile?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/WriterBaseClass.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/WriterBaseClass.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines if the writer can write the specified file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanWrite(IGenericFile? file)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool CanWrite(IGenericFile? file)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>file</code> <a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a></dt>
-    <dd></dd>
+    <dd><p>The file to be written.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p><code>true</code> if the writer can write the file; otherwise, <code>false</code>.</p>
+</dd>
   </dl>
 
 
@@ -198,28 +209,32 @@ Class WriterBaseClass  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Archivist_BaseClasses_WriterBaseClass_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_" data-uid="Archivist.BaseClasses.WriterBaseClass.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)">
   WriteAsync(IGenericFile?, Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/WriterBaseClass.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/WriterBaseClass.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Writes the specified file to the provided stream asynchronously.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; WriteAsync(IGenericFile? file, Stream? stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;bool&gt; WriteAsync(IGenericFile? file, Stream? stream)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>file</code> <a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a></dt>
-    <dd></dd>
+    <dd><p>The file to be written.</p>
+</dd>
     <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd></dd>
+    <dd><p>The stream to write the file to.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>A task representing the asynchronous write operation. The task result is <code>true</code> if the write operation is successful; otherwise, <code>false</code>.</p>
+</dd>
   </dl>
 
 
@@ -236,7 +251,7 @@ Class WriterBaseClass  <a class="header-action link-secondary" title="View sourc
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/WriterBaseClass.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/WriterBaseClass.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 
