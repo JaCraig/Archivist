@@ -6,13 +6,13 @@ namespace Archivist.Tests.DataTypes
 {
     public class TextTests : TestBaseClass<Text>
     {
-        private readonly Text _TestClass = new();
+        private readonly Text _TestClass = new("", "");
 
         [Fact]
         public void CanCallCompareTo()
         {
             // Arrange
-            var Other = new Text();
+            var Other = new Text("", "");
 
             // Act
             var Result = _TestClass.CompareTo(Other);
@@ -25,7 +25,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEquals()
         {
             // Arrange
-            var Other = new Text();
+            var Other = new Text("", "");
 
             // Act
             var Result = _TestClass.Equals(Other);
@@ -39,20 +39,18 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             const string TestValue = "TestValue304010722";
-
-            // Act
-            _TestClass.Content = TestValue;
+            var TestClass = new Text(TestValue, "");
 
             // Assert
-            Assert.Equal(TestValue, _TestClass.Content);
+            Assert.Equal(TestValue, TestClass.Content);
         }
 
         [Fact]
         public void CompareTo_OtherTextHasDifferentContent_ReturnsNegativeValue()
         {
             // Arrange
-            var Text = new Text { Content = "Sample text" };
-            var OtherText = new Text { Content = "Different text" };
+            var Text = new Text("Sample text", "");
+            var OtherText = new Text("Different text", "");
 
             // Act
             var Result = Text.CompareTo(OtherText);
@@ -65,8 +63,8 @@ namespace Archivist.Tests.DataTypes
         public void CompareTo_OtherTextHasSameContent_ReturnsZero()
         {
             // Arrange
-            var Text = new Text { Content = "Sample text" };
-            var OtherText = new Text { Content = "Sample text" };
+            var Text = new Text("Sample text", "");
+            var OtherText = new Text("Sample text", "");
 
             // Act
             var Result = Text.CompareTo(OtherText);
@@ -79,7 +77,7 @@ namespace Archivist.Tests.DataTypes
         public void CompareTo_OtherTextIsNull_ReturnsZero()
         {
             // Arrange
-            var Text = new Text();
+            var Text = new Text(null, null);
             var OtherText = (Text?)null;
 
             // Act
@@ -93,11 +91,11 @@ namespace Archivist.Tests.DataTypes
         public void Content_Set_Get_ReturnsSameValue()
         {
             // Arrange
-            var Text = new Text();
+            var Text = new Text("", "");
             const string ExpectedContent = "Sample text";
 
             // Act
-            Text.Content = ExpectedContent;
+            Text.SetContent(ExpectedContent);
             var ActualContent = Text.Content;
 
             // Assert
@@ -108,8 +106,8 @@ namespace Archivist.Tests.DataTypes
         public void Equals_OtherTextHasDifferentContent_ReturnsFalse()
         {
             // Arrange
-            var Text = new Text { Content = "Sample text" };
-            var OtherText = new Text { Content = "Different text" };
+            var Text = new Text("Sample text", "");
+            var OtherText = new Text("Different text", "");
 
             // Act
             var Result = Text.Equals(OtherText);
@@ -122,8 +120,8 @@ namespace Archivist.Tests.DataTypes
         public void Equals_OtherTextHasSameContent_ReturnsTrue()
         {
             // Arrange
-            var Text = new Text { Content = "Sample text" };
-            var OtherText = new Text { Content = "Sample text" };
+            var Text = new Text("Sample text", "");
+            var OtherText = new Text("Sample text", "");
 
             // Act
             var Result = Text.Equals(OtherText);
@@ -136,7 +134,7 @@ namespace Archivist.Tests.DataTypes
         public void Equals_OtherTextIsNull_ReturnsTrue()
         {
             // Arrange
-            var Text = new Text();
+            var Text = new Text(null, null);
             var OtherText = (Text?)null;
 
             // Act

@@ -92,7 +92,7 @@ namespace Archivist.Tests.Formats.Txt
             const string Title = "Hello, World Title!";
             var Format = new TextFormat();
             var Stream = new MemoryStream();
-            var FileObject = new Text { Content = Text, Title = Title };
+            var FileObject = new Text(Text, Title);
 
             // Act
             var Result = await Format.WriteAsync(Stream, FileObject);

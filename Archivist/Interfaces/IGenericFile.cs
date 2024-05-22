@@ -10,12 +10,12 @@ namespace Archivist.Interfaces
         /// <summary>
         /// Gets or sets the content of the file.
         /// </summary>
-        string? Content { get; set; }
+        string? Content { get; }
 
         /// <summary>
         /// Gets or sets the metadata associated with the file.
         /// </summary>
-        Dictionary<string, string> Metadata { get; set; }
+        Dictionary<string, string> Metadata { get; }
 
         /// <summary>
         /// Gets or sets the title of the file.

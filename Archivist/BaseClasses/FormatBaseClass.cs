@@ -72,7 +72,7 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="fileName">The name of the file.</param>
         /// <returns><c>true</c> if the format can read the file; otherwise, <c>false</c>.</returns>
-        public bool CanRead(string? fileName) => !string.IsNullOrEmpty(fileName) && Extensions.Any(x => fileName.EndsWith(x, StringComparison.Ordinal));
+        public bool CanRead(string? fileName) => !string.IsNullOrEmpty(fileName) && Extensions.Any(x => fileName.EndsWith(x, StringComparison.OrdinalIgnoreCase));
 
         /// <summary>
         /// Determines whether the format can read the specified stream.
@@ -86,7 +86,7 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="fileName">The name of the file.</param>
         /// <returns><c>true</c> if the format can write the file; otherwise, <c>false</c>.</returns>
-        public bool CanWrite(string? fileName) => !string.IsNullOrEmpty(fileName) && Extensions.Any(x => fileName.EndsWith(x, StringComparison.Ordinal));
+        public bool CanWrite(string? fileName) => !string.IsNullOrEmpty(fileName) && Extensions.Any(x => fileName.EndsWith(x, StringComparison.OrdinalIgnoreCase));
 
         /// <summary>
         /// Determines whether the format can write the specified file.

@@ -26,11 +26,7 @@ namespace Archivist.Formats.Txt
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             var Content = await GetDataAsync(stream).ConfigureAwait(false);
-            return new Text
-            {
-                Content = Content,
-                Title = Content.Left(30)
-            };
+            return new Text(Content, Content.Left(30));
         }
 
         /// <summary>

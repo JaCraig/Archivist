@@ -13,12 +13,12 @@ namespace Archivist.BaseClasses
         /// <summary>
         /// Gets or sets the content of the file.
         /// </summary>
-        public abstract string? Content { get; set; }
+        public abstract string? Content { get; protected set; }
 
         /// <summary>
         /// Gets or sets the metadata associated with the file.
         /// </summary>
-        public Dictionary<string, string> Metadata { get; set; } = new Dictionary<string, string>();
+        public Dictionary<string, string> Metadata { get; } = new Dictionary<string, string>();
 
         /// <summary>
         /// Gets or sets the title of the file.

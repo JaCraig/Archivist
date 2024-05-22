@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Enums;
 
 namespace Archivist.Formats.VCard
 {
@@ -28,6 +29,6 @@ namespace Archivist.Formats.VCard
         /// <summary>
         /// Gets the order of the VCard format in the list of supported formats.
         /// </summary>
-        public override int Order { get; }
+        public override int Order { get; } = DefaultFormatValues.Order;
     }
 }
