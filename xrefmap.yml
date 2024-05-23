@@ -835,13 +835,13 @@ references:
   fullName: Archivist.DataTypes.Card.Suffix
   nameWithType: Card.Suffix
 - uid: Archivist.DataTypes.Card.op_Equality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
-  name: operator ==(Card, Card)
+  name: operator ==(Card?, Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Equality_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
   commentId: M:Archivist.DataTypes.Card.op_Equality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
   name.vb: =(Card, Card)
-  fullName: Archivist.DataTypes.Card.operator ==(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName: Archivist.DataTypes.Card.operator ==(Archivist.DataTypes.Card?, Archivist.DataTypes.Card?)
   fullName.vb: Archivist.DataTypes.Card.=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
-  nameWithType: Card.operator ==(Card, Card)
+  nameWithType: Card.operator ==(Card?, Card?)
   nameWithType.vb: Card.=(Card, Card)
 - uid: Archivist.DataTypes.Card.op_Equality*
   name: operator ==
@@ -854,13 +854,13 @@ references:
   nameWithType: Card.operator ==
   nameWithType.vb: Card.=
 - uid: Archivist.DataTypes.Card.op_GreaterThan(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
-  name: operator >(Card, Card)
+  name: operator >(Card?, Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_GreaterThan_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
   commentId: M:Archivist.DataTypes.Card.op_GreaterThan(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
   name.vb: '>(Card, Card)'
-  fullName: Archivist.DataTypes.Card.operator >(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName: Archivist.DataTypes.Card.operator >(Archivist.DataTypes.Card?, Archivist.DataTypes.Card?)
   fullName.vb: Archivist.DataTypes.Card.>(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
-  nameWithType: Card.operator >(Card, Card)
+  nameWithType: Card.operator >(Card?, Card?)
   nameWithType.vb: Card.>(Card, Card)
 - uid: Archivist.DataTypes.Card.op_GreaterThan*
   name: operator >
@@ -873,13 +873,13 @@ references:
   nameWithType: Card.operator >
   nameWithType.vb: Card.>
 - uid: Archivist.DataTypes.Card.op_GreaterThanOrEqual(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
-  name: operator >=(Card, Card)
+  name: operator >=(Card?, Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_GreaterThanOrEqual_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
   commentId: M:Archivist.DataTypes.Card.op_GreaterThanOrEqual(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
   name.vb: '>=(Card, Card)'
-  fullName: Archivist.DataTypes.Card.operator >=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName: Archivist.DataTypes.Card.operator >=(Archivist.DataTypes.Card?, Archivist.DataTypes.Card?)
   fullName.vb: Archivist.DataTypes.Card.>=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
-  nameWithType: Card.operator >=(Card, Card)
+  nameWithType: Card.operator >=(Card?, Card?)
   nameWithType.vb: Card.>=(Card, Card)
 - uid: Archivist.DataTypes.Card.op_GreaterThanOrEqual*
   name: operator >=
@@ -892,13 +892,13 @@ references:
   nameWithType: Card.operator >=
   nameWithType.vb: Card.>=
 - uid: Archivist.DataTypes.Card.op_Inequality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
-  name: operator !=(Card, Card)
+  name: operator !=(Card?, Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Inequality_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
   commentId: M:Archivist.DataTypes.Card.op_Inequality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
   name.vb: <>(Card, Card)
-  fullName: Archivist.DataTypes.Card.operator !=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName: Archivist.DataTypes.Card.operator !=(Archivist.DataTypes.Card?, Archivist.DataTypes.Card?)
   fullName.vb: Archivist.DataTypes.Card.<>(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
-  nameWithType: Card.operator !=(Card, Card)
+  nameWithType: Card.operator !=(Card?, Card?)
   nameWithType.vb: Card.<>(Card, Card)
 - uid: Archivist.DataTypes.Card.op_Inequality*
   name: operator !=
@@ -911,13 +911,13 @@ references:
   nameWithType: Card.operator !=
   nameWithType.vb: Card.<>
 - uid: Archivist.DataTypes.Card.op_LessThan(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
-  name: operator <(Card, Card)
+  name: operator <(Card?, Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_LessThan_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
   commentId: M:Archivist.DataTypes.Card.op_LessThan(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
   name.vb: <(Card, Card)
-  fullName: Archivist.DataTypes.Card.operator <(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName: Archivist.DataTypes.Card.operator <(Archivist.DataTypes.Card?, Archivist.DataTypes.Card?)
   fullName.vb: Archivist.DataTypes.Card.<(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
-  nameWithType: Card.operator <(Card, Card)
+  nameWithType: Card.operator <(Card?, Card?)
   nameWithType.vb: Card.<(Card, Card)
 - uid: Archivist.DataTypes.Card.op_LessThan*
   name: operator <
@@ -930,13 +930,13 @@ references:
   nameWithType: Card.operator <
   nameWithType.vb: Card.<
 - uid: Archivist.DataTypes.Card.op_LessThanOrEqual(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
-  name: operator <=(Card, Card)
+  name: operator <=(Card?, Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_LessThanOrEqual_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
   commentId: M:Archivist.DataTypes.Card.op_LessThanOrEqual(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
   name.vb: <=(Card, Card)
-  fullName: Archivist.DataTypes.Card.operator <=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
+  fullName: Archivist.DataTypes.Card.operator <=(Archivist.DataTypes.Card?, Archivist.DataTypes.Card?)
   fullName.vb: Archivist.DataTypes.Card.<=(Archivist.DataTypes.Card, Archivist.DataTypes.Card)
-  nameWithType: Card.operator <=(Card, Card)
+  nameWithType: Card.operator <=(Card?, Card?)
   nameWithType.vb: Card.<=(Card, Card)
 - uid: Archivist.DataTypes.Card.op_LessThanOrEqual*
   name: operator <=
