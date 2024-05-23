@@ -626,6 +626,45 @@ references:
   commentId: T:Archivist.DataTypes.Card
   fullName: Archivist.DataTypes.Card
   nameWithType: Card
+- uid: Archivist.DataTypes.Card.Addresses
+  name: Addresses
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Addresses
+  commentId: P:Archivist.DataTypes.Card.Addresses
+  fullName: Archivist.DataTypes.Card.Addresses
+  nameWithType: Card.Addresses
+- uid: Archivist.DataTypes.Card.Addresses*
+  name: Addresses
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Addresses_
+  commentId: Overload:Archivist.DataTypes.Card.Addresses
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Addresses
+  nameWithType: Card.Addresses
+- uid: Archivist.DataTypes.Card.Anniversaries
+  name: Anniversaries
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Anniversaries
+  commentId: P:Archivist.DataTypes.Card.Anniversaries
+  fullName: Archivist.DataTypes.Card.Anniversaries
+  nameWithType: Card.Anniversaries
+- uid: Archivist.DataTypes.Card.Anniversaries*
+  name: Anniversaries
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Anniversaries_
+  commentId: Overload:Archivist.DataTypes.Card.Anniversaries
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Anniversaries
+  nameWithType: Card.Anniversaries
+- uid: Archivist.DataTypes.Card.Birthdays
+  name: Birthdays
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Birthdays
+  commentId: P:Archivist.DataTypes.Card.Birthdays
+  fullName: Archivist.DataTypes.Card.Birthdays
+  nameWithType: Card.Birthdays
+- uid: Archivist.DataTypes.Card.Birthdays*
+  name: Birthdays
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Birthdays_
+  commentId: Overload:Archivist.DataTypes.Card.Birthdays
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Birthdays
+  nameWithType: Card.Birthdays
 - uid: Archivist.DataTypes.Card.CompareTo(Archivist.DataTypes.Card)
   name: CompareTo(Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_CompareTo_Archivist_DataTypes_Card_
@@ -668,6 +707,19 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Card.Count
   nameWithType: Card.Count
+- uid: Archivist.DataTypes.Card.Emails
+  name: Emails
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Emails
+  commentId: P:Archivist.DataTypes.Card.Emails
+  fullName: Archivist.DataTypes.Card.Emails
+  nameWithType: Card.Emails
+- uid: Archivist.DataTypes.Card.Emails*
+  name: Emails
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Emails_
+  commentId: Overload:Archivist.DataTypes.Card.Emails
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Emails
+  nameWithType: Card.Emails
 - uid: Archivist.DataTypes.Card.Equals(Archivist.DataTypes.Card)
   name: Equals(Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Equals_Archivist_DataTypes_Card_
@@ -745,6 +797,19 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Card.GetHashCode
   nameWithType: Card.GetHashCode
+- uid: Archivist.DataTypes.Card.InstantMessengers
+  name: InstantMessengers
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_InstantMessengers
+  commentId: P:Archivist.DataTypes.Card.InstantMessengers
+  fullName: Archivist.DataTypes.Card.InstantMessengers
+  nameWithType: Card.InstantMessengers
+- uid: Archivist.DataTypes.Card.InstantMessengers*
+  name: InstantMessengers
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_InstantMessengers_
+  commentId: Overload:Archivist.DataTypes.Card.InstantMessengers
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.InstantMessengers
+  nameWithType: Card.InstantMessengers
 - uid: Archivist.DataTypes.Card.Item(System.Int32)
   name: this[int]
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Item_System_Int32_
@@ -782,6 +847,19 @@ references:
   fullName.vb: Archivist.DataTypes.Card.this[]
   nameWithType: Card.this
   nameWithType.vb: Card.this[]
+- uid: Archivist.DataTypes.Card.Languages
+  name: Languages
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Languages
+  commentId: P:Archivist.DataTypes.Card.Languages
+  fullName: Archivist.DataTypes.Card.Languages
+  nameWithType: Card.Languages
+- uid: Archivist.DataTypes.Card.Languages*
+  name: Languages
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Languages_
+  commentId: Overload:Archivist.DataTypes.Card.Languages
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Languages
+  nameWithType: Card.Languages
 - uid: Archivist.DataTypes.Card.LastName
   name: LastName
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_LastName
@@ -795,6 +873,19 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Card.LastName
   nameWithType: Card.LastName
+- uid: Archivist.DataTypes.Card.Logos
+  name: Logos
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Logos
+  commentId: P:Archivist.DataTypes.Card.Logos
+  fullName: Archivist.DataTypes.Card.Logos
+  nameWithType: Card.Logos
+- uid: Archivist.DataTypes.Card.Logos*
+  name: Logos
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Logos_
+  commentId: Overload:Archivist.DataTypes.Card.Logos
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Logos
+  nameWithType: Card.Logos
 - uid: Archivist.DataTypes.Card.MiddleName
   name: MiddleName
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_MiddleName
@@ -808,6 +899,71 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Card.MiddleName
   nameWithType: Card.MiddleName
+- uid: Archivist.DataTypes.Card.Nicknames
+  name: Nicknames
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Nicknames
+  commentId: P:Archivist.DataTypes.Card.Nicknames
+  fullName: Archivist.DataTypes.Card.Nicknames
+  nameWithType: Card.Nicknames
+- uid: Archivist.DataTypes.Card.Nicknames*
+  name: Nicknames
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Nicknames_
+  commentId: Overload:Archivist.DataTypes.Card.Nicknames
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Nicknames
+  nameWithType: Card.Nicknames
+- uid: Archivist.DataTypes.Card.Notes
+  name: Notes
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Notes
+  commentId: P:Archivist.DataTypes.Card.Notes
+  fullName: Archivist.DataTypes.Card.Notes
+  nameWithType: Card.Notes
+- uid: Archivist.DataTypes.Card.Notes*
+  name: Notes
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Notes_
+  commentId: Overload:Archivist.DataTypes.Card.Notes
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Notes
+  nameWithType: Card.Notes
+- uid: Archivist.DataTypes.Card.Organizations
+  name: Organizations
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Organizations
+  commentId: P:Archivist.DataTypes.Card.Organizations
+  fullName: Archivist.DataTypes.Card.Organizations
+  nameWithType: Card.Organizations
+- uid: Archivist.DataTypes.Card.Organizations*
+  name: Organizations
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Organizations_
+  commentId: Overload:Archivist.DataTypes.Card.Organizations
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Organizations
+  nameWithType: Card.Organizations
+- uid: Archivist.DataTypes.Card.PhoneNumbers
+  name: PhoneNumbers
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_PhoneNumbers
+  commentId: P:Archivist.DataTypes.Card.PhoneNumbers
+  fullName: Archivist.DataTypes.Card.PhoneNumbers
+  nameWithType: Card.PhoneNumbers
+- uid: Archivist.DataTypes.Card.PhoneNumbers*
+  name: PhoneNumbers
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_PhoneNumbers_
+  commentId: Overload:Archivist.DataTypes.Card.PhoneNumbers
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.PhoneNumbers
+  nameWithType: Card.PhoneNumbers
+- uid: Archivist.DataTypes.Card.Photos
+  name: Photos
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Photos
+  commentId: P:Archivist.DataTypes.Card.Photos
+  fullName: Archivist.DataTypes.Card.Photos
+  nameWithType: Card.Photos
+- uid: Archivist.DataTypes.Card.Photos*
+  name: Photos
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Photos_
+  commentId: Overload:Archivist.DataTypes.Card.Photos
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Photos
+  nameWithType: Card.Photos
 - uid: Archivist.DataTypes.Card.Prefix
   name: Prefix
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Prefix
@@ -821,6 +977,32 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Card.Prefix
   nameWithType: Card.Prefix
+- uid: Archivist.DataTypes.Card.Roles
+  name: Roles
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Roles
+  commentId: P:Archivist.DataTypes.Card.Roles
+  fullName: Archivist.DataTypes.Card.Roles
+  nameWithType: Card.Roles
+- uid: Archivist.DataTypes.Card.Roles*
+  name: Roles
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Roles_
+  commentId: Overload:Archivist.DataTypes.Card.Roles
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Roles
+  nameWithType: Card.Roles
+- uid: Archivist.DataTypes.Card.Sounds
+  name: Sounds
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Sounds
+  commentId: P:Archivist.DataTypes.Card.Sounds
+  fullName: Archivist.DataTypes.Card.Sounds
+  nameWithType: Card.Sounds
+- uid: Archivist.DataTypes.Card.Sounds*
+  name: Sounds
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Sounds_
+  commentId: Overload:Archivist.DataTypes.Card.Sounds
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Sounds
+  nameWithType: Card.Sounds
 - uid: Archivist.DataTypes.Card.Suffix
   name: Suffix
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Suffix
@@ -834,6 +1016,45 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Card.Suffix
   nameWithType: Card.Suffix
+- uid: Archivist.DataTypes.Card.TimeZones
+  name: TimeZones
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_TimeZones
+  commentId: P:Archivist.DataTypes.Card.TimeZones
+  fullName: Archivist.DataTypes.Card.TimeZones
+  nameWithType: Card.TimeZones
+- uid: Archivist.DataTypes.Card.TimeZones*
+  name: TimeZones
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_TimeZones_
+  commentId: Overload:Archivist.DataTypes.Card.TimeZones
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.TimeZones
+  nameWithType: Card.TimeZones
+- uid: Archivist.DataTypes.Card.Titles
+  name: Titles
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Titles
+  commentId: P:Archivist.DataTypes.Card.Titles
+  fullName: Archivist.DataTypes.Card.Titles
+  nameWithType: Card.Titles
+- uid: Archivist.DataTypes.Card.Titles*
+  name: Titles
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Titles_
+  commentId: Overload:Archivist.DataTypes.Card.Titles
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Titles
+  nameWithType: Card.Titles
+- uid: Archivist.DataTypes.Card.Websites
+  name: Websites
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Websites
+  commentId: P:Archivist.DataTypes.Card.Websites
+  fullName: Archivist.DataTypes.Card.Websites
+  nameWithType: Card.Websites
+- uid: Archivist.DataTypes.Card.Websites*
+  name: Websites
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Websites_
+  commentId: Overload:Archivist.DataTypes.Card.Websites
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Websites
+  nameWithType: Card.Websites
 - uid: Archivist.DataTypes.Card.op_Equality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
   name: operator ==(Card?, Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Equality_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
@@ -955,13 +1176,13 @@ references:
   fullName: Archivist.DataTypes.CardField
   nameWithType: CardField
 - uid: Archivist.DataTypes.CardField.#ctor(System.String,System.Collections.Generic.IEnumerable{Archivist.DataTypes.CardFieldParameter},System.String)
-  name: CardField(string, IEnumerable<CardFieldParameter>?, string?)
+  name: CardField(string?, IEnumerable<CardFieldParameter>?, string?)
   href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField__ctor_System_String_System_Collections_Generic_IEnumerable_Archivist_DataTypes_CardFieldParameter__System_String_
   commentId: M:Archivist.DataTypes.CardField.#ctor(System.String,System.Collections.Generic.IEnumerable{Archivist.DataTypes.CardFieldParameter},System.String)
   name.vb: New(String, IEnumerable(Of CardFieldParameter), String)
-  fullName: Archivist.DataTypes.CardField.CardField(string, System.Collections.Generic.IEnumerable<Archivist.DataTypes.CardFieldParameter>?, string?)
+  fullName: Archivist.DataTypes.CardField.CardField(string?, System.Collections.Generic.IEnumerable<Archivist.DataTypes.CardFieldParameter>?, string?)
   fullName.vb: Archivist.DataTypes.CardField.New(String, System.Collections.Generic.IEnumerable(Of Archivist.DataTypes.CardFieldParameter), String)
-  nameWithType: CardField.CardField(string, IEnumerable<CardFieldParameter>?, string?)
+  nameWithType: CardField.CardField(string?, IEnumerable<CardFieldParameter>?, string?)
   nameWithType.vb: CardField.New(String, IEnumerable(Of CardFieldParameter), String)
 - uid: Archivist.DataTypes.CardField.#ctor*
   name: CardField
