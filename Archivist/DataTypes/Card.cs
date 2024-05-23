@@ -115,7 +115,7 @@ namespace Archivist.DataTypes
         /// <param name="left">The first card object to compare.</param>
         /// <param name="right">The second card object to compare.</param>
         /// <returns>True if the two card objects are not equal; otherwise, false.</returns>
-        public static bool operator !=(Card left, Card right)
+        public static bool operator !=(Card? left, Card? right)
         {
             return !(left == right);
         }
@@ -125,8 +125,10 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="left">The first card object to compare.</param>
         /// <param name="right">The second card object to compare.</param>
-        /// <returns>True if the first card object is less than the second card object; otherwise, false.</returns>
-        public static bool operator <(Card left, Card right)
+        /// <returns>
+        /// True if the first card object is less than the second card object; otherwise, false.
+        /// </returns>
+        public static bool operator <(Card? left, Card? right)
         {
             return left is null ? right is not null : left.CompareTo(right) < 0;
         }
@@ -136,8 +138,11 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="left">The first card object to compare.</param>
         /// <param name="right">The second card object to compare.</param>
-        /// <returns>True if the first card object is less than or equal to the second card object; otherwise, false.</returns>
-        public static bool operator <=(Card left, Card right)
+        /// <returns>
+        /// True if the first card object is less than or equal to the second card object;
+        /// otherwise, false.
+        /// </returns>
+        public static bool operator <=(Card? left, Card? right)
         {
             return left is null || left.CompareTo(right) <= 0;
         }
@@ -148,7 +153,7 @@ namespace Archivist.DataTypes
         /// <param name="left">The first card object to compare.</param>
         /// <param name="right">The second card object to compare.</param>
         /// <returns>True if the two card objects are equal; otherwise, false.</returns>
-        public static bool operator ==(Card left, Card right)
+        public static bool operator ==(Card? left, Card? right)
         {
             if (left is null)
                 return right is null;
@@ -160,8 +165,10 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="left">The first card object to compare.</param>
         /// <param name="right">The second card object to compare.</param>
-        /// <returns>True if the first card object is greater than the second card object; otherwise, false.</returns>
-        public static bool operator >(Card left, Card right)
+        /// <returns>
+        /// True if the first card object is greater than the second card object; otherwise, false.
+        /// </returns>
+        public static bool operator >(Card? left, Card? right)
         {
             return left?.CompareTo(right) > 0;
         }
@@ -171,8 +178,11 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="left">The first card object to compare.</param>
         /// <param name="right">The second card object to compare.</param>
-        /// <returns>True if the first card object is greater than or equal to the second card object; otherwise, false.</returns>
-        public static bool operator >=(Card left, Card right)
+        /// <returns>
+        /// True if the first card object is greater than or equal to the second card object;
+        /// otherwise, false.
+        /// </returns>
+        public static bool operator >=(Card? left, Card? right)
         {
             return left is null ? right is null : left.CompareTo(right) >= 0;
         }
