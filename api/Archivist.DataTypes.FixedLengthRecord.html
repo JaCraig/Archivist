@@ -1,0 +1,753 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FixedLengthRecord | Archivist API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FixedLengthRecord | Archivist API Reference ">
+      
+      <meta name="description" content="Represents a fixed-length record.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JaCraig/Archivist/new/main/apiSpec/new?filename=Archivist_DataTypes_FixedLengthRecord.md&amp;value=---%0Auid%3A%20Archivist.DataTypes.FixedLengthRecord%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon.png" alt="Archivist">
+            Archivist
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Archivist.DataTypes.FixedLengthRecord">
+
+
+
+  <h1 id="Archivist_DataTypes_FixedLengthRecord" data-uid="Archivist.DataTypes.FixedLengthRecord" class="text-break">
+Class FixedLengthRecord  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Archivist.html">Archivist</a>.<a class="xref" href="Archivist.DataTypes.html">DataTypes</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Archivist.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a fixed-length record.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FixedLengthRecord : IEnumerable&lt;FixedLengthField&gt;, IEnumerable, IComparable&lt;FixedLengthRecord&gt;, IEquatable&lt;FixedLengthRecord&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FixedLengthRecord</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_Count_" data-uid="Archivist.DataTypes.FixedLengthRecord.Count*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_Count" data-uid="Archivist.DataTypes.FixedLengthRecord.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of fields in the record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_Fields_" data-uid="Archivist.DataTypes.FixedLengthRecord.Fields*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_Fields" data-uid="Archivist.DataTypes.FixedLengthRecord.Fields">
+  Fields
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the list of fields in the record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;FixedLengthField&gt; Fields { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_Length_" data-uid="Archivist.DataTypes.FixedLengthRecord.Length*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_Length" data-uid="Archivist.DataTypes.FixedLengthRecord.Length">
+  Length
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the total length of the record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_CompareTo_" data-uid="Archivist.DataTypes.FixedLengthRecord.CompareTo*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_CompareTo_Archivist_DataTypes_FixedLengthRecord_" data-uid="Archivist.DataTypes.FixedLengthRecord.CompareTo(Archivist.DataTypes.FixedLengthRecord)">
+  CompareTo(FixedLengthRecord?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares the current fixed-length record with another fixed-length record and returns an integer that indicates whether the current record is shorter, equal to, or longer than the other record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(FixedLengthRecord? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The fixed-length record to compare with the current record.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A positive integer if the current record is longer than the other record, zero if they are of equal length, or a negative integer if the current record is shorter than the other record.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_Equals_" data-uid="Archivist.DataTypes.FixedLengthRecord.Equals*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_Equals_Archivist_DataTypes_FixedLengthRecord_" data-uid="Archivist.DataTypes.FixedLengthRecord.Equals(Archivist.DataTypes.FixedLengthRecord)">
+  Equals(FixedLengthRecord?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the current fixed-length record is equal to another fixed-length record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(FixedLengthRecord? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The fixed-length record to compare with the current record.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the current fixed-length record is equal to the other record; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_Equals_" data-uid="Archivist.DataTypes.FixedLengthRecord.Equals*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_Equals_System_Object_" data-uid="Archivist.DataTypes.FixedLengthRecord.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the current fixed-length record is equal to the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current fixed-length record.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the current fixed-length record is equal to the specified object; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_GetEnumerator_" data-uid="Archivist.DataTypes.FixedLengthRecord.GetEnumerator*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_GetEnumerator" data-uid="Archivist.DataTypes.FixedLengthRecord.GetEnumerator">
+  GetEnumerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the fields in the record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;FixedLengthField&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a>&gt;</dt>
+    <dd><p>An enumerator that can be used to iterate through the fields in the record.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_GetHashCode_" data-uid="Archivist.DataTypes.FixedLengthRecord.GetHashCode*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_GetHashCode" data-uid="Archivist.DataTypes.FixedLengthRecord.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the hash code for the current fixed-length record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A 32-bit signed integer hash code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_ToString_" data-uid="Archivist.DataTypes.FixedLengthRecord.ToString*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_ToString" data-uid="Archivist.DataTypes.FixedLengthRecord.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The string representation of the fixed-length record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string representation of the fixed-length record.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_op_Equality_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_Equality*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_op_Equality_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_Equality(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)">
+  operator ==(FixedLengthRecord?, FixedLengthRecord?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two fixed-length records are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(FixedLengthRecord? left, FixedLengthRecord? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The first fixed-length record to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The second fixed-length record to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the two fixed-length records are equal; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_op_GreaterThan_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_GreaterThan*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_op_GreaterThan_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_GreaterThan(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)">
+  operator &gt;(FixedLengthRecord?, FixedLengthRecord?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the first fixed-length record is greater than the second fixed-length record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(FixedLengthRecord? left, FixedLengthRecord? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The first fixed-length record to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The second fixed-length record to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the first fixed-length record is greater than the second fixed-length record; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_op_GreaterThanOrEqual_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_op_GreaterThanOrEqual_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_GreaterThanOrEqual(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)">
+  operator &gt;=(FixedLengthRecord?, FixedLengthRecord?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the first fixed-length record is greater than or equal to the second fixed-length record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(FixedLengthRecord? left, FixedLengthRecord? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The first fixed-length record to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The second fixed-length record to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the first fixed-length record is greater than or equal to the second fixed-length record; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_op_Inequality_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_Inequality*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_op_Inequality_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_Inequality(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)">
+  operator !=(FixedLengthRecord?, FixedLengthRecord?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two fixed-length records are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(FixedLengthRecord? left, FixedLengthRecord? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The first fixed-length record to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The second fixed-length record to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the two fixed-length records are not equal; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_op_LessThan_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_LessThan*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_op_LessThan_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_LessThan(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)">
+  operator &lt;(FixedLengthRecord?, FixedLengthRecord?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the first fixed-length record is less than the second fixed-length record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(FixedLengthRecord? left, FixedLengthRecord? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The first fixed-length record to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The second fixed-length record to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the first fixed-length record is less than the second fixed-length record; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthRecord_op_LessThanOrEqual_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_LessThanOrEqual*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthRecord_op_LessThanOrEqual_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_" data-uid="Archivist.DataTypes.FixedLengthRecord.op_LessThanOrEqual(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)">
+  operator &lt;=(FixedLengthRecord?, FixedLengthRecord?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the first fixed-length record is less than or equal to the second fixed-length record.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(FixedLengthRecord? left, FixedLengthRecord? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The first fixed-length record to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.FixedLengthRecord.html">FixedLengthRecord</a></dt>
+    <dd><p>The second fixed-length record to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the first fixed-length record is less than or equal to the second fixed-length record; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthRecord.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <strong><a href='https://github.com/JaCraig/Archivist'>Open in Github</a></strong>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

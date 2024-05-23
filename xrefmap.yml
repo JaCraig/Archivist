@@ -49,23 +49,6 @@ references:
   fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).CompareTo
   nameWithType: FileBaseClass<TFileType>.CompareTo
   nameWithType.vb: FileBaseClass(Of TFileType).CompareTo
-- uid: Archivist.BaseClasses.FileBaseClass`1.Content
-  name: Content
-  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Content
-  commentId: P:Archivist.BaseClasses.FileBaseClass`1.Content
-  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Content
-  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Content
-  nameWithType: FileBaseClass<TFileType>.Content
-  nameWithType.vb: FileBaseClass(Of TFileType).Content
-- uid: Archivist.BaseClasses.FileBaseClass`1.Content*
-  name: Content
-  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Content_
-  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.Content
-  isSpec: "True"
-  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Content
-  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Content
-  nameWithType: FileBaseClass<TFileType>.Content
-  nameWithType.vb: FileBaseClass(Of TFileType).Content
 - uid: Archivist.BaseClasses.FileBaseClass`1.Equals(System.Object)
   name: Equals(object?)
   href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Equals_System_Object_
@@ -93,6 +76,23 @@ references:
   fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Equals
   nameWithType: FileBaseClass<TFileType>.Equals
   nameWithType.vb: FileBaseClass(Of TFileType).Equals
+- uid: Archivist.BaseClasses.FileBaseClass`1.GetContent
+  name: GetContent()
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_GetContent
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.GetContent
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.GetContent()
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).GetContent()
+  nameWithType: FileBaseClass<TFileType>.GetContent()
+  nameWithType.vb: FileBaseClass(Of TFileType).GetContent()
+- uid: Archivist.BaseClasses.FileBaseClass`1.GetContent*
+  name: GetContent
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_GetContent_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.GetContent
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.GetContent
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).GetContent
+  nameWithType: FileBaseClass<TFileType>.GetContent
+  nameWithType.vb: FileBaseClass(Of TFileType).GetContent
 - uid: Archivist.BaseClasses.FileBaseClass`1.GetHashCode
   name: GetHashCode()
   href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_GetHashCode
@@ -275,6 +275,34 @@ references:
   fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).<=
   nameWithType: FileBaseClass<TFileType>.operator <=
   nameWithType.vb: FileBaseClass(Of TFileType).<=
+- uid: Archivist.BaseClasses.FixedLengthFormatBaseClass`2
+  name: FixedLengthFormatBaseClass<TFormat, TFileReader>
+  href: api/Archivist.BaseClasses.FixedLengthFormatBaseClass-2.html
+  commentId: T:Archivist.BaseClasses.FixedLengthFormatBaseClass`2
+  name.vb: FixedLengthFormatBaseClass(Of TFormat, TFileReader)
+  fullName: Archivist.BaseClasses.FixedLengthFormatBaseClass<TFormat, TFileReader>
+  fullName.vb: Archivist.BaseClasses.FixedLengthFormatBaseClass(Of TFormat, TFileReader)
+  nameWithType: FixedLengthFormatBaseClass<TFormat, TFileReader>
+  nameWithType.vb: FixedLengthFormatBaseClass(Of TFormat, TFileReader)
+- uid: Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor(`1)
+  name: FixedLengthFormatBaseClass(TFileReader)
+  href: api/Archivist.BaseClasses.FixedLengthFormatBaseClass-2.html#Archivist_BaseClasses_FixedLengthFormatBaseClass_2__ctor__1_
+  commentId: M:Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor(`1)
+  name.vb: New(TFileReader)
+  fullName: Archivist.BaseClasses.FixedLengthFormatBaseClass<TFormat, TFileReader>.FixedLengthFormatBaseClass(TFileReader)
+  fullName.vb: Archivist.BaseClasses.FixedLengthFormatBaseClass(Of TFormat, TFileReader).New(TFileReader)
+  nameWithType: FixedLengthFormatBaseClass<TFormat, TFileReader>.FixedLengthFormatBaseClass(TFileReader)
+  nameWithType.vb: FixedLengthFormatBaseClass(Of TFormat, TFileReader).New(TFileReader)
+- uid: Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor*
+  name: FixedLengthFormatBaseClass
+  href: api/Archivist.BaseClasses.FixedLengthFormatBaseClass-2.html#Archivist_BaseClasses_FixedLengthFormatBaseClass_2__ctor_
+  commentId: Overload:Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.BaseClasses.FixedLengthFormatBaseClass<TFormat, TFileReader>.FixedLengthFormatBaseClass
+  fullName.vb: Archivist.BaseClasses.FixedLengthFormatBaseClass(Of TFormat, TFileReader).New
+  nameWithType: FixedLengthFormatBaseClass<TFormat, TFileReader>.FixedLengthFormatBaseClass
+  nameWithType.vb: FixedLengthFormatBaseClass(Of TFormat, TFileReader).New
 - uid: Archivist.BaseClasses.FormatBaseClass`3
   name: FormatBaseClass<TFormat, TFileReader, TFileWriter>
   href: api/Archivist.BaseClasses.FormatBaseClass-3.html
@@ -681,19 +709,6 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Card.CompareTo
   nameWithType: Card.CompareTo
-- uid: Archivist.DataTypes.Card.Content
-  name: Content
-  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Content
-  commentId: P:Archivist.DataTypes.Card.Content
-  fullName: Archivist.DataTypes.Card.Content
-  nameWithType: Card.Content
-- uid: Archivist.DataTypes.Card.Content*
-  name: Content
-  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Content_
-  commentId: Overload:Archivist.DataTypes.Card.Content
-  isSpec: "True"
-  fullName: Archivist.DataTypes.Card.Content
-  nameWithType: Card.Content
 - uid: Archivist.DataTypes.Card.Count
   name: Count
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Count
@@ -771,6 +786,32 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Card.FirstName
   nameWithType: Card.FirstName
+- uid: Archivist.DataTypes.Card.FullName
+  name: FullName
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_FullName
+  commentId: P:Archivist.DataTypes.Card.FullName
+  fullName: Archivist.DataTypes.Card.FullName
+  nameWithType: Card.FullName
+- uid: Archivist.DataTypes.Card.FullName*
+  name: FullName
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_FullName_
+  commentId: Overload:Archivist.DataTypes.Card.FullName
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.FullName
+  nameWithType: Card.FullName
+- uid: Archivist.DataTypes.Card.GetContent
+  name: GetContent()
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_GetContent
+  commentId: M:Archivist.DataTypes.Card.GetContent
+  fullName: Archivist.DataTypes.Card.GetContent()
+  nameWithType: Card.GetContent()
+- uid: Archivist.DataTypes.Card.GetContent*
+  name: GetContent
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_GetContent_
+  commentId: Overload:Archivist.DataTypes.Card.GetContent
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.GetContent
+  nameWithType: Card.GetContent
 - uid: Archivist.DataTypes.Card.GetEnumerator
   name: GetEnumerator()
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_GetEnumerator
@@ -899,6 +940,19 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Card.MiddleName
   nameWithType: Card.MiddleName
+- uid: Archivist.DataTypes.Card.Name
+  name: Name
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Name
+  commentId: P:Archivist.DataTypes.Card.Name
+  fullName: Archivist.DataTypes.Card.Name
+  nameWithType: Card.Name
+- uid: Archivist.DataTypes.Card.Name*
+  name: Name
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Name_
+  commentId: Overload:Archivist.DataTypes.Card.Name
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.Name
+  nameWithType: Card.Name
 - uid: Archivist.DataTypes.Card.Nicknames
   name: Nicknames
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Nicknames
@@ -1310,6 +1364,716 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.CardFieldParameter.Value
   nameWithType: CardFieldParameter.Value
+- uid: Archivist.DataTypes.FixedLengthField
+  name: FixedLengthField
+  href: api/Archivist.DataTypes.FixedLengthField.html
+  commentId: T:Archivist.DataTypes.FixedLengthField
+  fullName: Archivist.DataTypes.FixedLengthField
+  nameWithType: FixedLengthField
+- uid: Archivist.DataTypes.FixedLengthField.#ctor(System.String,System.Int32,System.Char,System.Boolean)
+  name: FixedLengthField(string?, int, char, bool)
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField__ctor_System_String_System_Int32_System_Char_System_Boolean_
+  commentId: M:Archivist.DataTypes.FixedLengthField.#ctor(System.String,System.Int32,System.Char,System.Boolean)
+  name.vb: New(String, Integer, Char, Boolean)
+  fullName: Archivist.DataTypes.FixedLengthField.FixedLengthField(string?, int, char, bool)
+  fullName.vb: Archivist.DataTypes.FixedLengthField.New(String, Integer, Char, Boolean)
+  nameWithType: FixedLengthField.FixedLengthField(string?, int, char, bool)
+  nameWithType.vb: FixedLengthField.New(String, Integer, Char, Boolean)
+- uid: Archivist.DataTypes.FixedLengthField.#ctor*
+  name: FixedLengthField
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField__ctor_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.FixedLengthField.FixedLengthField
+  fullName.vb: Archivist.DataTypes.FixedLengthField.New
+  nameWithType: FixedLengthField.FixedLengthField
+  nameWithType.vb: FixedLengthField.New
+- uid: Archivist.DataTypes.FixedLengthField.CompareTo(Archivist.DataTypes.FixedLengthField)
+  name: CompareTo(FixedLengthField?)
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_CompareTo_Archivist_DataTypes_FixedLengthField_
+  commentId: M:Archivist.DataTypes.FixedLengthField.CompareTo(Archivist.DataTypes.FixedLengthField)
+  name.vb: CompareTo(FixedLengthField)
+  fullName: Archivist.DataTypes.FixedLengthField.CompareTo(Archivist.DataTypes.FixedLengthField?)
+  fullName.vb: Archivist.DataTypes.FixedLengthField.CompareTo(Archivist.DataTypes.FixedLengthField)
+  nameWithType: FixedLengthField.CompareTo(FixedLengthField?)
+  nameWithType.vb: FixedLengthField.CompareTo(FixedLengthField)
+- uid: Archivist.DataTypes.FixedLengthField.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_CompareTo_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthField.CompareTo
+  nameWithType: FixedLengthField.CompareTo
+- uid: Archivist.DataTypes.FixedLengthField.Equals(Archivist.DataTypes.FixedLengthField)
+  name: Equals(FixedLengthField?)
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_Equals_Archivist_DataTypes_FixedLengthField_
+  commentId: M:Archivist.DataTypes.FixedLengthField.Equals(Archivist.DataTypes.FixedLengthField)
+  name.vb: Equals(FixedLengthField)
+  fullName: Archivist.DataTypes.FixedLengthField.Equals(Archivist.DataTypes.FixedLengthField?)
+  fullName.vb: Archivist.DataTypes.FixedLengthField.Equals(Archivist.DataTypes.FixedLengthField)
+  nameWithType: FixedLengthField.Equals(FixedLengthField?)
+  nameWithType.vb: FixedLengthField.Equals(FixedLengthField)
+- uid: Archivist.DataTypes.FixedLengthField.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.FixedLengthField.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.FixedLengthField.Equals(object?)
+  fullName.vb: Archivist.DataTypes.FixedLengthField.Equals(Object)
+  nameWithType: FixedLengthField.Equals(object?)
+  nameWithType.vb: FixedLengthField.Equals(Object)
+- uid: Archivist.DataTypes.FixedLengthField.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_Equals_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthField.Equals
+  nameWithType: FixedLengthField.Equals
+- uid: Archivist.DataTypes.FixedLengthField.FillerCharacter
+  name: FillerCharacter
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_FillerCharacter
+  commentId: P:Archivist.DataTypes.FixedLengthField.FillerCharacter
+  fullName: Archivist.DataTypes.FixedLengthField.FillerCharacter
+  nameWithType: FixedLengthField.FillerCharacter
+- uid: Archivist.DataTypes.FixedLengthField.FillerCharacter*
+  name: FillerCharacter
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_FillerCharacter_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.FillerCharacter
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthField.FillerCharacter
+  nameWithType: FixedLengthField.FillerCharacter
+- uid: Archivist.DataTypes.FixedLengthField.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_GetHashCode
+  commentId: M:Archivist.DataTypes.FixedLengthField.GetHashCode
+  fullName: Archivist.DataTypes.FixedLengthField.GetHashCode()
+  nameWithType: FixedLengthField.GetHashCode()
+- uid: Archivist.DataTypes.FixedLengthField.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthField.GetHashCode
+  nameWithType: FixedLengthField.GetHashCode
+- uid: Archivist.DataTypes.FixedLengthField.LeftAligned
+  name: LeftAligned
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_LeftAligned
+  commentId: P:Archivist.DataTypes.FixedLengthField.LeftAligned
+  fullName: Archivist.DataTypes.FixedLengthField.LeftAligned
+  nameWithType: FixedLengthField.LeftAligned
+- uid: Archivist.DataTypes.FixedLengthField.LeftAligned*
+  name: LeftAligned
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_LeftAligned_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.LeftAligned
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthField.LeftAligned
+  nameWithType: FixedLengthField.LeftAligned
+- uid: Archivist.DataTypes.FixedLengthField.MaxLength
+  name: MaxLength
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_MaxLength
+  commentId: P:Archivist.DataTypes.FixedLengthField.MaxLength
+  fullName: Archivist.DataTypes.FixedLengthField.MaxLength
+  nameWithType: FixedLengthField.MaxLength
+- uid: Archivist.DataTypes.FixedLengthField.MaxLength*
+  name: MaxLength
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_MaxLength_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.MaxLength
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthField.MaxLength
+  nameWithType: FixedLengthField.MaxLength
+- uid: Archivist.DataTypes.FixedLengthField.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_ToString
+  commentId: M:Archivist.DataTypes.FixedLengthField.ToString
+  fullName: Archivist.DataTypes.FixedLengthField.ToString()
+  nameWithType: FixedLengthField.ToString()
+- uid: Archivist.DataTypes.FixedLengthField.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_ToString_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthField.ToString
+  nameWithType: FixedLengthField.ToString
+- uid: Archivist.DataTypes.FixedLengthField.Value
+  name: Value
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_Value
+  commentId: P:Archivist.DataTypes.FixedLengthField.Value
+  fullName: Archivist.DataTypes.FixedLengthField.Value
+  nameWithType: FixedLengthField.Value
+- uid: Archivist.DataTypes.FixedLengthField.Value*
+  name: Value
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_Value_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.Value
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthField.Value
+  nameWithType: FixedLengthField.Value
+- uid: Archivist.DataTypes.FixedLengthField.op_Equality(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name: operator ==(FixedLengthField?, FixedLengthField?)
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_Equality_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_
+  commentId: M:Archivist.DataTypes.FixedLengthField.op_Equality(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name.vb: =(FixedLengthField, FixedLengthField)
+  fullName: Archivist.DataTypes.FixedLengthField.operator ==(Archivist.DataTypes.FixedLengthField?, Archivist.DataTypes.FixedLengthField?)
+  fullName.vb: Archivist.DataTypes.FixedLengthField.=(Archivist.DataTypes.FixedLengthField, Archivist.DataTypes.FixedLengthField)
+  nameWithType: FixedLengthField.operator ==(FixedLengthField?, FixedLengthField?)
+  nameWithType.vb: FixedLengthField.=(FixedLengthField, FixedLengthField)
+- uid: Archivist.DataTypes.FixedLengthField.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_Equality_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.FixedLengthField.operator ==
+  fullName.vb: Archivist.DataTypes.FixedLengthField.=
+  nameWithType: FixedLengthField.operator ==
+  nameWithType.vb: FixedLengthField.=
+- uid: Archivist.DataTypes.FixedLengthField.op_GreaterThan(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name: operator >(FixedLengthField?, FixedLengthField?)
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_GreaterThan_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_
+  commentId: M:Archivist.DataTypes.FixedLengthField.op_GreaterThan(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name.vb: '>(FixedLengthField, FixedLengthField)'
+  fullName: Archivist.DataTypes.FixedLengthField.operator >(Archivist.DataTypes.FixedLengthField?, Archivist.DataTypes.FixedLengthField?)
+  fullName.vb: Archivist.DataTypes.FixedLengthField.>(Archivist.DataTypes.FixedLengthField, Archivist.DataTypes.FixedLengthField)
+  nameWithType: FixedLengthField.operator >(FixedLengthField?, FixedLengthField?)
+  nameWithType.vb: FixedLengthField.>(FixedLengthField, FixedLengthField)
+- uid: Archivist.DataTypes.FixedLengthField.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.FixedLengthField.operator >
+  fullName.vb: Archivist.DataTypes.FixedLengthField.>
+  nameWithType: FixedLengthField.operator >
+  nameWithType.vb: FixedLengthField.>
+- uid: Archivist.DataTypes.FixedLengthField.op_GreaterThanOrEqual(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name: operator >=(FixedLengthField?, FixedLengthField?)
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_GreaterThanOrEqual_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_
+  commentId: M:Archivist.DataTypes.FixedLengthField.op_GreaterThanOrEqual(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name.vb: '>=(FixedLengthField, FixedLengthField)'
+  fullName: Archivist.DataTypes.FixedLengthField.operator >=(Archivist.DataTypes.FixedLengthField?, Archivist.DataTypes.FixedLengthField?)
+  fullName.vb: Archivist.DataTypes.FixedLengthField.>=(Archivist.DataTypes.FixedLengthField, Archivist.DataTypes.FixedLengthField)
+  nameWithType: FixedLengthField.operator >=(FixedLengthField?, FixedLengthField?)
+  nameWithType.vb: FixedLengthField.>=(FixedLengthField, FixedLengthField)
+- uid: Archivist.DataTypes.FixedLengthField.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.FixedLengthField.operator >=
+  fullName.vb: Archivist.DataTypes.FixedLengthField.>=
+  nameWithType: FixedLengthField.operator >=
+  nameWithType.vb: FixedLengthField.>=
+- uid: Archivist.DataTypes.FixedLengthField.op_Inequality(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name: operator !=(FixedLengthField?, FixedLengthField?)
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_Inequality_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_
+  commentId: M:Archivist.DataTypes.FixedLengthField.op_Inequality(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name.vb: <>(FixedLengthField, FixedLengthField)
+  fullName: Archivist.DataTypes.FixedLengthField.operator !=(Archivist.DataTypes.FixedLengthField?, Archivist.DataTypes.FixedLengthField?)
+  fullName.vb: Archivist.DataTypes.FixedLengthField.<>(Archivist.DataTypes.FixedLengthField, Archivist.DataTypes.FixedLengthField)
+  nameWithType: FixedLengthField.operator !=(FixedLengthField?, FixedLengthField?)
+  nameWithType.vb: FixedLengthField.<>(FixedLengthField, FixedLengthField)
+- uid: Archivist.DataTypes.FixedLengthField.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.FixedLengthField.operator !=
+  fullName.vb: Archivist.DataTypes.FixedLengthField.<>
+  nameWithType: FixedLengthField.operator !=
+  nameWithType.vb: FixedLengthField.<>
+- uid: Archivist.DataTypes.FixedLengthField.op_LessThan(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name: operator <(FixedLengthField?, FixedLengthField?)
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_LessThan_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_
+  commentId: M:Archivist.DataTypes.FixedLengthField.op_LessThan(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name.vb: <(FixedLengthField, FixedLengthField)
+  fullName: Archivist.DataTypes.FixedLengthField.operator <(Archivist.DataTypes.FixedLengthField?, Archivist.DataTypes.FixedLengthField?)
+  fullName.vb: Archivist.DataTypes.FixedLengthField.<(Archivist.DataTypes.FixedLengthField, Archivist.DataTypes.FixedLengthField)
+  nameWithType: FixedLengthField.operator <(FixedLengthField?, FixedLengthField?)
+  nameWithType.vb: FixedLengthField.<(FixedLengthField, FixedLengthField)
+- uid: Archivist.DataTypes.FixedLengthField.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.FixedLengthField.operator <
+  fullName.vb: Archivist.DataTypes.FixedLengthField.<
+  nameWithType: FixedLengthField.operator <
+  nameWithType.vb: FixedLengthField.<
+- uid: Archivist.DataTypes.FixedLengthField.op_LessThanOrEqual(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name: operator <=(FixedLengthField?, FixedLengthField?)
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_LessThanOrEqual_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_
+  commentId: M:Archivist.DataTypes.FixedLengthField.op_LessThanOrEqual(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)
+  name.vb: <=(FixedLengthField, FixedLengthField)
+  fullName: Archivist.DataTypes.FixedLengthField.operator <=(Archivist.DataTypes.FixedLengthField?, Archivist.DataTypes.FixedLengthField?)
+  fullName.vb: Archivist.DataTypes.FixedLengthField.<=(Archivist.DataTypes.FixedLengthField, Archivist.DataTypes.FixedLengthField)
+  nameWithType: FixedLengthField.operator <=(FixedLengthField?, FixedLengthField?)
+  nameWithType.vb: FixedLengthField.<=(FixedLengthField, FixedLengthField)
+- uid: Archivist.DataTypes.FixedLengthField.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.FixedLengthField.operator <=
+  fullName.vb: Archivist.DataTypes.FixedLengthField.<=
+  nameWithType: FixedLengthField.operator <=
+  nameWithType.vb: FixedLengthField.<=
+- uid: Archivist.DataTypes.FixedLengthFile
+  name: FixedLengthFile
+  href: api/Archivist.DataTypes.FixedLengthFile.html
+  commentId: T:Archivist.DataTypes.FixedLengthFile
+  fullName: Archivist.DataTypes.FixedLengthFile
+  nameWithType: FixedLengthFile
+- uid: Archivist.DataTypes.FixedLengthFile.CompareTo(Archivist.DataTypes.FixedLengthFile)
+  name: CompareTo(FixedLengthFile?)
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_CompareTo_Archivist_DataTypes_FixedLengthFile_
+  commentId: M:Archivist.DataTypes.FixedLengthFile.CompareTo(Archivist.DataTypes.FixedLengthFile)
+  name.vb: CompareTo(FixedLengthFile)
+  fullName: Archivist.DataTypes.FixedLengthFile.CompareTo(Archivist.DataTypes.FixedLengthFile?)
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.CompareTo(Archivist.DataTypes.FixedLengthFile)
+  nameWithType: FixedLengthFile.CompareTo(FixedLengthFile?)
+  nameWithType.vb: FixedLengthFile.CompareTo(FixedLengthFile)
+- uid: Archivist.DataTypes.FixedLengthFile.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_CompareTo_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthFile.CompareTo
+  nameWithType: FixedLengthFile.CompareTo
+- uid: Archivist.DataTypes.FixedLengthFile.Equals(Archivist.DataTypes.FixedLengthFile)
+  name: Equals(FixedLengthFile?)
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_Equals_Archivist_DataTypes_FixedLengthFile_
+  commentId: M:Archivist.DataTypes.FixedLengthFile.Equals(Archivist.DataTypes.FixedLengthFile)
+  name.vb: Equals(FixedLengthFile)
+  fullName: Archivist.DataTypes.FixedLengthFile.Equals(Archivist.DataTypes.FixedLengthFile?)
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.Equals(Archivist.DataTypes.FixedLengthFile)
+  nameWithType: FixedLengthFile.Equals(FixedLengthFile?)
+  nameWithType.vb: FixedLengthFile.Equals(FixedLengthFile)
+- uid: Archivist.DataTypes.FixedLengthFile.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.FixedLengthFile.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.FixedLengthFile.Equals(object?)
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.Equals(Object)
+  nameWithType: FixedLengthFile.Equals(object?)
+  nameWithType.vb: FixedLengthFile.Equals(Object)
+- uid: Archivist.DataTypes.FixedLengthFile.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_Equals_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthFile.Equals
+  nameWithType: FixedLengthFile.Equals
+- uid: Archivist.DataTypes.FixedLengthFile.GetContent
+  name: GetContent()
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_GetContent
+  commentId: M:Archivist.DataTypes.FixedLengthFile.GetContent
+  fullName: Archivist.DataTypes.FixedLengthFile.GetContent()
+  nameWithType: FixedLengthFile.GetContent()
+- uid: Archivist.DataTypes.FixedLengthFile.GetContent*
+  name: GetContent
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_GetContent_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.GetContent
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthFile.GetContent
+  nameWithType: FixedLengthFile.GetContent
+- uid: Archivist.DataTypes.FixedLengthFile.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_GetHashCode
+  commentId: M:Archivist.DataTypes.FixedLengthFile.GetHashCode
+  fullName: Archivist.DataTypes.FixedLengthFile.GetHashCode()
+  nameWithType: FixedLengthFile.GetHashCode()
+- uid: Archivist.DataTypes.FixedLengthFile.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthFile.GetHashCode
+  nameWithType: FixedLengthFile.GetHashCode
+- uid: Archivist.DataTypes.FixedLengthFile.Records
+  name: Records
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_Records
+  commentId: P:Archivist.DataTypes.FixedLengthFile.Records
+  fullName: Archivist.DataTypes.FixedLengthFile.Records
+  nameWithType: FixedLengthFile.Records
+- uid: Archivist.DataTypes.FixedLengthFile.Records*
+  name: Records
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_Records_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.Records
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthFile.Records
+  nameWithType: FixedLengthFile.Records
+- uid: Archivist.DataTypes.FixedLengthFile.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_ToString
+  commentId: M:Archivist.DataTypes.FixedLengthFile.ToString
+  fullName: Archivist.DataTypes.FixedLengthFile.ToString()
+  nameWithType: FixedLengthFile.ToString()
+- uid: Archivist.DataTypes.FixedLengthFile.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_ToString_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthFile.ToString
+  nameWithType: FixedLengthFile.ToString
+- uid: Archivist.DataTypes.FixedLengthFile.op_Equality(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name: operator ==(FixedLengthFile?, FixedLengthFile?)
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_Equality_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_
+  commentId: M:Archivist.DataTypes.FixedLengthFile.op_Equality(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name.vb: =(FixedLengthFile, FixedLengthFile)
+  fullName: Archivist.DataTypes.FixedLengthFile.operator ==(Archivist.DataTypes.FixedLengthFile?, Archivist.DataTypes.FixedLengthFile?)
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.=(Archivist.DataTypes.FixedLengthFile, Archivist.DataTypes.FixedLengthFile)
+  nameWithType: FixedLengthFile.operator ==(FixedLengthFile?, FixedLengthFile?)
+  nameWithType.vb: FixedLengthFile.=(FixedLengthFile, FixedLengthFile)
+- uid: Archivist.DataTypes.FixedLengthFile.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_Equality_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.FixedLengthFile.operator ==
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.=
+  nameWithType: FixedLengthFile.operator ==
+  nameWithType.vb: FixedLengthFile.=
+- uid: Archivist.DataTypes.FixedLengthFile.op_GreaterThan(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name: operator >(FixedLengthFile?, FixedLengthFile?)
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_GreaterThan_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_
+  commentId: M:Archivist.DataTypes.FixedLengthFile.op_GreaterThan(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name.vb: '>(FixedLengthFile, FixedLengthFile)'
+  fullName: Archivist.DataTypes.FixedLengthFile.operator >(Archivist.DataTypes.FixedLengthFile?, Archivist.DataTypes.FixedLengthFile?)
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.>(Archivist.DataTypes.FixedLengthFile, Archivist.DataTypes.FixedLengthFile)
+  nameWithType: FixedLengthFile.operator >(FixedLengthFile?, FixedLengthFile?)
+  nameWithType.vb: FixedLengthFile.>(FixedLengthFile, FixedLengthFile)
+- uid: Archivist.DataTypes.FixedLengthFile.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.FixedLengthFile.operator >
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.>
+  nameWithType: FixedLengthFile.operator >
+  nameWithType.vb: FixedLengthFile.>
+- uid: Archivist.DataTypes.FixedLengthFile.op_GreaterThanOrEqual(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name: operator >=(FixedLengthFile?, FixedLengthFile?)
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_GreaterThanOrEqual_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_
+  commentId: M:Archivist.DataTypes.FixedLengthFile.op_GreaterThanOrEqual(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name.vb: '>=(FixedLengthFile, FixedLengthFile)'
+  fullName: Archivist.DataTypes.FixedLengthFile.operator >=(Archivist.DataTypes.FixedLengthFile?, Archivist.DataTypes.FixedLengthFile?)
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.>=(Archivist.DataTypes.FixedLengthFile, Archivist.DataTypes.FixedLengthFile)
+  nameWithType: FixedLengthFile.operator >=(FixedLengthFile?, FixedLengthFile?)
+  nameWithType.vb: FixedLengthFile.>=(FixedLengthFile, FixedLengthFile)
+- uid: Archivist.DataTypes.FixedLengthFile.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.FixedLengthFile.operator >=
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.>=
+  nameWithType: FixedLengthFile.operator >=
+  nameWithType.vb: FixedLengthFile.>=
+- uid: Archivist.DataTypes.FixedLengthFile.op_Inequality(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name: operator !=(FixedLengthFile?, FixedLengthFile?)
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_Inequality_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_
+  commentId: M:Archivist.DataTypes.FixedLengthFile.op_Inequality(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name.vb: <>(FixedLengthFile, FixedLengthFile)
+  fullName: Archivist.DataTypes.FixedLengthFile.operator !=(Archivist.DataTypes.FixedLengthFile?, Archivist.DataTypes.FixedLengthFile?)
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.<>(Archivist.DataTypes.FixedLengthFile, Archivist.DataTypes.FixedLengthFile)
+  nameWithType: FixedLengthFile.operator !=(FixedLengthFile?, FixedLengthFile?)
+  nameWithType.vb: FixedLengthFile.<>(FixedLengthFile, FixedLengthFile)
+- uid: Archivist.DataTypes.FixedLengthFile.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.FixedLengthFile.operator !=
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.<>
+  nameWithType: FixedLengthFile.operator !=
+  nameWithType.vb: FixedLengthFile.<>
+- uid: Archivist.DataTypes.FixedLengthFile.op_LessThan(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name: operator <(FixedLengthFile?, FixedLengthFile?)
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_LessThan_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_
+  commentId: M:Archivist.DataTypes.FixedLengthFile.op_LessThan(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name.vb: <(FixedLengthFile, FixedLengthFile)
+  fullName: Archivist.DataTypes.FixedLengthFile.operator <(Archivist.DataTypes.FixedLengthFile?, Archivist.DataTypes.FixedLengthFile?)
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.<(Archivist.DataTypes.FixedLengthFile, Archivist.DataTypes.FixedLengthFile)
+  nameWithType: FixedLengthFile.operator <(FixedLengthFile?, FixedLengthFile?)
+  nameWithType.vb: FixedLengthFile.<(FixedLengthFile, FixedLengthFile)
+- uid: Archivist.DataTypes.FixedLengthFile.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.FixedLengthFile.operator <
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.<
+  nameWithType: FixedLengthFile.operator <
+  nameWithType.vb: FixedLengthFile.<
+- uid: Archivist.DataTypes.FixedLengthFile.op_LessThanOrEqual(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name: operator <=(FixedLengthFile?, FixedLengthFile?)
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_LessThanOrEqual_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_
+  commentId: M:Archivist.DataTypes.FixedLengthFile.op_LessThanOrEqual(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)
+  name.vb: <=(FixedLengthFile, FixedLengthFile)
+  fullName: Archivist.DataTypes.FixedLengthFile.operator <=(Archivist.DataTypes.FixedLengthFile?, Archivist.DataTypes.FixedLengthFile?)
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.<=(Archivist.DataTypes.FixedLengthFile, Archivist.DataTypes.FixedLengthFile)
+  nameWithType: FixedLengthFile.operator <=(FixedLengthFile?, FixedLengthFile?)
+  nameWithType.vb: FixedLengthFile.<=(FixedLengthFile, FixedLengthFile)
+- uid: Archivist.DataTypes.FixedLengthFile.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.FixedLengthFile.operator <=
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.<=
+  nameWithType: FixedLengthFile.operator <=
+  nameWithType.vb: FixedLengthFile.<=
+- uid: Archivist.DataTypes.FixedLengthRecord
+  name: FixedLengthRecord
+  href: api/Archivist.DataTypes.FixedLengthRecord.html
+  commentId: T:Archivist.DataTypes.FixedLengthRecord
+  fullName: Archivist.DataTypes.FixedLengthRecord
+  nameWithType: FixedLengthRecord
+- uid: Archivist.DataTypes.FixedLengthRecord.CompareTo(Archivist.DataTypes.FixedLengthRecord)
+  name: CompareTo(FixedLengthRecord?)
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_CompareTo_Archivist_DataTypes_FixedLengthRecord_
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.CompareTo(Archivist.DataTypes.FixedLengthRecord)
+  name.vb: CompareTo(FixedLengthRecord)
+  fullName: Archivist.DataTypes.FixedLengthRecord.CompareTo(Archivist.DataTypes.FixedLengthRecord?)
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.CompareTo(Archivist.DataTypes.FixedLengthRecord)
+  nameWithType: FixedLengthRecord.CompareTo(FixedLengthRecord?)
+  nameWithType.vb: FixedLengthRecord.CompareTo(FixedLengthRecord)
+- uid: Archivist.DataTypes.FixedLengthRecord.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_CompareTo_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthRecord.CompareTo
+  nameWithType: FixedLengthRecord.CompareTo
+- uid: Archivist.DataTypes.FixedLengthRecord.Count
+  name: Count
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_Count
+  commentId: P:Archivist.DataTypes.FixedLengthRecord.Count
+  fullName: Archivist.DataTypes.FixedLengthRecord.Count
+  nameWithType: FixedLengthRecord.Count
+- uid: Archivist.DataTypes.FixedLengthRecord.Count*
+  name: Count
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_Count_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.Count
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthRecord.Count
+  nameWithType: FixedLengthRecord.Count
+- uid: Archivist.DataTypes.FixedLengthRecord.Equals(Archivist.DataTypes.FixedLengthRecord)
+  name: Equals(FixedLengthRecord?)
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_Equals_Archivist_DataTypes_FixedLengthRecord_
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.Equals(Archivist.DataTypes.FixedLengthRecord)
+  name.vb: Equals(FixedLengthRecord)
+  fullName: Archivist.DataTypes.FixedLengthRecord.Equals(Archivist.DataTypes.FixedLengthRecord?)
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.Equals(Archivist.DataTypes.FixedLengthRecord)
+  nameWithType: FixedLengthRecord.Equals(FixedLengthRecord?)
+  nameWithType.vb: FixedLengthRecord.Equals(FixedLengthRecord)
+- uid: Archivist.DataTypes.FixedLengthRecord.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.FixedLengthRecord.Equals(object?)
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.Equals(Object)
+  nameWithType: FixedLengthRecord.Equals(object?)
+  nameWithType.vb: FixedLengthRecord.Equals(Object)
+- uid: Archivist.DataTypes.FixedLengthRecord.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_Equals_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthRecord.Equals
+  nameWithType: FixedLengthRecord.Equals
+- uid: Archivist.DataTypes.FixedLengthRecord.Fields
+  name: Fields
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_Fields
+  commentId: P:Archivist.DataTypes.FixedLengthRecord.Fields
+  fullName: Archivist.DataTypes.FixedLengthRecord.Fields
+  nameWithType: FixedLengthRecord.Fields
+- uid: Archivist.DataTypes.FixedLengthRecord.Fields*
+  name: Fields
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_Fields_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.Fields
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthRecord.Fields
+  nameWithType: FixedLengthRecord.Fields
+- uid: Archivist.DataTypes.FixedLengthRecord.GetEnumerator
+  name: GetEnumerator()
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_GetEnumerator
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.GetEnumerator
+  fullName: Archivist.DataTypes.FixedLengthRecord.GetEnumerator()
+  nameWithType: FixedLengthRecord.GetEnumerator()
+- uid: Archivist.DataTypes.FixedLengthRecord.GetEnumerator*
+  name: GetEnumerator
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_GetEnumerator_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.GetEnumerator
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthRecord.GetEnumerator
+  nameWithType: FixedLengthRecord.GetEnumerator
+- uid: Archivist.DataTypes.FixedLengthRecord.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_GetHashCode
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.GetHashCode
+  fullName: Archivist.DataTypes.FixedLengthRecord.GetHashCode()
+  nameWithType: FixedLengthRecord.GetHashCode()
+- uid: Archivist.DataTypes.FixedLengthRecord.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthRecord.GetHashCode
+  nameWithType: FixedLengthRecord.GetHashCode
+- uid: Archivist.DataTypes.FixedLengthRecord.Length
+  name: Length
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_Length
+  commentId: P:Archivist.DataTypes.FixedLengthRecord.Length
+  fullName: Archivist.DataTypes.FixedLengthRecord.Length
+  nameWithType: FixedLengthRecord.Length
+- uid: Archivist.DataTypes.FixedLengthRecord.Length*
+  name: Length
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_Length_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.Length
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthRecord.Length
+  nameWithType: FixedLengthRecord.Length
+- uid: Archivist.DataTypes.FixedLengthRecord.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_ToString
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.ToString
+  fullName: Archivist.DataTypes.FixedLengthRecord.ToString()
+  nameWithType: FixedLengthRecord.ToString()
+- uid: Archivist.DataTypes.FixedLengthRecord.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_ToString_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthRecord.ToString
+  nameWithType: FixedLengthRecord.ToString
+- uid: Archivist.DataTypes.FixedLengthRecord.op_Equality(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name: operator ==(FixedLengthRecord?, FixedLengthRecord?)
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_Equality_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.op_Equality(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name.vb: =(FixedLengthRecord, FixedLengthRecord)
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator ==(Archivist.DataTypes.FixedLengthRecord?, Archivist.DataTypes.FixedLengthRecord?)
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.=(Archivist.DataTypes.FixedLengthRecord, Archivist.DataTypes.FixedLengthRecord)
+  nameWithType: FixedLengthRecord.operator ==(FixedLengthRecord?, FixedLengthRecord?)
+  nameWithType.vb: FixedLengthRecord.=(FixedLengthRecord, FixedLengthRecord)
+- uid: Archivist.DataTypes.FixedLengthRecord.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_Equality_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator ==
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.=
+  nameWithType: FixedLengthRecord.operator ==
+  nameWithType.vb: FixedLengthRecord.=
+- uid: Archivist.DataTypes.FixedLengthRecord.op_GreaterThan(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name: operator >(FixedLengthRecord?, FixedLengthRecord?)
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_GreaterThan_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.op_GreaterThan(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name.vb: '>(FixedLengthRecord, FixedLengthRecord)'
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator >(Archivist.DataTypes.FixedLengthRecord?, Archivist.DataTypes.FixedLengthRecord?)
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.>(Archivist.DataTypes.FixedLengthRecord, Archivist.DataTypes.FixedLengthRecord)
+  nameWithType: FixedLengthRecord.operator >(FixedLengthRecord?, FixedLengthRecord?)
+  nameWithType.vb: FixedLengthRecord.>(FixedLengthRecord, FixedLengthRecord)
+- uid: Archivist.DataTypes.FixedLengthRecord.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator >
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.>
+  nameWithType: FixedLengthRecord.operator >
+  nameWithType.vb: FixedLengthRecord.>
+- uid: Archivist.DataTypes.FixedLengthRecord.op_GreaterThanOrEqual(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name: operator >=(FixedLengthRecord?, FixedLengthRecord?)
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_GreaterThanOrEqual_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.op_GreaterThanOrEqual(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name.vb: '>=(FixedLengthRecord, FixedLengthRecord)'
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator >=(Archivist.DataTypes.FixedLengthRecord?, Archivist.DataTypes.FixedLengthRecord?)
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.>=(Archivist.DataTypes.FixedLengthRecord, Archivist.DataTypes.FixedLengthRecord)
+  nameWithType: FixedLengthRecord.operator >=(FixedLengthRecord?, FixedLengthRecord?)
+  nameWithType.vb: FixedLengthRecord.>=(FixedLengthRecord, FixedLengthRecord)
+- uid: Archivist.DataTypes.FixedLengthRecord.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator >=
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.>=
+  nameWithType: FixedLengthRecord.operator >=
+  nameWithType.vb: FixedLengthRecord.>=
+- uid: Archivist.DataTypes.FixedLengthRecord.op_Inequality(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name: operator !=(FixedLengthRecord?, FixedLengthRecord?)
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_Inequality_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.op_Inequality(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name.vb: <>(FixedLengthRecord, FixedLengthRecord)
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator !=(Archivist.DataTypes.FixedLengthRecord?, Archivist.DataTypes.FixedLengthRecord?)
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.<>(Archivist.DataTypes.FixedLengthRecord, Archivist.DataTypes.FixedLengthRecord)
+  nameWithType: FixedLengthRecord.operator !=(FixedLengthRecord?, FixedLengthRecord?)
+  nameWithType.vb: FixedLengthRecord.<>(FixedLengthRecord, FixedLengthRecord)
+- uid: Archivist.DataTypes.FixedLengthRecord.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator !=
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.<>
+  nameWithType: FixedLengthRecord.operator !=
+  nameWithType.vb: FixedLengthRecord.<>
+- uid: Archivist.DataTypes.FixedLengthRecord.op_LessThan(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name: operator <(FixedLengthRecord?, FixedLengthRecord?)
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_LessThan_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.op_LessThan(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name.vb: <(FixedLengthRecord, FixedLengthRecord)
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator <(Archivist.DataTypes.FixedLengthRecord?, Archivist.DataTypes.FixedLengthRecord?)
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.<(Archivist.DataTypes.FixedLengthRecord, Archivist.DataTypes.FixedLengthRecord)
+  nameWithType: FixedLengthRecord.operator <(FixedLengthRecord?, FixedLengthRecord?)
+  nameWithType.vb: FixedLengthRecord.<(FixedLengthRecord, FixedLengthRecord)
+- uid: Archivist.DataTypes.FixedLengthRecord.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator <
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.<
+  nameWithType: FixedLengthRecord.operator <
+  nameWithType.vb: FixedLengthRecord.<
+- uid: Archivist.DataTypes.FixedLengthRecord.op_LessThanOrEqual(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name: operator <=(FixedLengthRecord?, FixedLengthRecord?)
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_LessThanOrEqual_Archivist_DataTypes_FixedLengthRecord_Archivist_DataTypes_FixedLengthRecord_
+  commentId: M:Archivist.DataTypes.FixedLengthRecord.op_LessThanOrEqual(Archivist.DataTypes.FixedLengthRecord,Archivist.DataTypes.FixedLengthRecord)
+  name.vb: <=(FixedLengthRecord, FixedLengthRecord)
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator <=(Archivist.DataTypes.FixedLengthRecord?, Archivist.DataTypes.FixedLengthRecord?)
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.<=(Archivist.DataTypes.FixedLengthRecord, Archivist.DataTypes.FixedLengthRecord)
+  nameWithType: FixedLengthRecord.operator <=(FixedLengthRecord?, FixedLengthRecord?)
+  nameWithType.vb: FixedLengthRecord.<=(FixedLengthRecord, FixedLengthRecord)
+- uid: Archivist.DataTypes.FixedLengthRecord.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.FixedLengthRecord.html#Archivist_DataTypes_FixedLengthRecord_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.FixedLengthRecord.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.FixedLengthRecord.operator <=
+  fullName.vb: Archivist.DataTypes.FixedLengthRecord.<=
+  nameWithType: FixedLengthRecord.operator <=
+  nameWithType.vb: FixedLengthRecord.<=
 - uid: Archivist.DataTypes.Text
   name: Text
   href: api/Archivist.DataTypes.Text.html
@@ -1380,22 +2144,19 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Text.Equals
   nameWithType: Text.Equals
-- uid: Archivist.DataTypes.Text.SetContent(System.String)
-  name: SetContent(string)
-  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_SetContent_System_String_
-  commentId: M:Archivist.DataTypes.Text.SetContent(System.String)
-  name.vb: SetContent(String)
-  fullName: Archivist.DataTypes.Text.SetContent(string)
-  fullName.vb: Archivist.DataTypes.Text.SetContent(String)
-  nameWithType: Text.SetContent(string)
-  nameWithType.vb: Text.SetContent(String)
-- uid: Archivist.DataTypes.Text.SetContent*
-  name: SetContent
-  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_SetContent_
-  commentId: Overload:Archivist.DataTypes.Text.SetContent
+- uid: Archivist.DataTypes.Text.GetContent
+  name: GetContent()
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_GetContent
+  commentId: M:Archivist.DataTypes.Text.GetContent
+  fullName: Archivist.DataTypes.Text.GetContent()
+  nameWithType: Text.GetContent()
+- uid: Archivist.DataTypes.Text.GetContent*
+  name: GetContent
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text_GetContent_
+  commentId: Overload:Archivist.DataTypes.Text.GetContent
   isSpec: "True"
-  fullName: Archivist.DataTypes.Text.SetContent
-  nameWithType: Text.SetContent
+  fullName: Archivist.DataTypes.Text.GetContent
+  nameWithType: Text.GetContent
 - uid: Archivist.Enums
   name: Archivist.Enums
   href: api/Archivist.Enums.html
@@ -1902,6 +2663,50 @@ references:
   fullName.vb: Archivist.FormatManager.New
   nameWithType: FormatManager.FormatManager
   nameWithType.vb: FormatManager.New
+- uid: Archivist.Formats.FixedLength
+  name: Archivist.Formats.FixedLength
+  href: api/Archivist.Formats.FixedLength.html
+  commentId: N:Archivist.Formats.FixedLength
+  fullName: Archivist.Formats.FixedLength
+  nameWithType: Archivist.Formats.FixedLength
+- uid: Archivist.Formats.FixedLength.FixedLengthWriter
+  name: FixedLengthWriter
+  href: api/Archivist.Formats.FixedLength.FixedLengthWriter.html
+  commentId: T:Archivist.Formats.FixedLength.FixedLengthWriter
+  fullName: Archivist.Formats.FixedLength.FixedLengthWriter
+  nameWithType: FixedLengthWriter
+- uid: Archivist.Formats.FixedLength.FixedLengthWriter.CanWrite(Archivist.Interfaces.IGenericFile)
+  name: CanWrite(IGenericFile?)
+  href: api/Archivist.Formats.FixedLength.FixedLengthWriter.html#Archivist_Formats_FixedLength_FixedLengthWriter_CanWrite_Archivist_Interfaces_IGenericFile_
+  commentId: M:Archivist.Formats.FixedLength.FixedLengthWriter.CanWrite(Archivist.Interfaces.IGenericFile)
+  name.vb: CanWrite(IGenericFile)
+  fullName: Archivist.Formats.FixedLength.FixedLengthWriter.CanWrite(Archivist.Interfaces.IGenericFile?)
+  fullName.vb: Archivist.Formats.FixedLength.FixedLengthWriter.CanWrite(Archivist.Interfaces.IGenericFile)
+  nameWithType: FixedLengthWriter.CanWrite(IGenericFile?)
+  nameWithType.vb: FixedLengthWriter.CanWrite(IGenericFile)
+- uid: Archivist.Formats.FixedLength.FixedLengthWriter.CanWrite*
+  name: CanWrite
+  href: api/Archivist.Formats.FixedLength.FixedLengthWriter.html#Archivist_Formats_FixedLength_FixedLengthWriter_CanWrite_
+  commentId: Overload:Archivist.Formats.FixedLength.FixedLengthWriter.CanWrite
+  isSpec: "True"
+  fullName: Archivist.Formats.FixedLength.FixedLengthWriter.CanWrite
+  nameWithType: FixedLengthWriter.CanWrite
+- uid: Archivist.Formats.FixedLength.FixedLengthWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: WriteAsync(IGenericFile?, Stream?)
+  href: api/Archivist.Formats.FixedLength.FixedLengthWriter.html#Archivist_Formats_FixedLength_FixedLengthWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.Formats.FixedLength.FixedLengthWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name.vb: WriteAsync(IGenericFile, Stream)
+  fullName: Archivist.Formats.FixedLength.FixedLengthWriter.WriteAsync(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.Formats.FixedLength.FixedLengthWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: FixedLengthWriter.WriteAsync(IGenericFile?, Stream?)
+  nameWithType.vb: FixedLengthWriter.WriteAsync(IGenericFile, Stream)
+- uid: Archivist.Formats.FixedLength.FixedLengthWriter.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.Formats.FixedLength.FixedLengthWriter.html#Archivist_Formats_FixedLength_FixedLengthWriter_WriteAsync_
+  commentId: Overload:Archivist.Formats.FixedLength.FixedLengthWriter.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.FixedLength.FixedLengthWriter.WriteAsync
+  nameWithType: FixedLengthWriter.WriteAsync
 - uid: Archivist.Formats.Txt
   name: Archivist.Formats.Txt
   href: api/Archivist.Formats.Txt.html
@@ -2086,19 +2891,6 @@ references:
   isSpec: "True"
   fullName: Archivist.Formats.VCard.VCardFormat.MimeTypes
   nameWithType: VCardFormat.MimeTypes
-- uid: Archivist.Formats.VCard.VCardFormat.Order
-  name: Order
-  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat_Order
-  commentId: P:Archivist.Formats.VCard.VCardFormat.Order
-  fullName: Archivist.Formats.VCard.VCardFormat.Order
-  nameWithType: VCardFormat.Order
-- uid: Archivist.Formats.VCard.VCardFormat.Order*
-  name: Order
-  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat_Order_
-  commentId: Overload:Archivist.Formats.VCard.VCardFormat.Order
-  isSpec: "True"
-  fullName: Archivist.Formats.VCard.VCardFormat.Order
-  nameWithType: VCardFormat.Order
 - uid: Archivist.Formats.VCard.VCardReader
   name: VCardReader
   href: api/Archivist.Formats.VCard.VCardReader.html
@@ -2410,19 +3202,19 @@ references:
   commentId: T:Archivist.Interfaces.IGenericFile
   fullName: Archivist.Interfaces.IGenericFile
   nameWithType: IGenericFile
-- uid: Archivist.Interfaces.IGenericFile.Content
-  name: Content
-  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_Content
-  commentId: P:Archivist.Interfaces.IGenericFile.Content
-  fullName: Archivist.Interfaces.IGenericFile.Content
-  nameWithType: IGenericFile.Content
-- uid: Archivist.Interfaces.IGenericFile.Content*
-  name: Content
-  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_Content_
-  commentId: Overload:Archivist.Interfaces.IGenericFile.Content
+- uid: Archivist.Interfaces.IGenericFile.GetContent
+  name: GetContent()
+  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_GetContent
+  commentId: M:Archivist.Interfaces.IGenericFile.GetContent
+  fullName: Archivist.Interfaces.IGenericFile.GetContent()
+  nameWithType: IGenericFile.GetContent()
+- uid: Archivist.Interfaces.IGenericFile.GetContent*
+  name: GetContent
+  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_GetContent_
+  commentId: Overload:Archivist.Interfaces.IGenericFile.GetContent
   isSpec: "True"
-  fullName: Archivist.Interfaces.IGenericFile.Content
-  nameWithType: IGenericFile.Content
+  fullName: Archivist.Interfaces.IGenericFile.GetContent
+  nameWithType: IGenericFile.GetContent
 - uid: Archivist.Interfaces.IGenericFile.Metadata
   name: Metadata
   href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_Metadata
