@@ -14,11 +14,11 @@ namespace Archivist.DataTypes
         /// <param name="property">The property of the field.</param>
         /// <param name="parameters">The parameters of the field.</param>
         /// <param name="value">The value of the field.</param>
-        public CardField(string property, IEnumerable<CardFieldParameter>? parameters, string? value)
+        public CardField(string? property, IEnumerable<CardFieldParameter>? parameters, string? value)
         {
-            Property = property;
+            Property = property ?? "";
             Parameters.AddRange(parameters ?? Array.Empty<CardFieldParameter>());
-            Value = value;
+            Value = value ?? "";
         }
 
         /// <summary>

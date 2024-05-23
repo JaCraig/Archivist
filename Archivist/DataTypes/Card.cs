@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Enums;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,6 +14,21 @@ namespace Archivist.DataTypes
     public class Card : FileBaseClass<Card>, IComparable<Card>, IEquatable<Card>, IEnumerable<CardField?>, IEnumerable
     {
         /// <summary>
+        /// Gets the addresses for the card.
+        /// </summary>
+        public IEnumerable<CardField?> Addresses => this[CommonCardFields.Address];
+
+        /// <summary>
+        /// Gets the anniversaries for the card.
+        /// </summary>
+        public IEnumerable<CardField?> Anniversaries => this[CommonCardFields.Anniversary];
+
+        /// <summary>
+        /// Gets the birthdays for the card.
+        /// </summary>
+        public IEnumerable<CardField?> Birthdays => this[CommonCardFields.Birthday];
+
+        /// <summary>
         /// Gets or sets the content of the card.
         /// </summary>
         public override string? Content
@@ -25,6 +41,11 @@ namespace Archivist.DataTypes
         /// Gets the number of fields in the card.
         /// </summary>
         public int Count => Fields.Count;
+
+        /// <summary>
+        /// Gets the emails for the card.
+        /// </summary>
+        public IEnumerable<CardField?> Emails => this[CommonCardFields.Email];
 
         /// <summary>
         /// Gets or sets the fields of the card.
@@ -41,6 +62,16 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Gets the IM entries from the card.
+        /// </summary>
+        public IEnumerable<CardField?> InstantMessengers => this[CommonCardFields.IMPP];
+
+        /// <summary>
+        /// Gets the languages from the card.
+        /// </summary>
+        public IEnumerable<CardField?> Languages => this[CommonCardFields.Language];
+
+        /// <summary>
         /// Gets the last name from the card.
         /// </summary>
         public string LastName
@@ -48,6 +79,11 @@ namespace Archivist.DataTypes
             get => GetNameField(0);
             set => UpdateNameField(value, 0);
         }
+
+        /// <summary>
+        /// Gets the logos from the card.
+        /// </summary>
+        public IEnumerable<CardField?> Logos => this[CommonCardFields.Logo];
 
         /// <summary>
         /// Gets the middle name from the card.
@@ -59,6 +95,31 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Gets the nicknames from the card.
+        /// </summary>
+        public IEnumerable<CardField?> Nicknames => this[CommonCardFields.Nickname];
+
+        /// <summary>
+        /// Gets the notes from the card.
+        /// </summary>
+        public IEnumerable<CardField?> Notes => this[CommonCardFields.Note];
+
+        /// <summary>
+        /// Gets the organizations from the card.
+        /// </summary>
+        public IEnumerable<CardField?> Organizations => this[CommonCardFields.Organization];
+
+        /// <summary>
+        /// Gets the phone numbers from the card.
+        /// </summary>
+        public IEnumerable<CardField?> PhoneNumbers => this[CommonCardFields.Phone];
+
+        /// <summary>
+        /// Gets the photos from the card.
+        /// </summary>
+        public IEnumerable<CardField?> Photos => this[CommonCardFields.Photo];
+
+        /// <summary>
         /// Gets the prefix from the card.
         /// </summary>
         public string Prefix
@@ -68,6 +129,16 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Gets the roles of the card.
+        /// </summary>
+        public IEnumerable<CardField?> Roles => this[CommonCardFields.Role];
+
+        /// <summary>
+        /// Gets the sounds from the card.
+        /// </summary>
+        public IEnumerable<CardField?> Sounds => this[CommonCardFields.Sound];
+
+        /// <summary>
         /// Gets the suffix from the card.
         /// </summary>
         public string Suffix
@@ -75,6 +146,21 @@ namespace Archivist.DataTypes
             get => GetNameField(4);
             set => UpdateNameField(value, 4);
         }
+
+        /// <summary>
+        /// Gets the time zones from the card.
+        /// </summary>
+        public IEnumerable<CardField?> TimeZones => this[CommonCardFields.TimeZone];
+
+        /// <summary>
+        /// Gets the titles from the card.
+        /// </summary>
+        public IEnumerable<CardField?> Titles => this[CommonCardFields.Title];
+
+        /// <summary>
+        /// Gets the URLs from the card.
+        /// </summary>
+        public IEnumerable<CardField?> Websites => this[CommonCardFields.URL];
 
         /// <summary>
         /// Gets or sets the field at the specified index.
@@ -227,7 +313,7 @@ namespace Archivist.DataTypes
         /// <returns>The portion of the name field at the specified index.</returns>
         private string GetNameField(int index)
         {
-            var NameParts = this["N"].FirstOrDefault()?.Value?.Split(';');
+            var NameParts = this[CommonCardFields.Name].FirstOrDefault()?.Value?.Split(';');
             return NameParts?.Length > index ? NameParts[index] : "";
         }
 
@@ -238,10 +324,10 @@ namespace Archivist.DataTypes
         /// <param name="index">The index of the name field.</param>
         private void UpdateNameField(string value, int index)
         {
-            CardField? Field = this["N"].FirstOrDefault();
+            CardField? Field = this[CommonCardFields.Name].FirstOrDefault();
             if (Field is null)
             {
-                Field = new CardField("N", Array.Empty<CardFieldParameter>(), ";;;;");
+                Field = new CardField(CommonCardFields.Name, Array.Empty<CardFieldParameter>(), ";;;;");
                 Fields.Add(Field);
             }
             var NameParts = Field.Value?.Split(';') ?? Array.Empty<string>();

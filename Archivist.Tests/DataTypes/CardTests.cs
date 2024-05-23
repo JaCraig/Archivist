@@ -289,6 +289,36 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanGetAddresses()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Addresses;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetAnniversaries()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Anniversaries;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetBirthdays()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Birthdays;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
         public void CanGetCount()
         {
             // Arrange
@@ -300,6 +330,16 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanGetEmails()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Emails;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
         public void CanGetFields()
         {
             // Assert
@@ -307,6 +347,136 @@ namespace Archivist.Tests.DataTypes
 
             Assert.NotNull(Result);
             Assert.Empty(Result);
+        }
+
+        [Fact]
+        public void CanGetInstantMessengers()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.InstantMessengers;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetLanguages()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Languages;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetLogos()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Logos;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetNicknames()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Nicknames;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetNotes()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Notes;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetOrganizations()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Organizations;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetPhoneNumbers()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.PhoneNumbers;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetPhotos()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Photos;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetRoles()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Roles;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetSounds()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Sounds;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetTimeZones()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.TimeZones;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetTitles()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Titles;
+
+            // Assert
+            Assert.NotNull(Results);
+        }
+
+        [Fact]
+        public void CanGetWebsites()
+        {
+            // Assert
+            IEnumerable<CardField?> Results = _TestClass.Websites;
+
+            // Assert
+            Assert.NotNull(Results);
         }
 
         [Fact]
