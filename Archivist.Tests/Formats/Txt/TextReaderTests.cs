@@ -9,6 +9,11 @@ namespace Archivist.Tests.Formats.Txt
 {
     public class TextReaderTests : TestBaseClass<Archivist.Formats.Txt.TextReader>
     {
+        public TextReaderTests()
+        {
+            TestObject = new Archivist.Formats.Txt.TextReader();
+        }
+
         private readonly Archivist.Formats.Txt.TextReader _TestClass = new();
 
         [Fact]
@@ -23,7 +28,7 @@ namespace Archivist.Tests.Formats.Txt
             // Assert
             Assert.NotNull(Result);
             _ = Assert.IsType<Text>(Result);
-            Assert.Empty(Result.Content ?? "");
+            Assert.Empty(Result.GetContent() ?? "");
             Assert.Empty(Result.Title ?? "");
         }
 
@@ -50,7 +55,7 @@ namespace Archivist.Tests.Formats.Txt
             // Assert
             Assert.NotNull(Result);
             _ = Assert.IsType<Text>(Result);
-            Assert.Empty(Result.Content ?? "");
+            Assert.Empty(Result.GetContent() ?? "");
             Assert.Empty(Result.Title ?? "");
         }
 
@@ -70,7 +75,7 @@ namespace Archivist.Tests.Formats.Txt
             // Assert
             Assert.NotNull(Result);
             _ = Assert.IsType<Text>(Result);
-            Assert.Equal(ExpectedContent, Result.Content);
+            Assert.Equal(ExpectedContent, Result.GetContent());
             Assert.Equal(ExpectedTitle, Result.Title);
         }
     }

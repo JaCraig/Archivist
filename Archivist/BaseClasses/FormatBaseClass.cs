@@ -1,4 +1,5 @@
-﻿using Archivist.ExtensionMethods;
+﻿using Archivist.Enums;
+using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
 using System;
 using System.IO;
@@ -55,7 +56,7 @@ namespace Archivist.BaseClasses
         /// Note that the order is only relevant when multiple file formats have the same HeaderInfo length.
         /// The system uses HeaderInfo to determine the order to check first, with longer headers checked first.
         /// </summary>
-        public virtual int Order { get; }
+        public virtual int Order { get; } = DefaultFormatValues._Order;
 
         /// <summary>
         /// Gets the file reader instance.

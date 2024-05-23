@@ -29,15 +29,6 @@ namespace Archivist.DataTypes
         public IEnumerable<CardField?> Birthdays => this[CommonCardFields.Birthday];
 
         /// <summary>
-        /// Gets or sets the content of the card.
-        /// </summary>
-        public override string? Content
-        {
-            get => string.Join(Environment.NewLine, Fields.Where(field => field is not null));
-            protected set { }
-        }
-
-        /// <summary>
         /// Gets the number of fields in the card.
         /// </summary>
         public int Count => Fields.Count;
@@ -60,6 +51,11 @@ namespace Archivist.DataTypes
             get => GetNameField(1);
             set => UpdateNameField(value, 1);
         }
+
+        /// <summary>
+        /// Gets the full name for the card.
+        /// </summary>
+        public CardField? FullName => this[CommonCardFields.FullName].FirstOrDefault();
 
         /// <summary>
         /// Gets the IM entries from the card.
@@ -93,6 +89,11 @@ namespace Archivist.DataTypes
             get => GetNameField(2);
             set => UpdateNameField(value, 2);
         }
+
+        /// <summary>
+        /// Gets the name for the card.
+        /// </summary>
+        public CardField? Name => this[CommonCardFields.Name].FirstOrDefault();
 
         /// <summary>
         /// Gets the nicknames from the card.
@@ -169,7 +170,14 @@ namespace Archivist.DataTypes
         /// <returns>The field at the specified index.</returns>
         public CardField? this[int index]
         {
-            get => Fields[index];
+            get
+            {
+                if (index < 0 || index >= Fields.Count)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(index));
+                }
+                return Fields[index];
+            }
             set
             {
                 if (index < 0 || index >= Fields.Count)
@@ -278,14 +286,14 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="other">The other card to compare.</param>
         /// <returns>An integer that indicates the relative order of the cards.</returns>
-        public override int CompareTo(Card? other) => string.Compare(other?.Content, Content, StringComparison.OrdinalIgnoreCase);
+        public override int CompareTo(Card? other) => string.Compare(other?.GetContent(), GetContent(), StringComparison.OrdinalIgnoreCase);
 
         /// <summary>
         /// Determines whether the card is equal to another card based on their content.
         /// </summary>
         /// <param name="other">The other card to compare.</param>
         /// <returns>True if the cards are equal; otherwise, false.</returns>
-        public override bool Equals(Card? other) => string.Equals(Content, other?.Content, StringComparison.OrdinalIgnoreCase);
+        public override bool Equals(Card? other) => string.Equals(GetContent(), other?.GetContent(), StringComparison.OrdinalIgnoreCase);
 
         /// <summary>
         /// Determines whether the card is equal to another object.
@@ -293,6 +301,12 @@ namespace Archivist.DataTypes
         /// <param name="obj">The object to compare.</param>
         /// <returns>True if the card is equal to the object; otherwise, false.</returns>
         public override bool Equals(object? obj) => ReferenceEquals(this, obj) || (obj is not null && Equals(obj as Card));
+
+        /// <summary>
+        /// Gets the content of the card.
+        /// </summary>
+        /// <returns>The content of the card.</returns>
+        public override string? GetContent() => string.Join(Environment.NewLine, Fields.Where(field => field is not null));
 
         /// <inheritdoc/>
         public IEnumerator<CardField?> GetEnumerator() => ((IEnumerable<CardField?>)Fields).GetEnumerator();
@@ -304,7 +318,7 @@ namespace Archivist.DataTypes
         /// Gets the hash code of the card based on its content.
         /// </summary>
         /// <returns>The hash code of the card.</returns>
-        public override int GetHashCode() => Content?.GetHashCode(StringComparison.OrdinalIgnoreCase) ?? 0;
+        public override int GetHashCode() => GetContent()?.GetHashCode(StringComparison.OrdinalIgnoreCase) ?? 0;
 
         /// <summary>
         /// Gets the portion of the name field at the specified index.
@@ -313,7 +327,7 @@ namespace Archivist.DataTypes
         /// <returns>The portion of the name field at the specified index.</returns>
         private string GetNameField(int index)
         {
-            var NameParts = this[CommonCardFields.Name].FirstOrDefault()?.Value?.Split(';');
+            var NameParts = Name?.Value?.Split(';');
             return NameParts?.Length > index ? NameParts[index] : "";
         }
 
@@ -324,7 +338,7 @@ namespace Archivist.DataTypes
         /// <param name="index">The index of the name field.</param>
         private void UpdateNameField(string value, int index)
         {
-            CardField? Field = this[CommonCardFields.Name].FirstOrDefault();
+            CardField? Field = Name;
             if (Field is null)
             {
                 Field = new CardField(CommonCardFields.Name, Array.Empty<CardFieldParameter>(), ";;;;");

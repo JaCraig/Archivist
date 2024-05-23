@@ -54,20 +54,20 @@ namespace Archivist.Tests.BaseClasses
         }
 
         /// <summary>
-        /// Gets the type of the object.
-        /// </summary>
-        /// <value>The type of the object.</value>
-        protected abstract Type? ObjectType { get; }
-
-        /// <summary>
         /// The service provider lock
         /// </summary>
-        private static readonly object ServiceProviderLock = new();
+        private static readonly object _ServiceProviderLock = new();
 
         /// <summary>
         /// The service provider
         /// </summary>
-        private static IServiceProvider? ServiceProvider;
+        private static IServiceProvider? _ServiceProvider;
+
+        /// <summary>
+        /// Gets the type of the object.
+        /// </summary>
+        /// <value>The type of the object.</value>
+        protected abstract Type? ObjectType { get; }
 
         /// <summary>
         /// Attempts to break the object.
@@ -82,15 +82,15 @@ namespace Archivist.Tests.BaseClasses
         /// <returns></returns>
         protected static IServiceProvider? GetServiceProvider()
         {
-            if (ServiceProvider is not null)
-                return ServiceProvider;
-            lock (ServiceProviderLock)
+            if (_ServiceProvider is not null)
+                return _ServiceProvider;
+            lock (_ServiceProviderLock)
             {
-                if (ServiceProvider is not null)
-                    return ServiceProvider;
-                ServiceProvider = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
+                if (_ServiceProvider is not null)
+                    return _ServiceProvider;
+                _ServiceProvider = new ServiceCollection().AddCanisterModules()?.BuildServiceProvider();
             }
-            return ServiceProvider;
+            return _ServiceProvider;
         }
     }
 }

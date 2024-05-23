@@ -13,6 +13,7 @@ namespace Archivist.Tests.Formats.Txt
         public TextWriterTests()
         {
             _TestClass = new Archivist.Formats.Txt.TextWriter();
+            TestObject = new Archivist.Formats.Txt.TextWriter();
         }
 
         private readonly Archivist.Formats.Txt.TextWriter _TestClass;
@@ -37,7 +38,7 @@ namespace Archivist.Tests.Formats.Txt
             IGenericFile File = Substitute.For<IGenericFile>();
             await using var Stream = new MemoryStream();
             const string Content = "Test content";
-            _ = File.Content.Returns(Content);
+            _ = File.GetContent().Returns(Content);
 
             // Act
             var Result = await _TestClass.WriteAsync(File, Stream);
@@ -55,7 +56,7 @@ namespace Archivist.Tests.Formats.Txt
             // Arrange
             IGenericFile File = Substitute.For<IGenericFile>();
             var Stream = new MemoryStream();
-            _ = File.Content.Returns("Test content");
+            _ = File.GetContent().Returns("Test content");
             Stream.Close(); // Close the stream to simulate an exception
 
             // Act

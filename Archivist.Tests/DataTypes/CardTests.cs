@@ -9,6 +9,11 @@ namespace Archivist.Tests.DataTypes
 {
     public class CardTests : TestBaseClass<Card>
     {
+        public CardTests()
+        {
+            TestObject = new Card();
+        }
+
         private static readonly Card _TestClass = new();
 
         [Fact]
@@ -653,7 +658,7 @@ namespace Archivist.Tests.DataTypes
             Card.Fields.Add(new CardField("EMAIL", null, "johndoe@example.com"));
 
             // Act
-            var Content = Card.Content;
+            var Content = Card.GetContent();
 
             // Assert
             Assert.Equal("FN (): John Doe" + Environment.NewLine + "EMAIL (): johndoe@example.com", Content);

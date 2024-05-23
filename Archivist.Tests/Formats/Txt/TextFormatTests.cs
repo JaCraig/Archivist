@@ -13,6 +13,7 @@ namespace Archivist.Tests.Formats.Txt
         public TextFormatTests()
         {
             _TestClass = new TextFormat();
+            TestObject = new TextFormat();
         }
 
         private readonly TextFormat _TestClass;
@@ -80,7 +81,7 @@ namespace Archivist.Tests.Formats.Txt
 
             // Assert
             Assert.NotNull(Result);
-            Assert.Equal(Text, Result.Content);
+            Assert.Equal(Text, Result.GetContent());
             Assert.Equal(Text, Result.Title);
         }
 

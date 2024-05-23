@@ -17,6 +17,7 @@ namespace Archivist.Tests.Formats.VCard
         public VCardFormatTests()
         {
             _TestClass = new VCardFormat();
+            TestObject = new VCardFormat();
         }
 
         private readonly VCardFormat _TestClass;

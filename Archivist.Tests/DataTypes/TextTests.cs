@@ -6,6 +6,11 @@ namespace Archivist.Tests.DataTypes
 {
     public class TextTests : TestBaseClass<Text>
     {
+        public TextTests()
+        {
+            TestObject = new Text("", "");
+        }
+
         private readonly Text _TestClass = new("", "");
 
         [Fact]
@@ -95,7 +100,7 @@ namespace Archivist.Tests.DataTypes
             const string ExpectedContent = "Sample text";
 
             // Act
-            Text.SetContent(ExpectedContent);
+            Text.Content = ExpectedContent;
             var ActualContent = Text.Content;
 
             // Assert

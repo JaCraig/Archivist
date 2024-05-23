@@ -1,5 +1,4 @@
 ﻿using Archivist.BaseClasses;
-using Archivist.Enums;
 
 namespace Archivist.Formats.VCard
 {
@@ -25,10 +24,5 @@ namespace Archivist.Formats.VCard
         /// Gets the MIME types associated with the VCard format.
         /// </summary>
         public override string[] MimeTypes { get; } = new[] { "TEXT/V-CARD", "TEXT/VCARD" };
-
-        /// <summary>
-        /// Gets the order of the VCard format in the list of supported formats.
-        /// </summary>
-        public override int Order { get; } = DefaultFormatValues.Order;
     }
 }

@@ -23,7 +23,7 @@ namespace Archivist.DataTypes
         /// <summary>
         /// Gets or sets the content of the text file.
         /// </summary>
-        public override string? Content { get; protected set; }
+        public string? Content { get; set; }
 
         /// <summary>
         /// Compares the current text file with another text file.
@@ -40,9 +40,9 @@ namespace Archivist.DataTypes
         public override bool Equals(Text? other) => string.Equals(Content, other?.Content, StringComparison.OrdinalIgnoreCase);
 
         /// <summary>
-        /// Gets or sets the title of the text file.
+        /// Gets the content of the text file.
         /// </summary>
-        /// <param name="content">The content of the file.</param>
-        public void SetContent(string content) => Content = content;
+        /// <returns>The content of the text file.</returns>
+        public override string? GetContent() => Content;
     }
 }

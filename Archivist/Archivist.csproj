@@ -61,7 +61,6 @@
     <Folder Include="Formats\MSG\" />
     <Folder Include="Formats\JSON\" />
     <Folder Include="Formats\Markdown\" />
-    <Folder Include="Formats\FixedLength\" />
     <Folder Include="Formats\Image\" />
     <Folder Include="Formats\PNG\" />
     <Folder Include="Formats\YAML\" />

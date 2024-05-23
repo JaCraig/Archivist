@@ -12,6 +12,7 @@ namespace Archivist.Tests
         {
             _Formats = new[] { Substitute.For<IFormat>(), Substitute.For<IFormat>(), Substitute.For<IFormat>() };
             _TestClass = new FormatManager(_Formats);
+            TestObject = new FormatManager(_Formats);
         }
 
         private readonly IEnumerable<IFormat> _Formats;
@@ -21,13 +22,13 @@ namespace Archivist.Tests
         public void CanConstruct()
         {
             // Act
-            var instance = new FormatManager(_Formats);
+            var Instance = new FormatManager(_Formats);
 
             // Assert
-            Assert.NotNull(instance);
+            Assert.NotNull(Instance);
         }
 
         [Fact]
-        public void CanConstructWithNullFormats() => new FormatManager(default);
+        public void CanConstructWithNullFormats() => _ = new FormatManager(default);
     }
 }

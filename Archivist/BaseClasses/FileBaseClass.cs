@@ -11,11 +11,6 @@ namespace Archivist.BaseClasses
         where TFileType : FileBaseClass<TFileType>
     {
         /// <summary>
-        /// Gets or sets the content of the file.
-        /// </summary>
-        public abstract string? Content { get; protected set; }
-
-        /// <summary>
         /// Gets or sets the metadata associated with the file.
         /// </summary>
         public Dictionary<string, string> Metadata { get; } = new Dictionary<string, string>();
@@ -124,15 +119,21 @@ namespace Archivist.BaseClasses
         public override bool Equals(object? obj) => (obj is TFileType TempItem) && Equals(TempItem);
 
         /// <summary>
+        /// Gets the content of the file.
+        /// </summary>
+        /// <returns>The content of the file.</returns>
+        public abstract string? GetContent();
+
+        /// <summary>
         /// Gets the hash code for the file object.
         /// </summary>
         /// <returns>The hash code for the file object.</returns>
-        public override int GetHashCode() => Content?.GetHashCode() ?? 0;
+        public override int GetHashCode() => GetContent()?.GetHashCode() ?? 0;
 
         /// <summary>
         /// Converts the file object to a string.
         /// </summary>
         /// <returns>The content of the file object.</returns>
-        public override string ToString() => Content ?? "";
+        public override string ToString() => GetContent() ?? "";
     }
 }

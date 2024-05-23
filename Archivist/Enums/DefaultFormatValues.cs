@@ -8,6 +8,6 @@
         /// <summary>
         /// Gets or sets the order value.
         /// </summary>
-        internal static int Order = 200;
+        internal static int _Order = 200;
     }
 }

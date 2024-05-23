@@ -16,6 +16,11 @@ namespace Archivist.Formats.VCard
     public class VCardReader : ReaderBaseClass
     {
         /// <summary>
+        /// Represents the separator used to split the lines of the VCard file.
+        /// </summary>
+        private static readonly string[] _Separator = new string[] { "\r\n" };
+
+        /// <summary>
         /// Gets the header information of the VCard file.
         /// </summary>
         public override byte[] HeaderInfo { get; } = new byte[] { 0x42, 0x45, 0x47, 0x49, 0x4E, 0x3A, 0x56, 0x43, 0x41, 0x52, 0x44 };
@@ -41,7 +46,7 @@ namespace Archivist.Formats.VCard
                 return new Card();
             var ReturnValue = new Card();
             var Content = await GetDataAsync(stream).ConfigureAwait(false);
-            var Lines = Content.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+            var Lines = Content.Split(_Separator, StringSplitOptions.RemoveEmptyEntries);
             if (Lines.Length is 0)
                 return ReturnValue;
             var CurrentField = new CardField("", Array.Empty<CardFieldParameter>(), "");

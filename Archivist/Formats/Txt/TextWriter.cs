@@ -21,7 +21,7 @@ namespace Archivist.Formats.Txt
         {
             if (stream is null)
                 return false;
-            var TempData = Encoding.UTF8.GetBytes(file?.Content ?? "");
+            var TempData = Encoding.UTF8.GetBytes(file?.GetContent() ?? "");
             try
             {
                 await stream.WriteAsync(TempData).ConfigureAwait(false);

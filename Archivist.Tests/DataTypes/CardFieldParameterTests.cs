@@ -11,6 +11,7 @@ namespace Archivist.Tests.DataTypes
             _Name = "TestValue293008716";
             _Value = "TestValue683907540";
             _TestClass = new CardFieldParameter(_Name, _Value);
+            TestObject = new CardFieldParameter(_Name, _Value);
         }
 
         private readonly string _Name;
@@ -40,18 +41,18 @@ namespace Archivist.Tests.DataTypes
         [Theory]
         [InlineData("")]
         [InlineData("   ")]
-        public void CanConstructWithInvalidName(string value) => new CardFieldParameter(value, _Value);
+        public void CanConstructWithInvalidName(string value) => _ = new CardFieldParameter(value, _Value);
 
         [Theory]
         [InlineData("")]
         [InlineData("   ")]
-        public void CanConstructWithInvalidValue(string value) => new CardFieldParameter(_Name, value);
+        public void CanConstructWithInvalidValue(string value) => _ = new CardFieldParameter(_Name, value);
 
         [Fact]
         public void CanSetAndGetName()
         {
             // Arrange
-            var TestValue = "TestValue877727010";
+            const string TestValue = "TestValue877727010";
 
             // Act
             _TestClass.Name = TestValue;
@@ -64,7 +65,7 @@ namespace Archivist.Tests.DataTypes
         public void CanSetAndGetValue()
         {
             // Arrange
-            var TestValue = "TestValue1953516492";
+            const string TestValue = "TestValue1953516492";
 
             // Act
             _TestClass.Value = TestValue;
