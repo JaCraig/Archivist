@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.0.4"></a>
+## [0.0.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.0.4) (2024-05-25)
+
+### Bug Fixes
+
+* Adding fixed length format helpers ([845ca15](https://www.github.com/JaCraig/Archivist/commit/845ca157ae7363f6f44d5e013b8d7b299fbf9f50))
+* Finishing up vCard format and Card data type ([ff64bf7](https://www.github.com/JaCraig/Archivist/commit/ff64bf7eaa854bc874c144ce18defc79cafef3ea))
+* Fixing vCard format tests ([8bd2422](https://www.github.com/JaCraig/Archivist/commit/8bd242204ace2bb8383fa86d85fa415a7ff4a345))
+* More test fixes ([b684041](https://www.github.com/JaCraig/Archivist/commit/b684041dd968a2594791e64c56119a4aa51b6025))
+* Starting work on vCard format ([f8ed0d8](https://www.github.com/JaCraig/Archivist/commit/f8ed0d89262152f6e97113386dc0ef77e8d1da54))
+* Working more on vCard format and card type ([6679fe8](https://www.github.com/JaCraig/Archivist/commit/6679fe865c8e5263a23b81ac3312929969527b3f))
+
+### Other
+
+* Merge pull request #10 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-d10d8338a5 ([f722248](https://www.github.com/JaCraig/Archivist/commit/f722248d9c09faa0f8828abb6714eed988b66bc4))
+* Adding tests ([32b6a54](https://www.github.com/JaCraig/Archivist/commit/32b6a54bc803b40529f4cc3fdf07822eeddffcec))
+* bump Microsoft.NET.Test.Sdk ([defd5eb](https://www.github.com/JaCraig/Archivist/commit/defd5ebdaa2e33de21bfffabad0ef8fde94e97ff))
+* merge ([c1a9bc5](https://www.github.com/JaCraig/Archivist/commit/c1a9bc5526ab2ae5b98d6c837b482619763cf0f1))
+
 <a name="0.0.3"></a>
 ## [0.0.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.0.3) (2024-05-21)
 
