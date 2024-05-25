@@ -17,7 +17,10 @@ namespace Archivist.Formats.VCard
         /// </summary>
         /// <param name="file">The IGenericFile object representing the VCard file.</param>
         /// <param name="stream">The Stream object to write the VCard file to.</param>
-        /// <returns>A task representing the asynchronous write operation. The task result is a boolean value indicating whether the write operation was successful.</returns>
+        /// <returns>
+        /// A task representing the asynchronous write operation. The task result is a boolean value
+        /// indicating whether the write operation was successful.
+        /// </returns>
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
             if (stream is null || file is null)
@@ -26,7 +29,7 @@ namespace Archivist.Formats.VCard
                 return false;
             if (!stream.CanWrite)
                 return false;
-            var FileContent = new StringBuilder("BEGIN:VCARD\r\nVERSION:4.0\r\n");
+            var FileContent = new StringBuilder($"BEGIN:VCARD\r\nVERSION:4.0\r\n");
             foreach (CardField? Field in FileCard.Fields)
             {
                 if (Field is null)

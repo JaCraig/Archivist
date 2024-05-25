@@ -16,11 +16,6 @@ namespace Archivist.Formats.VCard
     public class VCardReader : ReaderBaseClass
     {
         /// <summary>
-        /// Represents the separator used to split the lines of the VCard file.
-        /// </summary>
-        private static readonly string[] _Separator = new string[] { "\r\n" };
-
-        /// <summary>
         /// Gets the header information of the VCard file.
         /// </summary>
         public override byte[] HeaderInfo { get; } = new byte[] { 0x42, 0x45, 0x47, 0x49, 0x4E, 0x3A, 0x56, 0x43, 0x41, 0x52, 0x44 };
@@ -36,10 +31,18 @@ namespace Archivist.Formats.VCard
         private static Regex PropertySplitter { get; } = new Regex("(?<Property>[^;:]+);?(?<Parameters>[^:]+)?:(?<Value>.*)", RegexOptions.Compiled);
 
         /// <summary>
+        /// Represents the separator used to split the lines of the VCard file.
+        /// </summary>
+        private static readonly string[] _Separator = new string[] { "\r\n", Environment.NewLine };
+
+        /// <summary>
         /// Reads a VCard file asynchronously from the specified stream.
         /// </summary>
         /// <param name="stream">The stream to read the VCard file from.</param>
-        /// <returns>A task representing the asynchronous operation. The task result contains the parsed VCard file.</returns>
+        /// <returns>
+        /// A task representing the asynchronous operation. The task result contains the parsed
+        /// VCard file.
+        /// </returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             if (stream is null)
@@ -84,7 +87,7 @@ namespace Archivist.Formats.VCard
             try
             {
                 var Content = await stream.ReadAllAsync().ConfigureAwait(false);
-                return Content?.Replace("\r\n ", "") ?? "";
+                return Content?.Replace("\r\n ", "").Replace(Environment.NewLine + " ", "") ?? "";
             }
             catch
             {
