@@ -29,7 +29,7 @@ namespace Archivist.Formats.VCard
                 return false;
             if (!stream.CanWrite)
                 return false;
-            var FileContent = new StringBuilder($"BEGIN:VCARD\r\nVERSION:4.0\r\n");
+            var FileContent = new StringBuilder("BEGIN:VCARD\r\nVERSION:4.0\r\n");
             foreach (CardField? Field in FileCard.Fields)
             {
                 if (Field is null)
