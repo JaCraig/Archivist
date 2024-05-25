@@ -1628,6 +1628,34 @@ references:
   commentId: T:Archivist.DataTypes.FixedLengthFile
   fullName: Archivist.DataTypes.FixedLengthFile
   nameWithType: FixedLengthFile
+- uid: Archivist.DataTypes.FixedLengthFile.#ctor
+  name: FixedLengthFile()
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile__ctor
+  commentId: M:Archivist.DataTypes.FixedLengthFile.#ctor
+  name.vb: New()
+  fullName: Archivist.DataTypes.FixedLengthFile.FixedLengthFile()
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.New()
+  nameWithType: FixedLengthFile.FixedLengthFile()
+  nameWithType.vb: FixedLengthFile.New()
+- uid: Archivist.DataTypes.FixedLengthFile.#ctor(System.String)
+  name: FixedLengthFile(string)
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile__ctor_System_String_
+  commentId: M:Archivist.DataTypes.FixedLengthFile.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Archivist.DataTypes.FixedLengthFile.FixedLengthFile(string)
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.New(String)
+  nameWithType: FixedLengthFile.FixedLengthFile(string)
+  nameWithType.vb: FixedLengthFile.New(String)
+- uid: Archivist.DataTypes.FixedLengthFile.#ctor*
+  name: FixedLengthFile
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile__ctor_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.FixedLengthFile.FixedLengthFile
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.New
+  nameWithType: FixedLengthFile.FixedLengthFile
+  nameWithType.vb: FixedLengthFile.New
 - uid: Archivist.DataTypes.FixedLengthFile.CompareTo(Archivist.DataTypes.FixedLengthFile)
   name: CompareTo(FixedLengthFile?)
   href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_CompareTo_Archivist_DataTypes_FixedLengthFile_
@@ -1695,6 +1723,19 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.FixedLengthFile.GetHashCode
   nameWithType: FixedLengthFile.GetHashCode
+- uid: Archivist.DataTypes.FixedLengthFile.LineSeparator
+  name: LineSeparator
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_LineSeparator
+  commentId: P:Archivist.DataTypes.FixedLengthFile.LineSeparator
+  fullName: Archivist.DataTypes.FixedLengthFile.LineSeparator
+  nameWithType: FixedLengthFile.LineSeparator
+- uid: Archivist.DataTypes.FixedLengthFile.LineSeparator*
+  name: LineSeparator
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_LineSeparator_
+  commentId: Overload:Archivist.DataTypes.FixedLengthFile.LineSeparator
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthFile.LineSeparator
+  nameWithType: FixedLengthFile.LineSeparator
 - uid: Archivist.DataTypes.FixedLengthFile.Records
   name: Records
   href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile_Records
