@@ -10,6 +10,30 @@ namespace Archivist.DataTypes
     public class FixedLengthFile : FileBaseClass<FixedLengthFile>, IEquatable<FixedLengthFile>, IComparable<FixedLengthFile>
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="FixedLengthFile"/> class with the default
+        /// line separator.
+        /// </summary>
+        public FixedLengthFile()
+            : this("\r\n")
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FixedLengthFile"/> class with the specified
+        /// line separator.
+        /// </summary>
+        /// <param name="lineSeparator">The line separator to use.</param>
+        public FixedLengthFile(string lineSeparator)
+        {
+            LineSeparator = lineSeparator;
+        }
+
+        /// <summary>
+        /// Gets the line separator used in the fixed-length file.
+        /// </summary>
+        public string LineSeparator { get; }
+
+        /// <summary>
         /// Gets the list of fixed-length records in the file.
         /// </summary>
         public List<FixedLengthRecord> Records { get; } = new List<FixedLengthRecord>();
@@ -30,18 +54,25 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="left">The first fixed-length file to compare.</param>
         /// <param name="right">The second fixed-length file to compare.</param>
-        /// <returns>True if the first fixed-length file is less than the second fixed-length file; otherwise, false.</returns>
+        /// <returns>
+        /// True if the first fixed-length file is less than the second fixed-length file;
+        /// otherwise, false.
+        /// </returns>
         public static bool operator <(FixedLengthFile? left, FixedLengthFile? right)
         {
             return left is null ? right is not null : left.CompareTo(right) < 0;
         }
 
         /// <summary>
-        /// Determines whether the first fixed-length file is less than or equal to the second fixed-length file.
+        /// Determines whether the first fixed-length file is less than or equal to the second
+        /// fixed-length file.
         /// </summary>
         /// <param name="left">The first fixed-length file to compare.</param>
         /// <param name="right">The second fixed-length file to compare.</param>
-        /// <returns>True if the first fixed-length file is less than or equal to the second fixed-length file; otherwise, false.</returns>
+        /// <returns>
+        /// True if the first fixed-length file is less than or equal to the second fixed-length
+        /// file; otherwise, false.
+        /// </returns>
         public static bool operator <=(FixedLengthFile? left, FixedLengthFile? right)
         {
             return left is null || left.CompareTo(right) <= 0;
@@ -63,18 +94,25 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="left">The first fixed-length file to compare.</param>
         /// <param name="right">The second fixed-length file to compare.</param>
-        /// <returns>True if the first fixed-length file is greater than the second fixed-length file; otherwise, false.</returns>
+        /// <returns>
+        /// True if the first fixed-length file is greater than the second fixed-length file;
+        /// otherwise, false.
+        /// </returns>
         public static bool operator >(FixedLengthFile? left, FixedLengthFile? right)
         {
             return left?.CompareTo(right) > 0;
         }
 
         /// <summary>
-        /// Determines whether the first fixed-length file is greater than or equal to the second fixed-length file.
+        /// Determines whether the first fixed-length file is greater than or equal to the second
+        /// fixed-length file.
         /// </summary>
         /// <param name="left">The first fixed-length file to compare.</param>
         /// <param name="right">The second fixed-length file to compare.</param>
-        /// <returns>True if the first fixed-length file is greater than or equal to the second fixed-length file; otherwise, false.</returns>
+        /// <returns>
+        /// True if the first fixed-length file is greater than or equal to the second fixed-length
+        /// file; otherwise, false.
+        /// </returns>
         public static bool operator >=(FixedLengthFile? left, FixedLengthFile? right)
         {
             return left is null ? right is null : left.CompareTo(right) >= 0;
@@ -106,21 +144,26 @@ namespace Archivist.DataTypes
         /// Determines whether the current fixed-length file is equal to another fixed-length file.
         /// </summary>
         /// <param name="other">The other fixed-length file to compare.</param>
-        /// <returns>True if the current fixed-length file is equal to the other fixed-length file; otherwise, false.</returns>
+        /// <returns>
+        /// True if the current fixed-length file is equal to the other fixed-length file;
+        /// otherwise, false.
+        /// </returns>
         public override bool Equals(FixedLengthFile? other) => CompareTo(other) == 0;
 
         /// <summary>
         /// Determines whether the current fixed-length file is equal to another object.
         /// </summary>
         /// <param name="obj">The object to compare with the current fixed-length file.</param>
-        /// <returns>True if the current fixed-length file is equal to the other object; otherwise, false.</returns>
+        /// <returns>
+        /// True if the current fixed-length file is equal to the other object; otherwise, false.
+        /// </returns>
         public override bool Equals(object? obj) => ReferenceEquals(this, obj) || (obj is not null && obj is FixedLengthFile TempItem && Equals(TempItem));
 
         /// <summary>
         /// Gets the content of the fixed-length file as a string.
         /// </summary>
         /// <returns>A string that represents the content of the fixed-length file.</returns>
-        public override string? GetContent() => string.Join(Environment.NewLine, Records);
+        public override string? GetContent() => string.Join(LineSeparator, Records);
 
         /// <summary>
         /// Gets the hash code for the fixed-length file.

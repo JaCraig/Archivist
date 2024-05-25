@@ -59,7 +59,7 @@ namespace Archivist.Tests.DataTypes
         public void GetContent_ShouldReturnRecordsAsString()
         {
             // Arrange
-            var File = new FixedLengthFile();
+            var File = new FixedLengthFile("\r\n");
             var Record1 = new FixedLengthRecord();
             Record1.Fields.Add(new FixedLengthField("Record 1", 10));
             var Record2 = new FixedLengthRecord();
@@ -202,7 +202,7 @@ namespace Archivist.Tests.DataTypes
         public void ToString_ShouldReturnRecordsAsString()
         {
             // Arrange
-            var File = new FixedLengthFile();
+            var File = new FixedLengthFile("\r\n");
             var Record1 = new FixedLengthRecord();
             Record1.Fields.Add(new FixedLengthField("Record 1", 10));
             var Record2 = new FixedLengthRecord();
