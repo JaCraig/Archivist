@@ -182,7 +182,7 @@
   "articles/intro.html": {
     "href": "articles/intro.html",
     "title": "Code | Archivist API Reference",
-    "keywords": "Code namespace Archivist.Example { internal class Program { static void Main(string[] args) { Console.WriteLine(\"Hello, World!\"); } } } Output"
+    "keywords": "Code namespace Archivist.Example { internal static class Program { private static void Main(string[] args) => Console.WriteLine(\"Hello, World!\"); } } Output"
   },
   "index.html": {
     "href": "index.html",
