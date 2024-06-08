@@ -51,6 +51,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="ObjectCartographer" Version="3.0.48" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Formats\Delimited\" />

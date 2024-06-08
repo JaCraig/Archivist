@@ -300,7 +300,7 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="obj">The object to compare.</param>
         /// <returns>True if the card is equal to the object; otherwise, false.</returns>
-        public override bool Equals(object? obj) => ReferenceEquals(this, obj) || (obj is not null && Equals(obj as Card));
+        public override bool Equals(object? obj) => ReferenceEquals(this, obj) || (obj is Card CardObject && Equals(CardObject));
 
         /// <summary>
         /// Gets the content of the card.
