@@ -102,7 +102,7 @@ Class CardField  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CardField</code></pre>
+    <pre><code class="lang-csharp hljs">public class CardField : IEquatable&lt;CardField&gt;, IComparable&lt;CardField&gt;</code></pre>
   </div>
 
 
@@ -116,19 +116,20 @@ Class CardField  <a class="header-action link-secondary" title="View source" hre
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a>&gt;</div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
@@ -293,11 +294,167 @@ Class CardField  <a class="header-action link-secondary" title="View source" hre
 </h2>
 
 
+  <a id="Archivist_DataTypes_CardField_CompareTo_" data-uid="Archivist.DataTypes.CardField.CompareTo*"></a>
+
+  <h3 id="Archivist_DataTypes_CardField_CompareTo_Archivist_DataTypes_CardField_" data-uid="Archivist.DataTypes.CardField.CompareTo(Archivist.DataTypes.CardField)">
+  CompareTo(CardField?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares the current <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> object with another <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a>
+object and returns an integer that indicates whether the current object precedes,
+follows, or occurs in the same position in the sort order as the other object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(CardField? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value that indicates the relative order of the objects being compared. The return
+value has the following meanings: Value Meaning Less than zero This object is less than
+the <code class="paramref">other</code> parameter. Zero This object is equal to <code class="paramref">other</code>. Greater than zero This object is greater than <code class="paramref">other</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CardField_Equals_" data-uid="Archivist.DataTypes.CardField.Equals*"></a>
+
+  <h3 id="Archivist_DataTypes_CardField_Equals_Archivist_DataTypes_CardField_" data-uid="Archivist.DataTypes.CardField.Equals(Archivist.DataTypes.CardField)">
+  Equals(CardField?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> object is equal to the current
+<a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(CardField? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the specified <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> object is equal to the current
+object; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CardField_Equals_" data-uid="Archivist.DataTypes.CardField.Equals*"></a>
+
+  <h3 id="Archivist_DataTypes_CardField_Equals_System_Object_" data-uid="Archivist.DataTypes.CardField.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the specified object is equal to the current object; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CardField_GetHashCode_" data-uid="Archivist.DataTypes.CardField.GetHashCode*"></a>
+
+  <h3 id="Archivist_DataTypes_CardField_GetHashCode" data-uid="Archivist.DataTypes.CardField.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the hash code for the current <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A 32-bit signed integer hash code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Archivist_DataTypes_CardField_ToString_" data-uid="Archivist.DataTypes.CardField.ToString*"></a>
 
   <h3 id="Archivist_DataTypes_CardField_ToString" data-uid="Archivist.DataTypes.CardField.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L221"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string representation of the card field.</p>
@@ -313,6 +470,269 @@ Class CardField  <a class="header-action link-secondary" title="View source" hre
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>A string representation of the card field.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Archivist_DataTypes_CardField_op_Equality_" data-uid="Archivist.DataTypes.CardField.op_Equality*"></a>
+
+  <h3 id="Archivist_DataTypes_CardField_op_Equality_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_" data-uid="Archivist.DataTypes.CardField.op_Equality(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)">
+  operator ==(CardField?, CardField?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> objects are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(CardField? left, CardField? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The first <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The second <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the two <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> objects are equal; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CardField_op_GreaterThan_" data-uid="Archivist.DataTypes.CardField.op_GreaterThan*"></a>
+
+  <h3 id="Archivist_DataTypes_CardField_op_GreaterThan_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_" data-uid="Archivist.DataTypes.CardField.op_GreaterThan(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)">
+  operator &gt;(CardField?, CardField?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares two <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> objects and determines whether the first one is
+greater than the second one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(CardField? left, CardField? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The first <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The second <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the first <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> is greater than the second one;
+otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CardField_op_GreaterThanOrEqual_" data-uid="Archivist.DataTypes.CardField.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="Archivist_DataTypes_CardField_op_GreaterThanOrEqual_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_" data-uid="Archivist.DataTypes.CardField.op_GreaterThanOrEqual(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)">
+  operator &gt;=(CardField?, CardField?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares two <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> objects and determines whether the first one is
+greater than or equal to the second one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(CardField? left, CardField? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The first <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The second <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the first <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> is greater than or equal to the second
+one; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CardField_op_Inequality_" data-uid="Archivist.DataTypes.CardField.op_Inequality*"></a>
+
+  <h3 id="Archivist_DataTypes_CardField_op_Inequality_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_" data-uid="Archivist.DataTypes.CardField.op_Inequality(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)">
+  operator !=(CardField?, CardField?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> objects are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(CardField? left, CardField? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The first <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The second <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the two <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> objects are not equal; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CardField_op_LessThan_" data-uid="Archivist.DataTypes.CardField.op_LessThan*"></a>
+
+  <h3 id="Archivist_DataTypes_CardField_op_LessThan_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_" data-uid="Archivist.DataTypes.CardField.op_LessThan(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)">
+  operator &lt;(CardField?, CardField?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares two <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> objects and determines whether the first one is
+less than the second one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(CardField? left, CardField? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The first <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The second <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the first <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> is less than the second one; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CardField_op_LessThanOrEqual_" data-uid="Archivist.DataTypes.CardField.op_LessThanOrEqual*"></a>
+
+  <h3 id="Archivist_DataTypes_CardField_op_LessThanOrEqual_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_" data-uid="Archivist.DataTypes.CardField.op_LessThanOrEqual(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)">
+  operator &lt;=(CardField?, CardField?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CardField.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares two <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> objects and determines whether the first one is
+less than or equal to the second one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(CardField? left, CardField? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The first <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a></dt>
+    <dd><p>The second <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the first <a class="xref" href="Archivist.DataTypes.CardField.html">CardField</a> is less than or equal to the second
+one; otherwise, <code>false</code>.</p>
 </dd>
   </dl>
 

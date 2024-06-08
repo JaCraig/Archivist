@@ -1248,6 +1248,60 @@ references:
   fullName.vb: Archivist.DataTypes.CardField.New
   nameWithType: CardField.CardField
   nameWithType.vb: CardField.New
+- uid: Archivist.DataTypes.CardField.CompareTo(Archivist.DataTypes.CardField)
+  name: CompareTo(CardField?)
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_CompareTo_Archivist_DataTypes_CardField_
+  commentId: M:Archivist.DataTypes.CardField.CompareTo(Archivist.DataTypes.CardField)
+  name.vb: CompareTo(CardField)
+  fullName: Archivist.DataTypes.CardField.CompareTo(Archivist.DataTypes.CardField?)
+  fullName.vb: Archivist.DataTypes.CardField.CompareTo(Archivist.DataTypes.CardField)
+  nameWithType: CardField.CompareTo(CardField?)
+  nameWithType.vb: CardField.CompareTo(CardField)
+- uid: Archivist.DataTypes.CardField.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_CompareTo_
+  commentId: Overload:Archivist.DataTypes.CardField.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardField.CompareTo
+  nameWithType: CardField.CompareTo
+- uid: Archivist.DataTypes.CardField.Equals(Archivist.DataTypes.CardField)
+  name: Equals(CardField?)
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_Equals_Archivist_DataTypes_CardField_
+  commentId: M:Archivist.DataTypes.CardField.Equals(Archivist.DataTypes.CardField)
+  name.vb: Equals(CardField)
+  fullName: Archivist.DataTypes.CardField.Equals(Archivist.DataTypes.CardField?)
+  fullName.vb: Archivist.DataTypes.CardField.Equals(Archivist.DataTypes.CardField)
+  nameWithType: CardField.Equals(CardField?)
+  nameWithType.vb: CardField.Equals(CardField)
+- uid: Archivist.DataTypes.CardField.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.CardField.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.CardField.Equals(object?)
+  fullName.vb: Archivist.DataTypes.CardField.Equals(Object)
+  nameWithType: CardField.Equals(object?)
+  nameWithType.vb: CardField.Equals(Object)
+- uid: Archivist.DataTypes.CardField.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_Equals_
+  commentId: Overload:Archivist.DataTypes.CardField.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardField.Equals
+  nameWithType: CardField.Equals
+- uid: Archivist.DataTypes.CardField.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_GetHashCode
+  commentId: M:Archivist.DataTypes.CardField.GetHashCode
+  fullName: Archivist.DataTypes.CardField.GetHashCode()
+  nameWithType: CardField.GetHashCode()
+- uid: Archivist.DataTypes.CardField.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.CardField.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardField.GetHashCode
+  nameWithType: CardField.GetHashCode
 - uid: Archivist.DataTypes.CardField.Parameters
   name: Parameters
   href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_Parameters
@@ -1300,6 +1354,120 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.CardField.Value
   nameWithType: CardField.Value
+- uid: Archivist.DataTypes.CardField.op_Equality(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name: operator ==(CardField?, CardField?)
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_Equality_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_
+  commentId: M:Archivist.DataTypes.CardField.op_Equality(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name.vb: =(CardField, CardField)
+  fullName: Archivist.DataTypes.CardField.operator ==(Archivist.DataTypes.CardField?, Archivist.DataTypes.CardField?)
+  fullName.vb: Archivist.DataTypes.CardField.=(Archivist.DataTypes.CardField, Archivist.DataTypes.CardField)
+  nameWithType: CardField.operator ==(CardField?, CardField?)
+  nameWithType.vb: CardField.=(CardField, CardField)
+- uid: Archivist.DataTypes.CardField.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_Equality_
+  commentId: Overload:Archivist.DataTypes.CardField.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.CardField.operator ==
+  fullName.vb: Archivist.DataTypes.CardField.=
+  nameWithType: CardField.operator ==
+  nameWithType.vb: CardField.=
+- uid: Archivist.DataTypes.CardField.op_GreaterThan(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name: operator >(CardField?, CardField?)
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_GreaterThan_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_
+  commentId: M:Archivist.DataTypes.CardField.op_GreaterThan(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name.vb: '>(CardField, CardField)'
+  fullName: Archivist.DataTypes.CardField.operator >(Archivist.DataTypes.CardField?, Archivist.DataTypes.CardField?)
+  fullName.vb: Archivist.DataTypes.CardField.>(Archivist.DataTypes.CardField, Archivist.DataTypes.CardField)
+  nameWithType: CardField.operator >(CardField?, CardField?)
+  nameWithType.vb: CardField.>(CardField, CardField)
+- uid: Archivist.DataTypes.CardField.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.CardField.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.CardField.operator >
+  fullName.vb: Archivist.DataTypes.CardField.>
+  nameWithType: CardField.operator >
+  nameWithType.vb: CardField.>
+- uid: Archivist.DataTypes.CardField.op_GreaterThanOrEqual(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name: operator >=(CardField?, CardField?)
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_GreaterThanOrEqual_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_
+  commentId: M:Archivist.DataTypes.CardField.op_GreaterThanOrEqual(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name.vb: '>=(CardField, CardField)'
+  fullName: Archivist.DataTypes.CardField.operator >=(Archivist.DataTypes.CardField?, Archivist.DataTypes.CardField?)
+  fullName.vb: Archivist.DataTypes.CardField.>=(Archivist.DataTypes.CardField, Archivist.DataTypes.CardField)
+  nameWithType: CardField.operator >=(CardField?, CardField?)
+  nameWithType.vb: CardField.>=(CardField, CardField)
+- uid: Archivist.DataTypes.CardField.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.CardField.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.CardField.operator >=
+  fullName.vb: Archivist.DataTypes.CardField.>=
+  nameWithType: CardField.operator >=
+  nameWithType.vb: CardField.>=
+- uid: Archivist.DataTypes.CardField.op_Inequality(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name: operator !=(CardField?, CardField?)
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_Inequality_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_
+  commentId: M:Archivist.DataTypes.CardField.op_Inequality(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name.vb: <>(CardField, CardField)
+  fullName: Archivist.DataTypes.CardField.operator !=(Archivist.DataTypes.CardField?, Archivist.DataTypes.CardField?)
+  fullName.vb: Archivist.DataTypes.CardField.<>(Archivist.DataTypes.CardField, Archivist.DataTypes.CardField)
+  nameWithType: CardField.operator !=(CardField?, CardField?)
+  nameWithType.vb: CardField.<>(CardField, CardField)
+- uid: Archivist.DataTypes.CardField.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.CardField.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.CardField.operator !=
+  fullName.vb: Archivist.DataTypes.CardField.<>
+  nameWithType: CardField.operator !=
+  nameWithType.vb: CardField.<>
+- uid: Archivist.DataTypes.CardField.op_LessThan(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name: operator <(CardField?, CardField?)
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_LessThan_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_
+  commentId: M:Archivist.DataTypes.CardField.op_LessThan(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name.vb: <(CardField, CardField)
+  fullName: Archivist.DataTypes.CardField.operator <(Archivist.DataTypes.CardField?, Archivist.DataTypes.CardField?)
+  fullName.vb: Archivist.DataTypes.CardField.<(Archivist.DataTypes.CardField, Archivist.DataTypes.CardField)
+  nameWithType: CardField.operator <(CardField?, CardField?)
+  nameWithType.vb: CardField.<(CardField, CardField)
+- uid: Archivist.DataTypes.CardField.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.CardField.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.CardField.operator <
+  fullName.vb: Archivist.DataTypes.CardField.<
+  nameWithType: CardField.operator <
+  nameWithType.vb: CardField.<
+- uid: Archivist.DataTypes.CardField.op_LessThanOrEqual(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name: operator <=(CardField?, CardField?)
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_LessThanOrEqual_Archivist_DataTypes_CardField_Archivist_DataTypes_CardField_
+  commentId: M:Archivist.DataTypes.CardField.op_LessThanOrEqual(Archivist.DataTypes.CardField,Archivist.DataTypes.CardField)
+  name.vb: <=(CardField, CardField)
+  fullName: Archivist.DataTypes.CardField.operator <=(Archivist.DataTypes.CardField?, Archivist.DataTypes.CardField?)
+  fullName.vb: Archivist.DataTypes.CardField.<=(Archivist.DataTypes.CardField, Archivist.DataTypes.CardField)
+  nameWithType: CardField.operator <=(CardField?, CardField?)
+  nameWithType.vb: CardField.<=(CardField, CardField)
+- uid: Archivist.DataTypes.CardField.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.CardField.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.CardField.operator <=
+  fullName.vb: Archivist.DataTypes.CardField.<=
+  nameWithType: CardField.operator <=
+  nameWithType.vb: CardField.<=
 - uid: Archivist.DataTypes.CardFieldParameter
   name: CardFieldParameter
   href: api/Archivist.DataTypes.CardFieldParameter.html
@@ -1325,6 +1493,60 @@ references:
   fullName.vb: Archivist.DataTypes.CardFieldParameter.New
   nameWithType: CardFieldParameter.CardFieldParameter
   nameWithType.vb: CardFieldParameter.New
+- uid: Archivist.DataTypes.CardFieldParameter.CompareTo(Archivist.DataTypes.CardFieldParameter)
+  name: CompareTo(CardFieldParameter?)
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_CompareTo_Archivist_DataTypes_CardFieldParameter_
+  commentId: M:Archivist.DataTypes.CardFieldParameter.CompareTo(Archivist.DataTypes.CardFieldParameter)
+  name.vb: CompareTo(CardFieldParameter)
+  fullName: Archivist.DataTypes.CardFieldParameter.CompareTo(Archivist.DataTypes.CardFieldParameter?)
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.CompareTo(Archivist.DataTypes.CardFieldParameter)
+  nameWithType: CardFieldParameter.CompareTo(CardFieldParameter?)
+  nameWithType.vb: CardFieldParameter.CompareTo(CardFieldParameter)
+- uid: Archivist.DataTypes.CardFieldParameter.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_CompareTo_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardFieldParameter.CompareTo
+  nameWithType: CardFieldParameter.CompareTo
+- uid: Archivist.DataTypes.CardFieldParameter.Equals(Archivist.DataTypes.CardFieldParameter)
+  name: Equals(CardFieldParameter?)
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_Equals_Archivist_DataTypes_CardFieldParameter_
+  commentId: M:Archivist.DataTypes.CardFieldParameter.Equals(Archivist.DataTypes.CardFieldParameter)
+  name.vb: Equals(CardFieldParameter)
+  fullName: Archivist.DataTypes.CardFieldParameter.Equals(Archivist.DataTypes.CardFieldParameter?)
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.Equals(Archivist.DataTypes.CardFieldParameter)
+  nameWithType: CardFieldParameter.Equals(CardFieldParameter?)
+  nameWithType.vb: CardFieldParameter.Equals(CardFieldParameter)
+- uid: Archivist.DataTypes.CardFieldParameter.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.CardFieldParameter.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.CardFieldParameter.Equals(object?)
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.Equals(Object)
+  nameWithType: CardFieldParameter.Equals(object?)
+  nameWithType.vb: CardFieldParameter.Equals(Object)
+- uid: Archivist.DataTypes.CardFieldParameter.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_Equals_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardFieldParameter.Equals
+  nameWithType: CardFieldParameter.Equals
+- uid: Archivist.DataTypes.CardFieldParameter.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_GetHashCode
+  commentId: M:Archivist.DataTypes.CardFieldParameter.GetHashCode
+  fullName: Archivist.DataTypes.CardFieldParameter.GetHashCode()
+  nameWithType: CardFieldParameter.GetHashCode()
+- uid: Archivist.DataTypes.CardFieldParameter.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardFieldParameter.GetHashCode
+  nameWithType: CardFieldParameter.GetHashCode
 - uid: Archivist.DataTypes.CardFieldParameter.Name
   name: Name
   href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_Name
@@ -1364,6 +1586,120 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.CardFieldParameter.Value
   nameWithType: CardFieldParameter.Value
+- uid: Archivist.DataTypes.CardFieldParameter.op_Equality(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name: operator ==(CardFieldParameter?, CardFieldParameter?)
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_Equality_Archivist_DataTypes_CardFieldParameter_Archivist_DataTypes_CardFieldParameter_
+  commentId: M:Archivist.DataTypes.CardFieldParameter.op_Equality(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name.vb: =(CardFieldParameter, CardFieldParameter)
+  fullName: Archivist.DataTypes.CardFieldParameter.operator ==(Archivist.DataTypes.CardFieldParameter?, Archivist.DataTypes.CardFieldParameter?)
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.=(Archivist.DataTypes.CardFieldParameter, Archivist.DataTypes.CardFieldParameter)
+  nameWithType: CardFieldParameter.operator ==(CardFieldParameter?, CardFieldParameter?)
+  nameWithType.vb: CardFieldParameter.=(CardFieldParameter, CardFieldParameter)
+- uid: Archivist.DataTypes.CardFieldParameter.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_Equality_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.CardFieldParameter.operator ==
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.=
+  nameWithType: CardFieldParameter.operator ==
+  nameWithType.vb: CardFieldParameter.=
+- uid: Archivist.DataTypes.CardFieldParameter.op_GreaterThan(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name: operator >(CardFieldParameter?, CardFieldParameter?)
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_GreaterThan_Archivist_DataTypes_CardFieldParameter_Archivist_DataTypes_CardFieldParameter_
+  commentId: M:Archivist.DataTypes.CardFieldParameter.op_GreaterThan(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name.vb: '>(CardFieldParameter, CardFieldParameter)'
+  fullName: Archivist.DataTypes.CardFieldParameter.operator >(Archivist.DataTypes.CardFieldParameter?, Archivist.DataTypes.CardFieldParameter?)
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.>(Archivist.DataTypes.CardFieldParameter, Archivist.DataTypes.CardFieldParameter)
+  nameWithType: CardFieldParameter.operator >(CardFieldParameter?, CardFieldParameter?)
+  nameWithType.vb: CardFieldParameter.>(CardFieldParameter, CardFieldParameter)
+- uid: Archivist.DataTypes.CardFieldParameter.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.CardFieldParameter.operator >
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.>
+  nameWithType: CardFieldParameter.operator >
+  nameWithType.vb: CardFieldParameter.>
+- uid: Archivist.DataTypes.CardFieldParameter.op_GreaterThanOrEqual(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name: operator >=(CardFieldParameter?, CardFieldParameter?)
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_GreaterThanOrEqual_Archivist_DataTypes_CardFieldParameter_Archivist_DataTypes_CardFieldParameter_
+  commentId: M:Archivist.DataTypes.CardFieldParameter.op_GreaterThanOrEqual(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name.vb: '>=(CardFieldParameter, CardFieldParameter)'
+  fullName: Archivist.DataTypes.CardFieldParameter.operator >=(Archivist.DataTypes.CardFieldParameter?, Archivist.DataTypes.CardFieldParameter?)
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.>=(Archivist.DataTypes.CardFieldParameter, Archivist.DataTypes.CardFieldParameter)
+  nameWithType: CardFieldParameter.operator >=(CardFieldParameter?, CardFieldParameter?)
+  nameWithType.vb: CardFieldParameter.>=(CardFieldParameter, CardFieldParameter)
+- uid: Archivist.DataTypes.CardFieldParameter.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.CardFieldParameter.operator >=
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.>=
+  nameWithType: CardFieldParameter.operator >=
+  nameWithType.vb: CardFieldParameter.>=
+- uid: Archivist.DataTypes.CardFieldParameter.op_Inequality(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name: operator !=(CardFieldParameter?, CardFieldParameter?)
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_Inequality_Archivist_DataTypes_CardFieldParameter_Archivist_DataTypes_CardFieldParameter_
+  commentId: M:Archivist.DataTypes.CardFieldParameter.op_Inequality(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name.vb: <>(CardFieldParameter, CardFieldParameter)
+  fullName: Archivist.DataTypes.CardFieldParameter.operator !=(Archivist.DataTypes.CardFieldParameter?, Archivist.DataTypes.CardFieldParameter?)
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.<>(Archivist.DataTypes.CardFieldParameter, Archivist.DataTypes.CardFieldParameter)
+  nameWithType: CardFieldParameter.operator !=(CardFieldParameter?, CardFieldParameter?)
+  nameWithType.vb: CardFieldParameter.<>(CardFieldParameter, CardFieldParameter)
+- uid: Archivist.DataTypes.CardFieldParameter.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.CardFieldParameter.operator !=
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.<>
+  nameWithType: CardFieldParameter.operator !=
+  nameWithType.vb: CardFieldParameter.<>
+- uid: Archivist.DataTypes.CardFieldParameter.op_LessThan(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name: operator <(CardFieldParameter?, CardFieldParameter?)
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_LessThan_Archivist_DataTypes_CardFieldParameter_Archivist_DataTypes_CardFieldParameter_
+  commentId: M:Archivist.DataTypes.CardFieldParameter.op_LessThan(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name.vb: <(CardFieldParameter, CardFieldParameter)
+  fullName: Archivist.DataTypes.CardFieldParameter.operator <(Archivist.DataTypes.CardFieldParameter?, Archivist.DataTypes.CardFieldParameter?)
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.<(Archivist.DataTypes.CardFieldParameter, Archivist.DataTypes.CardFieldParameter)
+  nameWithType: CardFieldParameter.operator <(CardFieldParameter?, CardFieldParameter?)
+  nameWithType.vb: CardFieldParameter.<(CardFieldParameter, CardFieldParameter)
+- uid: Archivist.DataTypes.CardFieldParameter.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.CardFieldParameter.operator <
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.<
+  nameWithType: CardFieldParameter.operator <
+  nameWithType.vb: CardFieldParameter.<
+- uid: Archivist.DataTypes.CardFieldParameter.op_LessThanOrEqual(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name: operator <=(CardFieldParameter?, CardFieldParameter?)
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_LessThanOrEqual_Archivist_DataTypes_CardFieldParameter_Archivist_DataTypes_CardFieldParameter_
+  commentId: M:Archivist.DataTypes.CardFieldParameter.op_LessThanOrEqual(Archivist.DataTypes.CardFieldParameter,Archivist.DataTypes.CardFieldParameter)
+  name.vb: <=(CardFieldParameter, CardFieldParameter)
+  fullName: Archivist.DataTypes.CardFieldParameter.operator <=(Archivist.DataTypes.CardFieldParameter?, Archivist.DataTypes.CardFieldParameter?)
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.<=(Archivist.DataTypes.CardFieldParameter, Archivist.DataTypes.CardFieldParameter)
+  nameWithType: CardFieldParameter.operator <=(CardFieldParameter?, CardFieldParameter?)
+  nameWithType.vb: CardFieldParameter.<=(CardFieldParameter, CardFieldParameter)
+- uid: Archivist.DataTypes.CardFieldParameter.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.CardFieldParameter.html#Archivist_DataTypes_CardFieldParameter_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.CardFieldParameter.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.CardFieldParameter.operator <=
+  fullName.vb: Archivist.DataTypes.CardFieldParameter.<=
+  nameWithType: CardFieldParameter.operator <=
+  nameWithType.vb: CardFieldParameter.<=
 - uid: Archivist.DataTypes.FixedLengthField
   name: FixedLengthField
   href: api/Archivist.DataTypes.FixedLengthField.html
@@ -2115,6 +2451,696 @@ references:
   fullName.vb: Archivist.DataTypes.FixedLengthRecord.<=
   nameWithType: FixedLengthRecord.operator <=
   nameWithType.vb: FixedLengthRecord.<=
+- uid: Archivist.DataTypes.Table
+  name: Table
+  href: api/Archivist.DataTypes.Table.html
+  commentId: T:Archivist.DataTypes.Table
+  fullName: Archivist.DataTypes.Table
+  nameWithType: Table
+- uid: Archivist.DataTypes.Table.Columns
+  name: Columns
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Columns
+  commentId: P:Archivist.DataTypes.Table.Columns
+  fullName: Archivist.DataTypes.Table.Columns
+  nameWithType: Table.Columns
+- uid: Archivist.DataTypes.Table.Columns*
+  name: Columns
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Columns_
+  commentId: Overload:Archivist.DataTypes.Table.Columns
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.Columns
+  nameWithType: Table.Columns
+- uid: Archivist.DataTypes.Table.CompareTo(Archivist.DataTypes.Table)
+  name: CompareTo(Table?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_CompareTo_Archivist_DataTypes_Table_
+  commentId: M:Archivist.DataTypes.Table.CompareTo(Archivist.DataTypes.Table)
+  name.vb: CompareTo(Table)
+  fullName: Archivist.DataTypes.Table.CompareTo(Archivist.DataTypes.Table?)
+  fullName.vb: Archivist.DataTypes.Table.CompareTo(Archivist.DataTypes.Table)
+  nameWithType: Table.CompareTo(Table?)
+  nameWithType.vb: Table.CompareTo(Table)
+- uid: Archivist.DataTypes.Table.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_CompareTo_
+  commentId: Overload:Archivist.DataTypes.Table.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.CompareTo
+  nameWithType: Table.CompareTo
+- uid: Archivist.DataTypes.Table.Convert*
+  name: Convert
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Convert_
+  commentId: Overload:Archivist.DataTypes.Table.Convert
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.Convert
+  nameWithType: Table.Convert
+- uid: Archivist.DataTypes.Table.Convert``1
+  name: Convert<TObject>()
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Convert__1
+  commentId: M:Archivist.DataTypes.Table.Convert``1
+  name.vb: Convert(Of TObject)()
+  fullName: Archivist.DataTypes.Table.Convert<TObject>()
+  fullName.vb: Archivist.DataTypes.Table.Convert(Of TObject)()
+  nameWithType: Table.Convert<TObject>()
+  nameWithType.vb: Table.Convert(Of TObject)()
+- uid: Archivist.DataTypes.Table.Equals(Archivist.DataTypes.Table)
+  name: Equals(Table?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Equals_Archivist_DataTypes_Table_
+  commentId: M:Archivist.DataTypes.Table.Equals(Archivist.DataTypes.Table)
+  name.vb: Equals(Table)
+  fullName: Archivist.DataTypes.Table.Equals(Archivist.DataTypes.Table?)
+  fullName.vb: Archivist.DataTypes.Table.Equals(Archivist.DataTypes.Table)
+  nameWithType: Table.Equals(Table?)
+  nameWithType.vb: Table.Equals(Table)
+- uid: Archivist.DataTypes.Table.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.Table.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.Table.Equals(object?)
+  fullName.vb: Archivist.DataTypes.Table.Equals(Object)
+  nameWithType: Table.Equals(object?)
+  nameWithType.vb: Table.Equals(Object)
+- uid: Archivist.DataTypes.Table.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Equals_
+  commentId: Overload:Archivist.DataTypes.Table.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.Equals
+  nameWithType: Table.Equals
+- uid: Archivist.DataTypes.Table.GetContent
+  name: GetContent()
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_GetContent
+  commentId: M:Archivist.DataTypes.Table.GetContent
+  fullName: Archivist.DataTypes.Table.GetContent()
+  nameWithType: Table.GetContent()
+- uid: Archivist.DataTypes.Table.GetContent*
+  name: GetContent
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_GetContent_
+  commentId: Overload:Archivist.DataTypes.Table.GetContent
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.GetContent
+  nameWithType: Table.GetContent
+- uid: Archivist.DataTypes.Table.GetEnumerator
+  name: GetEnumerator()
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_GetEnumerator
+  commentId: M:Archivist.DataTypes.Table.GetEnumerator
+  fullName: Archivist.DataTypes.Table.GetEnumerator()
+  nameWithType: Table.GetEnumerator()
+- uid: Archivist.DataTypes.Table.GetEnumerator*
+  name: GetEnumerator
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_GetEnumerator_
+  commentId: Overload:Archivist.DataTypes.Table.GetEnumerator
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.GetEnumerator
+  nameWithType: Table.GetEnumerator
+- uid: Archivist.DataTypes.Table.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_GetHashCode
+  commentId: M:Archivist.DataTypes.Table.GetHashCode
+  fullName: Archivist.DataTypes.Table.GetHashCode()
+  nameWithType: Table.GetHashCode()
+- uid: Archivist.DataTypes.Table.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.Table.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.GetHashCode
+  nameWithType: Table.GetHashCode
+- uid: Archivist.DataTypes.Table.Rows
+  name: Rows
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Rows
+  commentId: P:Archivist.DataTypes.Table.Rows
+  fullName: Archivist.DataTypes.Table.Rows
+  nameWithType: Table.Rows
+- uid: Archivist.DataTypes.Table.Rows*
+  name: Rows
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Rows_
+  commentId: Overload:Archivist.DataTypes.Table.Rows
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.Rows
+  nameWithType: Table.Rows
+- uid: Archivist.DataTypes.Table.op_Equality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name: operator ==(Table, Table)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Equality_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
+  commentId: M:Archivist.DataTypes.Table.op_Equality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name.vb: =(Table, Table)
+  fullName: Archivist.DataTypes.Table.operator ==(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName.vb: Archivist.DataTypes.Table.=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  nameWithType: Table.operator ==(Table, Table)
+  nameWithType.vb: Table.=(Table, Table)
+- uid: Archivist.DataTypes.Table.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Equality_
+  commentId: Overload:Archivist.DataTypes.Table.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.Table.operator ==
+  fullName.vb: Archivist.DataTypes.Table.=
+  nameWithType: Table.operator ==
+  nameWithType.vb: Table.=
+- uid: Archivist.DataTypes.Table.op_GreaterThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name: operator >(Table, Table)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_GreaterThan_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
+  commentId: M:Archivist.DataTypes.Table.op_GreaterThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name.vb: '>(Table, Table)'
+  fullName: Archivist.DataTypes.Table.operator >(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName.vb: Archivist.DataTypes.Table.>(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  nameWithType: Table.operator >(Table, Table)
+  nameWithType.vb: Table.>(Table, Table)
+- uid: Archivist.DataTypes.Table.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.Table.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.Table.operator >
+  fullName.vb: Archivist.DataTypes.Table.>
+  nameWithType: Table.operator >
+  nameWithType.vb: Table.>
+- uid: Archivist.DataTypes.Table.op_GreaterThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name: operator >=(Table, Table)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_GreaterThanOrEqual_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
+  commentId: M:Archivist.DataTypes.Table.op_GreaterThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name.vb: '>=(Table, Table)'
+  fullName: Archivist.DataTypes.Table.operator >=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName.vb: Archivist.DataTypes.Table.>=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  nameWithType: Table.operator >=(Table, Table)
+  nameWithType.vb: Table.>=(Table, Table)
+- uid: Archivist.DataTypes.Table.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Table.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.Table.operator >=
+  fullName.vb: Archivist.DataTypes.Table.>=
+  nameWithType: Table.operator >=
+  nameWithType.vb: Table.>=
+- uid: Archivist.DataTypes.Table.op_Inequality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name: operator !=(Table, Table)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Inequality_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
+  commentId: M:Archivist.DataTypes.Table.op_Inequality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name.vb: <>(Table, Table)
+  fullName: Archivist.DataTypes.Table.operator !=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName.vb: Archivist.DataTypes.Table.<>(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  nameWithType: Table.operator !=(Table, Table)
+  nameWithType.vb: Table.<>(Table, Table)
+- uid: Archivist.DataTypes.Table.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.Table.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.Table.operator !=
+  fullName.vb: Archivist.DataTypes.Table.<>
+  nameWithType: Table.operator !=
+  nameWithType.vb: Table.<>
+- uid: Archivist.DataTypes.Table.op_LessThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name: operator <(Table, Table)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_LessThan_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
+  commentId: M:Archivist.DataTypes.Table.op_LessThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name.vb: <(Table, Table)
+  fullName: Archivist.DataTypes.Table.operator <(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName.vb: Archivist.DataTypes.Table.<(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  nameWithType: Table.operator <(Table, Table)
+  nameWithType.vb: Table.<(Table, Table)
+- uid: Archivist.DataTypes.Table.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.Table.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.Table.operator <
+  fullName.vb: Archivist.DataTypes.Table.<
+  nameWithType: Table.operator <
+  nameWithType.vb: Table.<
+- uid: Archivist.DataTypes.Table.op_LessThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name: operator <=(Table, Table)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_LessThanOrEqual_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
+  commentId: M:Archivist.DataTypes.Table.op_LessThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
+  name.vb: <=(Table, Table)
+  fullName: Archivist.DataTypes.Table.operator <=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName.vb: Archivist.DataTypes.Table.<=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  nameWithType: Table.operator <=(Table, Table)
+  nameWithType.vb: Table.<=(Table, Table)
+- uid: Archivist.DataTypes.Table.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Table.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.Table.operator <=
+  fullName.vb: Archivist.DataTypes.Table.<=
+  nameWithType: Table.operator <=
+  nameWithType.vb: Table.<=
+- uid: Archivist.DataTypes.TableCell
+  name: TableCell
+  href: api/Archivist.DataTypes.TableCell.html
+  commentId: T:Archivist.DataTypes.TableCell
+  fullName: Archivist.DataTypes.TableCell
+  nameWithType: TableCell
+- uid: Archivist.DataTypes.TableCell.#ctor(System.String)
+  name: TableCell(string?)
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell__ctor_System_String_
+  commentId: M:Archivist.DataTypes.TableCell.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Archivist.DataTypes.TableCell.TableCell(string?)
+  fullName.vb: Archivist.DataTypes.TableCell.New(String)
+  nameWithType: TableCell.TableCell(string?)
+  nameWithType.vb: TableCell.New(String)
+- uid: Archivist.DataTypes.TableCell.#ctor*
+  name: TableCell
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell__ctor_
+  commentId: Overload:Archivist.DataTypes.TableCell.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.TableCell.TableCell
+  fullName.vb: Archivist.DataTypes.TableCell.New
+  nameWithType: TableCell.TableCell
+  nameWithType.vb: TableCell.New
+- uid: Archivist.DataTypes.TableCell.CompareTo(Archivist.DataTypes.TableCell)
+  name: CompareTo(TableCell?)
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_CompareTo_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableCell.CompareTo(Archivist.DataTypes.TableCell)
+  name.vb: CompareTo(TableCell)
+  fullName: Archivist.DataTypes.TableCell.CompareTo(Archivist.DataTypes.TableCell?)
+  fullName.vb: Archivist.DataTypes.TableCell.CompareTo(Archivist.DataTypes.TableCell)
+  nameWithType: TableCell.CompareTo(TableCell?)
+  nameWithType.vb: TableCell.CompareTo(TableCell)
+- uid: Archivist.DataTypes.TableCell.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_CompareTo_
+  commentId: Overload:Archivist.DataTypes.TableCell.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableCell.CompareTo
+  nameWithType: TableCell.CompareTo
+- uid: Archivist.DataTypes.TableCell.Content
+  name: Content
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_Content
+  commentId: P:Archivist.DataTypes.TableCell.Content
+  fullName: Archivist.DataTypes.TableCell.Content
+  nameWithType: TableCell.Content
+- uid: Archivist.DataTypes.TableCell.Content*
+  name: Content
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_Content_
+  commentId: Overload:Archivist.DataTypes.TableCell.Content
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableCell.Content
+  nameWithType: TableCell.Content
+- uid: Archivist.DataTypes.TableCell.Equals(Archivist.DataTypes.TableCell)
+  name: Equals(TableCell?)
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_Equals_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableCell.Equals(Archivist.DataTypes.TableCell)
+  name.vb: Equals(TableCell)
+  fullName: Archivist.DataTypes.TableCell.Equals(Archivist.DataTypes.TableCell?)
+  fullName.vb: Archivist.DataTypes.TableCell.Equals(Archivist.DataTypes.TableCell)
+  nameWithType: TableCell.Equals(TableCell?)
+  nameWithType.vb: TableCell.Equals(TableCell)
+- uid: Archivist.DataTypes.TableCell.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.TableCell.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.TableCell.Equals(object?)
+  fullName.vb: Archivist.DataTypes.TableCell.Equals(Object)
+  nameWithType: TableCell.Equals(object?)
+  nameWithType.vb: TableCell.Equals(Object)
+- uid: Archivist.DataTypes.TableCell.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_Equals_
+  commentId: Overload:Archivist.DataTypes.TableCell.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableCell.Equals
+  nameWithType: TableCell.Equals
+- uid: Archivist.DataTypes.TableCell.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_GetHashCode
+  commentId: M:Archivist.DataTypes.TableCell.GetHashCode
+  fullName: Archivist.DataTypes.TableCell.GetHashCode()
+  nameWithType: TableCell.GetHashCode()
+- uid: Archivist.DataTypes.TableCell.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.TableCell.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableCell.GetHashCode
+  nameWithType: TableCell.GetHashCode
+- uid: Archivist.DataTypes.TableCell.GetValue*
+  name: GetValue
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_GetValue_
+  commentId: Overload:Archivist.DataTypes.TableCell.GetValue
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableCell.GetValue
+  nameWithType: TableCell.GetValue
+- uid: Archivist.DataTypes.TableCell.GetValue``1
+  name: GetValue<TValue>()
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_GetValue__1
+  commentId: M:Archivist.DataTypes.TableCell.GetValue``1
+  name.vb: GetValue(Of TValue)()
+  fullName: Archivist.DataTypes.TableCell.GetValue<TValue>()
+  fullName.vb: Archivist.DataTypes.TableCell.GetValue(Of TValue)()
+  nameWithType: TableCell.GetValue<TValue>()
+  nameWithType.vb: TableCell.GetValue(Of TValue)()
+- uid: Archivist.DataTypes.TableCell.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_ToString
+  commentId: M:Archivist.DataTypes.TableCell.ToString
+  fullName: Archivist.DataTypes.TableCell.ToString()
+  nameWithType: TableCell.ToString()
+- uid: Archivist.DataTypes.TableCell.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_ToString_
+  commentId: Overload:Archivist.DataTypes.TableCell.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableCell.ToString
+  nameWithType: TableCell.ToString
+- uid: Archivist.DataTypes.TableCell.op_Equality(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name: operator ==(TableCell, TableCell)
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_Equality_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableCell.op_Equality(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name.vb: =(TableCell, TableCell)
+  fullName: Archivist.DataTypes.TableCell.operator ==(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName.vb: Archivist.DataTypes.TableCell.=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  nameWithType: TableCell.operator ==(TableCell, TableCell)
+  nameWithType.vb: TableCell.=(TableCell, TableCell)
+- uid: Archivist.DataTypes.TableCell.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_Equality_
+  commentId: Overload:Archivist.DataTypes.TableCell.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.TableCell.operator ==
+  fullName.vb: Archivist.DataTypes.TableCell.=
+  nameWithType: TableCell.operator ==
+  nameWithType.vb: TableCell.=
+- uid: Archivist.DataTypes.TableCell.op_GreaterThan(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name: operator >(TableCell, TableCell)
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_GreaterThan_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableCell.op_GreaterThan(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name.vb: '>(TableCell, TableCell)'
+  fullName: Archivist.DataTypes.TableCell.operator >(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName.vb: Archivist.DataTypes.TableCell.>(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  nameWithType: TableCell.operator >(TableCell, TableCell)
+  nameWithType.vb: TableCell.>(TableCell, TableCell)
+- uid: Archivist.DataTypes.TableCell.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.TableCell.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.TableCell.operator >
+  fullName.vb: Archivist.DataTypes.TableCell.>
+  nameWithType: TableCell.operator >
+  nameWithType.vb: TableCell.>
+- uid: Archivist.DataTypes.TableCell.op_GreaterThanOrEqual(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name: operator >=(TableCell, TableCell)
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_GreaterThanOrEqual_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableCell.op_GreaterThanOrEqual(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name.vb: '>=(TableCell, TableCell)'
+  fullName: Archivist.DataTypes.TableCell.operator >=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName.vb: Archivist.DataTypes.TableCell.>=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  nameWithType: TableCell.operator >=(TableCell, TableCell)
+  nameWithType.vb: TableCell.>=(TableCell, TableCell)
+- uid: Archivist.DataTypes.TableCell.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.TableCell.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.TableCell.operator >=
+  fullName.vb: Archivist.DataTypes.TableCell.>=
+  nameWithType: TableCell.operator >=
+  nameWithType.vb: TableCell.>=
+- uid: Archivist.DataTypes.TableCell.op_Inequality(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name: operator !=(TableCell, TableCell)
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_Inequality_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableCell.op_Inequality(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name.vb: <>(TableCell, TableCell)
+  fullName: Archivist.DataTypes.TableCell.operator !=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName.vb: Archivist.DataTypes.TableCell.<>(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  nameWithType: TableCell.operator !=(TableCell, TableCell)
+  nameWithType.vb: TableCell.<>(TableCell, TableCell)
+- uid: Archivist.DataTypes.TableCell.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.TableCell.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.TableCell.operator !=
+  fullName.vb: Archivist.DataTypes.TableCell.<>
+  nameWithType: TableCell.operator !=
+  nameWithType.vb: TableCell.<>
+- uid: Archivist.DataTypes.TableCell.op_LessThan(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name: operator <(TableCell, TableCell)
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_LessThan_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableCell.op_LessThan(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name.vb: <(TableCell, TableCell)
+  fullName: Archivist.DataTypes.TableCell.operator <(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName.vb: Archivist.DataTypes.TableCell.<(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  nameWithType: TableCell.operator <(TableCell, TableCell)
+  nameWithType.vb: TableCell.<(TableCell, TableCell)
+- uid: Archivist.DataTypes.TableCell.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.TableCell.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.TableCell.operator <
+  fullName.vb: Archivist.DataTypes.TableCell.<
+  nameWithType: TableCell.operator <
+  nameWithType.vb: TableCell.<
+- uid: Archivist.DataTypes.TableCell.op_LessThanOrEqual(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name: operator <=(TableCell, TableCell)
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_LessThanOrEqual_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableCell.op_LessThanOrEqual(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
+  name.vb: <=(TableCell, TableCell)
+  fullName: Archivist.DataTypes.TableCell.operator <=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName.vb: Archivist.DataTypes.TableCell.<=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  nameWithType: TableCell.operator <=(TableCell, TableCell)
+  nameWithType.vb: TableCell.<=(TableCell, TableCell)
+- uid: Archivist.DataTypes.TableCell.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.TableCell.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.TableCell.operator <=
+  fullName.vb: Archivist.DataTypes.TableCell.<=
+  nameWithType: TableCell.operator <=
+  nameWithType.vb: TableCell.<=
+- uid: Archivist.DataTypes.TableRow
+  name: TableRow
+  href: api/Archivist.DataTypes.TableRow.html
+  commentId: T:Archivist.DataTypes.TableRow
+  fullName: Archivist.DataTypes.TableRow
+  nameWithType: TableRow
+- uid: Archivist.DataTypes.TableRow.Cells
+  name: Cells
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Cells
+  commentId: P:Archivist.DataTypes.TableRow.Cells
+  fullName: Archivist.DataTypes.TableRow.Cells
+  nameWithType: TableRow.Cells
+- uid: Archivist.DataTypes.TableRow.Cells*
+  name: Cells
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Cells_
+  commentId: Overload:Archivist.DataTypes.TableRow.Cells
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.Cells
+  nameWithType: TableRow.Cells
+- uid: Archivist.DataTypes.TableRow.CompareTo(Archivist.DataTypes.TableRow)
+  name: CompareTo(TableRow?)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_CompareTo_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.TableRow.CompareTo(Archivist.DataTypes.TableRow)
+  name.vb: CompareTo(TableRow)
+  fullName: Archivist.DataTypes.TableRow.CompareTo(Archivist.DataTypes.TableRow?)
+  fullName.vb: Archivist.DataTypes.TableRow.CompareTo(Archivist.DataTypes.TableRow)
+  nameWithType: TableRow.CompareTo(TableRow?)
+  nameWithType.vb: TableRow.CompareTo(TableRow)
+- uid: Archivist.DataTypes.TableRow.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_CompareTo_
+  commentId: Overload:Archivist.DataTypes.TableRow.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.CompareTo
+  nameWithType: TableRow.CompareTo
+- uid: Archivist.DataTypes.TableRow.Equals(Archivist.DataTypes.TableRow)
+  name: Equals(TableRow?)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Equals_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.TableRow.Equals(Archivist.DataTypes.TableRow)
+  name.vb: Equals(TableRow)
+  fullName: Archivist.DataTypes.TableRow.Equals(Archivist.DataTypes.TableRow?)
+  fullName.vb: Archivist.DataTypes.TableRow.Equals(Archivist.DataTypes.TableRow)
+  nameWithType: TableRow.Equals(TableRow?)
+  nameWithType.vb: TableRow.Equals(TableRow)
+- uid: Archivist.DataTypes.TableRow.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.TableRow.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.TableRow.Equals(object?)
+  fullName.vb: Archivist.DataTypes.TableRow.Equals(Object)
+  nameWithType: TableRow.Equals(object?)
+  nameWithType.vb: TableRow.Equals(Object)
+- uid: Archivist.DataTypes.TableRow.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Equals_
+  commentId: Overload:Archivist.DataTypes.TableRow.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.Equals
+  nameWithType: TableRow.Equals
+- uid: Archivist.DataTypes.TableRow.GetEnumerator
+  name: GetEnumerator()
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_GetEnumerator
+  commentId: M:Archivist.DataTypes.TableRow.GetEnumerator
+  fullName: Archivist.DataTypes.TableRow.GetEnumerator()
+  nameWithType: TableRow.GetEnumerator()
+- uid: Archivist.DataTypes.TableRow.GetEnumerator*
+  name: GetEnumerator
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_GetEnumerator_
+  commentId: Overload:Archivist.DataTypes.TableRow.GetEnumerator
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.GetEnumerator
+  nameWithType: TableRow.GetEnumerator
+- uid: Archivist.DataTypes.TableRow.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_GetHashCode
+  commentId: M:Archivist.DataTypes.TableRow.GetHashCode
+  fullName: Archivist.DataTypes.TableRow.GetHashCode()
+  nameWithType: TableRow.GetHashCode()
+- uid: Archivist.DataTypes.TableRow.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.TableRow.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.GetHashCode
+  nameWithType: TableRow.GetHashCode
+- uid: Archivist.DataTypes.TableRow.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_ToString
+  commentId: M:Archivist.DataTypes.TableRow.ToString
+  fullName: Archivist.DataTypes.TableRow.ToString()
+  nameWithType: TableRow.ToString()
+- uid: Archivist.DataTypes.TableRow.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_ToString_
+  commentId: Overload:Archivist.DataTypes.TableRow.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.ToString
+  nameWithType: TableRow.ToString
+- uid: Archivist.DataTypes.TableRow.op_Equality(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name: operator ==(TableRow, TableRow)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_Equality_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.TableRow.op_Equality(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name.vb: =(TableRow, TableRow)
+  fullName: Archivist.DataTypes.TableRow.operator ==(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName.vb: Archivist.DataTypes.TableRow.=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  nameWithType: TableRow.operator ==(TableRow, TableRow)
+  nameWithType.vb: TableRow.=(TableRow, TableRow)
+- uid: Archivist.DataTypes.TableRow.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_Equality_
+  commentId: Overload:Archivist.DataTypes.TableRow.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.TableRow.operator ==
+  fullName.vb: Archivist.DataTypes.TableRow.=
+  nameWithType: TableRow.operator ==
+  nameWithType.vb: TableRow.=
+- uid: Archivist.DataTypes.TableRow.op_GreaterThan(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name: operator >(TableRow, TableRow)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_GreaterThan_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.TableRow.op_GreaterThan(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name.vb: '>(TableRow, TableRow)'
+  fullName: Archivist.DataTypes.TableRow.operator >(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName.vb: Archivist.DataTypes.TableRow.>(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  nameWithType: TableRow.operator >(TableRow, TableRow)
+  nameWithType.vb: TableRow.>(TableRow, TableRow)
+- uid: Archivist.DataTypes.TableRow.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.TableRow.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.TableRow.operator >
+  fullName.vb: Archivist.DataTypes.TableRow.>
+  nameWithType: TableRow.operator >
+  nameWithType.vb: TableRow.>
+- uid: Archivist.DataTypes.TableRow.op_GreaterThanOrEqual(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name: operator >=(TableRow, TableRow)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_GreaterThanOrEqual_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.TableRow.op_GreaterThanOrEqual(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name.vb: '>=(TableRow, TableRow)'
+  fullName: Archivist.DataTypes.TableRow.operator >=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName.vb: Archivist.DataTypes.TableRow.>=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  nameWithType: TableRow.operator >=(TableRow, TableRow)
+  nameWithType.vb: TableRow.>=(TableRow, TableRow)
+- uid: Archivist.DataTypes.TableRow.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.TableRow.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.TableRow.operator >=
+  fullName.vb: Archivist.DataTypes.TableRow.>=
+  nameWithType: TableRow.operator >=
+  nameWithType.vb: TableRow.>=
+- uid: Archivist.DataTypes.TableRow.op_Inequality(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name: operator !=(TableRow, TableRow)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_Inequality_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.TableRow.op_Inequality(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name.vb: <>(TableRow, TableRow)
+  fullName: Archivist.DataTypes.TableRow.operator !=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName.vb: Archivist.DataTypes.TableRow.<>(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  nameWithType: TableRow.operator !=(TableRow, TableRow)
+  nameWithType.vb: TableRow.<>(TableRow, TableRow)
+- uid: Archivist.DataTypes.TableRow.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.TableRow.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.TableRow.operator !=
+  fullName.vb: Archivist.DataTypes.TableRow.<>
+  nameWithType: TableRow.operator !=
+  nameWithType.vb: TableRow.<>
+- uid: Archivist.DataTypes.TableRow.op_LessThan(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name: operator <(TableRow, TableRow)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_LessThan_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.TableRow.op_LessThan(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name.vb: <(TableRow, TableRow)
+  fullName: Archivist.DataTypes.TableRow.operator <(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName.vb: Archivist.DataTypes.TableRow.<(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  nameWithType: TableRow.operator <(TableRow, TableRow)
+  nameWithType.vb: TableRow.<(TableRow, TableRow)
+- uid: Archivist.DataTypes.TableRow.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.TableRow.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.TableRow.operator <
+  fullName.vb: Archivist.DataTypes.TableRow.<
+  nameWithType: TableRow.operator <
+  nameWithType.vb: TableRow.<
+- uid: Archivist.DataTypes.TableRow.op_LessThanOrEqual(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name: operator <=(TableRow, TableRow)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_LessThanOrEqual_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.TableRow.op_LessThanOrEqual(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
+  name.vb: <=(TableRow, TableRow)
+  fullName: Archivist.DataTypes.TableRow.operator <=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName.vb: Archivist.DataTypes.TableRow.<=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  nameWithType: TableRow.operator <=(TableRow, TableRow)
+  nameWithType.vb: TableRow.<=(TableRow, TableRow)
+- uid: Archivist.DataTypes.TableRow.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.TableRow.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.TableRow.operator <=
+  fullName.vb: Archivist.DataTypes.TableRow.<=
+  nameWithType: TableRow.operator <=
+  nameWithType.vb: TableRow.<=
 - uid: Archivist.DataTypes.Text
   name: Text
   href: api/Archivist.DataTypes.Text.html
