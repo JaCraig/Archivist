@@ -1,6 +1,5 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Interfaces;
-using ObjectCartographer;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -51,10 +50,9 @@ namespace Archivist.DataTypes
             }
             set
             {
-                ArgumentNullException.ThrowIfNull(value);
                 if (index < 0 || index >= Rows.Count)
                     throw new ArgumentOutOfRangeException(nameof(index));
-                Rows[index] = value;
+                Rows[index] = value ?? new TableRow(Columns);
             }
         }
 
@@ -141,7 +139,7 @@ namespace Archivist.DataTypes
         /// Adds a row to the table.
         /// </summary>
         /// <param name="item">The row to add to the table.</param>
-        public void Add(TableRow item) => Rows.Add(item);
+        public void Add(TableRow? item) => Rows.Add(item ?? new TableRow(Columns));
 
         /// <summary>
         /// Adds a new row to the table.
@@ -176,21 +174,28 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="item">The row to find in the table.</param>
         /// <returns><c>true</c> if the table contains the row; otherwise, <c>false&gt;</c>.</returns>
-        public bool Contains(TableRow item) => Rows.Contains(item);
+        public bool Contains(TableRow? item) => item is not null && Rows.Contains(item);
 
         /// <summary>
         /// Converts this instance into the object array of the type specified.
         /// </summary>
         /// <typeparam name="TObject">The type of the object.</typeparam>
         /// <returns>The resulting array.</returns>
-        public List<TObject?> ConvertTo<TObject>() => Rows.ConvertAll(x => x.To<TObject?>());
+        public List<TObject?> ConvertTo<TObject>() => Rows.ConvertAll(x => x.ConvertTo<TObject?>());
 
         /// <summary>
         /// Copies the rows of the table to an array, starting at a particular array index.
         /// </summary>
         /// <param name="array">The array to copy the rows to.</param>
         /// <param name="arrayIndex">The index in the array at which to start copying the rows.</param>
-        public void CopyTo(TableRow[] array, int arrayIndex) => Rows.CopyTo(array, arrayIndex);
+        public void CopyTo(TableRow[]? array, int arrayIndex)
+        {
+            if (array is null)
+                return;
+            if (arrayIndex < 0 || arrayIndex >= array.Length)
+                throw new ArgumentOutOfRangeException(nameof(arrayIndex));
+            Rows.CopyTo(array, arrayIndex);
+        }
 
         /// <summary>
         /// Determines whether the current table object is equal to another table object.
@@ -265,26 +270,39 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="item">The row to find in the table.</param>
         /// <returns>The index of the row in the table.</returns>
-        public int IndexOf(TableRow item) => Rows.IndexOf(item);
+        public int IndexOf(TableRow? item) => Rows.IndexOf(item!);
 
         /// <summary>
         /// Inserts a row into the table at the specified index.
         /// </summary>
         /// <param name="index">The index at which to insert the row.</param>
         /// <param name="item">The row to insert into the table.</param>
-        public void Insert(int index, TableRow item) => Rows.Insert(index, item);
+        public void Insert(int index, TableRow? item)
+        {
+            if (index < 0)
+                index = 0;
+            if (index > Count)
+                index = Count;
+            item ??= new TableRow(Columns);
+            Rows.Insert(index, item);
+        }
 
         /// <summary>
         /// Removes the first occurrence of a specific row from the table.
         /// </summary>
         /// <param name="item">The row to remove from the table.</param>
         /// <returns><c>true</c> if the row was successfully removed; otherwise, <c>false&gt;</c>.</returns>
-        public bool Remove(TableRow item) => Rows.Remove(item);
+        public bool Remove(TableRow? item) => item is not null && Rows.Remove(item);
 
         /// <summary>
         /// Removes the row at the specified index.
         /// </summary>
         /// <param name="index">The index of the row to remove.</param>
-        public void RemoveAt(int index) => Rows.RemoveAt(index);
+        public void RemoveAt(int index)
+        {
+            if (index < 0 || index >= Count)
+                return;
+            Rows.RemoveAt(index);
+        }
     }
 }

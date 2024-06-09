@@ -16,9 +16,9 @@ namespace Archivist.DataTypes
         /// Initializes a new instance of the <see cref="TableRow"/> class with the specified columns.
         /// </summary>
         /// <param name="columns">The list of column names.</param>
-        public TableRow(List<string> columns)
+        public TableRow(List<string>? columns)
         {
-            Columns = columns;
+            Columns = columns ?? new List<string>();
         }
 
         /// <summary>
@@ -175,7 +175,19 @@ namespace Archivist.DataTypes
         /// Adds a cell to the row.
         /// </summary>
         /// <param name="item">The cell to add.</param>
-        public void Add(TableCell item) => Cells.Add(item);
+        public void Add(TableCell? item) => Cells.Add(item ?? new TableCell(""));
+
+        /// <summary>
+        /// Adds a cell to the row with the specified content.
+        /// </summary>
+        /// <param name="item">The content of the cell to add.</param>
+        public void Add(string? item) => Add(new TableCell(item));
+
+        /// <summary>
+        /// Adds a list of cells to the row.
+        /// </summary>
+        /// <param name="collection">The list of cells to add.</param>
+        public void AddRange(IEnumerable<TableCell> collection) => Cells.AddRange(collection ?? Array.Empty<TableCell>());
 
         /// <summary>
         /// Removes all cells from the row.
@@ -209,7 +221,7 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="item">The cell to locate in the row.</param>
         /// <returns><c>true</c> if the cell is found in the row; otherwise, <c>false</c>.</returns>
-        public bool Contains(TableCell item) => Cells.Contains(item);
+        public bool Contains(TableCell? item) => item is not null && Cells.Contains(item);
 
         /// <summary>
         /// Converts the current <see cref="TableRow"/> to an object array of the specified type.
@@ -219,9 +231,10 @@ namespace Archivist.DataTypes
         public TObject ConvertTo<TObject>()
         {
             IDictionary<string, object?> TempValue = new ExpandoObject();
-            for (var Y = 0; Y < Columns.Count; ++Y)
+            for (var Y = 0; Y < Cells.Count; ++Y)
             {
-                TempValue[Columns[Y]] = Cells[Y].Content;
+                var ColumnName = Columns.Count > Y ? Columns[Y] : Y.ToString();
+                TempValue[ColumnName] = Cells[Y].Content;
             }
             return TempValue.To<TObject>();
         }
@@ -235,9 +248,10 @@ namespace Archivist.DataTypes
         /// <param name="arrayIndex">
         /// The zero-based index in <paramref name="array"/> at which copying begins.
         /// </param>
-        public void CopyTo(TableCell[] array, int arrayIndex)
+        public void CopyTo(TableCell[]? array, int arrayIndex)
         {
-            ArgumentNullException.ThrowIfNull(array);
+            if (array is null)
+                return;
             if (arrayIndex < 0 || arrayIndex >= array.Length)
                 throw new ArgumentOutOfRangeException(nameof(arrayIndex));
             Cells.CopyTo(array, arrayIndex);
@@ -302,27 +316,37 @@ namespace Archivist.DataTypes
         /// The zero-based index of the first occurrence of the cell within the entire row, if
         /// found; otherwise, -1.
         /// </returns>
-        public int IndexOf(TableCell item) => Cells.IndexOf(item);
+        public int IndexOf(TableCell? item) => Cells.IndexOf(item ?? TableCell.Empty);
 
         /// <summary>
         /// Inserts a cell into the row at the specified index.
         /// </summary>
         /// <param name="index">The zero-based index at which the cell should be inserted.</param>
         /// <param name="item">The cell to insert into the row.</param>
-        public void Insert(int index, TableCell item) => Cells.Insert(index, item);
+        public void Insert(int index, TableCell? item)
+        {
+            if (index < 0 || index > Count)
+                throw new ArgumentOutOfRangeException(nameof(index));
+            Cells.Insert(index, item ?? new TableCell(""));
+        }
 
         /// <summary>
         /// Removes the first occurrence of a specific cell from the row.
         /// </summary>
         /// <param name="item">The cell to remove from the row.</param>
         /// <returns><c>true</c> if the cell is successfully removed; otherwise, <c>false</c>.</returns>
-        public bool Remove(TableCell item) => Cells.Remove(item);
+        public bool Remove(TableCell? item) => item is not null && Cells.Remove(item);
 
         /// <summary>
         /// Removes the cell at the specified index from the row.
         /// </summary>
         /// <param name="index">The zero-based index of the cell to remove.</param>
-        public void RemoveAt(int index) => Cells.RemoveAt(index);
+        public void RemoveAt(int index)
+        {
+            if (index < 0 || index >= Count)
+                return;
+            Cells.RemoveAt(index);
+        }
 
         /// <summary>
         /// Returns a string that represents the row.

@@ -37,6 +37,19 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanCallConvertTo()
+        {
+            // Arrange
+            var TestClass = new FixedLengthField("192", 3, ' ', true);
+
+            // Act
+            var Results = TestClass.ConvertTo<int>();
+
+            // Assert
+            Assert.Equal(192, Results);
+        }
+
+        [Fact]
         public void CanCallEqualityOperator()
         {
             // Arrange

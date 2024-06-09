@@ -10,6 +10,7 @@ namespace Archivist.Tests.DataTypes
         {
             _Content = "TestValue388175019";
             _TestClass = new TableCell(_Content);
+            TestObject = new TableCell(_Content);
         }
 
         private readonly string _Content;

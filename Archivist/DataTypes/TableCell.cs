@@ -24,6 +24,11 @@ namespace Archivist.DataTypes
         public string? Content { get; set; }
 
         /// <summary>
+        /// Gets an empty cell.
+        /// </summary>
+        internal static TableCell Empty { get; } = new TableCell(null);
+
+        /// <summary>
         /// Determines whether two <see cref="TableCell"/> objects are not equal.
         /// </summary>
         /// <param name="left">The first <see cref="TableCell"/> to compare.</param>
