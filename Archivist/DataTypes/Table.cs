@@ -1,9 +1,9 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Interfaces;
 using ObjectCartographer;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Dynamic;
 using System.Text;
 
 namespace Archivist.DataTypes
@@ -12,7 +12,7 @@ namespace Archivist.DataTypes
     /// Represents a table in the Archivist system.
     /// </summary>
     /// <seealso cref="FileBaseClass{Table}"/>
-    public class Table : FileBaseClass<Table>, IComparable<Table>, IEquatable<Table>, IEnumerable<TableRow?>, IEnumerable
+    public class Table : FileBaseClass<Table>, IComparable<Table>, IEquatable<Table>, IListConvertable, IList<TableRow>
     {
         /// <summary>
         /// Gets the headers of the table.
@@ -21,9 +21,42 @@ namespace Archivist.DataTypes
         public List<string> Columns { get; } = new List<string>();
 
         /// <summary>
+        /// Gets the number of rows in the table.
+        /// </summary>
+        public int Count => Rows.Count;
+
+        /// <summary>
+        /// Gets a value indicating whether the table is read-only.
+        /// </summary>
+        public bool IsReadOnly => false;
+
+        /// <summary>
         /// Gets the rows of the table.
         /// </summary>
-        public List<TableRow> Rows { get; } = new List<TableRow>();
+        private List<TableRow> Rows { get; } = new List<TableRow>();
+
+        /// <summary>
+        /// Gets or sets the row at the specified index.
+        /// </summary>
+        /// <param name="index">The index of the table.</param>
+        /// <returns>The row at the specified index.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">The index is out of range.</exception>
+        public TableRow this[int index]
+        {
+            get
+            {
+                if (index < 0 || index >= Rows.Count)
+                    throw new ArgumentOutOfRangeException(nameof(index));
+                return Rows[index];
+            }
+            set
+            {
+                ArgumentNullException.ThrowIfNull(value);
+                if (index < 0 || index >= Rows.Count)
+                    throw new ArgumentOutOfRangeException(nameof(index));
+                Rows[index] = value;
+            }
+        }
 
         /// <summary>
         /// Determines whether two table objects are not equal.
@@ -31,7 +64,7 @@ namespace Archivist.DataTypes
         /// <param name="left">The first table object.</param>
         /// <param name="right">The second table object.</param>
         /// <returns><c>true</c> if the two table objects are not equal; otherwise, <c>false</c>.</returns>
-        public static bool operator !=(Table left, Table right)
+        public static bool operator !=(Table? left, Table? right)
         {
             return !(left == right);
         }
@@ -44,7 +77,7 @@ namespace Archivist.DataTypes
         /// <returns>
         /// <c>true</c> if the first table object is less than the second table object; otherwise, <c>false</c>.
         /// </returns>
-        public static bool operator <(Table left, Table right)
+        public static bool operator <(Table? left, Table? right)
         {
             return left is null ? right is not null : left.CompareTo(right) < 0;
         }
@@ -58,7 +91,7 @@ namespace Archivist.DataTypes
         /// <c>true</c> if the first table object is less than or equal to the second table object;
         /// otherwise, <c>false</c>.
         /// </returns>
-        public static bool operator <=(Table left, Table right)
+        public static bool operator <=(Table? left, Table? right)
         {
             return left is null || left.CompareTo(right) <= 0;
         }
@@ -69,7 +102,7 @@ namespace Archivist.DataTypes
         /// <param name="left">The first table object.</param>
         /// <param name="right">The second table object.</param>
         /// <returns><c>true</c> if the two table objects are equal; otherwise, <c>false</c>.</returns>
-        public static bool operator ==(Table left, Table right)
+        public static bool operator ==(Table? left, Table? right)
         {
             if (left is null)
                 return right is null;
@@ -85,7 +118,7 @@ namespace Archivist.DataTypes
         /// <c>true</c> if the first table object is greater than the second table object;
         /// otherwise, <c>false</c>.
         /// </returns>
-        public static bool operator >(Table left, Table right)
+        public static bool operator >(Table? left, Table? right)
         {
             return left?.CompareTo(right) > 0;
         }
@@ -99,10 +132,32 @@ namespace Archivist.DataTypes
         /// <c>true</c> if the first table object is greater than or equal to the second table
         /// object; otherwise, <c>false</c>.
         /// </returns>
-        public static bool operator >=(Table left, Table right)
+        public static bool operator >=(Table? left, Table? right)
         {
             return left is null ? right is null : left.CompareTo(right) >= 0;
         }
+
+        /// <summary>
+        /// Adds a row to the table.
+        /// </summary>
+        /// <param name="item">The row to add to the table.</param>
+        public void Add(TableRow item) => Rows.Add(item);
+
+        /// <summary>
+        /// Adds a new row to the table.
+        /// </summary>
+        /// <returns>The new row.</returns>
+        public TableRow AddRow()
+        {
+            var Row = new TableRow(Columns);
+            Rows.Add(Row);
+            return Row;
+        }
+
+        /// <summary>
+        /// Clears the table.
+        /// </summary>
+        public void Clear() => Rows.Clear();
 
         /// <summary>
         /// Compares the current table object with another table object.
@@ -117,24 +172,25 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Determines if the table contains the specified row.
+        /// </summary>
+        /// <param name="item">The row to find in the table.</param>
+        /// <returns><c>true</c> if the table contains the row; otherwise, <c>false&gt;</c>.</returns>
+        public bool Contains(TableRow item) => Rows.Contains(item);
+
+        /// <summary>
         /// Converts this instance into the object array of the type specified.
         /// </summary>
         /// <typeparam name="TObject">The type of the object.</typeparam>
         /// <returns>The resulting array.</returns>
-        public List<TObject> Convert<TObject>()
-        {
-            var ReturnValues = new List<TObject>();
-            for (var X = 0; X < Rows.Count; ++X)
-            {
-                IDictionary<string, object?> TempValue = new ExpandoObject();
-                for (var Y = 0; Y < Columns.Count; ++Y)
-                {
-                    TempValue[Columns[Y]] = Rows[X].Cells[Y].Content;
-                }
-                ReturnValues.Add(TempValue.To<TObject>());
-            }
-            return ReturnValues;
-        }
+        public List<TObject?> ConvertTo<TObject>() => Rows.ConvertAll(x => x.To<TObject?>());
+
+        /// <summary>
+        /// Copies the rows of the table to an array, starting at a particular array index.
+        /// </summary>
+        /// <param name="array">The array to copy the rows to.</param>
+        /// <param name="arrayIndex">The index in the array at which to start copying the rows.</param>
+        public void CopyTo(TableRow[] array, int arrayIndex) => Rows.CopyTo(array, arrayIndex);
 
         /// <summary>
         /// Determines whether the current table object is equal to another table object.
@@ -178,13 +234,7 @@ namespace Archivist.DataTypes
         /// Returns an enumerator that iterates through the rows of the table.
         /// </summary>
         /// <returns>An enumerator that can be used to iterate through the rows of the table.</returns>
-        public IEnumerator<TableRow?> GetEnumerator()
-        {
-            foreach (TableRow Row in Rows)
-            {
-                yield return Row;
-            }
-        }
+        public IEnumerator<TableRow> GetEnumerator() => Rows.GetEnumerator();
 
         /// <summary>
         /// Returns an enumerator that iterates through the rows of the table.
@@ -196,6 +246,45 @@ namespace Archivist.DataTypes
         /// Returns the hash code for the current table object.
         /// </summary>
         /// <returns>A hash code for the current table object.</returns>
-        public override int GetHashCode() => HashCode.Combine(Columns, Rows);
+        public override int GetHashCode()
+        {
+            var HashCode = new HashCode();
+            foreach (var Column in Columns)
+            {
+                HashCode.Add(Column);
+            }
+            foreach (TableRow Row in Rows)
+            {
+                HashCode.Add(Row);
+            }
+            return HashCode.ToHashCode();
+        }
+
+        /// <summary>
+        /// Returns the index of the specified row in the table.
+        /// </summary>
+        /// <param name="item">The row to find in the table.</param>
+        /// <returns>The index of the row in the table.</returns>
+        public int IndexOf(TableRow item) => Rows.IndexOf(item);
+
+        /// <summary>
+        /// Inserts a row into the table at the specified index.
+        /// </summary>
+        /// <param name="index">The index at which to insert the row.</param>
+        /// <param name="item">The row to insert into the table.</param>
+        public void Insert(int index, TableRow item) => Rows.Insert(index, item);
+
+        /// <summary>
+        /// Removes the first occurrence of a specific row from the table.
+        /// </summary>
+        /// <param name="item">The row to remove from the table.</param>
+        /// <returns><c>true</c> if the row was successfully removed; otherwise, <c>false&gt;</c>.</returns>
+        public bool Remove(TableRow item) => Rows.Remove(item);
+
+        /// <summary>
+        /// Removes the row at the specified index.
+        /// </summary>
+        /// <param name="index">The index of the row to remove.</param>
+        public void RemoveAt(int index) => Rows.RemoveAt(index);
     }
 }
