@@ -31,6 +31,35 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanCallConvertFrom()
+        {
+            // Arrange
+            var Card = new Card();
+            var TestValue = new TestClass { FN = "John Doe" };
+
+            // Act
+            Card.ConvertFrom(TestValue);
+
+            // Assert
+            Assert.Equal("John Doe", Card.FullName?.Value);
+        }
+
+        [Fact]
+        public void CanCallConvertTo()
+        {
+            // Arrange
+            var Card = new Card();
+            Card.Fields.Add(new CardField("FN", null, "John Doe"));
+
+            // Act
+            TestClass? Result = Card.ConvertTo<TestClass>();
+
+            // Assert
+            Assert.NotNull(Result);
+            Assert.Equal("John Doe", Result.FN);
+        }
+
+        [Fact]
         public void CanCallEqualityOperator()
         {
             // Arrange
@@ -824,6 +853,11 @@ namespace Archivist.Tests.DataTypes
 
             // Assert
             Assert.Equal("Jr.", Suffix);
+        }
+
+        public class TestClass
+        {
+            public string? FN { get; set; }
         }
     }
 }

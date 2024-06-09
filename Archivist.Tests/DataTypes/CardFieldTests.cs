@@ -35,6 +35,32 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanCallConvertFrom()
+        {
+            // Arrange
+            var TestClass = new CardField("TestValue1323220869", new[] { new CardFieldParameter("TestValue355550108", "TestValue1817989407"), new CardFieldParameter("TestValue175577247", "TestValue1490426464"), new CardFieldParameter("TestValue746677265", "TestValue1870429336") }, "12344");
+
+            // Act
+            TestClass.ConvertFrom(12345);
+
+            // Assert
+            Assert.Equal("12345", TestClass.Value);
+        }
+
+        [Fact]
+        public void CanCallConvertTo()
+        {
+            // Arrange
+            var TestClass = new CardField("TestValue1323220869", new[] { new CardFieldParameter("TestValue355550108", "TestValue1817989407"), new CardFieldParameter("TestValue175577247", "TestValue1490426464"), new CardFieldParameter("TestValue746677265", "TestValue1870429336") }, "12344");
+
+            // Act
+            var Result = TestClass.ConvertTo<long>();
+
+            // Assert
+            Assert.Equal(12344, Result);
+        }
+
+        [Fact]
         public void CanCallEqualityOperator()
         {
             // Arrange

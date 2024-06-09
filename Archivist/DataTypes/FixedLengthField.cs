@@ -172,6 +172,13 @@ namespace Archivist.DataTypes
         public int CompareTo(FixedLengthField? other) => string.CompareOrdinal(Value, other?.Value);
 
         /// <summary>
+        /// Converts the content of the field from the specified type to a <see cref="FixedLengthField"/>.
+        /// </summary>
+        /// <typeparam name="TObject">The type to convert the content from.</typeparam>
+        /// <param name="obj">The object to convert.</param>
+        public void ConvertFrom<TObject>(TObject obj) => Value = obj?.ToString() ?? "";
+
+        /// <summary>
         /// Converts the content of the field to the specified type.
         /// </summary>
         /// <typeparam name="TObject">The type to convert the content to.</typeparam>

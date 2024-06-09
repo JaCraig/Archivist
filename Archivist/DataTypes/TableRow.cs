@@ -224,6 +224,28 @@ namespace Archivist.DataTypes
         public bool Contains(TableCell? item) => item is not null && Cells.Contains(item);
 
         /// <summary>
+        /// Copies the object to the row.
+        /// </summary>
+        /// <typeparam name="TObject">The object type</typeparam>
+        /// <param name="obj">The object to copy.</param>
+        public void ConvertFrom<TObject>(TObject obj)
+        {
+            Cells.Clear();
+            if (obj is null)
+                return;
+            foreach (System.Reflection.PropertyInfo Property in obj.GetType().GetProperties())
+            {
+                var ColumnIndex = Columns.IndexOf(Property.Name);
+                if (ColumnIndex == -1)
+                {
+                    Columns.Add(Property.Name);
+                    _ = Columns.Count - 1;
+                }
+                Cells.Add(new TableCell(Property.GetValue(obj)?.ToString() ?? ""));
+            }
+        }
+
+        /// <summary>
         /// Converts the current <see cref="TableRow"/> to an object array of the specified type.
         /// </summary>
         /// <typeparam name="TObject">The type of the object.</typeparam>

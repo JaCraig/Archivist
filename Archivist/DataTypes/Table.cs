@@ -177,6 +177,28 @@ namespace Archivist.DataTypes
         public bool Contains(TableRow? item) => item is not null && Rows.Contains(item);
 
         /// <summary>
+        /// Copies the list object to the table.
+        /// </summary>
+        /// <typeparam name="TObject">The type of the object.</typeparam>
+        /// <param name="obj">The list object to copy to the table.</param>
+        public void ConvertFrom<TObject>(List<TObject?> obj)
+        {
+            obj ??= new List<TObject?>();
+            Columns.Clear();
+            Rows.Clear();
+            foreach (System.Reflection.PropertyInfo Property in typeof(TObject).GetProperties())
+            {
+                Columns.Add(Property.Name);
+            }
+            foreach (TObject? Item in obj)
+            {
+                var Row = new TableRow(Columns);
+                Row.ConvertFrom(Item);
+                Rows.Add(Row);
+            }
+        }
+
+        /// <summary>
         /// Converts this instance into the object array of the type specified.
         /// </summary>
         /// <typeparam name="TObject">The type of the object.</typeparam>
@@ -304,5 +326,7 @@ namespace Archivist.DataTypes
                 return;
             Rows.RemoveAt(index);
         }
+
+        /// <inheritdoc/>
     }
 }

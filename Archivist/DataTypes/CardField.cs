@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Archivist.Interfaces;
+using ObjectCartographer;
+using System;
 using System.Collections.Generic;
 
 namespace Archivist.DataTypes
@@ -6,7 +8,7 @@ namespace Archivist.DataTypes
     /// <summary>
     /// Represents a field in a card.
     /// </summary>
-    public class CardField : IEquatable<CardField>, IComparable<CardField>
+    public class CardField : IEquatable<CardField>, IComparable<CardField>, IObjectConvertable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CardField"/> class.
@@ -157,6 +159,20 @@ namespace Archivist.DataTypes
             }
             return other.Value?.CompareTo(Value) ?? 1;
         }
+
+        /// <summary>
+        /// Converts the object to a string and sets the content of the field.
+        /// </summary>
+        /// <typeparam name="TObject">Object type</typeparam>
+        /// <param name="obj">Object to convert</param>
+        public void ConvertFrom<TObject>(TObject obj) => Value = obj?.ToString() ?? "";
+
+        /// <summary>
+        /// Converts the content of the field to the specified type.
+        /// </summary>
+        /// <typeparam name="TObject">The type to convert the content to.</typeparam>
+        /// <returns>The converted content of the field.</returns>
+        public TObject? ConvertTo<TObject>() => Value.To<TObject>();
 
         /// <summary>
         /// Determines whether the specified object is equal to the current <see cref="CardField"/> object.

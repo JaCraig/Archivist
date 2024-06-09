@@ -30,6 +30,19 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanCallConvertFrom()
+        {
+            // Arrange
+            var TestClass = new TableCell("TestValue1831879296");
+
+            // Act
+            TestClass.ConvertFrom(1234);
+
+            // Assert
+            Assert.Equal("1234", TestClass.Content);
+        }
+
+        [Fact]
         public void CanCallConvertTo()
         {
             // Arrange

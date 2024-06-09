@@ -37,6 +37,19 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanCallConvertFrom()
+        {
+            // Arrange
+            var TestClass = new FixedLengthField("192", 10, ' ', true);
+
+            // Act
+            TestClass.ConvertFrom(20.7f);
+
+            // Assert
+            Assert.Equal("20.7      ", TestClass.Value);
+        }
+
+        [Fact]
         public void CanCallConvertTo()
         {
             // Arrange

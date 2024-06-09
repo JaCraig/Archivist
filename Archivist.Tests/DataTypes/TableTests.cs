@@ -112,6 +112,24 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanCallCopyFrom()
+        {
+            // Arrange
+            var TestClass = new Table();
+            TestClass.Columns.Add("Column1");
+            TestClass.AddRow().Add("1");
+            TestClass.AddRow().Add("2");
+
+            // Act
+            TestClass.ConvertFrom(new List<ConvertObject?>() { new() { Column1 = 3 }, new() { Column1 = 4 } });
+
+            // Assert
+            Assert.Equal(2, TestClass.Count);
+            Assert.Equal("3", TestClass[0][0].Content);
+            Assert.Equal("4", TestClass[1][0].Content);
+        }
+
+        [Fact]
         public void CanCallCopyTo()
         {
             // Arrange

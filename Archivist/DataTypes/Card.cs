@@ -1,5 +1,6 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Enums;
+using Archivist.Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace Archivist.DataTypes
     /// Represents a card (vCard, etc.) file.
     /// </summary>
     /// <seealso cref="FileBaseClass{Card}"/>
-    public class Card : FileBaseClass<Card>, IComparable<Card>, IEquatable<Card>, IEnumerable<CardField?>, IEnumerable
+    public class Card : FileBaseClass<Card>, IComparable<Card>, IEquatable<Card>, IEnumerable<CardField?>, IEnumerable, IObjectConvertable
     {
         /// <summary>
         /// Gets the addresses for the card.
@@ -287,6 +288,47 @@ namespace Archivist.DataTypes
         /// <param name="other">The other card to compare.</param>
         /// <returns>An integer that indicates the relative order of the cards.</returns>
         public override int CompareTo(Card? other) => string.Compare(other?.GetContent(), GetContent(), StringComparison.OrdinalIgnoreCase);
+
+        /// <summary>
+        /// Converts the object to the card.
+        /// </summary>
+        /// <typeparam name="TObject">The type of object to convert.</typeparam>
+        /// <param name="obj">The object to convert.</param>
+        public void ConvertFrom<TObject>(TObject obj)
+        {
+            if (obj is null)
+                return;
+            foreach (System.Reflection.PropertyInfo Property in typeof(TObject).GetProperties())
+            {
+                CardField? Field = Fields.Find(field => string.Equals(field?.Property, Property.Name, StringComparison.OrdinalIgnoreCase));
+                var Value = Property.GetValue(obj)?.ToString() ?? "";
+                if (Field is null)
+                {
+                    Field = new CardField(Property.Name, Array.Empty<CardFieldParameter>(), Value);
+                    Fields.Add(Field);
+                }
+                Field.Value = Value;
+            }
+        }
+
+        /// <summary>
+        /// Converts the card to the specified object type.
+        /// </summary>
+        /// <typeparam name="TObject">The type to convert the card to.</typeparam>
+        /// <returns>The converted card.</returns>
+        public TObject? ConvertTo<TObject>()
+        {
+            System.Reflection.PropertyInfo[] Properties = typeof(TObject).GetProperties();
+            TObject? Result = Activator.CreateInstance<TObject>();
+            foreach (System.Reflection.PropertyInfo Property in Properties)
+            {
+                CardField? Field = Fields.Find(field => string.Equals(field?.Property, Property.Name, StringComparison.OrdinalIgnoreCase));
+                if (Field is null)
+                    continue;
+                Property.SetValue(Result, Field.Value);
+            }
+            return Result;
+        }
 
         /// <summary>
         /// Determines whether the card is equal to another card based on their content.

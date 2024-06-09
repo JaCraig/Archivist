@@ -122,6 +122,13 @@ namespace Archivist.DataTypes
         public int CompareTo(TableCell? other) => other is null ? 1 : string.CompareOrdinal(Content, other.Content);
 
         /// <summary>
+        /// Converts the object to a string and sets the content of the cell.
+        /// </summary>
+        /// <typeparam name="TObject">Object type</typeparam>
+        /// <param name="obj">Object to convert</param>
+        public void ConvertFrom<TObject>(TObject obj) => Content = obj?.ToString() ?? "";
+
+        /// <summary>
         /// Converts the content of the <see cref="TableCell"/> to the specified type.
         /// </summary>
         /// <typeparam name="TObject">The type to convert the content to.</typeparam>

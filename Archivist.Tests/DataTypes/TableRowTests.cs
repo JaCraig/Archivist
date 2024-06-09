@@ -3,6 +3,7 @@ using Archivist.Tests.BaseClasses;
 using System.Collections.Generic;
 using System.Dynamic;
 using Xunit;
+using static Archivist.Tests.DataTypes.TableTests;
 
 namespace Archivist.Tests.DataTypes
 {
@@ -89,6 +90,21 @@ namespace Archivist.Tests.DataTypes
 
         [Fact]
         public void CanCallContainsWithNullItem() => _TestClass.Contains(default);
+
+        [Fact]
+        public void CanCallConvertFrom()
+        {
+            // Arrange
+            var TestClass = new TableRow(new List<string> { "Column1" });
+            var Items = new List<TableCell> { new("Column1") };
+            TestClass.AddRange(Items);
+
+            // Act
+            TestClass.ConvertFrom(new ConvertObject() { Column1 = 123 });
+
+            // Assert
+            Assert.Equal("123", TestClass[0].Content);
+        }
 
         [Fact]
         public void CanCallConvertTo()
