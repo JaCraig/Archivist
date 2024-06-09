@@ -709,6 +709,38 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Card.CompareTo
   nameWithType: Card.CompareTo
+- uid: Archivist.DataTypes.Card.ConvertFrom*
+  name: ConvertFrom
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_ConvertFrom_
+  commentId: Overload:Archivist.DataTypes.Card.ConvertFrom
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.ConvertFrom
+  nameWithType: Card.ConvertFrom
+- uid: Archivist.DataTypes.Card.ConvertFrom``1(``0)
+  name: ConvertFrom<TObject>(TObject)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_ConvertFrom__1___0_
+  commentId: M:Archivist.DataTypes.Card.ConvertFrom``1(``0)
+  name.vb: ConvertFrom(Of TObject)(TObject)
+  fullName: Archivist.DataTypes.Card.ConvertFrom<TObject>(TObject)
+  fullName.vb: Archivist.DataTypes.Card.ConvertFrom(Of TObject)(TObject)
+  nameWithType: Card.ConvertFrom<TObject>(TObject)
+  nameWithType.vb: Card.ConvertFrom(Of TObject)(TObject)
+- uid: Archivist.DataTypes.Card.ConvertTo*
+  name: ConvertTo
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_ConvertTo_
+  commentId: Overload:Archivist.DataTypes.Card.ConvertTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.ConvertTo
+  nameWithType: Card.ConvertTo
+- uid: Archivist.DataTypes.Card.ConvertTo``1
+  name: ConvertTo<TObject>()
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_ConvertTo__1
+  commentId: M:Archivist.DataTypes.Card.ConvertTo``1
+  name.vb: ConvertTo(Of TObject)()
+  fullName: Archivist.DataTypes.Card.ConvertTo<TObject>()
+  fullName.vb: Archivist.DataTypes.Card.ConvertTo(Of TObject)()
+  nameWithType: Card.ConvertTo<TObject>()
+  nameWithType.vb: Card.ConvertTo(Of TObject)()
 - uid: Archivist.DataTypes.Card.Count
   name: Count
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Count
@@ -1264,6 +1296,38 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.CardField.CompareTo
   nameWithType: CardField.CompareTo
+- uid: Archivist.DataTypes.CardField.ConvertFrom*
+  name: ConvertFrom
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_ConvertFrom_
+  commentId: Overload:Archivist.DataTypes.CardField.ConvertFrom
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardField.ConvertFrom
+  nameWithType: CardField.ConvertFrom
+- uid: Archivist.DataTypes.CardField.ConvertFrom``1(``0)
+  name: ConvertFrom<TObject>(TObject)
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_ConvertFrom__1___0_
+  commentId: M:Archivist.DataTypes.CardField.ConvertFrom``1(``0)
+  name.vb: ConvertFrom(Of TObject)(TObject)
+  fullName: Archivist.DataTypes.CardField.ConvertFrom<TObject>(TObject)
+  fullName.vb: Archivist.DataTypes.CardField.ConvertFrom(Of TObject)(TObject)
+  nameWithType: CardField.ConvertFrom<TObject>(TObject)
+  nameWithType.vb: CardField.ConvertFrom(Of TObject)(TObject)
+- uid: Archivist.DataTypes.CardField.ConvertTo*
+  name: ConvertTo
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_ConvertTo_
+  commentId: Overload:Archivist.DataTypes.CardField.ConvertTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.CardField.ConvertTo
+  nameWithType: CardField.ConvertTo
+- uid: Archivist.DataTypes.CardField.ConvertTo``1
+  name: ConvertTo<TObject>()
+  href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_ConvertTo__1
+  commentId: M:Archivist.DataTypes.CardField.ConvertTo``1
+  name.vb: ConvertTo(Of TObject)()
+  fullName: Archivist.DataTypes.CardField.ConvertTo<TObject>()
+  fullName.vb: Archivist.DataTypes.CardField.ConvertTo(Of TObject)()
+  nameWithType: CardField.ConvertTo<TObject>()
+  nameWithType.vb: CardField.ConvertTo(Of TObject)()
 - uid: Archivist.DataTypes.CardField.Equals(Archivist.DataTypes.CardField)
   name: Equals(CardField?)
   href: api/Archivist.DataTypes.CardField.html#Archivist_DataTypes_CardField_Equals_Archivist_DataTypes_CardField_
@@ -1741,6 +1805,22 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.FixedLengthField.CompareTo
   nameWithType: FixedLengthField.CompareTo
+- uid: Archivist.DataTypes.FixedLengthField.ConvertFrom*
+  name: ConvertFrom
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_ConvertFrom_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.ConvertFrom
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthField.ConvertFrom
+  nameWithType: FixedLengthField.ConvertFrom
+- uid: Archivist.DataTypes.FixedLengthField.ConvertFrom``1(``0)
+  name: ConvertFrom<TObject>(TObject)
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_ConvertFrom__1___0_
+  commentId: M:Archivist.DataTypes.FixedLengthField.ConvertFrom``1(``0)
+  name.vb: ConvertFrom(Of TObject)(TObject)
+  fullName: Archivist.DataTypes.FixedLengthField.ConvertFrom<TObject>(TObject)
+  fullName.vb: Archivist.DataTypes.FixedLengthField.ConvertFrom(Of TObject)(TObject)
+  nameWithType: FixedLengthField.ConvertFrom<TObject>(TObject)
+  nameWithType.vb: FixedLengthField.ConvertFrom(Of TObject)(TObject)
 - uid: Archivist.DataTypes.FixedLengthField.ConvertTo*
   name: ConvertTo
   href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_ConvertTo_
@@ -2560,6 +2640,22 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Table.Contains
   nameWithType: Table.Contains
+- uid: Archivist.DataTypes.Table.ConvertFrom*
+  name: ConvertFrom
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_ConvertFrom_
+  commentId: Overload:Archivist.DataTypes.Table.ConvertFrom
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.ConvertFrom
+  nameWithType: Table.ConvertFrom
+- uid: Archivist.DataTypes.Table.ConvertFrom``1(System.Collections.Generic.List{``0})
+  name: ConvertFrom<TObject>(List<TObject?>)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_ConvertFrom__1_System_Collections_Generic_List___0__
+  commentId: M:Archivist.DataTypes.Table.ConvertFrom``1(System.Collections.Generic.List{``0})
+  name.vb: ConvertFrom(Of TObject)(List(Of TObject))
+  fullName: Archivist.DataTypes.Table.ConvertFrom<TObject>(System.Collections.Generic.List<TObject?>)
+  fullName.vb: Archivist.DataTypes.Table.ConvertFrom(Of TObject)(System.Collections.Generic.List(Of TObject))
+  nameWithType: Table.ConvertFrom<TObject>(List<TObject?>)
+  nameWithType.vb: Table.ConvertFrom(Of TObject)(List(Of TObject))
 - uid: Archivist.DataTypes.Table.ConvertTo*
   name: ConvertTo
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_ConvertTo_
@@ -2933,6 +3029,22 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.TableCell.Content
   nameWithType: TableCell.Content
+- uid: Archivist.DataTypes.TableCell.ConvertFrom*
+  name: ConvertFrom
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_ConvertFrom_
+  commentId: Overload:Archivist.DataTypes.TableCell.ConvertFrom
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableCell.ConvertFrom
+  nameWithType: TableCell.ConvertFrom
+- uid: Archivist.DataTypes.TableCell.ConvertFrom``1(``0)
+  name: ConvertFrom<TObject>(TObject)
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_ConvertFrom__1___0_
+  commentId: M:Archivist.DataTypes.TableCell.ConvertFrom``1(``0)
+  name.vb: ConvertFrom(Of TObject)(TObject)
+  fullName: Archivist.DataTypes.TableCell.ConvertFrom<TObject>(TObject)
+  fullName.vb: Archivist.DataTypes.TableCell.ConvertFrom(Of TObject)(TObject)
+  nameWithType: TableCell.ConvertFrom<TObject>(TObject)
+  nameWithType.vb: TableCell.ConvertFrom(Of TObject)(TObject)
 - uid: Archivist.DataTypes.TableCell.ConvertTo*
   name: ConvertTo
   href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_ConvertTo_
@@ -3225,6 +3337,22 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.TableRow.Contains
   nameWithType: TableRow.Contains
+- uid: Archivist.DataTypes.TableRow.ConvertFrom*
+  name: ConvertFrom
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_ConvertFrom_
+  commentId: Overload:Archivist.DataTypes.TableRow.ConvertFrom
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.ConvertFrom
+  nameWithType: TableRow.ConvertFrom
+- uid: Archivist.DataTypes.TableRow.ConvertFrom``1(``0)
+  name: ConvertFrom<TObject>(TObject)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_ConvertFrom__1___0_
+  commentId: M:Archivist.DataTypes.TableRow.ConvertFrom``1(``0)
+  name.vb: ConvertFrom(Of TObject)(TObject)
+  fullName: Archivist.DataTypes.TableRow.ConvertFrom<TObject>(TObject)
+  fullName.vb: Archivist.DataTypes.TableRow.ConvertFrom(Of TObject)(TObject)
+  nameWithType: TableRow.ConvertFrom<TObject>(TObject)
+  nameWithType.vb: TableRow.ConvertFrom(Of TObject)(TObject)
 - uid: Archivist.DataTypes.TableRow.ConvertTo*
   name: ConvertTo
   href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_ConvertTo_
@@ -4726,6 +4854,22 @@ references:
   commentId: T:Archivist.Interfaces.IListConvertable
   fullName: Archivist.Interfaces.IListConvertable
   nameWithType: IListConvertable
+- uid: Archivist.Interfaces.IListConvertable.ConvertFrom*
+  name: ConvertFrom
+  href: api/Archivist.Interfaces.IListConvertable.html#Archivist_Interfaces_IListConvertable_ConvertFrom_
+  commentId: Overload:Archivist.Interfaces.IListConvertable.ConvertFrom
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IListConvertable.ConvertFrom
+  nameWithType: IListConvertable.ConvertFrom
+- uid: Archivist.Interfaces.IListConvertable.ConvertFrom``1(System.Collections.Generic.List{``0})
+  name: ConvertFrom<TObject>(List<TObject?>)
+  href: api/Archivist.Interfaces.IListConvertable.html#Archivist_Interfaces_IListConvertable_ConvertFrom__1_System_Collections_Generic_List___0__
+  commentId: M:Archivist.Interfaces.IListConvertable.ConvertFrom``1(System.Collections.Generic.List{``0})
+  name.vb: ConvertFrom(Of TObject)(List(Of TObject))
+  fullName: Archivist.Interfaces.IListConvertable.ConvertFrom<TObject>(System.Collections.Generic.List<TObject?>)
+  fullName.vb: Archivist.Interfaces.IListConvertable.ConvertFrom(Of TObject)(System.Collections.Generic.List(Of TObject))
+  nameWithType: IListConvertable.ConvertFrom<TObject>(List<TObject?>)
+  nameWithType.vb: IListConvertable.ConvertFrom(Of TObject)(List(Of TObject))
 - uid: Archivist.Interfaces.IListConvertable.ConvertTo*
   name: ConvertTo
   href: api/Archivist.Interfaces.IListConvertable.html#Archivist_Interfaces_IListConvertable_ConvertTo_
@@ -4748,6 +4892,22 @@ references:
   commentId: T:Archivist.Interfaces.IObjectConvertable
   fullName: Archivist.Interfaces.IObjectConvertable
   nameWithType: IObjectConvertable
+- uid: Archivist.Interfaces.IObjectConvertable.ConvertFrom*
+  name: ConvertFrom
+  href: api/Archivist.Interfaces.IObjectConvertable.html#Archivist_Interfaces_IObjectConvertable_ConvertFrom_
+  commentId: Overload:Archivist.Interfaces.IObjectConvertable.ConvertFrom
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IObjectConvertable.ConvertFrom
+  nameWithType: IObjectConvertable.ConvertFrom
+- uid: Archivist.Interfaces.IObjectConvertable.ConvertFrom``1(``0)
+  name: ConvertFrom<TObject>(TObject)
+  href: api/Archivist.Interfaces.IObjectConvertable.html#Archivist_Interfaces_IObjectConvertable_ConvertFrom__1___0_
+  commentId: M:Archivist.Interfaces.IObjectConvertable.ConvertFrom``1(``0)
+  name.vb: ConvertFrom(Of TObject)(TObject)
+  fullName: Archivist.Interfaces.IObjectConvertable.ConvertFrom<TObject>(TObject)
+  fullName.vb: Archivist.Interfaces.IObjectConvertable.ConvertFrom(Of TObject)(TObject)
+  nameWithType: IObjectConvertable.ConvertFrom<TObject>(TObject)
+  nameWithType.vb: IObjectConvertable.ConvertFrom(Of TObject)(TObject)
 - uid: Archivist.Interfaces.IObjectConvertable.ConvertTo*
   name: ConvertTo
   href: api/Archivist.Interfaces.IObjectConvertable.html#Archivist_Interfaces_IObjectConvertable_ConvertTo_
