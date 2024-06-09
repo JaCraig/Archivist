@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_DataTypes_Table" data-uid="Archivist.DataTypes.Table" class="text-break">
-Class Table  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L15"><i class="bi bi-code-slash"></i></a>
+Class Table  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Table : FileBaseClass&lt;Table&gt;, IGenericFile, IComparable&lt;Table&gt;, IEquatable&lt;Table&gt;, IEnumerable&lt;TableRow?&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public class Table : FileBaseClass&lt;Table&gt;, IGenericFile, IComparable&lt;Table&gt;, IEquatable&lt;Table&gt;, IListConvertable, IList&lt;TableRow&gt;, ICollection&lt;TableRow&gt;, IEnumerable&lt;TableRow&gt;, IEnumerable</code></pre>
   </div>
 
 
@@ -123,6 +123,9 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
       <div><a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Archivist.DataTypes.Table.html">Table</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Archivist.DataTypes.Table.html">Table</a>&gt;</div>
+      <div><a class="xref" href="Archivist.Interfaces.IListConvertable.html">IListConvertable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
     </dd>
@@ -171,7 +174,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Columns" data-uid="Archivist.DataTypes.Table.Columns">
   Columns
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the headers of the table.</p>
@@ -200,19 +203,19 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
 
 
-  <a id="Archivist_DataTypes_Table_Rows_" data-uid="Archivist.DataTypes.Table.Rows*"></a>
+  <a id="Archivist_DataTypes_Table_Count_" data-uid="Archivist.DataTypes.Table.Count*"></a>
 
-  <h3 id="Archivist_DataTypes_Table_Rows" data-uid="Archivist.DataTypes.Table.Rows">
-  Rows
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Archivist_DataTypes_Table_Count" data-uid="Archivist.DataTypes.Table.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the rows of the table.</p>
+  <div class="markdown level1 summary"><p>Gets the number of rows in the table.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;TableRow&gt; Rows { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
   </div>
 
 
@@ -221,7 +224,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -232,15 +235,185 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <a id="Archivist_DataTypes_Table_IsReadOnly_" data-uid="Archivist.DataTypes.Table.IsReadOnly*"></a>
+
+  <h3 id="Archivist_DataTypes_Table_IsReadOnly" data-uid="Archivist.DataTypes.Table.IsReadOnly">
+  IsReadOnly
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the table is read-only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Table_Item_" data-uid="Archivist.DataTypes.Table.Item*"></a>
+
+  <h3 id="Archivist_DataTypes_Table_Item_System_Int32_" data-uid="Archivist.DataTypes.Table.Item(System.Int32)">
+  this[int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the row at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableRow this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the table.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a></dt>
+    <dd><p>The row at the specified index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>The index is out of range.</p>
+</dd>
+  </dl>
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
+
+
+  <a id="Archivist_DataTypes_Table_Add_" data-uid="Archivist.DataTypes.Table.Add*"></a>
+
+  <h3 id="Archivist_DataTypes_Table_Add_Archivist_DataTypes_TableRow_" data-uid="Archivist.DataTypes.Table.Add(Archivist.DataTypes.TableRow)">
+  Add(TableRow?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a row to the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(TableRow? item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a></dt>
+    <dd><p>The row to add to the table.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Table_AddRow_" data-uid="Archivist.DataTypes.Table.AddRow*"></a>
+
+  <h3 id="Archivist_DataTypes_Table_AddRow" data-uid="Archivist.DataTypes.Table.AddRow">
+  AddRow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new row to the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableRow AddRow()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a></dt>
+    <dd><p>The new row.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Table_Clear_" data-uid="Archivist.DataTypes.Table.Clear*"></a>
+
+  <h3 id="Archivist_DataTypes_Table_Clear" data-uid="Archivist.DataTypes.Table.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Archivist_DataTypes_Table_CompareTo_" data-uid="Archivist.DataTypes.Table.CompareTo*"></a>
 
   <h3 id="Archivist_DataTypes_Table_CompareTo_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.CompareTo(Archivist.DataTypes.Table)">
   CompareTo(Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compares the current table object with another table object.</p>
@@ -275,11 +448,50 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
 
 
-  <a id="Archivist_DataTypes_Table_Convert_" data-uid="Archivist.DataTypes.Table.Convert*"></a>
+  <a id="Archivist_DataTypes_Table_Contains_" data-uid="Archivist.DataTypes.Table.Contains*"></a>
 
-  <h3 id="Archivist_DataTypes_Table_Convert__1" data-uid="Archivist.DataTypes.Table.Convert``1">
-  Convert&lt;TObject&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Archivist_DataTypes_Table_Contains_Archivist_DataTypes_TableRow_" data-uid="Archivist.DataTypes.Table.Contains(Archivist.DataTypes.TableRow)">
+  Contains(TableRow?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines if the table contains the specified row.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(TableRow? item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a></dt>
+    <dd><p>The row to find in the table.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the table contains the row; otherwise, <code>false&gt;</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Table_ConvertTo_" data-uid="Archivist.DataTypes.Table.ConvertTo*"></a>
+
+  <h3 id="Archivist_DataTypes_Table_ConvertTo__1" data-uid="Archivist.DataTypes.Table.ConvertTo``1">
+  ConvertTo&lt;TObject&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts this instance into the object array of the type specified.</p>
@@ -287,7 +499,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;TObject&gt; Convert&lt;TObject&gt;()</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;TObject?&gt; ConvertTo&lt;TObject&gt;()</code></pre>
   </div>
 
 
@@ -314,11 +526,47 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <a id="Archivist_DataTypes_Table_CopyTo_" data-uid="Archivist.DataTypes.Table.CopyTo*"></a>
+
+  <h3 id="Archivist_DataTypes_Table_CopyTo_Archivist_DataTypes_TableRow___System_Int32_" data-uid="Archivist.DataTypes.Table.CopyTo(Archivist.DataTypes.TableRow[],System.Int32)">
+  CopyTo(TableRow[]?, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies the rows of the table to an array, starting at a particular array index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(TableRow[]? array, int arrayIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a>[]</dt>
+    <dd><p>The array to copy the rows to.</p>
+</dd>
+    <dt><code>arrayIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index in the array at which to start copying the rows.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Archivist_DataTypes_Table_Equals_" data-uid="Archivist.DataTypes.Table.Equals*"></a>
 
   <h3 id="Archivist_DataTypes_Table_Equals_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.Equals(Archivist.DataTypes.Table)">
   Equals(Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the current table object is equal to another table object.</p>
@@ -357,7 +605,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Equals_System_Object_" data-uid="Archivist.DataTypes.Table.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L207"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the current table object is equal to another table object.</p>
@@ -396,7 +644,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_GetContent" data-uid="Archivist.DataTypes.Table.GetContent">
   GetContent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the content of the table.</p>
@@ -429,7 +677,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_GetEnumerator" data-uid="Archivist.DataTypes.Table.GetEnumerator">
   GetEnumerator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the rows of the table.</p>
@@ -437,7 +685,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerator&lt;TableRow?&gt; GetEnumerator()</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;TableRow&gt; GetEnumerator()</code></pre>
   </div>
 
 
@@ -462,7 +710,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_GetHashCode" data-uid="Archivist.DataTypes.Table.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the hash code for the current table object.</p>
@@ -491,6 +739,153 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <a id="Archivist_DataTypes_Table_IndexOf_" data-uid="Archivist.DataTypes.Table.IndexOf*"></a>
+
+  <h3 id="Archivist_DataTypes_Table_IndexOf_Archivist_DataTypes_TableRow_" data-uid="Archivist.DataTypes.Table.IndexOf(Archivist.DataTypes.TableRow)">
+  IndexOf(TableRow?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the index of the specified row in the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(TableRow? item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a></dt>
+    <dd><p>The row to find in the table.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the row in the table.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Table_Insert_" data-uid="Archivist.DataTypes.Table.Insert*"></a>
+
+  <h3 id="Archivist_DataTypes_Table_Insert_System_Int32_Archivist_DataTypes_TableRow_" data-uid="Archivist.DataTypes.Table.Insert(System.Int32,Archivist.DataTypes.TableRow)">
+  Insert(int, TableRow?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts a row into the table at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, TableRow? item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index at which to insert the row.</p>
+</dd>
+    <dt><code>item</code> <a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a></dt>
+    <dd><p>The row to insert into the table.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Table_Remove_" data-uid="Archivist.DataTypes.Table.Remove*"></a>
+
+  <h3 id="Archivist_DataTypes_Table_Remove_Archivist_DataTypes_TableRow_" data-uid="Archivist.DataTypes.Table.Remove(Archivist.DataTypes.TableRow)">
+  Remove(TableRow?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the first occurrence of a specific row from the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(TableRow? item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="Archivist.DataTypes.TableRow.html">TableRow</a></dt>
+    <dd><p>The row to remove from the table.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the row was successfully removed; otherwise, <code>false&gt;</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Table_RemoveAt_" data-uid="Archivist.DataTypes.Table.RemoveAt*"></a>
+
+  <h3 id="Archivist_DataTypes_Table_RemoveAt_System_Int32_" data-uid="Archivist.DataTypes.Table.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the row at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the row to remove.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="operators">Operators
 </h2>
 
@@ -498,8 +893,8 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
   <a id="Archivist_DataTypes_Table_op_Equality_" data-uid="Archivist.DataTypes.Table.op_Equality*"></a>
 
   <h3 id="Archivist_DataTypes_Table_op_Equality_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_Equality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
-  operator ==(Table, Table)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  operator ==(Table?, Table?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two table objects are equal.</p>
@@ -507,7 +902,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator ==(Table left, Table right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Table? left, Table? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -540,8 +935,8 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
   <a id="Archivist_DataTypes_Table_op_GreaterThan_" data-uid="Archivist.DataTypes.Table.op_GreaterThan*"></a>
 
   <h3 id="Archivist_DataTypes_Table_op_GreaterThan_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_GreaterThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
-  operator &gt;(Table, Table)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  operator &gt;(Table?, Table?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first table object is greater than the second table object.</p>
@@ -549,7 +944,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &gt;(Table left, Table right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(Table? left, Table? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -583,8 +978,8 @@ otherwise, <code>false</code>.</p>
   <a id="Archivist_DataTypes_Table_op_GreaterThanOrEqual_" data-uid="Archivist.DataTypes.Table.op_GreaterThanOrEqual*"></a>
 
   <h3 id="Archivist_DataTypes_Table_op_GreaterThanOrEqual_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_GreaterThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
-  operator &gt;=(Table, Table)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  operator &gt;=(Table?, Table?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first table object is greater than or equal to the second table object.</p>
@@ -592,7 +987,7 @@ otherwise, <code>false</code>.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(Table left, Table right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(Table? left, Table? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -626,8 +1021,8 @@ object; otherwise, <code>false</code>.</p>
   <a id="Archivist_DataTypes_Table_op_Inequality_" data-uid="Archivist.DataTypes.Table.op_Inequality*"></a>
 
   <h3 id="Archivist_DataTypes_Table_op_Inequality_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_Inequality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
-  operator !=(Table, Table)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  operator !=(Table?, Table?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two table objects are not equal.</p>
@@ -635,7 +1030,7 @@ object; otherwise, <code>false</code>.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator !=(Table left, Table right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Table? left, Table? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -668,8 +1063,8 @@ object; otherwise, <code>false</code>.</p>
   <a id="Archivist_DataTypes_Table_op_LessThan_" data-uid="Archivist.DataTypes.Table.op_LessThan*"></a>
 
   <h3 id="Archivist_DataTypes_Table_op_LessThan_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_LessThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
-  operator &lt;(Table, Table)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  operator &lt;(Table?, Table?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first table object is less than the second table object.</p>
@@ -677,7 +1072,7 @@ object; otherwise, <code>false</code>.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Table left, Table right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Table? left, Table? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -710,8 +1105,8 @@ object; otherwise, <code>false</code>.</p>
   <a id="Archivist_DataTypes_Table_op_LessThanOrEqual_" data-uid="Archivist.DataTypes.Table.op_LessThanOrEqual*"></a>
 
   <h3 id="Archivist_DataTypes_Table_op_LessThanOrEqual_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_LessThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
-  operator &lt;=(Table, Table)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  operator &lt;=(Table?, Table?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first table object is less than or equal to the second table object.</p>
@@ -719,7 +1114,7 @@ object; otherwise, <code>false</code>.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(Table left, Table right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(Table? left, Table? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -758,7 +1153,7 @@ otherwise, <code>false</code>.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L15" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_DataTypes_TableCell" data-uid="Archivist.DataTypes.TableCell" class="text-break">
-Class TableCell  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class TableCell  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TableCell : IComparable&lt;TableCell&gt;, IEquatable&lt;TableCell&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class TableCell : IComparable&lt;TableCell&gt;, IEquatable&lt;TableCell&gt;, IObjectConvertable</code></pre>
   </div>
 
 
@@ -121,6 +121,7 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>&gt;</div>
+      <div><a class="xref" href="Archivist.Interfaces.IObjectConvertable.html">IObjectConvertable</a></div>
     </dd>
   </dl>
 
@@ -155,7 +156,7 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_DataTypes_TableCell__ctor_System_String_" data-uid="Archivist.DataTypes.TableCell.#ctor(System.String)">
   TableCell(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a> class with the specified content.</p>
@@ -192,7 +193,7 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_DataTypes_TableCell_Content" data-uid="Archivist.DataTypes.TableCell.Content">
   Content
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the content of the cell.</p>
@@ -228,7 +229,7 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_DataTypes_TableCell_CompareTo_Archivist_DataTypes_TableCell_" data-uid="Archivist.DataTypes.TableCell.CompareTo(Archivist.DataTypes.TableCell)">
   CompareTo(TableCell?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compares the current <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a> with another <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.</p>
@@ -263,11 +264,50 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <a id="Archivist_DataTypes_TableCell_ConvertTo_" data-uid="Archivist.DataTypes.TableCell.ConvertTo*"></a>
+
+  <h3 id="Archivist_DataTypes_TableCell_ConvertTo__1" data-uid="Archivist.DataTypes.TableCell.ConvertTo``1">
+  ConvertTo&lt;TObject&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the content of the <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a> to the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TObject? ConvertTo&lt;TObject&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TObject</span></dt>
+    <dd><p>The converted content of the <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>The type to convert the content to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Archivist_DataTypes_TableCell_Equals_" data-uid="Archivist.DataTypes.TableCell.Equals*"></a>
 
   <h3 id="Archivist_DataTypes_TableCell_Equals_Archivist_DataTypes_TableCell_" data-uid="Archivist.DataTypes.TableCell.Equals(Archivist.DataTypes.TableCell)">
   Equals(TableCell?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the current <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a> is equal to another <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.</p>
@@ -306,7 +346,7 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_DataTypes_TableCell_Equals_System_Object_" data-uid="Archivist.DataTypes.TableCell.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the current <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a> is equal to another <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.</p>
@@ -345,7 +385,7 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_DataTypes_TableCell_GetHashCode" data-uid="Archivist.DataTypes.TableCell.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the hash code for the current <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.</p>
@@ -374,50 +414,11 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
 
 
 
-  <a id="Archivist_DataTypes_TableCell_GetValue_" data-uid="Archivist.DataTypes.TableCell.GetValue*"></a>
-
-  <h3 id="Archivist_DataTypes_TableCell_GetValue__1" data-uid="Archivist.DataTypes.TableCell.GetValue``1">
-  GetValue&lt;TValue&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L149"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets the value of the cell as the specified type.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TValue GetValue&lt;TValue&gt;()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">TValue</span></dt>
-    <dd><p>The value of the cell as the specified type.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TValue</code></dt>
-    <dd><p>The type to convert the cell content to.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
   <a id="Archivist_DataTypes_TableCell_ToString_" data-uid="Archivist.DataTypes.TableCell.ToString*"></a>
 
   <h3 id="Archivist_DataTypes_TableCell_ToString" data-uid="Archivist.DataTypes.TableCell.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string that represents the current <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.</p>
@@ -453,8 +454,8 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
   <a id="Archivist_DataTypes_TableCell_op_Equality_" data-uid="Archivist.DataTypes.TableCell.op_Equality*"></a>
 
   <h3 id="Archivist_DataTypes_TableCell_op_Equality_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_" data-uid="Archivist.DataTypes.TableCell.op_Equality(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)">
-  operator ==(TableCell, TableCell)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  operator ==(TableCell?, TableCell?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a> objects are equal.</p>
@@ -462,7 +463,7 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator ==(TableCell left, TableCell right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator ==(TableCell? left, TableCell? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -495,8 +496,8 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
   <a id="Archivist_DataTypes_TableCell_op_GreaterThan_" data-uid="Archivist.DataTypes.TableCell.op_GreaterThan*"></a>
 
   <h3 id="Archivist_DataTypes_TableCell_op_GreaterThan_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_" data-uid="Archivist.DataTypes.TableCell.op_GreaterThan(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)">
-  operator &gt;(TableCell, TableCell)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  operator &gt;(TableCell?, TableCell?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a> is greater than the second <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.</p>
@@ -504,7 +505,7 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &gt;(TableCell left, TableCell right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(TableCell? left, TableCell? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -537,8 +538,8 @@ Class TableCell  <a class="header-action link-secondary" title="View source" hre
   <a id="Archivist_DataTypes_TableCell_op_GreaterThanOrEqual_" data-uid="Archivist.DataTypes.TableCell.op_GreaterThanOrEqual*"></a>
 
   <h3 id="Archivist_DataTypes_TableCell_op_GreaterThanOrEqual_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_" data-uid="Archivist.DataTypes.TableCell.op_GreaterThanOrEqual(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)">
-  operator &gt;=(TableCell, TableCell)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  operator &gt;=(TableCell?, TableCell?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a> is greater than or equal to the
@@ -547,7 +548,7 @@ second <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(TableCell left, TableCell right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(TableCell? left, TableCell? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -581,8 +582,8 @@ second <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.<
   <a id="Archivist_DataTypes_TableCell_op_Inequality_" data-uid="Archivist.DataTypes.TableCell.op_Inequality*"></a>
 
   <h3 id="Archivist_DataTypes_TableCell_op_Inequality_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_" data-uid="Archivist.DataTypes.TableCell.op_Inequality(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)">
-  operator !=(TableCell, TableCell)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  operator !=(TableCell?, TableCell?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a> objects are not equal.</p>
@@ -590,7 +591,7 @@ second <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator !=(TableCell left, TableCell right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator !=(TableCell? left, TableCell? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -623,8 +624,8 @@ second <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.<
   <a id="Archivist_DataTypes_TableCell_op_LessThan_" data-uid="Archivist.DataTypes.TableCell.op_LessThan*"></a>
 
   <h3 id="Archivist_DataTypes_TableCell_op_LessThan_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_" data-uid="Archivist.DataTypes.TableCell.op_LessThan(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)">
-  operator &lt;(TableCell, TableCell)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  operator &lt;(TableCell?, TableCell?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a> is less than the second <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.</p>
@@ -632,7 +633,7 @@ second <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &lt;(TableCell left, TableCell right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(TableCell? left, TableCell? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -665,8 +666,8 @@ second <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.<
   <a id="Archivist_DataTypes_TableCell_op_LessThanOrEqual_" data-uid="Archivist.DataTypes.TableCell.op_LessThanOrEqual*"></a>
 
   <h3 id="Archivist_DataTypes_TableCell_op_LessThanOrEqual_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_" data-uid="Archivist.DataTypes.TableCell.op_LessThanOrEqual(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)">
-  operator &lt;=(TableCell, TableCell)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  operator &lt;=(TableCell?, TableCell?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a> is less than or equal to the second
@@ -675,7 +676,7 @@ second <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(TableCell left, TableCell right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(TableCell? left, TableCell? right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -710,7 +711,7 @@ second <a class="xref" href="Archivist.DataTypes.TableCell.html">TableCell</a>.<
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/TableCell.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

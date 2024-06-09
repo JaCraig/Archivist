@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_DataTypes_FixedLengthField" data-uid="Archivist.DataTypes.FixedLengthField" class="text-break">
-Class FixedLengthField  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class FixedLengthField  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FixedLengthField : IComparable&lt;FixedLengthField&gt;, IEquatable&lt;FixedLengthField&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class FixedLengthField : IComparable&lt;FixedLengthField&gt;, IEquatable&lt;FixedLengthField&gt;, IObjectConvertable</code></pre>
   </div>
 
 
@@ -121,6 +121,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a>&gt;</div>
+      <div><a class="xref" href="Archivist.Interfaces.IObjectConvertable.html">IObjectConvertable</a></div>
     </dd>
   </dl>
 
@@ -155,7 +156,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField__ctor_System_String_System_Int32_System_Char_System_Boolean_" data-uid="Archivist.DataTypes.FixedLengthField.#ctor(System.String,System.Int32,System.Char,System.Boolean)">
   FixedLengthField(string?, int, char, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> class.</p>
@@ -201,7 +202,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_FillerCharacter" data-uid="Archivist.DataTypes.FixedLengthField.FillerCharacter">
   FillerCharacter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the filler character used to pad the field.</p>
@@ -233,7 +234,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_LeftAligned" data-uid="Archivist.DataTypes.FixedLengthField.LeftAligned">
   LeftAligned
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value indicating whether the field is left-aligned or not.</p>
@@ -265,7 +266,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_MaxLength" data-uid="Archivist.DataTypes.FixedLengthField.MaxLength">
   MaxLength
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the maximum length of the field.</p>
@@ -297,7 +298,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_Value" data-uid="Archivist.DataTypes.FixedLengthField.Value">
   Value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the value of the field.</p>
@@ -333,10 +334,12 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_CompareTo_Archivist_DataTypes_FixedLengthField_" data-uid="Archivist.DataTypes.FixedLengthField.CompareTo(Archivist.DataTypes.FixedLengthField)">
   CompareTo(FixedLengthField?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.</p>
+  <div class="markdown level1 summary"><p>Compares the current instance with another object of the same type and returns an
+integer that indicates whether the current instance precedes, follows, or occurs in the
+same position in the sort order as the other object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -368,11 +371,50 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
 
 
+  <a id="Archivist_DataTypes_FixedLengthField_ConvertTo_" data-uid="Archivist.DataTypes.FixedLengthField.ConvertTo*"></a>
+
+  <h3 id="Archivist_DataTypes_FixedLengthField_ConvertTo__1" data-uid="Archivist.DataTypes.FixedLengthField.ConvertTo``1">
+  ConvertTo&lt;TObject&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the content of the field to the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TObject? ConvertTo&lt;TObject&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TObject</span></dt>
+    <dd><p>The converted content of the field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>The type to convert the content to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Archivist_DataTypes_FixedLengthField_Equals_" data-uid="Archivist.DataTypes.FixedLengthField.Equals*"></a>
 
   <h3 id="Archivist_DataTypes_FixedLengthField_Equals_Archivist_DataTypes_FixedLengthField_" data-uid="Archivist.DataTypes.FixedLengthField.Equals(Archivist.DataTypes.FixedLengthField)">
   Equals(FixedLengthField?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
@@ -411,7 +453,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_Equals_System_Object_" data-uid="Archivist.DataTypes.FixedLengthField.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
@@ -450,7 +492,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_GetHashCode" data-uid="Archivist.DataTypes.FixedLengthField.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
@@ -483,7 +525,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_ToString" data-uid="Archivist.DataTypes.FixedLengthField.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the string representation of the field.</p>
@@ -520,7 +562,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_op_Equality_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_" data-uid="Archivist.DataTypes.FixedLengthField.op_Equality(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)">
   operator ==(FixedLengthField?, FixedLengthField?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> objects are equal.</p>
@@ -562,10 +604,11 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_op_GreaterThan_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_" data-uid="Archivist.DataTypes.FixedLengthField.op_GreaterThan(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)">
   operator &gt;(FixedLengthField?, FixedLengthField?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is greater than the second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object.</p>
+  <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is greater than the
+second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -604,10 +647,11 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_op_GreaterThanOrEqual_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_" data-uid="Archivist.DataTypes.FixedLengthField.op_GreaterThanOrEqual(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)">
   operator &gt;=(FixedLengthField?, FixedLengthField?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is greater than or equal to the second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object.</p>
+  <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is greater than or
+equal to the second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -628,7 +672,8 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>true if the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is greater than or equal to the second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object; otherwise, false.</p>
+    <dd><p>true if the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is greater than or equal to the
+second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object; otherwise, false.</p>
 </dd>
   </dl>
 
@@ -646,7 +691,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_op_Inequality_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_" data-uid="Archivist.DataTypes.FixedLengthField.op_Inequality(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)">
   operator !=(FixedLengthField?, FixedLengthField?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> objects are not equal.</p>
@@ -688,10 +733,11 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_op_LessThan_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_" data-uid="Archivist.DataTypes.FixedLengthField.op_LessThan(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)">
   operator &lt;(FixedLengthField?, FixedLengthField?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is less than the second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object.</p>
+  <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is less than the
+second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -730,10 +776,11 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Archivist_DataTypes_FixedLengthField_op_LessThanOrEqual_Archivist_DataTypes_FixedLengthField_Archivist_DataTypes_FixedLengthField_" data-uid="Archivist.DataTypes.FixedLengthField.op_LessThanOrEqual(Archivist.DataTypes.FixedLengthField,Archivist.DataTypes.FixedLengthField)">
   operator &lt;=(FixedLengthField?, FixedLengthField?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is less than or equal to the second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object.</p>
+  <div class="markdown level1 summary"><p>Determines whether the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is less than or equal
+to the second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -754,7 +801,8 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>true if the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is less than or equal to the second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object; otherwise, false.</p>
+    <dd><p>true if the first <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object is less than or equal to the
+second <a class="xref" href="Archivist.DataTypes.FixedLengthField.html">FixedLengthField</a> object; otherwise, false.</p>
 </dd>
   </dl>
 
@@ -772,7 +820,7 @@ Class FixedLengthField  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthField.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

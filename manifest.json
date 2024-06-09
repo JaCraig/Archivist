@@ -372,6 +372,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Interfaces.IListConvertable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Interfaces.IListConvertable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Interfaces.IObjectConvertable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Interfaces.IObjectConvertable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.Interfaces.yml",
       "output": {
         ".html": {

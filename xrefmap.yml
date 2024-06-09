@@ -1741,6 +1741,22 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.FixedLengthField.CompareTo
   nameWithType: FixedLengthField.CompareTo
+- uid: Archivist.DataTypes.FixedLengthField.ConvertTo*
+  name: ConvertTo
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_ConvertTo_
+  commentId: Overload:Archivist.DataTypes.FixedLengthField.ConvertTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.FixedLengthField.ConvertTo
+  nameWithType: FixedLengthField.ConvertTo
+- uid: Archivist.DataTypes.FixedLengthField.ConvertTo``1
+  name: ConvertTo<TObject>()
+  href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_ConvertTo__1
+  commentId: M:Archivist.DataTypes.FixedLengthField.ConvertTo``1
+  name.vb: ConvertTo(Of TObject)()
+  fullName: Archivist.DataTypes.FixedLengthField.ConvertTo<TObject>()
+  fullName.vb: Archivist.DataTypes.FixedLengthField.ConvertTo(Of TObject)()
+  nameWithType: FixedLengthField.ConvertTo<TObject>()
+  nameWithType.vb: FixedLengthField.ConvertTo(Of TObject)()
 - uid: Archivist.DataTypes.FixedLengthField.Equals(Archivist.DataTypes.FixedLengthField)
   name: Equals(FixedLengthField?)
   href: api/Archivist.DataTypes.FixedLengthField.html#Archivist_DataTypes_FixedLengthField_Equals_Archivist_DataTypes_FixedLengthField_
@@ -2457,6 +2473,48 @@ references:
   commentId: T:Archivist.DataTypes.Table
   fullName: Archivist.DataTypes.Table
   nameWithType: Table
+- uid: Archivist.DataTypes.Table.Add(Archivist.DataTypes.TableRow)
+  name: Add(TableRow?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Add_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.Table.Add(Archivist.DataTypes.TableRow)
+  name.vb: Add(TableRow)
+  fullName: Archivist.DataTypes.Table.Add(Archivist.DataTypes.TableRow?)
+  fullName.vb: Archivist.DataTypes.Table.Add(Archivist.DataTypes.TableRow)
+  nameWithType: Table.Add(TableRow?)
+  nameWithType.vb: Table.Add(TableRow)
+- uid: Archivist.DataTypes.Table.Add*
+  name: Add
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Add_
+  commentId: Overload:Archivist.DataTypes.Table.Add
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.Add
+  nameWithType: Table.Add
+- uid: Archivist.DataTypes.Table.AddRow
+  name: AddRow()
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_AddRow
+  commentId: M:Archivist.DataTypes.Table.AddRow
+  fullName: Archivist.DataTypes.Table.AddRow()
+  nameWithType: Table.AddRow()
+- uid: Archivist.DataTypes.Table.AddRow*
+  name: AddRow
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_AddRow_
+  commentId: Overload:Archivist.DataTypes.Table.AddRow
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.AddRow
+  nameWithType: Table.AddRow
+- uid: Archivist.DataTypes.Table.Clear
+  name: Clear()
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Clear
+  commentId: M:Archivist.DataTypes.Table.Clear
+  fullName: Archivist.DataTypes.Table.Clear()
+  nameWithType: Table.Clear()
+- uid: Archivist.DataTypes.Table.Clear*
+  name: Clear
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Clear_
+  commentId: Overload:Archivist.DataTypes.Table.Clear
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.Clear
+  nameWithType: Table.Clear
 - uid: Archivist.DataTypes.Table.Columns
   name: Columns
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Columns
@@ -2486,22 +2544,67 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Table.CompareTo
   nameWithType: Table.CompareTo
-- uid: Archivist.DataTypes.Table.Convert*
-  name: Convert
-  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Convert_
-  commentId: Overload:Archivist.DataTypes.Table.Convert
+- uid: Archivist.DataTypes.Table.Contains(Archivist.DataTypes.TableRow)
+  name: Contains(TableRow?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Contains_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.Table.Contains(Archivist.DataTypes.TableRow)
+  name.vb: Contains(TableRow)
+  fullName: Archivist.DataTypes.Table.Contains(Archivist.DataTypes.TableRow?)
+  fullName.vb: Archivist.DataTypes.Table.Contains(Archivist.DataTypes.TableRow)
+  nameWithType: Table.Contains(TableRow?)
+  nameWithType.vb: Table.Contains(TableRow)
+- uid: Archivist.DataTypes.Table.Contains*
+  name: Contains
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Contains_
+  commentId: Overload:Archivist.DataTypes.Table.Contains
   isSpec: "True"
-  fullName: Archivist.DataTypes.Table.Convert
-  nameWithType: Table.Convert
-- uid: Archivist.DataTypes.Table.Convert``1
-  name: Convert<TObject>()
-  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Convert__1
-  commentId: M:Archivist.DataTypes.Table.Convert``1
-  name.vb: Convert(Of TObject)()
-  fullName: Archivist.DataTypes.Table.Convert<TObject>()
-  fullName.vb: Archivist.DataTypes.Table.Convert(Of TObject)()
-  nameWithType: Table.Convert<TObject>()
-  nameWithType.vb: Table.Convert(Of TObject)()
+  fullName: Archivist.DataTypes.Table.Contains
+  nameWithType: Table.Contains
+- uid: Archivist.DataTypes.Table.ConvertTo*
+  name: ConvertTo
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_ConvertTo_
+  commentId: Overload:Archivist.DataTypes.Table.ConvertTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.ConvertTo
+  nameWithType: Table.ConvertTo
+- uid: Archivist.DataTypes.Table.ConvertTo``1
+  name: ConvertTo<TObject>()
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_ConvertTo__1
+  commentId: M:Archivist.DataTypes.Table.ConvertTo``1
+  name.vb: ConvertTo(Of TObject)()
+  fullName: Archivist.DataTypes.Table.ConvertTo<TObject>()
+  fullName.vb: Archivist.DataTypes.Table.ConvertTo(Of TObject)()
+  nameWithType: Table.ConvertTo<TObject>()
+  nameWithType.vb: Table.ConvertTo(Of TObject)()
+- uid: Archivist.DataTypes.Table.CopyTo(Archivist.DataTypes.TableRow[],System.Int32)
+  name: CopyTo(TableRow[]?, int)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_CopyTo_Archivist_DataTypes_TableRow___System_Int32_
+  commentId: M:Archivist.DataTypes.Table.CopyTo(Archivist.DataTypes.TableRow[],System.Int32)
+  name.vb: CopyTo(TableRow(), Integer)
+  fullName: Archivist.DataTypes.Table.CopyTo(Archivist.DataTypes.TableRow[]?, int)
+  fullName.vb: Archivist.DataTypes.Table.CopyTo(Archivist.DataTypes.TableRow(), Integer)
+  nameWithType: Table.CopyTo(TableRow[]?, int)
+  nameWithType.vb: Table.CopyTo(TableRow(), Integer)
+- uid: Archivist.DataTypes.Table.CopyTo*
+  name: CopyTo
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_CopyTo_
+  commentId: Overload:Archivist.DataTypes.Table.CopyTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.CopyTo
+  nameWithType: Table.CopyTo
+- uid: Archivist.DataTypes.Table.Count
+  name: Count
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Count
+  commentId: P:Archivist.DataTypes.Table.Count
+  fullName: Archivist.DataTypes.Table.Count
+  nameWithType: Table.Count
+- uid: Archivist.DataTypes.Table.Count*
+  name: Count
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Count_
+  commentId: Overload:Archivist.DataTypes.Table.Count
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.Count
+  nameWithType: Table.Count
 - uid: Archivist.DataTypes.Table.Equals(Archivist.DataTypes.Table)
   name: Equals(Table?)
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Equals_Archivist_DataTypes_Table_
@@ -2566,27 +2669,110 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Table.GetHashCode
   nameWithType: Table.GetHashCode
-- uid: Archivist.DataTypes.Table.Rows
-  name: Rows
-  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Rows
-  commentId: P:Archivist.DataTypes.Table.Rows
-  fullName: Archivist.DataTypes.Table.Rows
-  nameWithType: Table.Rows
-- uid: Archivist.DataTypes.Table.Rows*
-  name: Rows
-  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Rows_
-  commentId: Overload:Archivist.DataTypes.Table.Rows
+- uid: Archivist.DataTypes.Table.IndexOf(Archivist.DataTypes.TableRow)
+  name: IndexOf(TableRow?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_IndexOf_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.Table.IndexOf(Archivist.DataTypes.TableRow)
+  name.vb: IndexOf(TableRow)
+  fullName: Archivist.DataTypes.Table.IndexOf(Archivist.DataTypes.TableRow?)
+  fullName.vb: Archivist.DataTypes.Table.IndexOf(Archivist.DataTypes.TableRow)
+  nameWithType: Table.IndexOf(TableRow?)
+  nameWithType.vb: Table.IndexOf(TableRow)
+- uid: Archivist.DataTypes.Table.IndexOf*
+  name: IndexOf
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_IndexOf_
+  commentId: Overload:Archivist.DataTypes.Table.IndexOf
   isSpec: "True"
-  fullName: Archivist.DataTypes.Table.Rows
-  nameWithType: Table.Rows
+  fullName: Archivist.DataTypes.Table.IndexOf
+  nameWithType: Table.IndexOf
+- uid: Archivist.DataTypes.Table.Insert(System.Int32,Archivist.DataTypes.TableRow)
+  name: Insert(int, TableRow?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Insert_System_Int32_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.Table.Insert(System.Int32,Archivist.DataTypes.TableRow)
+  name.vb: Insert(Integer, TableRow)
+  fullName: Archivist.DataTypes.Table.Insert(int, Archivist.DataTypes.TableRow?)
+  fullName.vb: Archivist.DataTypes.Table.Insert(Integer, Archivist.DataTypes.TableRow)
+  nameWithType: Table.Insert(int, TableRow?)
+  nameWithType.vb: Table.Insert(Integer, TableRow)
+- uid: Archivist.DataTypes.Table.Insert*
+  name: Insert
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Insert_
+  commentId: Overload:Archivist.DataTypes.Table.Insert
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.Insert
+  nameWithType: Table.Insert
+- uid: Archivist.DataTypes.Table.IsReadOnly
+  name: IsReadOnly
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_IsReadOnly
+  commentId: P:Archivist.DataTypes.Table.IsReadOnly
+  fullName: Archivist.DataTypes.Table.IsReadOnly
+  nameWithType: Table.IsReadOnly
+- uid: Archivist.DataTypes.Table.IsReadOnly*
+  name: IsReadOnly
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_IsReadOnly_
+  commentId: Overload:Archivist.DataTypes.Table.IsReadOnly
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.IsReadOnly
+  nameWithType: Table.IsReadOnly
+- uid: Archivist.DataTypes.Table.Item(System.Int32)
+  name: this[int]
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Item_System_Int32_
+  commentId: P:Archivist.DataTypes.Table.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: Archivist.DataTypes.Table.this[int]
+  fullName.vb: Archivist.DataTypes.Table.this[](Integer)
+  nameWithType: Table.this[int]
+  nameWithType.vb: Table.this[](Integer)
+- uid: Archivist.DataTypes.Table.Item*
+  name: this
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Item_
+  commentId: Overload:Archivist.DataTypes.Table.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: Archivist.DataTypes.Table.this
+  fullName.vb: Archivist.DataTypes.Table.this[]
+  nameWithType: Table.this
+  nameWithType.vb: Table.this[]
+- uid: Archivist.DataTypes.Table.Remove(Archivist.DataTypes.TableRow)
+  name: Remove(TableRow?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Remove_Archivist_DataTypes_TableRow_
+  commentId: M:Archivist.DataTypes.Table.Remove(Archivist.DataTypes.TableRow)
+  name.vb: Remove(TableRow)
+  fullName: Archivist.DataTypes.Table.Remove(Archivist.DataTypes.TableRow?)
+  fullName.vb: Archivist.DataTypes.Table.Remove(Archivist.DataTypes.TableRow)
+  nameWithType: Table.Remove(TableRow?)
+  nameWithType.vb: Table.Remove(TableRow)
+- uid: Archivist.DataTypes.Table.Remove*
+  name: Remove
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Remove_
+  commentId: Overload:Archivist.DataTypes.Table.Remove
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.Remove
+  nameWithType: Table.Remove
+- uid: Archivist.DataTypes.Table.RemoveAt(System.Int32)
+  name: RemoveAt(int)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_RemoveAt_System_Int32_
+  commentId: M:Archivist.DataTypes.Table.RemoveAt(System.Int32)
+  name.vb: RemoveAt(Integer)
+  fullName: Archivist.DataTypes.Table.RemoveAt(int)
+  fullName.vb: Archivist.DataTypes.Table.RemoveAt(Integer)
+  nameWithType: Table.RemoveAt(int)
+  nameWithType.vb: Table.RemoveAt(Integer)
+- uid: Archivist.DataTypes.Table.RemoveAt*
+  name: RemoveAt
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_RemoveAt_
+  commentId: Overload:Archivist.DataTypes.Table.RemoveAt
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.RemoveAt
+  nameWithType: Table.RemoveAt
 - uid: Archivist.DataTypes.Table.op_Equality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
-  name: operator ==(Table, Table)
+  name: operator ==(Table?, Table?)
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Equality_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
   commentId: M:Archivist.DataTypes.Table.op_Equality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
   name.vb: =(Table, Table)
-  fullName: Archivist.DataTypes.Table.operator ==(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName: Archivist.DataTypes.Table.operator ==(Archivist.DataTypes.Table?, Archivist.DataTypes.Table?)
   fullName.vb: Archivist.DataTypes.Table.=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
-  nameWithType: Table.operator ==(Table, Table)
+  nameWithType: Table.operator ==(Table?, Table?)
   nameWithType.vb: Table.=(Table, Table)
 - uid: Archivist.DataTypes.Table.op_Equality*
   name: operator ==
@@ -2599,13 +2785,13 @@ references:
   nameWithType: Table.operator ==
   nameWithType.vb: Table.=
 - uid: Archivist.DataTypes.Table.op_GreaterThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
-  name: operator >(Table, Table)
+  name: operator >(Table?, Table?)
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_GreaterThan_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
   commentId: M:Archivist.DataTypes.Table.op_GreaterThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
   name.vb: '>(Table, Table)'
-  fullName: Archivist.DataTypes.Table.operator >(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName: Archivist.DataTypes.Table.operator >(Archivist.DataTypes.Table?, Archivist.DataTypes.Table?)
   fullName.vb: Archivist.DataTypes.Table.>(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
-  nameWithType: Table.operator >(Table, Table)
+  nameWithType: Table.operator >(Table?, Table?)
   nameWithType.vb: Table.>(Table, Table)
 - uid: Archivist.DataTypes.Table.op_GreaterThan*
   name: operator >
@@ -2618,13 +2804,13 @@ references:
   nameWithType: Table.operator >
   nameWithType.vb: Table.>
 - uid: Archivist.DataTypes.Table.op_GreaterThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
-  name: operator >=(Table, Table)
+  name: operator >=(Table?, Table?)
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_GreaterThanOrEqual_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
   commentId: M:Archivist.DataTypes.Table.op_GreaterThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
   name.vb: '>=(Table, Table)'
-  fullName: Archivist.DataTypes.Table.operator >=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName: Archivist.DataTypes.Table.operator >=(Archivist.DataTypes.Table?, Archivist.DataTypes.Table?)
   fullName.vb: Archivist.DataTypes.Table.>=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
-  nameWithType: Table.operator >=(Table, Table)
+  nameWithType: Table.operator >=(Table?, Table?)
   nameWithType.vb: Table.>=(Table, Table)
 - uid: Archivist.DataTypes.Table.op_GreaterThanOrEqual*
   name: operator >=
@@ -2637,13 +2823,13 @@ references:
   nameWithType: Table.operator >=
   nameWithType.vb: Table.>=
 - uid: Archivist.DataTypes.Table.op_Inequality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
-  name: operator !=(Table, Table)
+  name: operator !=(Table?, Table?)
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Inequality_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
   commentId: M:Archivist.DataTypes.Table.op_Inequality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
   name.vb: <>(Table, Table)
-  fullName: Archivist.DataTypes.Table.operator !=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName: Archivist.DataTypes.Table.operator !=(Archivist.DataTypes.Table?, Archivist.DataTypes.Table?)
   fullName.vb: Archivist.DataTypes.Table.<>(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
-  nameWithType: Table.operator !=(Table, Table)
+  nameWithType: Table.operator !=(Table?, Table?)
   nameWithType.vb: Table.<>(Table, Table)
 - uid: Archivist.DataTypes.Table.op_Inequality*
   name: operator !=
@@ -2656,13 +2842,13 @@ references:
   nameWithType: Table.operator !=
   nameWithType.vb: Table.<>
 - uid: Archivist.DataTypes.Table.op_LessThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
-  name: operator <(Table, Table)
+  name: operator <(Table?, Table?)
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_LessThan_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
   commentId: M:Archivist.DataTypes.Table.op_LessThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
   name.vb: <(Table, Table)
-  fullName: Archivist.DataTypes.Table.operator <(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName: Archivist.DataTypes.Table.operator <(Archivist.DataTypes.Table?, Archivist.DataTypes.Table?)
   fullName.vb: Archivist.DataTypes.Table.<(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
-  nameWithType: Table.operator <(Table, Table)
+  nameWithType: Table.operator <(Table?, Table?)
   nameWithType.vb: Table.<(Table, Table)
 - uid: Archivist.DataTypes.Table.op_LessThan*
   name: operator <
@@ -2675,13 +2861,13 @@ references:
   nameWithType: Table.operator <
   nameWithType.vb: Table.<
 - uid: Archivist.DataTypes.Table.op_LessThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
-  name: operator <=(Table, Table)
+  name: operator <=(Table?, Table?)
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_LessThanOrEqual_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
   commentId: M:Archivist.DataTypes.Table.op_LessThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
   name.vb: <=(Table, Table)
-  fullName: Archivist.DataTypes.Table.operator <=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
+  fullName: Archivist.DataTypes.Table.operator <=(Archivist.DataTypes.Table?, Archivist.DataTypes.Table?)
   fullName.vb: Archivist.DataTypes.Table.<=(Archivist.DataTypes.Table, Archivist.DataTypes.Table)
-  nameWithType: Table.operator <=(Table, Table)
+  nameWithType: Table.operator <=(Table?, Table?)
   nameWithType.vb: Table.<=(Table, Table)
 - uid: Archivist.DataTypes.Table.op_LessThanOrEqual*
   name: operator <=
@@ -2747,6 +2933,22 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.TableCell.Content
   nameWithType: TableCell.Content
+- uid: Archivist.DataTypes.TableCell.ConvertTo*
+  name: ConvertTo
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_ConvertTo_
+  commentId: Overload:Archivist.DataTypes.TableCell.ConvertTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableCell.ConvertTo
+  nameWithType: TableCell.ConvertTo
+- uid: Archivist.DataTypes.TableCell.ConvertTo``1
+  name: ConvertTo<TObject>()
+  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_ConvertTo__1
+  commentId: M:Archivist.DataTypes.TableCell.ConvertTo``1
+  name.vb: ConvertTo(Of TObject)()
+  fullName: Archivist.DataTypes.TableCell.ConvertTo<TObject>()
+  fullName.vb: Archivist.DataTypes.TableCell.ConvertTo(Of TObject)()
+  nameWithType: TableCell.ConvertTo<TObject>()
+  nameWithType.vb: TableCell.ConvertTo(Of TObject)()
 - uid: Archivist.DataTypes.TableCell.Equals(Archivist.DataTypes.TableCell)
   name: Equals(TableCell?)
   href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_Equals_Archivist_DataTypes_TableCell_
@@ -2785,22 +2987,6 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.TableCell.GetHashCode
   nameWithType: TableCell.GetHashCode
-- uid: Archivist.DataTypes.TableCell.GetValue*
-  name: GetValue
-  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_GetValue_
-  commentId: Overload:Archivist.DataTypes.TableCell.GetValue
-  isSpec: "True"
-  fullName: Archivist.DataTypes.TableCell.GetValue
-  nameWithType: TableCell.GetValue
-- uid: Archivist.DataTypes.TableCell.GetValue``1
-  name: GetValue<TValue>()
-  href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_GetValue__1
-  commentId: M:Archivist.DataTypes.TableCell.GetValue``1
-  name.vb: GetValue(Of TValue)()
-  fullName: Archivist.DataTypes.TableCell.GetValue<TValue>()
-  fullName.vb: Archivist.DataTypes.TableCell.GetValue(Of TValue)()
-  nameWithType: TableCell.GetValue<TValue>()
-  nameWithType.vb: TableCell.GetValue(Of TValue)()
 - uid: Archivist.DataTypes.TableCell.ToString
   name: ToString()
   href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_ToString
@@ -2815,13 +3001,13 @@ references:
   fullName: Archivist.DataTypes.TableCell.ToString
   nameWithType: TableCell.ToString
 - uid: Archivist.DataTypes.TableCell.op_Equality(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
-  name: operator ==(TableCell, TableCell)
+  name: operator ==(TableCell?, TableCell?)
   href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_Equality_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
   commentId: M:Archivist.DataTypes.TableCell.op_Equality(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
   name.vb: =(TableCell, TableCell)
-  fullName: Archivist.DataTypes.TableCell.operator ==(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName: Archivist.DataTypes.TableCell.operator ==(Archivist.DataTypes.TableCell?, Archivist.DataTypes.TableCell?)
   fullName.vb: Archivist.DataTypes.TableCell.=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
-  nameWithType: TableCell.operator ==(TableCell, TableCell)
+  nameWithType: TableCell.operator ==(TableCell?, TableCell?)
   nameWithType.vb: TableCell.=(TableCell, TableCell)
 - uid: Archivist.DataTypes.TableCell.op_Equality*
   name: operator ==
@@ -2834,13 +3020,13 @@ references:
   nameWithType: TableCell.operator ==
   nameWithType.vb: TableCell.=
 - uid: Archivist.DataTypes.TableCell.op_GreaterThan(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
-  name: operator >(TableCell, TableCell)
+  name: operator >(TableCell?, TableCell?)
   href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_GreaterThan_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
   commentId: M:Archivist.DataTypes.TableCell.op_GreaterThan(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
   name.vb: '>(TableCell, TableCell)'
-  fullName: Archivist.DataTypes.TableCell.operator >(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName: Archivist.DataTypes.TableCell.operator >(Archivist.DataTypes.TableCell?, Archivist.DataTypes.TableCell?)
   fullName.vb: Archivist.DataTypes.TableCell.>(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
-  nameWithType: TableCell.operator >(TableCell, TableCell)
+  nameWithType: TableCell.operator >(TableCell?, TableCell?)
   nameWithType.vb: TableCell.>(TableCell, TableCell)
 - uid: Archivist.DataTypes.TableCell.op_GreaterThan*
   name: operator >
@@ -2853,13 +3039,13 @@ references:
   nameWithType: TableCell.operator >
   nameWithType.vb: TableCell.>
 - uid: Archivist.DataTypes.TableCell.op_GreaterThanOrEqual(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
-  name: operator >=(TableCell, TableCell)
+  name: operator >=(TableCell?, TableCell?)
   href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_GreaterThanOrEqual_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
   commentId: M:Archivist.DataTypes.TableCell.op_GreaterThanOrEqual(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
   name.vb: '>=(TableCell, TableCell)'
-  fullName: Archivist.DataTypes.TableCell.operator >=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName: Archivist.DataTypes.TableCell.operator >=(Archivist.DataTypes.TableCell?, Archivist.DataTypes.TableCell?)
   fullName.vb: Archivist.DataTypes.TableCell.>=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
-  nameWithType: TableCell.operator >=(TableCell, TableCell)
+  nameWithType: TableCell.operator >=(TableCell?, TableCell?)
   nameWithType.vb: TableCell.>=(TableCell, TableCell)
 - uid: Archivist.DataTypes.TableCell.op_GreaterThanOrEqual*
   name: operator >=
@@ -2872,13 +3058,13 @@ references:
   nameWithType: TableCell.operator >=
   nameWithType.vb: TableCell.>=
 - uid: Archivist.DataTypes.TableCell.op_Inequality(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
-  name: operator !=(TableCell, TableCell)
+  name: operator !=(TableCell?, TableCell?)
   href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_Inequality_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
   commentId: M:Archivist.DataTypes.TableCell.op_Inequality(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
   name.vb: <>(TableCell, TableCell)
-  fullName: Archivist.DataTypes.TableCell.operator !=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName: Archivist.DataTypes.TableCell.operator !=(Archivist.DataTypes.TableCell?, Archivist.DataTypes.TableCell?)
   fullName.vb: Archivist.DataTypes.TableCell.<>(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
-  nameWithType: TableCell.operator !=(TableCell, TableCell)
+  nameWithType: TableCell.operator !=(TableCell?, TableCell?)
   nameWithType.vb: TableCell.<>(TableCell, TableCell)
 - uid: Archivist.DataTypes.TableCell.op_Inequality*
   name: operator !=
@@ -2891,13 +3077,13 @@ references:
   nameWithType: TableCell.operator !=
   nameWithType.vb: TableCell.<>
 - uid: Archivist.DataTypes.TableCell.op_LessThan(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
-  name: operator <(TableCell, TableCell)
+  name: operator <(TableCell?, TableCell?)
   href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_LessThan_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
   commentId: M:Archivist.DataTypes.TableCell.op_LessThan(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
   name.vb: <(TableCell, TableCell)
-  fullName: Archivist.DataTypes.TableCell.operator <(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName: Archivist.DataTypes.TableCell.operator <(Archivist.DataTypes.TableCell?, Archivist.DataTypes.TableCell?)
   fullName.vb: Archivist.DataTypes.TableCell.<(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
-  nameWithType: TableCell.operator <(TableCell, TableCell)
+  nameWithType: TableCell.operator <(TableCell?, TableCell?)
   nameWithType.vb: TableCell.<(TableCell, TableCell)
 - uid: Archivist.DataTypes.TableCell.op_LessThan*
   name: operator <
@@ -2910,13 +3096,13 @@ references:
   nameWithType: TableCell.operator <
   nameWithType.vb: TableCell.<
 - uid: Archivist.DataTypes.TableCell.op_LessThanOrEqual(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
-  name: operator <=(TableCell, TableCell)
+  name: operator <=(TableCell?, TableCell?)
   href: api/Archivist.DataTypes.TableCell.html#Archivist_DataTypes_TableCell_op_LessThanOrEqual_Archivist_DataTypes_TableCell_Archivist_DataTypes_TableCell_
   commentId: M:Archivist.DataTypes.TableCell.op_LessThanOrEqual(Archivist.DataTypes.TableCell,Archivist.DataTypes.TableCell)
   name.vb: <=(TableCell, TableCell)
-  fullName: Archivist.DataTypes.TableCell.operator <=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
+  fullName: Archivist.DataTypes.TableCell.operator <=(Archivist.DataTypes.TableCell?, Archivist.DataTypes.TableCell?)
   fullName.vb: Archivist.DataTypes.TableCell.<=(Archivist.DataTypes.TableCell, Archivist.DataTypes.TableCell)
-  nameWithType: TableCell.operator <=(TableCell, TableCell)
+  nameWithType: TableCell.operator <=(TableCell?, TableCell?)
   nameWithType.vb: TableCell.<=(TableCell, TableCell)
 - uid: Archivist.DataTypes.TableCell.op_LessThanOrEqual*
   name: operator <=
@@ -2934,19 +3120,79 @@ references:
   commentId: T:Archivist.DataTypes.TableRow
   fullName: Archivist.DataTypes.TableRow
   nameWithType: TableRow
-- uid: Archivist.DataTypes.TableRow.Cells
-  name: Cells
-  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Cells
-  commentId: P:Archivist.DataTypes.TableRow.Cells
-  fullName: Archivist.DataTypes.TableRow.Cells
-  nameWithType: TableRow.Cells
-- uid: Archivist.DataTypes.TableRow.Cells*
-  name: Cells
-  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Cells_
-  commentId: Overload:Archivist.DataTypes.TableRow.Cells
+- uid: Archivist.DataTypes.TableRow.#ctor(System.Collections.Generic.List{System.String})
+  name: TableRow(List<string>?)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow__ctor_System_Collections_Generic_List_System_String__
+  commentId: M:Archivist.DataTypes.TableRow.#ctor(System.Collections.Generic.List{System.String})
+  name.vb: New(List(Of String))
+  fullName: Archivist.DataTypes.TableRow.TableRow(System.Collections.Generic.List<string>?)
+  fullName.vb: Archivist.DataTypes.TableRow.New(System.Collections.Generic.List(Of String))
+  nameWithType: TableRow.TableRow(List<string>?)
+  nameWithType.vb: TableRow.New(List(Of String))
+- uid: Archivist.DataTypes.TableRow.#ctor*
+  name: TableRow
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow__ctor_
+  commentId: Overload:Archivist.DataTypes.TableRow.#ctor
   isSpec: "True"
-  fullName: Archivist.DataTypes.TableRow.Cells
-  nameWithType: TableRow.Cells
+  name.vb: New
+  fullName: Archivist.DataTypes.TableRow.TableRow
+  fullName.vb: Archivist.DataTypes.TableRow.New
+  nameWithType: TableRow.TableRow
+  nameWithType.vb: TableRow.New
+- uid: Archivist.DataTypes.TableRow.Add(Archivist.DataTypes.TableCell)
+  name: Add(TableCell?)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Add_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableRow.Add(Archivist.DataTypes.TableCell)
+  name.vb: Add(TableCell)
+  fullName: Archivist.DataTypes.TableRow.Add(Archivist.DataTypes.TableCell?)
+  fullName.vb: Archivist.DataTypes.TableRow.Add(Archivist.DataTypes.TableCell)
+  nameWithType: TableRow.Add(TableCell?)
+  nameWithType.vb: TableRow.Add(TableCell)
+- uid: Archivist.DataTypes.TableRow.Add(System.String)
+  name: Add(string?)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Add_System_String_
+  commentId: M:Archivist.DataTypes.TableRow.Add(System.String)
+  name.vb: Add(String)
+  fullName: Archivist.DataTypes.TableRow.Add(string?)
+  fullName.vb: Archivist.DataTypes.TableRow.Add(String)
+  nameWithType: TableRow.Add(string?)
+  nameWithType.vb: TableRow.Add(String)
+- uid: Archivist.DataTypes.TableRow.Add*
+  name: Add
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Add_
+  commentId: Overload:Archivist.DataTypes.TableRow.Add
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.Add
+  nameWithType: TableRow.Add
+- uid: Archivist.DataTypes.TableRow.AddRange(System.Collections.Generic.IEnumerable{Archivist.DataTypes.TableCell})
+  name: AddRange(IEnumerable<TableCell>)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_AddRange_System_Collections_Generic_IEnumerable_Archivist_DataTypes_TableCell__
+  commentId: M:Archivist.DataTypes.TableRow.AddRange(System.Collections.Generic.IEnumerable{Archivist.DataTypes.TableCell})
+  name.vb: AddRange(IEnumerable(Of TableCell))
+  fullName: Archivist.DataTypes.TableRow.AddRange(System.Collections.Generic.IEnumerable<Archivist.DataTypes.TableCell>)
+  fullName.vb: Archivist.DataTypes.TableRow.AddRange(System.Collections.Generic.IEnumerable(Of Archivist.DataTypes.TableCell))
+  nameWithType: TableRow.AddRange(IEnumerable<TableCell>)
+  nameWithType.vb: TableRow.AddRange(IEnumerable(Of TableCell))
+- uid: Archivist.DataTypes.TableRow.AddRange*
+  name: AddRange
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_AddRange_
+  commentId: Overload:Archivist.DataTypes.TableRow.AddRange
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.AddRange
+  nameWithType: TableRow.AddRange
+- uid: Archivist.DataTypes.TableRow.Clear
+  name: Clear()
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Clear
+  commentId: M:Archivist.DataTypes.TableRow.Clear
+  fullName: Archivist.DataTypes.TableRow.Clear()
+  nameWithType: TableRow.Clear()
+- uid: Archivist.DataTypes.TableRow.Clear*
+  name: Clear
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Clear_
+  commentId: Overload:Archivist.DataTypes.TableRow.Clear
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.Clear
+  nameWithType: TableRow.Clear
 - uid: Archivist.DataTypes.TableRow.CompareTo(Archivist.DataTypes.TableRow)
   name: CompareTo(TableRow?)
   href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_CompareTo_Archivist_DataTypes_TableRow_
@@ -2963,6 +3209,67 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.TableRow.CompareTo
   nameWithType: TableRow.CompareTo
+- uid: Archivist.DataTypes.TableRow.Contains(Archivist.DataTypes.TableCell)
+  name: Contains(TableCell?)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Contains_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableRow.Contains(Archivist.DataTypes.TableCell)
+  name.vb: Contains(TableCell)
+  fullName: Archivist.DataTypes.TableRow.Contains(Archivist.DataTypes.TableCell?)
+  fullName.vb: Archivist.DataTypes.TableRow.Contains(Archivist.DataTypes.TableCell)
+  nameWithType: TableRow.Contains(TableCell?)
+  nameWithType.vb: TableRow.Contains(TableCell)
+- uid: Archivist.DataTypes.TableRow.Contains*
+  name: Contains
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Contains_
+  commentId: Overload:Archivist.DataTypes.TableRow.Contains
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.Contains
+  nameWithType: TableRow.Contains
+- uid: Archivist.DataTypes.TableRow.ConvertTo*
+  name: ConvertTo
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_ConvertTo_
+  commentId: Overload:Archivist.DataTypes.TableRow.ConvertTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.ConvertTo
+  nameWithType: TableRow.ConvertTo
+- uid: Archivist.DataTypes.TableRow.ConvertTo``1
+  name: ConvertTo<TObject>()
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_ConvertTo__1
+  commentId: M:Archivist.DataTypes.TableRow.ConvertTo``1
+  name.vb: ConvertTo(Of TObject)()
+  fullName: Archivist.DataTypes.TableRow.ConvertTo<TObject>()
+  fullName.vb: Archivist.DataTypes.TableRow.ConvertTo(Of TObject)()
+  nameWithType: TableRow.ConvertTo<TObject>()
+  nameWithType.vb: TableRow.ConvertTo(Of TObject)()
+- uid: Archivist.DataTypes.TableRow.CopyTo(Archivist.DataTypes.TableCell[],System.Int32)
+  name: CopyTo(TableCell[]?, int)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_CopyTo_Archivist_DataTypes_TableCell___System_Int32_
+  commentId: M:Archivist.DataTypes.TableRow.CopyTo(Archivist.DataTypes.TableCell[],System.Int32)
+  name.vb: CopyTo(TableCell(), Integer)
+  fullName: Archivist.DataTypes.TableRow.CopyTo(Archivist.DataTypes.TableCell[]?, int)
+  fullName.vb: Archivist.DataTypes.TableRow.CopyTo(Archivist.DataTypes.TableCell(), Integer)
+  nameWithType: TableRow.CopyTo(TableCell[]?, int)
+  nameWithType.vb: TableRow.CopyTo(TableCell(), Integer)
+- uid: Archivist.DataTypes.TableRow.CopyTo*
+  name: CopyTo
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_CopyTo_
+  commentId: Overload:Archivist.DataTypes.TableRow.CopyTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.CopyTo
+  nameWithType: TableRow.CopyTo
+- uid: Archivist.DataTypes.TableRow.Count
+  name: Count
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Count
+  commentId: P:Archivist.DataTypes.TableRow.Count
+  fullName: Archivist.DataTypes.TableRow.Count
+  nameWithType: TableRow.Count
+- uid: Archivist.DataTypes.TableRow.Count*
+  name: Count
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Count_
+  commentId: Overload:Archivist.DataTypes.TableRow.Count
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.Count
+  nameWithType: TableRow.Count
 - uid: Archivist.DataTypes.TableRow.Equals(Archivist.DataTypes.TableRow)
   name: Equals(TableRow?)
   href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Equals_Archivist_DataTypes_TableRow_
@@ -3014,6 +3321,111 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.TableRow.GetHashCode
   nameWithType: TableRow.GetHashCode
+- uid: Archivist.DataTypes.TableRow.IndexOf(Archivist.DataTypes.TableCell)
+  name: IndexOf(TableCell?)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_IndexOf_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableRow.IndexOf(Archivist.DataTypes.TableCell)
+  name.vb: IndexOf(TableCell)
+  fullName: Archivist.DataTypes.TableRow.IndexOf(Archivist.DataTypes.TableCell?)
+  fullName.vb: Archivist.DataTypes.TableRow.IndexOf(Archivist.DataTypes.TableCell)
+  nameWithType: TableRow.IndexOf(TableCell?)
+  nameWithType.vb: TableRow.IndexOf(TableCell)
+- uid: Archivist.DataTypes.TableRow.IndexOf*
+  name: IndexOf
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_IndexOf_
+  commentId: Overload:Archivist.DataTypes.TableRow.IndexOf
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.IndexOf
+  nameWithType: TableRow.IndexOf
+- uid: Archivist.DataTypes.TableRow.Insert(System.Int32,Archivist.DataTypes.TableCell)
+  name: Insert(int, TableCell?)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Insert_System_Int32_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableRow.Insert(System.Int32,Archivist.DataTypes.TableCell)
+  name.vb: Insert(Integer, TableCell)
+  fullName: Archivist.DataTypes.TableRow.Insert(int, Archivist.DataTypes.TableCell?)
+  fullName.vb: Archivist.DataTypes.TableRow.Insert(Integer, Archivist.DataTypes.TableCell)
+  nameWithType: TableRow.Insert(int, TableCell?)
+  nameWithType.vb: TableRow.Insert(Integer, TableCell)
+- uid: Archivist.DataTypes.TableRow.Insert*
+  name: Insert
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Insert_
+  commentId: Overload:Archivist.DataTypes.TableRow.Insert
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.Insert
+  nameWithType: TableRow.Insert
+- uid: Archivist.DataTypes.TableRow.IsReadOnly
+  name: IsReadOnly
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_IsReadOnly
+  commentId: P:Archivist.DataTypes.TableRow.IsReadOnly
+  fullName: Archivist.DataTypes.TableRow.IsReadOnly
+  nameWithType: TableRow.IsReadOnly
+- uid: Archivist.DataTypes.TableRow.IsReadOnly*
+  name: IsReadOnly
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_IsReadOnly_
+  commentId: Overload:Archivist.DataTypes.TableRow.IsReadOnly
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.IsReadOnly
+  nameWithType: TableRow.IsReadOnly
+- uid: Archivist.DataTypes.TableRow.Item(System.Int32)
+  name: this[int]
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Item_System_Int32_
+  commentId: P:Archivist.DataTypes.TableRow.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: Archivist.DataTypes.TableRow.this[int]
+  fullName.vb: Archivist.DataTypes.TableRow.this[](Integer)
+  nameWithType: TableRow.this[int]
+  nameWithType.vb: TableRow.this[](Integer)
+- uid: Archivist.DataTypes.TableRow.Item(System.String)
+  name: this[string]
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Item_System_String_
+  commentId: P:Archivist.DataTypes.TableRow.Item(System.String)
+  name.vb: this[](String)
+  fullName: Archivist.DataTypes.TableRow.this[string]
+  fullName.vb: Archivist.DataTypes.TableRow.this[](String)
+  nameWithType: TableRow.this[string]
+  nameWithType.vb: TableRow.this[](String)
+- uid: Archivist.DataTypes.TableRow.Item*
+  name: this
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Item_
+  commentId: Overload:Archivist.DataTypes.TableRow.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: Archivist.DataTypes.TableRow.this
+  fullName.vb: Archivist.DataTypes.TableRow.this[]
+  nameWithType: TableRow.this
+  nameWithType.vb: TableRow.this[]
+- uid: Archivist.DataTypes.TableRow.Remove(Archivist.DataTypes.TableCell)
+  name: Remove(TableCell?)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Remove_Archivist_DataTypes_TableCell_
+  commentId: M:Archivist.DataTypes.TableRow.Remove(Archivist.DataTypes.TableCell)
+  name.vb: Remove(TableCell)
+  fullName: Archivist.DataTypes.TableRow.Remove(Archivist.DataTypes.TableCell?)
+  fullName.vb: Archivist.DataTypes.TableRow.Remove(Archivist.DataTypes.TableCell)
+  nameWithType: TableRow.Remove(TableCell?)
+  nameWithType.vb: TableRow.Remove(TableCell)
+- uid: Archivist.DataTypes.TableRow.Remove*
+  name: Remove
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_Remove_
+  commentId: Overload:Archivist.DataTypes.TableRow.Remove
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.Remove
+  nameWithType: TableRow.Remove
+- uid: Archivist.DataTypes.TableRow.RemoveAt(System.Int32)
+  name: RemoveAt(int)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_RemoveAt_System_Int32_
+  commentId: M:Archivist.DataTypes.TableRow.RemoveAt(System.Int32)
+  name.vb: RemoveAt(Integer)
+  fullName: Archivist.DataTypes.TableRow.RemoveAt(int)
+  fullName.vb: Archivist.DataTypes.TableRow.RemoveAt(Integer)
+  nameWithType: TableRow.RemoveAt(int)
+  nameWithType.vb: TableRow.RemoveAt(Integer)
+- uid: Archivist.DataTypes.TableRow.RemoveAt*
+  name: RemoveAt
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_RemoveAt_
+  commentId: Overload:Archivist.DataTypes.TableRow.RemoveAt
+  isSpec: "True"
+  fullName: Archivist.DataTypes.TableRow.RemoveAt
+  nameWithType: TableRow.RemoveAt
 - uid: Archivist.DataTypes.TableRow.ToString
   name: ToString()
   href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_ToString
@@ -3028,13 +3440,13 @@ references:
   fullName: Archivist.DataTypes.TableRow.ToString
   nameWithType: TableRow.ToString
 - uid: Archivist.DataTypes.TableRow.op_Equality(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
-  name: operator ==(TableRow, TableRow)
+  name: operator ==(TableRow?, TableRow?)
   href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_Equality_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
   commentId: M:Archivist.DataTypes.TableRow.op_Equality(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
   name.vb: =(TableRow, TableRow)
-  fullName: Archivist.DataTypes.TableRow.operator ==(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName: Archivist.DataTypes.TableRow.operator ==(Archivist.DataTypes.TableRow?, Archivist.DataTypes.TableRow?)
   fullName.vb: Archivist.DataTypes.TableRow.=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
-  nameWithType: TableRow.operator ==(TableRow, TableRow)
+  nameWithType: TableRow.operator ==(TableRow?, TableRow?)
   nameWithType.vb: TableRow.=(TableRow, TableRow)
 - uid: Archivist.DataTypes.TableRow.op_Equality*
   name: operator ==
@@ -3047,13 +3459,13 @@ references:
   nameWithType: TableRow.operator ==
   nameWithType.vb: TableRow.=
 - uid: Archivist.DataTypes.TableRow.op_GreaterThan(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
-  name: operator >(TableRow, TableRow)
+  name: operator >(TableRow?, TableRow?)
   href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_GreaterThan_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
   commentId: M:Archivist.DataTypes.TableRow.op_GreaterThan(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
   name.vb: '>(TableRow, TableRow)'
-  fullName: Archivist.DataTypes.TableRow.operator >(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName: Archivist.DataTypes.TableRow.operator >(Archivist.DataTypes.TableRow?, Archivist.DataTypes.TableRow?)
   fullName.vb: Archivist.DataTypes.TableRow.>(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
-  nameWithType: TableRow.operator >(TableRow, TableRow)
+  nameWithType: TableRow.operator >(TableRow?, TableRow?)
   nameWithType.vb: TableRow.>(TableRow, TableRow)
 - uid: Archivist.DataTypes.TableRow.op_GreaterThan*
   name: operator >
@@ -3066,13 +3478,13 @@ references:
   nameWithType: TableRow.operator >
   nameWithType.vb: TableRow.>
 - uid: Archivist.DataTypes.TableRow.op_GreaterThanOrEqual(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
-  name: operator >=(TableRow, TableRow)
+  name: operator >=(TableRow?, TableRow?)
   href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_GreaterThanOrEqual_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
   commentId: M:Archivist.DataTypes.TableRow.op_GreaterThanOrEqual(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
   name.vb: '>=(TableRow, TableRow)'
-  fullName: Archivist.DataTypes.TableRow.operator >=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName: Archivist.DataTypes.TableRow.operator >=(Archivist.DataTypes.TableRow?, Archivist.DataTypes.TableRow?)
   fullName.vb: Archivist.DataTypes.TableRow.>=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
-  nameWithType: TableRow.operator >=(TableRow, TableRow)
+  nameWithType: TableRow.operator >=(TableRow?, TableRow?)
   nameWithType.vb: TableRow.>=(TableRow, TableRow)
 - uid: Archivist.DataTypes.TableRow.op_GreaterThanOrEqual*
   name: operator >=
@@ -3085,13 +3497,13 @@ references:
   nameWithType: TableRow.operator >=
   nameWithType.vb: TableRow.>=
 - uid: Archivist.DataTypes.TableRow.op_Inequality(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
-  name: operator !=(TableRow, TableRow)
+  name: operator !=(TableRow?, TableRow?)
   href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_Inequality_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
   commentId: M:Archivist.DataTypes.TableRow.op_Inequality(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
   name.vb: <>(TableRow, TableRow)
-  fullName: Archivist.DataTypes.TableRow.operator !=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName: Archivist.DataTypes.TableRow.operator !=(Archivist.DataTypes.TableRow?, Archivist.DataTypes.TableRow?)
   fullName.vb: Archivist.DataTypes.TableRow.<>(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
-  nameWithType: TableRow.operator !=(TableRow, TableRow)
+  nameWithType: TableRow.operator !=(TableRow?, TableRow?)
   nameWithType.vb: TableRow.<>(TableRow, TableRow)
 - uid: Archivist.DataTypes.TableRow.op_Inequality*
   name: operator !=
@@ -3104,13 +3516,13 @@ references:
   nameWithType: TableRow.operator !=
   nameWithType.vb: TableRow.<>
 - uid: Archivist.DataTypes.TableRow.op_LessThan(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
-  name: operator <(TableRow, TableRow)
+  name: operator <(TableRow?, TableRow?)
   href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_LessThan_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
   commentId: M:Archivist.DataTypes.TableRow.op_LessThan(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
   name.vb: <(TableRow, TableRow)
-  fullName: Archivist.DataTypes.TableRow.operator <(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName: Archivist.DataTypes.TableRow.operator <(Archivist.DataTypes.TableRow?, Archivist.DataTypes.TableRow?)
   fullName.vb: Archivist.DataTypes.TableRow.<(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
-  nameWithType: TableRow.operator <(TableRow, TableRow)
+  nameWithType: TableRow.operator <(TableRow?, TableRow?)
   nameWithType.vb: TableRow.<(TableRow, TableRow)
 - uid: Archivist.DataTypes.TableRow.op_LessThan*
   name: operator <
@@ -3123,13 +3535,13 @@ references:
   nameWithType: TableRow.operator <
   nameWithType.vb: TableRow.<
 - uid: Archivist.DataTypes.TableRow.op_LessThanOrEqual(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
-  name: operator <=(TableRow, TableRow)
+  name: operator <=(TableRow?, TableRow?)
   href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_op_LessThanOrEqual_Archivist_DataTypes_TableRow_Archivist_DataTypes_TableRow_
   commentId: M:Archivist.DataTypes.TableRow.op_LessThanOrEqual(Archivist.DataTypes.TableRow,Archivist.DataTypes.TableRow)
   name.vb: <=(TableRow, TableRow)
-  fullName: Archivist.DataTypes.TableRow.operator <=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
+  fullName: Archivist.DataTypes.TableRow.operator <=(Archivist.DataTypes.TableRow?, Archivist.DataTypes.TableRow?)
   fullName.vb: Archivist.DataTypes.TableRow.<=(Archivist.DataTypes.TableRow, Archivist.DataTypes.TableRow)
-  nameWithType: TableRow.operator <=(TableRow, TableRow)
+  nameWithType: TableRow.operator <=(TableRow?, TableRow?)
   nameWithType.vb: TableRow.<=(TableRow, TableRow)
 - uid: Archivist.DataTypes.TableRow.op_LessThanOrEqual*
   name: operator <=
@@ -4308,3 +4720,47 @@ references:
   isSpec: "True"
   fullName: Archivist.Interfaces.IGenericFile.Title
   nameWithType: IGenericFile.Title
+- uid: Archivist.Interfaces.IListConvertable
+  name: IListConvertable
+  href: api/Archivist.Interfaces.IListConvertable.html
+  commentId: T:Archivist.Interfaces.IListConvertable
+  fullName: Archivist.Interfaces.IListConvertable
+  nameWithType: IListConvertable
+- uid: Archivist.Interfaces.IListConvertable.ConvertTo*
+  name: ConvertTo
+  href: api/Archivist.Interfaces.IListConvertable.html#Archivist_Interfaces_IListConvertable_ConvertTo_
+  commentId: Overload:Archivist.Interfaces.IListConvertable.ConvertTo
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IListConvertable.ConvertTo
+  nameWithType: IListConvertable.ConvertTo
+- uid: Archivist.Interfaces.IListConvertable.ConvertTo``1
+  name: ConvertTo<TObject>()
+  href: api/Archivist.Interfaces.IListConvertable.html#Archivist_Interfaces_IListConvertable_ConvertTo__1
+  commentId: M:Archivist.Interfaces.IListConvertable.ConvertTo``1
+  name.vb: ConvertTo(Of TObject)()
+  fullName: Archivist.Interfaces.IListConvertable.ConvertTo<TObject>()
+  fullName.vb: Archivist.Interfaces.IListConvertable.ConvertTo(Of TObject)()
+  nameWithType: IListConvertable.ConvertTo<TObject>()
+  nameWithType.vb: IListConvertable.ConvertTo(Of TObject)()
+- uid: Archivist.Interfaces.IObjectConvertable
+  name: IObjectConvertable
+  href: api/Archivist.Interfaces.IObjectConvertable.html
+  commentId: T:Archivist.Interfaces.IObjectConvertable
+  fullName: Archivist.Interfaces.IObjectConvertable
+  nameWithType: IObjectConvertable
+- uid: Archivist.Interfaces.IObjectConvertable.ConvertTo*
+  name: ConvertTo
+  href: api/Archivist.Interfaces.IObjectConvertable.html#Archivist_Interfaces_IObjectConvertable_ConvertTo_
+  commentId: Overload:Archivist.Interfaces.IObjectConvertable.ConvertTo
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IObjectConvertable.ConvertTo
+  nameWithType: IObjectConvertable.ConvertTo
+- uid: Archivist.Interfaces.IObjectConvertable.ConvertTo``1
+  name: ConvertTo<TObject>()
+  href: api/Archivist.Interfaces.IObjectConvertable.html#Archivist_Interfaces_IObjectConvertable_ConvertTo__1
+  commentId: M:Archivist.Interfaces.IObjectConvertable.ConvertTo``1
+  name.vb: ConvertTo(Of TObject)()
+  fullName: Archivist.Interfaces.IObjectConvertable.ConvertTo<TObject>()
+  fullName.vb: Archivist.Interfaces.IObjectConvertable.ConvertTo(Of TObject)()
+  nameWithType: IObjectConvertable.ConvertTo<TObject>()
+  nameWithType.vb: IObjectConvertable.ConvertTo(Of TObject)()
