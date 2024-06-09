@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.0"></a>
+## [0.1.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.1.0) (2024-06-09)
+
+### Features
+
+* Finishing up basic table type ([b811187](https://www.github.com/JaCraig/Archivist/commit/b8111870c46f6893e3810e34ecaa61ad7ed1a1a7))
+
+### Bug Fixes
+
+* Finished with the table objects and adding tests for them ([81d77e3](https://www.github.com/JaCraig/Archivist/commit/81d77e3af2b728ccde023205dc35026106ecfaad))
+
+### Other
+
+* Merge pull request #11 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-63bf006411 ([6341b85](https://www.github.com/JaCraig/Archivist/commit/6341b857107fbd04209894aa13d8de76b1cdb5b9))
+* Merge pull request #12 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-e000669da3 ([faf4198](https://www.github.com/JaCraig/Archivist/commit/faf4198616a7a303b5e93ff9ad095a5daab1244b))
+* Merge pull request #13 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-c1d27f5cc2 ([9eeff7a](https://www.github.com/JaCraig/Archivist/commit/9eeff7af6e708831c35a88bdeff79829a2f44362))
+* Merge pull request #14 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-715d3c23cd ([d21194e](https://www.github.com/JaCraig/Archivist/commit/d21194e88ef34620e04c78d0a8aed590825b3afe))
+* Merge pull request #15 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-bb4a0e2ce6 ([55f4bc0](https://www.github.com/JaCraig/Archivist/commit/55f4bc0f727206d86b6fb3dd0300fd7e4ff3f3ec))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([a611053](https://www.github.com/JaCraig/Archivist/commit/a611053f58095067a719bfc41262e6abebc41f0c))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([6c5017d](https://www.github.com/JaCraig/Archivist/commit/6c5017dfe598745aa0d5c2952c5b6593a96857dc))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([328fd7b](https://www.github.com/JaCraig/Archivist/commit/328fd7be9dc5181df36ba75e0b0b54e7f622c167))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([c2caa76](https://www.github.com/JaCraig/Archivist/commit/c2caa760c55aed67c06c3ad9bb734c1e781b53f1))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([fcd6644](https://www.github.com/JaCraig/Archivist/commit/fcd6644aa32ae6375b4cb5c030ac760129c92696))
+* code cleanup ([7a5d67a](https://www.github.com/JaCraig/Archivist/commit/7a5d67acc185dbf8765846f0f6e1a48074a4e183))
+* Started working on table formats ([ca13ccd](https://www.github.com/JaCraig/Archivist/commit/ca13ccd097034a4a5592080e41e4d53f3fe1d3c7))
+
 <a name="0.0.4"></a>
 ## [0.0.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.0.4) (2024-05-25)
 
