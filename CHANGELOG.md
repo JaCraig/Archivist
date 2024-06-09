@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.1.1) (2024-06-09)
+
+### Bug Fixes
+
+* Finishing up conversion code for existing data types ([55dfaf3](https://www.github.com/JaCraig/Archivist/commit/55dfaf311d3776a93858f42fab60e5fafa147728))
+
+### Other
+
+* merge ([2ce5d07](https://www.github.com/JaCraig/Archivist/commit/2ce5d07d67ebf843b15c496cd4136cccf4703653))
+
 <a name="0.1.0"></a>
 ## [0.1.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.1.0) (2024-06-09)
 
