@@ -144,6 +144,24 @@ references:
   fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Title
   nameWithType: FileBaseClass<TFileType>.Title
   nameWithType.vb: FileBaseClass(Of TFileType).Title
+- uid: Archivist.BaseClasses.FileBaseClass`1.ToFileType*
+  name: ToFileType
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_ToFileType_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.ToFileType
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.ToFileType
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).ToFileType
+  nameWithType: FileBaseClass<TFileType>.ToFileType
+  nameWithType.vb: FileBaseClass(Of TFileType).ToFileType
+- uid: Archivist.BaseClasses.FileBaseClass`1.ToFileType``1
+  name: ToFileType<TFile>()
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_ToFileType__1
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.ToFileType``1
+  name.vb: ToFileType(Of TFile)()
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.ToFileType<TFile>()
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).ToFileType(Of TFile)()
+  nameWithType: FileBaseClass<TFileType>.ToFileType<TFile>()
+  nameWithType.vb: FileBaseClass(Of TFileType).ToFileType(Of TFile)()
 - uid: Archivist.BaseClasses.FileBaseClass`1.ToString
   name: ToString()
   href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_ToString
@@ -1128,6 +1146,22 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Card.Titles
   nameWithType: Card.Titles
+- uid: Archivist.DataTypes.Card.ToFileType*
+  name: ToFileType
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_ToFileType_
+  commentId: Overload:Archivist.DataTypes.Card.ToFileType
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Card.ToFileType
+  nameWithType: Card.ToFileType
+- uid: Archivist.DataTypes.Card.ToFileType``1
+  name: ToFileType<TFile>()
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_ToFileType__1
+  commentId: M:Archivist.DataTypes.Card.ToFileType``1
+  name.vb: ToFileType(Of TFile)()
+  fullName: Archivist.DataTypes.Card.ToFileType<TFile>()
+  fullName.vb: Archivist.DataTypes.Card.ToFileType(Of TFile)()
+  nameWithType: Card.ToFileType<TFile>()
+  nameWithType.vb: Card.ToFileType(Of TFile)()
 - uid: Archivist.DataTypes.Card.Websites
   name: Websites
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Websites
@@ -1198,6 +1232,34 @@ references:
   fullName.vb: Archivist.DataTypes.Card.>=
   nameWithType: Card.operator >=
   nameWithType.vb: Card.>=
+- uid: Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Table
+  name: implicit operator Table?(Card?)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_Table
+  commentId: M:Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Table
+  name.vb: CType(Card)
+  fullName: Archivist.DataTypes.Card.implicit operator Archivist.DataTypes.Table?(Archivist.DataTypes.Card?)
+  fullName.vb: Archivist.DataTypes.Card.CType(Archivist.DataTypes.Card)
+  nameWithType: Card.implicit operator Table?(Card?)
+  nameWithType.vb: Card.CType(Card)
+- uid: Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Text
+  name: implicit operator Text?(Card?)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_Text
+  commentId: M:Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Text
+  name.vb: CType(Card)
+  fullName: Archivist.DataTypes.Card.implicit operator Archivist.DataTypes.Text?(Archivist.DataTypes.Card?)
+  fullName.vb: Archivist.DataTypes.Card.CType(Archivist.DataTypes.Card)
+  nameWithType: Card.implicit operator Text?(Card?)
+  nameWithType.vb: Card.CType(Card)
+- uid: Archivist.DataTypes.Card.op_Implicit*
+  name: implicit operator
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Implicit_
+  commentId: Overload:Archivist.DataTypes.Card.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: Archivist.DataTypes.Card.implicit operator
+  fullName.vb: Archivist.DataTypes.Card.CType
+  nameWithType: Card.implicit operator
+  nameWithType.vb: Card.CType
 - uid: Archivist.DataTypes.Card.op_Inequality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)
   name: operator !=(Card?, Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Inequality_Archivist_DataTypes_Card_Archivist_DataTypes_Card_
@@ -2553,6 +2615,25 @@ references:
   commentId: T:Archivist.DataTypes.Table
   fullName: Archivist.DataTypes.Table
   nameWithType: Table
+- uid: Archivist.DataTypes.Table.#ctor
+  name: Table()
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table__ctor
+  commentId: M:Archivist.DataTypes.Table.#ctor
+  name.vb: New()
+  fullName: Archivist.DataTypes.Table.Table()
+  fullName.vb: Archivist.DataTypes.Table.New()
+  nameWithType: Table.Table()
+  nameWithType.vb: Table.New()
+- uid: Archivist.DataTypes.Table.#ctor*
+  name: Table
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table__ctor_
+  commentId: Overload:Archivist.DataTypes.Table.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.Table.Table
+  fullName.vb: Archivist.DataTypes.Table.New
+  nameWithType: Table.Table
+  nameWithType.vb: Table.New
 - uid: Archivist.DataTypes.Table.Add(Archivist.DataTypes.TableRow)
   name: Add(TableRow?)
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Add_Archivist_DataTypes_TableRow_
@@ -2701,6 +2782,19 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Table.Count
   nameWithType: Table.Count
+- uid: Archivist.DataTypes.Table.Delimiter
+  name: Delimiter
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Delimiter
+  commentId: P:Archivist.DataTypes.Table.Delimiter
+  fullName: Archivist.DataTypes.Table.Delimiter
+  nameWithType: Table.Delimiter
+- uid: Archivist.DataTypes.Table.Delimiter*
+  name: Delimiter
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Delimiter_
+  commentId: Overload:Archivist.DataTypes.Table.Delimiter
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.Delimiter
+  nameWithType: Table.Delimiter
 - uid: Archivist.DataTypes.Table.Equals(Archivist.DataTypes.Table)
   name: Equals(Table?)
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_Equals_Archivist_DataTypes_Table_
@@ -2861,6 +2955,22 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Table.RemoveAt
   nameWithType: Table.RemoveAt
+- uid: Archivist.DataTypes.Table.ToFileType*
+  name: ToFileType
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_ToFileType_
+  commentId: Overload:Archivist.DataTypes.Table.ToFileType
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Table.ToFileType
+  nameWithType: Table.ToFileType
+- uid: Archivist.DataTypes.Table.ToFileType``1
+  name: ToFileType<TFile>()
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_ToFileType__1
+  commentId: M:Archivist.DataTypes.Table.ToFileType``1
+  name.vb: ToFileType(Of TFile)()
+  fullName: Archivist.DataTypes.Table.ToFileType<TFile>()
+  fullName.vb: Archivist.DataTypes.Table.ToFileType(Of TFile)()
+  nameWithType: Table.ToFileType<TFile>()
+  nameWithType.vb: Table.ToFileType(Of TFile)()
 - uid: Archivist.DataTypes.Table.op_Equality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
   name: operator ==(Table?, Table?)
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Equality_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
@@ -2918,6 +3028,34 @@ references:
   fullName.vb: Archivist.DataTypes.Table.>=
   nameWithType: Table.operator >=
   nameWithType.vb: Table.>=
+- uid: Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Card
+  name: implicit operator Card?(Table?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Implicit_Archivist_DataTypes_Table__Archivist_DataTypes_Card
+  commentId: M:Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Card
+  name.vb: CType(Table)
+  fullName: Archivist.DataTypes.Table.implicit operator Archivist.DataTypes.Card?(Archivist.DataTypes.Table?)
+  fullName.vb: Archivist.DataTypes.Table.CType(Archivist.DataTypes.Table)
+  nameWithType: Table.implicit operator Card?(Table?)
+  nameWithType.vb: Table.CType(Table)
+- uid: Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Text
+  name: implicit operator Text?(Table?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Implicit_Archivist_DataTypes_Table__Archivist_DataTypes_Text
+  commentId: M:Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Text
+  name.vb: CType(Table)
+  fullName: Archivist.DataTypes.Table.implicit operator Archivist.DataTypes.Text?(Archivist.DataTypes.Table?)
+  fullName.vb: Archivist.DataTypes.Table.CType(Archivist.DataTypes.Table)
+  nameWithType: Table.implicit operator Text?(Table?)
+  nameWithType.vb: Table.CType(Table)
+- uid: Archivist.DataTypes.Table.op_Implicit*
+  name: implicit operator
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Implicit_
+  commentId: Overload:Archivist.DataTypes.Table.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: Archivist.DataTypes.Table.implicit operator
+  fullName.vb: Archivist.DataTypes.Table.CType
+  nameWithType: Table.implicit operator
+  nameWithType.vb: Table.CType
 - uid: Archivist.DataTypes.Table.op_Inequality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)
   name: operator !=(Table?, Table?)
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Inequality_Archivist_DataTypes_Table_Archivist_DataTypes_Table_
@@ -4270,6 +4408,139 @@ references:
   fullName.vb: Archivist.FormatManager.New
   nameWithType: FormatManager.FormatManager
   nameWithType.vb: FormatManager.New
+- uid: Archivist.Formats.Delimited
+  name: Archivist.Formats.Delimited
+  href: api/Archivist.Formats.Delimited.html
+  commentId: N:Archivist.Formats.Delimited
+  fullName: Archivist.Formats.Delimited
+  nameWithType: Archivist.Formats.Delimited
+- uid: Archivist.Formats.Delimited.DelimitedFormat
+  name: DelimitedFormat
+  href: api/Archivist.Formats.Delimited.DelimitedFormat.html
+  commentId: T:Archivist.Formats.Delimited.DelimitedFormat
+  fullName: Archivist.Formats.Delimited.DelimitedFormat
+  nameWithType: DelimitedFormat
+- uid: Archivist.Formats.Delimited.DelimitedFormat.#ctor
+  name: DelimitedFormat()
+  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat__ctor
+  commentId: M:Archivist.Formats.Delimited.DelimitedFormat.#ctor
+  name.vb: New()
+  fullName: Archivist.Formats.Delimited.DelimitedFormat.DelimitedFormat()
+  fullName.vb: Archivist.Formats.Delimited.DelimitedFormat.New()
+  nameWithType: DelimitedFormat.DelimitedFormat()
+  nameWithType.vb: DelimitedFormat.New()
+- uid: Archivist.Formats.Delimited.DelimitedFormat.#ctor*
+  name: DelimitedFormat
+  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat__ctor_
+  commentId: Overload:Archivist.Formats.Delimited.DelimitedFormat.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.Delimited.DelimitedFormat.DelimitedFormat
+  fullName.vb: Archivist.Formats.Delimited.DelimitedFormat.New
+  nameWithType: DelimitedFormat.DelimitedFormat
+  nameWithType.vb: DelimitedFormat.New
+- uid: Archivist.Formats.Delimited.DelimitedFormat.Extensions
+  name: Extensions
+  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat_Extensions
+  commentId: P:Archivist.Formats.Delimited.DelimitedFormat.Extensions
+  fullName: Archivist.Formats.Delimited.DelimitedFormat.Extensions
+  nameWithType: DelimitedFormat.Extensions
+- uid: Archivist.Formats.Delimited.DelimitedFormat.Extensions*
+  name: Extensions
+  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat_Extensions_
+  commentId: Overload:Archivist.Formats.Delimited.DelimitedFormat.Extensions
+  isSpec: "True"
+  fullName: Archivist.Formats.Delimited.DelimitedFormat.Extensions
+  nameWithType: DelimitedFormat.Extensions
+- uid: Archivist.Formats.Delimited.DelimitedFormat.MimeTypes
+  name: MimeTypes
+  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat_MimeTypes
+  commentId: P:Archivist.Formats.Delimited.DelimitedFormat.MimeTypes
+  fullName: Archivist.Formats.Delimited.DelimitedFormat.MimeTypes
+  nameWithType: DelimitedFormat.MimeTypes
+- uid: Archivist.Formats.Delimited.DelimitedFormat.MimeTypes*
+  name: MimeTypes
+  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat_MimeTypes_
+  commentId: Overload:Archivist.Formats.Delimited.DelimitedFormat.MimeTypes
+  isSpec: "True"
+  fullName: Archivist.Formats.Delimited.DelimitedFormat.MimeTypes
+  nameWithType: DelimitedFormat.MimeTypes
+- uid: Archivist.Formats.Delimited.DelimitedReader
+  name: DelimitedReader
+  href: api/Archivist.Formats.Delimited.DelimitedReader.html
+  commentId: T:Archivist.Formats.Delimited.DelimitedReader
+  fullName: Archivist.Formats.Delimited.DelimitedReader
+  nameWithType: DelimitedReader
+- uid: Archivist.Formats.Delimited.DelimitedReader.#ctor
+  name: DelimitedReader()
+  href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader__ctor
+  commentId: M:Archivist.Formats.Delimited.DelimitedReader.#ctor
+  name.vb: New()
+  fullName: Archivist.Formats.Delimited.DelimitedReader.DelimitedReader()
+  fullName.vb: Archivist.Formats.Delimited.DelimitedReader.New()
+  nameWithType: DelimitedReader.DelimitedReader()
+  nameWithType.vb: DelimitedReader.New()
+- uid: Archivist.Formats.Delimited.DelimitedReader.#ctor*
+  name: DelimitedReader
+  href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader__ctor_
+  commentId: Overload:Archivist.Formats.Delimited.DelimitedReader.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.Delimited.DelimitedReader.DelimitedReader
+  fullName.vb: Archivist.Formats.Delimited.DelimitedReader.New
+  nameWithType: DelimitedReader.DelimitedReader
+  nameWithType.vb: DelimitedReader.New
+- uid: Archivist.Formats.Delimited.DelimitedReader.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader_HeaderInfo
+  commentId: P:Archivist.Formats.Delimited.DelimitedReader.HeaderInfo
+  fullName: Archivist.Formats.Delimited.DelimitedReader.HeaderInfo
+  nameWithType: DelimitedReader.HeaderInfo
+- uid: Archivist.Formats.Delimited.DelimitedReader.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader_HeaderInfo_
+  commentId: Overload:Archivist.Formats.Delimited.DelimitedReader.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.Formats.Delimited.DelimitedReader.HeaderInfo
+  nameWithType: DelimitedReader.HeaderInfo
+- uid: Archivist.Formats.Delimited.DelimitedReader.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream?)
+  href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.Formats.Delimited.DelimitedReader.ReadAsync(System.IO.Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.Formats.Delimited.DelimitedReader.ReadAsync(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.Delimited.DelimitedReader.ReadAsync(System.IO.Stream)
+  nameWithType: DelimitedReader.ReadAsync(Stream?)
+  nameWithType.vb: DelimitedReader.ReadAsync(Stream)
+- uid: Archivist.Formats.Delimited.DelimitedReader.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader_ReadAsync_
+  commentId: Overload:Archivist.Formats.Delimited.DelimitedReader.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.Delimited.DelimitedReader.ReadAsync
+  nameWithType: DelimitedReader.ReadAsync
+- uid: Archivist.Formats.Delimited.DelimitedWriter
+  name: DelimitedWriter
+  href: api/Archivist.Formats.Delimited.DelimitedWriter.html
+  commentId: T:Archivist.Formats.Delimited.DelimitedWriter
+  fullName: Archivist.Formats.Delimited.DelimitedWriter
+  nameWithType: DelimitedWriter
+- uid: Archivist.Formats.Delimited.DelimitedWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: WriteAsync(IGenericFile?, Stream?)
+  href: api/Archivist.Formats.Delimited.DelimitedWriter.html#Archivist_Formats_Delimited_DelimitedWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.Formats.Delimited.DelimitedWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name.vb: WriteAsync(IGenericFile, Stream)
+  fullName: Archivist.Formats.Delimited.DelimitedWriter.WriteAsync(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.Formats.Delimited.DelimitedWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: DelimitedWriter.WriteAsync(IGenericFile?, Stream?)
+  nameWithType.vb: DelimitedWriter.WriteAsync(IGenericFile, Stream)
+- uid: Archivist.Formats.Delimited.DelimitedWriter.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.Formats.Delimited.DelimitedWriter.html#Archivist_Formats_Delimited_DelimitedWriter_WriteAsync_
+  commentId: Overload:Archivist.Formats.Delimited.DelimitedWriter.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.Delimited.DelimitedWriter.WriteAsync
+  nameWithType: DelimitedWriter.WriteAsync
 - uid: Archivist.Formats.FixedLength
   name: Archivist.Formats.FixedLength
   href: api/Archivist.Formats.FixedLength.html
@@ -4848,6 +5119,22 @@ references:
   isSpec: "True"
   fullName: Archivist.Interfaces.IGenericFile.Title
   nameWithType: IGenericFile.Title
+- uid: Archivist.Interfaces.IGenericFile.ToFileType*
+  name: ToFileType
+  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_ToFileType_
+  commentId: Overload:Archivist.Interfaces.IGenericFile.ToFileType
+  isSpec: "True"
+  fullName: Archivist.Interfaces.IGenericFile.ToFileType
+  nameWithType: IGenericFile.ToFileType
+- uid: Archivist.Interfaces.IGenericFile.ToFileType``1
+  name: ToFileType<TFile>()
+  href: api/Archivist.Interfaces.IGenericFile.html#Archivist_Interfaces_IGenericFile_ToFileType__1
+  commentId: M:Archivist.Interfaces.IGenericFile.ToFileType``1
+  name.vb: ToFileType(Of TFile)()
+  fullName: Archivist.Interfaces.IGenericFile.ToFileType<TFile>()
+  fullName.vb: Archivist.Interfaces.IGenericFile.ToFileType(Of TFile)()
+  nameWithType: IGenericFile.ToFileType<TFile>()
+  nameWithType.vb: IGenericFile.ToFileType(Of TFile)()
 - uid: Archivist.Interfaces.IListConvertable
   name: IListConvertable
   href: api/Archivist.Interfaces.IListConvertable.html
