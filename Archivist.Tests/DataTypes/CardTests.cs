@@ -323,6 +323,60 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanCallToFileType()
+        {
+            // Arrange
+            var Card = new Card();
+            Card.Fields.Add(new CardField("FN", null, "John Doe"));
+
+            //Act
+            Table? Result = Card.ToFileType<Table>();
+
+            // Assert
+            Assert.NotNull(Result);
+            Assert.Equal("John Doe", Result.Title);
+            _ = Assert.Single(Result.Columns);
+            Assert.Equal("FN", Result.Columns[0]);
+            _ = Assert.Single(Result);
+            Assert.Equal("John Doe", Result[0][0].Content);
+        }
+
+        [Fact]
+        public void CanConvertToTable()
+        {
+            // Arrange
+            var Card = new Card();
+            Card.Fields.Add(new CardField("FN", null, "John Doe"));
+
+            //Act
+            var Result = (Table?)Card;
+
+            // Assert
+            Assert.NotNull(Result);
+            Assert.Equal("John Doe", Result.Title);
+            _ = Assert.Single(Result.Columns);
+            Assert.Equal("FN", Result.Columns[0]);
+            _ = Assert.Single(Result);
+            Assert.Equal("John Doe", Result[0][0].Content);
+        }
+
+        [Fact]
+        public void CanConvertToText()
+        {
+            // Arrange
+            var Card = new Card();
+            Card.Fields.Add(new CardField("FN", null, "John Doe"));
+
+            //Act
+            var Result = (Text?)Card;
+
+            // Assert
+            Assert.NotNull(Result);
+            Assert.Equal("John Doe", Result.Title);
+            Assert.Equal("FN (): John Doe", Result.Content);
+        }
+
+        [Fact]
         public void CanGetAddresses()
         {
             // Assert

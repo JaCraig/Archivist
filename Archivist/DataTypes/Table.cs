@@ -14,6 +14,14 @@ namespace Archivist.DataTypes
     public class Table : FileBaseClass<Table>, IComparable<Table>, IEquatable<Table>, IListConvertable, IList<TableRow>
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="Table"/> class.
+        /// </summary>
+        public Table()
+        {
+            Delimiter = ",";
+        }
+
+        /// <summary>
         /// Gets the headers of the table.
         /// </summary>
         /// <value>The headers.</value>
@@ -23,6 +31,19 @@ namespace Archivist.DataTypes
         /// Gets the number of rows in the table.
         /// </summary>
         public int Count => Rows.Count;
+
+        /// <summary>
+        /// Gets or sets the delimiter used by the table.
+        /// </summary>
+        public string Delimiter
+        {
+            get
+            {
+                _ = Metadata.TryGetValue("Delimiter", out var Delimiter);
+                return Delimiter ?? ",";
+            }
+            set => Metadata["Delimiter"] = value;
+        }
 
         /// <summary>
         /// Gets a value indicating whether the table is read-only.
@@ -54,6 +75,46 @@ namespace Archivist.DataTypes
                     throw new ArgumentOutOfRangeException(nameof(index));
                 Rows[index] = value ?? new TableRow(Columns);
             }
+        }
+
+        /// <summary>
+        /// Converts the table to a card.
+        /// </summary>
+        /// <param name="file">The table to convert.</param>
+        /// <returns>The card representation of the table.</returns>
+        public static implicit operator Card?(Table? file)
+        {
+            if (file is null)
+                return null;
+            var ReturnValue = new Card() { Title = file.Title };
+            if (file.Count == 0 || file.Columns.Count == 0)
+                return ReturnValue;
+            foreach (var Column in file.Columns)
+            {
+                ReturnValue.Fields.Add(new CardField(Column, Array.Empty<CardFieldParameter>(), file[0][Column].Content));
+            }
+            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
+            {
+                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
+            }
+            return ReturnValue;
+        }
+
+        /// <summary>
+        /// Converts the table to a text object.
+        /// </summary>
+        /// <param name="file">The table to convert.</param>
+        /// <returns>The text representation of the table.</returns>
+        public static implicit operator Text?(Table? file)
+        {
+            if (file is null)
+                return null;
+            var ReturnValue = new Text(file.GetContent(), file.Title);
+            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
+            {
+                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
+            }
+            return ReturnValue;
         }
 
         /// <summary>
@@ -327,6 +388,23 @@ namespace Archivist.DataTypes
             Rows.RemoveAt(index);
         }
 
-        /// <inheritdoc/>
+        /// <summary>
+        /// Converts the table to the specified file type.
+        /// </summary>
+        /// <typeparam name="TFile">The type of the file.</typeparam>
+        /// <returns>The file of the specified type.</returns>
+        public override TFile? ToFileType<TFile>() where TFile : default
+        {
+            Type FileType = typeof(TFile);
+            IGenericFile? ReturnValue = null;
+            if (FileType == typeof(Card))
+                ReturnValue = (Card?)this;
+            else if (FileType == typeof(Table))
+                ReturnValue = this;
+            else if (FileType == typeof(Text))
+                ReturnValue = (Text?)this;
+
+            return (TFile?)ReturnValue;
+        }
     }
 }

@@ -205,6 +205,51 @@ namespace Archivist.DataTypes
         public IEnumerable<CardField?> this[string property, string? parameter] => Fields.Where(field => field?.Property == property && (field?.Parameters.Any(fieldParam => fieldParam.ToString() == parameter) ?? false)).ToList();
 
         /// <summary>
+        /// Converts the card to a table.
+        /// </summary>
+        /// <param name="file">The card to convert.</param>
+        /// <returns>The table representation of the card.</returns>
+        public static implicit operator Table?(Card? file)
+        {
+            if (file is null)
+                return null;
+            var Table = new Table
+            {
+                Title = file.Title ?? file.FullName?.Value
+            };
+            TableRow Row = Table.AddRow();
+            foreach (CardField? Field in file.Fields)
+            {
+                if (Field is null)
+                    continue;
+                Row.Add(Field.Value);
+                Table.Columns.Add(Field.Property);
+            }
+            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
+            {
+                Table.Metadata.Add(Metadata.Key, Metadata.Value);
+            }
+            return Table;
+        }
+
+        /// <summary>
+        /// Converts the card to text.
+        /// </summary>
+        /// <param name="file">The card to convert.</param>
+        /// <returns>The text representation of the card.</returns>
+        public static implicit operator Text?(Card? file)
+        {
+            if (file is null)
+                return null;
+            var ReturnValue = new Text(file.GetContent(), file.Title ?? file.FullName?.Value);
+            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
+            {
+                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
+            }
+            return ReturnValue;
+        }
+
+        /// <summary>
         /// Determines whether two card objects are not equal.
         /// </summary>
         /// <param name="left">The first card object to compare.</param>
@@ -361,6 +406,26 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <returns>The hash code of the card.</returns>
         public override int GetHashCode() => GetContent()?.GetHashCode(StringComparison.OrdinalIgnoreCase) ?? 0;
+
+        /// <summary>
+        /// Converts the card to the specified object type.
+        /// </summary>
+        /// <typeparam name="TFile">The type to convert the card to.</typeparam>
+        /// <returns>The converted card.</returns>
+        public override TFile? ToFileType<TFile>()
+            where TFile : default
+        {
+            Type FileType = typeof(TFile);
+            IGenericFile? ReturnValue = null;
+            if (FileType == typeof(Card))
+                ReturnValue = this;
+            else if (FileType == typeof(Table))
+                ReturnValue = (Table?)this;
+            else if (FileType == typeof(Text))
+                ReturnValue = (Text?)this;
+
+            return (TFile?)ReturnValue;
+        }
 
         /// <summary>
         /// Gets the portion of the name field at the specified index.

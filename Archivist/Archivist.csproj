@@ -54,7 +54,6 @@
     <PackageReference Include="ObjectCartographer" Version="3.0.48" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Formats\Delimited\" />
     <Folder Include="Formats\Excel\" />
     <Folder Include="Formats\HTML\" />
     <Folder Include="Formats\ICal\" />

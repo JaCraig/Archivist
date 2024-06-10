@@ -22,5 +22,11 @@ namespace Archivist.Interfaces
         /// </summary>
         /// <returns>The content of the file.</returns>
         string? GetContent();
+
+        /// <summary>
+        /// Sets the content of the file in the specified format.
+        /// </summary>
+        /// <returns>The content of the file in the specified format.</returns>
+        TFile? ToFileType<TFile>() where TFile : IGenericFile;
     }
 }

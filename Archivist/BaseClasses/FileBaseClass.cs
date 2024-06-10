@@ -1,4 +1,5 @@
-﻿using Archivist.Interfaces;
+﻿using Archivist.DataTypes;
+using Archivist.Interfaces;
 using System.Collections.Generic;
 
 namespace Archivist.BaseClasses
@@ -36,7 +37,9 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="value1">The first file object.</param>
         /// <param name="value2">The second file object.</param>
-        /// <returns>True if the first file object is less than the second file object, false otherwise.</returns>
+        /// <returns>
+        /// True if the first file object is less than the second file object, false otherwise.
+        /// </returns>
         public static bool operator <(FileBaseClass<TFileType>? value1, FileBaseClass<TFileType>? value2)
         {
             if (value1 is null)
@@ -49,7 +52,9 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="value1">The first file object.</param>
         /// <param name="value2">The second file object.</param>
-        /// <returns>True if the first file object is less than or equal to the second file object, false otherwise.</returns>
+        /// <returns>
+        /// True if the first file object is less than or equal to the second file object, false otherwise.
+        /// </returns>
         public static bool operator <=(FileBaseClass<TFileType>? value1, FileBaseClass<TFileType>? value2)
         {
             return (value1?.CompareTo(value2) ?? 0) <= 0;
@@ -71,7 +76,9 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="value1">The first file object.</param>
         /// <param name="value2">The second file object.</param>
-        /// <returns>True if the first file object is greater than the second file object, false otherwise.</returns>
+        /// <returns>
+        /// True if the first file object is greater than the second file object, false otherwise.
+        /// </returns>
         public static bool operator >(FileBaseClass<TFileType>? value1, FileBaseClass<TFileType>? value2)
         {
             return value1 is not null
@@ -84,7 +91,9 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="value1">The first file object.</param>
         /// <param name="value2">The second file object.</param>
-        /// <returns>True if the first file object is greater than or equal to the second file object, false otherwise.</returns>
+        /// <returns>
+        /// True if the first file object is greater than or equal to the second file object, false otherwise.
+        /// </returns>
         public static bool operator >=(FileBaseClass<TFileType>? value1, FileBaseClass<TFileType>? value2)
         {
             return (value1 is null) ? value2 is null : value1.CompareTo(value2) >= 0;
@@ -129,6 +138,22 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <returns>The hash code for the file object.</returns>
         public override int GetHashCode() => GetContent()?.GetHashCode() ?? 0;
+
+        /// <summary>
+        /// Converts the file object to a specific file type.
+        /// </summary>
+        /// <typeparam name="TFile">The file type to convert to.</typeparam>
+        /// <returns>The converted file object.</returns>
+        public virtual TFile? ToFileType<TFile>()
+            where TFile : IGenericFile
+        {
+            System.Type FileType = typeof(TFile);
+            if (GetType() == FileType)
+                return (TFile)(IGenericFile)this;
+            if (FileType == typeof(Text))
+                return (TFile)(IGenericFile)new Text(GetContent(), "");
+            return default;
+        }
 
         /// <summary>
         /// Converts the file object to a string.

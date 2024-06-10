@@ -504,6 +504,68 @@ namespace Archivist.Tests.DataTypes
         public void CanCallRemoveWithNullItem() => _TestClass.Remove(default);
 
         [Fact]
+        public void CanCallToFileType()
+        {
+            // Arrange
+            var TestClass = new Table();
+            TestClass.Columns.Add("FN");
+            TestClass.Title = "Title";
+            TestClass.Metadata.Add("Key", "Value");
+            TestClass.AddRow().Add("John Something");
+
+            // Act
+            Card? Result = TestClass.ToFileType<Card>();
+
+            // Assert
+            Assert.NotNull(Result);
+            Assert.Equal("John Something", Result.FullName?.Value);
+            Assert.Equal("Title", Result.Title);
+            Assert.Equal("Value", Result.Metadata["Key"]);
+        }
+
+        [Fact]
+        public void CanConvertToCard()
+        {
+            // Arrange
+            var TestClass = new Table();
+            TestClass.Columns.Add("FN");
+            TestClass.Title = "Title";
+            TestClass.Metadata.Add("Key", "Value");
+            TestClass.AddRow().Add("John Something");
+
+            // Act
+            var Result = (Card?)TestClass;
+
+            // Assert
+            Assert.NotNull(Result);
+            Assert.Equal("John Something", Result.FullName?.Value);
+            Assert.Equal("Title", Result.Title);
+            Assert.Equal("Value", Result.Metadata["Key"]);
+        }
+
+        [Fact]
+        public void CanConvertToText()
+        {
+            // Arrange
+            var TestClass = new Table();
+            TestClass.Columns.Add("Column1");
+            TestClass.AddRow().Add("1");
+            TestClass.AddRow().Add("2");
+            TestClass.AddRow().Add("3");
+            TestClass.Title = "Title";
+            TestClass.Metadata.Add("Key", "Value");
+
+            // Act
+            var Result = (Text?)TestClass;
+
+            // Assert
+            Assert.NotNull(Result);
+            Assert.Equal("Column1\n1\n2\n3", Result.Content);
+            Assert.Equal("Title", Result.Title);
+            Assert.Equal("Value", Result.Metadata["Key"]);
+        }
+
+        [Fact]
         public void CanGetColumns() =>
             // Assert
             Assert.IsType<List<string>>(_TestClass.Columns);
@@ -528,6 +590,20 @@ namespace Archivist.Tests.DataTypes
             _ = Assert.IsType<TableRow>(TestClass[0]);
             TestClass[0] = TestValue;
             Assert.Same(TestValue, TestClass[0]);
+        }
+
+        [Fact]
+        public void CanSetDelimiter()
+        {
+            // Arrange
+            var TestClass = new Table
+            {
+                // Act
+                Delimiter = "|"
+            };
+
+            // Assert
+            Assert.Equal("|", TestClass.Delimiter);
         }
 
         [Fact]
