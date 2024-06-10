@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.2.0"></a>
+## [0.2.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.2.0) (2024-06-10)
+
+### Features
+
+* Finished adding delimiter format ([57ab8d1](https://www.github.com/JaCraig/Archivist/commit/57ab8d135e0f789ecdada41ce1e93e614aacce18))
+
+### Bug Fixes
+
+* Fixing some tests ([3b6dc24](https://www.github.com/JaCraig/Archivist/commit/3b6dc24fb85075705a5ecf4b18503a9b268f5114))
+
+### Other
+
+* merge ([cd315fe](https://www.github.com/JaCraig/Archivist/commit/cd315fe78173c3ecbbd2b6021d386e4687504aaf))
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.1.1) (2024-06-09)
 
