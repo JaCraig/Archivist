@@ -114,7 +114,7 @@ namespace Archivist.Tests.Formats.Delimited
         {
             // Arrange
             var Stream = new System.IO.MemoryStream();
-            Stream.Write("Header 1,Header 2,Header 3,Header 4,Header 5,Header 6\r\n".ToByteArray());
+            Stream.Write($"Header 1,Header 2,Header 3,Header 4,Header 5,Header 6{Environment.NewLine}".ToByteArray());
             Stream.Position = 0;
 
             // Act
@@ -279,7 +279,7 @@ namespace Archivist.Tests.Formats.Delimited
             // Assert
             Assert.True(Result);
             Assert.True(StreamData.Length > 0);
-            Assert.Equal("\"Test\"\r\n", StreamData);
+            Assert.Equal($"\"Test\"{Environment.NewLine}", StreamData);
         }
 
         [Fact]
@@ -299,7 +299,7 @@ namespace Archivist.Tests.Formats.Delimited
             // Assert
             Assert.True(Result);
             Assert.True(StreamData.Length > 0);
-            Assert.Equal("\"Test Header\"\r\n\"Test Val1\"\r\n\"Test Val2\"\r\n", StreamData);
+            Assert.Equal($"\"Test Header\"{Environment.NewLine}\"Test Val1\"{Environment.NewLine}\"Test Val2\"{Environment.NewLine}", StreamData);
         }
 
         [Fact]

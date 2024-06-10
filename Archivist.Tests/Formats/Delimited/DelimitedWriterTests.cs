@@ -1,6 +1,7 @@
 using Archivist.Formats.Delimited;
 using Archivist.Tests.BaseClasses;
 using BigBook;
+using System;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,7 +34,7 @@ namespace Archivist.Tests.Formats.Delimited
             // Assert
             Assert.True(Result);
             Assert.True(StreamData.Length > 0);
-            Assert.Equal("\"Test\"\r\n", StreamData.ToString(Encoding.UTF8));
+            Assert.Equal($"\"Test\"{Environment.NewLine}", StreamData.ToString(Encoding.UTF8));
         }
 
         [Fact]
