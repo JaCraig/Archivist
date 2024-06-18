@@ -101,6 +101,27 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Converts the table to a tables object.
+        /// </summary>
+        /// <param name="file">The table to convert.</param>
+        /// <returns>The tables representation of the table.</returns>
+        public static implicit operator Tables?(Table? file)
+        {
+            if (file is null)
+                return null;
+            var ReturnValue = new Tables
+            {
+                file
+            };
+            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
+            {
+                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
+            }
+            ReturnValue.Title = file.Title;
+            return ReturnValue;
+        }
+
+        /// <summary>
         /// Converts the table to a text object.
         /// </summary>
         /// <param name="file">The table to convert.</param>
@@ -401,6 +422,8 @@ namespace Archivist.DataTypes
                 ReturnValue = (Card?)this;
             else if (FileType == typeof(Table))
                 ReturnValue = this;
+            else if (FileType == typeof(Tables))
+                ReturnValue = (Tables?)this;
             else if (FileType == typeof(Text))
                 ReturnValue = (Text?)this;
 

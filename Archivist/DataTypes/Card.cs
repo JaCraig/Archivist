@@ -233,6 +233,27 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Converts the card to a Tables file.
+        /// </summary>
+        /// <param name="file">The card to convert.</param>
+        /// <returns>The Tables representation of the card.</returns>
+        public static implicit operator Tables?(Card? file)
+        {
+            if (file is null)
+                return null;
+            var ReturnValue = new Tables
+            {
+                file
+            };
+            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
+            {
+                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
+            }
+            ReturnValue.Title = file.Title ?? file.FullName?.Value;
+            return ReturnValue;
+        }
+
+        /// <summary>
         /// Converts the card to text.
         /// </summary>
         /// <param name="file">The card to convert.</param>
@@ -421,6 +442,8 @@ namespace Archivist.DataTypes
                 ReturnValue = this;
             else if (FileType == typeof(Table))
                 ReturnValue = (Table?)this;
+            else if (FileType == typeof(Tables))
+                ReturnValue = (Tables?)this;
             else if (FileType == typeof(Text))
                 ReturnValue = (Text?)this;
 
