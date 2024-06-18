@@ -162,6 +162,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.Tables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.Tables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.DataTypes.Text.yml",
       "output": {
         ".html": {
@@ -266,6 +276,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.Formats.Delimited.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Excel.ExcelFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Excel.ExcelFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Excel.ExcelReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Excel.ExcelReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Excel.ExcelWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Excel.ExcelWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Excel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Excel.html"
         }
       },
       "version": ""
