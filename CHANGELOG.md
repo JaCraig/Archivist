@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.3.0"></a>
+## [0.3.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.3.0) (2024-06-18)
+
+### Features
+
+* Starting work on Excel format ([75ec6f0](https://www.github.com/JaCraig/Archivist/commit/75ec6f0b227ccc6b44ea2bb27e8594ff2e107bce))
+
+### Other
+
+* Merge pull request #16 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-96ed0d1443 ([e6b7aba](https://www.github.com/JaCraig/Archivist/commit/e6b7abac2030bffa634778961a90b1953063be7e))
+* Merge pull request #17 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-6543406883 ([dba943f](https://www.github.com/JaCraig/Archivist/commit/dba943ffd7584f9cccbed0fa3a3ff2a10764eab5))
+* Merge pull request #18 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-73a2a78d0a ([a02a821](https://www.github.com/JaCraig/Archivist/commit/a02a82185cd22589a690af42ac45272f96975538))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([62f308e](https://www.github.com/JaCraig/Archivist/commit/62f308ef0d8d2a145d17eef80217c0eb6028f1f9))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([1368786](https://www.github.com/JaCraig/Archivist/commit/1368786e2ffef538f2a817a4ddec1e4b23d5f7dc))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([76bc6c8](https://www.github.com/JaCraig/Archivist/commit/76bc6c84fd9e02b476f336243192a07d6e299cb7))
+
 <a name="0.2.0"></a>
 ## [0.2.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.2.0) (2024-06-10)
 
