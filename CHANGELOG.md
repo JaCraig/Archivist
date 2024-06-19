@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.3.1"></a>
+## [0.3.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.3.1) (2024-06-19)
+
+### Bug Fixes
+
+* Adding more of excel doc format and some fixes for other formats ([b2efe92](https://www.github.com/JaCraig/Archivist/commit/b2efe928bfcab67ac0875befc66dfb352592a443))
+
+### Other
+
+* Merge pull request #19 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-636511d702 ([95fc65f](https://www.github.com/JaCraig/Archivist/commit/95fc65f61d9d79b0ea0652b546c8ce8b1073a307))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([da55360](https://www.github.com/JaCraig/Archivist/commit/da553604c86b22fda75891cacf0a1ff31810c2c0))
+* merge ([a8cd85a](https://www.github.com/JaCraig/Archivist/commit/a8cd85a38a8f5101d323776dcd8cf7586af21f2d))
+
 <a name="0.3.0"></a>
 ## [0.3.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.3.0) (2024-06-18)
 
