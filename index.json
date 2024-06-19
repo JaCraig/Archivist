@@ -147,12 +147,12 @@
   "api/Archivist.Formats.Excel.ExcelWriter.html": {
     "href": "api/Archivist.Formats.Excel.ExcelWriter.html",
     "title": "Class ExcelWriter | Archivist API Reference",
-    "keywords": "Class ExcelWriter Namespace Archivist.Formats.Excel Assembly Archivist.dll public class ExcelWriter : WriterBaseClass, IFormatWriter Inheritance object WriterBaseClass ExcelWriter Implements IFormatWriter Inherited Members WriterBaseClass.CanWrite(IGenericFile) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods WriteAsync(IGenericFile?, Stream?) public override Task<bool> WriteAsync(IGenericFile? file, Stream? stream) Parameters file IGenericFile stream Stream Returns Task<bool>"
+    "keywords": "Class ExcelWriter Namespace Archivist.Formats.Excel Assembly Archivist.dll Writes an Excel file. public class ExcelWriter : WriterBaseClass, IFormatWriter Inheritance object WriterBaseClass ExcelWriter Implements IFormatWriter Inherited Members WriterBaseClass.CanWrite(IGenericFile) object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods WriteAsync(IGenericFile?, Stream?) Writes the file to the stream public override Task<bool> WriteAsync(IGenericFile? file, Stream? stream) Parameters file IGenericFile The file object to write. stream Stream The stream to write to. Returns Task<bool> True if it is written succesfully, false otherwise. See Also WriterBaseClass"
   },
   "api/Archivist.Formats.Excel.html": {
     "href": "api/Archivist.Formats.Excel.html",
     "title": "Namespace Archivist.Formats.Excel | Archivist API Reference",
-    "keywords": "Namespace Archivist.Formats.Excel Classes ExcelFormat Represents the Excel format in the Archivist library. ExcelReader Represents a reader for Excel files. ExcelWriter"
+    "keywords": "Namespace Archivist.Formats.Excel Classes ExcelFormat Represents the Excel format in the Archivist library. ExcelReader Represents a reader for Excel files. ExcelWriter Writes an Excel file."
   },
   "api/Archivist.Formats.FixedLength.FixedLengthWriter.html": {
     "href": "api/Archivist.Formats.FixedLength.FixedLengthWriter.html",
