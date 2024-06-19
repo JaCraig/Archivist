@@ -24,10 +24,11 @@ namespace Archivist.Formats.Delimited
         /// </returns>
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
-            if (stream is null || file is null)
+            if (stream?.CanWrite != true || file is null)
                 return false;
             var Builder = new StringBuilder();
-            if (file is Table FileTable)
+            Table? FileTable = file.ToFileType<Table>();
+            if (FileTable is not null)
             {
                 _ = Builder.Append(CreateFromTable(FileTable));
             }

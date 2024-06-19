@@ -19,7 +19,7 @@ namespace Archivist.Formats.Txt
         /// <returns>True if the file was written successfully; otherwise, false.</returns>
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
-            if (stream is null)
+            if (stream?.CanWrite != true)
                 return false;
             var TempData = Encoding.UTF8.GetBytes(file?.GetContent() ?? "");
             try

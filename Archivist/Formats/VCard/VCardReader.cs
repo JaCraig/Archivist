@@ -45,7 +45,7 @@ namespace Archivist.Formats.VCard
         /// </returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            if (stream is null)
+            if (stream?.CanRead != true)
                 return new Card();
             var ReturnValue = new Card();
             var Content = await GetDataAsync(stream).ConfigureAwait(false);

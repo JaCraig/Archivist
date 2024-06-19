@@ -1,5 +1,6 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Interfaces;
+using DocumentFormat.OpenXml.CustomProperties;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 using System;
@@ -47,6 +48,8 @@ namespace Archivist.Formats.Excel
         /// <returns>True if the reader can read the file, false otherwise.</returns>
         public override bool InternalCanRead(Stream stream)
         {
+            if (stream?.CanRead != true)
+                return false;
             try
             {
                 var Document = SpreadsheetDocument.Open(stream, false);
@@ -70,7 +73,7 @@ namespace Archivist.Formats.Excel
         public override Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             var ReturnValue = new DataTypes.Tables();
-            if (stream is null)
+            if (stream?.CanRead != true)
                 return Task.FromResult<IGenericFile?>(ReturnValue);
 
             // Open the excel document
@@ -78,6 +81,8 @@ namespace Archivist.Formats.Excel
             try
             {
                 var Document = SpreadsheetDocument.Open(stream, false);
+                ReadMetadata(ReturnValue, Document);
+
                 WorkbookPart = Document.WorkbookPart;
                 if (WorkbookPart is null)
                     return Task.FromResult<IGenericFile?>(ReturnValue);
@@ -92,7 +97,9 @@ namespace Archivist.Formats.Excel
                     if (string.IsNullOrEmpty(SheetId))
                         continue;
 
-                    Worksheet WorkSheet = ((WorksheetPart)WorkbookPart.GetPartById(SheetId)).Worksheet;
+                    var WorkSheetPart = (WorksheetPart?)WorkbookPart.GetPartById(SheetId);
+
+                    Worksheet? WorkSheet = WorkSheetPart?.Worksheet;
                     if (WorkSheet is null)
                         continue;
 
@@ -225,6 +232,82 @@ namespace Archivist.Formats.Excel
                                .InnerText;
 
             return (Text ?? "").Trim();
+        }
+
+        /// <summary>
+        /// Reads the metadata from the Excel document.
+        /// </summary>
+        /// <param name="returnValue">The return value.</param>
+        /// <param name="document">The Excel document.</param>
+        private static void ReadMetadata(DataTypes.Tables returnValue, SpreadsheetDocument document)
+        {
+            returnValue.Metadata["Title"] = document.PackageProperties.Title ?? "";
+            returnValue.Metadata["Author"] = document.PackageProperties.Creator ?? "";
+            returnValue.Metadata["Created"] = document.PackageProperties.Created?.ToString() ?? "";
+            returnValue.Metadata["Modified"] = document.PackageProperties.Modified?.ToString() ?? "";
+            returnValue.Metadata["LastModifiedBy"] = document.PackageProperties.LastModifiedBy ?? "";
+            returnValue.Metadata["Revision"] = document.PackageProperties.Revision ?? "";
+            returnValue.Metadata["Version"] = document.PackageProperties.Version ?? "";
+            returnValue.Metadata["Category"] = document.PackageProperties.Category ?? "";
+            returnValue.Metadata["ContentStatus"] = document.PackageProperties.ContentStatus ?? "";
+            returnValue.Metadata["Description"] = document.PackageProperties.Description ?? "";
+            returnValue.Metadata["Identifier"] = document.PackageProperties.Identifier ?? "";
+            returnValue.Metadata["Keywords"] = document.PackageProperties.Keywords ?? "";
+            returnValue.Metadata["Language"] = document.PackageProperties.Language ?? "";
+            returnValue.Metadata["Subject"] = document.PackageProperties.Subject ?? "";
+            returnValue.Metadata["ContentType"] = document.PackageProperties.ContentType ?? "";
+            returnValue.Metadata["LastPrinted"] = document.PackageProperties.LastPrinted?.ToString() ?? "";
+
+            if (document.ExtendedFilePropertiesPart?.Properties is not null)
+            {
+                returnValue.Metadata["Application"] = document.ExtendedFilePropertiesPart.Properties.Application?.Text ?? "";
+                returnValue.Metadata["ApplicationVersion"] = document.ExtendedFilePropertiesPart.Properties.ApplicationVersion?.Text ?? "";
+                returnValue.Metadata["Company"] = document.ExtendedFilePropertiesPart.Properties.Company?.Text ?? "";
+                returnValue.Metadata["Manager"] = document.ExtendedFilePropertiesPart.Properties.Manager?.Text ?? "";
+                returnValue.Metadata["HyperlinkBase"] = document.ExtendedFilePropertiesPart.Properties.HyperlinkBase?.Text ?? "";
+                returnValue.Metadata["Template"] = document.ExtendedFilePropertiesPart.Properties.Template?.Text ?? "";
+                returnValue.Metadata["TotalTime"] = document.ExtendedFilePropertiesPart.Properties.TotalTime?.Text ?? "";
+                returnValue.Metadata["Pages"] = document.ExtendedFilePropertiesPart.Properties.Pages?.Text ?? "";
+                returnValue.Metadata["Words"] = document.ExtendedFilePropertiesPart.Properties.Words?.Text ?? "";
+                returnValue.Metadata["Characters"] = document.ExtendedFilePropertiesPart.Properties.Characters?.Text ?? "";
+                returnValue.Metadata["CharactersWithSpaces"] = document.ExtendedFilePropertiesPart.Properties.CharactersWithSpaces?.Text ?? "";
+                returnValue.Metadata["Lines"] = document.ExtendedFilePropertiesPart.Properties.Lines?.Text ?? "";
+                returnValue.Metadata["Paragraphs"] = document.ExtendedFilePropertiesPart.Properties.Paragraphs?.Text ?? "";
+                returnValue.Metadata["PresentationFormat"] = document.ExtendedFilePropertiesPart.Properties.PresentationFormat?.Text ?? "";
+                returnValue.Metadata["LinksUpToDate"] = document.ExtendedFilePropertiesPart.Properties.LinksUpToDate?.Text ?? "";
+                returnValue.Metadata["HyperlinksChanged"] = document.ExtendedFilePropertiesPart.Properties.HyperlinksChanged?.Text ?? "";
+            }
+
+            CustomFilePropertiesPart? CustomPropertiesPart = document.CustomFilePropertiesPart;
+            if (CustomPropertiesPart is null)
+                return;
+
+            foreach (CustomDocumentProperty CustomProperty in CustomPropertiesPart.Properties.Cast<CustomDocumentProperty>())
+            {
+                DocumentFormat.OpenXml.StringValue? PropName = CustomProperty.Name;
+                if (string.IsNullOrEmpty(PropName))
+                    continue;
+
+                string? PropValue;
+                if (CustomProperty.VTLPWSTR != null)
+                    PropValue = CustomProperty.VTLPWSTR.Text;
+                else if (CustomProperty.VTFileTime != null)
+                    PropValue = CustomProperty.VTFileTime.Text;
+                else if (CustomProperty.VTDouble != null)
+                    PropValue = CustomProperty.VTDouble.Text;
+                else if (CustomProperty.VTBool != null)
+                    PropValue = CustomProperty.VTBool.Text;
+                else if (CustomProperty.VTInt32 != null)
+                    PropValue = CustomProperty.VTInt32.Text;
+                else if (CustomProperty.VTInt64 != null)
+                    PropValue = CustomProperty.VTInt64.Text;
+                else if (CustomProperty.VTBString != null)
+                    PropValue = CustomProperty.VTBString.Text;
+                else
+                    PropValue = CustomProperty.InnerText;
+
+                returnValue.Metadata[PropName!] = PropValue;
+            }
         }
     }
 }

@@ -23,11 +23,10 @@ namespace Archivist.Formats.VCard
         /// </returns>
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
-            if (stream is null || file is null)
+            if (stream?.CanWrite != true || file is null)
                 return false;
-            if (file is not Card FileCard)
-                return false;
-            if (!stream.CanWrite)
+            Card? FileCard = file.ToFileType<Card>();
+            if (FileCard is null)
                 return false;
             var FileContent = new StringBuilder("BEGIN:VCARD\r\nVERSION:4.0\r\n");
             foreach (CardField? Field in FileCard.Fields)
