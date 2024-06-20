@@ -27,7 +27,7 @@ namespace Archivist.DataTypes
         /// <summary>
         /// The table entries.
         /// </summary>
-        public List<Table> TableEntries { get; } = new List<Table>();
+        private List<Table> TableEntries { get; } = new List<Table>();
 
         /// <summary>
         /// Gets or sets the table at the specified index.
@@ -233,7 +233,7 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <typeparam name="TObject">The type of the object.</typeparam>
         /// <param name="obj">The list object to copy to the Tables.</param>
-        public void ConvertFrom<TObject>(List<TObject?> obj)
+        public void ConvertFrom<TObject>(List<TObject?>? obj)
         {
             obj ??= new List<TObject?>();
             if (obj.Count == 0)
