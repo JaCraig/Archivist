@@ -3925,13 +3925,13 @@ references:
   fullName: Archivist.DataTypes.Tables.ConvertFrom
   nameWithType: Tables.ConvertFrom
 - uid: Archivist.DataTypes.Tables.ConvertFrom``1(System.Collections.Generic.List{``0})
-  name: ConvertFrom<TObject>(List<TObject?>)
+  name: ConvertFrom<TObject>(List<TObject?>?)
   href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables_ConvertFrom__1_System_Collections_Generic_List___0__
   commentId: M:Archivist.DataTypes.Tables.ConvertFrom``1(System.Collections.Generic.List{``0})
   name.vb: ConvertFrom(Of TObject)(List(Of TObject))
-  fullName: Archivist.DataTypes.Tables.ConvertFrom<TObject>(System.Collections.Generic.List<TObject?>)
+  fullName: Archivist.DataTypes.Tables.ConvertFrom<TObject>(System.Collections.Generic.List<TObject?>?)
   fullName.vb: Archivist.DataTypes.Tables.ConvertFrom(Of TObject)(System.Collections.Generic.List(Of TObject))
-  nameWithType: Tables.ConvertFrom<TObject>(List<TObject?>)
+  nameWithType: Tables.ConvertFrom<TObject>(List<TObject?>?)
   nameWithType.vb: Tables.ConvertFrom(Of TObject)(List(Of TObject))
 - uid: Archivist.DataTypes.Tables.ConvertTo*
   name: ConvertTo
@@ -4138,19 +4138,6 @@ references:
   isSpec: "True"
   fullName: Archivist.DataTypes.Tables.RemoveAt
   nameWithType: Tables.RemoveAt
-- uid: Archivist.DataTypes.Tables.TableEntries
-  name: TableEntries
-  href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables_TableEntries
-  commentId: P:Archivist.DataTypes.Tables.TableEntries
-  fullName: Archivist.DataTypes.Tables.TableEntries
-  nameWithType: Tables.TableEntries
-- uid: Archivist.DataTypes.Tables.TableEntries*
-  name: TableEntries
-  href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables_TableEntries_
-  commentId: Overload:Archivist.DataTypes.Tables.TableEntries
-  isSpec: "True"
-  fullName: Archivist.DataTypes.Tables.TableEntries
-  nameWithType: Tables.TableEntries
 - uid: Archivist.DataTypes.Tables.ToFileType*
   name: ToFileType
   href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables_ToFileType_
