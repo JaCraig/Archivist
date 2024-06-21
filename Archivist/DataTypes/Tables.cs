@@ -260,7 +260,7 @@ namespace Archivist.DataTypes
         /// <exception cref="ArgumentNullException">Thrown when the array is null.</exception>
         public void CopyTo(Table[]? array, int arrayIndex)
         {
-            if (array is null)
+            if (array is null || array.Length == 0)
                 return;
             if (arrayIndex < 0 || arrayIndex >= array.Length)
                 throw new ArgumentOutOfRangeException(nameof(arrayIndex));

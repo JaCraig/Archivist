@@ -294,7 +294,7 @@ namespace Archivist.DataTypes
         /// <param name="arrayIndex">The index in the array at which to start copying the rows.</param>
         public void CopyTo(TableRow[]? array, int arrayIndex)
         {
-            if (array is null)
+            if (array is null || array.Length == 0)
                 return;
             if (arrayIndex < 0 || arrayIndex >= array.Length)
                 throw new ArgumentOutOfRangeException(nameof(arrayIndex));

@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archivist", "Archivist\Arch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archivist.Tests", "Archivist.Tests\Archivist.Tests.csproj", "{EB18468A-211E-4C64-BE4E-CCB89EDD9013}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archivist.Example", "Archivist.Example\Archivist.Example.csproj", "{904DFD77-CC9C-48B0-BB76-CC5383EA0ED8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archivist.Example", "Archivist.Example\Archivist.Example.csproj", "{904DFD77-CC9C-48B0-BB76-CC5383EA0ED8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archivist.Benchmarks", "Archivist.Benchmarks\Archivist.Benchmarks.csproj", "{13DC156D-1331-4991-8AA7-750BBC781946}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Archivist.Benchmarks", "Archivist.Benchmarks\Archivist.Benchmarks.csproj", "{13DC156D-1331-4991-8AA7-750BBC781946}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
