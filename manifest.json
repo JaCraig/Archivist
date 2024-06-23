@@ -492,6 +492,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Options.DelimitedOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Options.DelimitedOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.yml",
       "output": {
         ".html": {

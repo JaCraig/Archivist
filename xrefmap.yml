@@ -594,11 +594,14 @@ references:
   fullName: Archivist.BaseClasses.ReaderBaseClass.HeaderInfo
   nameWithType: ReaderBaseClass.HeaderInfo
 - uid: Archivist.BaseClasses.ReaderBaseClass.InternalCanRead(System.IO.Stream)
-  name: InternalCanRead(Stream)
+  name: InternalCanRead(Stream?)
   href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_InternalCanRead_System_IO_Stream_
   commentId: M:Archivist.BaseClasses.ReaderBaseClass.InternalCanRead(System.IO.Stream)
-  fullName: Archivist.BaseClasses.ReaderBaseClass.InternalCanRead(System.IO.Stream)
-  nameWithType: ReaderBaseClass.InternalCanRead(Stream)
+  name.vb: InternalCanRead(Stream)
+  fullName: Archivist.BaseClasses.ReaderBaseClass.InternalCanRead(System.IO.Stream?)
+  fullName.vb: Archivist.BaseClasses.ReaderBaseClass.InternalCanRead(System.IO.Stream)
+  nameWithType: ReaderBaseClass.InternalCanRead(Stream?)
+  nameWithType.vb: ReaderBaseClass.InternalCanRead(Stream)
 - uid: Archivist.BaseClasses.ReaderBaseClass.InternalCanRead*
   name: InternalCanRead
   href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_InternalCanRead_
@@ -3441,6 +3444,15 @@ references:
   fullName.vb: Archivist.DataTypes.TableRow.AddRange(System.Collections.Generic.IEnumerable(Of Archivist.DataTypes.TableCell))
   nameWithType: TableRow.AddRange(IEnumerable<TableCell>)
   nameWithType.vb: TableRow.AddRange(IEnumerable(Of TableCell))
+- uid: Archivist.DataTypes.TableRow.AddRange(System.Collections.Generic.IEnumerable{System.String})
+  name: AddRange(IEnumerable<string>)
+  href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_AddRange_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Archivist.DataTypes.TableRow.AddRange(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: AddRange(IEnumerable(Of String))
+  fullName: Archivist.DataTypes.TableRow.AddRange(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: Archivist.DataTypes.TableRow.AddRange(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: TableRow.AddRange(IEnumerable<string>)
+  nameWithType.vb: TableRow.AddRange(IEnumerable(Of String))
 - uid: Archivist.DataTypes.TableRow.AddRange*
   name: AddRange
   href: api/Archivist.DataTypes.TableRow.html#Archivist_DataTypes_TableRow_AddRange_
@@ -4906,15 +4918,15 @@ references:
   commentId: T:Archivist.Formats.Delimited.DelimitedFormat
   fullName: Archivist.Formats.Delimited.DelimitedFormat
   nameWithType: DelimitedFormat
-- uid: Archivist.Formats.Delimited.DelimitedFormat.#ctor
-  name: DelimitedFormat()
-  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat__ctor
-  commentId: M:Archivist.Formats.Delimited.DelimitedFormat.#ctor
-  name.vb: New()
-  fullName: Archivist.Formats.Delimited.DelimitedFormat.DelimitedFormat()
-  fullName.vb: Archivist.Formats.Delimited.DelimitedFormat.New()
-  nameWithType: DelimitedFormat.DelimitedFormat()
-  nameWithType.vb: DelimitedFormat.New()
+- uid: Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions})
+  name: DelimitedFormat(IOptions<DelimitedOptions>?)
+  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_DelimitedOptions__
+  commentId: M:Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions})
+  name.vb: New(IOptions(Of DelimitedOptions))
+  fullName: Archivist.Formats.Delimited.DelimitedFormat.DelimitedFormat(Microsoft.Extensions.Options.IOptions<Archivist.Options.DelimitedOptions>?)
+  fullName.vb: Archivist.Formats.Delimited.DelimitedFormat.New(Microsoft.Extensions.Options.IOptions(Of Archivist.Options.DelimitedOptions))
+  nameWithType: DelimitedFormat.DelimitedFormat(IOptions<DelimitedOptions>?)
+  nameWithType.vb: DelimitedFormat.New(IOptions(Of DelimitedOptions))
 - uid: Archivist.Formats.Delimited.DelimitedFormat.#ctor*
   name: DelimitedFormat
   href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat__ctor_
@@ -4957,15 +4969,15 @@ references:
   commentId: T:Archivist.Formats.Delimited.DelimitedReader
   fullName: Archivist.Formats.Delimited.DelimitedReader
   nameWithType: DelimitedReader
-- uid: Archivist.Formats.Delimited.DelimitedReader.#ctor
-  name: DelimitedReader()
-  href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader__ctor
-  commentId: M:Archivist.Formats.Delimited.DelimitedReader.#ctor
-  name.vb: New()
-  fullName: Archivist.Formats.Delimited.DelimitedReader.DelimitedReader()
-  fullName.vb: Archivist.Formats.Delimited.DelimitedReader.New()
-  nameWithType: DelimitedReader.DelimitedReader()
-  nameWithType.vb: DelimitedReader.New()
+- uid: Archivist.Formats.Delimited.DelimitedReader.#ctor(Archivist.Options.DelimitedOptions)
+  name: DelimitedReader(DelimitedOptions)
+  href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader__ctor_Archivist_Options_DelimitedOptions_
+  commentId: M:Archivist.Formats.Delimited.DelimitedReader.#ctor(Archivist.Options.DelimitedOptions)
+  name.vb: New(DelimitedOptions)
+  fullName: Archivist.Formats.Delimited.DelimitedReader.DelimitedReader(Archivist.Options.DelimitedOptions)
+  fullName.vb: Archivist.Formats.Delimited.DelimitedReader.New(Archivist.Options.DelimitedOptions)
+  nameWithType: DelimitedReader.DelimitedReader(DelimitedOptions)
+  nameWithType.vb: DelimitedReader.New(DelimitedOptions)
 - uid: Archivist.Formats.Delimited.DelimitedReader.#ctor*
   name: DelimitedReader
   href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader__ctor_
@@ -5011,6 +5023,25 @@ references:
   commentId: T:Archivist.Formats.Delimited.DelimitedWriter
   fullName: Archivist.Formats.Delimited.DelimitedWriter
   nameWithType: DelimitedWriter
+- uid: Archivist.Formats.Delimited.DelimitedWriter.#ctor(Archivist.Options.DelimitedOptions)
+  name: DelimitedWriter(DelimitedOptions)
+  href: api/Archivist.Formats.Delimited.DelimitedWriter.html#Archivist_Formats_Delimited_DelimitedWriter__ctor_Archivist_Options_DelimitedOptions_
+  commentId: M:Archivist.Formats.Delimited.DelimitedWriter.#ctor(Archivist.Options.DelimitedOptions)
+  name.vb: New(DelimitedOptions)
+  fullName: Archivist.Formats.Delimited.DelimitedWriter.DelimitedWriter(Archivist.Options.DelimitedOptions)
+  fullName.vb: Archivist.Formats.Delimited.DelimitedWriter.New(Archivist.Options.DelimitedOptions)
+  nameWithType: DelimitedWriter.DelimitedWriter(DelimitedOptions)
+  nameWithType.vb: DelimitedWriter.New(DelimitedOptions)
+- uid: Archivist.Formats.Delimited.DelimitedWriter.#ctor*
+  name: DelimitedWriter
+  href: api/Archivist.Formats.Delimited.DelimitedWriter.html#Archivist_Formats_Delimited_DelimitedWriter__ctor_
+  commentId: Overload:Archivist.Formats.Delimited.DelimitedWriter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.Delimited.DelimitedWriter.DelimitedWriter
+  fullName.vb: Archivist.Formats.Delimited.DelimitedWriter.New
+  nameWithType: DelimitedWriter.DelimitedWriter
+  nameWithType.vb: DelimitedWriter.New
 - uid: Archivist.Formats.Delimited.DelimitedWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
   name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.Formats.Delimited.DelimitedWriter.html#Archivist_Formats_Delimited_DelimitedWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
@@ -5104,11 +5135,14 @@ references:
   fullName: Archivist.Formats.Excel.ExcelReader.HeaderInfo
   nameWithType: ExcelReader.HeaderInfo
 - uid: Archivist.Formats.Excel.ExcelReader.InternalCanRead(System.IO.Stream)
-  name: InternalCanRead(Stream)
+  name: InternalCanRead(Stream?)
   href: api/Archivist.Formats.Excel.ExcelReader.html#Archivist_Formats_Excel_ExcelReader_InternalCanRead_System_IO_Stream_
   commentId: M:Archivist.Formats.Excel.ExcelReader.InternalCanRead(System.IO.Stream)
-  fullName: Archivist.Formats.Excel.ExcelReader.InternalCanRead(System.IO.Stream)
-  nameWithType: ExcelReader.InternalCanRead(Stream)
+  name.vb: InternalCanRead(Stream)
+  fullName: Archivist.Formats.Excel.ExcelReader.InternalCanRead(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.Excel.ExcelReader.InternalCanRead(System.IO.Stream)
+  nameWithType: ExcelReader.InternalCanRead(Stream?)
+  nameWithType.vb: ExcelReader.InternalCanRead(Stream)
 - uid: Archivist.Formats.Excel.ExcelReader.InternalCanRead*
   name: InternalCanRead
   href: api/Archivist.Formats.Excel.ExcelReader.html#Archivist_Formats_Excel_ExcelReader_InternalCanRead_
@@ -5824,3 +5858,67 @@ references:
   fullName.vb: Archivist.Interfaces.IObjectConvertable.ConvertTo(Of TObject)()
   nameWithType: IObjectConvertable.ConvertTo<TObject>()
   nameWithType.vb: IObjectConvertable.ConvertTo(Of TObject)()
+- uid: Archivist.Options
+  name: Archivist.Options
+  href: api/Archivist.Options.html
+  commentId: N:Archivist.Options
+  fullName: Archivist.Options
+  nameWithType: Archivist.Options
+- uid: Archivist.Options.DelimitedOptions
+  name: DelimitedOptions
+  href: api/Archivist.Options.DelimitedOptions.html
+  commentId: T:Archivist.Options.DelimitedOptions
+  fullName: Archivist.Options.DelimitedOptions
+  nameWithType: DelimitedOptions
+- uid: Archivist.Options.DelimitedOptions.Default
+  name: Default
+  href: api/Archivist.Options.DelimitedOptions.html#Archivist_Options_DelimitedOptions_Default
+  commentId: P:Archivist.Options.DelimitedOptions.Default
+  fullName: Archivist.Options.DelimitedOptions.Default
+  nameWithType: DelimitedOptions.Default
+- uid: Archivist.Options.DelimitedOptions.Default*
+  name: Default
+  href: api/Archivist.Options.DelimitedOptions.html#Archivist_Options_DelimitedOptions_Default_
+  commentId: Overload:Archivist.Options.DelimitedOptions.Default
+  isSpec: "True"
+  fullName: Archivist.Options.DelimitedOptions.Default
+  nameWithType: DelimitedOptions.Default
+- uid: Archivist.Options.DelimitedOptions.DefaultSeparator
+  name: DefaultSeparator
+  href: api/Archivist.Options.DelimitedOptions.html#Archivist_Options_DelimitedOptions_DefaultSeparator
+  commentId: P:Archivist.Options.DelimitedOptions.DefaultSeparator
+  fullName: Archivist.Options.DelimitedOptions.DefaultSeparator
+  nameWithType: DelimitedOptions.DefaultSeparator
+- uid: Archivist.Options.DelimitedOptions.DefaultSeparator*
+  name: DefaultSeparator
+  href: api/Archivist.Options.DelimitedOptions.html#Archivist_Options_DelimitedOptions_DefaultSeparator_
+  commentId: Overload:Archivist.Options.DelimitedOptions.DefaultSeparator
+  isSpec: "True"
+  fullName: Archivist.Options.DelimitedOptions.DefaultSeparator
+  nameWithType: DelimitedOptions.DefaultSeparator
+- uid: Archivist.Options.DelimitedOptions.FirstRowIsColumnHeaders
+  name: FirstRowIsColumnHeaders
+  href: api/Archivist.Options.DelimitedOptions.html#Archivist_Options_DelimitedOptions_FirstRowIsColumnHeaders
+  commentId: P:Archivist.Options.DelimitedOptions.FirstRowIsColumnHeaders
+  fullName: Archivist.Options.DelimitedOptions.FirstRowIsColumnHeaders
+  nameWithType: DelimitedOptions.FirstRowIsColumnHeaders
+- uid: Archivist.Options.DelimitedOptions.FirstRowIsColumnHeaders*
+  name: FirstRowIsColumnHeaders
+  href: api/Archivist.Options.DelimitedOptions.html#Archivist_Options_DelimitedOptions_FirstRowIsColumnHeaders_
+  commentId: Overload:Archivist.Options.DelimitedOptions.FirstRowIsColumnHeaders
+  isSpec: "True"
+  fullName: Archivist.Options.DelimitedOptions.FirstRowIsColumnHeaders
+  nameWithType: DelimitedOptions.FirstRowIsColumnHeaders
+- uid: Archivist.Options.DelimitedOptions.Quote
+  name: Quote
+  href: api/Archivist.Options.DelimitedOptions.html#Archivist_Options_DelimitedOptions_Quote
+  commentId: P:Archivist.Options.DelimitedOptions.Quote
+  fullName: Archivist.Options.DelimitedOptions.Quote
+  nameWithType: DelimitedOptions.Quote
+- uid: Archivist.Options.DelimitedOptions.Quote*
+  name: Quote
+  href: api/Archivist.Options.DelimitedOptions.html#Archivist_Options_DelimitedOptions_Quote_
+  commentId: Overload:Archivist.Options.DelimitedOptions.Quote
+  isSpec: "True"
+  fullName: Archivist.Options.DelimitedOptions.Quote
+  nameWithType: DelimitedOptions.Quote
