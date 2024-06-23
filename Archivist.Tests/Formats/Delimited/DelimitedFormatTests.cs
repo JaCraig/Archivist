@@ -1,6 +1,9 @@
 using Archivist.Formats.Delimited;
+using Archivist.Options;
 using Archivist.Tests.BaseClasses;
 using BigBook;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using System;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +15,15 @@ namespace Archivist.Tests.Formats.Delimited
     {
         public DelimitedFormatTests()
         {
-            _TestClass = new DelimitedFormat();
-            TestObject = new DelimitedFormat();
+            var Services = new ServiceCollection();
+            _ = Services.AddOptions();
+            _ = Services.Configure<DelimitedOptions>(_ => { });
+            ServiceProvider = Services.BuildServiceProvider();
+            _TestClass = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>());
+            TestObject = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>());
         }
+
+        private ServiceProvider ServiceProvider { get; }
 
         private readonly DelimitedFormat _TestClass;
 
@@ -22,7 +31,7 @@ namespace Archivist.Tests.Formats.Delimited
         public void CanConstruct()
         {
             // Act
-            var Instance = new DelimitedFormat();
+            var Instance = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>());
 
             // Assert
             Assert.NotNull(Instance);

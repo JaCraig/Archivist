@@ -190,6 +190,18 @@ namespace Archivist.DataTypes
         public void AddRange(IEnumerable<TableCell> collection) => Cells.AddRange(collection ?? Array.Empty<TableCell>());
 
         /// <summary>
+        /// Adds a list of cells to the row with the specified content.
+        /// </summary>
+        /// <param name="collection">The list of content to add.</param>
+        public void AddRange(IEnumerable<string> collection)
+        {
+            if (collection is null)
+                return;
+            foreach (var Item in collection)
+                Add(Item);
+        }
+
+        /// <summary>
         /// Removes all cells from the row.
         /// </summary>
         public void Clear() => Cells.Clear();

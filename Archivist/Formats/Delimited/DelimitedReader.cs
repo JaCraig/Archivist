@@ -2,6 +2,7 @@
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
+using Archivist.Options;
 using System;
 using System.Buffers;
 using System.Collections.Generic;
@@ -22,13 +23,14 @@ namespace Archivist.Formats.Delimited
         /// <summary>
         /// Initializes a new instance of the <see cref="DelimitedReader"/> class.
         /// </summary>
-        public DelimitedReader()
+        public DelimitedReader(DelimitedOptions options)
         {
             string[] Delimiters = { ",", "|", "\t", "$", ";", ":" };
             foreach (var Delimiter in Delimiters)
             {
                 _DelimiterSplitters.Add(Delimiter, new Regex(string.Format(CultureInfo.InvariantCulture, "(?<Value>\"(?:[^\"]|\"\")*\"|[^{0}\r\n]*?)(?<Delimiter>{0}|\r\n|\n|$)", Regex.Escape(Delimiter)), RegexOptions.Compiled));
             }
+            Options = options;
         }
 
         /// <summary>
@@ -40,6 +42,11 @@ namespace Archivist.Formats.Delimited
         /// Gets the delimiter splitter.
         /// </summary>
         private static Regex DelimiterSplitter { get; } = new Regex("[^\"\r\n]*(\r\n|\n|$)|(([^\"\r\n]*)(\"[^\"]*\")([^\"\r\n]*))*(\r\n|\n|$)", RegexOptions.Compiled);
+
+        /// <summary>
+        /// Gets the options.
+        /// </summary>
+        private DelimitedOptions Options { get; }
 
         /// <summary>
         /// Gets the delimiter splitters.
@@ -80,7 +87,7 @@ namespace Archivist.Formats.Delimited
             }
 
             if (ReturnValue.Count > 0)
-                SetupColumnHeaders(ReturnValue);
+                SetupColumnHeaders(ReturnValue, Options);
             return ReturnValue;
         }
 
@@ -142,8 +149,11 @@ namespace Archivist.Formats.Delimited
         /// Setups the column headers.
         /// </summary>
         /// <param name="returnValue">The return value.</param>
-        private static void SetupColumnHeaders(Table returnValue)
+        /// <param name="options">The options.</param>
+        private static void SetupColumnHeaders(Table returnValue, DelimitedOptions options)
         {
+            if (!options.FirstRowIsColumnHeaders)
+                return;
             TableRow FirstRow = returnValue[0];
             _ = returnValue.Remove(FirstRow);
             foreach (TableCell Cell in FirstRow)

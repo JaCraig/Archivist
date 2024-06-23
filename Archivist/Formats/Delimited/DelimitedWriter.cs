@@ -1,6 +1,7 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.DataTypes;
 using Archivist.Interfaces;
+using Archivist.Options;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,20 @@ namespace Archivist.Formats.Delimited
     /// <seealso cref="WriterBaseClass"/>
     public class DelimitedWriter : WriterBaseClass
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DelimitedWriter"/> class.
+        /// </summary>
+        /// <param name="options">The options for the delimited writer.</param>
+        public DelimitedWriter(DelimitedOptions options)
+        {
+            Options = options ?? DelimitedOptions.Default;
+        }
+
+        /// <summary>
+        /// The options for the delimited writer.
+        /// </summary>
+        private DelimitedOptions Options { get; }
+
         /// <summary>
         /// Writes the content of the file to the specified stream asynchronously.
         /// </summary>
@@ -30,11 +45,11 @@ namespace Archivist.Formats.Delimited
             Table? FileTable = file.ToFileType<Table>();
             if (FileTable is not null)
             {
-                _ = Builder.Append(CreateFromTable(FileTable));
+                _ = Builder.Append(CreateFromTable(FileTable, Options));
             }
             else
             {
-                _ = Builder.Append(CreateFromFile(file));
+                _ = Builder.Append(CreateFromFile(file, Options));
             }
             var ByteData = Encoding.UTF8.GetBytes(Builder.ToString());
             try
@@ -52,25 +67,30 @@ namespace Archivist.Formats.Delimited
         /// Creates the file data from a file object.
         /// </summary>
         /// <param name="file">The file object.</param>
+        /// <param name="options"></param>
         /// <returns>The file data as a string.</returns>
-        private static string CreateFromFile(IGenericFile file) => "\"" + file?.ToString()?.Replace("\"", "") + "\"";
+        private static string CreateFromFile(IGenericFile file, DelimitedOptions options) => options.Quote + file?.ToString()?.Replace(options.Quote ?? "", "") + options.Quote;
 
         /// <summary>
         /// Creates the file data from a table object.
         /// </summary>
         /// <param name="fileTable">The table object representing the file.</param>
+        /// <param name="options">The options for the delimited writer.</param>
         /// <returns>The file data as a string.</returns>
-        private static string CreateFromTable(Table fileTable)
+        private static string CreateFromTable(Table fileTable, DelimitedOptions options)
         {
             if (!fileTable.Metadata.TryGetValue("Delimiter", out var Delimiter))
-                Delimiter = ",";
+                Delimiter = options.DefaultSeparator;
             var Builder = new StringBuilder();
             var Seperator = "";
             if (fileTable.Columns.Count > 0)
             {
                 foreach (var HeaderColumn in fileTable.Columns)
                 {
-                    _ = Builder.Append(Seperator).Append('"').Append(HeaderColumn?.Replace("\"", "") ?? "").Append('"');
+                    var Header = HeaderColumn;
+                    if (!string.IsNullOrEmpty(options.Quote) && !string.IsNullOrEmpty(Header))
+                        Header = Header.Replace(options.Quote, "");
+                    _ = Builder.Append(Seperator).Append(options.Quote).Append(Header ?? "").Append(options.Quote);
                     Seperator = Delimiter;
                 }
                 _ = Builder.AppendLine();
@@ -80,7 +100,10 @@ namespace Archivist.Formats.Delimited
                 Seperator = "";
                 foreach (TableCell CurrentCell in Row)
                 {
-                    _ = Builder.Append(Seperator).Append('"').Append(CurrentCell.Content?.Replace("\"", "") ?? "").Append('"');
+                    var Content = CurrentCell.Content;
+                    if (!string.IsNullOrEmpty(options.Quote) && !string.IsNullOrEmpty(Content))
+                        Content = Content.Replace(options.Quote, "");
+                    _ = Builder.Append(Seperator).Append(options.Quote).Append(Content ?? "").Append(options.Quote);
                     Seperator = Delimiter;
                 }
                 _ = Builder.AppendLine();

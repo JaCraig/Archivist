@@ -1,4 +1,5 @@
 using Archivist.Formats.Delimited;
+using Archivist.Options;
 using Archivist.Tests.BaseClasses;
 using Archivist.Tests.Utils;
 using BigBook;
@@ -12,8 +13,8 @@ namespace Archivist.Tests.Formats.Delimited
     {
         public DelimitedReaderTests()
         {
-            _TestClass = new DelimitedReader();
-            TestObject = new DelimitedReader();
+            _TestClass = new DelimitedReader(DelimitedOptions.Default);
+            TestObject = new DelimitedReader(DelimitedOptions.Default);
         }
 
         private readonly DelimitedReader _TestClass;
@@ -35,7 +36,7 @@ namespace Archivist.Tests.Formats.Delimited
         public void CanConstruct()
         {
             // Act
-            var Instance = new DelimitedReader();
+            var Instance = new DelimitedReader(DelimitedOptions.Default);
 
             // Assert
             Assert.NotNull(Instance);

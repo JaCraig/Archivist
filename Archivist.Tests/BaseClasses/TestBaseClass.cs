@@ -37,7 +37,7 @@ namespace Archivist.Tests.BaseClasses
         /// </summary>
         /// <returns>The async task.</returns>
         [Fact]
-        public Task BreakObject() => Mech.BreakAsync(TestObject, new Options { MaxDuration = 100 });
+        public Task BreakObject() => Mech.BreakAsync(TestObject, new Mecha.Core.Options { MaxDuration = 100 });
     }
 
     /// <summary>
@@ -54,6 +54,12 @@ namespace Archivist.Tests.BaseClasses
         }
 
         /// <summary>
+        /// Gets the type of the object.
+        /// </summary>
+        /// <value>The type of the object.</value>
+        protected abstract Type? ObjectType { get; }
+
+        /// <summary>
         /// The service provider lock
         /// </summary>
         private static readonly object _ServiceProviderLock = new();
@@ -64,17 +70,11 @@ namespace Archivist.Tests.BaseClasses
         private static IServiceProvider? _ServiceProvider;
 
         /// <summary>
-        /// Gets the type of the object.
-        /// </summary>
-        /// <value>The type of the object.</value>
-        protected abstract Type? ObjectType { get; }
-
-        /// <summary>
         /// Attempts to break the object.
         /// </summary>
         /// <returns>The async task.</returns>
         [Fact]
-        public Task BreakType() => ObjectType is null ? Task.CompletedTask : Mech.BreakAsync(ObjectType, new Options { MaxDuration = 100 });
+        public Task BreakType() => ObjectType is null ? Task.CompletedTask : Mech.BreakAsync(ObjectType, new Mecha.Core.Options { MaxDuration = 100 });
 
         /// <summary>
         /// Gets the service provider.

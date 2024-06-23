@@ -57,13 +57,15 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="stream">The stream to read.</param>
         /// <returns><c>true</c> if the reader can read the file; otherwise, <c>false</c>.</returns>
-        public virtual bool InternalCanRead(Stream stream) => true;
+        public virtual bool InternalCanRead(Stream? stream) => true;
 
         /// <summary>
         /// Reads the file asynchronously.
         /// </summary>
         /// <param name="stream">The stream to read.</param>
-        /// <returns>A task representing the asynchronous operation that returns the generic file.</returns>
+        /// <returns>
+        /// A task representing the asynchronous operation that returns the generic file.
+        /// </returns>
         public abstract Task<IGenericFile?> ReadAsync(Stream? stream);
 
         /// <summary>

@@ -1,4 +1,6 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Options;
+using Microsoft.Extensions.Options;
 
 namespace Archivist.Formats.Delimited
 {
@@ -11,8 +13,8 @@ namespace Archivist.Formats.Delimited
         /// <summary>
         /// Initializes a new instance of the <see cref="DelimitedFormat"/> class.
         /// </summary>
-        public DelimitedFormat()
-            : base(new DelimitedReader(), new DelimitedWriter())
+        public DelimitedFormat(IOptions<DelimitedOptions>? options)
+            : base(new DelimitedReader(options?.Value ?? DelimitedOptions.Default), new DelimitedWriter(options?.Value ?? DelimitedOptions.Default))
         {
         }
 

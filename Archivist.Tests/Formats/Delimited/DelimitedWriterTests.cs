@@ -1,4 +1,5 @@
 using Archivist.Formats.Delimited;
+using Archivist.Options;
 using Archivist.Tests.BaseClasses;
 using BigBook;
 using System;
@@ -13,8 +14,8 @@ namespace Archivist.Tests.Formats.Delimited
     {
         public DelimitedWriterTests()
         {
-            _TestClass = new DelimitedWriter();
-            TestObject = new DelimitedWriter();
+            _TestClass = new DelimitedWriter(DelimitedOptions.Default);
+            TestObject = new DelimitedWriter(DelimitedOptions.Default);
         }
 
         private readonly DelimitedWriter _TestClass;

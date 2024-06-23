@@ -167,22 +167,25 @@ namespace Archivist.Formats.Excel
                 document.PackageProperties.LastPrinted = LastPrinted;
 
             ExtendedFilePropertiesPart ExtendedProperties = document.AddExtendedFilePropertiesPart();
-            ExtendedProperties.Properties.Application = new Application { Text = returnValue.Metadata.GetValueOrDefault("Application") ?? "" };
-            ExtendedProperties.Properties.ApplicationVersion = new ApplicationVersion { Text = returnValue.Metadata.GetValueOrDefault("ApplicationVersion") ?? "" };
-            ExtendedProperties.Properties.Company = new Company { Text = returnValue.Metadata.GetValueOrDefault("Company") ?? "" };
-            ExtendedProperties.Properties.Manager = new Manager { Text = returnValue.Metadata.GetValueOrDefault("Manager") ?? "" };
-            ExtendedProperties.Properties.HyperlinkBase = new HyperlinkBase { Text = returnValue.Metadata.GetValueOrDefault("HyperlinkBase") ?? "" };
-            ExtendedProperties.Properties.Template = new Template { Text = returnValue.Metadata.GetValueOrDefault("Template") ?? "" };
-            ExtendedProperties.Properties.TotalTime = new TotalTime { Text = returnValue.Metadata.GetValueOrDefault("TotalTime") ?? "" };
-            ExtendedProperties.Properties.Pages = new DocumentFormat.OpenXml.ExtendedProperties.Pages { Text = returnValue.Metadata.GetValueOrDefault("Pages") ?? "" };
-            ExtendedProperties.Properties.Words = new Words { Text = returnValue.Metadata.GetValueOrDefault("Words") ?? "" };
-            ExtendedProperties.Properties.Characters = new Characters { Text = returnValue.Metadata.GetValueOrDefault("Characters") ?? "" };
-            ExtendedProperties.Properties.CharactersWithSpaces = new CharactersWithSpaces { Text = returnValue.Metadata.GetValueOrDefault("CharactersWithSpaces") ?? "" };
-            ExtendedProperties.Properties.Lines = new Lines { Text = returnValue.Metadata.GetValueOrDefault("Lines") ?? "" };
-            ExtendedProperties.Properties.Paragraphs = new Paragraphs { Text = returnValue.Metadata.GetValueOrDefault("Paragraphs") ?? "" };
-            ExtendedProperties.Properties.PresentationFormat = new PresentationFormat { Text = returnValue.Metadata.GetValueOrDefault("PresentationFormat") ?? "" };
-            ExtendedProperties.Properties.LinksUpToDate = new LinksUpToDate { Text = returnValue.Metadata.GetValueOrDefault("LinksUpToDate") ?? "" };
-            ExtendedProperties.Properties.HyperlinksChanged = new HyperlinksChanged { Text = returnValue.Metadata.GetValueOrDefault("HyperlinksChanged") ?? "" };
+            ExtendedProperties.Properties = new DocumentFormat.OpenXml.ExtendedProperties.Properties
+            {
+                Application = new Application { Text = returnValue.Metadata.GetValueOrDefault("Application") ?? "" },
+                ApplicationVersion = new ApplicationVersion { Text = returnValue.Metadata.GetValueOrDefault("ApplicationVersion") ?? "" },
+                Company = new Company { Text = returnValue.Metadata.GetValueOrDefault("Company") ?? "" },
+                Manager = new Manager { Text = returnValue.Metadata.GetValueOrDefault("Manager") ?? "" },
+                HyperlinkBase = new HyperlinkBase { Text = returnValue.Metadata.GetValueOrDefault("HyperlinkBase") ?? "" },
+                Template = new Template { Text = returnValue.Metadata.GetValueOrDefault("Template") ?? "" },
+                TotalTime = new TotalTime { Text = returnValue.Metadata.GetValueOrDefault("TotalTime") ?? "" },
+                Pages = new DocumentFormat.OpenXml.ExtendedProperties.Pages { Text = returnValue.Metadata.GetValueOrDefault("Pages") ?? "" },
+                Words = new Words { Text = returnValue.Metadata.GetValueOrDefault("Words") ?? "" },
+                Characters = new Characters { Text = returnValue.Metadata.GetValueOrDefault("Characters") ?? "" },
+                CharactersWithSpaces = new CharactersWithSpaces { Text = returnValue.Metadata.GetValueOrDefault("CharactersWithSpaces") ?? "" },
+                Lines = new Lines { Text = returnValue.Metadata.GetValueOrDefault("Lines") ?? "" },
+                Paragraphs = new Paragraphs { Text = returnValue.Metadata.GetValueOrDefault("Paragraphs") ?? "" },
+                PresentationFormat = new PresentationFormat { Text = returnValue.Metadata.GetValueOrDefault("PresentationFormat") ?? "" },
+                LinksUpToDate = new LinksUpToDate { Text = returnValue.Metadata.GetValueOrDefault("LinksUpToDate") ?? "" },
+                HyperlinksChanged = new HyperlinksChanged { Text = returnValue.Metadata.GetValueOrDefault("HyperlinksChanged") ?? "" }
+            };
             CustomFilePropertiesPart CustomProperties = document.AddCustomFilePropertiesPart();
 
             foreach (var MetadataKey in returnValue.Metadata.Keys)
