@@ -1,5 +1,6 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Interfaces;
+using Archivist.Options;
 using DocumentFormat.OpenXml.CustomProperties;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
@@ -15,12 +16,27 @@ namespace Archivist.Formats.Excel
     /// <summary>
     /// Represents a reader for Excel files.
     /// </summary>
+    /// <seealso cref="ReaderBaseClass"/>
     public class ExcelReader : ReaderBaseClass
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ExcelReader"/> class.
+        /// </summary>
+        /// <param name="options">The Excel options.</param>
+        public ExcelReader(ExcelOptions options)
+        {
+            Options = options;
+        }
+
         /// <summary>
         /// Gets the header information for Excel files.
         /// </summary>
         public override byte[] HeaderInfo { get; } = new byte[] { 0x50, 0x4B, 0x03, 0x04 };
+
+        /// <summary>
+        /// Gets the Excel options.
+        /// </summary>
+        public ExcelOptions Options { get; }
 
         /// <summary>
         /// Gets the regular expression pattern for matching alphabetic strings.
@@ -114,19 +130,24 @@ namespace Archivist.Formats.Excel
                     if (Rows.Count == 0)
                         continue;
 
+                    var CurrentRow = 0;
+
                     Row Row = Rows[0];
-                    IEnumerator<Cell> CellEnumerator = GetExcelCellEnumerator(Row);
-                    while (CellEnumerator.MoveNext())
+                    IEnumerator<Cell>? CellEnumerator = null;
+                    if (Options.FirstRowIsColumnHeaders)
                     {
-                        Cell Cell = CellEnumerator.Current;
-                        var Text = ReadExcelCell(Cell, WorkbookPart).Trim();
-                        CurrentTable.Columns.Add(Text);
+                        CellEnumerator = GetExcelCellEnumerator(Row);
+                        while (CellEnumerator.MoveNext())
+                        {
+                            Cell Cell = CellEnumerator.Current;
+                            var Text = ReadExcelCell(Cell, WorkbookPart).Trim();
+                            CurrentTable.Columns.Add(Text);
+                        }
+                        CurrentRow = 1;
                     }
 
                     // Read the sheet data
-                    if (Rows.Count <= 1)
-                        continue;
-                    for (var I = 1; I < Rows.Count; I++)
+                    for (var I = CurrentRow; I < Rows.Count; I++)
                     {
                         DataTypes.TableRow DataRow = CurrentTable.AddRow();
                         Row = Rows[I];

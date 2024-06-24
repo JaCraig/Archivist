@@ -60,7 +60,6 @@
     <Folder Include="Formats\ICal\" />
     <Folder Include="Formats\Mime\" />
     <Folder Include="Formats\MSG\" />
-    <Folder Include="Formats\JSON\" />
     <Folder Include="Formats\Markdown\" />
     <Folder Include="Formats\Image\" />
     <Folder Include="Formats\PNG\" />

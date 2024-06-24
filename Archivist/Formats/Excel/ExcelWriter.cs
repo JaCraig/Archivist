@@ -21,6 +21,13 @@ namespace Archivist.Formats.Excel
     public class ExcelWriter : WriterBaseClass
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="ExcelWriter"/> class.
+        /// </summary>
+        public ExcelWriter()
+        {
+        }
+
+        /// <summary>
         /// The default metadata.
         /// </summary>
         private static readonly string[] _DefaultMetadata = new string[]
@@ -111,6 +118,71 @@ namespace Archivist.Formats.Excel
         }
 
         /// <summary>
+        /// Writes the custom properties to the specified document.
+        /// </summary>
+        /// <param name="returnValue">Return Value</param>
+        /// <param name="document">Document</param>
+        private static void WriteCustomProperties(IGenericFile returnValue, SpreadsheetDocument document)
+        {
+            CustomFilePropertiesPart CustomProperties = document.AddCustomFilePropertiesPart();
+
+            foreach (var MetadataKey in returnValue.Metadata.Keys)
+            {
+                if (MetadataKey is null)
+                    continue;
+                if (_DefaultMetadata.Contains(MetadataKey))
+                    continue;
+                var CustomProperty = new CustomDocumentProperty
+                {
+                    Name = MetadataKey
+                };
+                if (DateTime.TryParse(returnValue.Metadata[MetadataKey], out DateTime TempDateTime))
+                    CustomProperty.VTFileTime = new VTFileTime { Text = TempDateTime.ToString("yyyy-MM-ddTHH:mm:ssZ") };
+                else if (int.TryParse(returnValue.Metadata[MetadataKey], out var TempInt))
+                    CustomProperty.VTInt32 = new VTInt32 { Text = TempInt.ToString() };
+                else if (long.TryParse(returnValue.Metadata[MetadataKey], out var TempLong))
+                    CustomProperty.VTInt64 = new VTInt64 { Text = TempLong.ToString() };
+                else if (double.TryParse(returnValue.Metadata[MetadataKey], out var TempDouble))
+                    CustomProperty.VTDouble = new VTDouble { Text = TempDouble.ToString() };
+                else if (bool.TryParse(returnValue.Metadata[MetadataKey], out var TempBool))
+                    CustomProperty.VTBool = new VTBool { Text = TempBool ? "true" : "false" };
+                else
+                    CustomProperty.VTLPWSTR = new VTLPWSTR { Text = returnValue.Metadata[MetadataKey] };
+
+                CustomProperties.Properties.Append(CustomProperty);
+            }
+        }
+
+        /// <summary>
+        /// Writes the extended properties to the specified document.
+        /// </summary>
+        /// <param name="returnValue">Return value</param>
+        /// <param name="document">Document</param>
+        private static void WriteExtendedProperties(IGenericFile returnValue, SpreadsheetDocument document)
+        {
+            ExtendedFilePropertiesPart ExtendedProperties = document.AddExtendedFilePropertiesPart();
+            ExtendedProperties.Properties = new DocumentFormat.OpenXml.ExtendedProperties.Properties
+            {
+                Application = new Application { Text = returnValue.Metadata.GetValueOrDefault("Application") ?? "" },
+                ApplicationVersion = new ApplicationVersion { Text = returnValue.Metadata.GetValueOrDefault("ApplicationVersion") ?? "" },
+                Company = new Company { Text = returnValue.Metadata.GetValueOrDefault("Company") ?? "" },
+                Manager = new Manager { Text = returnValue.Metadata.GetValueOrDefault("Manager") ?? "" },
+                HyperlinkBase = new HyperlinkBase { Text = returnValue.Metadata.GetValueOrDefault("HyperlinkBase") ?? "" },
+                Template = new Template { Text = returnValue.Metadata.GetValueOrDefault("Template") ?? "" },
+                TotalTime = new TotalTime { Text = returnValue.Metadata.GetValueOrDefault("TotalTime") ?? "" },
+                Pages = new DocumentFormat.OpenXml.ExtendedProperties.Pages { Text = returnValue.Metadata.GetValueOrDefault("Pages") ?? "" },
+                Words = new Words { Text = returnValue.Metadata.GetValueOrDefault("Words") ?? "" },
+                Characters = new Characters { Text = returnValue.Metadata.GetValueOrDefault("Characters") ?? "" },
+                CharactersWithSpaces = new CharactersWithSpaces { Text = returnValue.Metadata.GetValueOrDefault("CharactersWithSpaces") ?? "" },
+                Lines = new Lines { Text = returnValue.Metadata.GetValueOrDefault("Lines") ?? "" },
+                Paragraphs = new Paragraphs { Text = returnValue.Metadata.GetValueOrDefault("Paragraphs") ?? "" },
+                PresentationFormat = new PresentationFormat { Text = returnValue.Metadata.GetValueOrDefault("PresentationFormat") ?? "" },
+                LinksUpToDate = new LinksUpToDate { Text = returnValue.Metadata.GetValueOrDefault("LinksUpToDate") ?? "" },
+                HyperlinksChanged = new HyperlinksChanged { Text = returnValue.Metadata.GetValueOrDefault("HyperlinksChanged") ?? "" }
+            };
+        }
+
+        /// <summary>
         /// Write a generic file to the specified stream asynchronously.
         /// </summary>
         /// <param name="stream">The stream to write to.</param>
@@ -146,6 +218,18 @@ namespace Archivist.Formats.Excel
         /// <param name="document">The Excel document.</param>
         private static void WriteMetadata(IGenericFile returnValue, SpreadsheetDocument document)
         {
+            WritePackageProperties(returnValue, document);
+            WriteExtendedProperties(returnValue, document);
+            WriteCustomProperties(returnValue, document);
+        }
+
+        /// <summary>
+        /// Writes the package properties to the specified document.
+        /// </summary>
+        /// <param name="returnValue">Return value</param>
+        /// <param name="document">Document</param>
+        private static void WritePackageProperties(IGenericFile returnValue, SpreadsheetDocument document)
+        {
             document.PackageProperties.Creator = returnValue.Metadata.GetValueOrDefault("Author") ?? "";
             document.PackageProperties.Title = returnValue.Metadata.GetValueOrDefault("Title") ?? "";
             if (DateTime.TryParse(returnValue.Metadata.GetValueOrDefault("Created") ?? "", out DateTime Created))
@@ -165,54 +249,6 @@ namespace Archivist.Formats.Excel
             document.PackageProperties.ContentType = returnValue.Metadata.GetValueOrDefault("ContentType") ?? "";
             if (DateTime.TryParse(returnValue.Metadata.GetValueOrDefault("LastPrinted") ?? "", out DateTime LastPrinted))
                 document.PackageProperties.LastPrinted = LastPrinted;
-
-            ExtendedFilePropertiesPart ExtendedProperties = document.AddExtendedFilePropertiesPart();
-            ExtendedProperties.Properties = new DocumentFormat.OpenXml.ExtendedProperties.Properties
-            {
-                Application = new Application { Text = returnValue.Metadata.GetValueOrDefault("Application") ?? "" },
-                ApplicationVersion = new ApplicationVersion { Text = returnValue.Metadata.GetValueOrDefault("ApplicationVersion") ?? "" },
-                Company = new Company { Text = returnValue.Metadata.GetValueOrDefault("Company") ?? "" },
-                Manager = new Manager { Text = returnValue.Metadata.GetValueOrDefault("Manager") ?? "" },
-                HyperlinkBase = new HyperlinkBase { Text = returnValue.Metadata.GetValueOrDefault("HyperlinkBase") ?? "" },
-                Template = new Template { Text = returnValue.Metadata.GetValueOrDefault("Template") ?? "" },
-                TotalTime = new TotalTime { Text = returnValue.Metadata.GetValueOrDefault("TotalTime") ?? "" },
-                Pages = new DocumentFormat.OpenXml.ExtendedProperties.Pages { Text = returnValue.Metadata.GetValueOrDefault("Pages") ?? "" },
-                Words = new Words { Text = returnValue.Metadata.GetValueOrDefault("Words") ?? "" },
-                Characters = new Characters { Text = returnValue.Metadata.GetValueOrDefault("Characters") ?? "" },
-                CharactersWithSpaces = new CharactersWithSpaces { Text = returnValue.Metadata.GetValueOrDefault("CharactersWithSpaces") ?? "" },
-                Lines = new Lines { Text = returnValue.Metadata.GetValueOrDefault("Lines") ?? "" },
-                Paragraphs = new Paragraphs { Text = returnValue.Metadata.GetValueOrDefault("Paragraphs") ?? "" },
-                PresentationFormat = new PresentationFormat { Text = returnValue.Metadata.GetValueOrDefault("PresentationFormat") ?? "" },
-                LinksUpToDate = new LinksUpToDate { Text = returnValue.Metadata.GetValueOrDefault("LinksUpToDate") ?? "" },
-                HyperlinksChanged = new HyperlinksChanged { Text = returnValue.Metadata.GetValueOrDefault("HyperlinksChanged") ?? "" }
-            };
-            CustomFilePropertiesPart CustomProperties = document.AddCustomFilePropertiesPart();
-
-            foreach (var MetadataKey in returnValue.Metadata.Keys)
-            {
-                if (MetadataKey is null)
-                    continue;
-                if (_DefaultMetadata.Contains(MetadataKey))
-                    continue;
-                var CustomProperty = new CustomDocumentProperty
-                {
-                    Name = MetadataKey
-                };
-                if (DateTime.TryParse(returnValue.Metadata[MetadataKey], out DateTime TempDateTime))
-                    CustomProperty.VTFileTime = new VTFileTime { Text = TempDateTime.ToString("yyyy-MM-ddTHH:mm:ssZ") };
-                else if (int.TryParse(returnValue.Metadata[MetadataKey], out var TempInt))
-                    CustomProperty.VTInt32 = new VTInt32 { Text = TempInt.ToString() };
-                else if (long.TryParse(returnValue.Metadata[MetadataKey], out var TempLong))
-                    CustomProperty.VTInt64 = new VTInt64 { Text = TempLong.ToString() };
-                else if (double.TryParse(returnValue.Metadata[MetadataKey], out var TempDouble))
-                    CustomProperty.VTDouble = new VTDouble { Text = TempDouble.ToString() };
-                else if (bool.TryParse(returnValue.Metadata[MetadataKey], out var TempBool))
-                    CustomProperty.VTBool = new VTBool { Text = TempBool ? "true" : "false" };
-                else
-                    CustomProperty.VTLPWSTR = new VTLPWSTR { Text = returnValue.Metadata[MetadataKey] };
-
-                CustomProperties.Properties.Append(CustomProperty);
-            }
         }
 
         /// <summary>

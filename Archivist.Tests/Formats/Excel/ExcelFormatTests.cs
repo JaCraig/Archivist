@@ -1,5 +1,7 @@
 using Archivist.Formats.Excel;
+using Archivist.Options;
 using Archivist.Tests.BaseClasses;
+using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -9,16 +11,22 @@ namespace Archivist.Tests.Formats.Excel
     {
         public ExcelFormatTests()
         {
-            _TestClass = new ExcelFormat();
+            var Services = new ServiceCollection();
+            _ = Services.AddOptions();
+            _ = Services.Configure<DelimitedOptions>(_ => { });
+            _ServiceProvider = Services.BuildServiceProvider();
+            _TestClass = new ExcelFormat(_ServiceProvider.GetRequiredService<Microsoft.Extensions.Options.IOptions<ExcelOptions>>());
+            TestObject = new ExcelFormat(_ServiceProvider.GetRequiredService<Microsoft.Extensions.Options.IOptions<ExcelOptions>>());
         }
 
+        private readonly ServiceProvider _ServiceProvider;
         private readonly ExcelFormat _TestClass;
 
         [Fact]
         public void CanConstruct()
         {
             // Act
-            var Instance = new ExcelFormat();
+            var Instance = new ExcelFormat(_ServiceProvider.GetRequiredService<Microsoft.Extensions.Options.IOptions<ExcelOptions>>());
 
             // Assert
             Assert.NotNull(Instance);

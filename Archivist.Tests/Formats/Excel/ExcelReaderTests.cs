@@ -1,5 +1,6 @@
 using Archivist.DataTypes;
 using Archivist.Formats.Excel;
+using Archivist.Options;
 using Archivist.Tests.BaseClasses;
 using System.IO;
 using System.Threading.Tasks;
@@ -11,8 +12,8 @@ namespace Archivist.Tests.Formats.Excel
     {
         public ExcelReaderTests()
         {
-            _TestClass = new ExcelReader();
-            TestObject = new ExcelReader();
+            _TestClass = new ExcelReader(ExcelOptions.Default);
+            TestObject = new ExcelReader(ExcelOptions.Default);
         }
 
         private readonly ExcelReader _TestClass;
