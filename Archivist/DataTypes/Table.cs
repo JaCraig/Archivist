@@ -329,7 +329,8 @@ namespace Archivist.DataTypes
                 return;
             if (arrayIndex < 0 || arrayIndex >= array.Length)
                 throw new ArgumentOutOfRangeException(nameof(arrayIndex));
-            Rows.CopyTo(array, arrayIndex);
+            var Count = Math.Min(array.Length - arrayIndex, Rows.Count);
+            Rows.CopyTo(0, array, arrayIndex, Count);
         }
 
         /// <summary>
