@@ -1,5 +1,6 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.DataTypes;
+using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
 using System;
 using System.Dynamic;
@@ -61,9 +62,12 @@ namespace Archivist.Formats.JSON
         /// <returns>The parsed JSON file.</returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            if (stream is null)
+            if (stream?.CanRead != true)
                 return new StructuredObject();
-            ExpandoObject? Data = await JsonSerializer.DeserializeAsync<ExpandoObject>(stream, Options).ConfigureAwait(false);
+            var StreamData = await stream.ReadAllAsync().ConfigureAwait(false);
+            if (string.IsNullOrEmpty(StreamData))
+                return new StructuredObject();
+            ExpandoObject? Data = JsonSerializer.Deserialize<ExpandoObject>(StreamData, Options);
             if (Data is null)
                 return new StructuredObject();
 

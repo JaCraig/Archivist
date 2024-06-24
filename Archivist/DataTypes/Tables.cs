@@ -3,6 +3,7 @@ using Archivist.Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 
@@ -63,6 +64,30 @@ namespace Archivist.DataTypes
             var ReturnValue = (Card?)file.TableEntries.FirstOrDefault();
             if (ReturnValue is null)
                 return null;
+            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
+            {
+                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
+            }
+            ReturnValue.Title = file.Title;
+            return ReturnValue;
+        }
+
+        /// <summary>
+        /// Converts the Tables to a StructuredObject.
+        /// </summary>
+        /// <param name="file">The Tables to convert.</param>
+        public static implicit operator StructuredObject?(Tables? file)
+        {
+            if (file is null)
+                return null;
+            IDictionary<string, object?> ContentObject = new ExpandoObject();
+            foreach (Table Table in file.TableEntries)
+            {
+                if (string.IsNullOrEmpty(Table.Title))
+                    continue;
+                ContentObject.Add(Table.Title, (StructuredObject?)Table);
+            }
+            var ReturnValue = new StructuredObject(ContentObject);
             foreach (KeyValuePair<string, string> Metadata in file.Metadata)
             {
                 ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
@@ -379,6 +404,8 @@ namespace Archivist.DataTypes
                 ReturnValue = (Table?)this;
             else if (FileType == typeof(Text))
                 ReturnValue = (Text?)this;
+            else if (FileType == typeof(StructuredObject))
+                ReturnValue = (StructuredObject?)this;
 
             return (TFile?)ReturnValue;
         }

@@ -12,7 +12,7 @@ namespace Archivist.Formats.JSON
         /// <summary>
         /// Initializes a new instance of the <see cref="JsonFormat"/> class.
         /// </summary>
-        public JsonFormat(JsonSerializerOptions options)
+        public JsonFormat(JsonSerializerOptions? options)
             : base(new JsonReader(options), new JsonWriter(options))
         {
         }

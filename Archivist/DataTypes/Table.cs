@@ -3,6 +3,7 @@ using Archivist.Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Text;
 
 namespace Archivist.DataTypes
@@ -97,6 +98,36 @@ namespace Archivist.DataTypes
             {
                 ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
             }
+            return ReturnValue;
+        }
+
+        /// <summary>
+        /// Converts the table to a structured object.
+        /// </summary>
+        /// <param name="file">The table to convert.</param>
+        public static implicit operator StructuredObject?(Table? file)
+        {
+            if (file is null)
+                return null;
+            IDictionary<string, object?> ContentObject = new ExpandoObject();
+            foreach (var Column in file.Columns)
+            {
+                var ColumnList = new List<object>();
+                ContentObject.Add(Column, ColumnList);
+                foreach (TableRow Row in file.Rows)
+                {
+                    var Content = Row[Column]?.Content;
+                    if (string.IsNullOrEmpty(Content))
+                        continue;
+                    ColumnList.Add(Content);
+                }
+            }
+            var ReturnValue = new StructuredObject(ContentObject);
+            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
+            {
+                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
+            }
+            ReturnValue.Title = file.Title;
             return ReturnValue;
         }
 
@@ -426,6 +457,8 @@ namespace Archivist.DataTypes
                 ReturnValue = (Tables?)this;
             else if (FileType == typeof(Text))
                 ReturnValue = (Text?)this;
+            else if (FileType == typeof(StructuredObject))
+                ReturnValue = (StructuredObject?)this;
 
             return (TFile?)ReturnValue;
         }

@@ -205,6 +205,29 @@ namespace Archivist.DataTypes
         public IEnumerable<CardField?> this[string property, string? parameter] => Fields.Where(field => field?.Property == property && (field?.Parameters.Any(fieldParam => fieldParam.ToString() == parameter) ?? false)).ToList();
 
         /// <summary>
+        /// Converts the card to a structured object.
+        /// </summary>
+        /// <param name="file">The card to convert.</param>
+        public static implicit operator StructuredObject?(Card? file)
+        {
+            if (file is null)
+                return null;
+            var ReturnValue = new StructuredObject();
+            foreach (CardField? Field in file.Fields)
+            {
+                if (Field is null)
+                    continue;
+                ReturnValue[Field.Property] = Field.Value;
+            }
+            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
+            {
+                ReturnValue.Metadata[Metadata.Key] = Metadata.Value;
+            }
+            ReturnValue.Title = file.Title ?? file.FullName?.Value;
+            return ReturnValue;
+        }
+
+        /// <summary>
         /// Converts the card to a table.
         /// </summary>
         /// <param name="file">The card to convert.</param>
@@ -446,6 +469,8 @@ namespace Archivist.DataTypes
                 ReturnValue = (Tables?)this;
             else if (FileType == typeof(Text))
                 ReturnValue = (Text?)this;
+            else if (FileType == typeof(StructuredObject))
+                ReturnValue = (StructuredObject?)this;
 
             return (TFile?)ReturnValue;
         }

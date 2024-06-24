@@ -28,7 +28,7 @@ namespace Archivist.DataTypes
         /// specified content.
         /// </summary>
         /// <param name="value">The content of the structured object.</param>
-        public StructuredObject(ExpandoObject? value)
+        public StructuredObject(IDictionary<string, object?>? value)
         {
             Content = value ?? new ExpandoObject();
         }
@@ -78,6 +78,92 @@ namespace Archivist.DataTypes
                     return;
                 Content[key] = value;
             }
+        }
+
+        /// <summary>
+        /// Converts the structured object to a card.
+        /// </summary>
+        /// <param name="structuredObject">The structured object to convert.</param>
+        public static implicit operator Card?(StructuredObject? structuredObject)
+        {
+            if (structuredObject is null)
+                return null;
+            var ReturnValue = new Card();
+            foreach (var Key in structuredObject.Keys)
+            {
+                ReturnValue.Fields.Add(new CardField(Key, Array.Empty<CardFieldParameter>(), structuredObject[Key]?.ToString() ?? ""));
+            }
+            foreach (KeyValuePair<string, string> Metadata in structuredObject.Metadata)
+            {
+                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value?.ToString() ?? "");
+            }
+            ReturnValue.Title = structuredObject.Title;
+            return ReturnValue;
+        }
+
+        /// <summary>
+        /// Converts the structured object to a table.
+        /// </summary>
+        /// <param name="structuredObject">The structured object to convert.</param>
+        public static implicit operator Table?(StructuredObject? structuredObject)
+        {
+            if (structuredObject is null)
+                return null;
+            var ReturnValue = new Table();
+            ReturnValue.Columns.AddRange(structuredObject.Keys);
+            TableRow Row = ReturnValue.AddRow();
+            foreach (var Key in structuredObject.Keys)
+            {
+                var Value = structuredObject[Key]?.ToString();
+                Row.Add(Value);
+            }
+            foreach (KeyValuePair<string, string> Metadata in structuredObject.Metadata)
+            {
+                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value?.ToString() ?? "");
+            }
+            ReturnValue.Title = structuredObject.Title;
+            return ReturnValue;
+        }
+
+        /// <summary>
+        /// Converts the structured object to a tables object.
+        /// </summary>
+        /// <param name="structuredObject">The structured object to convert.</param>
+        public static implicit operator Tables?(StructuredObject? structuredObject)
+        {
+            if (structuredObject is null)
+                return null;
+            var ReturnValue = new Tables();
+            Table Table = ReturnValue.AddTable();
+            Table.Columns.AddRange(structuredObject.Keys);
+            TableRow Row = Table.AddRow();
+            foreach (var Key in structuredObject.Keys)
+            {
+                var Value = structuredObject[Key]?.ToString();
+                Row.Add(Value);
+            }
+            foreach (KeyValuePair<string, string> Metadata in structuredObject.Metadata)
+            {
+                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value?.ToString() ?? "");
+            }
+            ReturnValue.Title = structuredObject.Title;
+            return ReturnValue;
+        }
+
+        /// <summary>
+        /// Converts the structured object to a text object.
+        /// </summary>
+        /// <param name="structuredObject">The structured object to convert.</param>
+        public static implicit operator Text?(StructuredObject? structuredObject)
+        {
+            if (structuredObject is null)
+                return null;
+            var ReturnValue = new Text(structuredObject.GetContent(), structuredObject.Title);
+            foreach (KeyValuePair<string, string> Metadata in structuredObject.Metadata)
+            {
+                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value?.ToString() ?? "");
+            }
+            return ReturnValue;
         }
 
         /// <summary>
@@ -381,6 +467,29 @@ namespace Archivist.DataTypes
             Content[key] = value;
 
             return this;
+        }
+
+        /// <summary>
+        /// Converts the structured object to the specified file type.
+        /// </summary>
+        /// <typeparam name="TFile">The type of the file.</typeparam>
+        /// <returns>The file of the specified type.</returns>
+        public override TFile? ToFileType<TFile>() where TFile : default
+        {
+            Type FileType = typeof(TFile);
+            IGenericFile? ReturnValue = null;
+            if (FileType == typeof(Card))
+                ReturnValue = (Card?)this;
+            else if (FileType == typeof(Table))
+                ReturnValue = (Table?)this;
+            else if (FileType == typeof(Tables))
+                ReturnValue = (Tables?)this;
+            else if (FileType == typeof(Text))
+                ReturnValue = (Text?)this;
+            else if (FileType == typeof(StructuredObject))
+                ReturnValue = this;
+
+            return (TFile?)ReturnValue;
         }
 
         /// <summary>

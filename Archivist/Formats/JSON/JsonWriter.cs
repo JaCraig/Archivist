@@ -40,6 +40,8 @@ namespace Archivist.Formats.JSON
         {
             if (file is null || stream is null)
                 return false;
+            if (!stream.CanWrite)
+                return false;
             if (file is not StructuredObject StructuredObject)
                 StructuredObject = file.ToFileType<StructuredObject>()!;
             if (StructuredObject is null)
