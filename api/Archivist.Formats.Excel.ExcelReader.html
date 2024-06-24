@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_Excel_ExcelReader" data-uid="Archivist.Formats.Excel.ExcelReader" class="text-break">
-Class ExcelReader  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L18"><i class="bi bi-code-slash"></i></a>
+Class ExcelReader  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -159,6 +159,43 @@ Class ExcelReader  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Archivist_Formats_Excel_ExcelReader__ctor_" data-uid="Archivist.Formats.Excel.ExcelReader.#ctor*"></a>
+
+  <h3 id="Archivist_Formats_Excel_ExcelReader__ctor_Archivist_Options_ExcelOptions_" data-uid="Archivist.Formats.Excel.ExcelReader.#ctor(Archivist.Options.ExcelOptions)">
+  ExcelReader(ExcelOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.Excel.ExcelReader.html">ExcelReader</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExcelReader(ExcelOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Archivist.Options.ExcelOptions.html">ExcelOptions</a></dt>
+    <dd><p>The Excel options.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -167,7 +204,7 @@ Class ExcelReader  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Archivist_Formats_Excel_ExcelReader_HeaderInfo" data-uid="Archivist.Formats.Excel.ExcelReader.HeaderInfo">
   HeaderInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the header information for Excel files.</p>
@@ -195,6 +232,38 @@ Class ExcelReader  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="Archivist_Formats_Excel_ExcelReader_Options_" data-uid="Archivist.Formats.Excel.ExcelReader.Options*"></a>
+
+  <h3 id="Archivist_Formats_Excel_ExcelReader_Options" data-uid="Archivist.Formats.Excel.ExcelReader.Options">
+  Options
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Excel options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExcelOptions Options { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.Options.ExcelOptions.html">ExcelOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -203,7 +272,7 @@ Class ExcelReader  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Archivist_Formats_Excel_ExcelReader_InternalCanRead_System_IO_Stream_" data-uid="Archivist.Formats.Excel.ExcelReader.InternalCanRead(System.IO.Stream)">
   InternalCanRead(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines if the reader can read the given stream as an Excel file.</p>
@@ -242,7 +311,7 @@ Class ExcelReader  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Archivist_Formats_Excel_ExcelReader_ReadAsync_System_IO_Stream_" data-uid="Archivist.Formats.Excel.ExcelReader.ReadAsync(System.IO.Stream)">
   ReadAsync(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads the Excel file asynchronously and returns the data as a generic file.</p>
@@ -277,11 +346,15 @@ Class ExcelReader  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Archivist.BaseClasses.ReaderBaseClass.html">ReaderBaseClass</a></div>
+  </div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L18" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Excel/ExcelReader.cs/#L20" class="edit-link">Edit this page</a>
         </div>
 
 

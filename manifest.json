@@ -132,6 +132,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.StructuredObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.StructuredObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.DataTypes.Table.yml",
       "output": {
         ".html": {
@@ -342,6 +352,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.JSON.JsonFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.JSON.JsonFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.JSON.JsonReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.JSON.JsonReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.JSON.JsonWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.JSON.JsonWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.JSON.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.JSON.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.Formats.Txt.TextFormat.yml",
       "output": {
         ".html": {
@@ -496,6 +546,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.Options.DelimitedOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Options.ExcelOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Options.ExcelOptions.html"
         }
       },
       "version": ""

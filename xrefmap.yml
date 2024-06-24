@@ -1235,6 +1235,15 @@ references:
   fullName.vb: Archivist.DataTypes.Card.>=
   nameWithType: Card.operator >=
   nameWithType.vb: Card.>=
+- uid: Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.StructuredObject
+  name: implicit operator StructuredObject?(Card?)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_StructuredObject
+  commentId: M:Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.StructuredObject
+  name.vb: CType(Card)
+  fullName: Archivist.DataTypes.Card.implicit operator Archivist.DataTypes.StructuredObject?(Archivist.DataTypes.Card?)
+  fullName.vb: Archivist.DataTypes.Card.CType(Archivist.DataTypes.Card)
+  nameWithType: Card.implicit operator StructuredObject?(Card?)
+  nameWithType.vb: Card.CType(Card)
 - uid: Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Table
   name: implicit operator Table?(Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_Table
@@ -2621,6 +2630,567 @@ references:
   fullName.vb: Archivist.DataTypes.FixedLengthRecord.<=
   nameWithType: FixedLengthRecord.operator <=
   nameWithType.vb: FixedLengthRecord.<=
+- uid: Archivist.DataTypes.StructuredObject
+  name: StructuredObject
+  href: api/Archivist.DataTypes.StructuredObject.html
+  commentId: T:Archivist.DataTypes.StructuredObject
+  fullName: Archivist.DataTypes.StructuredObject
+  nameWithType: StructuredObject
+- uid: Archivist.DataTypes.StructuredObject.#ctor
+  name: StructuredObject()
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject__ctor
+  commentId: M:Archivist.DataTypes.StructuredObject.#ctor
+  name.vb: New()
+  fullName: Archivist.DataTypes.StructuredObject.StructuredObject()
+  fullName.vb: Archivist.DataTypes.StructuredObject.New()
+  nameWithType: StructuredObject.StructuredObject()
+  nameWithType.vb: StructuredObject.New()
+- uid: Archivist.DataTypes.StructuredObject.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: StructuredObject(IDictionary<string, object?>?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject__ctor_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:Archivist.DataTypes.StructuredObject.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: New(IDictionary(Of String, Object))
+  fullName: Archivist.DataTypes.StructuredObject.StructuredObject(System.Collections.Generic.IDictionary<string, object?>?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.New(System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: StructuredObject.StructuredObject(IDictionary<string, object?>?)
+  nameWithType.vb: StructuredObject.New(IDictionary(Of String, Object))
+- uid: Archivist.DataTypes.StructuredObject.#ctor*
+  name: StructuredObject
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject__ctor_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.StructuredObject.StructuredObject
+  fullName.vb: Archivist.DataTypes.StructuredObject.New
+  nameWithType: StructuredObject.StructuredObject
+  nameWithType.vb: StructuredObject.New
+- uid: Archivist.DataTypes.StructuredObject.Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  name: Add(KeyValuePair<string, object?>)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Add_System_Collections_Generic_KeyValuePair_System_String_System_Object__
+  commentId: M:Archivist.DataTypes.StructuredObject.Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  name.vb: Add(KeyValuePair(Of String, Object))
+  fullName: Archivist.DataTypes.StructuredObject.Add(System.Collections.Generic.KeyValuePair<string, object?>)
+  fullName.vb: Archivist.DataTypes.StructuredObject.Add(System.Collections.Generic.KeyValuePair(Of String, Object))
+  nameWithType: StructuredObject.Add(KeyValuePair<string, object?>)
+  nameWithType.vb: StructuredObject.Add(KeyValuePair(Of String, Object))
+- uid: Archivist.DataTypes.StructuredObject.Add(System.String,System.Object)
+  name: Add(string, object?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Add_System_String_System_Object_
+  commentId: M:Archivist.DataTypes.StructuredObject.Add(System.String,System.Object)
+  name.vb: Add(String, Object)
+  fullName: Archivist.DataTypes.StructuredObject.Add(string, object?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.Add(String, Object)
+  nameWithType: StructuredObject.Add(string, object?)
+  nameWithType.vb: StructuredObject.Add(String, Object)
+- uid: Archivist.DataTypes.StructuredObject.Add*
+  name: Add
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Add_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.Add
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.Add
+  nameWithType: StructuredObject.Add
+- uid: Archivist.DataTypes.StructuredObject.Clear
+  name: Clear()
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Clear
+  commentId: M:Archivist.DataTypes.StructuredObject.Clear
+  fullName: Archivist.DataTypes.StructuredObject.Clear()
+  nameWithType: StructuredObject.Clear()
+- uid: Archivist.DataTypes.StructuredObject.Clear*
+  name: Clear
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Clear_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.Clear
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.Clear
+  nameWithType: StructuredObject.Clear
+- uid: Archivist.DataTypes.StructuredObject.CompareTo(Archivist.DataTypes.StructuredObject)
+  name: CompareTo(StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_CompareTo_Archivist_DataTypes_StructuredObject_
+  commentId: M:Archivist.DataTypes.StructuredObject.CompareTo(Archivist.DataTypes.StructuredObject)
+  name.vb: CompareTo(StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.CompareTo(Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.CompareTo(Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.CompareTo(StructuredObject?)
+  nameWithType.vb: StructuredObject.CompareTo(StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_CompareTo_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.CompareTo
+  nameWithType: StructuredObject.CompareTo
+- uid: Archivist.DataTypes.StructuredObject.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  name: Contains(KeyValuePair<string, object?>)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Contains_System_Collections_Generic_KeyValuePair_System_String_System_Object__
+  commentId: M:Archivist.DataTypes.StructuredObject.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  name.vb: Contains(KeyValuePair(Of String, Object))
+  fullName: Archivist.DataTypes.StructuredObject.Contains(System.Collections.Generic.KeyValuePair<string, object?>)
+  fullName.vb: Archivist.DataTypes.StructuredObject.Contains(System.Collections.Generic.KeyValuePair(Of String, Object))
+  nameWithType: StructuredObject.Contains(KeyValuePair<string, object?>)
+  nameWithType.vb: StructuredObject.Contains(KeyValuePair(Of String, Object))
+- uid: Archivist.DataTypes.StructuredObject.Contains*
+  name: Contains
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Contains_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.Contains
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.Contains
+  nameWithType: StructuredObject.Contains
+- uid: Archivist.DataTypes.StructuredObject.ContainsKey(System.String)
+  name: ContainsKey(string)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_ContainsKey_System_String_
+  commentId: M:Archivist.DataTypes.StructuredObject.ContainsKey(System.String)
+  name.vb: ContainsKey(String)
+  fullName: Archivist.DataTypes.StructuredObject.ContainsKey(string)
+  fullName.vb: Archivist.DataTypes.StructuredObject.ContainsKey(String)
+  nameWithType: StructuredObject.ContainsKey(string)
+  nameWithType.vb: StructuredObject.ContainsKey(String)
+- uid: Archivist.DataTypes.StructuredObject.ContainsKey*
+  name: ContainsKey
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_ContainsKey_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.ContainsKey
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.ContainsKey
+  nameWithType: StructuredObject.ContainsKey
+- uid: Archivist.DataTypes.StructuredObject.ConvertFrom*
+  name: ConvertFrom
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_ConvertFrom_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.ConvertFrom
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.ConvertFrom
+  nameWithType: StructuredObject.ConvertFrom
+- uid: Archivist.DataTypes.StructuredObject.ConvertFrom``1(``0)
+  name: ConvertFrom<TObject>(TObject)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_ConvertFrom__1___0_
+  commentId: M:Archivist.DataTypes.StructuredObject.ConvertFrom``1(``0)
+  name.vb: ConvertFrom(Of TObject)(TObject)
+  fullName: Archivist.DataTypes.StructuredObject.ConvertFrom<TObject>(TObject)
+  fullName.vb: Archivist.DataTypes.StructuredObject.ConvertFrom(Of TObject)(TObject)
+  nameWithType: StructuredObject.ConvertFrom<TObject>(TObject)
+  nameWithType.vb: StructuredObject.ConvertFrom(Of TObject)(TObject)
+- uid: Archivist.DataTypes.StructuredObject.ConvertTo*
+  name: ConvertTo
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_ConvertTo_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.ConvertTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.ConvertTo
+  nameWithType: StructuredObject.ConvertTo
+- uid: Archivist.DataTypes.StructuredObject.ConvertTo``1
+  name: ConvertTo<TObject>()
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_ConvertTo__1
+  commentId: M:Archivist.DataTypes.StructuredObject.ConvertTo``1
+  name.vb: ConvertTo(Of TObject)()
+  fullName: Archivist.DataTypes.StructuredObject.ConvertTo<TObject>()
+  fullName.vb: Archivist.DataTypes.StructuredObject.ConvertTo(Of TObject)()
+  nameWithType: StructuredObject.ConvertTo<TObject>()
+  nameWithType.vb: StructuredObject.ConvertTo(Of TObject)()
+- uid: Archivist.DataTypes.StructuredObject.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
+  name: CopyTo(KeyValuePair<string, object?>[], int)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_CopyTo_System_Collections_Generic_KeyValuePair_System_String_System_Object____System_Int32_
+  commentId: M:Archivist.DataTypes.StructuredObject.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)
+  name.vb: CopyTo(KeyValuePair(Of String, Object)(), Integer)
+  fullName: Archivist.DataTypes.StructuredObject.CopyTo(System.Collections.Generic.KeyValuePair<string, object?>[], int)
+  fullName.vb: Archivist.DataTypes.StructuredObject.CopyTo(System.Collections.Generic.KeyValuePair(Of String, Object)(), Integer)
+  nameWithType: StructuredObject.CopyTo(KeyValuePair<string, object?>[], int)
+  nameWithType.vb: StructuredObject.CopyTo(KeyValuePair(Of String, Object)(), Integer)
+- uid: Archivist.DataTypes.StructuredObject.CopyTo*
+  name: CopyTo
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_CopyTo_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.CopyTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.CopyTo
+  nameWithType: StructuredObject.CopyTo
+- uid: Archivist.DataTypes.StructuredObject.Count
+  name: Count
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Count
+  commentId: P:Archivist.DataTypes.StructuredObject.Count
+  fullName: Archivist.DataTypes.StructuredObject.Count
+  nameWithType: StructuredObject.Count
+- uid: Archivist.DataTypes.StructuredObject.Count*
+  name: Count
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Count_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.Count
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.Count
+  nameWithType: StructuredObject.Count
+- uid: Archivist.DataTypes.StructuredObject.Equals(Archivist.DataTypes.StructuredObject)
+  name: Equals(StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Equals_Archivist_DataTypes_StructuredObject_
+  commentId: M:Archivist.DataTypes.StructuredObject.Equals(Archivist.DataTypes.StructuredObject)
+  name.vb: Equals(StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.Equals(Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.Equals(Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.Equals(StructuredObject?)
+  nameWithType.vb: StructuredObject.Equals(StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.StructuredObject.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.StructuredObject.Equals(object?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.Equals(Object)
+  nameWithType: StructuredObject.Equals(object?)
+  nameWithType.vb: StructuredObject.Equals(Object)
+- uid: Archivist.DataTypes.StructuredObject.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Equals_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.Equals
+  nameWithType: StructuredObject.Equals
+- uid: Archivist.DataTypes.StructuredObject.GetContent
+  name: GetContent()
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_GetContent
+  commentId: M:Archivist.DataTypes.StructuredObject.GetContent
+  fullName: Archivist.DataTypes.StructuredObject.GetContent()
+  nameWithType: StructuredObject.GetContent()
+- uid: Archivist.DataTypes.StructuredObject.GetContent*
+  name: GetContent
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_GetContent_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.GetContent
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.GetContent
+  nameWithType: StructuredObject.GetContent
+- uid: Archivist.DataTypes.StructuredObject.GetEnumerator
+  name: GetEnumerator()
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_GetEnumerator
+  commentId: M:Archivist.DataTypes.StructuredObject.GetEnumerator
+  fullName: Archivist.DataTypes.StructuredObject.GetEnumerator()
+  nameWithType: StructuredObject.GetEnumerator()
+- uid: Archivist.DataTypes.StructuredObject.GetEnumerator*
+  name: GetEnumerator
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_GetEnumerator_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.GetEnumerator
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.GetEnumerator
+  nameWithType: StructuredObject.GetEnumerator
+- uid: Archivist.DataTypes.StructuredObject.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_GetHashCode
+  commentId: M:Archivist.DataTypes.StructuredObject.GetHashCode
+  fullName: Archivist.DataTypes.StructuredObject.GetHashCode()
+  nameWithType: StructuredObject.GetHashCode()
+- uid: Archivist.DataTypes.StructuredObject.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.GetHashCode
+  nameWithType: StructuredObject.GetHashCode
+- uid: Archivist.DataTypes.StructuredObject.GetValue*
+  name: GetValue
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_GetValue_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.GetValue
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.GetValue
+  nameWithType: StructuredObject.GetValue
+- uid: Archivist.DataTypes.StructuredObject.GetValue``1(System.String)
+  name: GetValue<TObject>(string)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_GetValue__1_System_String_
+  commentId: M:Archivist.DataTypes.StructuredObject.GetValue``1(System.String)
+  name.vb: GetValue(Of TObject)(String)
+  fullName: Archivist.DataTypes.StructuredObject.GetValue<TObject>(string)
+  fullName.vb: Archivist.DataTypes.StructuredObject.GetValue(Of TObject)(String)
+  nameWithType: StructuredObject.GetValue<TObject>(string)
+  nameWithType.vb: StructuredObject.GetValue(Of TObject)(String)
+- uid: Archivist.DataTypes.StructuredObject.IsReadOnly
+  name: IsReadOnly
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_IsReadOnly
+  commentId: P:Archivist.DataTypes.StructuredObject.IsReadOnly
+  fullName: Archivist.DataTypes.StructuredObject.IsReadOnly
+  nameWithType: StructuredObject.IsReadOnly
+- uid: Archivist.DataTypes.StructuredObject.IsReadOnly*
+  name: IsReadOnly
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_IsReadOnly_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.IsReadOnly
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.IsReadOnly
+  nameWithType: StructuredObject.IsReadOnly
+- uid: Archivist.DataTypes.StructuredObject.Item(System.String)
+  name: this[string]
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Item_System_String_
+  commentId: P:Archivist.DataTypes.StructuredObject.Item(System.String)
+  name.vb: this[](String)
+  fullName: Archivist.DataTypes.StructuredObject.this[string]
+  fullName.vb: Archivist.DataTypes.StructuredObject.this[](String)
+  nameWithType: StructuredObject.this[string]
+  nameWithType.vb: StructuredObject.this[](String)
+- uid: Archivist.DataTypes.StructuredObject.Item*
+  name: this
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Item_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: Archivist.DataTypes.StructuredObject.this
+  fullName.vb: Archivist.DataTypes.StructuredObject.this[]
+  nameWithType: StructuredObject.this
+  nameWithType.vb: StructuredObject.this[]
+- uid: Archivist.DataTypes.StructuredObject.Keys
+  name: Keys
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Keys
+  commentId: P:Archivist.DataTypes.StructuredObject.Keys
+  fullName: Archivist.DataTypes.StructuredObject.Keys
+  nameWithType: StructuredObject.Keys
+- uid: Archivist.DataTypes.StructuredObject.Keys*
+  name: Keys
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Keys_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.Keys
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.Keys
+  nameWithType: StructuredObject.Keys
+- uid: Archivist.DataTypes.StructuredObject.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  name: Remove(KeyValuePair<string, object?>)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Remove_System_Collections_Generic_KeyValuePair_System_String_System_Object__
+  commentId: M:Archivist.DataTypes.StructuredObject.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})
+  name.vb: Remove(KeyValuePair(Of String, Object))
+  fullName: Archivist.DataTypes.StructuredObject.Remove(System.Collections.Generic.KeyValuePair<string, object?>)
+  fullName.vb: Archivist.DataTypes.StructuredObject.Remove(System.Collections.Generic.KeyValuePair(Of String, Object))
+  nameWithType: StructuredObject.Remove(KeyValuePair<string, object?>)
+  nameWithType.vb: StructuredObject.Remove(KeyValuePair(Of String, Object))
+- uid: Archivist.DataTypes.StructuredObject.Remove(System.String)
+  name: Remove(string)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Remove_System_String_
+  commentId: M:Archivist.DataTypes.StructuredObject.Remove(System.String)
+  name.vb: Remove(String)
+  fullName: Archivist.DataTypes.StructuredObject.Remove(string)
+  fullName.vb: Archivist.DataTypes.StructuredObject.Remove(String)
+  nameWithType: StructuredObject.Remove(string)
+  nameWithType.vb: StructuredObject.Remove(String)
+- uid: Archivist.DataTypes.StructuredObject.Remove*
+  name: Remove
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Remove_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.Remove
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.Remove
+  nameWithType: StructuredObject.Remove
+- uid: Archivist.DataTypes.StructuredObject.SetValue*
+  name: SetValue
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_SetValue_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.SetValue
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.SetValue
+  nameWithType: StructuredObject.SetValue
+- uid: Archivist.DataTypes.StructuredObject.SetValue``1(System.String,``0)
+  name: SetValue<TObject>(string, TObject)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_SetValue__1_System_String___0_
+  commentId: M:Archivist.DataTypes.StructuredObject.SetValue``1(System.String,``0)
+  name.vb: SetValue(Of TObject)(String, TObject)
+  fullName: Archivist.DataTypes.StructuredObject.SetValue<TObject>(string, TObject)
+  fullName.vb: Archivist.DataTypes.StructuredObject.SetValue(Of TObject)(String, TObject)
+  nameWithType: StructuredObject.SetValue<TObject>(string, TObject)
+  nameWithType.vb: StructuredObject.SetValue(Of TObject)(String, TObject)
+- uid: Archivist.DataTypes.StructuredObject.ToFileType*
+  name: ToFileType
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_ToFileType_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.ToFileType
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.ToFileType
+  nameWithType: StructuredObject.ToFileType
+- uid: Archivist.DataTypes.StructuredObject.ToFileType``1
+  name: ToFileType<TFile>()
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_ToFileType__1
+  commentId: M:Archivist.DataTypes.StructuredObject.ToFileType``1
+  name.vb: ToFileType(Of TFile)()
+  fullName: Archivist.DataTypes.StructuredObject.ToFileType<TFile>()
+  fullName.vb: Archivist.DataTypes.StructuredObject.ToFileType(Of TFile)()
+  nameWithType: StructuredObject.ToFileType<TFile>()
+  nameWithType.vb: StructuredObject.ToFileType(Of TFile)()
+- uid: Archivist.DataTypes.StructuredObject.TryGetValue(System.String,System.Object@)
+  name: TryGetValue(string, out object?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_TryGetValue_System_String_System_Object__
+  commentId: M:Archivist.DataTypes.StructuredObject.TryGetValue(System.String,System.Object@)
+  name.vb: TryGetValue(String, Object)
+  fullName: Archivist.DataTypes.StructuredObject.TryGetValue(string, out object?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.TryGetValue(String, Object)
+  nameWithType: StructuredObject.TryGetValue(string, out object?)
+  nameWithType.vb: StructuredObject.TryGetValue(String, Object)
+- uid: Archivist.DataTypes.StructuredObject.TryGetValue*
+  name: TryGetValue
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_TryGetValue_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.TryGetValue
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.TryGetValue
+  nameWithType: StructuredObject.TryGetValue
+- uid: Archivist.DataTypes.StructuredObject.TryGetValue``1(System.String,``0@)
+  name: TryGetValue<TObject>(string, out TObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_TryGetValue__1_System_String___0__
+  commentId: M:Archivist.DataTypes.StructuredObject.TryGetValue``1(System.String,``0@)
+  name.vb: TryGetValue(Of TObject)(String, TObject)
+  fullName: Archivist.DataTypes.StructuredObject.TryGetValue<TObject>(string, out TObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.TryGetValue(Of TObject)(String, TObject)
+  nameWithType: StructuredObject.TryGetValue<TObject>(string, out TObject?)
+  nameWithType.vb: StructuredObject.TryGetValue(Of TObject)(String, TObject)
+- uid: Archivist.DataTypes.StructuredObject.Values
+  name: Values
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Values
+  commentId: P:Archivist.DataTypes.StructuredObject.Values
+  fullName: Archivist.DataTypes.StructuredObject.Values
+  nameWithType: StructuredObject.Values
+- uid: Archivist.DataTypes.StructuredObject.Values*
+  name: Values
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_Values_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.Values
+  isSpec: "True"
+  fullName: Archivist.DataTypes.StructuredObject.Values
+  nameWithType: StructuredObject.Values
+- uid: Archivist.DataTypes.StructuredObject.op_Equality(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name: operator ==(StructuredObject?, StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Equality_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_
+  commentId: M:Archivist.DataTypes.StructuredObject.op_Equality(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name.vb: =(StructuredObject, StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.operator ==(Archivist.DataTypes.StructuredObject?, Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.=(Archivist.DataTypes.StructuredObject, Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.operator ==(StructuredObject?, StructuredObject?)
+  nameWithType.vb: StructuredObject.=(StructuredObject, StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Equality_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.StructuredObject.operator ==
+  fullName.vb: Archivist.DataTypes.StructuredObject.=
+  nameWithType: StructuredObject.operator ==
+  nameWithType.vb: StructuredObject.=
+- uid: Archivist.DataTypes.StructuredObject.op_GreaterThan(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name: operator >(StructuredObject?, StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_GreaterThan_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_
+  commentId: M:Archivist.DataTypes.StructuredObject.op_GreaterThan(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name.vb: '>(StructuredObject, StructuredObject)'
+  fullName: Archivist.DataTypes.StructuredObject.operator >(Archivist.DataTypes.StructuredObject?, Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.>(Archivist.DataTypes.StructuredObject, Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.operator >(StructuredObject?, StructuredObject?)
+  nameWithType.vb: StructuredObject.>(StructuredObject, StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.StructuredObject.operator >
+  fullName.vb: Archivist.DataTypes.StructuredObject.>
+  nameWithType: StructuredObject.operator >
+  nameWithType.vb: StructuredObject.>
+- uid: Archivist.DataTypes.StructuredObject.op_GreaterThanOrEqual(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name: operator >=(StructuredObject?, StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_GreaterThanOrEqual_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_
+  commentId: M:Archivist.DataTypes.StructuredObject.op_GreaterThanOrEqual(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name.vb: '>=(StructuredObject, StructuredObject)'
+  fullName: Archivist.DataTypes.StructuredObject.operator >=(Archivist.DataTypes.StructuredObject?, Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.>=(Archivist.DataTypes.StructuredObject, Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.operator >=(StructuredObject?, StructuredObject?)
+  nameWithType.vb: StructuredObject.>=(StructuredObject, StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.StructuredObject.operator >=
+  fullName.vb: Archivist.DataTypes.StructuredObject.>=
+  nameWithType: StructuredObject.operator >=
+  nameWithType.vb: StructuredObject.>=
+- uid: Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Card
+  name: implicit operator Card?(StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Card
+  commentId: M:Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Card
+  name.vb: CType(StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.implicit operator Archivist.DataTypes.Card?(Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.CType(Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.implicit operator Card?(StructuredObject?)
+  nameWithType.vb: StructuredObject.CType(StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Table
+  name: implicit operator Table?(StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Table
+  commentId: M:Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Table
+  name.vb: CType(StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.implicit operator Archivist.DataTypes.Table?(Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.CType(Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.implicit operator Table?(StructuredObject?)
+  nameWithType.vb: StructuredObject.CType(StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Tables
+  name: implicit operator Tables?(StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Tables
+  commentId: M:Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Tables
+  name.vb: CType(StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.implicit operator Archivist.DataTypes.Tables?(Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.CType(Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.implicit operator Tables?(StructuredObject?)
+  nameWithType.vb: StructuredObject.CType(StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Text
+  name: implicit operator Text?(StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Text
+  commentId: M:Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Text
+  name.vb: CType(StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.implicit operator Archivist.DataTypes.Text?(Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.CType(Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.implicit operator Text?(StructuredObject?)
+  nameWithType.vb: StructuredObject.CType(StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_Implicit*
+  name: implicit operator
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Implicit_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: Archivist.DataTypes.StructuredObject.implicit operator
+  fullName.vb: Archivist.DataTypes.StructuredObject.CType
+  nameWithType: StructuredObject.implicit operator
+  nameWithType.vb: StructuredObject.CType
+- uid: Archivist.DataTypes.StructuredObject.op_Inequality(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name: operator !=(StructuredObject?, StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Inequality_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_
+  commentId: M:Archivist.DataTypes.StructuredObject.op_Inequality(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name.vb: <>(StructuredObject, StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.operator !=(Archivist.DataTypes.StructuredObject?, Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.<>(Archivist.DataTypes.StructuredObject, Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.operator !=(StructuredObject?, StructuredObject?)
+  nameWithType.vb: StructuredObject.<>(StructuredObject, StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.StructuredObject.operator !=
+  fullName.vb: Archivist.DataTypes.StructuredObject.<>
+  nameWithType: StructuredObject.operator !=
+  nameWithType.vb: StructuredObject.<>
+- uid: Archivist.DataTypes.StructuredObject.op_LessThan(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name: operator <(StructuredObject?, StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_LessThan_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_
+  commentId: M:Archivist.DataTypes.StructuredObject.op_LessThan(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name.vb: <(StructuredObject, StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.operator <(Archivist.DataTypes.StructuredObject?, Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.<(Archivist.DataTypes.StructuredObject, Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.operator <(StructuredObject?, StructuredObject?)
+  nameWithType.vb: StructuredObject.<(StructuredObject, StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.StructuredObject.operator <
+  fullName.vb: Archivist.DataTypes.StructuredObject.<
+  nameWithType: StructuredObject.operator <
+  nameWithType.vb: StructuredObject.<
+- uid: Archivist.DataTypes.StructuredObject.op_LessThanOrEqual(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name: operator <=(StructuredObject?, StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_LessThanOrEqual_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_
+  commentId: M:Archivist.DataTypes.StructuredObject.op_LessThanOrEqual(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)
+  name.vb: <=(StructuredObject, StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.operator <=(Archivist.DataTypes.StructuredObject?, Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.<=(Archivist.DataTypes.StructuredObject, Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.operator <=(StructuredObject?, StructuredObject?)
+  nameWithType.vb: StructuredObject.<=(StructuredObject, StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.StructuredObject.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.StructuredObject.operator <=
+  fullName.vb: Archivist.DataTypes.StructuredObject.<=
+  nameWithType: StructuredObject.operator <=
+  nameWithType.vb: StructuredObject.<=
 - uid: Archivist.DataTypes.Table
   name: Table
   href: api/Archivist.DataTypes.Table.html
@@ -3048,6 +3618,15 @@ references:
   fullName: Archivist.DataTypes.Table.implicit operator Archivist.DataTypes.Card?(Archivist.DataTypes.Table?)
   fullName.vb: Archivist.DataTypes.Table.CType(Archivist.DataTypes.Table)
   nameWithType: Table.implicit operator Card?(Table?)
+  nameWithType.vb: Table.CType(Table)
+- uid: Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.StructuredObject
+  name: implicit operator StructuredObject?(Table?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Implicit_Archivist_DataTypes_Table__Archivist_DataTypes_StructuredObject
+  commentId: M:Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.StructuredObject
+  name.vb: CType(Table)
+  fullName: Archivist.DataTypes.Table.implicit operator Archivist.DataTypes.StructuredObject?(Archivist.DataTypes.Table?)
+  fullName.vb: Archivist.DataTypes.Table.CType(Archivist.DataTypes.Table)
+  nameWithType: Table.implicit operator StructuredObject?(Table?)
   nameWithType.vb: Table.CType(Table)
 - uid: Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Tables
   name: implicit operator Tables?(Table?)
@@ -4232,6 +4811,15 @@ references:
   fullName.vb: Archivist.DataTypes.Tables.CType(Archivist.DataTypes.Tables)
   nameWithType: Tables.implicit operator Card?(Tables?)
   nameWithType.vb: Tables.CType(Tables)
+- uid: Archivist.DataTypes.Tables.op_Implicit(Archivist.DataTypes.Tables)~Archivist.DataTypes.StructuredObject
+  name: implicit operator StructuredObject?(Tables?)
+  href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables_op_Implicit_Archivist_DataTypes_Tables__Archivist_DataTypes_StructuredObject
+  commentId: M:Archivist.DataTypes.Tables.op_Implicit(Archivist.DataTypes.Tables)~Archivist.DataTypes.StructuredObject
+  name.vb: CType(Tables)
+  fullName: Archivist.DataTypes.Tables.implicit operator Archivist.DataTypes.StructuredObject?(Archivist.DataTypes.Tables?)
+  fullName.vb: Archivist.DataTypes.Tables.CType(Archivist.DataTypes.Tables)
+  nameWithType: Tables.implicit operator StructuredObject?(Tables?)
+  nameWithType.vb: Tables.CType(Tables)
 - uid: Archivist.DataTypes.Tables.op_Implicit(Archivist.DataTypes.Tables)~Archivist.DataTypes.Table
   name: implicit operator Table?(Tables?)
   href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables_op_Implicit_Archivist_DataTypes_Tables__Archivist_DataTypes_Table
@@ -5070,15 +5658,15 @@ references:
   commentId: T:Archivist.Formats.Excel.ExcelFormat
   fullName: Archivist.Formats.Excel.ExcelFormat
   nameWithType: ExcelFormat
-- uid: Archivist.Formats.Excel.ExcelFormat.#ctor
-  name: ExcelFormat()
-  href: api/Archivist.Formats.Excel.ExcelFormat.html#Archivist_Formats_Excel_ExcelFormat__ctor
-  commentId: M:Archivist.Formats.Excel.ExcelFormat.#ctor
-  name.vb: New()
-  fullName: Archivist.Formats.Excel.ExcelFormat.ExcelFormat()
-  fullName.vb: Archivist.Formats.Excel.ExcelFormat.New()
-  nameWithType: ExcelFormat.ExcelFormat()
-  nameWithType.vb: ExcelFormat.New()
+- uid: Archivist.Formats.Excel.ExcelFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions})
+  name: ExcelFormat(IOptions<ExcelOptions>?)
+  href: api/Archivist.Formats.Excel.ExcelFormat.html#Archivist_Formats_Excel_ExcelFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_ExcelOptions__
+  commentId: M:Archivist.Formats.Excel.ExcelFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions})
+  name.vb: New(IOptions(Of ExcelOptions))
+  fullName: Archivist.Formats.Excel.ExcelFormat.ExcelFormat(Microsoft.Extensions.Options.IOptions<Archivist.Options.ExcelOptions>?)
+  fullName.vb: Archivist.Formats.Excel.ExcelFormat.New(Microsoft.Extensions.Options.IOptions(Of Archivist.Options.ExcelOptions))
+  nameWithType: ExcelFormat.ExcelFormat(IOptions<ExcelOptions>?)
+  nameWithType.vb: ExcelFormat.New(IOptions(Of ExcelOptions))
 - uid: Archivist.Formats.Excel.ExcelFormat.#ctor*
   name: ExcelFormat
   href: api/Archivist.Formats.Excel.ExcelFormat.html#Archivist_Formats_Excel_ExcelFormat__ctor_
@@ -5121,6 +5709,25 @@ references:
   commentId: T:Archivist.Formats.Excel.ExcelReader
   fullName: Archivist.Formats.Excel.ExcelReader
   nameWithType: ExcelReader
+- uid: Archivist.Formats.Excel.ExcelReader.#ctor(Archivist.Options.ExcelOptions)
+  name: ExcelReader(ExcelOptions)
+  href: api/Archivist.Formats.Excel.ExcelReader.html#Archivist_Formats_Excel_ExcelReader__ctor_Archivist_Options_ExcelOptions_
+  commentId: M:Archivist.Formats.Excel.ExcelReader.#ctor(Archivist.Options.ExcelOptions)
+  name.vb: New(ExcelOptions)
+  fullName: Archivist.Formats.Excel.ExcelReader.ExcelReader(Archivist.Options.ExcelOptions)
+  fullName.vb: Archivist.Formats.Excel.ExcelReader.New(Archivist.Options.ExcelOptions)
+  nameWithType: ExcelReader.ExcelReader(ExcelOptions)
+  nameWithType.vb: ExcelReader.New(ExcelOptions)
+- uid: Archivist.Formats.Excel.ExcelReader.#ctor*
+  name: ExcelReader
+  href: api/Archivist.Formats.Excel.ExcelReader.html#Archivist_Formats_Excel_ExcelReader__ctor_
+  commentId: Overload:Archivist.Formats.Excel.ExcelReader.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.Excel.ExcelReader.ExcelReader
+  fullName.vb: Archivist.Formats.Excel.ExcelReader.New
+  nameWithType: ExcelReader.ExcelReader
+  nameWithType.vb: ExcelReader.New
 - uid: Archivist.Formats.Excel.ExcelReader.HeaderInfo
   name: HeaderInfo
   href: api/Archivist.Formats.Excel.ExcelReader.html#Archivist_Formats_Excel_ExcelReader_HeaderInfo
@@ -5150,6 +5757,19 @@ references:
   isSpec: "True"
   fullName: Archivist.Formats.Excel.ExcelReader.InternalCanRead
   nameWithType: ExcelReader.InternalCanRead
+- uid: Archivist.Formats.Excel.ExcelReader.Options
+  name: Options
+  href: api/Archivist.Formats.Excel.ExcelReader.html#Archivist_Formats_Excel_ExcelReader_Options
+  commentId: P:Archivist.Formats.Excel.ExcelReader.Options
+  fullName: Archivist.Formats.Excel.ExcelReader.Options
+  nameWithType: ExcelReader.Options
+- uid: Archivist.Formats.Excel.ExcelReader.Options*
+  name: Options
+  href: api/Archivist.Formats.Excel.ExcelReader.html#Archivist_Formats_Excel_ExcelReader_Options_
+  commentId: Overload:Archivist.Formats.Excel.ExcelReader.Options
+  isSpec: "True"
+  fullName: Archivist.Formats.Excel.ExcelReader.Options
+  nameWithType: ExcelReader.Options
 - uid: Archivist.Formats.Excel.ExcelReader.ReadAsync(System.IO.Stream)
   name: ReadAsync(Stream?)
   href: api/Archivist.Formats.Excel.ExcelReader.html#Archivist_Formats_Excel_ExcelReader_ReadAsync_System_IO_Stream_
@@ -5172,6 +5792,25 @@ references:
   commentId: T:Archivist.Formats.Excel.ExcelWriter
   fullName: Archivist.Formats.Excel.ExcelWriter
   nameWithType: ExcelWriter
+- uid: Archivist.Formats.Excel.ExcelWriter.#ctor
+  name: ExcelWriter()
+  href: api/Archivist.Formats.Excel.ExcelWriter.html#Archivist_Formats_Excel_ExcelWriter__ctor
+  commentId: M:Archivist.Formats.Excel.ExcelWriter.#ctor
+  name.vb: New()
+  fullName: Archivist.Formats.Excel.ExcelWriter.ExcelWriter()
+  fullName.vb: Archivist.Formats.Excel.ExcelWriter.New()
+  nameWithType: ExcelWriter.ExcelWriter()
+  nameWithType.vb: ExcelWriter.New()
+- uid: Archivist.Formats.Excel.ExcelWriter.#ctor*
+  name: ExcelWriter
+  href: api/Archivist.Formats.Excel.ExcelWriter.html#Archivist_Formats_Excel_ExcelWriter__ctor_
+  commentId: Overload:Archivist.Formats.Excel.ExcelWriter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.Excel.ExcelWriter.ExcelWriter
+  fullName.vb: Archivist.Formats.Excel.ExcelWriter.New
+  nameWithType: ExcelWriter.ExcelWriter
+  nameWithType.vb: ExcelWriter.New
 - uid: Archivist.Formats.Excel.ExcelWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
   name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.Formats.Excel.ExcelWriter.html#Archivist_Formats_Excel_ExcelWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
@@ -5232,6 +5871,174 @@ references:
   isSpec: "True"
   fullName: Archivist.Formats.FixedLength.FixedLengthWriter.WriteAsync
   nameWithType: FixedLengthWriter.WriteAsync
+- uid: Archivist.Formats.JSON
+  name: Archivist.Formats.JSON
+  href: api/Archivist.Formats.JSON.html
+  commentId: N:Archivist.Formats.JSON
+  fullName: Archivist.Formats.JSON
+  nameWithType: Archivist.Formats.JSON
+- uid: Archivist.Formats.JSON.JsonFormat
+  name: JsonFormat
+  href: api/Archivist.Formats.JSON.JsonFormat.html
+  commentId: T:Archivist.Formats.JSON.JsonFormat
+  fullName: Archivist.Formats.JSON.JsonFormat
+  nameWithType: JsonFormat
+- uid: Archivist.Formats.JSON.JsonFormat.#ctor(System.Text.Json.JsonSerializerOptions)
+  name: JsonFormat(JsonSerializerOptions?)
+  href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat__ctor_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Archivist.Formats.JSON.JsonFormat.#ctor(System.Text.Json.JsonSerializerOptions)
+  name.vb: New(JsonSerializerOptions)
+  fullName: Archivist.Formats.JSON.JsonFormat.JsonFormat(System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Archivist.Formats.JSON.JsonFormat.New(System.Text.Json.JsonSerializerOptions)
+  nameWithType: JsonFormat.JsonFormat(JsonSerializerOptions?)
+  nameWithType.vb: JsonFormat.New(JsonSerializerOptions)
+- uid: Archivist.Formats.JSON.JsonFormat.#ctor*
+  name: JsonFormat
+  href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat__ctor_
+  commentId: Overload:Archivist.Formats.JSON.JsonFormat.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.JSON.JsonFormat.JsonFormat
+  fullName.vb: Archivist.Formats.JSON.JsonFormat.New
+  nameWithType: JsonFormat.JsonFormat
+  nameWithType.vb: JsonFormat.New
+- uid: Archivist.Formats.JSON.JsonFormat.Extensions
+  name: Extensions
+  href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat_Extensions
+  commentId: P:Archivist.Formats.JSON.JsonFormat.Extensions
+  fullName: Archivist.Formats.JSON.JsonFormat.Extensions
+  nameWithType: JsonFormat.Extensions
+- uid: Archivist.Formats.JSON.JsonFormat.Extensions*
+  name: Extensions
+  href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat_Extensions_
+  commentId: Overload:Archivist.Formats.JSON.JsonFormat.Extensions
+  isSpec: "True"
+  fullName: Archivist.Formats.JSON.JsonFormat.Extensions
+  nameWithType: JsonFormat.Extensions
+- uid: Archivist.Formats.JSON.JsonFormat.MimeTypes
+  name: MimeTypes
+  href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat_MimeTypes
+  commentId: P:Archivist.Formats.JSON.JsonFormat.MimeTypes
+  fullName: Archivist.Formats.JSON.JsonFormat.MimeTypes
+  nameWithType: JsonFormat.MimeTypes
+- uid: Archivist.Formats.JSON.JsonFormat.MimeTypes*
+  name: MimeTypes
+  href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat_MimeTypes_
+  commentId: Overload:Archivist.Formats.JSON.JsonFormat.MimeTypes
+  isSpec: "True"
+  fullName: Archivist.Formats.JSON.JsonFormat.MimeTypes
+  nameWithType: JsonFormat.MimeTypes
+- uid: Archivist.Formats.JSON.JsonReader
+  name: JsonReader
+  href: api/Archivist.Formats.JSON.JsonReader.html
+  commentId: T:Archivist.Formats.JSON.JsonReader
+  fullName: Archivist.Formats.JSON.JsonReader
+  nameWithType: JsonReader
+- uid: Archivist.Formats.JSON.JsonReader.#ctor(System.Text.Json.JsonSerializerOptions)
+  name: JsonReader(JsonSerializerOptions?)
+  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader__ctor_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Archivist.Formats.JSON.JsonReader.#ctor(System.Text.Json.JsonSerializerOptions)
+  name.vb: New(JsonSerializerOptions)
+  fullName: Archivist.Formats.JSON.JsonReader.JsonReader(System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Archivist.Formats.JSON.JsonReader.New(System.Text.Json.JsonSerializerOptions)
+  nameWithType: JsonReader.JsonReader(JsonSerializerOptions?)
+  nameWithType.vb: JsonReader.New(JsonSerializerOptions)
+- uid: Archivist.Formats.JSON.JsonReader.#ctor*
+  name: JsonReader
+  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader__ctor_
+  commentId: Overload:Archivist.Formats.JSON.JsonReader.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.JSON.JsonReader.JsonReader
+  fullName.vb: Archivist.Formats.JSON.JsonReader.New
+  nameWithType: JsonReader.JsonReader
+  nameWithType.vb: JsonReader.New
+- uid: Archivist.Formats.JSON.JsonReader.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader_HeaderInfo
+  commentId: P:Archivist.Formats.JSON.JsonReader.HeaderInfo
+  fullName: Archivist.Formats.JSON.JsonReader.HeaderInfo
+  nameWithType: JsonReader.HeaderInfo
+- uid: Archivist.Formats.JSON.JsonReader.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader_HeaderInfo_
+  commentId: Overload:Archivist.Formats.JSON.JsonReader.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.Formats.JSON.JsonReader.HeaderInfo
+  nameWithType: JsonReader.HeaderInfo
+- uid: Archivist.Formats.JSON.JsonReader.InternalCanRead(System.IO.Stream)
+  name: InternalCanRead(Stream?)
+  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader_InternalCanRead_System_IO_Stream_
+  commentId: M:Archivist.Formats.JSON.JsonReader.InternalCanRead(System.IO.Stream)
+  name.vb: InternalCanRead(Stream)
+  fullName: Archivist.Formats.JSON.JsonReader.InternalCanRead(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.JSON.JsonReader.InternalCanRead(System.IO.Stream)
+  nameWithType: JsonReader.InternalCanRead(Stream?)
+  nameWithType.vb: JsonReader.InternalCanRead(Stream)
+- uid: Archivist.Formats.JSON.JsonReader.InternalCanRead*
+  name: InternalCanRead
+  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader_InternalCanRead_
+  commentId: Overload:Archivist.Formats.JSON.JsonReader.InternalCanRead
+  isSpec: "True"
+  fullName: Archivist.Formats.JSON.JsonReader.InternalCanRead
+  nameWithType: JsonReader.InternalCanRead
+- uid: Archivist.Formats.JSON.JsonReader.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream?)
+  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.Formats.JSON.JsonReader.ReadAsync(System.IO.Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.Formats.JSON.JsonReader.ReadAsync(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.JSON.JsonReader.ReadAsync(System.IO.Stream)
+  nameWithType: JsonReader.ReadAsync(Stream?)
+  nameWithType.vb: JsonReader.ReadAsync(Stream)
+- uid: Archivist.Formats.JSON.JsonReader.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader_ReadAsync_
+  commentId: Overload:Archivist.Formats.JSON.JsonReader.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.JSON.JsonReader.ReadAsync
+  nameWithType: JsonReader.ReadAsync
+- uid: Archivist.Formats.JSON.JsonWriter
+  name: JsonWriter
+  href: api/Archivist.Formats.JSON.JsonWriter.html
+  commentId: T:Archivist.Formats.JSON.JsonWriter
+  fullName: Archivist.Formats.JSON.JsonWriter
+  nameWithType: JsonWriter
+- uid: Archivist.Formats.JSON.JsonWriter.#ctor(System.Text.Json.JsonSerializerOptions)
+  name: JsonWriter(JsonSerializerOptions?)
+  href: api/Archivist.Formats.JSON.JsonWriter.html#Archivist_Formats_JSON_JsonWriter__ctor_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Archivist.Formats.JSON.JsonWriter.#ctor(System.Text.Json.JsonSerializerOptions)
+  name.vb: New(JsonSerializerOptions)
+  fullName: Archivist.Formats.JSON.JsonWriter.JsonWriter(System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Archivist.Formats.JSON.JsonWriter.New(System.Text.Json.JsonSerializerOptions)
+  nameWithType: JsonWriter.JsonWriter(JsonSerializerOptions?)
+  nameWithType.vb: JsonWriter.New(JsonSerializerOptions)
+- uid: Archivist.Formats.JSON.JsonWriter.#ctor*
+  name: JsonWriter
+  href: api/Archivist.Formats.JSON.JsonWriter.html#Archivist_Formats_JSON_JsonWriter__ctor_
+  commentId: Overload:Archivist.Formats.JSON.JsonWriter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.JSON.JsonWriter.JsonWriter
+  fullName.vb: Archivist.Formats.JSON.JsonWriter.New
+  nameWithType: JsonWriter.JsonWriter
+  nameWithType.vb: JsonWriter.New
+- uid: Archivist.Formats.JSON.JsonWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: WriteAsync(IGenericFile?, Stream?)
+  href: api/Archivist.Formats.JSON.JsonWriter.html#Archivist_Formats_JSON_JsonWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.Formats.JSON.JsonWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name.vb: WriteAsync(IGenericFile, Stream)
+  fullName: Archivist.Formats.JSON.JsonWriter.WriteAsync(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.Formats.JSON.JsonWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: JsonWriter.WriteAsync(IGenericFile?, Stream?)
+  nameWithType.vb: JsonWriter.WriteAsync(IGenericFile, Stream)
+- uid: Archivist.Formats.JSON.JsonWriter.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.Formats.JSON.JsonWriter.html#Archivist_Formats_JSON_JsonWriter_WriteAsync_
+  commentId: Overload:Archivist.Formats.JSON.JsonWriter.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.JSON.JsonWriter.WriteAsync
+  nameWithType: JsonWriter.WriteAsync
 - uid: Archivist.Formats.Txt
   name: Archivist.Formats.Txt
   href: api/Archivist.Formats.Txt.html
@@ -5922,3 +6729,35 @@ references:
   isSpec: "True"
   fullName: Archivist.Options.DelimitedOptions.Quote
   nameWithType: DelimitedOptions.Quote
+- uid: Archivist.Options.ExcelOptions
+  name: ExcelOptions
+  href: api/Archivist.Options.ExcelOptions.html
+  commentId: T:Archivist.Options.ExcelOptions
+  fullName: Archivist.Options.ExcelOptions
+  nameWithType: ExcelOptions
+- uid: Archivist.Options.ExcelOptions.Default
+  name: Default
+  href: api/Archivist.Options.ExcelOptions.html#Archivist_Options_ExcelOptions_Default
+  commentId: P:Archivist.Options.ExcelOptions.Default
+  fullName: Archivist.Options.ExcelOptions.Default
+  nameWithType: ExcelOptions.Default
+- uid: Archivist.Options.ExcelOptions.Default*
+  name: Default
+  href: api/Archivist.Options.ExcelOptions.html#Archivist_Options_ExcelOptions_Default_
+  commentId: Overload:Archivist.Options.ExcelOptions.Default
+  isSpec: "True"
+  fullName: Archivist.Options.ExcelOptions.Default
+  nameWithType: ExcelOptions.Default
+- uid: Archivist.Options.ExcelOptions.FirstRowIsColumnHeaders
+  name: FirstRowIsColumnHeaders
+  href: api/Archivist.Options.ExcelOptions.html#Archivist_Options_ExcelOptions_FirstRowIsColumnHeaders
+  commentId: P:Archivist.Options.ExcelOptions.FirstRowIsColumnHeaders
+  fullName: Archivist.Options.ExcelOptions.FirstRowIsColumnHeaders
+  nameWithType: ExcelOptions.FirstRowIsColumnHeaders
+- uid: Archivist.Options.ExcelOptions.FirstRowIsColumnHeaders*
+  name: FirstRowIsColumnHeaders
+  href: api/Archivist.Options.ExcelOptions.html#Archivist_Options_ExcelOptions_FirstRowIsColumnHeaders_
+  commentId: Overload:Archivist.Options.ExcelOptions.FirstRowIsColumnHeaders
+  isSpec: "True"
+  fullName: Archivist.Options.ExcelOptions.FirstRowIsColumnHeaders
+  nameWithType: ExcelOptions.FirstRowIsColumnHeaders

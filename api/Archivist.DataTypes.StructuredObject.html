@@ -1,0 +1,1653 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StructuredObject | Archivist API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StructuredObject | Archivist API Reference ">
+      
+      <meta name="description" content="Represents a structured object.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JaCraig/Archivist/new/main/apiSpec/new?filename=Archivist_DataTypes_StructuredObject.md&amp;value=---%0Auid%3A%20Archivist.DataTypes.StructuredObject%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon.png" alt="Archivist">
+            Archivist
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Archivist.DataTypes.StructuredObject">
+
+
+
+  <h1 id="Archivist_DataTypes_StructuredObject" data-uid="Archivist.DataTypes.StructuredObject" class="text-break">
+Class StructuredObject  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Archivist.html">Archivist</a>.<a class="xref" href="Archivist.DataTypes.html">DataTypes</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Archivist.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a structured object.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StructuredObject : FileBaseClass&lt;StructuredObject&gt;, IGenericFile, IComparable&lt;StructuredObject&gt;, IEquatable&lt;StructuredObject&gt;, IObjectConvertable, IDictionary&lt;string, object?&gt;, ICollection&lt;KeyValuePair&lt;string, object?&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html">FileBaseClass</a>&lt;<a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a>&gt;</div>
+      <div><span class="xref">StructuredObject</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a>&gt;</div>
+      <div><a class="xref" href="Archivist.Interfaces.IObjectConvertable.html">IObjectConvertable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Metadata">FileBaseClass&lt;StructuredObject&gt;.Metadata</a>
+    </div>
+    <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Title">FileBaseClass&lt;StructuredObject&gt;.Title</a>
+    </div>
+    <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_CompareTo_System_Object_">FileBaseClass&lt;StructuredObject&gt;.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_ToString">FileBaseClass&lt;StructuredObject&gt;.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Archivist_DataTypes_StructuredObject__ctor_" data-uid="Archivist.DataTypes.StructuredObject.#ctor*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject__ctor" data-uid="Archivist.DataTypes.StructuredObject.#ctor">
+  StructuredObject()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StructuredObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject__ctor_" data-uid="Archivist.DataTypes.StructuredObject.#ctor*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject__ctor_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Archivist.DataTypes.StructuredObject.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})">
+  StructuredObject(IDictionary&lt;string, object?&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a> class with the
+specified content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StructuredObject(IDictionary&lt;string, object?&gt;? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>The content of the structured object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Count_" data-uid="Archivist.DataTypes.StructuredObject.Count*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Count" data-uid="Archivist.DataTypes.StructuredObject.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of items in the structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_IsReadOnly_" data-uid="Archivist.DataTypes.StructuredObject.IsReadOnly*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_IsReadOnly" data-uid="Archivist.DataTypes.StructuredObject.IsReadOnly">
+  IsReadOnly
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the structured object is read-only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Item_" data-uid="Archivist.DataTypes.StructuredObject.Item*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Item_System_String_" data-uid="Archivist.DataTypes.StructuredObject.Item(System.String)">
+  this[string]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value of the structured object with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? this[string key] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key of the value to get.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The value of the structured object with the specified key.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Keys_" data-uid="Archivist.DataTypes.StructuredObject.Keys*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Keys" data-uid="Archivist.DataTypes.StructuredObject.Keys">
+  Keys
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Keys in the structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;string&gt; Keys { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Values_" data-uid="Archivist.DataTypes.StructuredObject.Values*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Values" data-uid="Archivist.DataTypes.StructuredObject.Values">
+  Values
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Values in the structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;object?&gt; Values { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Add_" data-uid="Archivist.DataTypes.StructuredObject.Add*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Add_System_Collections_Generic_KeyValuePair_System_String_System_Object__" data-uid="Archivist.DataTypes.StructuredObject.Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+  Add(KeyValuePair&lt;string, object?&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a key-value pair to the structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(KeyValuePair&lt;string, object?&gt; item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>The key-value pair to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Add_" data-uid="Archivist.DataTypes.StructuredObject.Add*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Add_System_String_System_Object_" data-uid="Archivist.DataTypes.StructuredObject.Add(System.String,System.Object)">
+  Add(string, object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a key-value pair to the structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(string key, object? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key of the value to add.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The value to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Clear_" data-uid="Archivist.DataTypes.StructuredObject.Clear*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Clear" data-uid="Archivist.DataTypes.StructuredObject.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_CompareTo_" data-uid="Archivist.DataTypes.StructuredObject.CompareTo*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_CompareTo_Archivist_DataTypes_StructuredObject_" data-uid="Archivist.DataTypes.StructuredObject.CompareTo(Archivist.DataTypes.StructuredObject)">
+  CompareTo(StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares the current structured object with another structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int CompareTo(StructuredObject? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The structured object to compare with this structured object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value indicating the relative order of the objects being compared.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Contains_" data-uid="Archivist.DataTypes.StructuredObject.Contains*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Contains_System_Collections_Generic_KeyValuePair_System_String_System_Object__" data-uid="Archivist.DataTypes.StructuredObject.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+  Contains(KeyValuePair&lt;string, object?&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the current structured object contains the specified key-value pair.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(KeyValuePair&lt;string, object?&gt; item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>The key-value pair to locate in the structured object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the structured object contains the key-value pair; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_ContainsKey_" data-uid="Archivist.DataTypes.StructuredObject.ContainsKey*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_ContainsKey_System_String_" data-uid="Archivist.DataTypes.StructuredObject.ContainsKey(System.String)">
+  ContainsKey(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the current structured object contains the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsKey(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key to locate in the structured object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the structured object contains the key; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_ConvertFrom_" data-uid="Archivist.DataTypes.StructuredObject.ConvertFrom*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_ConvertFrom__1___0_" data-uid="Archivist.DataTypes.StructuredObject.ConvertFrom``1(``0)">
+  ConvertFrom&lt;TObject&gt;(TObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the structured object from the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConvertFrom&lt;TObject&gt;(TObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">TObject</span></dt>
+    <dd><p>The object to convert from.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>The type of the object to convert from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_ConvertTo_" data-uid="Archivist.DataTypes.StructuredObject.ConvertTo*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_ConvertTo__1" data-uid="Archivist.DataTypes.StructuredObject.ConvertTo``1">
+  ConvertTo&lt;TObject&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the structured object to the specified object type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TObject? ConvertTo&lt;TObject&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TObject</span></dt>
+    <dd><p>The converted object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>The type of the object to convert to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_CopyTo_" data-uid="Archivist.DataTypes.StructuredObject.CopyTo*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_CopyTo_System_Collections_Generic_KeyValuePair_System_String_System_Object____System_Int32_" data-uid="Archivist.DataTypes.StructuredObject.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)">
+  CopyTo(KeyValuePair&lt;string, object?&gt;[], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies the key-value pairs of the structured object to an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(KeyValuePair&lt;string, object?&gt;[] array, int arrayIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;[]</dt>
+    <dd><p>The array to copy the key-value pairs to.</p>
+</dd>
+    <dt><code>arrayIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index in the array to start copying the key-value pairs to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Equals_" data-uid="Archivist.DataTypes.StructuredObject.Equals*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Equals_Archivist_DataTypes_StructuredObject_" data-uid="Archivist.DataTypes.StructuredObject.Equals(Archivist.DataTypes.StructuredObject)">
+  Equals(StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the current structured object is equal to another structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(StructuredObject? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The structured object to compare with the current structured object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the current structured object is equal to the other structured object;
+otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Equals_" data-uid="Archivist.DataTypes.StructuredObject.Equals*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Equals_System_Object_" data-uid="Archivist.DataTypes.StructuredObject.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the current structured object is equal to another object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current structured object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the current structured object is equal to the other object; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_GetContent_" data-uid="Archivist.DataTypes.StructuredObject.GetContent*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_GetContent" data-uid="Archivist.DataTypes.StructuredObject.GetContent">
+  GetContent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the content of the structured object as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string? GetContent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The content of the structured object as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_GetEnumerator_" data-uid="Archivist.DataTypes.StructuredObject.GetEnumerator*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_GetEnumerator" data-uid="Archivist.DataTypes.StructuredObject.GetEnumerator">
+  GetEnumerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the enumerator for the structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;KeyValuePair&lt;string, object?&gt;&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd><p>The enumerator for the structured object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_GetHashCode_" data-uid="Archivist.DataTypes.StructuredObject.GetHashCode*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_GetHashCode" data-uid="Archivist.DataTypes.StructuredObject.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the hash code of the structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The hash code of the structured object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_GetValue_" data-uid="Archivist.DataTypes.StructuredObject.GetValue*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_GetValue__1_System_String_" data-uid="Archivist.DataTypes.StructuredObject.GetValue``1(System.String)">
+  GetValue&lt;TObject&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value of the structured object with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TObject? GetValue&lt;TObject&gt;(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key of the value to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TObject</span></dt>
+    <dd><p>The value of the structured object with the specified key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>The type of the value to get.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Remove_" data-uid="Archivist.DataTypes.StructuredObject.Remove*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Remove_System_Collections_Generic_KeyValuePair_System_String_System_Object__" data-uid="Archivist.DataTypes.StructuredObject.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})">
+  Remove(KeyValuePair&lt;string, object?&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the key-value pair with the specified key from the structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(KeyValuePair&lt;string, object?&gt; item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>The key-value pair to remove.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the key-value pair was removed; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_Remove_" data-uid="Archivist.DataTypes.StructuredObject.Remove*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_Remove_System_String_" data-uid="Archivist.DataTypes.StructuredObject.Remove(System.String)">
+  Remove(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L436"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the key-value pair with the specified key from the structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key of the key-value pair to remove.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the key-value pair was removed; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_SetValue_" data-uid="Archivist.DataTypes.StructuredObject.SetValue*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_SetValue__1_System_String___0_" data-uid="Archivist.DataTypes.StructuredObject.SetValue``1(System.String,``0)">
+  SetValue&lt;TObject&gt;(string, TObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of the structured object with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StructuredObject SetValue&lt;TObject&gt;(string key, TObject value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key of the value to set.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TObject</span></dt>
+    <dd><p>Value to set</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The structured object with the value set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>The type of the value to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_ToFileType_" data-uid="Archivist.DataTypes.StructuredObject.ToFileType*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_ToFileType__1" data-uid="Archivist.DataTypes.StructuredObject.ToFileType``1">
+  ToFileType&lt;TFile&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L477"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the structured object to the specified file type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TFile? ToFileType&lt;TFile&gt;() where TFile : IGenericFile</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TFile</span></dt>
+    <dd><p>The file of the specified type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TFile</code></dt>
+    <dd><p>The type of the file.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_TryGetValue_" data-uid="Archivist.DataTypes.StructuredObject.TryGetValue*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_TryGetValue_System_String_System_Object__" data-uid="Archivist.DataTypes.StructuredObject.TryGetValue(System.String,System.Object@)">
+  TryGetValue(string, out object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to get the value of the structured object with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValue(string key, out object? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key of the value to get.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The value of the structured object with the specified key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the value was retrieved; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_TryGetValue_" data-uid="Archivist.DataTypes.StructuredObject.TryGetValue*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_TryGetValue__1_System_String___0__" data-uid="Archivist.DataTypes.StructuredObject.TryGetValue``1(System.String,``0@)">
+  TryGetValue&lt;TObject&gt;(string, out TObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to get the value of the structured object with the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValue&lt;TObject&gt;(string key, out TObject? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key of the value to get.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TObject</span></dt>
+    <dd><p>The value of the structured object with the specified key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the value was retrieved; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>The type of the value to get.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Archivist_DataTypes_StructuredObject_op_Equality_" data-uid="Archivist.DataTypes.StructuredObject.op_Equality*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_op_Equality_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_" data-uid="Archivist.DataTypes.StructuredObject.op_Equality(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)">
+  operator ==(StructuredObject?, StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two structured objects are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(StructuredObject? left, StructuredObject? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The left structured object.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The right structured object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the structured objects are equal; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_op_GreaterThan_" data-uid="Archivist.DataTypes.StructuredObject.op_GreaterThan*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_op_GreaterThan_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_" data-uid="Archivist.DataTypes.StructuredObject.op_GreaterThan(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)">
+  operator &gt;(StructuredObject?, StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the left structured object is greater than the right structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(StructuredObject? left, StructuredObject? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The left structured object.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The right structured object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the left structured object is greater than the right structured object;
+otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_op_GreaterThanOrEqual_" data-uid="Archivist.DataTypes.StructuredObject.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_op_GreaterThanOrEqual_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_" data-uid="Archivist.DataTypes.StructuredObject.op_GreaterThanOrEqual(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)">
+  operator &gt;=(StructuredObject?, StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the left structured object is greater than or equal to the right
+structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(StructuredObject? left, StructuredObject? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The left structured object.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The right structured object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the left structured object is greater than or equal to the right
+structured object; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_op_Implicit_" data-uid="Archivist.DataTypes.StructuredObject.op_Implicit*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Card" data-uid="Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Card">
+  implicit operator Card?(StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the structured object to a card.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Card?(StructuredObject? structuredObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structuredObject</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The structured object to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.Card.html">Card</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_op_Implicit_" data-uid="Archivist.DataTypes.StructuredObject.op_Implicit*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Table" data-uid="Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Table">
+  implicit operator Table?(StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the structured object to a table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Table?(StructuredObject? structuredObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structuredObject</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The structured object to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.Table.html">Table</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_op_Implicit_" data-uid="Archivist.DataTypes.StructuredObject.op_Implicit*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Tables" data-uid="Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Tables">
+  implicit operator Tables?(StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the structured object to a tables object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Tables?(StructuredObject? structuredObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structuredObject</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The structured object to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.Tables.html">Tables</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_op_Implicit_" data-uid="Archivist.DataTypes.StructuredObject.op_Implicit*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Text" data-uid="Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Text">
+  implicit operator Text?(StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the structured object to a text object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Text?(StructuredObject? structuredObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structuredObject</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The structured object to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.Text.html">Text</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_op_Inequality_" data-uid="Archivist.DataTypes.StructuredObject.op_Inequality*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_op_Inequality_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_" data-uid="Archivist.DataTypes.StructuredObject.op_Inequality(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)">
+  operator !=(StructuredObject?, StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two structured objects are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(StructuredObject? left, StructuredObject? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The left structured object.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The right structured object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the structured objects are not equal; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_op_LessThan_" data-uid="Archivist.DataTypes.StructuredObject.op_LessThan*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_op_LessThan_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_" data-uid="Archivist.DataTypes.StructuredObject.op_LessThan(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)">
+  operator &lt;(StructuredObject?, StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the left structured object is less than the right structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(StructuredObject? left, StructuredObject? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The left structured object.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The right structured object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the left structured object is less than the right structured object;
+otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_StructuredObject_op_LessThanOrEqual_" data-uid="Archivist.DataTypes.StructuredObject.op_LessThanOrEqual*"></a>
+
+  <h3 id="Archivist_DataTypes_StructuredObject_op_LessThanOrEqual_Archivist_DataTypes_StructuredObject_Archivist_DataTypes_StructuredObject_" data-uid="Archivist.DataTypes.StructuredObject.op_LessThanOrEqual(Archivist.DataTypes.StructuredObject,Archivist.DataTypes.StructuredObject)">
+  operator &lt;=(StructuredObject?, StructuredObject?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the left structured object is less than or equal to the right
+structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(StructuredObject? left, StructuredObject? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The left structured object.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The right structured object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the left structured object is less than or equal to the right structured
+object; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/StructuredObject.cs/#L16" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <strong><a href='https://github.com/JaCraig/Archivist'>Open in Github</a></strong>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
