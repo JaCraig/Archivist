@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.0"></a>
+## [0.5.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.0) (2024-06-24)
+
+### Features
+
+* Adding StructuredObject type and started on JSON format ([06f4abd](https://www.github.com/JaCraig/Archivist/commit/06f4abd39e1149b61d33c7d96519d084e233b43c))
+
+### Bug Fixes
+
+* Adding type conversion for StructuredObject and tests for Json format ([abf0c05](https://www.github.com/JaCraig/Archivist/commit/abf0c0586b5a84031fa91115e6bb7227371b2c6c))
+* Fixing issue with tests and CopyTo ([c30c13e](https://www.github.com/JaCraig/Archivist/commit/c30c13e87c80f1c735101f47cce2cac22138cc77))
+
 <a name="0.4.0"></a>
 ## [0.4.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.4.0) (2024-06-23)
 
