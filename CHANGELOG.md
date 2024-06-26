@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.1"></a>
+## [0.5.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.1) (2024-06-26)
+
+### Bug Fixes
+
+* Migrating data type conversion to own classes for better testing ([e0863c9](https://www.github.com/JaCraig/Archivist/commit/e0863c95bc69d1f86415c6ad6614dcfbdf79b65b))
+
+### Other
+
+* Merge pull request #22 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-9c9374a764 ([d27a528](https://www.github.com/JaCraig/Archivist/commit/d27a528d173b6fc915d88c52c8cdccd24eca0d45))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([bada238](https://www.github.com/JaCraig/Archivist/commit/bada238e3a16679ff75d6202a44730191360e589))
+* merge ([5e3baeb](https://www.github.com/JaCraig/Archivist/commit/5e3baebdf3a2fd9d3036d0c928a344b52c5d51dc))
+
 <a name="0.5.0"></a>
 ## [0.5.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.0) (2024-06-24)
 
