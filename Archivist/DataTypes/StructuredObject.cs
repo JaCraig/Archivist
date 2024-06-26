@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.Interfaces;
 using ObjectCartographer;
 using System;
@@ -86,19 +87,7 @@ namespace Archivist.DataTypes
         /// <param name="structuredObject">The structured object to convert.</param>
         public static implicit operator Card?(StructuredObject? structuredObject)
         {
-            if (structuredObject is null)
-                return null;
-            var ReturnValue = new Card();
-            foreach (var Key in structuredObject.Keys)
-            {
-                ReturnValue.Fields.Add(new CardField(Key, Array.Empty<CardFieldParameter>(), structuredObject[Key]?.ToString() ?? ""));
-            }
-            foreach (KeyValuePair<string, string> Metadata in structuredObject.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value?.ToString() ?? "");
-            }
-            ReturnValue.Title = structuredObject.Title;
-            return ReturnValue;
+            return StructuredObjectToCardConverter.Convert(structuredObject);
         }
 
         /// <summary>
@@ -107,22 +96,7 @@ namespace Archivist.DataTypes
         /// <param name="structuredObject">The structured object to convert.</param>
         public static implicit operator Table?(StructuredObject? structuredObject)
         {
-            if (structuredObject is null)
-                return null;
-            var ReturnValue = new Table();
-            ReturnValue.Columns.AddRange(structuredObject.Keys);
-            TableRow Row = ReturnValue.AddRow();
-            foreach (var Key in structuredObject.Keys)
-            {
-                var Value = structuredObject[Key]?.ToString();
-                Row.Add(Value);
-            }
-            foreach (KeyValuePair<string, string> Metadata in structuredObject.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value?.ToString() ?? "");
-            }
-            ReturnValue.Title = structuredObject.Title;
-            return ReturnValue;
+            return StructuredObjectToTableConverter.Convert(structuredObject);
         }
 
         /// <summary>
@@ -131,23 +105,7 @@ namespace Archivist.DataTypes
         /// <param name="structuredObject">The structured object to convert.</param>
         public static implicit operator Tables?(StructuredObject? structuredObject)
         {
-            if (structuredObject is null)
-                return null;
-            var ReturnValue = new Tables();
-            Table Table = ReturnValue.AddTable();
-            Table.Columns.AddRange(structuredObject.Keys);
-            TableRow Row = Table.AddRow();
-            foreach (var Key in structuredObject.Keys)
-            {
-                var Value = structuredObject[Key]?.ToString();
-                Row.Add(Value);
-            }
-            foreach (KeyValuePair<string, string> Metadata in structuredObject.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value?.ToString() ?? "");
-            }
-            ReturnValue.Title = structuredObject.Title;
-            return ReturnValue;
+            return StructuredObjectToTablesConverter.Convert(structuredObject);
         }
 
         /// <summary>
@@ -156,14 +114,7 @@ namespace Archivist.DataTypes
         /// <param name="structuredObject">The structured object to convert.</param>
         public static implicit operator Text?(StructuredObject? structuredObject)
         {
-            if (structuredObject is null)
-                return null;
-            var ReturnValue = new Text(structuredObject.GetContent(), structuredObject.Title);
-            foreach (KeyValuePair<string, string> Metadata in structuredObject.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value?.ToString() ?? "");
-            }
-            return ReturnValue;
+            return AnythingToTextConverter.Convert(structuredObject);
         }
 
         /// <summary>

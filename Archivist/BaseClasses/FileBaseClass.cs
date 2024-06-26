@@ -151,7 +151,7 @@ namespace Archivist.BaseClasses
             if (GetType() == FileType)
                 return (TFile)(IGenericFile)this;
             if (FileType == typeof(Text))
-                return (TFile)(IGenericFile)new Text(GetContent(), "");
+                return (TFile)(IGenericFile)new Text(GetContent(), Title);
             return default;
         }
 

@@ -1,9 +1,9 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Dynamic;
 using System.Linq;
 using System.Text;
 
@@ -59,17 +59,7 @@ namespace Archivist.DataTypes
         /// <returns>The Card converted from the Tables.</returns>
         public static implicit operator Card?(Tables? file)
         {
-            if (file is null)
-                return null;
-            var ReturnValue = (Card?)file.TableEntries.FirstOrDefault();
-            if (ReturnValue is null)
-                return null;
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
-            }
-            ReturnValue.Title = file.Title;
-            return ReturnValue;
+            return TablesToCardConverter.Convert(file);
         }
 
         /// <summary>
@@ -78,22 +68,7 @@ namespace Archivist.DataTypes
         /// <param name="file">The Tables to convert.</param>
         public static implicit operator StructuredObject?(Tables? file)
         {
-            if (file is null)
-                return null;
-            IDictionary<string, object?> ContentObject = new ExpandoObject();
-            foreach (Table Table in file.TableEntries)
-            {
-                if (string.IsNullOrEmpty(Table.Title))
-                    continue;
-                ContentObject.Add(Table.Title, (StructuredObject?)Table);
-            }
-            var ReturnValue = new StructuredObject(ContentObject);
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
-            }
-            ReturnValue.Title = file.Title;
-            return ReturnValue;
+            return TablesToStructuredObjectConverter.Convert(file);
         }
 
         /// <summary>
@@ -103,17 +78,7 @@ namespace Archivist.DataTypes
         /// <returns>The Table converted from the Tables.</returns>
         public static implicit operator Table?(Tables? file)
         {
-            if (file is null)
-                return null;
-            Table? ReturnValue = file.TableEntries.FirstOrDefault();
-            if (ReturnValue is null)
-                return null;
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
-            }
-            ReturnValue.Title = file.Title;
-            return ReturnValue;
+            return TablesToTableConverter.Convert(file);
         }
 
         /// <summary>
@@ -123,14 +88,7 @@ namespace Archivist.DataTypes
         /// <returns>The Text converted from the Tables.</returns>
         public static implicit operator Text?(Tables? file)
         {
-            if (file is null)
-                return null;
-            var ReturnValue = new Text(file.GetContent(), file.Title);
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
-            }
-            return ReturnValue;
+            return AnythingToTextConverter.Convert(file);
         }
 
         /// <summary>

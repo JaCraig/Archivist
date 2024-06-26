@@ -1,9 +1,9 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Dynamic;
 using System.Text;
 
 namespace Archivist.DataTypes
@@ -85,20 +85,7 @@ namespace Archivist.DataTypes
         /// <returns>The card representation of the table.</returns>
         public static implicit operator Card?(Table? file)
         {
-            if (file is null)
-                return null;
-            var ReturnValue = new Card() { Title = file.Title };
-            if (file.Count == 0 || file.Columns.Count == 0)
-                return ReturnValue;
-            foreach (var Column in file.Columns)
-            {
-                ReturnValue.Fields.Add(new CardField(Column, Array.Empty<CardFieldParameter>(), file[0][Column].Content));
-            }
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
-            }
-            return ReturnValue;
+            return TableToCardConverter.Convert(file);
         }
 
         /// <summary>
@@ -107,28 +94,7 @@ namespace Archivist.DataTypes
         /// <param name="file">The table to convert.</param>
         public static implicit operator StructuredObject?(Table? file)
         {
-            if (file is null)
-                return null;
-            IDictionary<string, object?> ContentObject = new ExpandoObject();
-            foreach (var Column in file.Columns)
-            {
-                var ColumnList = new List<object>();
-                ContentObject.Add(Column, ColumnList);
-                foreach (TableRow Row in file.Rows)
-                {
-                    var Content = Row[Column]?.Content;
-                    if (string.IsNullOrEmpty(Content))
-                        continue;
-                    ColumnList.Add(Content);
-                }
-            }
-            var ReturnValue = new StructuredObject(ContentObject);
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
-            }
-            ReturnValue.Title = file.Title;
-            return ReturnValue;
+            return TableToStructuredObjectConverter.Convert(file);
         }
 
         /// <summary>
@@ -138,18 +104,7 @@ namespace Archivist.DataTypes
         /// <returns>The tables representation of the table.</returns>
         public static implicit operator Tables?(Table? file)
         {
-            if (file is null)
-                return null;
-            var ReturnValue = new Tables
-            {
-                file
-            };
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
-            }
-            ReturnValue.Title = file.Title;
-            return ReturnValue;
+            return TableToTablesConverter.Convert(file);
         }
 
         /// <summary>
@@ -159,14 +114,7 @@ namespace Archivist.DataTypes
         /// <returns>The text representation of the table.</returns>
         public static implicit operator Text?(Table? file)
         {
-            if (file is null)
-                return null;
-            var ReturnValue = new Text(file.GetContent(), file.Title);
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
-            }
-            return ReturnValue;
+            return AnythingToTextConverter.Convert(file);
         }
 
         /// <summary>

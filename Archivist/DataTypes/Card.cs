@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.Enums;
 using Archivist.Interfaces;
 using System;
@@ -210,21 +211,7 @@ namespace Archivist.DataTypes
         /// <param name="file">The card to convert.</param>
         public static implicit operator StructuredObject?(Card? file)
         {
-            if (file is null)
-                return null;
-            var ReturnValue = new StructuredObject();
-            foreach (CardField? Field in file.Fields)
-            {
-                if (Field is null)
-                    continue;
-                ReturnValue[Field.Property] = Field.Value;
-            }
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                ReturnValue.Metadata[Metadata.Key] = Metadata.Value;
-            }
-            ReturnValue.Title = file.Title ?? file.FullName?.Value;
-            return ReturnValue;
+            return CardToStructuredObjectConverter.Convert(file);
         }
 
         /// <summary>
@@ -234,25 +221,7 @@ namespace Archivist.DataTypes
         /// <returns>The table representation of the card.</returns>
         public static implicit operator Table?(Card? file)
         {
-            if (file is null)
-                return null;
-            var Table = new Table
-            {
-                Title = file.Title ?? file.FullName?.Value
-            };
-            TableRow Row = Table.AddRow();
-            foreach (CardField? Field in file.Fields)
-            {
-                if (Field is null)
-                    continue;
-                Row.Add(Field.Value);
-                Table.Columns.Add(Field.Property);
-            }
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                Table.Metadata.Add(Metadata.Key, Metadata.Value);
-            }
-            return Table;
+            return CardToTableConverter.Convert(file);
         }
 
         /// <summary>
@@ -262,18 +231,7 @@ namespace Archivist.DataTypes
         /// <returns>The Tables representation of the card.</returns>
         public static implicit operator Tables?(Card? file)
         {
-            if (file is null)
-                return null;
-            var ReturnValue = new Tables
-            {
-                file
-            };
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
-            }
-            ReturnValue.Title = file.Title ?? file.FullName?.Value;
-            return ReturnValue;
+            return CardToTablesConverter.Convert(file);
         }
 
         /// <summary>
@@ -285,11 +243,9 @@ namespace Archivist.DataTypes
         {
             if (file is null)
                 return null;
-            var ReturnValue = new Text(file.GetContent(), file.Title ?? file.FullName?.Value);
-            foreach (KeyValuePair<string, string> Metadata in file.Metadata)
-            {
-                ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
-            }
+            Text? ReturnValue = AnythingToTextConverter.Convert(file);
+            if (ReturnValue is not null)
+                ReturnValue.Title ??= file.FullName?.Value;
             return ReturnValue;
         }
 
