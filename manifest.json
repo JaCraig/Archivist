@@ -72,6 +72,146 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.AnythingToTextConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.AnythingToTextConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.CardToStructuredObjectConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.CardToStructuredObjectConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.CardToTableConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.CardToTableConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.CardToTablesConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.CardToTablesConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.StructuredObjectToCardConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.StructuredObjectToCardConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.StructuredObjectToTableConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.StructuredObjectToTableConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.StructuredObjectToTablesConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.StructuredObjectToTablesConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.TableToCardConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.TableToCardConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.TableToStructuredObjectConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.TableToStructuredObjectConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.TableToTablesConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.TableToTablesConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.TablesToCardConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.TablesToCardConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.TablesToStructuredObjectConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.TablesToStructuredObjectConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.TablesToTableConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.TablesToTableConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.DataTypes.Card.yml",
       "output": {
         ".html": {
@@ -466,6 +606,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.Formats.VCard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Interfaces.IDataConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Interfaces.IDataConverter.html"
         }
       },
       "version": ""
