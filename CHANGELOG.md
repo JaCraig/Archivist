@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.2"></a>
+## [0.5.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.2) (2024-07-15)
+
+### Bug Fixes
+
+* Adding tests and a couple fixes ([d6c0963](https://www.github.com/JaCraig/Archivist/commit/d6c096397a7acf4a8f791b15b8c74e278499e5a9))
+
+### Other
+
+* Merge pull request #23 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-3d6692037d ([424442f](https://www.github.com/JaCraig/Archivist/commit/424442fbff92806e14a1de146729446ef7addb58))
+* Merge pull request #24 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-ccdcfae7af ([e07bf1b](https://www.github.com/JaCraig/Archivist/commit/e07bf1bd39063b9be982fab3793b29450a043404))
+* Merge pull request #25 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-38ce3cddb5 ([965337b](https://www.github.com/JaCraig/Archivist/commit/965337b86f15b6797a00dc2cfff5dc7b56d74c5b))
+* Merge pull request #26 from JaCraig/dependabot/github_actions/dependencies-c44bf69c3e ([6e857db](https://www.github.com/JaCraig/Archivist/commit/6e857db3bc7e3e1fc5576601cc6d8b5a7d819769))
+* Merge pull request #27 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-8e312df114 ([4641e94](https://www.github.com/JaCraig/Archivist/commit/4641e94e970d516709dda43c352eea8cde23b0dd))
+* Merge pull request #28 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-5eaf270abd ([07ef1a2](https://www.github.com/JaCraig/Archivist/commit/07ef1a2b1edb4015a0617b33dd6f79969506c3fe))
+* Merge pull request #29 from JaCraig/dependabot/github_actions/dependencies-be62d4486d ([98a3b3d](https://www.github.com/JaCraig/Archivist/commit/98a3b3d281a94b33db07faf0099bdf6e62ac6bb7))
+* Merge pull request #30 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-cc3d88f83c ([520ae2f](https://www.github.com/JaCraig/Archivist/commit/520ae2fb75ecfbd4e02af1a100f0c5a8e47696f6))
+* Merge pull request #31 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-bbe669398b ([246825f](https://www.github.com/JaCraig/Archivist/commit/246825f801a69fa7e31baafec8a8f94d8e6f3526))
+* bump actions/setup-dotnet in the dependencies group ([19484ca](https://www.github.com/JaCraig/Archivist/commit/19484ca46e96a45e614efe184f0de8c2aa21e14e))
+* bump dependabot/fetch-metadata in the dependencies group ([2080cad](https://www.github.com/JaCraig/Archivist/commit/2080cad561746a9323f5957ed793a8b0c58db469))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([8b21359](https://www.github.com/JaCraig/Archivist/commit/8b21359b97f3e4e6dc524c420588a324d9afc511))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([a3d7340](https://www.github.com/JaCraig/Archivist/commit/a3d73409799c9005c776f9c54165cc7eeb42f6e9))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([13f53ce](https://www.github.com/JaCraig/Archivist/commit/13f53cefc24e64ec7e231bc1fef1c338761143f8))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([ef98488](https://www.github.com/JaCraig/Archivist/commit/ef984884916f6cf120bc7fa2749698846d558d51))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([8d85bee](https://www.github.com/JaCraig/Archivist/commit/8d85beec8507c1e6620cc25b6cd6819691d541ad))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([f624d3a](https://www.github.com/JaCraig/Archivist/commit/f624d3ab17a4dcb1f126505dbdd1934102a85a3a))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([02514b1](https://www.github.com/JaCraig/Archivist/commit/02514b1442adac899b91a73f4593e2602f02ff50))
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.1) (2024-06-26)
 
