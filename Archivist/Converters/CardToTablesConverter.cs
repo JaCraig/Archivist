@@ -37,7 +37,7 @@ namespace Archivist.Converters
         /// <param name="source">The source type.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>True if the conversion is possible, otherwise false.</returns>
-        public bool CanConvert(Type source, Type destination) => source == typeof(Card) && destination == typeof(Tables);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(Card) && destination == typeof(Tables);
 
         /// <summary>
         /// Converts the specified object to the destination type.
@@ -45,7 +45,7 @@ namespace Archivist.Converters
         /// <param name="source">The object to convert.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>The converted object.</returns>
-        public object? Convert(object? source, Type destination)
+        public object? Convert(object? source, Type? destination)
         {
             if (source is not Card File || destination is null)
                 return null;
