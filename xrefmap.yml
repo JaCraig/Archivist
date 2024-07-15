@@ -817,11 +817,14 @@ references:
   fullName: Archivist.Converters.CardToTablesConverter
   nameWithType: CardToTablesConverter
 - uid: Archivist.Converters.CardToTablesConverter.CanConvert(System.Type,System.Type)
-  name: CanConvert(Type, Type)
+  name: CanConvert(Type?, Type?)
   href: api/Archivist.Converters.CardToTablesConverter.html#Archivist_Converters_CardToTablesConverter_CanConvert_System_Type_System_Type_
   commentId: M:Archivist.Converters.CardToTablesConverter.CanConvert(System.Type,System.Type)
-  fullName: Archivist.Converters.CardToTablesConverter.CanConvert(System.Type, System.Type)
-  nameWithType: CardToTablesConverter.CanConvert(Type, Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.CardToTablesConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.CardToTablesConverter.CanConvert(System.Type, System.Type)
+  nameWithType: CardToTablesConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: CardToTablesConverter.CanConvert(Type, Type)
 - uid: Archivist.Converters.CardToTablesConverter.CanConvert*
   name: CanConvert
   href: api/Archivist.Converters.CardToTablesConverter.html#Archivist_Converters_CardToTablesConverter_CanConvert_
@@ -839,13 +842,13 @@ references:
   nameWithType: CardToTablesConverter.Convert(Card?)
   nameWithType.vb: CardToTablesConverter.Convert(Card)
 - uid: Archivist.Converters.CardToTablesConverter.Convert(System.Object,System.Type)
-  name: Convert(object?, Type)
+  name: Convert(object?, Type?)
   href: api/Archivist.Converters.CardToTablesConverter.html#Archivist_Converters_CardToTablesConverter_Convert_System_Object_System_Type_
   commentId: M:Archivist.Converters.CardToTablesConverter.Convert(System.Object,System.Type)
   name.vb: Convert(Object, Type)
-  fullName: Archivist.Converters.CardToTablesConverter.Convert(object?, System.Type)
+  fullName: Archivist.Converters.CardToTablesConverter.Convert(object?, System.Type?)
   fullName.vb: Archivist.Converters.CardToTablesConverter.Convert(Object, System.Type)
-  nameWithType: CardToTablesConverter.Convert(object?, Type)
+  nameWithType: CardToTablesConverter.Convert(object?, Type?)
   nameWithType.vb: CardToTablesConverter.Convert(Object, Type)
 - uid: Archivist.Converters.CardToTablesConverter.Convert*
   name: Convert
@@ -996,11 +999,14 @@ references:
   fullName: Archivist.Converters.TableToCardConverter
   nameWithType: TableToCardConverter
 - uid: Archivist.Converters.TableToCardConverter.CanConvert(System.Type,System.Type)
-  name: CanConvert(Type, Type)
+  name: CanConvert(Type?, Type?)
   href: api/Archivist.Converters.TableToCardConverter.html#Archivist_Converters_TableToCardConverter_CanConvert_System_Type_System_Type_
   commentId: M:Archivist.Converters.TableToCardConverter.CanConvert(System.Type,System.Type)
-  fullName: Archivist.Converters.TableToCardConverter.CanConvert(System.Type, System.Type)
-  nameWithType: TableToCardConverter.CanConvert(Type, Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.TableToCardConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.TableToCardConverter.CanConvert(System.Type, System.Type)
+  nameWithType: TableToCardConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: TableToCardConverter.CanConvert(Type, Type)
 - uid: Archivist.Converters.TableToCardConverter.CanConvert*
   name: CanConvert
   href: api/Archivist.Converters.TableToCardConverter.html#Archivist_Converters_TableToCardConverter_CanConvert_
@@ -1018,13 +1024,13 @@ references:
   nameWithType: TableToCardConverter.Convert(Table?)
   nameWithType.vb: TableToCardConverter.Convert(Table)
 - uid: Archivist.Converters.TableToCardConverter.Convert(System.Object,System.Type)
-  name: Convert(object?, Type)
+  name: Convert(object?, Type?)
   href: api/Archivist.Converters.TableToCardConverter.html#Archivist_Converters_TableToCardConverter_Convert_System_Object_System_Type_
   commentId: M:Archivist.Converters.TableToCardConverter.Convert(System.Object,System.Type)
   name.vb: Convert(Object, Type)
-  fullName: Archivist.Converters.TableToCardConverter.Convert(object?, System.Type)
+  fullName: Archivist.Converters.TableToCardConverter.Convert(object?, System.Type?)
   fullName.vb: Archivist.Converters.TableToCardConverter.Convert(Object, System.Type)
-  nameWithType: TableToCardConverter.Convert(object?, Type)
+  nameWithType: TableToCardConverter.Convert(object?, Type?)
   nameWithType.vb: TableToCardConverter.Convert(Object, Type)
 - uid: Archivist.Converters.TableToCardConverter.Convert*
   name: Convert
@@ -1175,11 +1181,14 @@ references:
   fullName: Archivist.Converters.TablesToStructuredObjectConverter
   nameWithType: TablesToStructuredObjectConverter
 - uid: Archivist.Converters.TablesToStructuredObjectConverter.CanConvert(System.Type,System.Type)
-  name: CanConvert(Type, Type)
+  name: CanConvert(Type?, Type?)
   href: api/Archivist.Converters.TablesToStructuredObjectConverter.html#Archivist_Converters_TablesToStructuredObjectConverter_CanConvert_System_Type_System_Type_
   commentId: M:Archivist.Converters.TablesToStructuredObjectConverter.CanConvert(System.Type,System.Type)
-  fullName: Archivist.Converters.TablesToStructuredObjectConverter.CanConvert(System.Type, System.Type)
-  nameWithType: TablesToStructuredObjectConverter.CanConvert(Type, Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.TablesToStructuredObjectConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.TablesToStructuredObjectConverter.CanConvert(System.Type, System.Type)
+  nameWithType: TablesToStructuredObjectConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: TablesToStructuredObjectConverter.CanConvert(Type, Type)
 - uid: Archivist.Converters.TablesToStructuredObjectConverter.CanConvert*
   name: CanConvert
   href: api/Archivist.Converters.TablesToStructuredObjectConverter.html#Archivist_Converters_TablesToStructuredObjectConverter_CanConvert_
@@ -1197,13 +1206,13 @@ references:
   nameWithType: TablesToStructuredObjectConverter.Convert(Tables?)
   nameWithType.vb: TablesToStructuredObjectConverter.Convert(Tables)
 - uid: Archivist.Converters.TablesToStructuredObjectConverter.Convert(System.Object,System.Type)
-  name: Convert(object?, Type)
+  name: Convert(object?, Type?)
   href: api/Archivist.Converters.TablesToStructuredObjectConverter.html#Archivist_Converters_TablesToStructuredObjectConverter_Convert_System_Object_System_Type_
   commentId: M:Archivist.Converters.TablesToStructuredObjectConverter.Convert(System.Object,System.Type)
   name.vb: Convert(Object, Type)
-  fullName: Archivist.Converters.TablesToStructuredObjectConverter.Convert(object?, System.Type)
+  fullName: Archivist.Converters.TablesToStructuredObjectConverter.Convert(object?, System.Type?)
   fullName.vb: Archivist.Converters.TablesToStructuredObjectConverter.Convert(Object, System.Type)
-  nameWithType: TablesToStructuredObjectConverter.Convert(object?, Type)
+  nameWithType: TablesToStructuredObjectConverter.Convert(object?, Type?)
   nameWithType.vb: TablesToStructuredObjectConverter.Convert(Object, Type)
 - uid: Archivist.Converters.TablesToStructuredObjectConverter.Convert*
   name: Convert
