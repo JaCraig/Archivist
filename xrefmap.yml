@@ -6023,6 +6023,22 @@ references:
   isSpec: "True"
   fullName: Archivist.ExtensionMethods.InternalExtensionMethods.Left
   nameWithType: InternalExtensionMethods.Left
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAll(System.IO.Stream,System.Text.Encoding)
+  name: ReadAll(Stream?, Encoding?)
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAll_System_IO_Stream_System_Text_Encoding_
+  commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.ReadAll(System.IO.Stream,System.Text.Encoding)
+  name.vb: ReadAll(Stream, Encoding)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAll(System.IO.Stream?, System.Text.Encoding?)
+  fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAll(System.IO.Stream, System.Text.Encoding)
+  nameWithType: InternalExtensionMethods.ReadAll(Stream?, Encoding?)
+  nameWithType.vb: InternalExtensionMethods.ReadAll(Stream, Encoding)
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAll*
+  name: ReadAll
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAll_
+  commentId: Overload:Archivist.ExtensionMethods.InternalExtensionMethods.ReadAll
+  isSpec: "True"
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAll
+  nameWithType: InternalExtensionMethods.ReadAll
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream,System.Text.Encoding)
   name: ReadAllAsync(Stream?, Encoding?)
   href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllAsync_System_IO_Stream_System_Text_Encoding_
@@ -6039,6 +6055,22 @@ references:
   isSpec: "True"
   fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync
   nameWithType: InternalExtensionMethods.ReadAllAsync
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinary(System.IO.Stream)
+  name: ReadAllBinary(Stream?)
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinary_System_IO_Stream_
+  commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinary(System.IO.Stream)
+  name.vb: ReadAllBinary(Stream)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinary(System.IO.Stream?)
+  fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinary(System.IO.Stream)
+  nameWithType: InternalExtensionMethods.ReadAllBinary(Stream?)
+  nameWithType.vb: InternalExtensionMethods.ReadAllBinary(Stream)
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinary*
+  name: ReadAllBinary
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinary_
+  commentId: Overload:Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinary
+  isSpec: "True"
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinary
+  nameWithType: InternalExtensionMethods.ReadAllBinary
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync(System.IO.Stream)
   name: ReadAllBinaryAsync(Stream?)
   href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinaryAsync_System_IO_Stream_
@@ -6882,6 +6914,139 @@ references:
   isSpec: "True"
   fullName: Archivist.Formats.VCard.VCardWriter.WriteAsync
   nameWithType: VCardWriter.WriteAsync
+- uid: Archivist.Formats.XML
+  name: Archivist.Formats.XML
+  href: api/Archivist.Formats.XML.html
+  commentId: N:Archivist.Formats.XML
+  fullName: Archivist.Formats.XML
+  nameWithType: Archivist.Formats.XML
+- uid: Archivist.Formats.XML.XMLFormat
+  name: XMLFormat
+  href: api/Archivist.Formats.XML.XMLFormat.html
+  commentId: T:Archivist.Formats.XML.XMLFormat
+  fullName: Archivist.Formats.XML.XMLFormat
+  nameWithType: XMLFormat
+- uid: Archivist.Formats.XML.XMLFormat.#ctor(System.Text.Json.JsonSerializerOptions)
+  name: XMLFormat(JsonSerializerOptions?)
+  href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat__ctor_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Archivist.Formats.XML.XMLFormat.#ctor(System.Text.Json.JsonSerializerOptions)
+  name.vb: New(JsonSerializerOptions)
+  fullName: Archivist.Formats.XML.XMLFormat.XMLFormat(System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Archivist.Formats.XML.XMLFormat.New(System.Text.Json.JsonSerializerOptions)
+  nameWithType: XMLFormat.XMLFormat(JsonSerializerOptions?)
+  nameWithType.vb: XMLFormat.New(JsonSerializerOptions)
+- uid: Archivist.Formats.XML.XMLFormat.#ctor*
+  name: XMLFormat
+  href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat__ctor_
+  commentId: Overload:Archivist.Formats.XML.XMLFormat.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.XML.XMLFormat.XMLFormat
+  fullName.vb: Archivist.Formats.XML.XMLFormat.New
+  nameWithType: XMLFormat.XMLFormat
+  nameWithType.vb: XMLFormat.New
+- uid: Archivist.Formats.XML.XMLFormat.Extensions
+  name: Extensions
+  href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat_Extensions
+  commentId: P:Archivist.Formats.XML.XMLFormat.Extensions
+  fullName: Archivist.Formats.XML.XMLFormat.Extensions
+  nameWithType: XMLFormat.Extensions
+- uid: Archivist.Formats.XML.XMLFormat.Extensions*
+  name: Extensions
+  href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat_Extensions_
+  commentId: Overload:Archivist.Formats.XML.XMLFormat.Extensions
+  isSpec: "True"
+  fullName: Archivist.Formats.XML.XMLFormat.Extensions
+  nameWithType: XMLFormat.Extensions
+- uid: Archivist.Formats.XML.XMLFormat.MimeTypes
+  name: MimeTypes
+  href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat_MimeTypes
+  commentId: P:Archivist.Formats.XML.XMLFormat.MimeTypes
+  fullName: Archivist.Formats.XML.XMLFormat.MimeTypes
+  nameWithType: XMLFormat.MimeTypes
+- uid: Archivist.Formats.XML.XMLFormat.MimeTypes*
+  name: MimeTypes
+  href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat_MimeTypes_
+  commentId: Overload:Archivist.Formats.XML.XMLFormat.MimeTypes
+  isSpec: "True"
+  fullName: Archivist.Formats.XML.XMLFormat.MimeTypes
+  nameWithType: XMLFormat.MimeTypes
+- uid: Archivist.Formats.XML.XMLReader
+  name: XMLReader
+  href: api/Archivist.Formats.XML.XMLReader.html
+  commentId: T:Archivist.Formats.XML.XMLReader
+  fullName: Archivist.Formats.XML.XMLReader
+  nameWithType: XMLReader
+- uid: Archivist.Formats.XML.XMLReader.#ctor(System.Text.Json.JsonSerializerOptions)
+  name: XMLReader(JsonSerializerOptions?)
+  href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader__ctor_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Archivist.Formats.XML.XMLReader.#ctor(System.Text.Json.JsonSerializerOptions)
+  name.vb: New(JsonSerializerOptions)
+  fullName: Archivist.Formats.XML.XMLReader.XMLReader(System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Archivist.Formats.XML.XMLReader.New(System.Text.Json.JsonSerializerOptions)
+  nameWithType: XMLReader.XMLReader(JsonSerializerOptions?)
+  nameWithType.vb: XMLReader.New(JsonSerializerOptions)
+- uid: Archivist.Formats.XML.XMLReader.#ctor*
+  name: XMLReader
+  href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader__ctor_
+  commentId: Overload:Archivist.Formats.XML.XMLReader.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.XML.XMLReader.XMLReader
+  fullName.vb: Archivist.Formats.XML.XMLReader.New
+  nameWithType: XMLReader.XMLReader
+  nameWithType.vb: XMLReader.New
+- uid: Archivist.Formats.XML.XMLReader.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader_HeaderInfo
+  commentId: P:Archivist.Formats.XML.XMLReader.HeaderInfo
+  fullName: Archivist.Formats.XML.XMLReader.HeaderInfo
+  nameWithType: XMLReader.HeaderInfo
+- uid: Archivist.Formats.XML.XMLReader.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader_HeaderInfo_
+  commentId: Overload:Archivist.Formats.XML.XMLReader.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.Formats.XML.XMLReader.HeaderInfo
+  nameWithType: XMLReader.HeaderInfo
+- uid: Archivist.Formats.XML.XMLReader.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream?)
+  href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.Formats.XML.XMLReader.ReadAsync(System.IO.Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.Formats.XML.XMLReader.ReadAsync(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.XML.XMLReader.ReadAsync(System.IO.Stream)
+  nameWithType: XMLReader.ReadAsync(Stream?)
+  nameWithType.vb: XMLReader.ReadAsync(Stream)
+- uid: Archivist.Formats.XML.XMLReader.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader_ReadAsync_
+  commentId: Overload:Archivist.Formats.XML.XMLReader.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.XML.XMLReader.ReadAsync
+  nameWithType: XMLReader.ReadAsync
+- uid: Archivist.Formats.XML.XMLWriter
+  name: XMLWriter
+  href: api/Archivist.Formats.XML.XMLWriter.html
+  commentId: T:Archivist.Formats.XML.XMLWriter
+  fullName: Archivist.Formats.XML.XMLWriter
+  nameWithType: XMLWriter
+- uid: Archivist.Formats.XML.XMLWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: WriteAsync(IGenericFile?, Stream?)
+  href: api/Archivist.Formats.XML.XMLWriter.html#Archivist_Formats_XML_XMLWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.Formats.XML.XMLWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name.vb: WriteAsync(IGenericFile, Stream)
+  fullName: Archivist.Formats.XML.XMLWriter.WriteAsync(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.Formats.XML.XMLWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: XMLWriter.WriteAsync(IGenericFile?, Stream?)
+  nameWithType.vb: XMLWriter.WriteAsync(IGenericFile, Stream)
+- uid: Archivist.Formats.XML.XMLWriter.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.Formats.XML.XMLWriter.html#Archivist_Formats_XML_XMLWriter_WriteAsync_
+  commentId: Overload:Archivist.Formats.XML.XMLWriter.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.XML.XMLWriter.WriteAsync
+  nameWithType: XMLWriter.WriteAsync
 - uid: Archivist.Interfaces
   name: Archivist.Interfaces
   href: api/Archivist.Interfaces.html

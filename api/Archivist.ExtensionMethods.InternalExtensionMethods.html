@@ -234,11 +234,53 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
 
 
 
+  <a id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAll_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAll*"></a>
+
+  <h3 id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAll_System_IO_Stream_System_Text_Encoding_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAll(System.IO.Stream,System.Text.Encoding)">
+  ReadAll(Stream?, Encoding?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Takes all of the data in the stream and returns it as a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReadAll(this Stream? input, Encoding? encodingUsing = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Input stream</p>
+</dd>
+    <dt><code>encodingUsing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>The encoding to return as</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The resulting string</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllAsync_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync*"></a>
 
   <h3 id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllAsync_System_IO_Stream_System_Text_Encoding_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllAsync(System.IO.Stream,System.Text.Encoding)">
   ReadAllAsync(Stream?, Encoding?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Takes all of the data in the stream and returns it as a string</p>
@@ -276,11 +318,50 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
 
 
 
+  <a id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinary_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinary*"></a>
+
+  <h3 id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinary_System_IO_Stream_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinary(System.IO.Stream)">
+  ReadAllBinary(Stream?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Takes all of the data in the stream and returns it as an array of bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ReadAllBinary(this Stream? input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Input stream</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>A byte array</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinaryAsync_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync*"></a>
 
   <h3 id="Archivist_ExtensionMethods_InternalExtensionMethods_ReadAllBinaryAsync_System_IO_Stream_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync(System.IO.Stream)">
   ReadAllBinaryAsync(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Takes all of the data in the stream and returns it as an array of bytes</p>
@@ -319,7 +400,7 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
 
   <h3 id="Archivist_ExtensionMethods_InternalExtensionMethods_ToString_System_Byte___System_Text_Encoding_System_Int32_System_Int32_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ToString(System.Byte[],System.Text.Encoding,System.Int32,System.Int32)">
   ToString(byte[]?, Encoding?, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts a byte array to a string</p>

@@ -612,6 +612,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.XML.XMLFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.XML.XMLFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.XML.XMLReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.XML.XMLReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.XML.XMLWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.XML.XMLWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.XML.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.XML.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.Interfaces.IDataConverter.yml",
       "output": {
         ".html": {
