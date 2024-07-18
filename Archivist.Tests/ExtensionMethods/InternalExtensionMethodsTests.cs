@@ -100,6 +100,35 @@ namespace Archivist.Tests.ExtensionMethods
         }
 
         [Fact]
+        public void ReadAll_Should_ReturnEmptyString_When_StreamIsNull()
+        {
+            // Arrange
+            Stream? Stream = null;
+            const string Expected = "";
+
+            // Act
+            var Result = Stream.ReadAll();
+
+            // Assert
+            Assert.Equal(Expected, Result);
+        }
+
+        [Fact]
+        public void ReadAll_Should_ReturnStringWithContentOfStream()
+        {
+            // Arrange
+            const string Expected = "Test Content";
+            var ContentBytes = Encoding.UTF8.GetBytes(Expected);
+            using var Stream = new MemoryStream(ContentBytes);
+
+            // Act
+            var Result = Stream.ReadAll();
+
+            // Assert
+            Assert.Equal(Expected, Result);
+        }
+
+        [Fact]
         public async Task ReadAllAsync_Should_ReturnEmptyString_When_StreamIsNullAsync()
         {
             // Arrange
@@ -123,6 +152,35 @@ namespace Archivist.Tests.ExtensionMethods
 
             // Act
             var Result = await Stream.ReadAllAsync();
+
+            // Assert
+            Assert.Equal(Expected, Result);
+        }
+
+        [Fact]
+        public void ReadAllBinary_Should_ReturnByteArrayWithContentOfStream()
+        {
+            // Arrange
+            const string Expected = "Test Content";
+            var ContentBytes = Encoding.UTF8.GetBytes(Expected);
+            using var Stream = new MemoryStream(ContentBytes);
+
+            // Act
+            var Result = Stream.ReadAllBinary();
+
+            // Assert
+            Assert.Equal(ContentBytes, Result);
+        }
+
+        [Fact]
+        public void ReadAllBinary_Should_ReturnEmptyByteArray_When_StreamIsNull()
+        {
+            // Arrange
+            Stream? Stream = null;
+            var Expected = Array.Empty<byte>();
+
+            // Act
+            var Result = Stream.ReadAllBinary();
 
             // Assert
             Assert.Equal(Expected, Result);

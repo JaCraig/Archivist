@@ -54,6 +54,19 @@ namespace Archivist.ExtensionMethods
         /// Takes all of the data in the stream and returns it as a string
         /// </summary>
         /// <param name="input">Input stream</param>
+        /// <param name="encodingUsing">The encoding to return as</param>
+        /// <returns>The resulting string</returns>
+        public static string ReadAll(this Stream? input, Encoding? encodingUsing = null)
+        {
+            if (input is null)
+                return "";
+            return input.ReadAllBinary().ToString(encodingUsing) ?? "";
+        }
+
+        /// <summary>
+        /// Takes all of the data in the stream and returns it as a string
+        /// </summary>
+        /// <param name="input">Input stream</param>
         /// <param name="encodingUsing">Encoding that the string should be in (defaults to UTF8)</param>
         /// <returns>A string containing the content of the stream</returns>
         public static async Task<string> ReadAllAsync(this Stream? input, Encoding? encodingUsing = null)
@@ -61,6 +74,40 @@ namespace Archivist.ExtensionMethods
             if (input is null)
                 return "";
             return (await input.ReadAllBinaryAsync().ConfigureAwait(false)).ToString(encodingUsing) ?? "";
+        }
+
+        /// <summary>
+        /// Takes all of the data in the stream and returns it as an array of bytes
+        /// </summary>
+        /// <param name="input">Input stream</param>
+        /// <returns>A byte array</returns>
+        public static byte[] ReadAllBinary(this Stream? input)
+        {
+            if (input is null)
+                return Array.Empty<byte>();
+
+            if (input is MemoryStream TempInput)
+                return TempInput.ToArray();
+
+            ArrayPool<byte> Pool = ArrayPool<byte>.Shared;
+            var Buffer = Pool.Rent(4096);
+            using var Temp = new MemoryStream();
+            while (true)
+            {
+                try
+                {
+                    var Count = input.Read(Buffer);
+                    if (Count <= 0)
+                        break;
+                    Temp.Write(Buffer, 0, Count);
+                }
+                catch
+                {
+                    break;
+                }
+            }
+            Pool.Return(Buffer);
+            return Temp.ToArray();
         }
 
         /// <summary>
