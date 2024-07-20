@@ -6087,6 +6087,22 @@ references:
   isSpec: "True"
   fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync
   nameWithType: InternalExtensionMethods.ReadAllBinaryAsync
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ToByteArray(System.String,System.Text.Encoding)
+  name: ToByteArray(string?, Encoding?)
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ToByteArray_System_String_System_Text_Encoding_
+  commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.ToByteArray(System.String,System.Text.Encoding)
+  name.vb: ToByteArray(String, Encoding)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ToByteArray(string?, System.Text.Encoding?)
+  fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.ToByteArray(String, System.Text.Encoding)
+  nameWithType: InternalExtensionMethods.ToByteArray(string?, Encoding?)
+  nameWithType.vb: InternalExtensionMethods.ToByteArray(String, Encoding)
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.ToByteArray*
+  name: ToByteArray
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ToByteArray_
+  commentId: Overload:Archivist.ExtensionMethods.InternalExtensionMethods.ToByteArray
+  isSpec: "True"
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ToByteArray
+  nameWithType: InternalExtensionMethods.ToByteArray
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.ToString(System.Byte[],System.Text.Encoding,System.Int32,System.Int32)
   name: ToString(byte[]?, Encoding?, int, int)
   href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ToString_System_Byte___System_Text_Encoding_System_Int32_System_Int32_
@@ -6517,15 +6533,15 @@ references:
   commentId: T:Archivist.Formats.JSON.JsonFormat
   fullName: Archivist.Formats.JSON.JsonFormat
   nameWithType: JsonFormat
-- uid: Archivist.Formats.JSON.JsonFormat.#ctor(System.Text.Json.JsonSerializerOptions)
-  name: JsonFormat(JsonSerializerOptions?)
-  href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat__ctor_System_Text_Json_JsonSerializerOptions_
-  commentId: M:Archivist.Formats.JSON.JsonFormat.#ctor(System.Text.Json.JsonSerializerOptions)
-  name.vb: New(JsonSerializerOptions)
-  fullName: Archivist.Formats.JSON.JsonFormat.JsonFormat(System.Text.Json.JsonSerializerOptions?)
-  fullName.vb: Archivist.Formats.JSON.JsonFormat.New(System.Text.Json.JsonSerializerOptions)
-  nameWithType: JsonFormat.JsonFormat(JsonSerializerOptions?)
-  nameWithType.vb: JsonFormat.New(JsonSerializerOptions)
+- uid: Archivist.Formats.JSON.JsonFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name: JsonFormat(JsonSerializerSettings?)
+  href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat__ctor_Newtonsoft_Json_JsonSerializerSettings_
+  commentId: M:Archivist.Formats.JSON.JsonFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name.vb: New(JsonSerializerSettings)
+  fullName: Archivist.Formats.JSON.JsonFormat.JsonFormat(Newtonsoft.Json.JsonSerializerSettings?)
+  fullName.vb: Archivist.Formats.JSON.JsonFormat.New(Newtonsoft.Json.JsonSerializerSettings)
+  nameWithType: JsonFormat.JsonFormat(JsonSerializerSettings?)
+  nameWithType.vb: JsonFormat.New(JsonSerializerSettings)
 - uid: Archivist.Formats.JSON.JsonFormat.#ctor*
   name: JsonFormat
   href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat__ctor_
@@ -6568,15 +6584,15 @@ references:
   commentId: T:Archivist.Formats.JSON.JsonReader
   fullName: Archivist.Formats.JSON.JsonReader
   nameWithType: JsonReader
-- uid: Archivist.Formats.JSON.JsonReader.#ctor(System.Text.Json.JsonSerializerOptions)
-  name: JsonReader(JsonSerializerOptions?)
-  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader__ctor_System_Text_Json_JsonSerializerOptions_
-  commentId: M:Archivist.Formats.JSON.JsonReader.#ctor(System.Text.Json.JsonSerializerOptions)
-  name.vb: New(JsonSerializerOptions)
-  fullName: Archivist.Formats.JSON.JsonReader.JsonReader(System.Text.Json.JsonSerializerOptions?)
-  fullName.vb: Archivist.Formats.JSON.JsonReader.New(System.Text.Json.JsonSerializerOptions)
-  nameWithType: JsonReader.JsonReader(JsonSerializerOptions?)
-  nameWithType.vb: JsonReader.New(JsonSerializerOptions)
+- uid: Archivist.Formats.JSON.JsonReader.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name: JsonReader(JsonSerializerSettings?)
+  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader__ctor_Newtonsoft_Json_JsonSerializerSettings_
+  commentId: M:Archivist.Formats.JSON.JsonReader.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name.vb: New(JsonSerializerSettings)
+  fullName: Archivist.Formats.JSON.JsonReader.JsonReader(Newtonsoft.Json.JsonSerializerSettings?)
+  fullName.vb: Archivist.Formats.JSON.JsonReader.New(Newtonsoft.Json.JsonSerializerSettings)
+  nameWithType: JsonReader.JsonReader(JsonSerializerSettings?)
+  nameWithType.vb: JsonReader.New(JsonSerializerSettings)
 - uid: Archivist.Formats.JSON.JsonReader.#ctor*
   name: JsonReader
   href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader__ctor_
@@ -6638,15 +6654,15 @@ references:
   commentId: T:Archivist.Formats.JSON.JsonWriter
   fullName: Archivist.Formats.JSON.JsonWriter
   nameWithType: JsonWriter
-- uid: Archivist.Formats.JSON.JsonWriter.#ctor(System.Text.Json.JsonSerializerOptions)
-  name: JsonWriter(JsonSerializerOptions?)
-  href: api/Archivist.Formats.JSON.JsonWriter.html#Archivist_Formats_JSON_JsonWriter__ctor_System_Text_Json_JsonSerializerOptions_
-  commentId: M:Archivist.Formats.JSON.JsonWriter.#ctor(System.Text.Json.JsonSerializerOptions)
-  name.vb: New(JsonSerializerOptions)
-  fullName: Archivist.Formats.JSON.JsonWriter.JsonWriter(System.Text.Json.JsonSerializerOptions?)
-  fullName.vb: Archivist.Formats.JSON.JsonWriter.New(System.Text.Json.JsonSerializerOptions)
-  nameWithType: JsonWriter.JsonWriter(JsonSerializerOptions?)
-  nameWithType.vb: JsonWriter.New(JsonSerializerOptions)
+- uid: Archivist.Formats.JSON.JsonWriter.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name: JsonWriter(JsonSerializerSettings?)
+  href: api/Archivist.Formats.JSON.JsonWriter.html#Archivist_Formats_JSON_JsonWriter__ctor_Newtonsoft_Json_JsonSerializerSettings_
+  commentId: M:Archivist.Formats.JSON.JsonWriter.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name.vb: New(JsonSerializerSettings)
+  fullName: Archivist.Formats.JSON.JsonWriter.JsonWriter(Newtonsoft.Json.JsonSerializerSettings?)
+  fullName.vb: Archivist.Formats.JSON.JsonWriter.New(Newtonsoft.Json.JsonSerializerSettings)
+  nameWithType: JsonWriter.JsonWriter(JsonSerializerSettings?)
+  nameWithType.vb: JsonWriter.New(JsonSerializerSettings)
 - uid: Archivist.Formats.JSON.JsonWriter.#ctor*
   name: JsonWriter
   href: api/Archivist.Formats.JSON.JsonWriter.html#Archivist_Formats_JSON_JsonWriter__ctor_
@@ -6926,15 +6942,15 @@ references:
   commentId: T:Archivist.Formats.XML.XMLFormat
   fullName: Archivist.Formats.XML.XMLFormat
   nameWithType: XMLFormat
-- uid: Archivist.Formats.XML.XMLFormat.#ctor(System.Text.Json.JsonSerializerOptions)
-  name: XMLFormat(JsonSerializerOptions?)
-  href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat__ctor_System_Text_Json_JsonSerializerOptions_
-  commentId: M:Archivist.Formats.XML.XMLFormat.#ctor(System.Text.Json.JsonSerializerOptions)
-  name.vb: New(JsonSerializerOptions)
-  fullName: Archivist.Formats.XML.XMLFormat.XMLFormat(System.Text.Json.JsonSerializerOptions?)
-  fullName.vb: Archivist.Formats.XML.XMLFormat.New(System.Text.Json.JsonSerializerOptions)
-  nameWithType: XMLFormat.XMLFormat(JsonSerializerOptions?)
-  nameWithType.vb: XMLFormat.New(JsonSerializerOptions)
+- uid: Archivist.Formats.XML.XMLFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name: XMLFormat(JsonSerializerSettings?)
+  href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat__ctor_Newtonsoft_Json_JsonSerializerSettings_
+  commentId: M:Archivist.Formats.XML.XMLFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name.vb: New(JsonSerializerSettings)
+  fullName: Archivist.Formats.XML.XMLFormat.XMLFormat(Newtonsoft.Json.JsonSerializerSettings?)
+  fullName.vb: Archivist.Formats.XML.XMLFormat.New(Newtonsoft.Json.JsonSerializerSettings)
+  nameWithType: XMLFormat.XMLFormat(JsonSerializerSettings?)
+  nameWithType.vb: XMLFormat.New(JsonSerializerSettings)
 - uid: Archivist.Formats.XML.XMLFormat.#ctor*
   name: XMLFormat
   href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat__ctor_
@@ -6977,15 +6993,15 @@ references:
   commentId: T:Archivist.Formats.XML.XMLReader
   fullName: Archivist.Formats.XML.XMLReader
   nameWithType: XMLReader
-- uid: Archivist.Formats.XML.XMLReader.#ctor(System.Text.Json.JsonSerializerOptions)
-  name: XMLReader(JsonSerializerOptions?)
-  href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader__ctor_System_Text_Json_JsonSerializerOptions_
-  commentId: M:Archivist.Formats.XML.XMLReader.#ctor(System.Text.Json.JsonSerializerOptions)
-  name.vb: New(JsonSerializerOptions)
-  fullName: Archivist.Formats.XML.XMLReader.XMLReader(System.Text.Json.JsonSerializerOptions?)
-  fullName.vb: Archivist.Formats.XML.XMLReader.New(System.Text.Json.JsonSerializerOptions)
-  nameWithType: XMLReader.XMLReader(JsonSerializerOptions?)
-  nameWithType.vb: XMLReader.New(JsonSerializerOptions)
+- uid: Archivist.Formats.XML.XMLReader.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name: XMLReader(JsonSerializerSettings?)
+  href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader__ctor_Newtonsoft_Json_JsonSerializerSettings_
+  commentId: M:Archivist.Formats.XML.XMLReader.#ctor(Newtonsoft.Json.JsonSerializerSettings)
+  name.vb: New(JsonSerializerSettings)
+  fullName: Archivist.Formats.XML.XMLReader.XMLReader(Newtonsoft.Json.JsonSerializerSettings?)
+  fullName.vb: Archivist.Formats.XML.XMLReader.New(Newtonsoft.Json.JsonSerializerSettings)
+  nameWithType: XMLReader.XMLReader(JsonSerializerSettings?)
+  nameWithType.vb: XMLReader.New(JsonSerializerSettings)
 - uid: Archivist.Formats.XML.XMLReader.#ctor*
   name: XMLReader
   href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader__ctor_

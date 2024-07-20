@@ -165,8 +165,8 @@ Class JsonReader  <a class="header-action link-secondary" title="View source" hr
 
   <a id="Archivist_Formats_JSON_JsonReader__ctor_" data-uid="Archivist.Formats.JSON.JsonReader.#ctor*"></a>
 
-  <h3 id="Archivist_Formats_JSON_JsonReader__ctor_System_Text_Json_JsonSerializerOptions_" data-uid="Archivist.Formats.JSON.JsonReader.#ctor(System.Text.Json.JsonSerializerOptions)">
-  JsonReader(JsonSerializerOptions?)
+  <h3 id="Archivist_Formats_JSON_JsonReader__ctor_Newtonsoft_Json_JsonSerializerSettings_" data-uid="Archivist.Formats.JSON.JsonReader.#ctor(Newtonsoft.Json.JsonSerializerSettings)">
+  JsonReader(JsonSerializerSettings?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonReader.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -175,12 +175,12 @@ Class JsonReader  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public JsonReader(JsonSerializerOptions? options)</code></pre>
+    <pre><code class="lang-csharp hljs">public JsonReader(JsonSerializerSettings? options)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions">JsonSerializerOptions</a></dt>
+    <dt><code>options</code> <span class="xref">JsonSerializerSettings</span></dt>
     <dd><p>The options to use when deserializing JSON.</p>
 </dd>
   </dl>
@@ -279,7 +279,7 @@ Class JsonReader  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Archivist_Formats_JSON_JsonReader_ReadAsync_System_IO_Stream_" data-uid="Archivist.Formats.JSON.JsonReader.ReadAsync(System.IO.Stream)">
   ReadAsync(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonReader.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonReader.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads a JSON file asynchronously from the specified stream.</p>

@@ -396,11 +396,53 @@ Class InternalExtensionMethods  <a class="header-action link-secondary" title="V
 
 
 
+  <a id="Archivist_ExtensionMethods_InternalExtensionMethods_ToByteArray_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ToByteArray*"></a>
+
+  <h3 id="Archivist_ExtensionMethods_InternalExtensionMethods_ToByteArray_System_String_System_Text_Encoding_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ToByteArray(System.String,System.Text.Encoding)">
+  ToByteArray(string?, Encoding?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a string to a byte array using the specified encoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToByteArray(this string? input, Encoding? encodingUsing = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The input string</p>
+</dd>
+    <dt><code>encodingUsing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>The encoding to use (defaults to UTF8)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>The resulting byte array</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Archivist_ExtensionMethods_InternalExtensionMethods_ToString_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ToString*"></a>
 
   <h3 id="Archivist_ExtensionMethods_InternalExtensionMethods_ToString_System_Byte___System_Text_Encoding_System_Int32_System_Int32_" data-uid="Archivist.ExtensionMethods.InternalExtensionMethods.ToString(System.Byte[],System.Text.Encoding,System.Int32,System.Int32)">
   ToString(byte[]?, Encoding?, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/ExtensionMethods/InternalExtensionMethods.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts a byte array to a string</p>
