@@ -1,13 +1,13 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Converters;
 using Archivist.Interfaces;
+using Newtonsoft.Json;
 using ObjectCartographer;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Dynamic;
-using System.Text.Json;
 
 namespace Archivist.DataTypes
 {
@@ -278,7 +278,7 @@ namespace Archivist.DataTypes
                 return;
             if (obj is string StringObject)
             {
-                Content = JsonSerializer.Deserialize<ExpandoObject>(StringObject) ?? new ExpandoObject();
+                Content = JsonConvert.DeserializeObject<ExpandoObject>(StringObject) ?? new ExpandoObject();
                 return;
             }
             Content = obj.To<ExpandoObject>();
@@ -346,7 +346,7 @@ namespace Archivist.DataTypes
         {
             if (Content is null)
                 return "";
-            return JsonSerializer.Serialize(Content);
+            return JsonConvert.SerializeObject(Content);
         }
 
         /// <summary>

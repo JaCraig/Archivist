@@ -1,25 +1,24 @@
 using Archivist.DataTypes;
-using Archivist.Formats.JSON;
 using Archivist.Interfaces;
 using Archivist.Tests.BaseClasses;
+using Newtonsoft.Json;
 using System.IO;
-using System.Text.Json;
 using System.Threading.Tasks;
 using Xunit;
 
 namespace Archivist.Tests.Formats.JSON
 {
-    public class JsonWriterTests : TestBaseClass<JsonWriter>
+    public class JsonWriterTests : TestBaseClass<Archivist.Formats.JSON.JsonWriter>
     {
         public JsonWriterTests()
         {
-            _Options = new JsonSerializerOptions();
-            _TestClass = new JsonWriter(_Options);
-            TestObject = new JsonWriter(_Options);
+            _Options = new JsonSerializerSettings();
+            _TestClass = new Archivist.Formats.JSON.JsonWriter(_Options);
+            TestObject = new Archivist.Formats.JSON.JsonWriter(_Options);
         }
 
-        private readonly JsonSerializerOptions _Options;
-        private readonly JsonWriter _TestClass;
+        private readonly JsonSerializerSettings _Options;
+        private readonly Archivist.Formats.JSON.JsonWriter _TestClass;
 
         [Fact]
         public async Task CanCallWriteAsync()
@@ -39,7 +38,7 @@ namespace Archivist.Tests.Formats.JSON
         public void CanConstruct()
         {
             // Act
-            var Instance = new JsonWriter(_Options);
+            var Instance = new Archivist.Formats.JSON.JsonWriter(_Options);
 
             // Assert
             Assert.NotNull(Instance);

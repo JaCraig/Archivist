@@ -1,9 +1,10 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.DataTypes;
+using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
+using Newtonsoft.Json;
 using System.Dynamic;
 using System.IO;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Archivist.Formats.JSON
@@ -17,15 +18,15 @@ namespace Archivist.Formats.JSON
         /// Initializes a new instance of the <see cref="JsonWriter"/> class.
         /// </summary>
         /// <param name="options">The options to use when serializing JSON.</param>
-        public JsonWriter(JsonSerializerOptions? options)
+        public JsonWriter(JsonSerializerSettings? options)
         {
-            Options = options ?? new JsonSerializerOptions(JsonSerializerDefaults.Web);
+            Options = options ?? new JsonSerializerSettings();
         }
 
         /// <summary>
         /// JsonSerializer options
         /// </summary>
-        private JsonSerializerOptions Options { get; }
+        private JsonSerializerSettings Options { get; }
 
         /// <summary>
         /// Writes the structured object to the specified stream as JSON.
@@ -49,7 +50,8 @@ namespace Archivist.Formats.JSON
             ExpandoObject? Content = StructuredObject.ConvertTo<ExpandoObject>();
             if (Content is null)
                 return false;
-            await JsonSerializer.SerializeAsync(stream, Content, Content.GetType(), Options).ConfigureAwait(false);
+            var StringContent = JsonConvert.SerializeObject(Content, Content.GetType(), Options);
+            await stream.WriteAsync(StringContent.ToByteArray()).ConfigureAwait(false);
             return true;
         }
     }

@@ -145,6 +145,21 @@ namespace Archivist.ExtensionMethods
         }
 
         /// <summary>
+        /// Converts a string to a byte array using the specified encoding.
+        /// </summary>
+        /// <param name="input">The input string</param>
+        /// <param name="encodingUsing">The encoding to use (defaults to UTF8)</param>
+        /// <returns>The resulting byte array</returns>
+        public static byte[] ToByteArray(this string? input, Encoding? encodingUsing = null)
+        {
+            if (string.IsNullOrEmpty(input))
+                return Array.Empty<byte>();
+
+            encodingUsing ??= Encoding.UTF8;
+            return encodingUsing.GetBytes(input);
+        }
+
+        /// <summary>
         /// Converts a byte array to a string
         /// </summary>
         /// <param name="input">Input byte array</param>

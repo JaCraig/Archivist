@@ -2,10 +2,10 @@
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
+using Newtonsoft.Json;
 using System;
 using System.Dynamic;
 using System.IO;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Archivist.Formats.JSON
@@ -19,9 +19,9 @@ namespace Archivist.Formats.JSON
         /// Initializes a new instance of the <see cref="JsonReader"/> class.
         /// </summary>
         /// <param name="options">The options to use when deserializing JSON.</param>
-        public JsonReader(JsonSerializerOptions? options)
+        public JsonReader(JsonSerializerSettings? options)
         {
-            Options = options ?? new JsonSerializerOptions(JsonSerializerDefaults.Web);
+            Options = options ?? new JsonSerializerSettings();
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Archivist.Formats.JSON
         /// <summary>
         /// The options to use when deserializing JSON.
         /// </summary>
-        private JsonSerializerOptions Options { get; }
+        private JsonSerializerSettings Options { get; }
 
         /// <summary>
         /// Determines if the reader can read the specified stream.
@@ -45,7 +45,10 @@ namespace Archivist.Formats.JSON
                 return false;
             try
             {
-                ExpandoObject? TestObject = JsonSerializer.Deserialize<ExpandoObject>(stream!, Options);
+                var Value = stream.ReadAll();
+                if (string.IsNullOrEmpty(Value))
+                    return false;
+                ExpandoObject? TestObject = JsonConvert.DeserializeObject<ExpandoObject>(Value, Options);
                 _ = stream.Seek(0, SeekOrigin.Begin);
                 return true;
             }
@@ -67,11 +70,8 @@ namespace Archivist.Formats.JSON
             var StreamData = await stream.ReadAllAsync().ConfigureAwait(false);
             if (string.IsNullOrEmpty(StreamData))
                 return new StructuredObject();
-            ExpandoObject? Data = JsonSerializer.Deserialize<ExpandoObject>(StreamData, Options);
-            if (Data is null)
-                return new StructuredObject();
-
-            return new StructuredObject(Data);
+            ExpandoObject? Data = JsonConvert.DeserializeObject<ExpandoObject>(StreamData, Options);
+            return new StructuredObject(Data ?? new ExpandoObject());
         }
     }
 }

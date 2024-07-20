@@ -1,5 +1,5 @@
 ﻿using Archivist.BaseClasses;
-using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace Archivist.Formats.XML
 {
@@ -12,7 +12,7 @@ namespace Archivist.Formats.XML
         /// Initializes a new instance of the <see cref="XMLFormat"/> class.
         /// </summary>
         /// <param name="options">The options to use when serializing and deserializing JSON.</param>
-        public XMLFormat(JsonSerializerOptions? options)
+        public XMLFormat(JsonSerializerSettings? options)
             : base(new XMLReader(options), new XMLWriter())
         {
         }

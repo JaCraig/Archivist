@@ -1,10 +1,10 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.DataTypes;
+using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
-using System.Collections.Generic;
+using Newtonsoft.Json;
 using System.Dynamic;
 using System.IO;
-using System.Runtime.Serialization;
 using System.Threading.Tasks;
 
 namespace Archivist.Formats.XML
@@ -23,22 +23,25 @@ namespace Archivist.Formats.XML
         /// A task representing the asynchronous write operation. The task result is a boolean value
         /// indicating whether the write operation was successful.
         /// </returns>
-        public override Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
+        public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
             if (file is null || stream is null)
-                return Task.FromResult(false);
+                return false;
             if (!stream.CanWrite)
-                return Task.FromResult(false);
+                return false;
             if (file is not StructuredObject StructuredObject)
                 StructuredObject = file.ToFileType<StructuredObject>()!;
             if (StructuredObject is null)
-                return Task.FromResult(false);
+                return false;
             ExpandoObject? Content = StructuredObject.ConvertTo<ExpandoObject>();
             if (Content is null)
-                return Task.FromResult(false);
-            var DataContractSerializer = new DataContractSerializer(typeof(IDictionary<string, object?>));
-            DataContractSerializer.WriteObject(stream, Content);
-            return Task.FromResult(true);
+                return false;
+            var Xml = JsonConvert.DeserializeXNode("{\"root\":" + JsonConvert.SerializeObject(Content) + "}")?.ToString();
+            if (string.IsNullOrEmpty(Xml))
+                return false;
+            Xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" + Xml;
+            await stream.WriteAsync(Xml.ToByteArray()).ConfigureAwait(false);
+            return true;
         }
     }
 }

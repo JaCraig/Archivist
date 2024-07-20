@@ -3,9 +3,9 @@ using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.Dynamic;
 using System.IO;
-using System.Text.Json;
 using System.Threading.Tasks;
 using System.Xml;
 
@@ -20,9 +20,9 @@ namespace Archivist.Formats.XML
         /// Initializes a new instance of the <see cref="JsonReader"/> class.
         /// </summary>
         /// <param name="options">The options to use when deserializing JSON.</param>
-        public XMLReader(JsonSerializerOptions? options)
+        public XMLReader(JsonSerializerSettings? options)
         {
-            Options = options ?? new JsonSerializerOptions(JsonSerializerDefaults.Web);
+            Options = options ?? new JsonSerializerSettings();
         }
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace Archivist.Formats.XML
         /// <summary>
         /// The options to use when deserializing JSON.
         /// </summary>
-        private JsonSerializerOptions Options { get; }
+        private JsonSerializerSettings Options { get; }
 
         /// <summary>
         /// Reads a JSON file asynchronously from the specified stream.
@@ -50,12 +50,33 @@ namespace Archivist.Formats.XML
             var Doc = new XmlDocument();
             Doc.LoadXml(StreamData);
             var JsonContent = JsonConvert.SerializeXmlNode(Doc);
+            if (string.IsNullOrEmpty(JsonContent))
+                return new StructuredObject();
 
-            ExpandoObject? Data = System.Text.Json.JsonSerializer.Deserialize<ExpandoObject>(JsonContent, Options);
+            ExpandoObject? Data = JsonConvert.DeserializeObject<ExpandoObject>(JsonContent, Options);
             if (Data is null)
                 return new StructuredObject();
 
-            return new StructuredObject(Data);
+            return new StructuredObject(CleanUpReturnValue(Data));
+        }
+
+        /// <summary>
+        /// Cleans up the return value by removing unnecessary properties.
+        /// </summary>
+        /// <param name="data">The data to clean up.</param>
+        /// <returns>The cleaned up data.</returns>
+        private static ExpandoObject? CleanUpReturnValue(ExpandoObject? data)
+        {
+            if (data is null)
+                return new ExpandoObject();
+            var DataDictionary = data as IDictionary<string, object>;
+            if (DataDictionary.ContainsKey("?xml"))
+                _ = DataDictionary.Remove("?xml");
+
+            if (DataDictionary.Count == 1 && DataDictionary.TryGetValue("root", out var Value) && Value is ExpandoObject Root)
+                return Root;
+
+            return data;
         }
     }
 }

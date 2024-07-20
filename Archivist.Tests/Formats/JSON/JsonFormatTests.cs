@@ -1,7 +1,7 @@
 using Archivist.DataTypes;
 using Archivist.Formats.JSON;
 using Archivist.Tests.BaseClasses;
-using System.Text.Json;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -11,14 +11,14 @@ namespace Archivist.Tests.Formats.JSON
     {
         public JsonFormatTests()
         {
-            _Options = new JsonSerializerOptions();
+            _Options = new JsonSerializerSettings();
             _TestClass = new JsonFormat(_Options);
             TestObject = new JsonFormat(_Options);
         }
 
         private static readonly string[] _Expected = new[] { "JSON" };
         private static readonly string[] _ExpectedArray = new[] { "APPLICATION/JSON" };
-        private readonly JsonSerializerOptions _Options;
+        private readonly JsonSerializerSettings _Options;
         private readonly JsonFormat _TestClass;
 
         [Fact]

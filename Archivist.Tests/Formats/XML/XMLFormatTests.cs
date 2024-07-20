@@ -1,6 +1,10 @@
+using Archivist.DataTypes;
 using Archivist.Formats.XML;
 using Archivist.Tests.BaseClasses;
-using System.Text.Json;
+using Newtonsoft.Json;
+using System.Dynamic;
+using System.IO;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace Archivist.Tests.Formats.XML
@@ -9,12 +13,12 @@ namespace Archivist.Tests.Formats.XML
     {
         public XMLFormatTests()
         {
-            _Options = new JsonSerializerOptions();
+            _Options = new JsonSerializerSettings();
             _TestClass = new XMLFormat(_Options);
             TestObject = new XMLFormat(_Options);
         }
 
-        private readonly JsonSerializerOptions _Options;
+        private readonly JsonSerializerSettings _Options;
         private readonly XMLFormat _TestClass;
 
         [Fact]
@@ -46,6 +50,69 @@ namespace Archivist.Tests.Formats.XML
             var Result = Assert.IsType<string[]>(_TestClass.MimeTypes);
 
             Assert.Equal(new[] { "TEXT/XML", "APPLICATION/XML" }, Result);
+        }
+
+        [Fact]
+        public async Task CanReadAsync()
+        {
+            // Arrange
+            using var Stream = new MemoryStream();
+
+            // Act
+            Interfaces.IGenericFile? Result = await _TestClass.ReadAsync(Stream);
+
+            // Assert
+            Assert.NotNull(Result);
+        }
+
+        [Fact]
+        public async Task CanWriteAsync()
+        {
+            // Arrange
+            using var Stream = new MemoryStream();
+            var File = new StructuredObject(new ExpandoObject());
+
+            // Act
+            var Result = await _TestClass.WriteAsync(Stream, File);
+
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public async Task ReadAndWrite_AreCompatible()
+        {
+            // Arrange
+            using var Stream = new MemoryStream();
+            var File = new StructuredObject(new ExpandoObject());
+            _ = File.SetValue("TestValue", 10)
+                .SetValue("TestString", "Test");
+
+            // Act
+            var WriteResult = await _TestClass.WriteAsync(Stream, File);
+            Stream.Position = 0;
+            StructuredObject? ReadResult = (await _TestClass.ReadAsync(Stream))?.ToFileType<StructuredObject>();
+            var ReadValue = ReadResult?.GetValue<int>("TestValue");
+            var ReadString = ReadResult?.GetValue<string>("TestString");
+
+            // Assert
+            Assert.NotNull(ReadResult);
+            Assert.True(WriteResult);
+            Assert.Equal(10, ReadValue);
+            Assert.Equal("Test", ReadString);
+        }
+
+        [Fact]
+        public async Task WriteAsync_ReturnsFalse_WhenFileIsNull()
+        {
+            // Arrange
+            using var Stream = new MemoryStream();
+
+            // Act
+            var Result = await _TestClass.WriteAsync(Stream, null);
+
+            // Assert
+            Assert.False(Result);
         }
     }
 }

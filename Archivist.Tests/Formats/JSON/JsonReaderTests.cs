@@ -1,23 +1,22 @@
-using Archivist.Formats.JSON;
 using Archivist.Tests.BaseClasses;
+using Newtonsoft.Json;
 using System.IO;
-using System.Text.Json;
 using System.Threading.Tasks;
 using Xunit;
 
 namespace Archivist.Tests.Formats.JSON
 {
-    public class JsonReaderTests : TestBaseClass<JsonReader>
+    public class JsonReaderTests : TestBaseClass<Archivist.Formats.JSON.JsonReader>
     {
         public JsonReaderTests()
         {
-            _Options = new JsonSerializerOptions();
-            _TestClass = new JsonReader(_Options);
-            TestObject = new JsonReader(_Options);
+            _Options = new JsonSerializerSettings();
+            _TestClass = new Archivist.Formats.JSON.JsonReader(_Options);
+            TestObject = new Archivist.Formats.JSON.JsonReader(_Options);
         }
 
-        private readonly JsonSerializerOptions _Options;
-        private readonly JsonReader _TestClass;
+        private readonly JsonSerializerSettings _Options;
+        private readonly Archivist.Formats.JSON.JsonReader _TestClass;
 
         [Fact]
         public void CanCallInternalCanRead()
@@ -53,7 +52,7 @@ namespace Archivist.Tests.Formats.JSON
         public void CanConstruct()
         {
             // Act
-            var Instance = new JsonReader(_Options);
+            var Instance = new Archivist.Formats.JSON.JsonReader(_Options);
 
             // Assert
             Assert.NotNull(Instance);
