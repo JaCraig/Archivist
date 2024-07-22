@@ -126,8 +126,8 @@ namespace Archivist.Tests.Converters
             Assert.Equal(2, TableObject.Count);
             Assert.True(TableObject.ContainsKey("Column1"));
             Assert.True(TableObject.ContainsKey("Column2"));
-            Assert.Equal("Cell1", ((List<object>?)TableObject["Column1"]).FirstOrDefault()?.ToString());
-            Assert.Equal("Cell2", ((List<object>?)TableObject["Column2"]).FirstOrDefault()?.ToString());
+            Assert.Equal("Cell1", ((List<object>?)TableObject["Column1"])?.FirstOrDefault()?.ToString());
+            Assert.Equal("Cell2", ((List<object>?)TableObject["Column2"])?.FirstOrDefault()?.ToString());
         }
 
         [Fact]

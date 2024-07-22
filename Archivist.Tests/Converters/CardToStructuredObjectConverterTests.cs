@@ -11,6 +11,7 @@ namespace Archivist.Tests.Converters
         public CardToStructuredObjectConverterTests()
         {
             _TestClass = new CardToStructuredObjectConverter();
+            TestObject = new CardToStructuredObjectConverter();
         }
 
         private readonly CardToStructuredObjectConverter _TestClass;

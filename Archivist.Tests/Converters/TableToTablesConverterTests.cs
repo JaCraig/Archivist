@@ -92,7 +92,7 @@ namespace Archivist.Tests.Converters
             var DestinationType = default(System.Type);
 
             // Act
-            var Result = _Converter.Convert(Source, DestinationType!);
+            var Result = _Converter.Convert(Source, DestinationType);
 
             // Assert
             Assert.Null(Result);

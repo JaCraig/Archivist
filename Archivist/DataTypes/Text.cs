@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using System;
 
 namespace Archivist.DataTypes
@@ -12,12 +13,32 @@ namespace Archivist.DataTypes
         /// <summary>
         /// Initializes a new instance of the <see cref="Text"/> class.
         /// </summary>
+        /// <param name="converter">The type converter.</param>
         /// <param name="content">The content of the text file.</param>
         /// <param name="title">The title of the text file.</param>
-        public Text(string? content, string? title)
+        public Text(Convertinator? converter, string? content, string? title)
+            : base(converter)
         {
             Content = content;
             Title = title;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Text"/> class.
+        /// </summary>
+        /// <param name="content">The content of the text file.</param>
+        /// <param name="title">The title of the text file.</param>
+        public Text(string? content, string? title)
+            : this(null, content, title)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Text"/> class.
+        /// </summary>
+        public Text()
+            : this(null, "", "")
+        {
         }
 
         /// <summary>

@@ -1,4 +1,5 @@
-﻿using Archivist.DataTypes;
+﻿using Archivist.Converters;
+using Archivist.DataTypes;
 using Archivist.Interfaces;
 using System.Collections.Generic;
 
@@ -12,6 +13,15 @@ namespace Archivist.BaseClasses
         where TFileType : FileBaseClass<TFileType>
     {
         /// <summary>
+        /// Initializes a new instance of the FileBaseClass class.
+        /// </summary>
+        /// <param name="converter">The type converter.</param>
+        protected FileBaseClass(Convertinator? converter)
+        {
+            Converter = converter;
+        }
+
+        /// <summary>
         /// Gets or sets the metadata associated with the file.
         /// </summary>
         public Dictionary<string, string> Metadata { get; } = new Dictionary<string, string>();
@@ -20,6 +30,11 @@ namespace Archivist.BaseClasses
         /// Gets or sets the title of the file.
         /// </summary>
         public string? Title { get; set; }
+
+        /// <summary>
+        /// Gets the type converter.
+        /// </summary>
+        protected Convertinator? Converter { get; }
 
         /// <summary>
         /// Determines if the two file objects are not equal.
@@ -152,7 +167,7 @@ namespace Archivist.BaseClasses
                 return (TFile)(IGenericFile)this;
             if (FileType == typeof(Text))
                 return (TFile)(IGenericFile)new Text(GetContent(), Title);
-            return default;
+            return (TFile?)Converter?.Convert(this, typeof(TFile));
         }
 
         /// <summary>

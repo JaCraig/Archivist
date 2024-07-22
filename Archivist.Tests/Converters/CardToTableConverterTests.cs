@@ -1,15 +1,17 @@
 using Archivist.Converters;
 using Archivist.DataTypes;
+using Archivist.Tests.BaseClasses;
 using System;
 using Xunit;
 
 namespace Archivist.Tests.Converters
 {
-    public class CardToTableConverterTests
+    public class CardToTableConverterTests : TestBaseClass<CardToTableConverter>
     {
         public CardToTableConverterTests()
         {
             _TestClass = new CardToTableConverter();
+            TestObject = new CardToTableConverter();
         }
 
         private readonly CardToTableConverter _TestClass;

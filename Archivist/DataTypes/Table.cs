@@ -18,8 +18,28 @@ namespace Archivist.DataTypes
         /// Initializes a new instance of the <see cref="Table"/> class.
         /// </summary>
         public Table()
+            : this(null, ",")
         {
-            Delimiter = ",";
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Table"/> class.
+        /// </summary>
+        /// <param name="delimiter">The delimiter used by the table.</param>
+        public Table(string delimiter)
+            : this(null, delimiter)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Table"/> class.
+        /// </summary>
+        /// <param name="converter">The type converter.</param>
+        /// <param name="delimiter">The delimiter used by the table.</param>
+        public Table(Convertinator? converter, string delimiter = ",")
+            : base(converter)
+        {
+            Delimiter = delimiter;
         }
 
         /// <summary>
@@ -397,7 +417,7 @@ namespace Archivist.DataTypes
         public override TFile? ToFileType<TFile>() where TFile : default
         {
             Type FileType = typeof(TFile);
-            IGenericFile? ReturnValue = null;
+            IGenericFile? ReturnValue;
             if (FileType == typeof(Card))
                 ReturnValue = (Card?)this;
             else if (FileType == typeof(Table))
@@ -408,6 +428,8 @@ namespace Archivist.DataTypes
                 ReturnValue = (Text?)this;
             else if (FileType == typeof(StructuredObject))
                 ReturnValue = (StructuredObject?)this;
+            else
+                ReturnValue = (IGenericFile?)Converter?.Convert(this, FileType);
 
             return (TFile?)ReturnValue;
         }

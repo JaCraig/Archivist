@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using System;
 using System.Collections.Generic;
 
@@ -14,7 +15,7 @@ namespace Archivist.DataTypes
         /// line separator.
         /// </summary>
         public FixedLengthFile()
-            : this("\r\n")
+            : this(null, "\r\n")
         {
         }
 
@@ -24,6 +25,18 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="lineSeparator">The line separator to use.</param>
         public FixedLengthFile(string lineSeparator)
+            : this(null, lineSeparator)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FixedLengthFile"/> class with the specified
+        /// line separator.
+        /// </summary>
+        /// <param name="converter">The type converter.</param>
+        /// <param name="lineSeparator">The line separator to use.</param>
+        public FixedLengthFile(Convertinator? converter, string lineSeparator = "\r\n")
+            : base(converter)
         {
             LineSeparator = lineSeparator;
         }

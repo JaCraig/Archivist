@@ -16,6 +16,23 @@ namespace Archivist.DataTypes
     public class Tables : FileBaseClass<Tables>, IComparable<Tables>, IEquatable<Tables>, IListConvertable, IList<Table>
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="Tables"/> class.
+        /// </summary>
+        public Tables()
+            : this(null)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Tables"/> class.
+        /// </summary>
+        /// <param name="converter">The type converter.</param>
+        public Tables(Convertinator? converter)
+            : base(converter)
+        {
+        }
+
+        /// <summary>
         /// The number of tables in the file.
         /// </summary>
         public int Count => TableEntries.Count;
@@ -354,7 +371,7 @@ namespace Archivist.DataTypes
         public override TFile? ToFileType<TFile>() where TFile : default
         {
             Type FileType = typeof(TFile);
-            IGenericFile? ReturnValue = null;
+            IGenericFile? ReturnValue;
             if (FileType == typeof(Card))
                 ReturnValue = (Card?)this;
             else if (FileType == typeof(Tables))
@@ -365,6 +382,8 @@ namespace Archivist.DataTypes
                 ReturnValue = (Text?)this;
             else if (FileType == typeof(StructuredObject))
                 ReturnValue = (StructuredObject?)this;
+            else
+                ReturnValue = (IGenericFile?)Converter?.Convert(this, FileType);
 
             return (TFile?)ReturnValue;
         }

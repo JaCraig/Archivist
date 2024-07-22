@@ -80,7 +80,7 @@ namespace Archivist.Tests.Converters
             Type? Destination = null;
 
             // Act
-            var Result = _Converter.Convert(Source, Destination!);
+            var Result = _Converter.Convert(Source, Destination);
 
             // Assert
             Assert.Null(Result);

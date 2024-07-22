@@ -16,6 +16,23 @@ namespace Archivist.DataTypes
     public class Card : FileBaseClass<Card>, IComparable<Card>, IEquatable<Card>, IEnumerable<CardField?>, IEnumerable, IObjectConvertable
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="Card"/> class.
+        /// </summary>
+        /// <param name="converter">The type converter.</param>
+        public Card(Convertinator? converter)
+            : base(converter)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Card"/> class.
+        /// </summary>
+        public Card()
+            : base(null)
+        {
+        }
+
+        /// <summary>
         /// Gets the addresses for the card.
         /// </summary>
         public IEnumerable<CardField?> Addresses => this[CommonCardFields.Address];
@@ -416,7 +433,7 @@ namespace Archivist.DataTypes
             where TFile : default
         {
             Type FileType = typeof(TFile);
-            IGenericFile? ReturnValue = null;
+            IGenericFile? ReturnValue;
             if (FileType == typeof(Card))
                 ReturnValue = this;
             else if (FileType == typeof(Table))
@@ -427,6 +444,8 @@ namespace Archivist.DataTypes
                 ReturnValue = (Text?)this;
             else if (FileType == typeof(StructuredObject))
                 ReturnValue = (StructuredObject?)this;
+            else
+                ReturnValue = (IGenericFile?)Converter?.Convert(this, typeof(TFile));
 
             return (TFile?)ReturnValue;
         }

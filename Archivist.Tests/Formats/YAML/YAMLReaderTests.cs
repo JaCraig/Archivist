@@ -110,8 +110,8 @@ namespace Archivist.Tests.Formats.YAML
         public async Task CanReadTestStreamAsync()
         {
             // Arrange
-            using var Stream = new MemoryStream();
-            using StreamWriter Writer = new(Stream);
+            await using var Stream = new MemoryStream();
+            await using StreamWriter Writer = new(Stream);
             Writer.WriteLine("name: George Washington");
             Writer.Flush();
             _ = Stream.Seek(0, SeekOrigin.Begin);

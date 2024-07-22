@@ -20,7 +20,7 @@ namespace Archivist.DataTypes
         /// Initializes a new instance of the <see cref="StructuredObject"/> class.
         /// </summary>
         public StructuredObject()
-            : this(new ExpandoObject())
+            : this(null, new ExpandoObject())
         {
         }
 
@@ -30,6 +30,18 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="value">The content of the structured object.</param>
         public StructuredObject(IDictionary<string, object?>? value)
+            : this(null, value)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StructuredObject"/> class with the
+        /// specified content.
+        /// </summary>
+        /// <param name="converter">The type converter.</param>
+        /// <param name="value">The content of the structured object.</param>
+        public StructuredObject(Convertinator? converter, IDictionary<string, object?>? value)
+            : base(converter)
         {
             Content = value ?? new ExpandoObject();
         }
@@ -428,7 +440,7 @@ namespace Archivist.DataTypes
         public override TFile? ToFileType<TFile>() where TFile : default
         {
             Type FileType = typeof(TFile);
-            IGenericFile? ReturnValue = null;
+            IGenericFile? ReturnValue;
             if (FileType == typeof(Card))
                 ReturnValue = (Card?)this;
             else if (FileType == typeof(Table))
@@ -439,6 +451,8 @@ namespace Archivist.DataTypes
                 ReturnValue = (Text?)this;
             else if (FileType == typeof(StructuredObject))
                 ReturnValue = this;
+            else
+                ReturnValue = (IGenericFile?)Converter?.Convert(this, FileType);
 
             return (TFile?)ReturnValue;
         }

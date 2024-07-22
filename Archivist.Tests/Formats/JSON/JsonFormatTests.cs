@@ -62,10 +62,10 @@ namespace Archivist.Tests.Formats.JSON
         }
 
         [Fact]
-        public async Task CanReadAndWrite()
+        public async Task CanReadAndWriteAsync()
         {
             // Arrange
-            var Stream = new System.IO.MemoryStream();
+            await using var Stream = new System.IO.MemoryStream();
             var File = new StructuredObject()
             {
                 ["Property1"] = "Value1",

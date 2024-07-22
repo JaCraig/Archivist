@@ -13,6 +13,7 @@ namespace Archivist.Tests.Converters
         public AnythingToTextConverterTests()
         {
             _TestClass = new AnythingToTextConverter();
+            TestObject = new AnythingToTextConverter();
         }
 
         private readonly AnythingToTextConverter _TestClass;

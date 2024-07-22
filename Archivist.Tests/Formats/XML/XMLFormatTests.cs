@@ -18,6 +18,8 @@ namespace Archivist.Tests.Formats.XML
             TestObject = new XMLFormat(_Options);
         }
 
+        private static readonly string[] _ExpectedExtensions = new[] { "XML" };
+        private static readonly string[] _ExpectedMimeTypes = new[] { "TEXT/XML", "APPLICATION/XML" };
         private readonly JsonSerializerSettings _Options;
         private readonly XMLFormat _TestClass;
 
@@ -32,7 +34,7 @@ namespace Archivist.Tests.Formats.XML
         }
 
         [Fact]
-        public void CanConstructWithNullOptions() => new XMLFormat(default);
+        public void CanConstructWithNullOptions() => _ = new XMLFormat(default);
 
         [Fact]
         public void CanGetExtensions()
@@ -40,7 +42,7 @@ namespace Archivist.Tests.Formats.XML
             // Assert
             var Result = Assert.IsType<string[]>(_TestClass.Extensions);
 
-            Assert.Equal(new[] { "XML" }, Result);
+            Assert.Equal(_ExpectedExtensions, Result);
         }
 
         [Fact]
@@ -49,14 +51,14 @@ namespace Archivist.Tests.Formats.XML
             // Assert
             var Result = Assert.IsType<string[]>(_TestClass.MimeTypes);
 
-            Assert.Equal(new[] { "TEXT/XML", "APPLICATION/XML" }, Result);
+            Assert.Equal(_ExpectedMimeTypes, Result);
         }
 
         [Fact]
         public async Task CanReadAsync()
         {
             // Arrange
-            using var Stream = new MemoryStream();
+            await using var Stream = new MemoryStream();
 
             // Act
             Interfaces.IGenericFile? Result = await _TestClass.ReadAsync(Stream);
@@ -69,7 +71,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task CanWriteAsync()
         {
             // Arrange
-            using var Stream = new MemoryStream();
+            await using var Stream = new MemoryStream();
             var File = new StructuredObject(new ExpandoObject());
 
             // Act
@@ -80,10 +82,10 @@ namespace Archivist.Tests.Formats.XML
         }
 
         [Fact]
-        public async Task ReadAndWrite_AreCompatible()
+        public async Task ReadAndWrite_AreCompatibleAsync()
         {
             // Arrange
-            using var Stream = new MemoryStream();
+            await using var Stream = new MemoryStream();
             var File = new StructuredObject(new ExpandoObject());
             _ = File.SetValue("TestValue", 10)
                 .SetValue("TestString", "Test");
@@ -103,10 +105,10 @@ namespace Archivist.Tests.Formats.XML
         }
 
         [Fact]
-        public async Task WriteAsync_ReturnsFalse_WhenFileIsNull()
+        public async Task WriteAsync_ReturnsFalse_WhenFileIsNullAsync()
         {
             // Arrange
-            using var Stream = new MemoryStream();
+            await using var Stream = new MemoryStream();
 
             // Act
             var Result = await _TestClass.WriteAsync(Stream, null);

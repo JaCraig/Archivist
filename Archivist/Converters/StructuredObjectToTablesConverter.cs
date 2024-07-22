@@ -42,7 +42,7 @@ namespace Archivist.Converters
         /// <param name="source">The source type.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>True if the conversion is possible, otherwise false.</returns>
-        public bool CanConvert(Type source, Type destination) => source == typeof(StructuredObject) && destination == typeof(Tables);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(StructuredObject) && destination == typeof(Tables);
 
         /// <summary>
         /// Converts the source object to the specified destination type.
@@ -50,7 +50,7 @@ namespace Archivist.Converters
         /// <param name="source">The source object to convert.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>The converted object.</returns>
-        public object? Convert(object? source, Type destination)
+        public object? Convert(object? source, Type? destination)
         {
             if (source is not StructuredObject File || destination is null)
                 return null;
