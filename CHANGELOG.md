@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.4"></a>
+## [0.5.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.4) (2024-07-20)
+
+### Bug Fixes
+
+* bump ObjectCartographer in /Archivist in the dependencies group ([98c6aa3](https://www.github.com/JaCraig/Archivist/commit/98c6aa39b83c7029b0578d22b47197c19f7c1101))
+
+### Other
+
+* Merge pull request #32 from JaCraig/dependabot/nuget/Archivist/dependencies-3698aa6cff ([d41e0e8](https://www.github.com/JaCraig/Archivist/commit/d41e0e8624c0324c53a71f9050c5296d7bd18311))
+
+<a name="0.5.3"></a>
+## [0.5.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.3) (2024-07-20)
+
+### Bug Fixes
+
+* Finishing XML format changes ([d5b87e9](https://www.github.com/JaCraig/Archivist/commit/d5b87e94ce049762738acdad19036ca465b2f513))
+
+### Other
+
+* Update README.md ([e1993b7](https://www.github.com/JaCraig/Archivist/commit/e1993b7eb8c7e79932f7e6c7de3056b97f0695de))
+* Update README.md ([37135b3](https://www.github.com/JaCraig/Archivist/commit/37135b34fcbcf20b0568927067cb67df8c27660e))
+* Working on adding XML format ([6022121](https://www.github.com/JaCraig/Archivist/commit/6022121daa811cf003888656b178d0eb358c41ca))
+
 <a name="0.5.2"></a>
 ## [0.5.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.2) (2024-07-15)
 
