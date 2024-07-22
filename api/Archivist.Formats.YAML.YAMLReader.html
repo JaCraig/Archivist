@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class ReaderBaseClass | Archivist API Reference </title>
+      <title>Class YAMLReader | Archivist API Reference </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class ReaderBaseClass | Archivist API Reference ">
+      <meta name="title" content="Class YAMLReader | Archivist API Reference ">
       
-      <meta name="description" content="Base class for format readers.">
+      <meta name="description" content="Represents a reader for YAML files.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/JaCraig/Archivist/new/main/apiSpec/new?filename=Archivist_BaseClasses_ReaderBaseClass.md&amp;value=---%0Auid%3A%20Archivist.BaseClasses.ReaderBaseClass%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/JaCraig/Archivist/new/main/apiSpec/new?filename=Archivist_Formats_YAML_YAMLReader.md&amp;value=---%0Auid%3A%20Archivist.Formats.YAML.YAMLReader%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,25 +84,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Archivist.BaseClasses.ReaderBaseClass">
+        <article data-uid="Archivist.Formats.YAML.YAMLReader">
 
 
 
-  <h1 id="Archivist_BaseClasses_ReaderBaseClass" data-uid="Archivist.BaseClasses.ReaderBaseClass" class="text-break">
-Class ReaderBaseClass  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/ReaderBaseClass.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Archivist_Formats_YAML_YAMLReader" data-uid="Archivist.Formats.YAML.YAMLReader" class="text-break">
+Class YAMLReader  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/YAML/YAMLReader.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Archivist.html">Archivist</a>.<a class="xref" href="Archivist.BaseClasses.html">BaseClasses</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Archivist.html">Archivist</a>.<a class="xref" href="Archivist.Formats.html">Formats</a>.<a class="xref" href="Archivist.Formats.YAML.html">YAML</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Archivist.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Base class for format readers.</p>
+  <div class="markdown summary"><p>Represents a reader for YAML files.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ReaderBaseClass : IFormatReader</code></pre>
+    <pre><code class="lang-csharp hljs">public class YAMLReader : ReaderBaseClass, IFormatReader</code></pre>
   </div>
 
 
@@ -112,7 +112,8 @@ Class ReaderBaseClass  <a class="header-action link-secondary" title="View sourc
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">ReaderBaseClass</span></div>
+      <div><a class="xref" href="Archivist.BaseClasses.ReaderBaseClass.html">ReaderBaseClass</a></div>
+      <div><span class="xref">YAMLReader</span></div>
     </dd>
   </dl>
 
@@ -123,22 +124,13 @@ Class ReaderBaseClass  <a class="header-action link-secondary" title="View sourc
     </dd>
   </dl>
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="Archivist.Formats.Delimited.DelimitedReader.html">DelimitedReader</a></div>
-      <div><a class="xref" href="Archivist.Formats.Excel.ExcelReader.html">ExcelReader</a></div>
-      <div><a class="xref" href="Archivist.Formats.JSON.JsonReader.html">JsonReader</a></div>
-      <div><a class="xref" href="Archivist.Formats.Txt.TextReader.html">TextReader</a></div>
-      <div><a class="xref" href="Archivist.Formats.VCard.VCardReader.html">VCardReader</a></div>
-      <div><a class="xref" href="Archivist.Formats.XML.XMLReader.html">XMLReader</a></div>
-      <div><a class="xref" href="Archivist.Formats.YAML.YAMLReader.html">YAMLReader</a></div>
-    </dd>
-  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_CanRead_System_IO_Stream_">ReaderBaseClass.CanRead(Stream)</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -167,23 +159,54 @@ Class ReaderBaseClass  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Archivist_BaseClasses_ReaderBaseClass_HeaderInfo_" data-uid="Archivist.BaseClasses.ReaderBaseClass.HeaderInfo*"></a>
+  <a id="Archivist_Formats_YAML_YAMLReader__ctor_" data-uid="Archivist.Formats.YAML.YAMLReader.#ctor*"></a>
 
-  <h3 id="Archivist_BaseClasses_ReaderBaseClass_HeaderInfo" data-uid="Archivist.BaseClasses.ReaderBaseClass.HeaderInfo">
-  HeaderInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/ReaderBaseClass.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Archivist_Formats_YAML_YAMLReader__ctor" data-uid="Archivist.Formats.YAML.YAMLReader.#ctor">
+  YAMLReader()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/YAML/YAMLReader.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the header information for the format.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.YAML.YAMLReader.html">YAMLReader</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract byte[] HeaderInfo { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public YAMLReader()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Archivist_Formats_YAML_YAMLReader_HeaderInfo_" data-uid="Archivist.Formats.YAML.YAMLReader.HeaderInfo*"></a>
+
+  <h3 id="Archivist_Formats_YAML_YAMLReader_HeaderInfo" data-uid="Archivist.Formats.YAML.YAMLReader.HeaderInfo">
+  HeaderInfo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/YAML/YAMLReader.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the header information for the YAML format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] HeaderInfo { get; }</code></pre>
   </div>
 
 
@@ -207,19 +230,19 @@ Class ReaderBaseClass  <a class="header-action link-secondary" title="View sourc
 </h2>
 
 
-  <a id="Archivist_BaseClasses_ReaderBaseClass_CanRead_" data-uid="Archivist.BaseClasses.ReaderBaseClass.CanRead*"></a>
+  <a id="Archivist_Formats_YAML_YAMLReader_InternalCanRead_" data-uid="Archivist.Formats.YAML.YAMLReader.InternalCanRead*"></a>
 
-  <h3 id="Archivist_BaseClasses_ReaderBaseClass_CanRead_System_IO_Stream_" data-uid="Archivist.BaseClasses.ReaderBaseClass.CanRead(System.IO.Stream)">
-  CanRead(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/ReaderBaseClass.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Archivist_Formats_YAML_YAMLReader_InternalCanRead_System_IO_Stream_" data-uid="Archivist.Formats.YAML.YAMLReader.InternalCanRead(System.IO.Stream)">
+  InternalCanRead(Stream?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/YAML/YAMLReader.cs/#L42"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines whether the reader can read the specified stream.</p>
+  <div class="markdown level1 summary"><p>Determines if the reader can read the specified stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanRead(Stream? stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool InternalCanRead(Stream? stream)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -246,71 +269,32 @@ Class ReaderBaseClass  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <a id="Archivist_BaseClasses_ReaderBaseClass_InternalCanRead_" data-uid="Archivist.BaseClasses.ReaderBaseClass.InternalCanRead*"></a>
+  <a id="Archivist_Formats_YAML_YAMLReader_ReadAsync_" data-uid="Archivist.Formats.YAML.YAMLReader.ReadAsync*"></a>
 
-  <h3 id="Archivist_BaseClasses_ReaderBaseClass_InternalCanRead_System_IO_Stream_" data-uid="Archivist.BaseClasses.ReaderBaseClass.InternalCanRead(System.IO.Stream)">
-  InternalCanRead(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/ReaderBaseClass.cs/#L60"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Used to determine if a reader can actually read the file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual bool InternalCanRead(Stream? stream)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd><p>The stream to read.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><code>true</code> if the reader can read the file; otherwise, <code>false</code>.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Archivist_BaseClasses_ReaderBaseClass_ReadAsync_" data-uid="Archivist.BaseClasses.ReaderBaseClass.ReadAsync*"></a>
-
-  <h3 id="Archivist_BaseClasses_ReaderBaseClass_ReadAsync_System_IO_Stream_" data-uid="Archivist.BaseClasses.ReaderBaseClass.ReadAsync(System.IO.Stream)">
+  <h3 id="Archivist_Formats_YAML_YAMLReader_ReadAsync_System_IO_Stream_" data-uid="Archivist.Formats.YAML.YAMLReader.ReadAsync(System.IO.Stream)">
   ReadAsync(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/ReaderBaseClass.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/YAML/YAMLReader.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Reads the file asynchronously.</p>
+  <div class="markdown level1 summary"><p>Reads a YAML file asynchronously from the specified stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract Task&lt;IGenericFile?&gt; ReadAsync(Stream? stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task&lt;IGenericFile?&gt; ReadAsync(Stream? stream)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
-    <dd><p>The stream to read.</p>
+    <dd><p>The stream to read the YAML file from.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a>&gt;</dt>
-    <dd><p>A task representing the asynchronous operation that returns the generic file.</p>
+    <dd><p>The parsed YAML file.</p>
 </dd>
   </dl>
 
@@ -324,15 +308,11 @@ Class ReaderBaseClass  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <h2 id="seealso">See Also</h2>
-  <div class="seealso">
-      <div><a class="xref" href="Archivist.Interfaces.IFormatReader.html">IFormatReader</a></div>
-  </div>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/ReaderBaseClass.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/YAML/YAMLReader.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 
