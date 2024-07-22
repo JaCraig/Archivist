@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_DataTypes_FixedLengthFile" data-uid="Archivist.DataTypes.FixedLengthFile" class="text-break">
-Class FixedLengthFile  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class FixedLengthFile  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -137,6 +137,9 @@ Class FixedLengthFile  <a class="header-action link-secondary" title="View sourc
       <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Title">FileBaseClass&lt;FixedLengthFile&gt;.Title</a>
     </div>
     <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Converter">FileBaseClass&lt;FixedLengthFile&gt;.Converter</a>
+    </div>
+    <div>
       <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_CompareTo_System_Object_">FileBaseClass&lt;FixedLengthFile&gt;.CompareTo(object)</a>
     </div>
     <div>
@@ -169,7 +172,7 @@ Class FixedLengthFile  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Archivist_DataTypes_FixedLengthFile__ctor" data-uid="Archivist.DataTypes.FixedLengthFile.#ctor">
   FixedLengthFile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.FixedLengthFile.html">FixedLengthFile</a> class with the default
@@ -195,9 +198,46 @@ line separator.</p>
 
   <a id="Archivist_DataTypes_FixedLengthFile__ctor_" data-uid="Archivist.DataTypes.FixedLengthFile.#ctor*"></a>
 
+  <h3 id="Archivist_DataTypes_FixedLengthFile__ctor_Archivist_Converters_Convertinator_System_String_" data-uid="Archivist.DataTypes.FixedLengthFile.#ctor(Archivist.Converters.Convertinator,System.String)">
+  FixedLengthFile(Convertinator?, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.FixedLengthFile.html">FixedLengthFile</a> class with the specified
+line separator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedLengthFile(Convertinator? converter, string lineSeparator = &quot;\r\n&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
+    <dd><p>The type converter.</p>
+</dd>
+    <dt><code>lineSeparator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The line separator to use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_FixedLengthFile__ctor_" data-uid="Archivist.DataTypes.FixedLengthFile.#ctor*"></a>
+
   <h3 id="Archivist_DataTypes_FixedLengthFile__ctor_System_String_" data-uid="Archivist.DataTypes.FixedLengthFile.#ctor(System.String)">
   FixedLengthFile(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.FixedLengthFile.html">FixedLengthFile</a> class with the specified
@@ -235,7 +275,7 @@ line separator.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_LineSeparator" data-uid="Archivist.DataTypes.FixedLengthFile.LineSeparator">
   LineSeparator
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the line separator used in the fixed-length file.</p>
@@ -267,7 +307,7 @@ line separator.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_Records" data-uid="Archivist.DataTypes.FixedLengthFile.Records">
   Records
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the list of fixed-length records in the file.</p>
@@ -303,7 +343,7 @@ line separator.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_CompareTo_Archivist_DataTypes_FixedLengthFile_" data-uid="Archivist.DataTypes.FixedLengthFile.CompareTo(Archivist.DataTypes.FixedLengthFile)">
   CompareTo(FixedLengthFile?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compares the current fixed-length file with another fixed-length file.</p>
@@ -342,7 +382,7 @@ line separator.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_Equals_Archivist_DataTypes_FixedLengthFile_" data-uid="Archivist.DataTypes.FixedLengthFile.Equals(Archivist.DataTypes.FixedLengthFile)">
   Equals(FixedLengthFile?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the current fixed-length file is equal to another fixed-length file.</p>
@@ -382,7 +422,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_Equals_System_Object_" data-uid="Archivist.DataTypes.FixedLengthFile.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the current fixed-length file is equal to another object.</p>
@@ -421,7 +461,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_GetContent" data-uid="Archivist.DataTypes.FixedLengthFile.GetContent">
   GetContent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the content of the fixed-length file as a string.</p>
@@ -454,7 +494,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_GetHashCode" data-uid="Archivist.DataTypes.FixedLengthFile.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the hash code for the fixed-length file.</p>
@@ -487,7 +527,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_ToString" data-uid="Archivist.DataTypes.FixedLengthFile.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string that represents the current fixed-length file.</p>
@@ -524,7 +564,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_op_Equality_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_" data-uid="Archivist.DataTypes.FixedLengthFile.op_Equality(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)">
   operator ==(FixedLengthFile?, FixedLengthFile?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two fixed-length files are equal.</p>
@@ -566,7 +606,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_op_GreaterThan_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_" data-uid="Archivist.DataTypes.FixedLengthFile.op_GreaterThan(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)">
   operator &gt;(FixedLengthFile?, FixedLengthFile?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first fixed-length file is greater than the second fixed-length file.</p>
@@ -609,7 +649,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_op_GreaterThanOrEqual_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_" data-uid="Archivist.DataTypes.FixedLengthFile.op_GreaterThanOrEqual(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)">
   operator &gt;=(FixedLengthFile?, FixedLengthFile?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first fixed-length file is greater than or equal to the second
@@ -653,7 +693,7 @@ file; otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_op_Inequality_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_" data-uid="Archivist.DataTypes.FixedLengthFile.op_Inequality(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)">
   operator !=(FixedLengthFile?, FixedLengthFile?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two fixed-length files are not equal.</p>
@@ -695,7 +735,7 @@ file; otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_op_LessThan_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_" data-uid="Archivist.DataTypes.FixedLengthFile.op_LessThan(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)">
   operator &lt;(FixedLengthFile?, FixedLengthFile?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first fixed-length file is less than the second fixed-length file.</p>
@@ -738,7 +778,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_FixedLengthFile_op_LessThanOrEqual_Archivist_DataTypes_FixedLengthFile_Archivist_DataTypes_FixedLengthFile_" data-uid="Archivist.DataTypes.FixedLengthFile.op_LessThanOrEqual(Archivist.DataTypes.FixedLengthFile,Archivist.DataTypes.FixedLengthFile)">
   operator &lt;=(FixedLengthFile?, FixedLengthFile?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first fixed-length file is less than or equal to the second
@@ -782,7 +822,7 @@ file; otherwise, false.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/FixedLengthFile.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

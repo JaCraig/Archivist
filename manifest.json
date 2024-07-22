@@ -112,6 +112,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.Convertinator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.Convertinator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.Converters.StructuredObjectToCardConverter.yml",
       "output": {
         ".html": {
@@ -366,6 +376,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.ExtensionMethods.InternalExtensionMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.html"
         }
       },
       "version": ""
@@ -766,6 +786,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Modules.CanisterModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Modules.CanisterModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Modules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Modules.html"
         }
       },
       "version": ""

@@ -142,6 +142,9 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
       <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Title">FileBaseClass&lt;Table&gt;.Title</a>
     </div>
     <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Converter">FileBaseClass&lt;Table&gt;.Converter</a>
+    </div>
+    <div>
       <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_CompareTo_System_Object_">FileBaseClass&lt;Table&gt;.CompareTo(object)</a>
     </div>
     <div>
@@ -197,6 +200,75 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <a id="Archivist_DataTypes_Table__ctor_" data-uid="Archivist.DataTypes.Table.#ctor*"></a>
+
+  <h3 id="Archivist_DataTypes_Table__ctor_Archivist_Converters_Convertinator_System_String_" data-uid="Archivist.DataTypes.Table.#ctor(Archivist.Converters.Convertinator,System.String)">
+  Table(Convertinator?, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.Table.html">Table</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table(Convertinator? converter, string delimiter = &quot;,&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
+    <dd><p>The type converter.</p>
+</dd>
+    <dt><code>delimiter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The delimiter used by the table.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Table__ctor_" data-uid="Archivist.DataTypes.Table.#ctor*"></a>
+
+  <h3 id="Archivist_DataTypes_Table__ctor_System_String_" data-uid="Archivist.DataTypes.Table.#ctor(System.String)">
+  Table(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.Table.html">Table</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Table(string delimiter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delimiter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The delimiter used by the table.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -205,7 +277,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Columns" data-uid="Archivist.DataTypes.Table.Columns">
   Columns
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the headers of the table.</p>
@@ -238,7 +310,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Count" data-uid="Archivist.DataTypes.Table.Count">
   Count
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the number of rows in the table.</p>
@@ -270,7 +342,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Delimiter" data-uid="Archivist.DataTypes.Table.Delimiter">
   Delimiter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the delimiter used by the table.</p>
@@ -302,7 +374,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_IsReadOnly" data-uid="Archivist.DataTypes.Table.IsReadOnly">
   IsReadOnly
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value indicating whether the table is read-only.</p>
@@ -334,7 +406,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Item_System_Int32_" data-uid="Archivist.DataTypes.Table.Item(System.Int32)">
   this[int]
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the row at the specified index.</p>
@@ -383,7 +455,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Add_Archivist_DataTypes_TableRow_" data-uid="Archivist.DataTypes.Table.Add(Archivist.DataTypes.TableRow)">
   Add(TableRow?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a row to the table.</p>
@@ -416,7 +488,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_AddRow" data-uid="Archivist.DataTypes.Table.AddRow">
   AddRow()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a new row to the table.</p>
@@ -449,7 +521,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Clear" data-uid="Archivist.DataTypes.Table.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L239"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears the table.</p>
@@ -476,7 +548,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_CompareTo_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.CompareTo(Archivist.DataTypes.Table)">
   CompareTo(Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L246"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compares the current table object with another table object.</p>
@@ -515,7 +587,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Contains_Archivist_DataTypes_TableRow_" data-uid="Archivist.DataTypes.Table.Contains(Archivist.DataTypes.TableRow)">
   Contains(TableRow?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines if the table contains the specified row.</p>
@@ -554,7 +626,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_ConvertFrom__1_System_Collections_Generic_List___0__" data-uid="Archivist.DataTypes.Table.ConvertFrom``1(System.Collections.Generic.List{``0})">
   ConvertFrom&lt;TObject&gt;(List&lt;TObject?&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L265"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Copies the list object to the table.</p>
@@ -593,7 +665,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_ConvertTo__1" data-uid="Archivist.DataTypes.Table.ConvertTo``1">
   ConvertTo&lt;TObject&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L287"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts this instance into the object array of the type specified.</p>
@@ -632,7 +704,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_CopyTo_Archivist_DataTypes_TableRow___System_Int32_" data-uid="Archivist.DataTypes.Table.CopyTo(Archivist.DataTypes.TableRow[],System.Int32)">
   CopyTo(TableRow[]?, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L294"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Copies the rows of the table to an array, starting at a particular array index.</p>
@@ -668,7 +740,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Equals_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.Equals(Archivist.DataTypes.Table)">
   Equals(Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L320"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the current table object is equal to another table object.</p>
@@ -707,7 +779,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Equals_System_Object_" data-uid="Archivist.DataTypes.Table.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L311"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the current table object is equal to another table object.</p>
@@ -746,7 +818,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_GetContent" data-uid="Archivist.DataTypes.Table.GetContent">
   GetContent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L333"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the content of the table.</p>
@@ -779,7 +851,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_GetEnumerator" data-uid="Archivist.DataTypes.Table.GetEnumerator">
   GetEnumerator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L346"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the rows of the table.</p>
@@ -812,7 +884,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_GetHashCode" data-uid="Archivist.DataTypes.Table.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L358"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the hash code for the current table object.</p>
@@ -845,7 +917,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_IndexOf_Archivist_DataTypes_TableRow_" data-uid="Archivist.DataTypes.Table.IndexOf(Archivist.DataTypes.TableRow)">
   IndexOf(TableRow?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L377"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the index of the specified row in the table.</p>
@@ -884,7 +956,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Insert_System_Int32_Archivist_DataTypes_TableRow_" data-uid="Archivist.DataTypes.Table.Insert(System.Int32,Archivist.DataTypes.TableRow)">
   Insert(int, TableRow?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L384"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Inserts a row into the table at the specified index.</p>
@@ -920,7 +992,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_Remove_Archivist_DataTypes_TableRow_" data-uid="Archivist.DataTypes.Table.Remove(Archivist.DataTypes.TableRow)">
   Remove(TableRow?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L399"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes the first occurrence of a specific row from the table.</p>
@@ -959,7 +1031,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_RemoveAt_System_Int32_" data-uid="Archivist.DataTypes.Table.RemoveAt(System.Int32)">
   RemoveAt(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L405"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes the row at the specified index.</p>
@@ -992,7 +1064,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_ToFileType__1" data-uid="Archivist.DataTypes.Table.ToFileType``1">
   ToFileType&lt;TFile&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L417"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the table to the specified file type.</p>
@@ -1035,7 +1107,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_op_Equality_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_Equality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
   operator ==(Table?, Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two table objects are equal.</p>
@@ -1077,7 +1149,7 @@ Class Table  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Archivist_DataTypes_Table_op_GreaterThan_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_GreaterThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
   operator &gt;(Table?, Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first table object is greater than the second table object.</p>
@@ -1120,7 +1192,7 @@ otherwise, <code>false</code>.</p>
 
   <h3 id="Archivist_DataTypes_Table_op_GreaterThanOrEqual_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_GreaterThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
   operator &gt;=(Table?, Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first table object is greater than or equal to the second table object.</p>
@@ -1163,7 +1235,7 @@ object; otherwise, <code>false</code>.</p>
 
   <h3 id="Archivist_DataTypes_Table_op_Implicit_Archivist_DataTypes_Table__Archivist_DataTypes_Card" data-uid="Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Card">
   implicit operator Card?(Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the table to a card.</p>
@@ -1202,7 +1274,7 @@ object; otherwise, <code>false</code>.</p>
 
   <h3 id="Archivist_DataTypes_Table_op_Implicit_Archivist_DataTypes_Table__Archivist_DataTypes_StructuredObject" data-uid="Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.StructuredObject">
   implicit operator StructuredObject?(Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the table to a structured object.</p>
@@ -1240,7 +1312,7 @@ object; otherwise, <code>false</code>.</p>
 
   <h3 id="Archivist_DataTypes_Table_op_Implicit_Archivist_DataTypes_Table__Archivist_DataTypes_Tables" data-uid="Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Tables">
   implicit operator Tables?(Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the table to a tables object.</p>
@@ -1279,7 +1351,7 @@ object; otherwise, <code>false</code>.</p>
 
   <h3 id="Archivist_DataTypes_Table_op_Implicit_Archivist_DataTypes_Table__Archivist_DataTypes_Text" data-uid="Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Text">
   implicit operator Text?(Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the table to a text object.</p>
@@ -1318,7 +1390,7 @@ object; otherwise, <code>false</code>.</p>
 
   <h3 id="Archivist_DataTypes_Table_op_Inequality_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_Inequality(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
   operator !=(Table?, Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two table objects are not equal.</p>
@@ -1360,7 +1432,7 @@ object; otherwise, <code>false</code>.</p>
 
   <h3 id="Archivist_DataTypes_Table_op_LessThan_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_LessThan(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
   operator &lt;(Table?, Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L159"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first table object is less than the second table object.</p>
@@ -1402,7 +1474,7 @@ object; otherwise, <code>false</code>.</p>
 
   <h3 id="Archivist_DataTypes_Table_op_LessThanOrEqual_Archivist_DataTypes_Table_Archivist_DataTypes_Table_" data-uid="Archivist.DataTypes.Table.op_LessThanOrEqual(Archivist.DataTypes.Table,Archivist.DataTypes.Table)">
   operator &lt;=(Table?, Table?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Table.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the first table object is less than or equal to the second table object.</p>

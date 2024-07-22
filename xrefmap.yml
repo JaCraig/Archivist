@@ -22,6 +22,25 @@ references:
   fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType)
   nameWithType: FileBaseClass<TFileType>
   nameWithType.vb: FileBaseClass(Of TFileType)
+- uid: Archivist.BaseClasses.FileBaseClass`1.#ctor(Archivist.Converters.Convertinator)
+  name: FileBaseClass(Convertinator?)
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1__ctor_Archivist_Converters_Convertinator_
+  commentId: M:Archivist.BaseClasses.FileBaseClass`1.#ctor(Archivist.Converters.Convertinator)
+  name.vb: New(Convertinator)
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.FileBaseClass(Archivist.Converters.Convertinator?)
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).New(Archivist.Converters.Convertinator)
+  nameWithType: FileBaseClass<TFileType>.FileBaseClass(Convertinator?)
+  nameWithType.vb: FileBaseClass(Of TFileType).New(Convertinator)
+- uid: Archivist.BaseClasses.FileBaseClass`1.#ctor*
+  name: FileBaseClass
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1__ctor_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.FileBaseClass
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).New
+  nameWithType: FileBaseClass<TFileType>.FileBaseClass
+  nameWithType.vb: FileBaseClass(Of TFileType).New
 - uid: Archivist.BaseClasses.FileBaseClass`1.CompareTo(System.Object)
   name: CompareTo(object?)
   href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_CompareTo_System_Object_
@@ -49,6 +68,23 @@ references:
   fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).CompareTo
   nameWithType: FileBaseClass<TFileType>.CompareTo
   nameWithType.vb: FileBaseClass(Of TFileType).CompareTo
+- uid: Archivist.BaseClasses.FileBaseClass`1.Converter
+  name: Converter
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Converter
+  commentId: P:Archivist.BaseClasses.FileBaseClass`1.Converter
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Converter
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Converter
+  nameWithType: FileBaseClass<TFileType>.Converter
+  nameWithType.vb: FileBaseClass(Of TFileType).Converter
+- uid: Archivist.BaseClasses.FileBaseClass`1.Converter*
+  name: Converter
+  href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Converter_
+  commentId: Overload:Archivist.BaseClasses.FileBaseClass`1.Converter
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.FileBaseClass<TFileType>.Converter
+  fullName.vb: Archivist.BaseClasses.FileBaseClass(Of TFileType).Converter
+  nameWithType: FileBaseClass<TFileType>.Converter
+  nameWithType.vb: FileBaseClass(Of TFileType).Converter
 - uid: Archivist.BaseClasses.FileBaseClass`1.Equals(System.Object)
   name: Equals(object?)
   href: api/Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Equals_System_Object_
@@ -857,6 +893,47 @@ references:
   isSpec: "True"
   fullName: Archivist.Converters.CardToTablesConverter.Convert
   nameWithType: CardToTablesConverter.Convert
+- uid: Archivist.Converters.Convertinator
+  name: Convertinator
+  href: api/Archivist.Converters.Convertinator.html
+  commentId: T:Archivist.Converters.Convertinator
+  fullName: Archivist.Converters.Convertinator
+  nameWithType: Convertinator
+- uid: Archivist.Converters.Convertinator.#ctor(System.Collections.Generic.IEnumerable{Archivist.Interfaces.IDataConverter})
+  name: Convertinator(IEnumerable<IDataConverter>?)
+  href: api/Archivist.Converters.Convertinator.html#Archivist_Converters_Convertinator__ctor_System_Collections_Generic_IEnumerable_Archivist_Interfaces_IDataConverter__
+  commentId: M:Archivist.Converters.Convertinator.#ctor(System.Collections.Generic.IEnumerable{Archivist.Interfaces.IDataConverter})
+  name.vb: New(IEnumerable(Of IDataConverter))
+  fullName: Archivist.Converters.Convertinator.Convertinator(System.Collections.Generic.IEnumerable<Archivist.Interfaces.IDataConverter>?)
+  fullName.vb: Archivist.Converters.Convertinator.New(System.Collections.Generic.IEnumerable(Of Archivist.Interfaces.IDataConverter))
+  nameWithType: Convertinator.Convertinator(IEnumerable<IDataConverter>?)
+  nameWithType.vb: Convertinator.New(IEnumerable(Of IDataConverter))
+- uid: Archivist.Converters.Convertinator.#ctor*
+  name: Convertinator
+  href: api/Archivist.Converters.Convertinator.html#Archivist_Converters_Convertinator__ctor_
+  commentId: Overload:Archivist.Converters.Convertinator.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Converters.Convertinator.Convertinator
+  fullName.vb: Archivist.Converters.Convertinator.New
+  nameWithType: Convertinator.Convertinator
+  nameWithType.vb: Convertinator.New
+- uid: Archivist.Converters.Convertinator.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.Convertinator.html#Archivist_Converters_Convertinator_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.Convertinator.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.Convertinator.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.Convertinator.Convert(Object, System.Type)
+  nameWithType: Convertinator.Convert(object?, Type?)
+  nameWithType.vb: Convertinator.Convert(Object, Type)
+- uid: Archivist.Converters.Convertinator.Convert*
+  name: Convert
+  href: api/Archivist.Converters.Convertinator.html#Archivist_Converters_Convertinator_Convert_
+  commentId: Overload:Archivist.Converters.Convertinator.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.Convertinator.Convert
+  nameWithType: Convertinator.Convert
 - uid: Archivist.Converters.StructuredObjectToCardConverter
   name: StructuredObjectToCardConverter
   href: api/Archivist.Converters.StructuredObjectToCardConverter.html
@@ -911,11 +988,14 @@ references:
   fullName: Archivist.Converters.StructuredObjectToTableConverter
   nameWithType: StructuredObjectToTableConverter
 - uid: Archivist.Converters.StructuredObjectToTableConverter.CanConvert(System.Type,System.Type)
-  name: CanConvert(Type, Type)
+  name: CanConvert(Type?, Type?)
   href: api/Archivist.Converters.StructuredObjectToTableConverter.html#Archivist_Converters_StructuredObjectToTableConverter_CanConvert_System_Type_System_Type_
   commentId: M:Archivist.Converters.StructuredObjectToTableConverter.CanConvert(System.Type,System.Type)
-  fullName: Archivist.Converters.StructuredObjectToTableConverter.CanConvert(System.Type, System.Type)
-  nameWithType: StructuredObjectToTableConverter.CanConvert(Type, Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.StructuredObjectToTableConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.StructuredObjectToTableConverter.CanConvert(System.Type, System.Type)
+  nameWithType: StructuredObjectToTableConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: StructuredObjectToTableConverter.CanConvert(Type, Type)
 - uid: Archivist.Converters.StructuredObjectToTableConverter.CanConvert*
   name: CanConvert
   href: api/Archivist.Converters.StructuredObjectToTableConverter.html#Archivist_Converters_StructuredObjectToTableConverter_CanConvert_
@@ -933,13 +1013,13 @@ references:
   nameWithType: StructuredObjectToTableConverter.Convert(StructuredObject?)
   nameWithType.vb: StructuredObjectToTableConverter.Convert(StructuredObject)
 - uid: Archivist.Converters.StructuredObjectToTableConverter.Convert(System.Object,System.Type)
-  name: Convert(object?, Type)
+  name: Convert(object?, Type?)
   href: api/Archivist.Converters.StructuredObjectToTableConverter.html#Archivist_Converters_StructuredObjectToTableConverter_Convert_System_Object_System_Type_
   commentId: M:Archivist.Converters.StructuredObjectToTableConverter.Convert(System.Object,System.Type)
   name.vb: Convert(Object, Type)
-  fullName: Archivist.Converters.StructuredObjectToTableConverter.Convert(object?, System.Type)
+  fullName: Archivist.Converters.StructuredObjectToTableConverter.Convert(object?, System.Type?)
   fullName.vb: Archivist.Converters.StructuredObjectToTableConverter.Convert(Object, System.Type)
-  nameWithType: StructuredObjectToTableConverter.Convert(object?, Type)
+  nameWithType: StructuredObjectToTableConverter.Convert(object?, Type?)
   nameWithType.vb: StructuredObjectToTableConverter.Convert(Object, Type)
 - uid: Archivist.Converters.StructuredObjectToTableConverter.Convert*
   name: Convert
@@ -955,11 +1035,14 @@ references:
   fullName: Archivist.Converters.StructuredObjectToTablesConverter
   nameWithType: StructuredObjectToTablesConverter
 - uid: Archivist.Converters.StructuredObjectToTablesConverter.CanConvert(System.Type,System.Type)
-  name: CanConvert(Type, Type)
+  name: CanConvert(Type?, Type?)
   href: api/Archivist.Converters.StructuredObjectToTablesConverter.html#Archivist_Converters_StructuredObjectToTablesConverter_CanConvert_System_Type_System_Type_
   commentId: M:Archivist.Converters.StructuredObjectToTablesConverter.CanConvert(System.Type,System.Type)
-  fullName: Archivist.Converters.StructuredObjectToTablesConverter.CanConvert(System.Type, System.Type)
-  nameWithType: StructuredObjectToTablesConverter.CanConvert(Type, Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.StructuredObjectToTablesConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.StructuredObjectToTablesConverter.CanConvert(System.Type, System.Type)
+  nameWithType: StructuredObjectToTablesConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: StructuredObjectToTablesConverter.CanConvert(Type, Type)
 - uid: Archivist.Converters.StructuredObjectToTablesConverter.CanConvert*
   name: CanConvert
   href: api/Archivist.Converters.StructuredObjectToTablesConverter.html#Archivist_Converters_StructuredObjectToTablesConverter_CanConvert_
@@ -977,13 +1060,13 @@ references:
   nameWithType: StructuredObjectToTablesConverter.Convert(StructuredObject?)
   nameWithType.vb: StructuredObjectToTablesConverter.Convert(StructuredObject)
 - uid: Archivist.Converters.StructuredObjectToTablesConverter.Convert(System.Object,System.Type)
-  name: Convert(object?, Type)
+  name: Convert(object?, Type?)
   href: api/Archivist.Converters.StructuredObjectToTablesConverter.html#Archivist_Converters_StructuredObjectToTablesConverter_Convert_System_Object_System_Type_
   commentId: M:Archivist.Converters.StructuredObjectToTablesConverter.Convert(System.Object,System.Type)
   name.vb: Convert(Object, Type)
-  fullName: Archivist.Converters.StructuredObjectToTablesConverter.Convert(object?, System.Type)
+  fullName: Archivist.Converters.StructuredObjectToTablesConverter.Convert(object?, System.Type?)
   fullName.vb: Archivist.Converters.StructuredObjectToTablesConverter.Convert(Object, System.Type)
-  nameWithType: StructuredObjectToTablesConverter.Convert(object?, Type)
+  nameWithType: StructuredObjectToTablesConverter.Convert(object?, Type?)
   nameWithType.vb: StructuredObjectToTablesConverter.Convert(Object, Type)
 - uid: Archivist.Converters.StructuredObjectToTablesConverter.Convert*
   name: Convert
@@ -1093,11 +1176,14 @@ references:
   fullName: Archivist.Converters.TableToTablesConverter
   nameWithType: TableToTablesConverter
 - uid: Archivist.Converters.TableToTablesConverter.CanConvert(System.Type,System.Type)
-  name: CanConvert(Type, Type)
+  name: CanConvert(Type?, Type?)
   href: api/Archivist.Converters.TableToTablesConverter.html#Archivist_Converters_TableToTablesConverter_CanConvert_System_Type_System_Type_
   commentId: M:Archivist.Converters.TableToTablesConverter.CanConvert(System.Type,System.Type)
-  fullName: Archivist.Converters.TableToTablesConverter.CanConvert(System.Type, System.Type)
-  nameWithType: TableToTablesConverter.CanConvert(Type, Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.TableToTablesConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.TableToTablesConverter.CanConvert(System.Type, System.Type)
+  nameWithType: TableToTablesConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: TableToTablesConverter.CanConvert(Type, Type)
 - uid: Archivist.Converters.TableToTablesConverter.CanConvert*
   name: CanConvert
   href: api/Archivist.Converters.TableToTablesConverter.html#Archivist_Converters_TableToTablesConverter_CanConvert_
@@ -1115,13 +1201,13 @@ references:
   nameWithType: TableToTablesConverter.Convert(Table?)
   nameWithType.vb: TableToTablesConverter.Convert(Table)
 - uid: Archivist.Converters.TableToTablesConverter.Convert(System.Object,System.Type)
-  name: Convert(object?, Type)
+  name: Convert(object?, Type?)
   href: api/Archivist.Converters.TableToTablesConverter.html#Archivist_Converters_TableToTablesConverter_Convert_System_Object_System_Type_
   commentId: M:Archivist.Converters.TableToTablesConverter.Convert(System.Object,System.Type)
   name.vb: Convert(Object, Type)
-  fullName: Archivist.Converters.TableToTablesConverter.Convert(object?, System.Type)
+  fullName: Archivist.Converters.TableToTablesConverter.Convert(object?, System.Type?)
   fullName.vb: Archivist.Converters.TableToTablesConverter.Convert(Object, System.Type)
-  nameWithType: TableToTablesConverter.Convert(object?, Type)
+  nameWithType: TableToTablesConverter.Convert(object?, Type?)
   nameWithType.vb: TableToTablesConverter.Convert(Object, Type)
 - uid: Archivist.Converters.TableToTablesConverter.Convert*
   name: Convert
@@ -1137,11 +1223,14 @@ references:
   fullName: Archivist.Converters.TablesToCardConverter
   nameWithType: TablesToCardConverter
 - uid: Archivist.Converters.TablesToCardConverter.CanConvert(System.Type,System.Type)
-  name: CanConvert(Type, Type)
+  name: CanConvert(Type?, Type?)
   href: api/Archivist.Converters.TablesToCardConverter.html#Archivist_Converters_TablesToCardConverter_CanConvert_System_Type_System_Type_
   commentId: M:Archivist.Converters.TablesToCardConverter.CanConvert(System.Type,System.Type)
-  fullName: Archivist.Converters.TablesToCardConverter.CanConvert(System.Type, System.Type)
-  nameWithType: TablesToCardConverter.CanConvert(Type, Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.TablesToCardConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.TablesToCardConverter.CanConvert(System.Type, System.Type)
+  nameWithType: TablesToCardConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: TablesToCardConverter.CanConvert(Type, Type)
 - uid: Archivist.Converters.TablesToCardConverter.CanConvert*
   name: CanConvert
   href: api/Archivist.Converters.TablesToCardConverter.html#Archivist_Converters_TablesToCardConverter_CanConvert_
@@ -1159,13 +1248,13 @@ references:
   nameWithType: TablesToCardConverter.Convert(Tables?)
   nameWithType.vb: TablesToCardConverter.Convert(Tables)
 - uid: Archivist.Converters.TablesToCardConverter.Convert(System.Object,System.Type)
-  name: Convert(object?, Type)
+  name: Convert(object?, Type?)
   href: api/Archivist.Converters.TablesToCardConverter.html#Archivist_Converters_TablesToCardConverter_Convert_System_Object_System_Type_
   commentId: M:Archivist.Converters.TablesToCardConverter.Convert(System.Object,System.Type)
   name.vb: Convert(Object, Type)
-  fullName: Archivist.Converters.TablesToCardConverter.Convert(object?, System.Type)
+  fullName: Archivist.Converters.TablesToCardConverter.Convert(object?, System.Type?)
   fullName.vb: Archivist.Converters.TablesToCardConverter.Convert(Object, System.Type)
-  nameWithType: TablesToCardConverter.Convert(object?, Type)
+  nameWithType: TablesToCardConverter.Convert(object?, Type?)
   nameWithType.vb: TablesToCardConverter.Convert(Object, Type)
 - uid: Archivist.Converters.TablesToCardConverter.Convert*
   name: Convert
@@ -1228,11 +1317,14 @@ references:
   fullName: Archivist.Converters.TablesToTableConverter
   nameWithType: TablesToTableConverter
 - uid: Archivist.Converters.TablesToTableConverter.CanConvert(System.Type,System.Type)
-  name: CanConvert(Type, Type)
+  name: CanConvert(Type?, Type?)
   href: api/Archivist.Converters.TablesToTableConverter.html#Archivist_Converters_TablesToTableConverter_CanConvert_System_Type_System_Type_
   commentId: M:Archivist.Converters.TablesToTableConverter.CanConvert(System.Type,System.Type)
-  fullName: Archivist.Converters.TablesToTableConverter.CanConvert(System.Type, System.Type)
-  nameWithType: TablesToTableConverter.CanConvert(Type, Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.TablesToTableConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.TablesToTableConverter.CanConvert(System.Type, System.Type)
+  nameWithType: TablesToTableConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: TablesToTableConverter.CanConvert(Type, Type)
 - uid: Archivist.Converters.TablesToTableConverter.CanConvert*
   name: CanConvert
   href: api/Archivist.Converters.TablesToTableConverter.html#Archivist_Converters_TablesToTableConverter_CanConvert_
@@ -1250,13 +1342,13 @@ references:
   nameWithType: TablesToTableConverter.Convert(Tables?)
   nameWithType.vb: TablesToTableConverter.Convert(Tables)
 - uid: Archivist.Converters.TablesToTableConverter.Convert(System.Object,System.Type)
-  name: Convert(object?, Type)
+  name: Convert(object?, Type?)
   href: api/Archivist.Converters.TablesToTableConverter.html#Archivist_Converters_TablesToTableConverter_Convert_System_Object_System_Type_
   commentId: M:Archivist.Converters.TablesToTableConverter.Convert(System.Object,System.Type)
   name.vb: Convert(Object, Type)
-  fullName: Archivist.Converters.TablesToTableConverter.Convert(object?, System.Type)
+  fullName: Archivist.Converters.TablesToTableConverter.Convert(object?, System.Type?)
   fullName.vb: Archivist.Converters.TablesToTableConverter.Convert(Object, System.Type)
-  nameWithType: TablesToTableConverter.Convert(object?, Type)
+  nameWithType: TablesToTableConverter.Convert(object?, Type?)
   nameWithType.vb: TablesToTableConverter.Convert(Object, Type)
 - uid: Archivist.Converters.TablesToTableConverter.Convert*
   name: Convert
@@ -1277,6 +1369,34 @@ references:
   commentId: T:Archivist.DataTypes.Card
   fullName: Archivist.DataTypes.Card
   nameWithType: Card
+- uid: Archivist.DataTypes.Card.#ctor
+  name: Card()
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card__ctor
+  commentId: M:Archivist.DataTypes.Card.#ctor
+  name.vb: New()
+  fullName: Archivist.DataTypes.Card.Card()
+  fullName.vb: Archivist.DataTypes.Card.New()
+  nameWithType: Card.Card()
+  nameWithType.vb: Card.New()
+- uid: Archivist.DataTypes.Card.#ctor(Archivist.Converters.Convertinator)
+  name: Card(Convertinator?)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card__ctor_Archivist_Converters_Convertinator_
+  commentId: M:Archivist.DataTypes.Card.#ctor(Archivist.Converters.Convertinator)
+  name.vb: New(Convertinator)
+  fullName: Archivist.DataTypes.Card.Card(Archivist.Converters.Convertinator?)
+  fullName.vb: Archivist.DataTypes.Card.New(Archivist.Converters.Convertinator)
+  nameWithType: Card.Card(Convertinator?)
+  nameWithType.vb: Card.New(Convertinator)
+- uid: Archivist.DataTypes.Card.#ctor*
+  name: Card
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card__ctor_
+  commentId: Overload:Archivist.DataTypes.Card.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.Card.Card
+  fullName.vb: Archivist.DataTypes.Card.New
+  nameWithType: Card.Card
+  nameWithType.vb: Card.New
 - uid: Archivist.DataTypes.Card.Addresses
   name: Addresses
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_Addresses
@@ -2754,6 +2874,15 @@ references:
   fullName.vb: Archivist.DataTypes.FixedLengthFile.New()
   nameWithType: FixedLengthFile.FixedLengthFile()
   nameWithType.vb: FixedLengthFile.New()
+- uid: Archivist.DataTypes.FixedLengthFile.#ctor(Archivist.Converters.Convertinator,System.String)
+  name: FixedLengthFile(Convertinator?, string)
+  href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile__ctor_Archivist_Converters_Convertinator_System_String_
+  commentId: M:Archivist.DataTypes.FixedLengthFile.#ctor(Archivist.Converters.Convertinator,System.String)
+  name.vb: New(Convertinator, String)
+  fullName: Archivist.DataTypes.FixedLengthFile.FixedLengthFile(Archivist.Converters.Convertinator?, string)
+  fullName.vb: Archivist.DataTypes.FixedLengthFile.New(Archivist.Converters.Convertinator, String)
+  nameWithType: FixedLengthFile.FixedLengthFile(Convertinator?, string)
+  nameWithType.vb: FixedLengthFile.New(Convertinator, String)
 - uid: Archivist.DataTypes.FixedLengthFile.#ctor(System.String)
   name: FixedLengthFile(string)
   href: api/Archivist.DataTypes.FixedLengthFile.html#Archivist_DataTypes_FixedLengthFile__ctor_System_String_
@@ -3247,6 +3376,15 @@ references:
   fullName.vb: Archivist.DataTypes.StructuredObject.New()
   nameWithType: StructuredObject.StructuredObject()
   nameWithType.vb: StructuredObject.New()
+- uid: Archivist.DataTypes.StructuredObject.#ctor(Archivist.Converters.Convertinator,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name: StructuredObject(Convertinator?, IDictionary<string, object?>?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject__ctor_Archivist_Converters_Convertinator_System_Collections_Generic_IDictionary_System_String_System_Object__
+  commentId: M:Archivist.DataTypes.StructuredObject.#ctor(Archivist.Converters.Convertinator,System.Collections.Generic.IDictionary{System.String,System.Object})
+  name.vb: New(Convertinator, IDictionary(Of String, Object))
+  fullName: Archivist.DataTypes.StructuredObject.StructuredObject(Archivist.Converters.Convertinator?, System.Collections.Generic.IDictionary<string, object?>?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.New(Archivist.Converters.Convertinator, System.Collections.Generic.IDictionary(Of String, Object))
+  nameWithType: StructuredObject.StructuredObject(Convertinator?, IDictionary<string, object?>?)
+  nameWithType.vb: StructuredObject.New(Convertinator, IDictionary(Of String, Object))
 - uid: Archivist.DataTypes.StructuredObject.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})
   name: StructuredObject(IDictionary<string, object?>?)
   href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject__ctor_System_Collections_Generic_IDictionary_System_String_System_Object__
@@ -3808,6 +3946,24 @@ references:
   fullName.vb: Archivist.DataTypes.Table.New()
   nameWithType: Table.Table()
   nameWithType.vb: Table.New()
+- uid: Archivist.DataTypes.Table.#ctor(Archivist.Converters.Convertinator,System.String)
+  name: Table(Convertinator?, string)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table__ctor_Archivist_Converters_Convertinator_System_String_
+  commentId: M:Archivist.DataTypes.Table.#ctor(Archivist.Converters.Convertinator,System.String)
+  name.vb: New(Convertinator, String)
+  fullName: Archivist.DataTypes.Table.Table(Archivist.Converters.Convertinator?, string)
+  fullName.vb: Archivist.DataTypes.Table.New(Archivist.Converters.Convertinator, String)
+  nameWithType: Table.Table(Convertinator?, string)
+  nameWithType.vb: Table.New(Convertinator, String)
+- uid: Archivist.DataTypes.Table.#ctor(System.String)
+  name: Table(string)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table__ctor_System_String_
+  commentId: M:Archivist.DataTypes.Table.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Archivist.DataTypes.Table.Table(string)
+  fullName.vb: Archivist.DataTypes.Table.New(String)
+  nameWithType: Table.Table(string)
+  nameWithType.vb: Table.New(String)
 - uid: Archivist.DataTypes.Table.#ctor*
   name: Table
   href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table__ctor_
@@ -5036,6 +5192,34 @@ references:
   commentId: T:Archivist.DataTypes.Tables
   fullName: Archivist.DataTypes.Tables
   nameWithType: Tables
+- uid: Archivist.DataTypes.Tables.#ctor
+  name: Tables()
+  href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables__ctor
+  commentId: M:Archivist.DataTypes.Tables.#ctor
+  name.vb: New()
+  fullName: Archivist.DataTypes.Tables.Tables()
+  fullName.vb: Archivist.DataTypes.Tables.New()
+  nameWithType: Tables.Tables()
+  nameWithType.vb: Tables.New()
+- uid: Archivist.DataTypes.Tables.#ctor(Archivist.Converters.Convertinator)
+  name: Tables(Convertinator?)
+  href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables__ctor_Archivist_Converters_Convertinator_
+  commentId: M:Archivist.DataTypes.Tables.#ctor(Archivist.Converters.Convertinator)
+  name.vb: New(Convertinator)
+  fullName: Archivist.DataTypes.Tables.Tables(Archivist.Converters.Convertinator?)
+  fullName.vb: Archivist.DataTypes.Tables.New(Archivist.Converters.Convertinator)
+  nameWithType: Tables.Tables(Convertinator?)
+  nameWithType.vb: Tables.New(Convertinator)
+- uid: Archivist.DataTypes.Tables.#ctor*
+  name: Tables
+  href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables__ctor_
+  commentId: Overload:Archivist.DataTypes.Tables.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.Tables.Tables
+  fullName.vb: Archivist.DataTypes.Tables.New
+  nameWithType: Tables.Tables
+  nameWithType.vb: Tables.New
 - uid: Archivist.DataTypes.Tables.Add(Archivist.DataTypes.Table)
   name: Add(Table?)
   href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables_Add_Archivist_DataTypes_Table_
@@ -5513,6 +5697,24 @@ references:
   commentId: T:Archivist.DataTypes.Text
   fullName: Archivist.DataTypes.Text
   nameWithType: Text
+- uid: Archivist.DataTypes.Text.#ctor
+  name: Text()
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text__ctor
+  commentId: M:Archivist.DataTypes.Text.#ctor
+  name.vb: New()
+  fullName: Archivist.DataTypes.Text.Text()
+  fullName.vb: Archivist.DataTypes.Text.New()
+  nameWithType: Text.Text()
+  nameWithType.vb: Text.New()
+- uid: Archivist.DataTypes.Text.#ctor(Archivist.Converters.Convertinator,System.String,System.String)
+  name: Text(Convertinator?, string?, string?)
+  href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text__ctor_Archivist_Converters_Convertinator_System_String_System_String_
+  commentId: M:Archivist.DataTypes.Text.#ctor(Archivist.Converters.Convertinator,System.String,System.String)
+  name.vb: New(Convertinator, String, String)
+  fullName: Archivist.DataTypes.Text.Text(Archivist.Converters.Convertinator?, string?, string?)
+  fullName.vb: Archivist.DataTypes.Text.New(Archivist.Converters.Convertinator, String, String)
+  nameWithType: Text.Text(Convertinator?, string?, string?)
+  nameWithType.vb: Text.New(Convertinator, String, String)
 - uid: Archivist.DataTypes.Text.#ctor(System.String,System.String)
   name: Text(string?, string?)
   href: api/Archivist.DataTypes.Text.html#Archivist_DataTypes_Text__ctor_System_String_System_String_
@@ -6119,6 +6321,28 @@ references:
   isSpec: "True"
   fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ToString
   nameWithType: InternalExtensionMethods.ToString
+- uid: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods
+  name: ServiceCollectionExtensionMethods
+  href: api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.html
+  commentId: T:Archivist.ExtensionMethods.ServiceCollectionExtensionMethods
+  fullName: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods
+  nameWithType: ServiceCollectionExtensionMethods
+- uid: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddArchivist(IServiceCollection?)
+  href: api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.html#Archivist_ExtensionMethods_ServiceCollectionExtensionMethods_AddArchivist_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddArchivist(IServiceCollection)
+  fullName: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection?)
+  fullName.vb: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ServiceCollectionExtensionMethods.AddArchivist(IServiceCollection?)
+  nameWithType.vb: ServiceCollectionExtensionMethods.AddArchivist(IServiceCollection)
+- uid: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist*
+  name: AddArchivist
+  href: api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.html#Archivist_ExtensionMethods_ServiceCollectionExtensionMethods_AddArchivist_
+  commentId: Overload:Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist
+  isSpec: "True"
+  fullName: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist
+  nameWithType: ServiceCollectionExtensionMethods.AddArchivist
 - uid: Archivist.FormatManager
   name: FormatManager
   href: api/Archivist.FormatManager.html
@@ -7654,6 +7878,47 @@ references:
   fullName.vb: Archivist.Interfaces.IObjectConvertable.ConvertTo(Of TObject)()
   nameWithType: IObjectConvertable.ConvertTo<TObject>()
   nameWithType.vb: IObjectConvertable.ConvertTo(Of TObject)()
+- uid: Archivist.Modules
+  name: Archivist.Modules
+  href: api/Archivist.Modules.html
+  commentId: N:Archivist.Modules
+  fullName: Archivist.Modules
+  nameWithType: Archivist.Modules
+- uid: Archivist.Modules.CanisterModule
+  name: CanisterModule
+  href: api/Archivist.Modules.CanisterModule.html
+  commentId: T:Archivist.Modules.CanisterModule
+  fullName: Archivist.Modules.CanisterModule
+  nameWithType: CanisterModule
+- uid: Archivist.Modules.CanisterModule.Load(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: Load(IServiceCollection?)
+  href: api/Archivist.Modules.CanisterModule.html#Archivist_Modules_CanisterModule_Load_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Archivist.Modules.CanisterModule.Load(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: Load(IServiceCollection)
+  fullName: Archivist.Modules.CanisterModule.Load(Microsoft.Extensions.DependencyInjection.IServiceCollection?)
+  fullName.vb: Archivist.Modules.CanisterModule.Load(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: CanisterModule.Load(IServiceCollection?)
+  nameWithType.vb: CanisterModule.Load(IServiceCollection)
+- uid: Archivist.Modules.CanisterModule.Load*
+  name: Load
+  href: api/Archivist.Modules.CanisterModule.html#Archivist_Modules_CanisterModule_Load_
+  commentId: Overload:Archivist.Modules.CanisterModule.Load
+  isSpec: "True"
+  fullName: Archivist.Modules.CanisterModule.Load
+  nameWithType: CanisterModule.Load
+- uid: Archivist.Modules.CanisterModule.Order
+  name: Order
+  href: api/Archivist.Modules.CanisterModule.html#Archivist_Modules_CanisterModule_Order
+  commentId: P:Archivist.Modules.CanisterModule.Order
+  fullName: Archivist.Modules.CanisterModule.Order
+  nameWithType: CanisterModule.Order
+- uid: Archivist.Modules.CanisterModule.Order*
+  name: Order
+  href: api/Archivist.Modules.CanisterModule.html#Archivist_Modules_CanisterModule_Order_
+  commentId: Overload:Archivist.Modules.CanisterModule.Order
+  isSpec: "True"
+  fullName: Archivist.Modules.CanisterModule.Order
+  nameWithType: CanisterModule.Order
 - uid: Archivist.Options
   name: Archivist.Options
   href: api/Archivist.Options.html

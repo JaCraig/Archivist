@@ -140,6 +140,9 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
       <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Title">FileBaseClass&lt;Card&gt;.Title</a>
     </div>
     <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Converter">FileBaseClass&lt;Card&gt;.Converter</a>
+    </div>
+    <div>
       <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_CompareTo_System_Object_">FileBaseClass&lt;Card&gt;.CompareTo(object)</a>
     </div>
     <div>
@@ -164,6 +167,70 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Archivist_DataTypes_Card__ctor_" data-uid="Archivist.DataTypes.Card.#ctor*"></a>
+
+  <h3 id="Archivist_DataTypes_Card__ctor" data-uid="Archivist.DataTypes.Card.#ctor">
+  Card()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.Card.html">Card</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Card()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Card__ctor_" data-uid="Archivist.DataTypes.Card.#ctor*"></a>
+
+  <h3 id="Archivist_DataTypes_Card__ctor_Archivist_Converters_Convertinator_" data-uid="Archivist.DataTypes.Card.#ctor(Archivist.Converters.Convertinator)">
+  Card(Convertinator?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.Card.html">Card</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Card(Convertinator? converter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
+    <dd><p>The type converter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -172,7 +239,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Addresses" data-uid="Archivist.DataTypes.Card.Addresses">
   Addresses
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the addresses for the card.</p>
@@ -204,7 +271,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Anniversaries" data-uid="Archivist.DataTypes.Card.Anniversaries">
   Anniversaries
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the anniversaries for the card.</p>
@@ -236,7 +303,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Birthdays" data-uid="Archivist.DataTypes.Card.Birthdays">
   Birthdays
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the birthdays for the card.</p>
@@ -268,7 +335,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Count" data-uid="Archivist.DataTypes.Card.Count">
   Count
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the number of fields in the card.</p>
@@ -300,7 +367,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Emails" data-uid="Archivist.DataTypes.Card.Emails">
   Emails
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the emails for the card.</p>
@@ -332,7 +399,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Fields" data-uid="Archivist.DataTypes.Card.Fields">
   Fields
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the fields of the card.</p>
@@ -364,7 +431,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_FirstName" data-uid="Archivist.DataTypes.Card.FirstName">
   FirstName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the first name from the card.</p>
@@ -396,7 +463,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_FullName" data-uid="Archivist.DataTypes.Card.FullName">
   FullName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the full name for the card.</p>
@@ -428,7 +495,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_InstantMessengers" data-uid="Archivist.DataTypes.Card.InstantMessengers">
   InstantMessengers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the IM entries from the card.</p>
@@ -460,7 +527,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Item_System_Int32_" data-uid="Archivist.DataTypes.Card.Item(System.Int32)">
   this[int]
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L190"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the field at the specified index.</p>
@@ -499,7 +566,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Item_System_String_" data-uid="Archivist.DataTypes.Card.Item(System.String)">
   this[string]
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the fields with the specified property name.</p>
@@ -538,7 +605,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Item_System_String_System_String_" data-uid="Archivist.DataTypes.Card.Item(System.String,System.String)">
   this[string, string?]
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the fields with the specified property name and parameter.</p>
@@ -580,7 +647,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Languages" data-uid="Archivist.DataTypes.Card.Languages">
   Languages
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the languages from the card.</p>
@@ -612,7 +679,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_LastName" data-uid="Archivist.DataTypes.Card.LastName">
   LastName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the last name from the card.</p>
@@ -644,7 +711,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Logos" data-uid="Archivist.DataTypes.Card.Logos">
   Logos
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the logos from the card.</p>
@@ -676,7 +743,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_MiddleName" data-uid="Archivist.DataTypes.Card.MiddleName">
   MiddleName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the middle name from the card.</p>
@@ -708,7 +775,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Name" data-uid="Archivist.DataTypes.Card.Name">
   Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the name for the card.</p>
@@ -740,7 +807,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Nicknames" data-uid="Archivist.DataTypes.Card.Nicknames">
   Nicknames
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the nicknames from the card.</p>
@@ -772,7 +839,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Notes" data-uid="Archivist.DataTypes.Card.Notes">
   Notes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the notes from the card.</p>
@@ -804,7 +871,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Organizations" data-uid="Archivist.DataTypes.Card.Organizations">
   Organizations
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the organizations from the card.</p>
@@ -836,7 +903,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_PhoneNumbers" data-uid="Archivist.DataTypes.Card.PhoneNumbers">
   PhoneNumbers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the phone numbers from the card.</p>
@@ -868,7 +935,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Photos" data-uid="Archivist.DataTypes.Card.Photos">
   Photos
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the photos from the card.</p>
@@ -900,7 +967,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Prefix" data-uid="Archivist.DataTypes.Card.Prefix">
   Prefix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the prefix from the card.</p>
@@ -932,7 +999,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Roles" data-uid="Archivist.DataTypes.Card.Roles">
   Roles
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the roles of the card.</p>
@@ -964,7 +1031,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Sounds" data-uid="Archivist.DataTypes.Card.Sounds">
   Sounds
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L159"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the sounds from the card.</p>
@@ -996,7 +1063,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Suffix" data-uid="Archivist.DataTypes.Card.Suffix">
   Suffix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the suffix from the card.</p>
@@ -1028,7 +1095,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_TimeZones" data-uid="Archivist.DataTypes.Card.TimeZones">
   TimeZones
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the time zones from the card.</p>
@@ -1060,7 +1127,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Titles" data-uid="Archivist.DataTypes.Card.Titles">
   Titles
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the titles from the card.</p>
@@ -1092,7 +1159,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Websites" data-uid="Archivist.DataTypes.Card.Websites">
   Websites
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the URLs from the card.</p>
@@ -1128,7 +1195,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_CompareTo_Archivist_DataTypes_Card_" data-uid="Archivist.DataTypes.Card.CompareTo(Archivist.DataTypes.Card)">
   CompareTo(Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L352"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Compares the card to another card based on their content.</p>
@@ -1167,7 +1234,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_ConvertFrom__1___0_" data-uid="Archivist.DataTypes.Card.ConvertFrom``1(``0)">
   ConvertFrom&lt;TObject&gt;(TObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L359"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the object to the card.</p>
@@ -1206,7 +1273,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_ConvertTo__1" data-uid="Archivist.DataTypes.Card.ConvertTo``1">
   ConvertTo&lt;TObject&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L381"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the card to the specified object type.</p>
@@ -1245,7 +1312,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Equals_Archivist_DataTypes_Card_" data-uid="Archivist.DataTypes.Card.Equals(Archivist.DataTypes.Card)">
   Equals(Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L400"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the card is equal to another card based on their content.</p>
@@ -1284,7 +1351,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_Equals_System_Object_" data-uid="Archivist.DataTypes.Card.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L407"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the card is equal to another object.</p>
@@ -1323,7 +1390,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_GetContent" data-uid="Archivist.DataTypes.Card.GetContent">
   GetContent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the content of the card.</p>
@@ -1356,7 +1423,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_GetEnumerator" data-uid="Archivist.DataTypes.Card.GetEnumerator">
   GetEnumerator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L416"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
@@ -1389,7 +1456,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_GetHashCode" data-uid="Archivist.DataTypes.Card.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L425"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the hash code of the card based on its content.</p>
@@ -1422,7 +1489,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_ToFileType__1" data-uid="Archivist.DataTypes.Card.ToFileType``1">
   ToFileType&lt;TFile&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L432"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the card to the specified object type.</p>
@@ -1465,7 +1532,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_op_Equality_Archivist_DataTypes_Card_Archivist_DataTypes_Card_" data-uid="Archivist.DataTypes.Card.op_Equality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)">
   operator ==(Card?, Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L313"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two card objects are equal.</p>
@@ -1507,7 +1574,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_op_GreaterThan_Archivist_DataTypes_Card_Archivist_DataTypes_Card_" data-uid="Archivist.DataTypes.Card.op_GreaterThan(Archivist.DataTypes.Card,Archivist.DataTypes.Card)">
   operator &gt;(Card?, Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L328"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether one card object is greater than another card object.</p>
@@ -1549,7 +1616,7 @@ Class Card  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Archivist_DataTypes_Card_op_GreaterThanOrEqual_Archivist_DataTypes_Card_Archivist_DataTypes_Card_" data-uid="Archivist.DataTypes.Card.op_GreaterThanOrEqual(Archivist.DataTypes.Card,Archivist.DataTypes.Card)">
   operator &gt;=(Card?, Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L342"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether one card object is greater than or equal to another card object.</p>
@@ -1592,7 +1659,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_StructuredObject" data-uid="Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.StructuredObject">
   implicit operator StructuredObject?(Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the card to a structured object.</p>
@@ -1630,7 +1697,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_Table" data-uid="Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Table">
   implicit operator Table?(Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L239"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the card to a table.</p>
@@ -1669,7 +1736,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_Tables" data-uid="Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Tables">
   implicit operator Tables?(Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the card to a Tables file.</p>
@@ -1708,7 +1775,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_Text" data-uid="Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Text">
   implicit operator Text?(Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the card to text.</p>
@@ -1747,7 +1814,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_Card_op_Inequality_Archivist_DataTypes_Card_Archivist_DataTypes_Card_" data-uid="Archivist.DataTypes.Card.op_Inequality(Archivist.DataTypes.Card,Archivist.DataTypes.Card)">
   operator !=(Card?, Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether two card objects are not equal.</p>
@@ -1789,7 +1856,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_Card_op_LessThan_Archivist_DataTypes_Card_Archivist_DataTypes_Card_" data-uid="Archivist.DataTypes.Card.op_LessThan(Archivist.DataTypes.Card,Archivist.DataTypes.Card)">
   operator &lt;(Card?, Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L288"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether one card object is less than another card object.</p>
@@ -1831,7 +1898,7 @@ otherwise, false.</p>
 
   <h3 id="Archivist_DataTypes_Card_op_LessThanOrEqual_Archivist_DataTypes_Card_Archivist_DataTypes_Card_" data-uid="Archivist.DataTypes.Card.op_LessThanOrEqual(Archivist.DataTypes.Card,Archivist.DataTypes.Card)">
   operator &lt;=(Card?, Card?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Card.cs/#L302"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether one card object is less than or equal to another card object.</p>
