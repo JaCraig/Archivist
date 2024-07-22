@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.5"></a>
+## [0.5.5](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.5) (2024-07-22)
+
+### Bug Fixes
+
+* Adding YAML support ([118b7bb](https://www.github.com/JaCraig/Archivist/commit/118b7bb59f2f30ca1b87d4ac7fcc10267a665c0b))
+
+### Other
+
+* merge ([60e901a](https://www.github.com/JaCraig/Archivist/commit/60e901ae1779f185f123f0a5434410ec293cbf5f))
+* starting on YAML format ([a53f667](https://www.github.com/JaCraig/Archivist/commit/a53f66732e21848b8001dd0b9113354dcc59de88))
+
 <a name="0.5.4"></a>
 ## [0.5.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.4) (2024-07-20)
 
