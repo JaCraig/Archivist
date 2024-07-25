@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.7"></a>
+## [0.5.7](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.7) (2024-07-25)
+
+### Bug Fixes
+
+* bump ObjectCartographer in /Archivist in the dependencies group ([ffe7624](https://www.github.com/JaCraig/Archivist/commit/ffe76247af852c9c0b966d52ac29ad207ba2f46f))
+
+### Other
+
+* Merge pull request #33 from JaCraig/dependabot/nuget/Archivist/dependencies-ed37646f65 ([8806cdf](https://www.github.com/JaCraig/Archivist/commit/8806cdf3edf92cce609b7d878ae54f640fce8b31))
+
 <a name="0.5.6"></a>
 ## [0.5.6](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.6) (2024-07-22)
 
