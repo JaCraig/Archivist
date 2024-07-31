@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.8"></a>
+## [0.5.8](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.8) (2024-07-31)
+
+### Bug Fixes
+
+* bump DocumentFormat.OpenXml in /Archivist in the dependencies group ([a21cd6b](https://www.github.com/JaCraig/Archivist/commit/a21cd6b445278c09cdc94db7cb8b93668994242e))
+
+### Other
+
+* Merge pull request #34 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-25d55e3327 ([acab302](https://www.github.com/JaCraig/Archivist/commit/acab30297b148430294793a986ab060b6316f7a0))
+* Merge pull request #35 from JaCraig/dependabot/nuget/Archivist/dependencies-d6dce349c2 ([28fa0d1](https://www.github.com/JaCraig/Archivist/commit/28fa0d19ac6767ba84e11b6626ef2783256ed468))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([a640a2c](https://www.github.com/JaCraig/Archivist/commit/a640a2c9e2dc754ebede6ff84de114292c92324c))
+
 <a name="0.5.7"></a>
 ## [0.5.7](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.7) (2024-07-25)
 
