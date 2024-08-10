@@ -6,16 +6,16 @@ using System.Collections.Generic;
 namespace Archivist.Converters
 {
     /// <summary>
-    /// Converts a Card object to a StructuredObject object.
+    /// Converts a Calendar object to a StructuredObject object.
     /// </summary>
-    public class CardToStructuredObjectConverter : IDataConverter
+    public class CalendarToStructuredObjectConverter : IDataConverter
     {
         /// <summary>
-        /// Converts a Card object to a StructuredObject object.
+        /// Converts a Calendar object to a StructuredObject object.
         /// </summary>
-        /// <param name="file">The Card object to convert.</param>
+        /// <param name="file">The Calendar object to convert.</param>
         /// <returns>The converted StructuredObject object.</returns>
-        public static StructuredObject? Convert(Card? file)
+        public static StructuredObject? Convert(Calendar? file)
         {
             if (file is null)
                 return null;
@@ -30,7 +30,7 @@ namespace Archivist.Converters
             {
                 ReturnValue.Metadata[Metadata.Key] = Metadata.Value;
             }
-            ReturnValue.Title = file.Title ?? file.FullName?.Value;
+            ReturnValue.Title = file.Title ?? file.Summary;
             return ReturnValue;
         }
 
@@ -40,7 +40,7 @@ namespace Archivist.Converters
         /// <param name="source">The source type.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>True if the conversion is possible, otherwise false.</returns>
-        public bool CanConvert(Type? source, Type? destination) => source == typeof(Card) && destination == typeof(StructuredObject);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(Calendar) && destination == typeof(StructuredObject);
 
         /// <summary>
         /// Converts the source object to the specified destination type.
@@ -50,7 +50,7 @@ namespace Archivist.Converters
         /// <returns>The converted object.</returns>
         public object? Convert(object? source, Type? destination)
         {
-            if (source is not Card File || destination is null)
+            if (source is not Calendar File || destination is null)
                 return null;
             return Convert(File);
         }

@@ -97,7 +97,7 @@ namespace Archivist.Tests.Formats.VCard
 
             // Act
             Card Result = Assert.IsType<Card>(await TestObject.ReadAsync(Stream));
-            CardField? FullNameProperty = Result["FN"].FirstOrDefault();
+            KeyValueField? FullNameProperty = Result["FN"].FirstOrDefault();
 
             // Assert
             Assert.NotNull(Result);

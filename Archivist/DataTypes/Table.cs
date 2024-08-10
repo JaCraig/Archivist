@@ -99,6 +99,15 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Converts the table to a calendar.
+        /// </summary>
+        /// <param name="file">The table to convert.</param>
+        public static implicit operator Calendar?(Table? file)
+        {
+            return TableToCalendarConverter.Convert(file);
+        }
+
+        /// <summary>
         /// Converts the table to a card.
         /// </summary>
         /// <param name="file">The table to convert.</param>
@@ -420,6 +429,8 @@ namespace Archivist.DataTypes
             IGenericFile? ReturnValue;
             if (FileType == typeof(Card))
                 ReturnValue = (Card?)this;
+            else if (FileType == typeof(Calendar))
+                ReturnValue = (Calendar?)this;
             else if (FileType == typeof(Table))
                 ReturnValue = this;
             else if (FileType == typeof(Tables))

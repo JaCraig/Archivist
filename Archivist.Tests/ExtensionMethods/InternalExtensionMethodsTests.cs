@@ -1,13 +1,13 @@
-using Archivist.ExtensionMethods;
-using Archivist.Tests.BaseClasses;
-using System;
-using System.IO;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
-
 namespace Archivist.Tests.ExtensionMethods
 {
+    using Archivist.ExtensionMethods;
+    using Archivist.Tests.BaseClasses;
+    using System;
+    using System.IO;
+    using System.Text;
+    using System.Threading.Tasks;
+    using Xunit;
+
     public class InternalExtensionMethodsTests : TestBaseClass
     {
         protected override Type? ObjectType { get; } = typeof(InternalExtensionMethods);
@@ -241,6 +241,37 @@ namespace Archivist.Tests.ExtensionMethods
 
             // Assert
             Assert.Equal(Expected, Result);
+        }
+
+        [Fact]
+        public static void CanCallFormatString()
+        {
+            // Arrange
+            var input = "TestValue2092900865";
+            var format = "TestValue1771318680";
+
+            // Act
+            var result = input.FormatString(format);
+
+            // Assert
+            throw new NotImplementedException("Create or modify test");
+        }
+
+        [Theory]
+        [InlineData("")]
+        [InlineData("   ")]
+        public static void CannotCallFormatStringWithInvalidInput(string value)
+        {
+            Assert.Throws<ArgumentNullException>(() => value.FormatString("TestValue1877251704"));
+        }
+
+        [Theory]
+        [InlineData(null)]
+        [InlineData("")]
+        [InlineData("   ")]
+        public static void CannotCallFormatStringWithInvalidFormat(string? value)
+        {
+            Assert.Throws<ArgumentNullException>(() => "TestValue1901365958".FormatString(value));
         }
     }
 }

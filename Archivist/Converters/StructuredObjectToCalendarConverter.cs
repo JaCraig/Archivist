@@ -6,20 +6,20 @@ using System.Collections.Generic;
 namespace Archivist.Converters
 {
     /// <summary>
-    /// Converts a StructuredObject to a Card.
+    /// Converts a StructuredObject to a Calendar.
     /// </summary>
-    public class StructuredObjectToCardConverter : IDataConverter
+    public class StructuredObjectToCalendarConverter : IDataConverter
     {
         /// <summary>
-        /// Converts a StructuredObject to a Card.
+        /// Converts a StructuredObject to a Calendar.
         /// </summary>
         /// <param name="file">The StructuredObject to convert.</param>
-        /// <returns>The converted Card.</returns>
-        public static Card? Convert(StructuredObject? file)
+        /// <returns>The converted Calendar.</returns>
+        public static Calendar? Convert(StructuredObject? file)
         {
             if (file is null)
                 return null;
-            var ReturnValue = new Card();
+            var ReturnValue = new Calendar();
             foreach (var Key in file.Keys)
             {
                 ReturnValue.Fields.Add(new KeyValueField(Key, Array.Empty<KeyValueParameter>(), file[Key]?.ToString() ?? ""));
@@ -38,7 +38,7 @@ namespace Archivist.Converters
         /// <param name="source">The source type.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>True if the conversion is possible, otherwise false.</returns>
-        public bool CanConvert(Type? source, Type? destination) => source == typeof(StructuredObject) && destination == typeof(Card);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(StructuredObject) && destination == typeof(Calendar);
 
         /// <summary>
         /// Converts an object to the specified destination type.

@@ -19,6 +19,9 @@ namespace Archivist.Converters
             Converters = (IEnumerable<IDataConverter>?)(converters?.OrderByDescending(x => x?.GetType()?.Assembly == typeof(Convertinator).Assembly)) ?? Array.Empty<IDataConverter>();
         }
 
+        /// <summary>
+        /// The collection of IDataConverter implementations.
+        /// </summary>
         private IEnumerable<IDataConverter> Converters { get; }
 
         /// <summary>
