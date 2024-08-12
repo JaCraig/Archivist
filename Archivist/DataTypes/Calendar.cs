@@ -791,6 +791,26 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Adds an alarm to the Calendar item.
+        /// </summary>
+        /// <param name="action">Action taken by the alarm</param>
+        /// <param name="trigger">
+        /// Trigger for the alarm (ex: "-P2D" = 2 days before the event, "-PT30M" = 30 minutes
+        /// before the event, see https://icalendar.org/iCalendar-RFC-5545/3-6-6-alarm-component.html)
+        /// </param>
+        /// <param name="description">Description of the alarm</param>
+        /// <returns>The alarm that was added.</returns>
+        public Alarm AddAlarm(string action, string trigger, string description)
+        {
+            var NewAlarm = new Alarm();
+            NewAlarm.Fields.Add(new KeyValueField(CommonCalendarFields.Action, Array.Empty<KeyValueParameter>(), action));
+            NewAlarm.Fields.Add(new KeyValueField(CommonCalendarFields.Trigger, Array.Empty<KeyValueParameter>(), trigger));
+            NewAlarm.Fields.Add(new KeyValueField(CommonCalendarFields.Description, Array.Empty<KeyValueParameter>(), description));
+            Alarms.Add(NewAlarm);
+            return NewAlarm;
+        }
+
+        /// <summary>
         /// Compares the Calendar to another Calendar based on their content.
         /// </summary>
         /// <param name="other">The other Calendar to compare.</param>

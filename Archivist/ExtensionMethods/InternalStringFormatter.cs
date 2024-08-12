@@ -29,9 +29,9 @@ namespace Archivist.ExtensionMethods
         /// <param name="input">Input string</param>
         /// <param name="formatPattern">Format pattern</param>
         /// <returns>The formatted string</returns>
-        public static string Format(string? input, string formatPattern)
+        public static string Format(string? input, string? formatPattern)
         {
-            if (!IsValid(formatPattern))
+            if (string.IsNullOrEmpty(formatPattern) || !IsValid(formatPattern))
             {
                 throw new ArgumentException("Format pattern is not valid.", nameof(formatPattern));
             }
@@ -91,12 +91,10 @@ namespace Archivist.ExtensionMethods
         /// </summary>
         /// <param name="formatPattern">Format pattern</param>
         /// <returns>Returns true if it's valid, otherwise false</returns>
-        private static bool IsValid(string formatPattern)
+        private static bool IsValid(string? formatPattern)
         {
             if (string.IsNullOrEmpty(formatPattern))
-            {
                 return false;
-            }
 
             var EscapeCharFound = false;
             for (var X = 0; X < formatPattern.Length; ++X)

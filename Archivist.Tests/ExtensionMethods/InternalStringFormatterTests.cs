@@ -1,40 +1,46 @@
+using Archivist.ExtensionMethods;
+using Archivist.Tests.BaseClasses;
+using System;
+using Xunit;
+
 namespace Archivist.Tests.ExtensionMethods
 {
-    using Archivist.ExtensionMethods;
-    using System;
-    using Xunit;
-
-    public static class InternalStringFormatterTests
+    public class InternalStringFormatterTests : TestBaseClass
     {
+        protected override Type? ObjectType { get; } = typeof(InternalStringFormatter);
+
         [Fact]
-        public static void CanCallFormat()
+        public void CanCallFormat()
         {
             // Arrange
-            var input = "TestValue1493286982";
-            var formatPattern = "TestValue1887807456";
+            const string Input = "TestValue1493286982";
+            const string FormatPattern = "@@@####";
 
             // Act
-            var result = InternalStringFormatter.Format(input, formatPattern);
+            var Result = InternalStringFormatter.Format(Input, FormatPattern);
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Tes1493", Result);
         }
 
         [Theory]
         [InlineData("")]
         [InlineData("   ")]
-        public static void CannotCallFormatWithInvalidInput(string value)
+        public void CanCallFormatWithInvalidInput(string value)
         {
-            Assert.Throws<ArgumentNullException>(() => InternalStringFormatter.Format(value, "TestValue860197991"));
+            // Act
+            var Result = InternalStringFormatter.Format(value, "####");
+
+            // Assert
+            Assert.Equal("", Result);
         }
 
         [Theory]
         [InlineData(null)]
         [InlineData("")]
         [InlineData("   ")]
-        public static void CannotCallFormatWithInvalidFormatPattern(string? value)
-        {
-            Assert.Throws<ArgumentNullException>(() => InternalStringFormatter.Format("TestValue247102728", value));
-        }
+        public void CannotCallFormatWithInvalidFormatPattern(string? value) =>
+            // Act
+            Assert.Throws<ArgumentException>(() => InternalStringFormatter.Format("TestValue247102728", value));
     }
 }

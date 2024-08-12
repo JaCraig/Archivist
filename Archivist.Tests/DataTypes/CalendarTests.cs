@@ -1,4 +1,5 @@
 using Archivist.DataTypes;
+using Archivist.Interfaces;
 using Archivist.Tests.BaseClasses;
 using System;
 using System.Collections;
@@ -35,25 +36,25 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Obj = new TestClass { Summary = "Example summary/subject" };
-            var _TestClass = new Calendar();
+            var TestClass = new Calendar();
 
             // Act
-            _TestClass.ConvertFrom(Obj);
+            TestClass.ConvertFrom(Obj);
 
             // Assert
-            Assert.Equal("Example summary/subject", _TestClass.Summary);
+            Assert.Equal("Example summary/subject", TestClass.Summary);
         }
 
         [Fact]
         public void CanCallConvertTo()
         {
             // Arrange
-            var _TestClass = new Calendar
+            var TestClass = new Calendar
             {
                 Summary = "Example summary/subject"
             };
             // Act
-            TestClass? Result = _TestClass.ConvertTo<TestClass>();
+            TestClass? Result = TestClass.ConvertTo<TestClass>();
 
             // Assert
             Assert.NotNull(Result);
@@ -69,6 +70,26 @@ namespace Archivist.Tests.DataTypes
 
             // Act
             var Result = Left == Right;
+
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallEqualityOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default == new Calendar();
+
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallEqualityOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Calendar() == default;
 
             // Assert
             Assert.True(Result);
@@ -107,12 +128,12 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGetContent()
         {
             // Arrange
-            var _TestClass = new Calendar
+            var TestClass = new Calendar
             {
                 Summary = "TestValue1453032876"
             };
             // Act
-            var Result = _TestClass.GetContent();
+            var Result = TestClass.GetContent();
 
             // Assert
             Assert.Equal("SUMMARY:TestValue1453032876", Result);
@@ -163,891 +184,1021 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanCallGreaterThanEqualToOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default(Calendar) >= new Calendar();
+
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallGreaterThanEqualToOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Calendar() >= default(Calendar);
+
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
         public void CanCallGreaterThanOperator()
         {
             // Arrange
-            var left = new Calendar();
-            var right = new Calendar();
+            var Left = new Calendar();
+            var Right = new Calendar();
 
             // Act
-            _ = left > right;
+            var Result = Left > Right;
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.False(Result);
+        }
+
+        [Fact]
+        public void CanCallGreaterThanOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default(Calendar) > new Calendar();
+
+            // Assert
+            Assert.False(Result);
+        }
+
+        [Fact]
+        public void CanCallGreaterThanOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Calendar() > default(Calendar);
+
+            // Assert
+            Assert.False(Result);
         }
 
         [Fact]
         public void CanCallInequalityOperator()
         {
             // Arrange
-            var left = new Calendar();
-            var right = new Calendar();
+            var Left = new Calendar();
+            var Right = new Calendar();
 
             // Act
-            _ = left != right;
+            var Result = Left != Right;
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.False(Result);
+        }
+
+        [Fact]
+        public void CanCallInequalityOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default != new Calendar();
+
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallInequalityOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Calendar() != default;
+
+            // Assert
+            Assert.True(Result);
         }
 
         [Fact]
         public void CanCallLessThanEqualToOperator()
         {
             // Arrange
-            var left = new Calendar();
-            var right = new Calendar();
+            var Left = new Calendar();
+            var Right = new Calendar();
 
             // Act
-            _ = left <= right;
+            var Result = Left <= Right;
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallLessThanEqualToOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default(Calendar) <= new Calendar();
+
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallLessThanEqualToOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Calendar() <= default(Calendar);
+
+            // Assert
+            Assert.True(Result);
         }
 
         [Fact]
         public void CanCallLessThanOperator()
         {
             // Arrange
-            var left = new Calendar();
-            var right = new Calendar();
+            var Left = new Calendar();
+            var Right = new Calendar();
 
             // Act
-            _ = left < right;
+            var Result = Left < Right;
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.False(Result);
+        }
+
+        [Fact]
+        public void CanCallLessThanOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default(Calendar) < new Calendar();
+
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallLessThanOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Calendar() < default(Calendar);
+
+            // Assert
+            Assert.False(Result);
         }
 
         [Fact]
         public void CanCallToFileType()
         {
             // Act
-            var result = _TestClass.ToFileType<TFile>();
+            Card? Result = _TestClass.ToFileType<Card>();
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            _ = Assert.IsType<Card>(Result);
         }
 
         [Fact]
         public void CanConstruct()
         {
             // Act
-            var instance = new Calendar(_Converter);
+            var Instance = new Calendar(new Archivist.Converters.Convertinator(Array.Empty<IDataConverter>()));
 
             // Assert
-            Assert.NotNull(instance);
+            Assert.NotNull(Instance);
 
             // Act
-            instance = new Calendar();
+            Instance = new Calendar();
 
             // Assert
-            Assert.NotNull(instance);
+            Assert.NotNull(Instance);
         }
 
         [Fact]
         public void CanGetActions()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Actions);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Actions);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetAlarms()
         {
             // Assert
-            _ = Assert.IsType<List<Alarm>>(_TestClass.Alarms);
+            List<Alarm> Result = Assert.IsType<List<Alarm>>(_TestClass.Alarms);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetAttachments()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Attachments);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Attachments);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetAttendees()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Attendees);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Attendees);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetCategories()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Categories);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Categories);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetClasses()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Classes);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Classes);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetComments()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Comments);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Comments);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetCompleteds()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Completeds);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Completeds);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetContacts()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Contacts);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Contacts);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetCount()
         {
             // Assert
-            _ = Assert.IsType<int>(_TestClass.Count);
+            var Result = Assert.IsType<int>(_TestClass.Count);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal(0, Result);
         }
 
         [Fact]
         public void CanGetCreateds()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Createds);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Createds);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetCreatedUtc()
         {
             // Assert
-            _ = Assert.IsType<DateTime>(_TestClass.CreatedUtc);
+            DateTime Result = Assert.IsType<DateTime>(_TestClass.CreatedUtc);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal(DateTime.UtcNow.Date, Result.Date);
         }
 
         [Fact]
         public void CanGetDateStamps()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.DateStamps);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.DateStamps);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Empty(Result);
         }
 
         [Fact]
         public void CanGetDateStampUtc()
         {
             // Assert
-            _ = Assert.IsType<DateTime>(_TestClass.DateStampUtc);
+            DateTime Result = Assert.IsType<DateTime>(_TestClass.DateStampUtc);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal(DateTime.UtcNow.Date, Result.Date);
         }
 
         [Fact]
         public void CanGetDescriptions()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Descriptions);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Descriptions);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Empty(Result);
         }
 
         [Fact]
         public void CanGetDues()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Dues);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Dues);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Empty(Result);
         }
 
         [Fact]
         public void CanGetDurations()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Durations);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Durations);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Empty(Result);
         }
 
         [Fact]
         public void CanGetEndDates()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.EndDates);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.EndDates);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Empty(Result);
         }
 
         [Fact]
         public void CanGetEndDateUtc()
         {
             // Assert
-            _ = Assert.IsType<DateTime>(_TestClass.EndDateUtc);
+            DateTime Result = Assert.IsType<DateTime>(_TestClass.EndDateUtc);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal(DateTime.UtcNow.Date, Result.Date);
         }
 
         [Fact]
         public void CanGetExcludeDates()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.ExcludeDates);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.ExcludeDates);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetExcludeRules()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.ExcludeRules);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.ExcludeRules);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetFields()
         {
             // Assert
-            _ = Assert.IsType<List<KeyValueField>>(_TestClass.Fields);
+            List<KeyValueField> Result = Assert.IsType<List<KeyValueField>>(_TestClass.Fields);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Empty(Result);
         }
 
         [Fact]
         public void CanGetFreeBusys()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.FreeBusys);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.FreeBusys);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Empty(Result);
         }
 
         [Fact]
         public void CanGetGeoLocations()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.GeoLocations);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.GeoLocations);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Empty(Result);
         }
 
         [Fact]
         public void CanGetIsCancelled()
         {
             // Assert
-            _ = Assert.IsType<bool>(_TestClass.IsCancelled);
+            var Result = Assert.IsType<bool>(_TestClass.IsCancelled);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.False(Result);
         }
 
         [Fact]
         public void CanGetLastModifieds()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.LastModifieds);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.LastModifieds);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Empty(Result);
         }
 
         [Fact]
         public void CanGetLastModifiedUtc()
         {
             // Assert
-            _ = Assert.IsType<DateTime>(_TestClass.LastModifiedUtc);
+            DateTime Result = Assert.IsType<DateTime>(_TestClass.LastModifiedUtc);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal(DateTime.UtcNow.Date, Result.Date);
         }
 
         [Fact]
         public void CanGetLocations()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Locations);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Locations);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Empty(Result);
         }
 
         [Fact]
         public void CanGetMethods()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Methods);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Methods);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetOrganizers()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Organizers);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Organizers);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetPriorities()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Priorities);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Priorities);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetProductIds()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.ProductIds);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.ProductIds);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetRecurrenceIds()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.RecurrenceIds);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.RecurrenceIds);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetRelatedTos()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.RelatedTos);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.RelatedTos);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetReoccurDates()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.ReoccurDates);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.ReoccurDates);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetReoccurRules()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.ReoccurRules);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.ReoccurRules);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetRepeatCounts()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.RepeatCounts);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.RepeatCounts);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetResources()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Resources);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Resources);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetSequences()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Sequences);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Sequences);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetStartDates()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.StartDates);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.StartDates);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetStartDateUtc()
         {
             // Assert
-            _ = Assert.IsType<DateTime>(_TestClass.StartDateUtc);
+            DateTime Result = Assert.IsType<DateTime>(_TestClass.StartDateUtc);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal(DateTime.UtcNow.Date, Result.Date);
         }
 
         [Fact]
         public void CanGetStatuses()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Statuses);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Statuses);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetSummaries()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Summaries);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Summaries);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetTimezoneNames()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.TimezoneNames);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.TimezoneNames);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetTimezoneOffsetFroms()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.TimezoneOffsetFroms);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.TimezoneOffsetFroms);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetTimezoneOffsetTos()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.TimezoneOffsetTos);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.TimezoneOffsetTos);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetTimeZones()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.TimeZones);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.TimeZones);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetTimezoneUrls()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.TimezoneUrls);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.TimezoneUrls);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetTransps()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Transps);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Transps);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetTriggers()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Triggers);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Triggers);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetUIDs()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.UIDs);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.UIDs);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanGetURLs()
         {
             // Assert
-            _ = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.URLs);
+            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.URLs);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
-
-        [Fact]
-        public void CannotCallEqualityOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default == new Calendar(); });
-
-        [Fact]
-        public void CannotCallEqualityOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Calendar() == default; });
-
-        [Fact]
-        public void CannotCallGreaterThanEqualToOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default(Calendar) >= new Calendar(); });
-
-        [Fact]
-        public void CannotCallGreaterThanEqualToOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Calendar() >= default(Calendar); });
-
-        [Fact]
-        public void CannotCallGreaterThanOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default(Calendar) > new Calendar(); });
-
-        [Fact]
-        public void CannotCallGreaterThanOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Calendar() > default(Calendar); });
-
-        [Fact]
-        public void CannotCallInequalityOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default != new Calendar(); });
-
-        [Fact]
-        public void CannotCallInequalityOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Calendar() != default; });
-
-        [Fact]
-        public void CannotCallLessThanEqualToOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default(Calendar) <= new Calendar(); });
-
-        [Fact]
-        public void CannotCallLessThanEqualToOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Calendar() <= default(Calendar); });
-
-        [Fact]
-        public void CannotCallLessThanOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default(Calendar) < new Calendar(); });
-
-        [Fact]
-        public void CannotCallLessThanOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Calendar() < default(Calendar); });
 
         [Fact]
         public void CanSetAndGetClass()
         {
             // Arrange
-            var testValue = "TestValue1706702071";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue1706702071";
 
             // Act
-            _TestClass.Class = testValue;
+            TestClass.Class = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Class);
+            Assert.Equal(TestValue, TestClass.Class);
         }
 
         [Fact]
         public void CanSetAndGetCreated()
         {
             // Arrange
-            DateTime testValue = DateTime.UtcNow;
+            var TestClass = new Calendar();
+            DateTime TestValue = DateTime.UtcNow;
 
             // Act
-            _TestClass.Created = testValue;
+            TestClass.Created = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Created);
+            Assert.Equal(TestValue, TestClass.Created);
         }
 
         [Fact]
         public void CanSetAndGetCurrentTimeZone()
         {
             // Arrange
-            var testValue = new TimeZoneInfo();
+            var TestClass = new Calendar();
+            TimeZoneInfo TestValue = TimeZoneInfo.Utc;
 
             // Act
-            _TestClass.CurrentTimeZone = testValue;
+            TestClass.CurrentTimeZone = TestValue;
 
             // Assert
-            Assert.Same(testValue, _TestClass.CurrentTimeZone);
+            Assert.Same(TestValue, TestClass.CurrentTimeZone);
         }
 
         [Fact]
         public void CanSetAndGetDateStamp()
         {
             // Arrange
-            DateTime testValue = DateTime.UtcNow;
+            var TestClass = new Calendar();
+            DateTime TestValue = DateTime.UtcNow;
 
             // Act
-            _TestClass.DateStamp = testValue;
+            TestClass.DateStamp = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.DateStamp);
+            Assert.Equal(TestValue, TestClass.DateStamp);
         }
 
         [Fact]
         public void CanSetAndGetDescription()
         {
             // Arrange
-            var testValue = "TestValue1159988007";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue1159988007";
 
             // Act
-            _TestClass.Description = testValue;
+            TestClass.Description = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Description);
+            Assert.Equal(TestValue, TestClass.Description);
         }
 
         [Fact]
         public void CanSetAndGetEndDate()
         {
             // Arrange
-            DateTime testValue = DateTime.UtcNow;
+            var TestClass = new Calendar();
+            DateTime TestValue = DateTime.UtcNow;
 
             // Act
-            _TestClass.EndDate = testValue;
+            TestClass.EndDate = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.EndDate);
+            Assert.Equal(TestValue, TestClass.EndDate);
         }
 
         [Fact]
         public void CanSetAndGetIndexerForInt()
         {
-            var testValue = new KeyValueField(default!);
-            _ = Assert.IsType<KeyValueField>(_TestClass[1488354690]);
-            _TestClass[1488354690] = testValue;
-            Assert.Same(testValue, _TestClass[1488354690]);
+            // Arrange
+            var TestClass = new Calendar();
+            var TestValue = new KeyValueField(default!);
+            TestClass.Fields.Add(new KeyValueField("A", Array.Empty<KeyValueParameter>(), "B"));
+
+            // Assert
+            Assert.NotSame(TestValue, Assert.IsType<KeyValueField>(TestClass[0]));
+
+            // Act
+            TestClass[0] = TestValue;
+
+            // Assert
+            Assert.Same(TestValue, TestClass[0]);
         }
 
         [Fact]
         public void CanSetAndGetLastModified()
         {
             // Arrange
-            DateTime testValue = DateTime.UtcNow;
+            var TestClass = new Calendar();
+            DateTime TestValue = DateTime.UtcNow;
 
             // Act
-            _TestClass.LastModified = testValue;
+            TestClass.LastModified = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.LastModified);
+            Assert.Equal(TestValue, TestClass.LastModified);
         }
 
         [Fact]
         public void CanSetAndGetLocation()
         {
             // Arrange
-            var testValue = "TestValue2040051890";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue2040051890";
 
             // Act
-            _TestClass.Location = testValue;
+            TestClass.Location = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Location);
+            Assert.Equal(TestValue, TestClass.Location);
         }
 
         [Fact]
         public void CanSetAndGetMethod()
         {
             // Arrange
-            var testValue = "TestValue1545140120";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue1545140120";
 
             // Act
-            _TestClass.Method = testValue;
+            TestClass.Method = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Method);
+            Assert.Equal(TestValue, TestClass.Method);
         }
 
         [Fact]
         public void CanSetAndGetPriority()
         {
             // Arrange
-            var testValue = "TestValue812364208";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue812364208";
 
             // Act
-            _TestClass.Priority = testValue;
+            TestClass.Priority = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Priority);
+            Assert.Equal(TestValue, TestClass.Priority);
         }
 
         [Fact]
         public void CanSetAndGetProductId()
         {
             // Arrange
-            var testValue = "TestValue661332337";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue661332337";
 
             // Act
-            _TestClass.ProductId = testValue;
+            TestClass.ProductId = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.ProductId);
+            Assert.Equal(TestValue, TestClass.ProductId);
         }
 
         [Fact]
         public void CanSetAndGetSequence()
         {
             // Arrange
-            var testValue = "TestValue117496184";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue117496184";
 
             // Act
-            _TestClass.Sequence = testValue;
+            TestClass.Sequence = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Sequence);
+            Assert.Equal(TestValue, TestClass.Sequence);
         }
 
         [Fact]
         public void CanSetAndGetStartDate()
         {
             // Arrange
-            DateTime testValue = DateTime.UtcNow;
+            var TestClass = new Calendar();
+            DateTime TestValue = DateTime.UtcNow;
 
             // Act
-            _TestClass.StartDate = testValue;
+            TestClass.StartDate = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.StartDate);
+            Assert.Equal(TestValue, TestClass.StartDate);
         }
 
         [Fact]
         public void CanSetAndGetStatus()
         {
             // Arrange
-            var testValue = "TestValue1094523616";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue1094523616";
 
             // Act
-            _TestClass.Status = testValue;
+            TestClass.Status = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Status);
+            Assert.Equal(TestValue, TestClass.Status);
         }
 
         [Fact]
         public void CanSetAndGetSummary()
         {
             // Arrange
-            var testValue = "TestValue1453032876";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue1453032876";
 
             // Act
-            _TestClass.Summary = testValue;
+            TestClass.Summary = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Summary);
+            Assert.Equal(TestValue, TestClass.Summary);
         }
 
         [Fact]
         public void CanSetAndGetTransp()
         {
             // Arrange
-            var testValue = "TestValue1121566459";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue1121566459";
 
             // Act
-            _TestClass.Transp = testValue;
+            TestClass.Transp = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Transp);
+            Assert.Equal(TestValue, TestClass.Transp);
         }
 
         [Fact]
         public void CanSetAndGetUID()
         {
             // Arrange
-            var testValue = "TestValue5954655";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue5954655";
 
             // Act
-            _TestClass.UID = testValue;
+            TestClass.UID = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.UID);
+            Assert.Equal(TestValue, TestClass.UID);
         }
 
         [Fact]
         public void CanSetAndGetVersion()
         {
             // Arrange
-            var testValue = "TestValue1260476273";
+            var TestClass = new Calendar();
+            const string TestValue = "TestValue1260476273";
 
             // Act
-            _TestClass.Version = testValue;
+            TestClass.Version = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Version);
+            Assert.Equal(TestValue, TestClass.Version);
         }
 
         [Fact]
         public void ImplementsIComparable_Calendar()
         {
             // Arrange
-            var baseValue = default(Calendar);
-            var equalToBaseValue = default(Calendar);
-            var greaterThanBaseValue = default(Calendar);
+            var BaseValue = new Calendar
+            {
+                Summary = "A",
+                StartDate = DateTime.UtcNow.Date.AddDays(1)
+            };
+            var EqualToBaseValue = new Calendar
+            {
+                Summary = "A",
+                StartDate = DateTime.UtcNow.Date.AddDays(1)
+            };
+            var GreaterThanBaseValue = new Calendar
+            {
+                Summary = "B",
+                StartDate = DateTime.UtcNow.Date.AddDays(2)
+            };
 
             // Assert
-            Assert.Equal(0, baseValue.CompareTo(equalToBaseValue));
-            Assert.True(baseValue.CompareTo(greaterThanBaseValue) < 0);
-            Assert.True(greaterThanBaseValue.CompareTo(baseValue) > 0);
+            Assert.Equal(0, BaseValue.CompareTo(EqualToBaseValue));
+            Assert.True(BaseValue.CompareTo(GreaterThanBaseValue) < 0);
+            Assert.True(GreaterThanBaseValue.CompareTo(BaseValue) > 0);
         }
 
         [Fact]
         public void ImplementsIEnumerable_KeyValueField()
         {
             // Arrange
-            var enumerable = default(Calendar);
-            var expectedCount = -1;
-            var actualCount = 0;
+            var Enumerable = new Calendar();
+            Enumerable.Fields.Add(new KeyValueField("A", Array.Empty<KeyValueParameter>(), "B"));
+            Enumerable.Fields.Add(new KeyValueField("C", Array.Empty<KeyValueParameter>(), "D"));
+            Enumerable.Fields.Add(new KeyValueField("E", Array.Empty<KeyValueParameter>(), "F"));
+            const int ExpectedCount = 3;
+            var ActualCount = 0;
 
             // Act
-            using (IEnumerator<KeyValueField?> enumerator = enumerable.GetEnumerator())
+            using (IEnumerator<KeyValueField?> Enumerator = Enumerable.GetEnumerator())
             {
-                Assert.NotNull(enumerator);
-                while (enumerator.MoveNext())
+                Assert.NotNull(Enumerator);
+                while (Enumerator.MoveNext())
                 {
-                    actualCount++;
-                    _ = Assert.IsType<KeyValueField>(enumerator.Current);
+                    ActualCount++;
+                    _ = Assert.IsType<KeyValueField>(Enumerator.Current);
                 }
             }
 
             // Assert
-            Assert.Equal(expectedCount, actualCount);
+            Assert.Equal(ExpectedCount, ActualCount);
         }
 
         [Fact]
         public void ImplementsIEquatable_Calendar()
         {
             // Arrange
-            var same = new Calendar();
-            var different = new Calendar();
+            var TestClass = new Calendar
+            {
+                Summary = "TestValue1706702071",
+                StartDate = DateTime.UtcNow.Date.AddDays(1)
+            };
+            var Same = new Calendar
+            {
+                Summary = "TestValue1706702071",
+                StartDate = DateTime.UtcNow.Date.AddDays(1)
+            };
+            var Different = new Calendar
+            {
+                Summary = "TestValue1706702071",
+                StartDate = DateTime.UtcNow.Date.AddDays(2)
+            };
 
             // Assert
-            Assert.False(_TestClass.Equals(default(object)));
-            Assert.False(_TestClass.Equals(new object()));
-            Assert.True(_TestClass.Equals((object)same));
-            Assert.False(_TestClass.Equals((object)different));
-            Assert.True(_TestClass.Equals(same));
-            Assert.False(_TestClass.Equals(different));
-            Assert.Equal(same.GetHashCode(), _TestClass.GetHashCode());
-            Assert.NotEqual(different.GetHashCode(), _TestClass.GetHashCode());
-            Assert.True(_TestClass == same);
-            Assert.False(_TestClass == different);
-            Assert.False(_TestClass != same);
-            Assert.True(_TestClass != different);
+            Assert.False(TestClass.Equals(default(object)));
+            Assert.False(TestClass.Equals(new object()));
+            Assert.True(TestClass.Equals((object)Same));
+            Assert.False(TestClass.Equals((object)Different));
+            Assert.True(TestClass.Equals(Same));
+            Assert.False(TestClass.Equals(Different));
+            Assert.Equal(Same.GetHashCode(), TestClass.GetHashCode());
+            Assert.NotEqual(Different.GetHashCode(), TestClass.GetHashCode());
+            Assert.True(TestClass == Same);
+            Assert.False(TestClass == Different);
+            Assert.False(TestClass != Same);
+            Assert.True(TestClass != Different);
         }
 
         public class TestClass

@@ -1,71 +1,74 @@
+using Archivist.Converters;
+using Archivist.DataTypes;
+using Archivist.Tests.BaseClasses;
+using System;
+using Xunit;
+
 namespace Archivist.Tests.Converters
 {
-    using Archivist.Converters;
-    using Archivist.DataTypes;
-    using System;
-    using Xunit;
-
-    public class TablesToCalendarConverterTests
+    public class TablesToCalendarConverterTests : TestBaseClass<TablesToCalendarConverter>
     {
-        private TablesToCalendarConverter _testClass;
-
         public TablesToCalendarConverterTests()
         {
-            _testClass = new TablesToCalendarConverter();
+            _TestClass = new TablesToCalendarConverter();
+            TestObject = new TablesToCalendarConverter();
+        }
+
+        private readonly TablesToCalendarConverter _TestClass;
+
+        [Fact]
+        public void CanCallCanConvert()
+        {
+            // Arrange
+            Type Source = typeof(string);
+            Type Destination = typeof(string);
+
+            // Act
+            var Result = _TestClass.CanConvert(Source, Destination);
+
+            // Assert
+            Assert.False(Result);
         }
 
         [Fact]
         public void CanCallConvertWithFile()
         {
             // Arrange
-            var @file = new Tables();
+            var File = new Tables();
 
             // Act
-            var result = TablesToCalendarConverter.Convert(file);
+            Calendar? Result = TablesToCalendarConverter.Convert(File);
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
-        }
-
-        [Fact]
-        public void ConvertWithFilePerformsMapping()
-        {
-            // Arrange
-            var @file = new Tables();
-
-            // Act
-            var result = TablesToCalendarConverter.Convert(file);
-
-            // Assert
-            Assert.Equal(file.Count, result.Count);
-        }
-
-        [Fact]
-        public void CanCallCanConvert()
-        {
-            // Arrange
-            var source = typeof(string);
-            var destination = typeof(string);
-
-            // Act
-            var result = _testClass.CanConvert(source, destination);
-
-            // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanCallConvertWithObjectAndType()
         {
             // Arrange
-            var source = new object();
-            var destination = typeof(string);
+            var Source = new object();
+            Type Destination = typeof(string);
 
             // Act
-            var result = _testClass.Convert(source, destination);
+            var Result = _TestClass.Convert(Source, Destination);
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.Null(Result);
+        }
+
+        [Fact]
+        public void ConvertWithFilePerformsMapping()
+        {
+            // Arrange
+            var File = new Tables();
+
+            // Act
+            Calendar? Result = TablesToCalendarConverter.Convert(File);
+
+            // Assert
+            Assert.NotNull(Result);
+            Assert.Equal(File.Count, Result.Count);
         }
     }
 }
