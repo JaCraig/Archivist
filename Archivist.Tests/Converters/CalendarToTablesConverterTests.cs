@@ -34,7 +34,7 @@ namespace Archivist.Tests.Converters
         public void CanCallConvertWithFile()
         {
             // Arrange
-            var File = new Calendar();
+            var File = new CalendarComponent();
 
             // Act
             Tables? Result = CalendarToTablesConverter.Convert(File);
@@ -62,7 +62,7 @@ namespace Archivist.Tests.Converters
         public void ConvertWithFilePerformsMapping()
         {
             // Arrange
-            var File = new Calendar();
+            var File = new CalendarComponent();
 
             // Act
             Tables? Result = CalendarToTablesConverter.Convert(File);

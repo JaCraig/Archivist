@@ -38,7 +38,7 @@ namespace Archivist.Formats.ICalendar
         {
             if (stream?.CanWrite != true || file is null)
                 return false;
-            Calendar? FileCal = file.ToFileType<Calendar>();
+            CalendarComponent? FileCal = file.ToFileType<CalendarComponent>();
             if (FileCal is null)
                 return false;
             var FileContent = new StringBuilder("BEGIN:VCALENDAR\r\n");
@@ -80,7 +80,7 @@ namespace Archivist.Formats.ICalendar
                 {
                     _ = FileContent.AppendFormat($";{Parameter.Name}={Parameter.Value}");
                 }
-                _ = FileContent.AppendFormat($":{Field.Value}\r\n").AppendLine();
+                _ = FileContent.AppendFormat($":{Field.Value}\r\n");
             }
             _ = FileContent.Append("END:VEVENT\r\n");
             AddAlarms(FileCal, FileContent);
@@ -102,7 +102,7 @@ namespace Archivist.Formats.ICalendar
         /// </summary>
         /// <param name="fileCal">File object.</param>
         /// <param name="fileContent">File content.</param>
-        private static void AddAlarms(Calendar? fileCal, StringBuilder fileContent)
+        private static void AddAlarms(CalendarComponent? fileCal, StringBuilder fileContent)
         {
             if (fileCal is null || fileContent is null)
                 return;
@@ -113,7 +113,7 @@ namespace Archivist.Formats.ICalendar
                 return;
             }
             // Add the alarms.
-            foreach (Alarm Alarm in fileCal.Alarms)
+            foreach (CalendarAlarm Alarm in fileCal.Alarms)
             {
                 _ = fileContent.Append("BEGIN:VALARM\r\n");
                 foreach (KeyValueField? Field in Alarm.Fields)
@@ -136,7 +136,7 @@ namespace Archivist.Formats.ICalendar
         /// </summary>
         /// <param name="fileCal">Calendar object</param>
         /// <param name="fileContent">File content</param>
-        private static void AddDefaultAction(Calendar? fileCal, StringBuilder fileContent)
+        private static void AddDefaultAction(CalendarComponent? fileCal, StringBuilder fileContent)
         {
             if (fileCal is null || fileContent is null || fileCal.Actions.Any())
                 return;
@@ -153,14 +153,14 @@ namespace Archivist.Formats.ICalendar
         /// </summary>
         /// <param name="fileCal">Calendar file object</param>
         /// <param name="fileContent">File content</param>
-        private static void AddMicrosoftFields(Calendar fileCal, StringBuilder fileContent)
+        private static void AddMicrosoftFields(CalendarComponent fileCal, StringBuilder fileContent)
         {
             if (fileCal is null || fileContent is null)
                 return;
             // If the file already contains Microsoft/Outlook specific fields, do not add them again.
             if (fileCal.Fields.Any(field => field?.Property.StartsWith("X-MICROSOFT-CDO-") ?? false))
                 return;
-            var CurrentDateTime = DateTime.Now.ToUniversalTime().ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture);
+            var CurrentDateTime = fileCal.LastModifiedUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture);
             // Add the Microsoft/Outlook specific fields.
             _ = fileContent.AppendFormat("X-MICROSOFT-CDO-BUSYSTATUS:{0}", fileCal.Statuses.FirstOrDefault()?.Value ?? "BUSY")
                         .AppendLine()

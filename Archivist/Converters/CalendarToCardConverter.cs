@@ -6,16 +6,16 @@ using System.Collections.Generic;
 namespace Archivist.Converters
 {
     /// <summary>
-    /// Converts a <see cref="Calendar"/> object to a <see cref="Card"/> object.
+    /// Converts a <see cref="CalendarComponent"/> object to a <see cref="Card"/> object.
     /// </summary>
     public class CalendarToCardConverter : IDataConverter
     {
         /// <summary>
-        /// Converts a <see cref="Calendar"/> object to a <see cref="Card"/> object.
+        /// Converts a <see cref="CalendarComponent"/> object to a <see cref="Card"/> object.
         /// </summary>
-        /// <param name="file">The <see cref="Calendar"/> object to convert.</param>
+        /// <param name="file">The <see cref="CalendarComponent"/> object to convert.</param>
         /// <returns>The converted <see cref="Card"/> object.</returns>
-        public static Card? Convert(Calendar? file)
+        public static Card? Convert(CalendarComponent? file)
         {
             if (file is null)
                 return null;
@@ -44,7 +44,7 @@ namespace Archivist.Converters
         /// <c>true</c> if this converter can convert from the specified source type to the
         /// specified destination type; otherwise, <c>false</c>.
         /// </returns>
-        public bool CanConvert(Type? source, Type? destination) => source == typeof(Calendar) && destination == typeof(Card);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(CalendarComponent) && destination == typeof(Card);
 
         /// <summary>
         /// Converts the specified object to the specified destination type.
@@ -54,7 +54,7 @@ namespace Archivist.Converters
         /// <returns>The converted object.</returns>
         public object? Convert(object? source, Type? destination)
         {
-            if (source is not Calendar File || destination is null)
+            if (source is not CalendarComponent File || destination is null)
                 return null;
             return Convert(File);
         }

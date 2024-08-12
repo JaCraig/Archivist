@@ -15,11 +15,11 @@ namespace Archivist.Converters
         /// </summary>
         /// <param name="file">The StructuredObject to convert.</param>
         /// <returns>The converted Calendar.</returns>
-        public static Calendar? Convert(StructuredObject? file)
+        public static CalendarComponent? Convert(StructuredObject? file)
         {
             if (file is null)
                 return null;
-            var ReturnValue = new Calendar();
+            var ReturnValue = new CalendarComponent();
             foreach (var Key in file.Keys)
             {
                 ReturnValue.Fields.Add(new KeyValueField(Key, Array.Empty<KeyValueParameter>(), file[Key]?.ToString() ?? ""));
@@ -38,7 +38,7 @@ namespace Archivist.Converters
         /// <param name="source">The source type.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>True if the conversion is possible, otherwise false.</returns>
-        public bool CanConvert(Type? source, Type? destination) => source == typeof(StructuredObject) && destination == typeof(Calendar);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(StructuredObject) && destination == typeof(CalendarComponent);
 
         /// <summary>
         /// Converts an object to the specified destination type.

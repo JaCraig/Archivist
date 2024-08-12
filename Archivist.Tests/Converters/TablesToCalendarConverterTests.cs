@@ -37,7 +37,7 @@ namespace Archivist.Tests.Converters
             var File = new Tables();
 
             // Act
-            Calendar? Result = TablesToCalendarConverter.Convert(File);
+            CalendarComponent? Result = TablesToCalendarConverter.Convert(File);
 
             // Assert
             Assert.NotNull(Result);
@@ -64,7 +64,7 @@ namespace Archivist.Tests.Converters
             var File = new Tables();
 
             // Act
-            Calendar? Result = TablesToCalendarConverter.Convert(File);
+            CalendarComponent? Result = TablesToCalendarConverter.Convert(File);
 
             // Assert
             Assert.NotNull(Result);

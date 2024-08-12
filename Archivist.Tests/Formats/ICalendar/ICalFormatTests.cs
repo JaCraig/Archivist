@@ -1,44 +1,47 @@
+using Archivist.Formats.ICalendar;
+using Archivist.Tests.BaseClasses;
+using Xunit;
+
 namespace Archivist.Tests.Formats.ICalendar
 {
-    using Archivist.Formats.ICalendar;
-    using System;
-    using Xunit;
-
-    public class ICalFormatTests
+    public class ICalFormatTests : TestBaseClass<ICalFormat>
     {
-        private ICalFormat _testClass;
-
         public ICalFormatTests()
         {
-            _testClass = new ICalFormat();
+            _TestClass = new ICalFormat();
+            TestObject = new ICalFormat();
         }
+
+        private readonly ICalFormat _TestClass;
 
         [Fact]
         public void CanConstruct()
         {
             // Act
-            var instance = new ICalFormat();
+            var Instance = new ICalFormat();
 
             // Assert
-            Assert.NotNull(instance);
+            Assert.NotNull(Instance);
         }
 
         [Fact]
         public void CanGetExtensions()
         {
             // Assert
-            Assert.IsType<string[]>(_testClass.Extensions);
+            var Result = Assert.IsType<string[]>(_TestClass.Extensions);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Equal(new[] { "VCS", "ICAL", "ICS", "IFB", "ICALENDAR" }, Result);
         }
 
         [Fact]
         public void CanGetMimeTypes()
         {
             // Assert
-            Assert.IsType<string[]>(_testClass.MimeTypes);
+            var Result = Assert.IsType<string[]>(_TestClass.MimeTypes);
 
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(Result);
+            Assert.Equal(new[] { "APPLICATION/HBS-VCS", "TEXT/X-VCALENDAR", "TEXT/CALENDAR" }, Result);
         }
     }
 }

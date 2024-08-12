@@ -7,21 +7,21 @@ using Xunit;
 
 namespace Archivist.Tests.DataTypes
 {
-    public class AlarmTests : TestBaseClass<Alarm>
+    public class CalendarAlarmTests : TestBaseClass<CalendarAlarm>
     {
-        public AlarmTests()
+        public CalendarAlarmTests()
         {
-            _TestClass = new Alarm();
-            TestObject = new Alarm();
+            _TestClass = new CalendarAlarm();
+            TestObject = new CalendarAlarm();
         }
 
-        private readonly Alarm _TestClass;
+        private readonly CalendarAlarm _TestClass;
 
         [Fact]
         public void CanCallCompareTo()
         {
             // Arrange
-            var Other = new Alarm();
+            var Other = new CalendarAlarm();
             Other.Fields.Add(new KeyValueField("Test", Array.Empty<KeyValueParameter>(), "Val"));
 
             // Act
@@ -35,8 +35,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualityOperator()
         {
             // Arrange
-            var Left = new Alarm();
-            var Right = new Alarm();
+            var Left = new CalendarAlarm();
+            var Right = new CalendarAlarm();
 
             // Act
             var Result = Left == Right;
@@ -49,7 +49,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualityOperatorWithNullLeft()
         {
             // Act
-            var Result = default! == new Alarm();
+            var Result = default! == new CalendarAlarm();
 
             // Assert
             Assert.True(Result);
@@ -59,7 +59,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualityOperatorWithNullRight()
         {
             // Act
-            var Result = new Alarm() == default!;
+            var Result = new CalendarAlarm() == default!;
 
             // Assert
             Assert.True(Result);
@@ -69,8 +69,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualsWithAlarm()
         {
             // Arrange
-            var TestClass = new Alarm();
-            var Other = new Alarm();
+            var TestClass = new CalendarAlarm();
+            var Other = new CalendarAlarm();
             Other.Fields.Add(new KeyValueField("Test", Array.Empty<KeyValueParameter>(), "Val"));
 
             // Act
@@ -117,7 +117,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGetHashCode()
         {
             // Arrange
-            var TestClass = new Alarm();
+            var TestClass = new CalendarAlarm();
             TestClass.Fields.Add(new KeyValueField("Test", Array.Empty<KeyValueParameter>(), "Val"));
 
             // Act
@@ -131,8 +131,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanEqualToOperator()
         {
             // Arrange
-            var Left = new Alarm();
-            var Right = new Alarm();
+            var Left = new CalendarAlarm();
+            var Right = new CalendarAlarm();
 
             // Act
             var Result = Left >= Right;
@@ -145,7 +145,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanEqualToOperatorWithNullLeft()
         {
             // Act
-            var Result = default(Alarm)! >= new Alarm();
+            var Result = default(CalendarAlarm)! >= new CalendarAlarm();
 
             // Assert
             Assert.True(Result);
@@ -155,7 +155,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanEqualToOperatorWithNullRight()
         {
             // Act
-            var Result = new Alarm() >= default(Alarm)!;
+            var Result = new CalendarAlarm() >= default(CalendarAlarm)!;
 
             // Assert
             Assert.True(Result);
@@ -165,8 +165,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanOperator()
         {
             // Arrange
-            var Left = new Alarm();
-            var Right = new Alarm();
+            var Left = new CalendarAlarm();
+            var Right = new CalendarAlarm();
 
             // Act
             var Result = Left > Right;
@@ -179,7 +179,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanOperatorWithNullLeft()
         {
             // Act
-            var Result = default(Alarm)! > new Alarm();
+            var Result = default(CalendarAlarm)! > new CalendarAlarm();
 
             // Assert
             Assert.False(Result);
@@ -189,7 +189,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanOperatorWithNullRight()
         {
             // Act
-            var Result = new Alarm() > default(Alarm)!;
+            var Result = new CalendarAlarm() > default(CalendarAlarm)!;
 
             // Assert
             Assert.True(Result);
@@ -199,8 +199,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallInequalityOperator()
         {
             // Arrange
-            var Left = new Alarm();
-            var Right = new Alarm();
+            var Left = new CalendarAlarm();
+            var Right = new CalendarAlarm();
 
             // Act
             var Result = Left != Right;
@@ -213,7 +213,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallInequalityOperatorWithNullLeft()
         {
             // Act
-            var Result = default! != new Alarm();
+            var Result = default! != new CalendarAlarm();
 
             // Assert
             Assert.True(Result);
@@ -223,7 +223,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallInequalityOperatorWithNullRight()
         {
             // Act
-            var Result = new Alarm() != default!;
+            var Result = new CalendarAlarm() != default!;
 
             // Assert
             Assert.True(Result);
@@ -233,8 +233,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanEqualToOperator()
         {
             // Arrange
-            var Left = new Alarm();
-            var Right = new Alarm();
+            var Left = new CalendarAlarm();
+            var Right = new CalendarAlarm();
 
             // Act
             var Result = Left <= Right;
@@ -247,7 +247,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanEqualToOperatorWithNullLeft()
         {
             // Act
-            var Result = default(Alarm)! <= new Alarm();
+            var Result = default(CalendarAlarm)! <= new CalendarAlarm();
 
             // Assert
             Assert.True(Result);
@@ -257,7 +257,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanEqualToOperatorWithNullRight()
         {
             // Act
-            var Result = new Alarm() <= default(Alarm)!;
+            var Result = new CalendarAlarm() <= default(CalendarAlarm)!;
 
             // Assert
             Assert.True(Result);
@@ -267,8 +267,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanOperator()
         {
             // Arrange
-            var Left = new Alarm();
-            var Right = new Alarm();
+            var Left = new CalendarAlarm();
+            var Right = new CalendarAlarm();
 
             // Act
             var Result = Left < Right;
@@ -281,7 +281,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanOperatorWithNullLeft()
         {
             // Act
-            var Result = default(Alarm)! < new Alarm();
+            var Result = default(CalendarAlarm)! < new CalendarAlarm();
 
             // Assert
             Assert.True(Result);
@@ -291,7 +291,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanOperatorWithNullRight()
         {
             // Act
-            var Result = new Alarm() < default(Alarm)!;
+            var Result = new CalendarAlarm() < default(CalendarAlarm)!;
 
             // Assert
             Assert.False(Result);
@@ -301,7 +301,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetFields()
         {
             // Arrange
-            var TestClass = new Alarm();
+            var TestClass = new CalendarAlarm();
 
             // Assert
             List<KeyValueField> Result = Assert.IsType<List<KeyValueField>>(TestClass.Fields);
@@ -313,15 +313,15 @@ namespace Archivist.Tests.DataTypes
         public void ImplementsIComparable_Alarm()
         {
             // Arrange
-            var BaseValue = new Alarm();
+            var BaseValue = new CalendarAlarm();
             BaseValue.Fields.Add(new KeyValueField("Test", Array.Empty<KeyValueParameter>(), "Val"));
             BaseValue.Fields.Add(new KeyValueField("Test2", Array.Empty<KeyValueParameter>(), "Val2"));
 
-            var EqualToBaseValue = new Alarm();
+            var EqualToBaseValue = new CalendarAlarm();
             EqualToBaseValue.Fields.Add(new KeyValueField("Test", Array.Empty<KeyValueParameter>(), "Val"));
             EqualToBaseValue.Fields.Add(new KeyValueField("Test2", Array.Empty<KeyValueParameter>(), "Val2"));
 
-            var GreaterThanBaseValue = new Alarm();
+            var GreaterThanBaseValue = new CalendarAlarm();
             GreaterThanBaseValue.Fields.Add(new KeyValueField("Test", Array.Empty<KeyValueParameter>(), "Val"));
             GreaterThanBaseValue.Fields.Add(new KeyValueField("Test2", Array.Empty<KeyValueParameter>(), "Val3"));
 
@@ -335,7 +335,7 @@ namespace Archivist.Tests.DataTypes
         public void ImplementsIEnumerable_KeyValueField()
         {
             // Arrange
-            var Enumerable = new Alarm();
+            var Enumerable = new CalendarAlarm();
             Enumerable.Fields.Add(new KeyValueField("Test", Array.Empty<KeyValueParameter>(), "Val"));
             Enumerable.Fields.Add(new KeyValueField("Test2", Array.Empty<KeyValueParameter>(), "Val2"));
             Enumerable.Fields.Add(new KeyValueField("Test3", Array.Empty<KeyValueParameter>(), "Val3"));
@@ -361,13 +361,13 @@ namespace Archivist.Tests.DataTypes
         public void ImplementsIEquatable_Alarm()
         {
             // Arrange
-            var TestClass = new Alarm();
+            var TestClass = new CalendarAlarm();
             TestClass.Fields.Add(new KeyValueField("Test", Array.Empty<KeyValueParameter>(), "Val"));
             TestClass.Fields.Add(new KeyValueField("Test2", Array.Empty<KeyValueParameter>(), "Val2"));
-            var Same = new Alarm();
+            var Same = new CalendarAlarm();
             Same.Fields.Add(new KeyValueField("Test", Array.Empty<KeyValueParameter>(), "Val"));
             Same.Fields.Add(new KeyValueField("Test2", Array.Empty<KeyValueParameter>(), "Val2"));
-            var Different = new Alarm();
+            var Different = new CalendarAlarm();
             Different.Fields.Add(new KeyValueField("Test", Array.Empty<KeyValueParameter>(), "Val"));
             Different.Fields.Add(new KeyValueField("Test2", Array.Empty<KeyValueParameter>(), "Val3"));
 

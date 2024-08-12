@@ -45,14 +45,14 @@ namespace Archivist.Formats.ICalendar
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             if (stream?.CanRead != true)
-                return new Calendar();
-            var ReturnValue = new Calendar();
+                return new CalendarComponent();
+            var ReturnValue = new CalendarComponent();
             var Content = await GetDataAsync(stream).ConfigureAwait(false);
             var Lines = Content.Split(_Separator, StringSplitOptions.RemoveEmptyEntries);
             if (Lines.Length is 0)
                 return ReturnValue;
             var CurrentField = new KeyValueField("", Array.Empty<KeyValueParameter>(), "");
-            Alarm? CurrentAlarm = null;
+            CalendarAlarm? CurrentAlarm = null;
             foreach (var Line in Lines)
             {
                 if (Line.StartsWith(' '))
@@ -73,7 +73,7 @@ namespace Archivist.Formats.ICalendar
                     case "BEGIN" or "END" when Value is "VCALENDAR" or "VEVENT":
                         continue;
                     case "BEGIN" when Value is "VALARM":
-                        CurrentAlarm = new Alarm();
+                        CurrentAlarm = new CalendarAlarm();
                         ReturnValue.Alarms.Add(CurrentAlarm);
                         continue;
                     case "END" when Value is "VALARM":

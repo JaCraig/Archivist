@@ -15,7 +15,7 @@ namespace Archivist.Converters
         /// </summary>
         /// <param name="file">The Calendar object to convert.</param>
         /// <returns>The converted StructuredObject object.</returns>
-        public static StructuredObject? Convert(Calendar? file)
+        public static StructuredObject? Convert(CalendarComponent? file)
         {
             if (file is null)
                 return null;
@@ -40,7 +40,7 @@ namespace Archivist.Converters
         /// <param name="source">The source type.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>True if the conversion is possible, otherwise false.</returns>
-        public bool CanConvert(Type? source, Type? destination) => source == typeof(Calendar) && destination == typeof(StructuredObject);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(CalendarComponent) && destination == typeof(StructuredObject);
 
         /// <summary>
         /// Converts the source object to the specified destination type.
@@ -50,7 +50,7 @@ namespace Archivist.Converters
         /// <returns>The converted object.</returns>
         public object? Convert(object? source, Type? destination)
         {
-            if (source is not Calendar File || destination is null)
+            if (source is not CalendarComponent File || destination is null)
                 return null;
             return Convert(File);
         }

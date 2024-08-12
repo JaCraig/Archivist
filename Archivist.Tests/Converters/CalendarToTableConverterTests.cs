@@ -20,7 +20,7 @@ namespace Archivist.Tests.Converters
         public void CanCallCanConvert()
         {
             // Arrange
-            Type Source = typeof(Calendar);
+            Type Source = typeof(CalendarComponent);
             Type Destination = typeof(Table);
 
             // Act
@@ -34,7 +34,7 @@ namespace Archivist.Tests.Converters
         public void CanCallConvertWithFile()
         {
             // Arrange
-            var File = new Calendar();
+            var File = new CalendarComponent();
 
             // Act
             Table? Result = CalendarToTableConverter.Convert(File);
@@ -63,7 +63,7 @@ namespace Archivist.Tests.Converters
         public void ConvertWithFilePerformsMapping()
         {
             // Arrange
-            var File = new Calendar();
+            var File = new CalendarComponent();
 
             // Act
             Table? Result = CalendarToTableConverter.Convert(File);
