@@ -12,7 +12,9 @@ namespace Archivist.Interfaces
         /// </summary>
         /// <param name="source">Source type</param>
         /// <param name="destination">Destination type</param>
-        /// <returns>True if the converter can convert the source type to the destination type, otherwise false.</returns>
+        /// <returns>
+        /// True if the converter can convert the source type to the destination type, otherwise false.
+        /// </returns>
         bool CanConvert(Type? source, Type? destination);
 
         /// <summary>

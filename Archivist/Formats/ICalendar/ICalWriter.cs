@@ -2,6 +2,7 @@
 using Archivist.DataTypes;
 using Archivist.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -38,52 +39,19 @@ namespace Archivist.Formats.ICalendar
         {
             if (stream?.CanWrite != true || file is null)
                 return false;
-            CalendarComponent? FileCal = file.ToFileType<CalendarComponent>();
+            Calendar? FileCal = file.ToFileType<Calendar>();
             if (FileCal is null)
                 return false;
             var FileContent = new StringBuilder("BEGIN:VCALENDAR\r\n");
             _ = FileContent.AppendFormat("METHOD:{0}\r\n", FileCal.Method)
                         .AppendFormat("PRODID:{0}\r\n", FileCal.ProductId)
-                        .AppendFormat("VERSION:{0}\r\n", FileCal.Version)
-                        .Append("BEGIN:VEVENT\r\n")
-                        .AppendFormat("CLASS:{0}\r\n", FileCal.Class)
-                        .AppendFormat("DTSTAMP:{0}\r\n", FileCal.DateStampUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
-                        .AppendFormat("CREATED:{0}\r\n", FileCal.CreatedUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
-                        .AppendFormat("DTSTART:{0}\r\n", FileCal.StartDateUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
-                        .AppendFormat("DTEND:{0}\r\n", FileCal.EndDateUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
-                        .AppendFormat("LOCATION:{0}\r\n", FileCal.Location)
-                        .AppendFormat("UID:{0}\r\n", FileCal.UID)
-                        .AppendFormat("SEQUENCE:{0}\r\n", FileCal.Sequence)
-                        .AppendFormat("PRIORITY:{0}\r\n", FileCal.Priority);
-            foreach (KeyValueField? Attendee in FileCal.Attendees)
-            {
-                if (Attendee is null)
-                    continue;
-                _ = FileContent.AppendFormat("ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=\"{0}\":MAILTO:{0}\r\n", Attendee.Value);
-            }
-            AddDefaultAction(FileCal, FileContent);
-            AddMicrosoftFields(FileCal, FileContent);
-            if (ContainsHTML(FileCal.Description))
-                _ = FileContent.AppendFormat("X-ALT-DESC;FMTTYPE=text/html:{0}\r\n", FileCal.Description.Replace("\n", ""));
-            else if (!string.IsNullOrEmpty(FileCal.Description))
-                _ = FileContent.AppendFormat("DESCRIPTION:{0}\r\n", FileCal.Description);
-            _ = FileContent.AppendFormat("LAST-MODIFIED:{0}\r\n", FileCal.LastModifiedUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
-                .AppendFormat("STATUS:{0}\r\n", FileCal.Status)
-                .AppendFormat("TRANSP:{0}\r\n", FileCal.Transp);
-
-            foreach (KeyValueField? Field in FileCal.Fields)
-            {
-                if (Field is null || _SkippedFields.Contains(Field.Property.ToUpper()))
-                    continue;
-                _ = FileContent.Append(Field.Property);
-                foreach (KeyValueParameter Parameter in Field.Parameters)
-                {
-                    _ = FileContent.AppendFormat($";{Parameter.Name}={Parameter.Value}");
-                }
-                _ = FileContent.AppendFormat($":{Field.Value}\r\n");
-            }
-            _ = FileContent.Append("END:VEVENT\r\n");
-            AddAlarms(FileCal, FileContent);
+                        .AppendFormat("VERSION:{0}\r\n", FileCal.Version);
+            AddEvents(FileCal, FileContent);
+            AddComponents(FileCal.Alarms, FileContent, "VALARM", "BEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Reminder\r\nEND:VALARM\r\n");
+            AddComponents(FileCal.FreeBusy, FileContent, "VFREEBUSY", "");
+            AddComponents(FileCal.TimeZones, FileContent, "VTIMEZONE", "");
+            AddComponents(FileCal.ToDos, FileContent, "VTODO", "");
+            AddComponents(FileCal.Journals, FileContent, "VJOURNAL", "");
             _ = FileContent.Append("END:VCALENDAR\r\n");
             var TempData = Encoding.UTF8.GetBytes(FileContent.ToString());
             try
@@ -98,25 +66,28 @@ namespace Archivist.Formats.ICalendar
         }
 
         /// <summary>
-        /// Adds the alarms to the ICal file.
+        /// Adds the components to the ICal file.
         /// </summary>
-        /// <param name="fileCal">File object.</param>
-        /// <param name="fileContent">File content.</param>
-        private static void AddAlarms(CalendarComponent? fileCal, StringBuilder fileContent)
+        /// <param name="fileComponents">The list of file components.</param>
+        /// <param name="fileContent">The file content.</param>
+        /// <param name="componentType">The type of the component.</param>
+        /// <param name="defaultComponent">The default component to add if none are present.</param>
+        private static void AddComponents(List<CalendarComponent> fileComponents, StringBuilder fileContent,
+            string componentType, string? defaultComponent)
         {
-            if (fileCal is null || fileContent is null)
+            if (fileComponents is null || fileContent is null || string.IsNullOrEmpty(componentType))
                 return;
-            // Add a default alarm if none are present.
-            if (fileCal.Alarms.Count == 0)
+            // Add a default component if none are present.
+            if (fileComponents.Count == 0 && !string.IsNullOrEmpty(defaultComponent))
             {
-                _ = fileContent.Append("BEGIN:VALARM\r\nTRIGGER:-PT15M\r\nACTION:DISPLAY\r\nDESCRIPTION:Reminder\r\nEND:VALARM\r\n");
+                _ = fileContent.Append(defaultComponent);
                 return;
             }
-            // Add the alarms.
-            foreach (CalendarAlarm Alarm in fileCal.Alarms)
+            // Add the components.
+            foreach (CalendarComponent Component in fileComponents)
             {
-                _ = fileContent.Append("BEGIN:VALARM\r\n");
-                foreach (KeyValueField? Field in Alarm.Fields)
+                _ = fileContent.AppendFormat("BEGIN:{0}\r\n", componentType);
+                foreach (KeyValueField? Field in Component.Fields)
                 {
                     if (Field is null)
                         continue;
@@ -127,15 +98,15 @@ namespace Archivist.Formats.ICalendar
                     }
                     _ = fileContent.AppendFormat($":{Field.Value}\r\n").AppendLine();
                 }
-                _ = fileContent.Append("END:VALARM\r\n");
+                _ = fileContent.AppendFormat("END:{0}\r\n", componentType);
             }
         }
 
         /// <summary>
         /// Adds the default ACTION field to the ICal file if none are present.
         /// </summary>
-        /// <param name="fileCal">Calendar object</param>
-        /// <param name="fileContent">File content</param>
+        /// <param name="fileCal">The calendar object.</param>
+        /// <param name="fileContent">The file content.</param>
         private static void AddDefaultAction(CalendarComponent? fileCal, StringBuilder fileContent)
         {
             if (fileCal is null || fileContent is null || fileCal.Actions.Any())
@@ -151,8 +122,8 @@ namespace Archivist.Formats.ICalendar
         /// <summary>
         /// Adds the Microsoft/Outlook specific fields to the ICal file.
         /// </summary>
-        /// <param name="fileCal">Calendar file object</param>
-        /// <param name="fileContent">File content</param>
+        /// <param name="fileCal">The calendar file object.</param>
+        /// <param name="fileContent">The file content.</param>
         private static void AddMicrosoftFields(CalendarComponent fileCal, StringBuilder fileContent)
         {
             if (fileCal is null || fileContent is null)
@@ -178,8 +149,58 @@ namespace Archivist.Formats.ICalendar
         /// <summary>
         /// Determines whether the specified input contains HTML.
         /// </summary>
-        /// <param name="input">The input.</param>
+        /// <param name="input">The input string.</param>
         /// <returns><c>true</c> if the specified input contains HTML; otherwise, <c>false</c>.</returns>
         private static bool ContainsHTML(string? input) => !string.IsNullOrEmpty(input) && STRIP_HTML_REGEX.IsMatch(input);
+
+        /// <summary>
+        /// Adds the events to the ICal file.
+        /// </summary>
+        /// <param name="fileCal">The calendar file object.</param>
+        /// <param name="fileContent">The file content.</param>
+        private void AddEvents(Calendar fileCal, StringBuilder fileContent)
+        {
+            foreach (CalendarComponent Event in fileCal.Events)
+            {
+                _ = fileContent.Append("BEGIN:VEVENT\r\n")
+                .AppendFormat("CLASS:{0}\r\n", Event.Class)
+                .AppendFormat("DTSTAMP:{0}\r\n", Event.DateStampUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
+                .AppendFormat("CREATED:{0}\r\n", Event.CreatedUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
+                .AppendFormat("DTSTART:{0}\r\n", Event.StartDateUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
+                .AppendFormat("DTEND:{0}\r\n", Event.EndDateUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
+                .AppendFormat("LOCATION:{0}\r\n", Event.Location)
+                .AppendFormat("UID:{0}\r\n", Event.UID)
+                .AppendFormat("SEQUENCE:{0}\r\n", Event.Sequence)
+                .AppendFormat("PRIORITY:{0}\r\n", Event.Priority);
+                foreach (KeyValueField? Attendee in Event.Attendees)
+                {
+                    if (Attendee is null)
+                        continue;
+                    _ = fileContent.AppendFormat("ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=\"{0}\":MAILTO:{0}\r\n", Attendee.Value);
+                }
+                AddDefaultAction(Event, fileContent);
+                AddMicrosoftFields(Event, fileContent);
+                if (ContainsHTML(Event.Description))
+                    _ = fileContent.AppendFormat("X-ALT-DESC;FMTTYPE=text/html:{0}\r\n", Event.Description.Replace("\n", ""));
+                else if (!string.IsNullOrEmpty(Event.Description))
+                    _ = fileContent.AppendFormat("DESCRIPTION:{0}\r\n", Event.Description);
+                _ = fileContent.AppendFormat("LAST-MODIFIED:{0}\r\n", Event.LastModifiedUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
+                    .AppendFormat("STATUS:{0}\r\n", Event.Status)
+                    .AppendFormat("TRANSP:{0}\r\n", Event.Transp);
+
+                foreach (KeyValueField? Field in Event.Fields)
+                {
+                    if (Field is null || _SkippedFields.Contains(Field.Property.ToUpper()))
+                        continue;
+                    _ = fileContent.Append(Field.Property);
+                    foreach (KeyValueParameter Parameter in Field.Parameters)
+                    {
+                        _ = fileContent.AppendFormat($";{Parameter.Name}={Parameter.Value}");
+                    }
+                    _ = fileContent.AppendFormat($":{Field.Value}\r\n");
+                }
+                _ = fileContent.Append("END:VEVENT\r\n");
+            }
+        }
     }
 }

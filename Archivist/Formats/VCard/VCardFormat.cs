@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 
 namespace Archivist.Formats.VCard
 {
@@ -10,8 +11,9 @@ namespace Archivist.Formats.VCard
         /// <summary>
         /// Initializes a new instance of the <see cref="VCardFormat"/> class.
         /// </summary>
-        public VCardFormat()
-            : base(new VCardReader(), new VCardWriter())
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public VCardFormat(Convertinator? converter)
+            : base(new VCardReader(converter), new VCardWriter())
         {
         }
 

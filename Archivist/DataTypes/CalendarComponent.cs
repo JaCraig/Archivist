@@ -1,5 +1,4 @@
 ﻿using Archivist.BaseClasses;
-using Archivist.Converters;
 using Archivist.Enums;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
@@ -15,36 +14,35 @@ namespace Archivist.DataTypes
     /// Represents a Calendar (vCalendar, etc.) file.
     /// </summary>
     /// <seealso cref="FileBaseClass{Calendar}"/>
-    public class CalendarComponent : FileBaseClass<CalendarComponent>, IComparable<CalendarComponent>, IEquatable<CalendarComponent>, IEnumerable<KeyValueField?>, IEnumerable, IObjectConvertable
+    public class CalendarComponent : IComparable<CalendarComponent>, IEquatable<CalendarComponent>, IEnumerable<KeyValueField?>, IEnumerable, IObjectConvertable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CalendarComponent"/> class.
         /// </summary>
-        /// <param name="converter">The type converter.</param>
-        public CalendarComponent(Convertinator? converter)
-            : base(converter)
+        /// <param name="parent">The parent Calendar.</param>
+        public CalendarComponent(Calendar? parent)
         {
-            CurrentTimeZone = TimeZoneInfo.Local;
+            _Parent = parent;
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CalendarComponent"/> class.
+        /// Gets or sets the action of the Calendar item.
         /// </summary>
-        public CalendarComponent()
-            : base(null)
+        public string Action
         {
-            CurrentTimeZone = TimeZoneInfo.Local;
+            get => Actions.FirstOrDefault()?.Value ?? "";
+            set
+            {
+                foreach (KeyValueField? Item in Actions)
+                    _ = Fields.Remove(Item);
+                Fields.Add(new KeyValueField(CommonCalendarFields.Action, Array.Empty<KeyValueParameter>(), value));
+            }
         }
 
         /// <summary>
         /// Gets the action fields of the Calendar item.
         /// </summary>
         public IEnumerable<KeyValueField?> Actions => this[CommonCalendarFields.Action];
-
-        /// <summary>
-        /// Gets the list of alarms associated with the Calendar item.
-        /// </summary>
-        public List<CalendarAlarm> Alarms { get; } = new List<CalendarAlarm>();
 
         /// <summary>
         /// Gets the attachments of the Calendar item.
@@ -140,11 +138,6 @@ namespace Archivist.DataTypes
                 return DateTime.UtcNow;
             }
         }
-
-        /// <summary>
-        /// Gets or sets the current time zone.
-        /// </summary>
-        public TimeZoneInfo CurrentTimeZone { get; set; }
 
         /// <summary>
         /// Gets or sets the date stamp of the Calendar item.
@@ -284,11 +277,6 @@ namespace Archivist.DataTypes
         public IEnumerable<KeyValueField?> GeoLocations => this[CommonCalendarFields.Geo];
 
         /// <summary>
-        /// Gets whether the Calendar item is a cancelation.
-        /// </summary>
-        public bool IsCancelled => this[CommonCalendarFields.Method].FirstOrDefault()?.Value == "CANCEL";
-
-        /// <summary>
         /// Gets or sets the last modified date of the Calendar item.
         /// </summary>
         public DateTime LastModified
@@ -349,25 +337,6 @@ namespace Archivist.DataTypes
         public IEnumerable<KeyValueField?> Locations => this[CommonCalendarFields.Location];
 
         /// <summary>
-        /// Gets the methods of the Calendar item.
-        /// </summary>
-        public string Method
-        {
-            get => Methods.FirstOrDefault()?.Value ?? CalendarMethods.Request;
-            set
-            {
-                foreach (KeyValueField? Item in Methods)
-                    _ = Fields.Remove(Item);
-                Fields.Add(new KeyValueField(CommonCalendarFields.Method, Array.Empty<KeyValueParameter>(), value));
-            }
-        }
-
-        /// <summary>
-        /// Gets the method fields of the Calendar item.
-        /// </summary>
-        public IEnumerable<KeyValueField?> Methods => this[CommonCalendarFields.Method];
-
-        /// <summary>
         /// Gets the organizers of the Calendar.
         /// </summary>
         public IEnumerable<KeyValueField?> Organizers => this[CommonCalendarFields.Organizer];
@@ -390,25 +359,6 @@ namespace Archivist.DataTypes
                 Fields.Add(new KeyValueField(CommonCalendarFields.Priority, Array.Empty<KeyValueParameter>(), value));
             }
         }
-
-        /// <summary>
-        /// Gets or sets the product ID of the Calendar item.
-        /// </summary>
-        public string ProductId
-        {
-            get => ProductIds.FirstOrDefault()?.Value ?? "-//Archivist//EN";
-            set
-            {
-                foreach (KeyValueField? Item in ProductIds)
-                    _ = Fields.Remove(Item);
-                Fields.Add(new KeyValueField(CommonCalendarFields.ProductId, Array.Empty<KeyValueParameter>(), value));
-            }
-        }
-
-        /// <summary>
-        /// Gets the product Ids of the Calendar item.
-        /// </summary>
-        public IEnumerable<KeyValueField?> ProductIds => this[CommonCalendarFields.ProductId];
 
         /// <summary>
         /// Gets the recurrence IDs of the Calendar item.
@@ -585,6 +535,20 @@ namespace Archivist.DataTypes
         /// <summary>
         /// Gets the triggers of the Calendar item.
         /// </summary>
+        public string Trigger
+        {
+            get => Triggers.FirstOrDefault()?.Value ?? "";
+            set
+            {
+                foreach (KeyValueField? Item in Triggers)
+                    _ = Fields.Remove(Item);
+                Fields.Add(new KeyValueField(CommonCalendarFields.Trigger, Array.Empty<KeyValueParameter>(), value));
+            }
+        }
+
+        /// <summary>
+        /// Gets the triggers of the Calendar item.
+        /// </summary>
         public IEnumerable<KeyValueField?> Triggers => this[CommonCalendarFields.Trigger];
 
         /// <summary>
@@ -612,10 +576,14 @@ namespace Archivist.DataTypes
         public IEnumerable<KeyValueField?> URLs => this[CommonCalendarFields.Url];
 
         /// <summary>
-        /// Gets the version of the Calendar item (default is 2.0 for iCalendar, 1.0 for vCalendar,
-        /// value is 2.0 by default).
+        /// Gets or sets the current time zone.
         /// </summary>
-        public string Version { get; set; } = "2.0";
+        private TimeZoneInfo CurrentTimeZone => _Parent?.CurrentTimeZone ?? TimeZoneInfo.Local;
+
+        /// <summary>
+        /// Gets the parent calendar item.
+        /// </summary>
+        private readonly Calendar? _Parent;
 
         /// <summary>
         /// Gets or sets the field at the specified index.
@@ -656,61 +624,6 @@ namespace Archivist.DataTypes
         /// <param name="parameter">The parameter of the fields.</param>
         /// <returns>The fields with the specified property name and parameter.</returns>
         public IEnumerable<KeyValueField?> this[string property, string? parameter] => Fields.Where(field => field?.Property == property && (field?.Parameters.Any(fieldParam => fieldParam.ToString() == parameter) ?? false)).ToList();
-
-        /// <summary>
-        /// Converts the Calendar to a Card.
-        /// </summary>
-        /// <param name="file">The Calendar to convert.</param>
-        /// <returns>The Card representation of the Calendar.</returns>
-        public static implicit operator Card?(CalendarComponent? file)
-        {
-            return CalendarToCardConverter.Convert(file);
-        }
-
-        /// <summary>
-        /// Converts the Calendar to a structured object.
-        /// </summary>
-        /// <param name="file">The Calendar to convert.</param>
-        /// <returns>The structured object representation of the Calendar.</returns>
-        public static implicit operator StructuredObject?(CalendarComponent? file)
-        {
-            return CalendarToStructuredObjectConverter.Convert(file);
-        }
-
-        /// <summary>
-        /// Converts the Calendar to a table.
-        /// </summary>
-        /// <param name="file">The Calendar to convert.</param>
-        /// <returns>The table representation of the Calendar.</returns>
-        public static implicit operator Table?(CalendarComponent? file)
-        {
-            return CalendarToTableConverter.Convert(file);
-        }
-
-        /// <summary>
-        /// Converts the Calendar to a Tables file.
-        /// </summary>
-        /// <param name="file">The Calendar to convert.</param>
-        /// <returns>The Tables representation of the Calendar.</returns>
-        public static implicit operator Tables?(CalendarComponent? file)
-        {
-            return CalendarToTablesConverter.Convert(file);
-        }
-
-        /// <summary>
-        /// Converts the Calendar to text.
-        /// </summary>
-        /// <param name="file">The Calendar to convert.</param>
-        /// <returns>The text representation of the Calendar.</returns>
-        public static implicit operator Text?(CalendarComponent? file)
-        {
-            if (file is null)
-                return null;
-            Text? ReturnValue = AnythingToTextConverter.Convert(file);
-            if (ReturnValue is not null)
-                ReturnValue.Title ??= file.Descriptions.FirstOrDefault()?.Value;
-            return ReturnValue;
-        }
 
         /// <summary>
         /// Determines whether two Calendar objects are not equal.
@@ -791,31 +704,11 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
-        /// Adds an alarm to the Calendar item.
-        /// </summary>
-        /// <param name="action">Action taken by the alarm</param>
-        /// <param name="trigger">
-        /// Trigger for the alarm (ex: "-P2D" = 2 days before the event, "-PT30M" = 30 minutes
-        /// before the event, see https://icalendar.org/iCalendar-RFC-5545/3-6-6-alarm-component.html)
-        /// </param>
-        /// <param name="description">Description of the alarm</param>
-        /// <returns>The alarm that was added.</returns>
-        public CalendarAlarm AddAlarm(string action, string trigger, string description)
-        {
-            var NewAlarm = new CalendarAlarm();
-            NewAlarm.Fields.Add(new KeyValueField(CommonCalendarFields.Action, Array.Empty<KeyValueParameter>(), action));
-            NewAlarm.Fields.Add(new KeyValueField(CommonCalendarFields.Trigger, Array.Empty<KeyValueParameter>(), trigger));
-            NewAlarm.Fields.Add(new KeyValueField(CommonCalendarFields.Description, Array.Empty<KeyValueParameter>(), description));
-            Alarms.Add(NewAlarm);
-            return NewAlarm;
-        }
-
-        /// <summary>
         /// Compares the Calendar to another Calendar based on their content.
         /// </summary>
         /// <param name="other">The other Calendar to compare.</param>
         /// <returns>An integer that indicates the relative order of the Calendars.</returns>
-        public override int CompareTo(CalendarComponent? other) => string.Compare(other?.GetContent(), GetContent(), StringComparison.OrdinalIgnoreCase);
+        public int CompareTo(CalendarComponent? other) => string.Compare(other?.GetContent(), GetContent(), StringComparison.OrdinalIgnoreCase);
 
         /// <summary>
         /// Converts the object to the Calendar.
@@ -863,7 +756,7 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="other">The other Calendar to compare.</param>
         /// <returns>True if the Calendars are equal; otherwise, false.</returns>
-        public override bool Equals(CalendarComponent? other) => string.Equals(GetContent(), other?.GetContent(), StringComparison.OrdinalIgnoreCase);
+        public bool Equals(CalendarComponent? other) => string.Equals(GetContent(), other?.GetContent(), StringComparison.OrdinalIgnoreCase);
 
         /// <summary>
         /// Determines whether the Calendar is equal to another object.
@@ -876,7 +769,7 @@ namespace Archivist.DataTypes
         /// Gets the content of the Calendar.
         /// </summary>
         /// <returns>The content of the Calendar.</returns>
-        public override string? GetContent() => string.Join(Environment.NewLine, Fields.Where(field => field is not null));
+        public string? GetContent() => string.Join(Environment.NewLine, Fields.Where(field => field is not null));
 
         /// <inheritdoc/>
         public IEnumerator<KeyValueField?> GetEnumerator() => ((IEnumerable<KeyValueField?>)Fields).GetEnumerator();
@@ -889,31 +782,5 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <returns>The hash code of the Calendar.</returns>
         public override int GetHashCode() => GetContent()?.GetHashCode(StringComparison.OrdinalIgnoreCase) ?? 0;
-
-        /// <summary>
-        /// Converts the Calendar to the specified object type.
-        /// </summary>
-        /// <typeparam name="TFile">The type to convert the Calendar to.</typeparam>
-        /// <returns>The converted Calendar.</returns>
-        public override TFile? ToFileType<TFile>()
-            where TFile : default
-        {
-            Type FileType = typeof(TFile);
-            IGenericFile? ReturnValue;
-            if (FileType == typeof(CalendarComponent))
-                ReturnValue = this;
-            else if (FileType == typeof(Table))
-                ReturnValue = (Table?)this;
-            else if (FileType == typeof(Tables))
-                ReturnValue = (Tables?)this;
-            else if (FileType == typeof(Text))
-                ReturnValue = (Text?)this;
-            else if (FileType == typeof(StructuredObject))
-                ReturnValue = (StructuredObject?)this;
-            else
-                ReturnValue = (IGenericFile?)Converter?.Convert(this, typeof(TFile));
-
-            return (TFile?)ReturnValue;
-        }
     }
 }

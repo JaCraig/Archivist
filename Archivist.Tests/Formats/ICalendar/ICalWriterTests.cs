@@ -22,14 +22,15 @@ namespace Archivist.Tests.Formats.ICalendar
         public async Task CanCallWriteAsync()
         {
             // Arrange
-            var File = new CalendarComponent
+            var File = new Calendar();
+            File.Events.Add(new CalendarComponent(File)
             {
                 StartDate = new System.DateTime(2024, 8, 12, 0, 11, 23),
                 EndDate = new System.DateTime(2024, 8, 12, 2, 11, 23),
                 DateStamp = new System.DateTime(2024, 8, 12, 0, 11, 23),
                 Created = new System.DateTime(2024, 8, 12, 0, 11, 23),
                 LastModified = new System.DateTime(2024, 8, 12, 0, 14, 15)
-            };
+            });
             var Stream = new MemoryStream();
 
             // Act
@@ -45,18 +46,19 @@ namespace Archivist.Tests.Formats.ICalendar
         }
 
         [Fact]
-        public async Task CanCallWriteAsyncWithCustomFields()
+        public async Task CanCallWriteAsyncWithCustomFieldsAsync()
         {
             // Arrange
-            var File = new CalendarComponent
+            var File = new Calendar();
+            File.Events.Add(new CalendarComponent(File)
             {
                 StartDate = new System.DateTime(2024, 8, 12, 0, 11, 23),
                 EndDate = new System.DateTime(2024, 8, 12, 2, 11, 23),
                 DateStamp = new System.DateTime(2024, 8, 12, 0, 11, 23),
                 Created = new System.DateTime(2024, 8, 12, 0, 11, 23),
                 LastModified = new System.DateTime(2024, 8, 12, 0, 14, 15)
-            };
-            File.Fields.Add(new KeyValueField("X-TEST", Array.Empty<KeyValueParameter>(), "Test"));
+            });
+            File.Events[0].Fields.Add(new KeyValueField("X-TEST", Array.Empty<KeyValueParameter>(), "Test"));
 
             var Stream = new MemoryStream();
 
@@ -73,7 +75,7 @@ namespace Archivist.Tests.Formats.ICalendar
         }
 
         [Fact]
-        public async Task CanCallWriteAsyncWithNullFile()
+        public async Task CanCallWriteAsyncWithNullFileAsync()
         {
             // Arrange
             var Stream = new MemoryStream();
@@ -86,10 +88,10 @@ namespace Archivist.Tests.Formats.ICalendar
         }
 
         [Fact]
-        public async Task CanCallWriteAsyncWithNullStream()
+        public async Task CanCallWriteAsyncWithNullStreamAsync()
         {
             // Arrange
-            var File = new CalendarComponent();
+            var File = new Calendar();
 
             // Act
             var Result = await _TestClass.WriteAsync(File, default);
@@ -99,7 +101,7 @@ namespace Archivist.Tests.Formats.ICalendar
         }
 
         [Fact]
-        public async Task CanCallWriteAsyncWithNullValues()
+        public async Task CanCallWriteAsyncWithNullValuesAsync()
         {
             // Act
             var Result = await _TestClass.WriteAsync(default, default);

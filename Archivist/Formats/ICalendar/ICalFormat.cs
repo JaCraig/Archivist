@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 
 namespace Archivist.Formats.ICalendar
 {
@@ -11,8 +12,9 @@ namespace Archivist.Formats.ICalendar
         /// <summary>
         /// Initializes a new instance of the <see cref="ICalFormat"/> class.
         /// </summary>
-        public ICalFormat()
-            : base(new ICalReader(), new ICalWriter())
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public ICalFormat(Convertinator? converter)
+            : base(new ICalReader(converter), new ICalWriter())
         {
         }
 

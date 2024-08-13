@@ -15,16 +15,17 @@ namespace Archivist.Converters
         /// </summary>
         /// <param name="file">The Card object to convert.</param>
         /// <returns>The converted Calendar object.</returns>
-        public static CalendarComponent? Convert(Card? file)
+        public static Calendar? Convert(Card? file)
         {
             if (file is null)
                 return null;
-            var ReturnValue = new CalendarComponent();
+            var ReturnValue = new Calendar();
+            CalendarComponent Component = ReturnValue.AddEvent("", "", "", DateTime.Now, DateTime.Now);
             foreach (KeyValueField? Field in file.Fields)
             {
                 if (Field is null)
                     continue;
-                ReturnValue.Fields.Add(new KeyValueField(Field));
+                Component.Fields.Add(new KeyValueField(Field));
             }
             foreach (KeyValuePair<string, string> Metadata in file.Metadata)
             {
@@ -40,7 +41,7 @@ namespace Archivist.Converters
         /// <param name="source">The source type.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>True if the conversion is possible, otherwise false.</returns>
-        public bool CanConvert(Type? source, Type? destination) => source == typeof(Card) && destination == typeof(CalendarComponent);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(Card) && destination == typeof(Calendar);
 
         /// <summary>
         /// Converts an object from the source type to the destination type.

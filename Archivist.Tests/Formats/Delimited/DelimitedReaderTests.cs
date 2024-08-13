@@ -13,8 +13,8 @@ namespace Archivist.Tests.Formats.Delimited
     {
         public DelimitedReaderTests()
         {
-            _TestClass = new DelimitedReader(DelimitedOptions.Default);
-            TestObject = new DelimitedReader(DelimitedOptions.Default);
+            _TestClass = new DelimitedReader(DelimitedOptions.Default, null);
+            TestObject = new DelimitedReader(DelimitedOptions.Default, null);
         }
 
         private readonly DelimitedReader _TestClass;
@@ -36,7 +36,7 @@ namespace Archivist.Tests.Formats.Delimited
         public void CanConstruct()
         {
             // Act
-            var Instance = new DelimitedReader(DelimitedOptions.Default);
+            var Instance = new DelimitedReader(DelimitedOptions.Default, null);
 
             // Assert
             Assert.NotNull(Instance);

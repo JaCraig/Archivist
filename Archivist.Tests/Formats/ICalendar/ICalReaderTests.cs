@@ -13,8 +13,8 @@ namespace Archivist.Tests.Formats.ICalendar
     {
         public ICalReaderTests()
         {
-            _TestClass = new ICalReader();
-            TestObject = new ICalReader();
+            _TestClass = new ICalReader(null);
+            TestObject = new ICalReader(null);
         }
 
         private readonly ICalReader _TestClass;
@@ -52,45 +52,28 @@ namespace Archivist.Tests.Formats.ICalendar
 
             // Assert
             Assert.NotNull(Result);
+            Calendar CalResult = Assert.IsAssignableFrom<Calendar>(Result);
 
-            /*BEGIN:VCALENDAR
-PRODID:-//RDU Software//NONSGML HandCal//EN
-VERSION:2.0
-BEGIN:VTIMEZONE
-TZID:America/New_York
-BEGIN:STANDARD
-DTSTART:19981025T020000
-TZOFFSETFROM:-0400
-TZOFFSETTO:-0500
-TZNAME:EST
-END:STANDARD
-BEGIN:DAYLIGHT
-DTSTART:19990404T020000
-TZOFFSETFROM:-0500
-TZOFFSETTO:-0400
-TZNAME:EDT
-END:DAYLIGHT
-END:VTIMEZONE
-BEGIN:VEVENT
-DTSTAMP:19980309T231000Z
-UID:guid-1.example.com
-ORGANIZER:mailto:mrbig@example.com
-ATTENDEE;RSVP=TRUE;ROLE=REQ-PARTICIPANT;CUTYPE=GROUP:mailto:employee-A@example.com
-DESCRIPTION:Project XYZ Review Meeting
-CATEGORIES:MEETING
-CLASS:PUBLIC
-CREATED:19980309T130000Z
-SUMMARY:XYZ Project Review
-DTSTART;TZID=America/New_York:19980312T083000
-DTEND;TZID=America/New_York:19980312T093000
-LOCATION:1CP Conference Room 4350
-END:VEVENT
-BEGIN: VALARM
-TRIGGER:-P2D
-ACTION: DISPLAY
-DESCRIPTION:Project XYZ Review Meeting
-END:VALARM
-END:VCALENDAR*/
+            CalendarComponent ResultEvent = Assert.Single(CalResult.Events);
+            Assert.NotNull(ResultEvent);
+            Assert.Equal(new DateTime(1998, 3, 9, 23, 10, 0, DateTimeKind.Utc), ResultEvent.DateStampUtc);
+            Assert.Equal("guid-1.example.com", ResultEvent.UID);
+            Assert.Equal("mailto:mrbig@example.com", ResultEvent.Organizers.FirstOrDefault()?.Value);
+            Assert.Equal("mailto:employee-A@example.com", ResultEvent.Attendees.FirstOrDefault()?.Value);
+            Assert.Equal(new DateTime(1998, 3, 12, 8, 30, 0, DateTimeKind.Utc), ResultEvent.StartDateUtc);
+            Assert.Equal(new DateTime(1998, 3, 12, 9, 30, 0, DateTimeKind.Utc), ResultEvent.EndDateUtc);
+            Assert.Equal(new DateTime(1998, 3, 9, 13, 0, 0, DateTimeKind.Utc), ResultEvent.CreatedUtc);
+            Assert.Equal("PUBLIC", ResultEvent.Class);
+            Assert.Equal("MEETING", ResultEvent.Categories.FirstOrDefault()?.Value);
+            Assert.Equal("XYZ Project Review", ResultEvent.Summary);
+            Assert.Equal("Project XYZ Review Meeting", ResultEvent.Description);
+            Assert.Equal("1CP Conference Room 4350", ResultEvent.Location);
+
+            CalendarComponent ResultAlarm = Assert.Single(CalResult.Alarms);
+            Assert.NotNull(ResultAlarm);
+            Assert.Equal("-P2D", ResultAlarm.Trigger);
+            Assert.Equal("DISPLAY", ResultAlarm.Action);
+            Assert.Equal("Project XYZ Review Meeting", ResultAlarm.Description);
         }
 
         [Fact]
@@ -104,18 +87,19 @@ END:VCALENDAR*/
 
             // Assert
             Assert.NotNull(Result);
-            CalendarComponent CalResult = Assert.IsAssignableFrom<CalendarComponent>(Result);
+            Calendar CalResult = Assert.IsAssignableFrom<Calendar>(Result);
+            CalendarComponent ResultEvent = Assert.Single(CalResult.Events);
 
             Assert.Equal("-//xyz Corp//NONSGML PDA Calendar Version 1.0//EN", CalResult.ProductId);
-            Assert.Equal(new DateTime(1996, 7, 4, 12, 0, 0), CalResult.DateStampUtc);
-            Assert.Equal("uid1@example.com", CalResult.UID);
-            Assert.Equal("mailto:jsmith@example.com", CalResult.Organizers.FirstOrDefault()?.Value);
-            Assert.Equal(new DateTime(1996, 9, 18, 14, 30, 0, DateTimeKind.Utc), CalResult.StartDateUtc);
-            Assert.Equal(new DateTime(1996, 9, 20, 22, 0, 0, DateTimeKind.Utc), CalResult.EndDateUtc);
-            Assert.Equal("CONFIRMED", CalResult.Status);
-            Assert.Equal("CONFERENCE", CalResult.Categories.FirstOrDefault()?.Value);
-            Assert.Equal("Networld+Interop Conference", CalResult.Summary);
-            Assert.Equal("Networld+Interop Conference and Exhibit\nAtlanta World Congress Center\n Atlanta, Georgia", CalResult.Description);
+            Assert.Equal(new DateTime(1996, 7, 4, 12, 0, 0), ResultEvent.DateStampUtc);
+            Assert.Equal("uid1@example.com", ResultEvent.UID);
+            Assert.Equal("mailto:jsmith@example.com", ResultEvent.Organizers.FirstOrDefault()?.Value);
+            Assert.Equal(new DateTime(1996, 9, 18, 14, 30, 0, DateTimeKind.Utc), ResultEvent.StartDateUtc);
+            Assert.Equal(new DateTime(1996, 9, 20, 22, 0, 0, DateTimeKind.Utc), ResultEvent.EndDateUtc);
+            Assert.Equal("CONFIRMED", ResultEvent.Status);
+            Assert.Equal("CONFERENCE", ResultEvent.Categories.FirstOrDefault()?.Value);
+            Assert.Equal("Networld+Interop Conference", ResultEvent.Summary);
+            Assert.Equal("Networld+Interop Conference and Exhibit\nAtlanta World Congress Center\n Atlanta, Georgia", ResultEvent.Description);
         }
     }
 }

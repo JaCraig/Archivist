@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
@@ -20,9 +21,11 @@ namespace Archivist.Formats.XML
         /// Initializes a new instance of the <see cref="JsonReader"/> class.
         /// </summary>
         /// <param name="options">The options to use when deserializing JSON.</param>
-        public XMLReader(JsonSerializerSettings? options)
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public XMLReader(JsonSerializerSettings? options, Convertinator? converter)
         {
             Options = options ?? new JsonSerializerSettings();
+            _Converter = converter;
         }
 
         /// <summary>
@@ -36,6 +39,11 @@ namespace Archivist.Formats.XML
         private JsonSerializerSettings Options { get; }
 
         /// <summary>
+        /// The converter used to convert between IGenericFile objects.
+        /// </summary>
+        private readonly Convertinator? _Converter;
+
+        /// <summary>
         /// Reads a JSON file asynchronously from the specified stream.
         /// </summary>
         /// <param name="stream">The stream to read the JSON file from.</param>
@@ -43,21 +51,21 @@ namespace Archivist.Formats.XML
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             if (stream?.CanRead != true)
-                return new StructuredObject();
+                return new StructuredObject(_Converter, new ExpandoObject());
             var StreamData = await stream.ReadAllAsync().ConfigureAwait(false);
             if (string.IsNullOrEmpty(StreamData))
-                return new StructuredObject();
+                return new StructuredObject(_Converter, new ExpandoObject());
             var Doc = new XmlDocument();
             Doc.LoadXml(StreamData);
             var JsonContent = JsonConvert.SerializeXmlNode(Doc);
             if (string.IsNullOrEmpty(JsonContent))
-                return new StructuredObject();
+                return new StructuredObject(_Converter, new ExpandoObject());
 
             ExpandoObject? Data = JsonConvert.DeserializeObject<ExpandoObject>(JsonContent, Options);
             if (Data is null)
-                return new StructuredObject();
+                return new StructuredObject(_Converter, new ExpandoObject());
 
-            return new StructuredObject(CleanUpReturnValue(Data));
+            return new StructuredObject(_Converter, CleanUpReturnValue(Data));
         }
 
         /// <summary>

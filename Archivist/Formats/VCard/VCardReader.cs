@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
@@ -15,6 +16,15 @@ namespace Archivist.Formats.VCard
     /// </summary>
     public class VCardReader : ReaderBaseClass
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="VCardReader"/> class.
+        /// </summary>
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public VCardReader(Convertinator? converter)
+        {
+            _Converter = converter;
+        }
+
         /// <summary>
         /// Gets the header information of the VCard file.
         /// </summary>
@@ -36,6 +46,11 @@ namespace Archivist.Formats.VCard
         private static readonly string[] _Separator = new string[] { "\r\n", Environment.NewLine };
 
         /// <summary>
+        /// The converter used to convert between IGenericFile objects.
+        /// </summary>
+        private readonly Convertinator? _Converter;
+
+        /// <summary>
         /// Reads a VCard file asynchronously from the specified stream.
         /// </summary>
         /// <param name="stream">The stream to read the VCard file from.</param>
@@ -46,8 +61,8 @@ namespace Archivist.Formats.VCard
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             if (stream?.CanRead != true)
-                return new Card();
-            var ReturnValue = new Card();
+                return new Card(_Converter);
+            var ReturnValue = new Card(_Converter);
             var Content = await GetDataAsync(stream).ConfigureAwait(false);
             var Lines = Content.Split(_Separator, StringSplitOptions.RemoveEmptyEntries);
             if (Lines.Length is 0)

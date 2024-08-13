@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.Options;
 using Microsoft.Extensions.Options;
 
@@ -13,8 +14,10 @@ namespace Archivist.Formats.Excel
         /// <summary>
         /// Initializes a new instance of the <see cref="ExcelFormat"/> class.
         /// </summary>
-        public ExcelFormat(IOptions<ExcelOptions>? options)
-            : base(new ExcelReader(options?.Value ?? ExcelOptions.Default), new ExcelWriter())
+        /// <param name="options">The options to use when deserializing Excel.</param>
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public ExcelFormat(IOptions<ExcelOptions>? options, Convertinator? converter)
+            : base(new ExcelReader(options?.Value ?? ExcelOptions.Default, converter), new ExcelWriter())
         {
         }
 

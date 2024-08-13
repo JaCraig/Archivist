@@ -15,16 +15,19 @@ namespace Archivist.Converters
         /// </summary>
         /// <param name="file">The <see cref="CalendarComponent"/> object to convert.</param>
         /// <returns>The converted <see cref="Card"/> object.</returns>
-        public static Card? Convert(CalendarComponent? file)
+        public static Card? Convert(Calendar? file)
         {
             if (file is null)
                 return null;
             var ReturnValue = new Card();
-            foreach (KeyValueField? Field in file.Fields)
+            foreach (CalendarComponent Component in file.Components)
             {
-                if (Field is null)
-                    continue;
-                ReturnValue.Fields.Add(new KeyValueField(Field));
+                foreach (KeyValueField? Field in Component.Fields)
+                {
+                    if (Field is null)
+                        continue;
+                    ReturnValue.Fields.Add(new KeyValueField(Field));
+                }
             }
             foreach (KeyValuePair<string, string> Metadata in file.Metadata)
             {
@@ -44,7 +47,7 @@ namespace Archivist.Converters
         /// <c>true</c> if this converter can convert from the specified source type to the
         /// specified destination type; otherwise, <c>false</c>.
         /// </returns>
-        public bool CanConvert(Type? source, Type? destination) => source == typeof(CalendarComponent) && destination == typeof(Card);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(Calendar) && destination == typeof(Card);
 
         /// <summary>
         /// Converts the specified object to the specified destination type.
@@ -54,7 +57,7 @@ namespace Archivist.Converters
         /// <returns>The converted object.</returns>
         public object? Convert(object? source, Type? destination)
         {
-            if (source is not CalendarComponent File || destination is null)
+            if (source is not Calendar File || destination is null)
                 return null;
             return Convert(File);
         }

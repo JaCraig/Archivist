@@ -37,11 +37,11 @@ namespace Archivist.Tests.Converters
             var File = new StructuredObject();
 
             // Act
-            CalendarComponent? Result = StructuredObjectToCalendarConverter.Convert(File);
+            Calendar? Result = StructuredObjectToCalendarConverter.Convert(File);
 
             // Assert
             Assert.NotNull(Result);
-            _ = Assert.IsType<CalendarComponent>(Result);
+            _ = Assert.IsType<Calendar>(Result);
         }
 
         [Fact]
@@ -65,11 +65,11 @@ namespace Archivist.Tests.Converters
             var File = new StructuredObject();
 
             // Act
-            CalendarComponent? Result = StructuredObjectToCalendarConverter.Convert(File);
+            Calendar? Result = StructuredObjectToCalendarConverter.Convert(File);
 
             // Assert
             Assert.NotNull(Result);
-            Assert.Equal(File.Count, Result.Count);
+            Assert.Equal(File.Count, Result.Events[0].Count);
         }
     }
 }

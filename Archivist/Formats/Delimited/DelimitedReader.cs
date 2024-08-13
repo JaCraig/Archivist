@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
@@ -23,7 +24,9 @@ namespace Archivist.Formats.Delimited
         /// <summary>
         /// Initializes a new instance of the <see cref="DelimitedReader"/> class.
         /// </summary>
-        public DelimitedReader(DelimitedOptions options)
+        /// <param name="options">The options.</param>
+        /// <param name="converter">The converter.</param>
+        public DelimitedReader(DelimitedOptions options, Convertinator? converter)
         {
             string[] Delimiters = { ",", "|", "\t", "$", ";", ":" };
             foreach (var Delimiter in Delimiters)
@@ -31,6 +34,7 @@ namespace Archivist.Formats.Delimited
                 _DelimiterSplitters.Add(Delimiter, new Regex(string.Format(CultureInfo.InvariantCulture, "(?<Value>\"(?:[^\"]|\"\")*\"|[^{0}\r\n]*?)(?<Delimiter>{0}|\r\n|\n|$)", Regex.Escape(Delimiter)), RegexOptions.Compiled));
             }
             Options = options;
+            _Converter = converter;
         }
 
         /// <summary>
@@ -49,6 +53,11 @@ namespace Archivist.Formats.Delimited
         private DelimitedOptions Options { get; }
 
         /// <summary>
+        /// The converter
+        /// </summary>
+        private readonly Convertinator? _Converter;
+
+        /// <summary>
         /// Gets the delimiter splitters.
         /// </summary>
         private readonly Dictionary<string, Regex> _DelimiterSplitters = new();
@@ -60,7 +69,7 @@ namespace Archivist.Formats.Delimited
         /// <returns>The table read from the stream</returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            var ReturnValue = new Table();
+            var ReturnValue = new Table(_Converter);
             if (stream?.CanRead != true)
                 return ReturnValue;
             var FileContent = await stream.ReadAllAsync().ConfigureAwait(false);

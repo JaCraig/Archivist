@@ -20,7 +20,7 @@ namespace Archivist.Tests.Converters
         public void CanCallCanConvert()
         {
             // Arrange
-            Type Source = typeof(CalendarComponent);
+            Type Source = typeof(Calendar);
             Type Destination = typeof(string);
 
             // Act
@@ -34,7 +34,7 @@ namespace Archivist.Tests.Converters
         public void CanCallConvertWithFile()
         {
             // Arrange
-            var File = new CalendarComponent();
+            var File = new Calendar();
 
             // Act
             Card? Result = CalendarToCardConverter.Convert(File);
@@ -62,14 +62,16 @@ namespace Archivist.Tests.Converters
         public void ConvertWithFilePerformsMapping()
         {
             // Arrange
-            var File = new CalendarComponent();
+            var File = new Calendar();
+            _ = File.AddEvent("Summary", "Description", "Location", DateTime.Now, DateTime.Now);
 
             // Act
             Card? Result = CalendarToCardConverter.Convert(File);
 
             // Assert
-            Assert.Equal(File.Count, Result.Count);
-            Assert.Same(File.Fields, Result.Fields);
+            Assert.NotNull(Result);
+            Assert.Equal(File.Events.Count, Result.Count);
+            Assert.Same(File.Events[0].Fields, Result.Fields);
         }
     }
 }

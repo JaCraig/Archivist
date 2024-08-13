@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
@@ -14,9 +15,23 @@ namespace Archivist.Formats.Txt
     public class TextReader : ReaderBaseClass
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="TextReader"/> class.
+        /// </summary>
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public TextReader(Convertinator? converter)
+        {
+            _Converter = converter;
+        }
+
+        /// <summary>
         /// Gets the header information of the text file.
         /// </summary>
         public override byte[] HeaderInfo { get; } = Array.Empty<byte>();
+
+        /// <summary>
+        /// The converter used to convert between IGenericFile objects.
+        /// </summary>
+        private readonly Convertinator? _Converter;
 
         /// <summary>
         /// Reads the text file asynchronously.
@@ -29,7 +44,7 @@ namespace Archivist.Formats.Txt
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             var Content = await GetDataAsync(stream).ConfigureAwait(false);
-            return new Text(Content, Content.Left(30));
+            return new Text(_Converter, Content, Content.Left(30));
         }
 
         /// <summary>

@@ -97,7 +97,7 @@ namespace Archivist.DataTypes
         /// Converts the structured object to a calendar.
         /// </summary>
         /// <param name="structuredObject">The structured object to convert.</param>
-        public static implicit operator CalendarComponent?(StructuredObject? structuredObject)
+        public static implicit operator Calendar?(StructuredObject? structuredObject)
         {
             return StructuredObjectToCalendarConverter.Convert(structuredObject);
         }
@@ -452,8 +452,8 @@ namespace Archivist.DataTypes
             IGenericFile? ReturnValue;
             if (FileType == typeof(Card))
                 ReturnValue = (Card?)this;
-            else if (FileType == typeof(CalendarComponent))
-                ReturnValue = (CalendarComponent?)this;
+            else if (FileType == typeof(Calendar))
+                ReturnValue = (Calendar?)this;
             else if (FileType == typeof(Table))
                 ReturnValue = (Table?)this;
             else if (FileType == typeof(Tables))

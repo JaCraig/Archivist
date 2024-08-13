@@ -20,7 +20,7 @@ namespace Archivist.Tests.Converters
         public void CanCallCanConvert()
         {
             // Arrange
-            Type Source = typeof(CalendarComponent);
+            Type Source = typeof(Calendar);
             Type Destination = typeof(StructuredObject);
 
             // Act
@@ -34,7 +34,8 @@ namespace Archivist.Tests.Converters
         public void CanCallConvertWithFile()
         {
             // Arrange
-            var File = new CalendarComponent();
+            var File = new Calendar();
+            _ = File.AddEvent("Event", "Event", "Event", DateTime.Now, DateTime.Now);
 
             // Act
             StructuredObject? Result = CalendarToStructuredObjectConverter.Convert(File);
@@ -42,7 +43,7 @@ namespace Archivist.Tests.Converters
             // Assert
             Assert.NotNull(Result);
             _ = Assert.IsType<StructuredObject>(Result);
-            Assert.Equal(File.Count, Result.Count);
+            Assert.Equal(File.Events[0].Count, Result.Count);
         }
 
         [Fact]
@@ -63,14 +64,15 @@ namespace Archivist.Tests.Converters
         public void ConvertWithFilePerformsMapping()
         {
             // Arrange
-            var File = new CalendarComponent();
+            var File = new Calendar();
+            _ = File.AddEvent("Event", "Event", "Event", DateTime.Now, DateTime.Now);
 
             // Act
             StructuredObject? Result = CalendarToStructuredObjectConverter.Convert(File);
 
             // Assert
             Assert.NotNull(Result);
-            Assert.Equal(File.Count, Result.Count);
+            Assert.Equal(File.Events[0].Count, Result.Count);
         }
     }
 }

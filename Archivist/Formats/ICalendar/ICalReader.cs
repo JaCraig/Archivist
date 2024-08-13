@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
@@ -16,6 +17,15 @@ namespace Archivist.Formats.ICalendar
     public class ICalReader : ReaderBaseClass
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="ICalReader"/> class.
+        /// </summary>
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public ICalReader(Convertinator? converter)
+        {
+            Converter = converter;
+        }
+
+        /// <summary>
         /// Gets the header information of the ICal file.
         /// </summary>
         public override byte[] HeaderInfo { get; } = new byte[] { 0x42, 0x45, 0x47, 0x49, 0x4E, 0x3A, 0x56, 0x43, 0x41, 0x4C, 0x45, 0x4E, 0x44, 0x41, 0x52 };
@@ -29,6 +39,11 @@ namespace Archivist.Formats.ICalendar
         /// Gets the regular expression used to split the properties of the ICal file.
         /// </summary>
         private static Regex PropertySplitter { get; } = new Regex("(?<Property>[^;:]+);?(?<Parameters>[^:]+)?:(?<Value>.*)", RegexOptions.Compiled);
+
+        /// <summary>
+        /// Gets the converter used to convert between IGenericFile objects.
+        /// </summary>
+        private Convertinator? Converter { get; }
 
         /// <summary>
         /// Represents the separator used to split the lines of the ICal file.
@@ -45,14 +60,14 @@ namespace Archivist.Formats.ICalendar
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             if (stream?.CanRead != true)
-                return new CalendarComponent();
-            var ReturnValue = new CalendarComponent();
+                return new Calendar(Converter);
+            var ReturnValue = new Calendar(Converter);
             var Content = await GetDataAsync(stream).ConfigureAwait(false);
             var Lines = Content.Split(_Separator, StringSplitOptions.RemoveEmptyEntries);
             if (Lines.Length is 0)
                 return ReturnValue;
             var CurrentField = new KeyValueField("", Array.Empty<KeyValueParameter>(), "");
-            CalendarAlarm? CurrentAlarm = null;
+            var CurrentComponent = new CalendarComponent(ReturnValue);
             foreach (var Line in Lines)
             {
                 if (Line.StartsWith(' '))
@@ -69,24 +84,39 @@ namespace Archivist.Formats.ICalendar
                 switch (PropertyName)
                 {
                     case "VERSION":
+                        ReturnValue.Version = Value;
                         continue;
-                    case "BEGIN" or "END" when Value is "VCALENDAR" or "VEVENT":
+                    case "PRODID":
+                        ReturnValue.ProductId = Value;
+                        continue;
+                    case "METHOD":
+                        ReturnValue.Method = Value;
+                        continue;
+                    case "BEGIN" or "END" when Value is "VCALENDAR":
                         continue;
                     case "BEGIN" when Value is "VALARM":
-                        CurrentAlarm = new CalendarAlarm();
-                        ReturnValue.Alarms.Add(CurrentAlarm);
+                        CurrentComponent = ReturnValue.AddAlarm("", "", "");
                         continue;
-                    case "END" when Value is "VALARM":
-                        CurrentAlarm = null;
+                    case "BEGIN" when Value is "VEVENT":
+                        CurrentComponent = ReturnValue.AddEvent("", "", "", DateTime.Now, DateTime.Now);
+                        continue;
+                    case "BEGIN" when Value is "VTODO":
+                        CurrentComponent = ReturnValue.AddToDo();
+                        continue;
+                    case "BEGIN" when Value is "VJOURNAL":
+                        CurrentComponent = ReturnValue.AddJournal();
+                        continue;
+                    case "BEGIN" when Value is "VFREEBUSY":
+                        CurrentComponent = ReturnValue.AddFreeBusy();
+                        continue;
+                    case "BEGIN" when Value is "VTIMEZONE":
+                        CurrentComponent = ReturnValue.AddTimeZone();
                         continue;
                 }
                 IEnumerable<KeyValueParameter>? Parameters = ParseParameters(LineProperty.Groups["Parameters"]?.Value);
 
                 var Field = new KeyValueField(PropertyName, Parameters, Value);
-                if (CurrentAlarm is null)
-                    ReturnValue.Fields.Add(Field);
-                else
-                    CurrentAlarm.Fields.Add(Field);
+                CurrentComponent.Fields.Add(Field);
                 CurrentField = Field;
             }
             return ReturnValue;

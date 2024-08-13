@@ -15,11 +15,12 @@ namespace Archivist.Converters
         /// </summary>
         /// <param name="file">The Table object to convert.</param>
         /// <returns>The converted Calendar object.</returns>
-        public static CalendarComponent? Convert(Table? file)
+        public static Calendar? Convert(Table? file)
         {
             if (file is null)
                 return null;
-            var ReturnValue = new CalendarComponent() { Title = file.Title };
+            var ReturnValue = new Calendar() { Title = file.Title };
+            CalendarComponent Component = ReturnValue.AddEvent("", "", "", DateTime.Now, DateTime.Now);
             foreach (KeyValuePair<string, string> Metadata in file.Metadata)
             {
                 ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);
@@ -28,7 +29,7 @@ namespace Archivist.Converters
                 return ReturnValue;
             foreach (var Column in file.Columns)
             {
-                ReturnValue.Fields.Add(new KeyValueField(Column, Array.Empty<KeyValueParameter>(), file[0][Column].Content));
+                Component.Fields.Add(new KeyValueField(Column, Array.Empty<KeyValueParameter>(), file[0][Column].Content));
             }
             return ReturnValue;
         }
@@ -39,7 +40,7 @@ namespace Archivist.Converters
         /// <param name="source">The source type.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>True if the conversion is possible, otherwise false.</returns>
-        public bool CanConvert(Type? source, Type? destination) => source == typeof(Table) && destination == typeof(CalendarComponent);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(Table) && destination == typeof(Calendar);
 
         /// <summary>
         /// Converts the specified source object to the specified destination type.

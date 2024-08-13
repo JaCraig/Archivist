@@ -2,6 +2,7 @@
 using Archivist.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Archivist.Converters
 {
@@ -15,21 +16,24 @@ namespace Archivist.Converters
         /// </summary>
         /// <param name="file">The Calendar object to convert.</param>
         /// <returns>The converted Table object, or null if the Calendar object is null.</returns>
-        public static Table? Convert(CalendarComponent? file)
+        public static Table? Convert(Calendar? file)
         {
             if (file is null)
                 return null;
             var Table = new Table
             {
-                Title = file.Title ?? file.Summary
+                Title = file.Title ?? file.Events?.FirstOrDefault()?.Summary
             };
             TableRow Row = Table.AddRow();
-            foreach (KeyValueField? Field in file.Fields)
+            foreach (CalendarComponent Component in file.Components)
             {
-                if (Field is null)
-                    continue;
-                Row.Add(Field.Value);
-                Table.Columns.Add(Field.Property);
+                foreach (KeyValueField? Field in Component.Fields)
+                {
+                    if (Field is null)
+                        continue;
+                    Row.Add(Field.Value);
+                    Table.Columns.Add(Field.Property);
+                }
             }
             foreach (KeyValuePair<string, string> Metadata in file.Metadata)
             {
@@ -45,7 +49,7 @@ namespace Archivist.Converters
         /// <param name="source">The source type.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>True if the conversion is possible, otherwise false.</returns>
-        public bool CanConvert(Type? source, Type? destination) => source == typeof(CalendarComponent) && destination == typeof(Table);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(Calendar) && destination == typeof(Table);
 
         /// <summary>
         /// Converts the specified source object to the specified destination type.
@@ -55,7 +59,7 @@ namespace Archivist.Converters
         /// <returns>The converted object, or null if the conversion is not possible.</returns>
         public object? Convert(object? source, Type? destination)
         {
-            if (source is not CalendarComponent File || destination is null)
+            if (source is not Calendar File || destination is null)
                 return null;
             return Convert(File);
         }

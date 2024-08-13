@@ -37,11 +37,11 @@ namespace Archivist.Tests.Converters
             var File = new Card();
 
             // Act
-            CalendarComponent? Result = CardToCalendarConverter.Convert(File);
+            Calendar? Result = CardToCalendarConverter.Convert(File);
 
             // Assert
             Assert.NotNull(Result);
-            _ = Assert.IsType<CalendarComponent>(Result);
+            _ = Assert.IsType<Calendar>(Result);
         }
 
         [Fact]
@@ -65,12 +65,12 @@ namespace Archivist.Tests.Converters
             var File = new Card();
 
             // Act
-            CalendarComponent? Result = CardToCalendarConverter.Convert(File);
+            Calendar? Result = CardToCalendarConverter.Convert(File);
 
             // Assert
             Assert.NotNull(Result);
-            Assert.Equal(File.Count, Result.Count);
-            Assert.Same(File.Fields, Result.Fields);
+            Assert.Equal(File.Count, Result.Events[0].Count);
+            Assert.Same(File.Fields, Result.Events[0].Fields);
         }
     }
 }

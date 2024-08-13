@@ -1,5 +1,4 @@
 using Archivist.DataTypes;
-using Archivist.Interfaces;
 using Archivist.Tests.BaseClasses;
 using System;
 using System.Collections;
@@ -8,21 +7,23 @@ using Xunit;
 
 namespace Archivist.Tests.DataTypes
 {
-    public class CalendarEventTests : TestBaseClass<CalendarComponent>
+    public class CalendarComponentTests : TestBaseClass<CalendarComponent>
     {
-        public CalendarEventTests()
+        public CalendarComponentTests()
         {
-            _TestClass = new CalendarComponent();
-            TestObject = new CalendarComponent();
+            _Parent = new Calendar();
+            _TestClass = new CalendarComponent(_Parent);
+            TestObject = new CalendarComponent(new Calendar());
         }
 
+        private readonly Calendar _Parent;
         private readonly CalendarComponent _TestClass;
 
         [Fact]
         public void CanCallCompareTo()
         {
             // Arrange
-            var Other = new CalendarComponent();
+            var Other = new CalendarComponent(_Parent);
 
             // Act
             var Result = _TestClass.CompareTo(Other);
@@ -36,7 +37,7 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Obj = new TestClass { Summary = "Example summary/subject" };
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
 
             // Act
             TestClass.ConvertFrom(Obj);
@@ -49,7 +50,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallConvertTo()
         {
             // Arrange
-            var TestClass = new CalendarComponent
+            var TestClass = new CalendarComponent(_Parent)
             {
                 Summary = "Example summary/subject"
             };
@@ -65,8 +66,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualityOperator()
         {
             // Arrange
-            var Left = new CalendarComponent();
-            var Right = new CalendarComponent();
+            var Left = new CalendarComponent(_Parent);
+            var Right = new CalendarComponent(_Parent);
 
             // Act
             var Result = Left == Right;
@@ -79,7 +80,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualityOperatorWithNullLeft()
         {
             // Act
-            var Result = default == new CalendarComponent();
+            var Result = default == new CalendarComponent(_Parent);
 
             // Assert
             Assert.True(Result);
@@ -89,7 +90,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualityOperatorWithNullRight()
         {
             // Act
-            var Result = new CalendarComponent() == default;
+            var Result = new CalendarComponent(_Parent) == default;
 
             // Assert
             Assert.True(Result);
@@ -99,7 +100,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualsWithCalendar()
         {
             // Arrange
-            var Other = new CalendarComponent
+            var Other = new CalendarComponent(_Parent)
             {
                 Class = "TestValue1706702071"
             };
@@ -109,6 +110,20 @@ namespace Archivist.Tests.DataTypes
 
             // Assert
             Assert.False(Result);
+        }
+
+        [Fact]
+        public void CanCallEqualsWithCalendarComponent()
+        {
+            // Arrange
+            var Other = new CalendarComponent(new Calendar());
+            var TestClass = new CalendarComponent(new Calendar());
+
+            // Act
+            var Result = TestClass.Equals(Other);
+
+            // Assert
+            Assert.True(Result);
         }
 
         [Fact]
@@ -128,7 +143,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGetContent()
         {
             // Arrange
-            var TestClass = new CalendarComponent
+            var TestClass = new CalendarComponent(_Parent)
             {
                 Summary = "TestValue1453032876"
             };
@@ -173,8 +188,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanEqualToOperator()
         {
             // Arrange
-            var Left = new CalendarComponent();
-            var Right = new CalendarComponent();
+            var Left = new CalendarComponent(_Parent);
+            var Right = new CalendarComponent(_Parent);
 
             // Act
             var Result = Left >= Right;
@@ -187,7 +202,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanEqualToOperatorWithNullLeft()
         {
             // Act
-            var Result = default(CalendarComponent) >= new CalendarComponent();
+            var Result = default(CalendarComponent) >= new CalendarComponent(_Parent);
 
             // Assert
             Assert.True(Result);
@@ -197,7 +212,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanEqualToOperatorWithNullRight()
         {
             // Act
-            var Result = new CalendarComponent() >= default(CalendarComponent);
+            var Result = new CalendarComponent(_Parent) >= default(CalendarComponent);
 
             // Assert
             Assert.True(Result);
@@ -207,8 +222,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanOperator()
         {
             // Arrange
-            var Left = new CalendarComponent();
-            var Right = new CalendarComponent();
+            var Left = new CalendarComponent(_Parent);
+            var Right = new CalendarComponent(_Parent);
 
             // Act
             var Result = Left > Right;
@@ -221,7 +236,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanOperatorWithNullLeft()
         {
             // Act
-            var Result = default(CalendarComponent) > new CalendarComponent();
+            var Result = default(CalendarComponent) > new CalendarComponent(_Parent);
 
             // Assert
             Assert.False(Result);
@@ -231,7 +246,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanOperatorWithNullRight()
         {
             // Act
-            var Result = new CalendarComponent() > default(CalendarComponent);
+            var Result = new CalendarComponent(_Parent) > default(CalendarComponent);
 
             // Assert
             Assert.False(Result);
@@ -241,8 +256,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallInequalityOperator()
         {
             // Arrange
-            var Left = new CalendarComponent();
-            var Right = new CalendarComponent();
+            var Left = new CalendarComponent(_Parent);
+            var Right = new CalendarComponent(_Parent);
 
             // Act
             var Result = Left != Right;
@@ -255,7 +270,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallInequalityOperatorWithNullLeft()
         {
             // Act
-            var Result = default != new CalendarComponent();
+            var Result = default != new CalendarComponent(_Parent);
 
             // Assert
             Assert.True(Result);
@@ -265,7 +280,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallInequalityOperatorWithNullRight()
         {
             // Act
-            var Result = new CalendarComponent() != default;
+            var Result = new CalendarComponent(_Parent) != default;
 
             // Assert
             Assert.True(Result);
@@ -275,8 +290,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanEqualToOperator()
         {
             // Arrange
-            var Left = new CalendarComponent();
-            var Right = new CalendarComponent();
+            var Left = new CalendarComponent(_Parent);
+            var Right = new CalendarComponent(_Parent);
 
             // Act
             var Result = Left <= Right;
@@ -289,7 +304,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanEqualToOperatorWithNullLeft()
         {
             // Act
-            var Result = default(CalendarComponent) <= new CalendarComponent();
+            var Result = default(CalendarComponent) <= new CalendarComponent(_Parent);
 
             // Assert
             Assert.True(Result);
@@ -299,7 +314,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanEqualToOperatorWithNullRight()
         {
             // Act
-            var Result = new CalendarComponent() <= default(CalendarComponent);
+            var Result = new CalendarComponent(_Parent) <= default(CalendarComponent);
 
             // Assert
             Assert.True(Result);
@@ -309,8 +324,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanOperator()
         {
             // Arrange
-            var Left = new CalendarComponent();
-            var Right = new CalendarComponent();
+            var Left = new CalendarComponent(_Parent);
+            var Right = new CalendarComponent(_Parent);
 
             // Act
             var Result = Left < Right;
@@ -323,7 +338,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanOperatorWithNullLeft()
         {
             // Act
-            var Result = default(CalendarComponent) < new CalendarComponent();
+            var Result = default(CalendarComponent) < new CalendarComponent(_Parent);
 
             // Assert
             Assert.True(Result);
@@ -333,34 +348,17 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanOperatorWithNullRight()
         {
             // Act
-            var Result = new CalendarComponent() < default(CalendarComponent);
+            var Result = new CalendarComponent(_Parent) < default(CalendarComponent);
 
             // Assert
             Assert.False(Result);
         }
 
         [Fact]
-        public void CanCallToFileType()
-        {
-            // Act
-            Card? Result = _TestClass.ToFileType<Card>();
-
-            // Assert
-            Assert.NotNull(Result);
-            _ = Assert.IsType<Card>(Result);
-        }
-
-        [Fact]
         public void CanConstruct()
         {
             // Act
-            var Instance = new CalendarComponent(new Archivist.Converters.Convertinator(Array.Empty<IDataConverter>()));
-
-            // Assert
-            Assert.NotNull(Instance);
-
-            // Act
-            Instance = new CalendarComponent();
+            var Instance = new CalendarComponent(_Parent);
 
             // Assert
             Assert.NotNull(Instance);
@@ -371,15 +369,6 @@ namespace Archivist.Tests.DataTypes
         {
             // Assert
             IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Actions);
-
-            Assert.NotNull(Result);
-        }
-
-        [Fact]
-        public void CanGetAlarms()
-        {
-            // Assert
-            List<CalendarAlarm> Result = Assert.IsType<List<CalendarAlarm>>(_TestClass.Alarms);
 
             Assert.NotNull(Result);
         }
@@ -591,15 +580,6 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanGetIsCancelled()
-        {
-            // Assert
-            var Result = Assert.IsType<bool>(_TestClass.IsCancelled);
-
-            Assert.False(Result);
-        }
-
-        [Fact]
         public void CanGetLastModifieds()
         {
             // Assert
@@ -629,15 +609,6 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanGetMethods()
-        {
-            // Assert
-            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Methods);
-
-            Assert.NotNull(Result);
-        }
-
-        [Fact]
         public void CanGetOrganizers()
         {
             // Assert
@@ -651,15 +622,6 @@ namespace Archivist.Tests.DataTypes
         {
             // Assert
             IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.Priorities);
-
-            Assert.NotNull(Result);
-        }
-
-        [Fact]
-        public void CanGetProductIds()
-        {
-            // Assert
-            IEnumerable<KeyValueField> Result = Assert.IsAssignableFrom<IEnumerable<KeyValueField>>(_TestClass.ProductIds);
 
             Assert.NotNull(Result);
         }
@@ -845,10 +807,25 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanSetAndGetAction()
+        {
+            // Arrange
+            const string TestValue = "TestValue262265456";
+            var TestClass = new CalendarComponent(_Parent)
+            {
+                // Act
+                Action = TestValue
+            };
+
+            // Assert
+            Assert.Equal(TestValue, TestClass.Action);
+        }
+
+        [Fact]
         public void CanSetAndGetClass()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             const string TestValue = "TestValue1706702071";
 
             // Act
@@ -862,7 +839,7 @@ namespace Archivist.Tests.DataTypes
         public void CanSetAndGetCreated()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             DateTime TestValue = DateTime.UtcNow;
 
             // Act
@@ -873,24 +850,10 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanSetAndGetCurrentTimeZone()
-        {
-            // Arrange
-            var TestClass = new CalendarComponent();
-            TimeZoneInfo TestValue = TimeZoneInfo.Utc;
-
-            // Act
-            TestClass.CurrentTimeZone = TestValue;
-
-            // Assert
-            Assert.Same(TestValue, TestClass.CurrentTimeZone);
-        }
-
-        [Fact]
         public void CanSetAndGetDateStamp()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             DateTime TestValue = DateTime.UtcNow;
 
             // Act
@@ -904,7 +867,7 @@ namespace Archivist.Tests.DataTypes
         public void CanSetAndGetDescription()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             const string TestValue = "TestValue1159988007";
 
             // Act
@@ -918,7 +881,7 @@ namespace Archivist.Tests.DataTypes
         public void CanSetAndGetEndDate()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             DateTime TestValue = DateTime.UtcNow;
 
             // Act
@@ -932,7 +895,7 @@ namespace Archivist.Tests.DataTypes
         public void CanSetAndGetIndexerForInt()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             var TestValue = new KeyValueField(default!);
             TestClass.Fields.Add(new KeyValueField("A", Array.Empty<KeyValueParameter>(), "B"));
 
@@ -950,7 +913,7 @@ namespace Archivist.Tests.DataTypes
         public void CanSetAndGetLastModified()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             DateTime TestValue = DateTime.UtcNow;
 
             // Act
@@ -964,7 +927,7 @@ namespace Archivist.Tests.DataTypes
         public void CanSetAndGetLocation()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             const string TestValue = "TestValue2040051890";
 
             // Act
@@ -975,24 +938,10 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanSetAndGetMethod()
-        {
-            // Arrange
-            var TestClass = new CalendarComponent();
-            const string TestValue = "TestValue1545140120";
-
-            // Act
-            TestClass.Method = TestValue;
-
-            // Assert
-            Assert.Equal(TestValue, TestClass.Method);
-        }
-
-        [Fact]
         public void CanSetAndGetPriority()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             const string TestValue = "TestValue812364208";
 
             // Act
@@ -1003,24 +952,10 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanSetAndGetProductId()
-        {
-            // Arrange
-            var TestClass = new CalendarComponent();
-            const string TestValue = "TestValue661332337";
-
-            // Act
-            TestClass.ProductId = TestValue;
-
-            // Assert
-            Assert.Equal(TestValue, TestClass.ProductId);
-        }
-
-        [Fact]
         public void CanSetAndGetSequence()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             const string TestValue = "TestValue117496184";
 
             // Act
@@ -1034,7 +969,7 @@ namespace Archivist.Tests.DataTypes
         public void CanSetAndGetStartDate()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             DateTime TestValue = DateTime.UtcNow;
 
             // Act
@@ -1048,7 +983,7 @@ namespace Archivist.Tests.DataTypes
         public void CanSetAndGetStatus()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             const string TestValue = "TestValue1094523616";
 
             // Act
@@ -1062,7 +997,7 @@ namespace Archivist.Tests.DataTypes
         public void CanSetAndGetSummary()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             const string TestValue = "TestValue1453032876";
 
             // Act
@@ -1076,7 +1011,7 @@ namespace Archivist.Tests.DataTypes
         public void CanSetAndGetTransp()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             const string TestValue = "TestValue1121566459";
 
             // Act
@@ -1087,10 +1022,25 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanSetAndGetTrigger()
+        {
+            // Arrange
+            const string TestValue = "TestValue1040660138";
+            var TestClass = new CalendarComponent(_Parent)
+            {
+                // Act
+                Trigger = TestValue
+            };
+
+            // Assert
+            Assert.Equal(TestValue, TestClass.Trigger);
+        }
+
+        [Fact]
         public void CanSetAndGetUID()
         {
             // Arrange
-            var TestClass = new CalendarComponent();
+            var TestClass = new CalendarComponent(_Parent);
             const string TestValue = "TestValue5954655";
 
             // Act
@@ -1101,34 +1051,20 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanSetAndGetVersion()
-        {
-            // Arrange
-            var TestClass = new CalendarComponent();
-            const string TestValue = "TestValue1260476273";
-
-            // Act
-            TestClass.Version = TestValue;
-
-            // Assert
-            Assert.Equal(TestValue, TestClass.Version);
-        }
-
-        [Fact]
         public void ImplementsIComparable_Calendar()
         {
             // Arrange
-            var BaseValue = new CalendarComponent
+            var BaseValue = new CalendarComponent(_Parent)
             {
                 Summary = "A",
                 StartDate = DateTime.UtcNow.Date.AddDays(1)
             };
-            var EqualToBaseValue = new CalendarComponent
+            var EqualToBaseValue = new CalendarComponent(_Parent)
             {
                 Summary = "A",
                 StartDate = DateTime.UtcNow.Date.AddDays(1)
             };
-            var GreaterThanBaseValue = new CalendarComponent
+            var GreaterThanBaseValue = new CalendarComponent(_Parent)
             {
                 Summary = "B",
                 StartDate = DateTime.UtcNow.Date.AddDays(2)
@@ -1144,7 +1080,7 @@ namespace Archivist.Tests.DataTypes
         public void ImplementsIEnumerable_KeyValueField()
         {
             // Arrange
-            var Enumerable = new CalendarComponent();
+            var Enumerable = new CalendarComponent(_Parent);
             Enumerable.Fields.Add(new KeyValueField("A", Array.Empty<KeyValueParameter>(), "B"));
             Enumerable.Fields.Add(new KeyValueField("C", Array.Empty<KeyValueParameter>(), "D"));
             Enumerable.Fields.Add(new KeyValueField("E", Array.Empty<KeyValueParameter>(), "F"));
@@ -1170,17 +1106,17 @@ namespace Archivist.Tests.DataTypes
         public void ImplementsIEquatable_Calendar()
         {
             // Arrange
-            var TestClass = new CalendarComponent
+            var TestClass = new CalendarComponent(_Parent)
             {
                 Summary = "TestValue1706702071",
                 StartDate = DateTime.UtcNow.Date.AddDays(1)
             };
-            var Same = new CalendarComponent
+            var Same = new CalendarComponent(_Parent)
             {
                 Summary = "TestValue1706702071",
                 StartDate = DateTime.UtcNow.Date.AddDays(1)
             };
-            var Different = new CalendarComponent
+            var Different = new CalendarComponent(_Parent)
             {
                 Summary = "TestValue1706702071",
                 StartDate = DateTime.UtcNow.Date.AddDays(2)
