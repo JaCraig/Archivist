@@ -133,17 +133,14 @@ namespace Archivist.Formats.ICalendar
                 return;
             var CurrentDateTime = fileCal.LastModifiedUtc.ToString("yyyyMMddTHHmmssZ");
             // Add the Microsoft/Outlook specific fields.
-            _ = fileContent.AppendFormat("X-MICROSOFT-CDO-BUSYSTATUS:{0}", fileCal.Statuses.FirstOrDefault()?.Value ?? "BUSY")
-                        .AppendLine()
-                        .AppendLine("X-MICROSOFT-CDO-INSTTYPE:0")
-                        .AppendLine("X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY")
-                        .AppendLine("X-MICROSOFT-CDO-ALLDAYEVENT:FALSE")
-                        .AppendLine("X-MICROSOFT-CDO-IMPORTANCE:1")
-                        .AppendLine("X-MICROSOFT-CDO-OWNERAPPTID:-1")
-                        .AppendFormat("X-MICROSOFT-CDO-ATTENDEE-CRITICAL-CHANGE:{0}", CurrentDateTime)
-                        .AppendLine()
-                        .AppendFormat("X-MICROSOFT-CDO-OWNER-CRITICAL-CHANGE:{0}", CurrentDateTime)
-                        .AppendLine();
+            _ = fileContent.AppendFormat("X-MICROSOFT-CDO-BUSYSTATUS:{0}\r\n", fileCal.Statuses.FirstOrDefault()?.Value ?? "BUSY")
+                        .Append("X-MICROSOFT-CDO-INSTTYPE:0\r\n")
+                        .Append("X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY\r\n")
+                        .Append("X-MICROSOFT-CDO-ALLDAYEVENT:FALSE\r\n")
+                        .Append("X-MICROSOFT-CDO-IMPORTANCE:1\r\n")
+                        .Append("X-MICROSOFT-CDO-OWNERAPPTID:-1\r\n")
+                        .AppendFormat("X-MICROSOFT-CDO-ATTENDEE-CRITICAL-CHANGE:{0}\r\n", CurrentDateTime)
+                        .AppendFormat("X-MICROSOFT-CDO-OWNER-CRITICAL-CHANGE:{0}\r\n", CurrentDateTime);
         }
 
         /// <summary>
