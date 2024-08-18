@@ -17,8 +17,17 @@ namespace Archivist.Converters
         public Convertinator(IEnumerable<IDataConverter>? converters)
         {
             Converters = (IEnumerable<IDataConverter>?)(converters?.OrderByDescending(x => x?.GetType()?.Assembly == typeof(Convertinator).Assembly)) ?? Array.Empty<IDataConverter>();
+            Instance = this;
         }
 
+        /// <summary>
+        /// The singleton instance of the Convertinator class.
+        /// </summary>
+        internal static Convertinator? Instance { get; private set; }
+
+        /// <summary>
+        /// The collection of IDataConverter implementations.
+        /// </summary>
         private IEnumerable<IDataConverter> Converters { get; }
 
         /// <summary>

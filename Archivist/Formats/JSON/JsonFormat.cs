@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Newtonsoft.Json;
 
 namespace Archivist.Formats.JSON
@@ -12,8 +13,10 @@ namespace Archivist.Formats.JSON
         /// <summary>
         /// Initializes a new instance of the <see cref="JsonFormat"/> class.
         /// </summary>
-        public JsonFormat(JsonSerializerSettings? options)
-            : base(new JsonReader(options), new JsonWriter(options))
+        /// <param name="options">The options to use when deserializing JSON.</param>
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public JsonFormat(JsonSerializerSettings? options, Convertinator? converter)
+            : base(new JsonReader(options, converter), new JsonWriter(options))
         {
         }
 

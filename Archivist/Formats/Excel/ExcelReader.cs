@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.Interfaces;
 using Archivist.Options;
 using DocumentFormat.OpenXml.CustomProperties;
@@ -23,9 +24,11 @@ namespace Archivist.Formats.Excel
         /// Initializes a new instance of the <see cref="ExcelReader"/> class.
         /// </summary>
         /// <param name="options">The Excel options.</param>
-        public ExcelReader(ExcelOptions options)
+        /// <param name="converter">The converter.</param>
+        public ExcelReader(ExcelOptions options, Convertinator? converter)
         {
             Options = options;
+            _Converter = converter;
         }
 
         /// <summary>
@@ -58,6 +61,11 @@ namespace Archivist.Formats.Excel
         };
 
         /// <summary>
+        /// The converter.
+        /// </summary>
+        private readonly Convertinator? _Converter;
+
+        /// <summary>
         /// Determines if the reader can read the given stream as an Excel file.
         /// </summary>
         /// <param name="stream">The stream to read.</param>
@@ -88,7 +96,7 @@ namespace Archivist.Formats.Excel
         /// </returns>
         public override Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            var ReturnValue = new DataTypes.Tables();
+            var ReturnValue = new DataTypes.Tables(_Converter);
             if (stream?.CanRead != true)
                 return Task.FromResult<IGenericFile?>(ReturnValue);
 

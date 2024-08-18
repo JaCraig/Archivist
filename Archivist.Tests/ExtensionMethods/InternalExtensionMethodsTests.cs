@@ -13,6 +13,25 @@ namespace Archivist.Tests.ExtensionMethods
         protected override Type? ObjectType { get; } = typeof(InternalExtensionMethods);
 
         [Fact]
+        public static void CanCallFormatString()
+        {
+            // Arrange
+            const string Input = "TestValue2092900865";
+            const string Format = "@@@@####";
+
+            // Act
+            var Result = Input.FormatString(Format);
+
+            // Assert
+            Assert.Equal("Test2092", Result);
+        }
+
+        [Theory]
+        [InlineData(null)]
+        [InlineData("")]
+        public static void CannotCallFormatStringWithInvalidFormat(string? value) => Assert.Throws<ArgumentException>(() => "TestValue1901365958".FormatString(value!));
+
+        [Fact]
         public void AddSpaces_Should_AddSpacesBeforeEachCapitalLetter()
         {
             // Arrange

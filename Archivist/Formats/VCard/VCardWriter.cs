@@ -29,12 +29,12 @@ namespace Archivist.Formats.VCard
             if (FileCard is null)
                 return false;
             var FileContent = new StringBuilder("BEGIN:VCARD\r\nVERSION:4.0\r\n");
-            foreach (CardField? Field in FileCard.Fields)
+            foreach (KeyValueField? Field in FileCard.Fields)
             {
                 if (Field is null)
                     continue;
                 _ = FileContent.Append(Field.Property);
-                foreach (CardFieldParameter Parameter in Field.Parameters)
+                foreach (KeyValueParameter Parameter in Field.Parameters)
                 {
                     _ = FileContent.AppendFormat($";{Parameter.Name}={Parameter.Value}");
                 }

@@ -4,25 +4,25 @@ using Xunit;
 
 namespace Archivist.Tests.DataTypes
 {
-    public class CardFieldParameterTests : TestBaseClass<CardFieldParameter>
+    public class KeyValueParameterTests : TestBaseClass<KeyValueParameter>
     {
-        public CardFieldParameterTests()
+        public KeyValueParameterTests()
         {
             _Name = "TestValue293008716";
             _Value = "TestValue683907540";
-            _TestClass = new CardFieldParameter(_Name, _Value);
-            TestObject = new CardFieldParameter(_Name, _Value);
+            _TestClass = new KeyValueParameter(_Name, _Value);
+            TestObject = new KeyValueParameter(_Name, _Value);
         }
 
         private readonly string _Name;
-        private readonly CardFieldParameter _TestClass;
+        private readonly KeyValueParameter _TestClass;
         private readonly string _Value;
 
         [Fact]
         public void CanCallCompareTo()
         {
             // Arrange
-            var Other = new CardFieldParameter("TestValue22992092", "TestValue1579698638");
+            var Other = new KeyValueParameter("TestValue22992092", "TestValue1579698638");
 
             // Act
             var Result = _TestClass.CompareTo(Other);
@@ -35,8 +35,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualityOperator()
         {
             // Arrange
-            var Left = new CardFieldParameter("TestValue1517759331", "TestValue266124303");
-            var Right = new CardFieldParameter("TestValue1009878074", "TestValue1348750668");
+            var Left = new KeyValueParameter("TestValue1517759331", "TestValue266124303");
+            var Right = new KeyValueParameter("TestValue1009878074", "TestValue1348750668");
 
             // Act
             var Result = Left == Right;
@@ -49,7 +49,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualityOperatorWithNullLeft()
         {
             // Act
-            var Result = default == new CardFieldParameter("TestValue31692556", "TestValue46177473");
+            var Result = default == new KeyValueParameter("TestValue31692556", "TestValue46177473");
 
             // Assert
             Assert.False(Result);
@@ -59,7 +59,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualityOperatorWithNullRight()
         {
             // Act
-            var Result = new CardFieldParameter("TestValue31692556", "TestValue46177473") == default;
+            var Result = new KeyValueParameter("TestValue31692556", "TestValue46177473") == default;
 
             // Assert
             Assert.False(Result);
@@ -69,7 +69,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualsWithCardFieldParameter()
         {
             // Arrange
-            var Other = new CardFieldParameter("TestValue951797604", "TestValue1844731192");
+            var Other = new KeyValueParameter("TestValue951797604", "TestValue1844731192");
 
             // Act
             var Result = _TestClass.Equals(Other);
@@ -105,8 +105,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanEqualToOperator()
         {
             // Arrange
-            var Left = new CardFieldParameter("TestValue1923441644", "TestValue1921017293");
-            var Right = new CardFieldParameter("TestValue1977938827", "TestValue2014314808");
+            var Left = new KeyValueParameter("TestValue1923441644", "TestValue1921017293");
+            var Right = new KeyValueParameter("TestValue1977938827", "TestValue2014314808");
 
             // Act
             var Result = Left >= Right;
@@ -119,7 +119,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanEqualToOperatorWithNullLeft()
         {
             // Act
-            var Result = null >= new CardFieldParameter("TestValue31692556", "TestValue46177473");
+            var Result = null >= new KeyValueParameter("TestValue31692556", "TestValue46177473");
 
             // Assert
             Assert.False(Result);
@@ -129,7 +129,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanEqualToOperatorWithNullRight()
         {
             // Act
-            var Result = new CardFieldParameter("TestValue31692556", "TestValue46177473") >= null;
+            var Result = new KeyValueParameter("TestValue31692556", "TestValue46177473") >= null;
 
             // Assert
             Assert.True(Result);
@@ -139,8 +139,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanOperator()
         {
             // Arrange
-            var Left = new CardFieldParameter("TestValue398445081", "TestValue235020733");
-            var Right = new CardFieldParameter("TestValue1611362084", "TestValue716955240");
+            var Left = new KeyValueParameter("TestValue398445081", "TestValue235020733");
+            var Right = new KeyValueParameter("TestValue1611362084", "TestValue716955240");
 
             // Act
             var Result = Left > Right;
@@ -153,7 +153,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanOperatorWithNullLeft()
         {
             // Act
-            var Result = null > new CardFieldParameter("TestValue31692556", "TestValue46177473");
+            var Result = null > new KeyValueParameter("TestValue31692556", "TestValue46177473");
 
             // Assert
             Assert.False(Result);
@@ -163,7 +163,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGreaterThanOperatorWithNullRight()
         {
             // Act
-            var Result = new CardFieldParameter("TestValue31692556", "TestValue46177473") > null;
+            var Result = new KeyValueParameter("TestValue31692556", "TestValue46177473") > null;
 
             // Assert
             Assert.True(Result);
@@ -173,8 +173,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallInequalityOperator()
         {
             // Arrange
-            var Left = new CardFieldParameter("TestValue583298174", "TestValue2058693616");
-            var Right = new CardFieldParameter("TestValue870096427", "TestValue1327964166");
+            var Left = new KeyValueParameter("TestValue583298174", "TestValue2058693616");
+            var Right = new KeyValueParameter("TestValue870096427", "TestValue1327964166");
 
             // Act
             var Result = Left != Right;
@@ -187,7 +187,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallInequalityOperatorWithNullLeft()
         {
             // Act
-            var Result = default != new CardFieldParameter("TestValue31692556", "TestValue46177473");
+            var Result = default != new KeyValueParameter("TestValue31692556", "TestValue46177473");
 
             // Assert
             Assert.True(Result);
@@ -197,7 +197,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallInequalityOperatorWithNullRight()
         {
             // Act
-            var Result = new CardFieldParameter("TestValue31692556", "TestValue46177473") != default;
+            var Result = new KeyValueParameter("TestValue31692556", "TestValue46177473") != default;
 
             // Assert
             Assert.True(Result);
@@ -207,8 +207,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanEqualToOperator()
         {
             // Arrange
-            var Left = new CardFieldParameter("TestValue2101187830", "TestValue1570687676");
-            var Right = new CardFieldParameter("TestValue1656331521", "TestValue279464845");
+            var Left = new KeyValueParameter("TestValue2101187830", "TestValue1570687676");
+            var Right = new KeyValueParameter("TestValue1656331521", "TestValue279464845");
 
             // Act
             var Result = Left <= Right;
@@ -221,7 +221,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanEqualToOperatorWithNullLeft()
         {
             // Act
-            var Result = null <= new CardFieldParameter("TestValue31692556", "TestValue46177473");
+            var Result = null <= new KeyValueParameter("TestValue31692556", "TestValue46177473");
 
             // Assert
             Assert.True(Result);
@@ -231,7 +231,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanEqualToOperatorWithNullRight()
         {
             // Act
-            var Result = new CardFieldParameter("TestValue31692556", "TestValue46177473") <= null;
+            var Result = new KeyValueParameter("TestValue31692556", "TestValue46177473") <= null;
 
             // Assert
             Assert.False(Result);
@@ -241,8 +241,8 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanOperator()
         {
             // Arrange
-            var Left = new CardFieldParameter("TestValue886324691", "TestValue1018763552");
-            var Right = new CardFieldParameter("TestValue31082410", "TestValue770128656");
+            var Left = new KeyValueParameter("TestValue886324691", "TestValue1018763552");
+            var Right = new KeyValueParameter("TestValue31082410", "TestValue770128656");
 
             // Act
             var Result = Left < Right;
@@ -255,7 +255,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanOperatorWithNullLeft()
         {
             // Act
-            var Result = null < new CardFieldParameter("TestValue31692556", "TestValue46177473");
+            var Result = null < new KeyValueParameter("TestValue31692556", "TestValue46177473");
 
             // Assert
             Assert.True(Result);
@@ -265,7 +265,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallLessThanOperatorWithNullRight()
         {
             // Act
-            var Result = new CardFieldParameter("TestValue31692556", "TestValue46177473") < null;
+            var Result = new KeyValueParameter("TestValue31692556", "TestValue46177473") < null;
 
             // Assert
             Assert.False(Result);
@@ -285,7 +285,7 @@ namespace Archivist.Tests.DataTypes
         public void CanConstruct()
         {
             // Act
-            var Instance = new CardFieldParameter(_Name, _Value);
+            var Instance = new KeyValueParameter(_Name, _Value);
 
             // Assert
             Assert.NotNull(Instance);
@@ -294,12 +294,12 @@ namespace Archivist.Tests.DataTypes
         [Theory]
         [InlineData("")]
         [InlineData("   ")]
-        public void CanConstructWithInvalidName(string value) => _ = new CardFieldParameter(value, _Value);
+        public void CanConstructWithInvalidName(string value) => _ = new KeyValueParameter(value, _Value);
 
         [Theory]
         [InlineData("")]
         [InlineData("   ")]
-        public void CanConstructWithInvalidValue(string value) => _ = new CardFieldParameter(_Name, value);
+        public void CanConstructWithInvalidValue(string value) => _ = new KeyValueParameter(_Name, value);
 
         [Fact]
         public void CanSetAndGetName()
@@ -331,9 +331,9 @@ namespace Archivist.Tests.DataTypes
         public void ImplementsIComparable_CardFieldParameter()
         {
             // Arrange
-            var BaseValue = new CardFieldParameter("TestValue1529159469", "TestValue979813989");
-            var EqualToBaseValue = new CardFieldParameter("TestValue1529159469", "TestValue979813989");
-            var GreaterThanBaseValue = new CardFieldParameter("TestValue261425000", "TestValue1423806828");
+            var BaseValue = new KeyValueParameter("TestValue1529159469", "TestValue979813989");
+            var EqualToBaseValue = new KeyValueParameter("TestValue1529159469", "TestValue979813989");
+            var GreaterThanBaseValue = new KeyValueParameter("TestValue261425000", "TestValue1423806828");
 
             // Assert
             Assert.Equal(0, BaseValue.CompareTo(EqualToBaseValue));
@@ -345,9 +345,9 @@ namespace Archivist.Tests.DataTypes
         public void ImplementsIEquatable_CardFieldParameter()
         {
             // Arrange
-            var TestClass = new CardFieldParameter("TestValue1529159469", "TestValue979813989");
-            var Same = new CardFieldParameter("TestValue1529159469", "TestValue979813989");
-            var Different = new CardFieldParameter("TestValue261425000", "TestValue1423806828");
+            var TestClass = new KeyValueParameter("TestValue1529159469", "TestValue979813989");
+            var Same = new KeyValueParameter("TestValue1529159469", "TestValue979813989");
+            var Different = new KeyValueParameter("TestValue261425000", "TestValue1423806828");
 
             // Assert
             Assert.False(TestClass.Equals(default(object)));
@@ -365,9 +365,9 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void NameIsInitializedCorrectly() => Assert.Equal(_Name, new CardFieldParameter(_Name, _Value).Name);
+        public void NameIsInitializedCorrectly() => Assert.Equal(_Name, new KeyValueParameter(_Name, _Value).Name);
 
         [Fact]
-        public void ValueIsInitializedCorrectly() => Assert.Equal(_Value, new CardFieldParameter(_Name, _Value).Value);
+        public void ValueIsInitializedCorrectly() => Assert.Equal(_Value, new KeyValueParameter(_Name, _Value).Value);
     }
 }

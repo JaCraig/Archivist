@@ -11,10 +11,10 @@ namespace Archivist.Tests.Formats.Txt
     {
         public TextReaderTests()
         {
-            TestObject = new Archivist.Formats.Txt.TextReader();
+            TestObject = new Archivist.Formats.Txt.TextReader(null);
         }
 
-        private readonly Archivist.Formats.Txt.TextReader _TestClass = new();
+        private readonly Archivist.Formats.Txt.TextReader _TestClass = new(null);
 
         [Fact]
         public async Task CanCallReadAsync()
@@ -47,7 +47,7 @@ namespace Archivist.Tests.Formats.Txt
         {
             // Arrange
             Stream? StreamObj = null;
-            var TextReaderObj = new Archivist.Formats.Txt.TextReader();
+            var TextReaderObj = new Archivist.Formats.Txt.TextReader(null);
 
             // Act
             Interfaces.IGenericFile? Result = await TextReaderObj.ReadAsync(StreamObj);
@@ -64,7 +64,7 @@ namespace Archivist.Tests.Formats.Txt
         {
             // Arrange
             var Stream = new MemoryStream();
-            var TestClass = new Archivist.Formats.Txt.TextReader();
+            var TestClass = new Archivist.Formats.Txt.TextReader(null);
             const string ExpectedContent = "Sample text content that is longer than 30 characters";
             var ExpectedTitle = "Sample text content that is longer than 30 characters"[..30];
             Stream.Write(ExpectedContent.ToByteArray());

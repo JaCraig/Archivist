@@ -12,8 +12,8 @@ namespace Archivist.Tests.Formats.YAML
     {
         public YAMLFormatTests()
         {
-            _TestClass = new YAMLFormat();
-            TestObject = new YAMLFormat();
+            _TestClass = new YAMLFormat(null);
+            TestObject = new YAMLFormat(null);
         }
 
         private readonly YAMLFormat _TestClass;
@@ -22,7 +22,7 @@ namespace Archivist.Tests.Formats.YAML
         public void CanConstruct()
         {
             // Act
-            var Instance = new YAMLFormat();
+            var Instance = new YAMLFormat(null);
 
             // Assert
             Assert.NotNull(Instance);
@@ -52,7 +52,7 @@ namespace Archivist.Tests.Formats.YAML
         public async Task CanReadYAMLFileAsync()
         {
             // Arrange
-            var FormatObject = new YAMLFormat();
+            var FormatObject = new YAMLFormat(null);
             await using FileStream FileStream = new FileInfo("./TestData/TestYAML.yaml").OpenRead();
 
             // Act
@@ -67,7 +67,7 @@ namespace Archivist.Tests.Formats.YAML
         public async Task CanWriteYAMLFileAsync()
         {
             // Arrange
-            var Format = new YAMLFormat();
+            var Format = new YAMLFormat(null);
             var OutputStream = new MemoryStream();
             var Data = new StructuredObject();
             _ = Data.SetValue("name", "George Washington");

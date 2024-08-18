@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
@@ -19,8 +20,10 @@ namespace Archivist.Formats.YAML
         /// <summary>
         /// Initializes a new instance of the <see cref="YAMLReader"/> class.
         /// </summary>
-        public YAMLReader()
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public YAMLReader(Convertinator? converter)
         {
+            _Converter = converter;
             Deserializer = new DeserializerBuilder().WithNamingConvention(CamelCaseNamingConvention.Instance).Build();
         }
 
@@ -33,6 +36,11 @@ namespace Archivist.Formats.YAML
         /// The deserializer to use when deserializing YAML.
         /// </summary>
         private IDeserializer Deserializer { get; }
+
+        /// <summary>
+        /// The converter used to convert between IGenericFile objects.
+        /// </summary>
+        private readonly Convertinator? _Converter;
 
         /// <summary>
         /// Determines if the reader can read the specified stream.
@@ -71,7 +79,7 @@ namespace Archivist.Formats.YAML
             if (string.IsNullOrEmpty(StreamData))
                 return new StructuredObject();
             ExpandoObject? Data = Deserializer.Deserialize<ExpandoObject>(StreamData);
-            return new StructuredObject(Data ?? new ExpandoObject());
+            return new StructuredObject(_Converter, Data ?? new ExpandoObject());
         }
     }
 }

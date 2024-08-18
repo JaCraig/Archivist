@@ -29,7 +29,7 @@ namespace Archivist.DataTypes
         /// <param name="content">The content of the text file.</param>
         /// <param name="title">The title of the text file.</param>
         public Text(string? content, string? title)
-            : this(null, content, title)
+            : this(Convertinator.Instance, content, title)
         {
         }
 
@@ -37,7 +37,7 @@ namespace Archivist.DataTypes
         /// Initializes a new instance of the <see cref="Text"/> class.
         /// </summary>
         public Text()
-            : this(null, "", "")
+            : this(Convertinator.Instance, "", "")
         {
         }
 

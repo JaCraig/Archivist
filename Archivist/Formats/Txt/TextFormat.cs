@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 
 namespace Archivist.Formats.Txt
 {
@@ -10,8 +11,9 @@ namespace Archivist.Formats.Txt
         /// <summary>
         /// Initializes a new instance of the <see cref="TextFormat"/> class.
         /// </summary>
-        public TextFormat()
-            : base(new TextReader(), new TextWriter())
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public TextFormat(Convertinator? converter)
+            : base(new TextReader(converter), new TextWriter())
         {
         }
 

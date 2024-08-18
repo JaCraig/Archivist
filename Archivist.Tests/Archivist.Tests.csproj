@@ -20,9 +20,80 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="TestData\TestCSV.csv" />
+    <None Remove="TestData\TestDefault.boop" />
+    <None Remove="TestData\TestDOCX.docx" />
+    <None Remove="TestData\TestEml.eml" />
+    <None Remove="TestData\TestHTML.htm" />
+    <None Remove="TestData\TestICal.ics" />
+    <None Remove="TestData\TestMHTML.mht" />
+    <None Remove="TestData\TestMSG.msg" />
+    <None Remove="TestData\TestPDF.pdf" />
+    <None Remove="TestData\TestPPSX.ppsx" />
+    <None Remove="TestData\TestPPTX.pptx" />
+    <None Remove="TestData\TestRSS.rss" />
+    <None Remove="TestData\TestRSS2.rss" />
+    <None Remove="TestData\TestRTF.rtf" />
+    <None Remove="TestData\TestTXT.txt" />
+    <None Remove="TestData\TestVCal.vcs" />
+    <None Remove="TestData\TestVCF.vcf" />
     <None Remove="TestData\TestXLSX.xlsx" />
     <None Remove="TestData\TestXML.xml" />
     <None Remove="TestData\TestYAML.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TestData\TestCSV.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestDefault.boop">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestDOCX.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestEml.eml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestHTML.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestICal.ics">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestMHTML.mht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestMSG.msg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestPDF.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestPPSX.ppsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestPPTX.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestRSS.rss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestRSS2.rss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestRTF.rtf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestTXT.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestVCal.vcs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestVCF.vcf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

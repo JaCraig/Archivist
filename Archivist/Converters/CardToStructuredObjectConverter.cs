@@ -20,7 +20,7 @@ namespace Archivist.Converters
             if (file is null)
                 return null;
             var ReturnValue = new StructuredObject();
-            foreach (CardField? Field in file.Fields)
+            foreach (KeyValueField? Field in file.Fields)
             {
                 if (Field is null)
                     continue;

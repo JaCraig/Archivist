@@ -38,6 +38,21 @@ namespace Archivist.ExtensionMethods
         }
 
         /// <summary>
+        /// Formats a string using the specified format.
+        /// </summary>
+        /// <param name="input">Input string</param>
+        /// <param name="format">Format to use</param>
+        /// <returns>The formatted string</returns>
+        public static string FormatString(this string? input, string format)
+        {
+            if (string.IsNullOrEmpty(format) || !InternalStringFormatter.IsValid(format))
+            {
+                throw new ArgumentException("Format is not valid.", nameof(format));
+            }
+            return InternalStringFormatter.Format(input, format);
+        }
+
+        /// <summary>
         /// Gets the first x number of characters from the left hand side
         /// </summary>
         /// <param name="input">Input string</param>

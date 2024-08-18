@@ -22,7 +22,7 @@ namespace Archivist.Converters
             var ReturnValue = new Card();
             foreach (var Key in file.Keys)
             {
-                ReturnValue.Fields.Add(new CardField(Key, Array.Empty<CardFieldParameter>(), file[Key]?.ToString() ?? ""));
+                ReturnValue.Fields.Add(new KeyValueField(Key, Array.Empty<KeyValueParameter>(), file[Key]?.ToString() ?? ""));
             }
             foreach (KeyValuePair<string, string> Metadata in file.Metadata)
             {

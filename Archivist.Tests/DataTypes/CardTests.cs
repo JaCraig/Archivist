@@ -49,7 +49,7 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("FN", null, "John Doe"));
+            Card.Fields.Add(new KeyValueField("FN", null, "John Doe"));
 
             // Act
             TestClass? Result = Card.ConvertTo<TestClass>();
@@ -135,7 +135,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallGetEnumeratorWithNoParameters()
         {
             // Act
-            IEnumerator<CardField?> Result = _TestClass.GetEnumerator();
+            IEnumerator<KeyValueField?> Result = _TestClass.GetEnumerator();
 
             // Assert
             Assert.NotNull(Result);
@@ -327,7 +327,7 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("FN", null, "John Doe"));
+            Card.Fields.Add(new KeyValueField("FN", null, "John Doe"));
 
             //Act
             Table? Result = Card.ToFileType<Table>();
@@ -346,7 +346,7 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("FN", null, "John Doe"));
+            Card.Fields.Add(new KeyValueField("FN", null, "John Doe"));
 
             //Act
             var Result = (Table?)Card;
@@ -365,7 +365,7 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("FN", null, "John Doe"));
+            Card.Fields.Add(new KeyValueField("FN", null, "John Doe"));
 
             //Act
             var Result = (Text?)Card;
@@ -380,7 +380,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetAddresses()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Addresses;
+            IEnumerable<KeyValueField?> Results = _TestClass.Addresses;
 
             // Assert
             Assert.NotNull(Results);
@@ -390,7 +390,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetAnniversaries()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Anniversaries;
+            IEnumerable<KeyValueField?> Results = _TestClass.Anniversaries;
 
             // Assert
             Assert.NotNull(Results);
@@ -400,7 +400,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetBirthdays()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Birthdays;
+            IEnumerable<KeyValueField?> Results = _TestClass.Birthdays;
 
             // Assert
             Assert.NotNull(Results);
@@ -421,7 +421,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetEmails()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Emails;
+            IEnumerable<KeyValueField?> Results = _TestClass.Emails;
 
             // Assert
             Assert.NotNull(Results);
@@ -431,7 +431,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetFields()
         {
             // Assert
-            List<CardField> Result = Assert.IsType<List<CardField>>(_TestClass.Fields);
+            List<KeyValueField> Result = Assert.IsType<List<KeyValueField>>(_TestClass.Fields);
 
             Assert.NotNull(Result);
             Assert.Empty(Result);
@@ -441,7 +441,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetInstantMessengers()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.InstantMessengers;
+            IEnumerable<KeyValueField?> Results = _TestClass.InstantMessengers;
 
             // Assert
             Assert.NotNull(Results);
@@ -451,7 +451,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetLanguages()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Languages;
+            IEnumerable<KeyValueField?> Results = _TestClass.Languages;
 
             // Assert
             Assert.NotNull(Results);
@@ -461,7 +461,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetLogos()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Logos;
+            IEnumerable<KeyValueField?> Results = _TestClass.Logos;
 
             // Assert
             Assert.NotNull(Results);
@@ -471,7 +471,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetNicknames()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Nicknames;
+            IEnumerable<KeyValueField?> Results = _TestClass.Nicknames;
 
             // Assert
             Assert.NotNull(Results);
@@ -481,7 +481,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetNotes()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Notes;
+            IEnumerable<KeyValueField?> Results = _TestClass.Notes;
 
             // Assert
             Assert.NotNull(Results);
@@ -491,7 +491,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetOrganizations()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Organizations;
+            IEnumerable<KeyValueField?> Results = _TestClass.Organizations;
 
             // Assert
             Assert.NotNull(Results);
@@ -501,7 +501,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetPhoneNumbers()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.PhoneNumbers;
+            IEnumerable<KeyValueField?> Results = _TestClass.PhoneNumbers;
 
             // Assert
             Assert.NotNull(Results);
@@ -511,7 +511,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetPhotos()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Photos;
+            IEnumerable<KeyValueField?> Results = _TestClass.Photos;
 
             // Assert
             Assert.NotNull(Results);
@@ -521,7 +521,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetRoles()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Roles;
+            IEnumerable<KeyValueField?> Results = _TestClass.Roles;
 
             // Assert
             Assert.NotNull(Results);
@@ -531,7 +531,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetSounds()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Sounds;
+            IEnumerable<KeyValueField?> Results = _TestClass.Sounds;
 
             // Assert
             Assert.NotNull(Results);
@@ -541,7 +541,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetTimeZones()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.TimeZones;
+            IEnumerable<KeyValueField?> Results = _TestClass.TimeZones;
 
             // Assert
             Assert.NotNull(Results);
@@ -551,7 +551,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetTitles()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Titles;
+            IEnumerable<KeyValueField?> Results = _TestClass.Titles;
 
             // Assert
             Assert.NotNull(Results);
@@ -561,7 +561,7 @@ namespace Archivist.Tests.DataTypes
         public void CanGetWebsites()
         {
             // Assert
-            IEnumerable<CardField?> Results = _TestClass.Websites;
+            IEnumerable<KeyValueField?> Results = _TestClass.Websites;
 
             // Assert
             Assert.NotNull(Results);
@@ -583,8 +583,8 @@ namespace Archivist.Tests.DataTypes
         [Fact]
         public void CanSetAndGetIndexerForInt()
         {
-            var TestValue = new CardField("TestValue747048514", new[] { new CardFieldParameter("TestValue1416617271", "TestValue1522366486"), new CardFieldParameter("TestValue19427011", "TestValue1087865086"), new CardFieldParameter("TestValue396608921", "TestValue558580127") }, "TestValue277639823");
-            _ = Assert.IsType<CardField>(_TestClass[0]);
+            var TestValue = new KeyValueField("TestValue747048514", new[] { new KeyValueParameter("TestValue1416617271", "TestValue1522366486"), new KeyValueParameter("TestValue19427011", "TestValue1087865086"), new KeyValueParameter("TestValue396608921", "TestValue558580127") }, "TestValue277639823");
+            _ = Assert.IsType<KeyValueField>(_TestClass[0]);
             _TestClass[0] = TestValue;
             Assert.Same(TestValue, _TestClass[0]);
         }
@@ -648,7 +648,7 @@ namespace Archivist.Tests.DataTypes
             var BaseValue = new Card();
             var EqualToBaseValue = new Card();
             var GreaterThanBaseValue = new Card();
-            GreaterThanBaseValue.Fields.Add(new CardField("FN", null, "John Doe"));
+            GreaterThanBaseValue.Fields.Add(new KeyValueField("FN", null, "John Doe"));
 
             // Assert
             Assert.Equal(0, BaseValue.CompareTo(EqualToBaseValue));
@@ -661,21 +661,21 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Enumerable = new Card();
-            Enumerable.Fields.Add(new CardField("FN", null, "John Doe"));
-            Enumerable.Fields.Add(new CardField("EMAIL", null, "test@test.com"));
-            Enumerable.Fields.Add(new CardField("TEL", null, "1234567890"));
-            Enumerable.Fields.Add(new CardField("ADR", null, "123 Main St."));
+            Enumerable.Fields.Add(new KeyValueField("FN", null, "John Doe"));
+            Enumerable.Fields.Add(new KeyValueField("EMAIL", null, "test@test.com"));
+            Enumerable.Fields.Add(new KeyValueField("TEL", null, "1234567890"));
+            Enumerable.Fields.Add(new KeyValueField("ADR", null, "123 Main St."));
             const int ExpectedCount = 4;
             var ActualCount = 0;
 
             // Act
-            using (IEnumerator<CardField?> Enumerator = Enumerable.GetEnumerator())
+            using (IEnumerator<KeyValueField?> Enumerator = Enumerable.GetEnumerator())
             {
                 Assert.NotNull(Enumerator);
                 while (Enumerator.MoveNext())
                 {
                     ActualCount++;
-                    _ = Assert.IsType<CardField>(Enumerator.Current);
+                    _ = Assert.IsType<KeyValueField>(Enumerator.Current);
                 }
             }
 
@@ -690,7 +690,7 @@ namespace Archivist.Tests.DataTypes
             var Card = new Card();
             var Same = new Card();
             var Different = new Card();
-            Different.Fields.Add(new CardField("FN", null, "John Doe"));
+            Different.Fields.Add(new KeyValueField("FN", null, "John Doe"));
 
             // Assert
             Assert.False(Card.Equals(default(object)));
@@ -712,12 +712,12 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card1 = new Card();
-            Card1.Fields.Add(new CardField("FN", null, "John Doe"));
-            Card1.Fields.Add(new CardField("EMAIL", null, "johndoe@example.com"));
+            Card1.Fields.Add(new KeyValueField("FN", null, "John Doe"));
+            Card1.Fields.Add(new KeyValueField("EMAIL", null, "johndoe@example.com"));
 
             var Card2 = new Card();
-            Card2.Fields.Add(new CardField("FN", null, "Jane Doe"));
-            Card2.Fields.Add(new CardField("EMAIL", null, "janedoe@example.com"));
+            Card2.Fields.Add(new KeyValueField("FN", null, "Jane Doe"));
+            Card2.Fields.Add(new KeyValueField("EMAIL", null, "janedoe@example.com"));
 
             // Act
             var IsLessThan = Card1 < Card2;
@@ -737,8 +737,8 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("FN", null, "John Doe"));
-            Card.Fields.Add(new CardField("EMAIL", null, "johndoe@example.com"));
+            Card.Fields.Add(new KeyValueField("FN", null, "John Doe"));
+            Card.Fields.Add(new KeyValueField("EMAIL", null, "johndoe@example.com"));
 
             // Act
             var Content = Card.GetContent();
@@ -752,8 +752,8 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("FN", null, "John Doe"));
-            Card.Fields.Add(new CardField("EMAIL", null, "johndoe@example.com"));
+            Card.Fields.Add(new KeyValueField("FN", null, "John Doe"));
+            Card.Fields.Add(new KeyValueField("EMAIL", null, "johndoe@example.com"));
 
             // Act
             var Count = Card.Count;
@@ -767,16 +767,16 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card1 = new Card();
-            Card1.Fields.Add(new CardField("FN", null, "John Doe"));
-            Card1.Fields.Add(new CardField("EMAIL", null, "johndoe@example.com"));
+            Card1.Fields.Add(new KeyValueField("FN", null, "John Doe"));
+            Card1.Fields.Add(new KeyValueField("EMAIL", null, "johndoe@example.com"));
 
             var Card2 = new Card();
-            Card2.Fields.Add(new CardField("FN", null, "John Doe"));
-            Card2.Fields.Add(new CardField("EMAIL", null, "johndoe@example.com"));
+            Card2.Fields.Add(new KeyValueField("FN", null, "John Doe"));
+            Card2.Fields.Add(new KeyValueField("EMAIL", null, "johndoe@example.com"));
 
             var Card3 = new Card();
-            Card3.Fields.Add(new CardField("FN", null, "Jane Doe"));
-            Card3.Fields.Add(new CardField("EMAIL", null, "janedoe@example.com"));
+            Card3.Fields.Add(new KeyValueField("FN", null, "Jane Doe"));
+            Card3.Fields.Add(new KeyValueField("EMAIL", null, "janedoe@example.com"));
 
             // Act
             var AreEqual1 = Card1.Equals(Card2);
@@ -794,7 +794,7 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("N", null, "Doe;John"));
+            Card.Fields.Add(new KeyValueField("N", null, "Doe;John"));
 
             // Act
             var FirstName = Card.FirstName;
@@ -808,11 +808,11 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("FN", null, "John Doe"));
-            Card.Fields.Add(new CardField("EMAIL", null, "johndoe@example.com"));
+            Card.Fields.Add(new KeyValueField("FN", null, "John Doe"));
+            Card.Fields.Add(new KeyValueField("EMAIL", null, "johndoe@example.com"));
 
             // Act
-            CardField? Field = Card[1];
+            KeyValueField? Field = Card[1];
 
             // Assert
             Assert.Equal("EMAIL", Field?.Property);
@@ -824,15 +824,15 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("FN", null, "John Doe"));
-            Card.Fields.Add(new CardField("EMAIL", null, "johndoe@example.com"));
-            Card.Fields.Add(new CardField("TEL", null, "1234567890"));
+            Card.Fields.Add(new KeyValueField("FN", null, "John Doe"));
+            Card.Fields.Add(new KeyValueField("EMAIL", null, "johndoe@example.com"));
+            Card.Fields.Add(new KeyValueField("TEL", null, "1234567890"));
 
             // Act
-            IEnumerable<CardField?> Fields = Card["EMAIL"];
+            IEnumerable<KeyValueField?> Fields = Card["EMAIL"];
 
             // Assert
-            CardField? Field = Assert.Single(Fields);
+            KeyValueField? Field = Assert.Single(Fields);
             Assert.Equal("EMAIL", Field?.Property);
         }
 
@@ -841,15 +841,15 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("FN", null, "John Doe"));
-            Card.Fields.Add(new CardField("EMAIL", null, "johndoe@example.com"));
-            Card.Fields.Add(new CardField("TEL", new List<CardFieldParameter> { new("TYPE", "HOME") }, "1234567890"));
+            Card.Fields.Add(new KeyValueField("FN", null, "John Doe"));
+            Card.Fields.Add(new KeyValueField("EMAIL", null, "johndoe@example.com"));
+            Card.Fields.Add(new KeyValueField("TEL", new List<KeyValueParameter> { new("TYPE", "HOME") }, "1234567890"));
 
             // Act
-            IEnumerable<CardField?> Fields = Card["TEL", "TYPE=HOME"];
+            IEnumerable<KeyValueField?> Fields = Card["TEL", "TYPE=HOME"];
 
             // Assert
-            CardField? Field = Assert.Single(Fields);
+            KeyValueField? Field = Assert.Single(Fields);
             Assert.Equal("TEL", Field?.Property);
         }
 
@@ -858,7 +858,7 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("N", null, "Doe;John"));
+            Card.Fields.Add(new KeyValueField("N", null, "Doe;John"));
 
             // Act
             var LastName = Card.LastName;
@@ -872,7 +872,7 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("N", null, "Doe;John;Smith"));
+            Card.Fields.Add(new KeyValueField("N", null, "Doe;John;Smith"));
 
             // Act
             var MiddleName = Card.MiddleName;
@@ -886,7 +886,7 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("N", null, "Doe;John;Smith;Mr."));
+            Card.Fields.Add(new KeyValueField("N", null, "Doe;John;Smith;Mr."));
 
             // Act
             var Prefix = Card.Prefix;
@@ -900,7 +900,7 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var Card = new Card();
-            Card.Fields.Add(new CardField("N", null, "Doe;John;Smith;Mr.;Jr."));
+            Card.Fields.Add(new KeyValueField("N", null, "Doe;John;Smith;Mr.;Jr."));
 
             // Act
             var Suffix = Card.Suffix;

@@ -1,4 +1,6 @@
+using Archivist.Converters;
 using Archivist.Formats.Delimited;
+using Archivist.Interfaces;
 using Archivist.Options;
 using Archivist.Tests.BaseClasses;
 using BigBook;
@@ -18,9 +20,11 @@ namespace Archivist.Tests.Formats.Delimited
             var Services = new ServiceCollection();
             _ = Services.AddOptions();
             _ = Services.Configure<DelimitedOptions>(_ => { });
+            _ = Services.AddSingleton<Convertinator>();
+            _ = Services.AddAllSingleton<IDataConverter>();
             ServiceProvider = Services.BuildServiceProvider();
-            _TestClass = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>());
-            TestObject = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>());
+            _TestClass = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>(), ServiceProvider.GetService<Convertinator>());
+            TestObject = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>(), ServiceProvider.GetService<Convertinator>());
         }
 
         private ServiceProvider ServiceProvider { get; }
@@ -31,7 +35,7 @@ namespace Archivist.Tests.Formats.Delimited
         public void CanConstruct()
         {
             // Act
-            var Instance = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>());
+            var Instance = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>(), ServiceProvider.GetService<Convertinator>());
 
             // Assert
             Assert.NotNull(Instance);

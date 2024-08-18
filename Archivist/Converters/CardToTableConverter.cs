@@ -24,7 +24,7 @@ namespace Archivist.Converters
                 Title = file.Title ?? file.FullName?.Value
             };
             TableRow Row = Table.AddRow();
-            foreach (CardField? Field in file.Fields)
+            foreach (KeyValueField? Field in file.Fields)
             {
                 if (Field is null)
                     continue;

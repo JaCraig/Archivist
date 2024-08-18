@@ -12,8 +12,8 @@ namespace Archivist.Tests.Formats.Excel
     {
         public ExcelReaderTests()
         {
-            _TestClass = new ExcelReader(ExcelOptions.Default);
-            TestObject = new ExcelReader(ExcelOptions.Default);
+            _TestClass = new ExcelReader(ExcelOptions.Default, null);
+            TestObject = new ExcelReader(ExcelOptions.Default, null);
         }
 
         private readonly ExcelReader _TestClass;

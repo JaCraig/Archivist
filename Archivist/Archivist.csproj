@@ -59,14 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Formats\HTML\" />
-    <Folder Include="Formats\ICal\" />
     <Folder Include="Formats\Mime\" />
     <Folder Include="Formats\MSG\" />
     <Folder Include="Formats\Markdown\" />
     <Folder Include="Formats\Image\" />
     <Folder Include="Formats\PNG\" />
     <Folder Include="Formats\Word\" />
-    <Folder Include="Formats\VCalendar\" />
     <Folder Include="Formats\RTF\" />
     <Folder Include="Formats\RSS\" />
     <Folder Include="Formats\PowerPoint\" />

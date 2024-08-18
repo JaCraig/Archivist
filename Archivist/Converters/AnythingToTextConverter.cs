@@ -30,7 +30,8 @@ namespace Archivist.Converters
         }
 
         /// <summary>
-        /// Determines if the converter can convert from the specified source type to the specified destination type.
+        /// Determines if the converter can convert from the specified source type to the specified
+        /// destination type.
         /// </summary>
         /// <param name="source">The source type.</param>
         /// <param name="destination">The destination type.</param>

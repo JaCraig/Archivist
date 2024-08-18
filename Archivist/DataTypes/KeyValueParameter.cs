@@ -5,14 +5,14 @@ namespace Archivist.DataTypes
     /// <summary>
     /// Represents a parameter for a card field.
     /// </summary>
-    public class CardFieldParameter : IEquatable<CardFieldParameter>, IComparable<CardFieldParameter>
+    public class KeyValueParameter : IEquatable<KeyValueParameter>, IComparable<KeyValueParameter>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CardFieldParameter"/> class.
+        /// Initializes a new instance of the <see cref="KeyValueParameter"/> class.
         /// </summary>
         /// <param name="name">The name of the parameter.</param>
         /// <param name="value">The value of the parameter.</param>
-        public CardFieldParameter(string? name, string? value)
+        public KeyValueParameter(string? name, string? value)
         {
             Name = name;
             Value = value;
@@ -36,7 +36,7 @@ namespace Archivist.DataTypes
         /// <returns>
         /// <see langword="true"/> if the card field parameters are not equal; otherwise, <see langword="false"/>.
         /// </returns>
-        public static bool operator !=(CardFieldParameter? left, CardFieldParameter? right)
+        public static bool operator !=(KeyValueParameter? left, KeyValueParameter? right)
         {
             return !(left == right);
         }
@@ -50,7 +50,7 @@ namespace Archivist.DataTypes
         /// <see langword="true"/> if the card field parameter is less than the other card field
         /// parameter; otherwise, <see langword="false"/>.
         /// </returns>
-        public static bool operator <(CardFieldParameter? left, CardFieldParameter? right)
+        public static bool operator <(KeyValueParameter? left, KeyValueParameter? right)
         {
             return left is null ? right is not null : left.CompareTo(right) < 0;
         }
@@ -64,7 +64,7 @@ namespace Archivist.DataTypes
         /// <see langword="true"/> if the card field parameter is less than or equal to the other
         /// card field parameter; otherwise, <see langword="false"/>.
         /// </returns>
-        public static bool operator <=(CardFieldParameter? left, CardFieldParameter? right)
+        public static bool operator <=(KeyValueParameter? left, KeyValueParameter? right)
         {
             return left is null || left.CompareTo(right) <= 0;
         }
@@ -78,7 +78,7 @@ namespace Archivist.DataTypes
         /// <see langword="true"/> if the card field parameter is equal to the other card field
         /// parameter; otherwise, <see langword="false"/>.
         /// </returns>
-        public static bool operator ==(CardFieldParameter? left, CardFieldParameter? right)
+        public static bool operator ==(KeyValueParameter? left, KeyValueParameter? right)
         {
             if (left is null)
                 return right is null;
@@ -94,7 +94,7 @@ namespace Archivist.DataTypes
         /// <see langword="true"/> if the card field parameter is greater than the other card field
         /// parameter; otherwise, <see langword="false"/>.
         /// </returns>
-        public static bool operator >(CardFieldParameter? left, CardFieldParameter? right)
+        public static bool operator >(KeyValueParameter? left, KeyValueParameter? right)
         {
             return left?.CompareTo(right) > 0;
         }
@@ -108,7 +108,7 @@ namespace Archivist.DataTypes
         /// <see langword="true"/> if the card field parameter is greater than or equal to the other
         /// card field parameter; otherwise, <see langword="false"/>.
         /// </returns>
-        public static bool operator >=(CardFieldParameter? left, CardFieldParameter? right)
+        public static bool operator >=(KeyValueParameter? left, KeyValueParameter? right)
         {
             return left is null ? right is null : left.CompareTo(right) >= 0;
         }
@@ -119,7 +119,7 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="other">The card field parameter to compare to this card field parameter.</param>
         /// <returns>A value that indicates the relative ordering of the two objects.</returns>
-        public int CompareTo(CardFieldParameter? other)
+        public int CompareTo(KeyValueParameter? other)
         {
             if (other is null)
                 return 1;
@@ -137,7 +137,7 @@ namespace Archivist.DataTypes
         /// <see langword="true"/> if the card field parameter is equal to the object; otherwise,
         /// <see langword="false"/>.
         /// </returns>
-        public override bool Equals(object? obj) => ReferenceEquals(this, obj) || (obj is CardFieldParameter CardFieldParameterObject && Equals(CardFieldParameterObject));
+        public override bool Equals(object? obj) => ReferenceEquals(this, obj) || (obj is KeyValueParameter CardFieldParameterObject && Equals(CardFieldParameterObject));
 
         /// <summary>
         /// Compares the card field parameter to another card field parameter to determine if they
@@ -148,7 +148,7 @@ namespace Archivist.DataTypes
         /// <see langword="true"/> if the card field parameter is equal to the other card field
         /// parameter; otherwise, <see langword="false"/>.
         /// </returns>
-        public bool Equals(CardFieldParameter? other)
+        public bool Equals(KeyValueParameter? other)
         {
             return other is not null
                 && string.Equals(Name, other.Name, StringComparison.Ordinal)

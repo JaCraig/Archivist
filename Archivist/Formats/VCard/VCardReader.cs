@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
@@ -15,6 +16,15 @@ namespace Archivist.Formats.VCard
     /// </summary>
     public class VCardReader : ReaderBaseClass
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="VCardReader"/> class.
+        /// </summary>
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public VCardReader(Convertinator? converter)
+        {
+            _Converter = converter;
+        }
+
         /// <summary>
         /// Gets the header information of the VCard file.
         /// </summary>
@@ -36,6 +46,11 @@ namespace Archivist.Formats.VCard
         private static readonly string[] _Separator = new string[] { "\r\n", Environment.NewLine };
 
         /// <summary>
+        /// The converter used to convert between IGenericFile objects.
+        /// </summary>
+        private readonly Convertinator? _Converter;
+
+        /// <summary>
         /// Reads a VCard file asynchronously from the specified stream.
         /// </summary>
         /// <param name="stream">The stream to read the VCard file from.</param>
@@ -46,13 +61,13 @@ namespace Archivist.Formats.VCard
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             if (stream?.CanRead != true)
-                return new Card();
-            var ReturnValue = new Card();
+                return new Card(_Converter);
+            var ReturnValue = new Card(_Converter);
             var Content = await GetDataAsync(stream).ConfigureAwait(false);
             var Lines = Content.Split(_Separator, StringSplitOptions.RemoveEmptyEntries);
             if (Lines.Length is 0)
                 return ReturnValue;
-            var CurrentField = new CardField("", Array.Empty<CardFieldParameter>(), "");
+            var CurrentField = new KeyValueField("", Array.Empty<KeyValueParameter>(), "");
             foreach (var Line in Lines)
             {
                 if (Line.StartsWith(' '))
@@ -68,9 +83,9 @@ namespace Archivist.Formats.VCard
                 if (PropertyName is "BEGIN" or "END" or "VERSION")
                     continue;
                 var Value = LineProperty.Groups["Value"].Value.Trim();
-                IEnumerable<CardFieldParameter>? Parameters = ParseParameters(LineProperty.Groups["Parameters"]?.Value);
+                IEnumerable<KeyValueParameter>? Parameters = ParseParameters(LineProperty.Groups["Parameters"]?.Value);
 
-                var Field = new CardField(PropertyName, Parameters, Value);
+                var Field = new KeyValueField(PropertyName, Parameters, Value);
                 ReturnValue.Fields.Add(Field);
                 CurrentField = Field;
             }
@@ -99,17 +114,17 @@ namespace Archivist.Formats.VCard
         /// Parses the parameters of a VCard property.
         /// </summary>
         /// <param name="value">The parameter value.</param>
-        /// <returns>The parsed parameters as a collection of <see cref="CardFieldParameter"/>.</returns>
-        private static IEnumerable<CardFieldParameter>? ParseParameters(string? value)
+        /// <returns>The parsed parameters as a collection of <see cref="KeyValueParameter"/>.</returns>
+        private static IEnumerable<KeyValueParameter>? ParseParameters(string? value)
         {
             if (string.IsNullOrEmpty(value))
-                return Array.Empty<CardFieldParameter>();
-            var ReturnValue = new List<CardFieldParameter>();
+                return Array.Empty<KeyValueParameter>();
+            var ReturnValue = new List<KeyValueParameter>();
             foreach (Match Parameter in ParameterSplitter.Matches(value))
             {
                 var Name = Parameter.Groups["Name"].Value.Trim();
                 var Value = Parameter.Groups["Value"].Value.Trim();
-                ReturnValue.Add(new CardFieldParameter(Name, Value));
+                ReturnValue.Add(new KeyValueParameter(Name, Value));
             }
             return ReturnValue;
         }

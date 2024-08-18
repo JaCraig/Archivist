@@ -18,7 +18,7 @@ namespace Archivist.BaseClasses
         /// <param name="converter">The type converter.</param>
         protected FileBaseClass(Convertinator? converter)
         {
-            Converter = converter;
+            Converter = converter ?? Convertinator.Instance;
         }
 
         /// <summary>

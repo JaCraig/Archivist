@@ -12,8 +12,8 @@ namespace Archivist.Tests.Formats.Txt
     {
         public TextFormatTests()
         {
-            _TestClass = new TextFormat();
-            TestObject = new TextFormat();
+            _TestClass = new TextFormat(null);
+            TestObject = new TextFormat(null);
         }
 
         private readonly TextFormat _TestClass;
@@ -22,7 +22,7 @@ namespace Archivist.Tests.Formats.Txt
         public void CanConstruct()
         {
             // Act
-            var Instance = new TextFormat();
+            var Instance = new TextFormat(null);
 
             // Assert
             Assert.NotNull(Instance);
@@ -72,7 +72,7 @@ namespace Archivist.Tests.Formats.Txt
         {
             // Arrange
             const string Text = "Hello, World!";
-            var Format = new TextFormat();
+            var Format = new TextFormat(null);
             var Stream = new MemoryStream();
             Stream.Write(Text.ToByteArray());
 
@@ -91,7 +91,7 @@ namespace Archivist.Tests.Formats.Txt
             // Arrange
             const string Text = "Hello, World!";
             const string Title = "Hello, World Title!";
-            var Format = new TextFormat();
+            var Format = new TextFormat(null);
             var Stream = new MemoryStream();
             var FileObject = new Text(Text, Title);
 

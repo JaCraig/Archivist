@@ -105,7 +105,7 @@ namespace Archivist.Tests.Converters
                 Suffix = "Jr",
                 Title = "Test User"
             };
-            File.Fields.Add(new CardField(CommonCardFields.Title, null, "Test User Title"));
+            File.Fields.Add(new KeyValueField(CommonCardFields.Title, null, "Test User Title"));
 
             // Act
             Tables? Result = CardToTablesConverter.Convert(File);

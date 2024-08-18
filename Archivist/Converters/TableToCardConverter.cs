@@ -28,7 +28,7 @@ namespace Archivist.Converters
                 return ReturnValue;
             foreach (var Column in file.Columns)
             {
-                ReturnValue.Fields.Add(new CardField(Column, Array.Empty<CardFieldParameter>(), file[0][Column].Content));
+                ReturnValue.Fields.Add(new KeyValueField(Column, Array.Empty<KeyValueParameter>(), file[0][Column].Content));
             }
             return ReturnValue;
         }

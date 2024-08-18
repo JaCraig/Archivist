@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
@@ -19,9 +20,11 @@ namespace Archivist.Formats.JSON
         /// Initializes a new instance of the <see cref="JsonReader"/> class.
         /// </summary>
         /// <param name="options">The options to use when deserializing JSON.</param>
-        public JsonReader(JsonSerializerSettings? options)
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public JsonReader(JsonSerializerSettings? options, Convertinator? converter)
         {
             Options = options ?? new JsonSerializerSettings();
+            _Converter = converter;
         }
 
         /// <summary>
@@ -33,6 +36,11 @@ namespace Archivist.Formats.JSON
         /// The options to use when deserializing JSON.
         /// </summary>
         private JsonSerializerSettings Options { get; }
+
+        /// <summary>
+        /// The converter used to convert between IGenericFile objects.
+        /// </summary>
+        private readonly Convertinator? _Converter;
 
         /// <summary>
         /// Determines if the reader can read the specified stream.
@@ -66,12 +74,12 @@ namespace Archivist.Formats.JSON
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             if (stream?.CanRead != true)
-                return new StructuredObject();
+                return new StructuredObject(_Converter, new ExpandoObject());
             var StreamData = await stream.ReadAllAsync().ConfigureAwait(false);
             if (string.IsNullOrEmpty(StreamData))
-                return new StructuredObject();
+                return new StructuredObject(_Converter, new ExpandoObject());
             ExpandoObject? Data = JsonConvert.DeserializeObject<ExpandoObject>(StreamData, Options);
-            return new StructuredObject(Data ?? new ExpandoObject());
+            return new StructuredObject(_Converter, Data ?? new ExpandoObject());
         }
     }
 }

@@ -12,8 +12,8 @@ namespace Archivist.Tests.Formats.VCard
     {
         public VCardReaderTests()
         {
-            _TestClass = new VCardReader();
-            TestObject = new VCardReader();
+            _TestClass = new VCardReader(null);
+            TestObject = new VCardReader(null);
         }
 
         private readonly VCardReader _TestClass;
@@ -97,12 +97,12 @@ namespace Archivist.Tests.Formats.VCard
             Assert.NotNull(Results);
             Card ResultCard = Assert.IsType<Card>(Results);
             Assert.Equal(2, ResultCard.Fields.Count);
-            CardField? Field1 = ResultCard.Fields[0];
+            KeyValueField? Field1 = ResultCard.Fields[0];
             Assert.NotNull(Field1);
             Assert.Equal("FN", Field1.Property);
             Assert.Empty(Field1.Parameters);
             Assert.Equal("John Doe", Field1.Value);
-            CardField? Field2 = ResultCard.Fields[1];
+            KeyValueField? Field2 = ResultCard.Fields[1];
             Assert.NotNull(Field2);
             Assert.Equal("EMAIL", Field2.Property);
             Assert.Empty(Field2.Parameters);
@@ -128,7 +128,7 @@ namespace Archivist.Tests.Formats.VCard
             Assert.NotNull(Results);
             Card ResultCard = Assert.IsType<Card>(Results);
             _ = Assert.Single(ResultCard.Fields);
-            CardField? Field = ResultCard.Fields[0];
+            KeyValueField? Field = ResultCard.Fields[0];
             Assert.NotNull(Field);
             Assert.Equal("FN", Field.Property);
             Assert.Empty(Field.Parameters);

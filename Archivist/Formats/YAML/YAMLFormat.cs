@@ -1,4 +1,5 @@
 ﻿using Archivist.BaseClasses;
+using Archivist.Converters;
 
 namespace Archivist.Formats.YAML
 {
@@ -10,8 +11,9 @@ namespace Archivist.Formats.YAML
         /// <summary>
         /// Initializes a new instance of the <see cref="YAMLFormat"/> class.
         /// </summary>
-        public YAMLFormat()
-            : base(new YAMLReader(), new YAMLWriter())
+        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+        public YAMLFormat(Convertinator? converter)
+            : base(new YAMLReader(converter), new YAMLWriter())
         {
         }
 
