@@ -82,6 +82,56 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.CalendarToCardConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.CalendarToCardConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.CalendarToStructuredObjectConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.CalendarToStructuredObjectConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.CalendarToTableConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.CalendarToTableConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.CalendarToTablesConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.CalendarToTablesConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.CardToCalendarConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.CardToCalendarConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.Converters.CardToStructuredObjectConverter.yml",
       "output": {
         ".html": {
@@ -122,6 +172,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.StructuredObjectToCalendarConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.StructuredObjectToCalendarConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.Converters.StructuredObjectToCardConverter.yml",
       "output": {
         ".html": {
@@ -152,6 +212,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.TableToCalendarConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.TableToCalendarConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.Converters.TableToCardConverter.yml",
       "output": {
         ".html": {
@@ -176,6 +246,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.Converters.TableToTablesConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.TablesToCalendarConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.TablesToCalendarConverter.html"
         }
       },
       "version": ""
@@ -222,30 +302,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.Calendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.Calendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.CalendarComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.CalendarComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.DataTypes.Card.yml",
       "output": {
         ".html": {
           "relative_path": "api/Archivist.DataTypes.Card.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Archivist.DataTypes.CardField.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Archivist.DataTypes.CardField.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Archivist.DataTypes.CardFieldParameter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Archivist.DataTypes.CardFieldParameter.html"
         }
       },
       "version": ""
@@ -276,6 +356,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.DataTypes.FixedLengthRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.KeyValueField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.KeyValueField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.KeyValueParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.KeyValueParameter.html"
         }
       },
       "version": ""
@@ -352,6 +452,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Enums.CalendarMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Enums.CalendarMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Enums.CalendarStatuses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Enums.CalendarStatuses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Enums.CommonCalendarFields.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Enums.CommonCalendarFields.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.Enums.CommonCardFields.yml",
       "output": {
         ".html": {
@@ -376,6 +506,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.ExtensionMethods.InternalExtensionMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.ExtensionMethods.InternalStringFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.ExtensionMethods.InternalStringFormatter.html"
         }
       },
       "version": ""
@@ -506,6 +646,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.Formats.FixedLength.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.ICalendar.ICalFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.ICalendar.ICalFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.ICalendar.ICalReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.ICalendar.ICalReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.ICalendar.ICalWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.ICalendar.ICalWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.ICalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.ICalendar.html"
         }
       },
       "version": ""

@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_Delimited_DelimitedFormat" data-uid="Archivist.Formats.Delimited.DelimitedFormat" class="text-break">
-Class DelimitedFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedFormat.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class DelimitedFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedFormat.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -201,9 +201,9 @@ Class DelimitedFormat  <a class="header-action link-secondary" title="View sourc
 
   <a id="Archivist_Formats_Delimited_DelimitedFormat__ctor_" data-uid="Archivist.Formats.Delimited.DelimitedFormat.#ctor*"></a>
 
-  <h3 id="Archivist_Formats_Delimited_DelimitedFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_DelimitedOptions__" data-uid="Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions})">
-  DelimitedFormat(IOptions&lt;DelimitedOptions&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedFormat.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Archivist_Formats_Delimited_DelimitedFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_DelimitedOptions__Archivist_Converters_Convertinator_" data-uid="Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions},Archivist.Converters.Convertinator)">
+  DelimitedFormat(IOptions&lt;DelimitedOptions&gt;?, Convertinator?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedFormat.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.Delimited.DelimitedFormat.html">DelimitedFormat</a> class.</p>
@@ -211,13 +211,17 @@ Class DelimitedFormat  <a class="header-action link-secondary" title="View sourc
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DelimitedFormat(IOptions&lt;DelimitedOptions&gt;? options)</code></pre>
+    <pre><code class="lang-csharp hljs">public DelimitedFormat(IOptions&lt;DelimitedOptions&gt;? options, Convertinator? converter)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="Archivist.Options.DelimitedOptions.html">DelimitedOptions</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>The options.</p>
+</dd>
+    <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
+    <dd><p>The converter.</p>
+</dd>
   </dl>
 
 
@@ -239,7 +243,7 @@ Class DelimitedFormat  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Archivist_Formats_Delimited_DelimitedFormat_Extensions" data-uid="Archivist.Formats.Delimited.DelimitedFormat.Extensions">
   Extensions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedFormat.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedFormat.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the extensions associated with the format.</p>
@@ -271,7 +275,7 @@ Class DelimitedFormat  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Archivist_Formats_Delimited_DelimitedFormat_MimeTypes" data-uid="Archivist.Formats.Delimited.DelimitedFormat.MimeTypes">
   MimeTypes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedFormat.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedFormat.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the content types.</p>
@@ -308,7 +312,7 @@ Class DelimitedFormat  <a class="header-action link-secondary" title="View sourc
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedFormat.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedFormat.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -1,0 +1,2950 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CalendarComponent | Archivist API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CalendarComponent | Archivist API Reference ">
+      
+      <meta name="description" content="Represents a Calendar (vCalendar, etc.) file.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JaCraig/Archivist/new/main/apiSpec/new?filename=Archivist_DataTypes_CalendarComponent.md&amp;value=---%0Auid%3A%20Archivist.DataTypes.CalendarComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon.png" alt="Archivist">
+            Archivist
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Archivist.DataTypes.CalendarComponent">
+
+
+
+  <h1 id="Archivist_DataTypes_CalendarComponent" data-uid="Archivist.DataTypes.CalendarComponent" class="text-break">
+Class CalendarComponent  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Archivist.html">Archivist</a>.<a class="xref" href="Archivist.DataTypes.html">DataTypes</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Archivist.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a Calendar (vCalendar, etc.) file.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CalendarComponent : IComparable&lt;CalendarComponent&gt;, IEquatable&lt;CalendarComponent&gt;, IEnumerable&lt;KeyValueField?&gt;, IEnumerable, IObjectConvertable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CalendarComponent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+      <div><a class="xref" href="Archivist.Interfaces.IObjectConvertable.html">IObjectConvertable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Archivist_DataTypes_CalendarComponent__ctor_" data-uid="Archivist.DataTypes.CalendarComponent.#ctor*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent__ctor_Archivist_DataTypes_Calendar_" data-uid="Archivist.DataTypes.CalendarComponent.#ctor(Archivist.DataTypes.Calendar)">
+  CalendarComponent(Calendar?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalendarComponent(Calendar? parent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="Archivist.DataTypes.Calendar.html">Calendar</a></dt>
+    <dd><p>The parent Calendar.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Action_" data-uid="Archivist.DataTypes.CalendarComponent.Action*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Action" data-uid="Archivist.DataTypes.CalendarComponent.Action">
+  Action
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the action of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Action { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Actions_" data-uid="Archivist.DataTypes.CalendarComponent.Actions*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Actions" data-uid="Archivist.DataTypes.CalendarComponent.Actions">
+  Actions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the action fields of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Actions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Attachments_" data-uid="Archivist.DataTypes.CalendarComponent.Attachments*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Attachments" data-uid="Archivist.DataTypes.CalendarComponent.Attachments">
+  Attachments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the attachments of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Attachments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Attendees_" data-uid="Archivist.DataTypes.CalendarComponent.Attendees*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Attendees" data-uid="Archivist.DataTypes.CalendarComponent.Attendees">
+  Attendees
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the attendees of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Attendees { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Categories_" data-uid="Archivist.DataTypes.CalendarComponent.Categories*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Categories" data-uid="Archivist.DataTypes.CalendarComponent.Categories">
+  Categories
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the categories of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Categories { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Class_" data-uid="Archivist.DataTypes.CalendarComponent.Class*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Class" data-uid="Archivist.DataTypes.CalendarComponent.Class">
+  Class
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the class of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Class { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Classes_" data-uid="Archivist.DataTypes.CalendarComponent.Classes*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Classes" data-uid="Archivist.DataTypes.CalendarComponent.Classes">
+  Classes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the classes of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Classes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Comments_" data-uid="Archivist.DataTypes.CalendarComponent.Comments*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Comments" data-uid="Archivist.DataTypes.CalendarComponent.Comments">
+  Comments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the comments of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Comments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Completeds_" data-uid="Archivist.DataTypes.CalendarComponent.Completeds*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Completeds" data-uid="Archivist.DataTypes.CalendarComponent.Completeds">
+  Completeds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the completed fields of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Completeds { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Contacts_" data-uid="Archivist.DataTypes.CalendarComponent.Contacts*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Contacts" data-uid="Archivist.DataTypes.CalendarComponent.Contacts">
+  Contacts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the contacts of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Contacts { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Count_" data-uid="Archivist.DataTypes.CalendarComponent.Count*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Count" data-uid="Archivist.DataTypes.CalendarComponent.Count">
+  Count
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of fields in the Calendar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Created_" data-uid="Archivist.DataTypes.CalendarComponent.Created*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Created" data-uid="Archivist.DataTypes.CalendarComponent.Created">
+  Created
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creation date of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime Created { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_CreatedUtc_" data-uid="Archivist.DataTypes.CalendarComponent.CreatedUtc*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_CreatedUtc" data-uid="Archivist.DataTypes.CalendarComponent.CreatedUtc">
+  CreatedUtc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the creation date of the Calendar item in Coordinated Universal Time (UTC).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime CreatedUtc { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Createds_" data-uid="Archivist.DataTypes.CalendarComponent.Createds*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Createds" data-uid="Archivist.DataTypes.CalendarComponent.Createds">
+  Createds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the created fields of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Createds { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_DateStamp_" data-uid="Archivist.DataTypes.CalendarComponent.DateStamp*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_DateStamp" data-uid="Archivist.DataTypes.CalendarComponent.DateStamp">
+  DateStamp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the date stamp of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime DateStamp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_DateStampUtc_" data-uid="Archivist.DataTypes.CalendarComponent.DateStampUtc*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_DateStampUtc" data-uid="Archivist.DataTypes.CalendarComponent.DateStampUtc">
+  DateStampUtc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the date stamp of the Calendar item in Coordinated Universal Time (UTC).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime DateStampUtc { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_DateStamps_" data-uid="Archivist.DataTypes.CalendarComponent.DateStamps*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_DateStamps" data-uid="Archivist.DataTypes.CalendarComponent.DateStamps">
+  DateStamps
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the date stamps of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; DateStamps { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Description_" data-uid="Archivist.DataTypes.CalendarComponent.Description*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Description" data-uid="Archivist.DataTypes.CalendarComponent.Description">
+  Description
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the description of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Descriptions_" data-uid="Archivist.DataTypes.CalendarComponent.Descriptions*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Descriptions" data-uid="Archivist.DataTypes.CalendarComponent.Descriptions">
+  Descriptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the descriptions of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Descriptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Dues_" data-uid="Archivist.DataTypes.CalendarComponent.Dues*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Dues" data-uid="Archivist.DataTypes.CalendarComponent.Dues">
+  Dues
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the due dates of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Dues { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Durations_" data-uid="Archivist.DataTypes.CalendarComponent.Durations*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Durations" data-uid="Archivist.DataTypes.CalendarComponent.Durations">
+  Durations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the durations of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Durations { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_EndDate_" data-uid="Archivist.DataTypes.CalendarComponent.EndDate*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_EndDate" data-uid="Archivist.DataTypes.CalendarComponent.EndDate">
+  EndDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the end date of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime EndDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_EndDateUtc_" data-uid="Archivist.DataTypes.CalendarComponent.EndDateUtc*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_EndDateUtc" data-uid="Archivist.DataTypes.CalendarComponent.EndDateUtc">
+  EndDateUtc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the end date of the Calendar item in Coordinated Universal Time (UTC).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime EndDateUtc { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_EndDates_" data-uid="Archivist.DataTypes.CalendarComponent.EndDates*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_EndDates" data-uid="Archivist.DataTypes.CalendarComponent.EndDates">
+  EndDates
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the end dates of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; EndDates { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_ExcludeDates_" data-uid="Archivist.DataTypes.CalendarComponent.ExcludeDates*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_ExcludeDates" data-uid="Archivist.DataTypes.CalendarComponent.ExcludeDates">
+  ExcludeDates
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the exceptions of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; ExcludeDates { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_ExcludeRules_" data-uid="Archivist.DataTypes.CalendarComponent.ExcludeRules*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_ExcludeRules" data-uid="Archivist.DataTypes.CalendarComponent.ExcludeRules">
+  ExcludeRules
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the exclude rules of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; ExcludeRules { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Fields_" data-uid="Archivist.DataTypes.CalendarComponent.Fields*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Fields" data-uid="Archivist.DataTypes.CalendarComponent.Fields">
+  Fields
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the fields of the Calendar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;KeyValueField?&gt; Fields { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_FreeBusys_" data-uid="Archivist.DataTypes.CalendarComponent.FreeBusys*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_FreeBusys" data-uid="Archivist.DataTypes.CalendarComponent.FreeBusys">
+  FreeBusys
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the free/busy fields of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; FreeBusys { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_GeoLocations_" data-uid="Archivist.DataTypes.CalendarComponent.GeoLocations*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_GeoLocations" data-uid="Archivist.DataTypes.CalendarComponent.GeoLocations">
+  GeoLocations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the geo locations of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; GeoLocations { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Item_" data-uid="Archivist.DataTypes.CalendarComponent.Item*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Item_System_Int32_" data-uid="Archivist.DataTypes.CalendarComponent.Item(System.Int32)">
+  this[int]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L593"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the field at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyValueField? this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the field.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a></dt>
+    <dd><p>The field at the specified index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Item_" data-uid="Archivist.DataTypes.CalendarComponent.Item*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Item_System_String_" data-uid="Archivist.DataTypes.CalendarComponent.Item(System.String)">
+  this[string]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L618"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the fields with the specified property name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; this[string property] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The property name of the fields.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd><p>The fields with the specified property name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Item_" data-uid="Archivist.DataTypes.CalendarComponent.Item*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Item_System_String_System_String_" data-uid="Archivist.DataTypes.CalendarComponent.Item(System.String,System.String)">
+  this[string, string?]
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L626"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the fields with the specified property name and parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; this[string property, string? parameter] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The property name of the fields.</p>
+</dd>
+    <dt><code>parameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The parameter of the fields.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd><p>The fields with the specified property name and parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_LastModified_" data-uid="Archivist.DataTypes.CalendarComponent.LastModified*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_LastModified" data-uid="Archivist.DataTypes.CalendarComponent.LastModified">
+  LastModified
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the last modified date of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime LastModified { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_LastModifiedUtc_" data-uid="Archivist.DataTypes.CalendarComponent.LastModifiedUtc*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_LastModifiedUtc" data-uid="Archivist.DataTypes.CalendarComponent.LastModifiedUtc">
+  LastModifiedUtc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the last modified field of the Calendar item in Coordinated Universal Time (UTC).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime LastModifiedUtc { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_LastModifieds_" data-uid="Archivist.DataTypes.CalendarComponent.LastModifieds*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_LastModifieds" data-uid="Archivist.DataTypes.CalendarComponent.LastModifieds">
+  LastModifieds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the last modified fields of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; LastModifieds { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Location_" data-uid="Archivist.DataTypes.CalendarComponent.Location*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Location" data-uid="Archivist.DataTypes.CalendarComponent.Location">
+  Location
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the location of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Location { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Locations_" data-uid="Archivist.DataTypes.CalendarComponent.Locations*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Locations" data-uid="Archivist.DataTypes.CalendarComponent.Locations">
+  Locations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the locations of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Locations { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Organizers_" data-uid="Archivist.DataTypes.CalendarComponent.Organizers*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Organizers" data-uid="Archivist.DataTypes.CalendarComponent.Organizers">
+  Organizers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the organizers of the Calendar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Organizers { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Priorities_" data-uid="Archivist.DataTypes.CalendarComponent.Priorities*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Priorities" data-uid="Archivist.DataTypes.CalendarComponent.Priorities">
+  Priorities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the priorities of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Priorities { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Priority_" data-uid="Archivist.DataTypes.CalendarComponent.Priority*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Priority" data-uid="Archivist.DataTypes.CalendarComponent.Priority">
+  Priority
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the priority of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Priority { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_RecurrenceIds_" data-uid="Archivist.DataTypes.CalendarComponent.RecurrenceIds*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_RecurrenceIds" data-uid="Archivist.DataTypes.CalendarComponent.RecurrenceIds">
+  RecurrenceIds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the recurrence IDs of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; RecurrenceIds { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_RelatedTos_" data-uid="Archivist.DataTypes.CalendarComponent.RelatedTos*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_RelatedTos" data-uid="Archivist.DataTypes.CalendarComponent.RelatedTos">
+  RelatedTos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the related to fields of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; RelatedTos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_ReoccurDates_" data-uid="Archivist.DataTypes.CalendarComponent.ReoccurDates*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_ReoccurDates" data-uid="Archivist.DataTypes.CalendarComponent.ReoccurDates">
+  ReoccurDates
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the reoccur dates of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; ReoccurDates { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_ReoccurRules_" data-uid="Archivist.DataTypes.CalendarComponent.ReoccurRules*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_ReoccurRules" data-uid="Archivist.DataTypes.CalendarComponent.ReoccurRules">
+  ReoccurRules
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the reoccur rules of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; ReoccurRules { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_RepeatCounts_" data-uid="Archivist.DataTypes.CalendarComponent.RepeatCounts*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_RepeatCounts" data-uid="Archivist.DataTypes.CalendarComponent.RepeatCounts">
+  RepeatCounts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the repeat counts of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; RepeatCounts { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Resources_" data-uid="Archivist.DataTypes.CalendarComponent.Resources*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Resources" data-uid="Archivist.DataTypes.CalendarComponent.Resources">
+  Resources
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the resources of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Resources { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Sequence_" data-uid="Archivist.DataTypes.CalendarComponent.Sequence*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Sequence" data-uid="Archivist.DataTypes.CalendarComponent.Sequence">
+  Sequence
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the sequence of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Sequence { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Sequences_" data-uid="Archivist.DataTypes.CalendarComponent.Sequences*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Sequences" data-uid="Archivist.DataTypes.CalendarComponent.Sequences">
+  Sequences
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the sequence fields of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Sequences { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_StartDate_" data-uid="Archivist.DataTypes.CalendarComponent.StartDate*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_StartDate" data-uid="Archivist.DataTypes.CalendarComponent.StartDate">
+  StartDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the start date of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime StartDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_StartDateUtc_" data-uid="Archivist.DataTypes.CalendarComponent.StartDateUtc*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_StartDateUtc" data-uid="Archivist.DataTypes.CalendarComponent.StartDateUtc">
+  StartDateUtc
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the start date of the Calendar item in Coordinated Universal Time (UTC).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime StartDateUtc { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_StartDates_" data-uid="Archivist.DataTypes.CalendarComponent.StartDates*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_StartDates" data-uid="Archivist.DataTypes.CalendarComponent.StartDates">
+  StartDates
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the start dates of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; StartDates { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Status_" data-uid="Archivist.DataTypes.CalendarComponent.Status*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Status" data-uid="Archivist.DataTypes.CalendarComponent.Status">
+  Status
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the status of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Status { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Statuses_" data-uid="Archivist.DataTypes.CalendarComponent.Statuses*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Statuses" data-uid="Archivist.DataTypes.CalendarComponent.Statuses">
+  Statuses
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the statuses of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Statuses { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Summaries_" data-uid="Archivist.DataTypes.CalendarComponent.Summaries*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Summaries" data-uid="Archivist.DataTypes.CalendarComponent.Summaries">
+  Summaries
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the summaries of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Summaries { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Summary_" data-uid="Archivist.DataTypes.CalendarComponent.Summary*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Summary" data-uid="Archivist.DataTypes.CalendarComponent.Summary">
+  Summary
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the summary of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Summary { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_TimeZones_" data-uid="Archivist.DataTypes.CalendarComponent.TimeZones*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_TimeZones" data-uid="Archivist.DataTypes.CalendarComponent.TimeZones">
+  TimeZones
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the time zones of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; TimeZones { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_TimezoneNames_" data-uid="Archivist.DataTypes.CalendarComponent.TimezoneNames*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_TimezoneNames" data-uid="Archivist.DataTypes.CalendarComponent.TimezoneNames">
+  TimezoneNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the time zone names of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; TimezoneNames { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_TimezoneOffsetFroms_" data-uid="Archivist.DataTypes.CalendarComponent.TimezoneOffsetFroms*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_TimezoneOffsetFroms" data-uid="Archivist.DataTypes.CalendarComponent.TimezoneOffsetFroms">
+  TimezoneOffsetFroms
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the time zone offsets from of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; TimezoneOffsetFroms { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_TimezoneOffsetTos_" data-uid="Archivist.DataTypes.CalendarComponent.TimezoneOffsetTos*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_TimezoneOffsetTos" data-uid="Archivist.DataTypes.CalendarComponent.TimezoneOffsetTos">
+  TimezoneOffsetTos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the time zone offsets to of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; TimezoneOffsetTos { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_TimezoneUrls_" data-uid="Archivist.DataTypes.CalendarComponent.TimezoneUrls*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_TimezoneUrls" data-uid="Archivist.DataTypes.CalendarComponent.TimezoneUrls">
+  TimezoneUrls
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L514"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the time zone URLs of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; TimezoneUrls { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Transp_" data-uid="Archivist.DataTypes.CalendarComponent.Transp*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Transp" data-uid="Archivist.DataTypes.CalendarComponent.Transp">
+  Transp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the transparency of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Transp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Transps_" data-uid="Archivist.DataTypes.CalendarComponent.Transps*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Transps" data-uid="Archivist.DataTypes.CalendarComponent.Transps">
+  Transps
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the TRANSP fields of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Transps { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Trigger_" data-uid="Archivist.DataTypes.CalendarComponent.Trigger*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Trigger" data-uid="Archivist.DataTypes.CalendarComponent.Trigger">
+  Trigger
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the triggers of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Trigger { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Triggers_" data-uid="Archivist.DataTypes.CalendarComponent.Triggers*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Triggers" data-uid="Archivist.DataTypes.CalendarComponent.Triggers">
+  Triggers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L552"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the triggers of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; Triggers { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_UID_" data-uid="Archivist.DataTypes.CalendarComponent.UID*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_UID" data-uid="Archivist.DataTypes.CalendarComponent.UID">
+  UID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L557"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the unique identifier of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UID { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_UIDs_" data-uid="Archivist.DataTypes.CalendarComponent.UIDs*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_UIDs" data-uid="Archivist.DataTypes.CalendarComponent.UIDs">
+  UIDs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the unique identifiers of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; UIDs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_URLs_" data-uid="Archivist.DataTypes.CalendarComponent.URLs*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_URLs" data-uid="Archivist.DataTypes.CalendarComponent.URLs">
+  URLs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the URLs of the Calendar item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValueField?&gt; URLs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_CompareTo_" data-uid="Archivist.DataTypes.CalendarComponent.CompareTo*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_CompareTo_Archivist_DataTypes_CalendarComponent_" data-uid="Archivist.DataTypes.CalendarComponent.CompareTo(Archivist.DataTypes.CalendarComponent)">
+  CompareTo(CalendarComponent?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L711"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares the Calendar to another Calendar based on their content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(CalendarComponent? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The other Calendar to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer that indicates the relative order of the Calendars.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_ConvertFrom_" data-uid="Archivist.DataTypes.CalendarComponent.ConvertFrom*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_ConvertFrom__1___0_" data-uid="Archivist.DataTypes.CalendarComponent.ConvertFrom``1(``0)">
+  ConvertFrom&lt;TObject&gt;(TObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L718"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the object to the Calendar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConvertFrom&lt;TObject&gt;(TObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">TObject</span></dt>
+    <dd><p>The object to convert.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>The type of object to convert.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_ConvertTo_" data-uid="Archivist.DataTypes.CalendarComponent.ConvertTo*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_ConvertTo__1" data-uid="Archivist.DataTypes.CalendarComponent.ConvertTo``1">
+  ConvertTo&lt;TObject&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L740"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the Calendar to the specified object type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TObject? ConvertTo&lt;TObject&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TObject</span></dt>
+    <dd><p>The converted Calendar.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>The type to convert the Calendar to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Equals_" data-uid="Archivist.DataTypes.CalendarComponent.Equals*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Equals_Archivist_DataTypes_CalendarComponent_" data-uid="Archivist.DataTypes.CalendarComponent.Equals(Archivist.DataTypes.CalendarComponent)">
+  Equals(CalendarComponent?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L759"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the Calendar is equal to another Calendar based on their content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(CalendarComponent? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The other Calendar to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the Calendars are equal; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_Equals_" data-uid="Archivist.DataTypes.CalendarComponent.Equals*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_Equals_System_Object_" data-uid="Archivist.DataTypes.CalendarComponent.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L766"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the Calendar is equal to another object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the Calendar is equal to the object; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_GetContent_" data-uid="Archivist.DataTypes.CalendarComponent.GetContent*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_GetContent" data-uid="Archivist.DataTypes.CalendarComponent.GetContent">
+  GetContent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L772"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the content of the Calendar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetContent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The content of the Calendar.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_GetEnumerator_" data-uid="Archivist.DataTypes.CalendarComponent.GetEnumerator*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_GetEnumerator" data-uid="Archivist.DataTypes.CalendarComponent.GetEnumerator">
+  GetEnumerator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L775"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;KeyValueField?&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Archivist.DataTypes.KeyValueField.html">KeyValueField</a>&gt;</dt>
+    <dd><p>An enumerator that can be used to iterate through the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_GetHashCode_" data-uid="Archivist.DataTypes.CalendarComponent.GetHashCode*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_GetHashCode" data-uid="Archivist.DataTypes.CalendarComponent.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L784"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the hash code of the Calendar based on its content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The hash code of the Calendar.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_op_Equality_" data-uid="Archivist.DataTypes.CalendarComponent.op_Equality*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_op_Equality_Archivist_DataTypes_CalendarComponent_Archivist_DataTypes_CalendarComponent_" data-uid="Archivist.DataTypes.CalendarComponent.op_Equality(Archivist.DataTypes.CalendarComponent,Archivist.DataTypes.CalendarComponent)">
+  operator ==(CalendarComponent?, CalendarComponent?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two Calendar objects are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(CalendarComponent? left, CalendarComponent? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The first Calendar object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The second Calendar object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the two Calendar objects are equal; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_op_GreaterThan_" data-uid="Archivist.DataTypes.CalendarComponent.op_GreaterThan*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_op_GreaterThan_Archivist_DataTypes_CalendarComponent_Archivist_DataTypes_CalendarComponent_" data-uid="Archivist.DataTypes.CalendarComponent.op_GreaterThan(Archivist.DataTypes.CalendarComponent,Archivist.DataTypes.CalendarComponent)">
+  operator &gt;(CalendarComponent?, CalendarComponent?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L687"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one Calendar object is greater than another Calendar object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(CalendarComponent? left, CalendarComponent? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The first Calendar object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The second Calendar object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the first Calendar object is greater than the second Calendar object; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_op_GreaterThanOrEqual_" data-uid="Archivist.DataTypes.CalendarComponent.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_op_GreaterThanOrEqual_Archivist_DataTypes_CalendarComponent_Archivist_DataTypes_CalendarComponent_" data-uid="Archivist.DataTypes.CalendarComponent.op_GreaterThanOrEqual(Archivist.DataTypes.CalendarComponent,Archivist.DataTypes.CalendarComponent)">
+  operator &gt;=(CalendarComponent?, CalendarComponent?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L701"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one Calendar object is greater than or equal to another Calendar object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(CalendarComponent? left, CalendarComponent? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The first Calendar object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The second Calendar object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the first Calendar object is greater than or equal to the second Calendar
+object; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_op_Inequality_" data-uid="Archivist.DataTypes.CalendarComponent.op_Inequality*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_op_Inequality_Archivist_DataTypes_CalendarComponent_Archivist_DataTypes_CalendarComponent_" data-uid="Archivist.DataTypes.CalendarComponent.op_Inequality(Archivist.DataTypes.CalendarComponent,Archivist.DataTypes.CalendarComponent)">
+  operator !=(CalendarComponent?, CalendarComponent?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L634"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two Calendar objects are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(CalendarComponent? left, CalendarComponent? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The first Calendar object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The second Calendar object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the two Calendar objects are not equal; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_op_LessThan_" data-uid="Archivist.DataTypes.CalendarComponent.op_LessThan*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_op_LessThan_Archivist_DataTypes_CalendarComponent_Archivist_DataTypes_CalendarComponent_" data-uid="Archivist.DataTypes.CalendarComponent.op_LessThan(Archivist.DataTypes.CalendarComponent,Archivist.DataTypes.CalendarComponent)">
+  operator &lt;(CalendarComponent?, CalendarComponent?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one Calendar object is less than another Calendar object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(CalendarComponent? left, CalendarComponent? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The first Calendar object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The second Calendar object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the first Calendar object is less than the second Calendar object; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_CalendarComponent_op_LessThanOrEqual_" data-uid="Archivist.DataTypes.CalendarComponent.op_LessThanOrEqual*"></a>
+
+  <h3 id="Archivist_DataTypes_CalendarComponent_op_LessThanOrEqual_Archivist_DataTypes_CalendarComponent_Archivist_DataTypes_CalendarComponent_" data-uid="Archivist.DataTypes.CalendarComponent.op_LessThanOrEqual(Archivist.DataTypes.CalendarComponent,Archivist.DataTypes.CalendarComponent)">
+  operator &lt;=(CalendarComponent?, CalendarComponent?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L661"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one Calendar object is less than or equal to another Calendar object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(CalendarComponent? left, CalendarComponent? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The first Calendar object to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.CalendarComponent.html">CalendarComponent</a></dt>
+    <dd><p>The second Calendar object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the first Calendar object is less than or equal to the second Calendar object;
+otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html">FileBaseClass</a>&lt;TFileType&gt;</div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/CalendarComponent.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <strong><a href='https://github.com/JaCraig/Archivist'>Open in Github</a></strong>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

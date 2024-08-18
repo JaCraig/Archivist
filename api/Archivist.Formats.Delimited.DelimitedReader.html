@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_Delimited_DelimitedReader" data-uid="Archivist.Formats.Delimited.DelimitedReader" class="text-break">
-Class DelimitedReader  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedReader.cs/#L21"><i class="bi bi-code-slash"></i></a>
+Class DelimitedReader  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedReader.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -168,9 +168,9 @@ Class DelimitedReader  <a class="header-action link-secondary" title="View sourc
 
   <a id="Archivist_Formats_Delimited_DelimitedReader__ctor_" data-uid="Archivist.Formats.Delimited.DelimitedReader.#ctor*"></a>
 
-  <h3 id="Archivist_Formats_Delimited_DelimitedReader__ctor_Archivist_Options_DelimitedOptions_" data-uid="Archivist.Formats.Delimited.DelimitedReader.#ctor(Archivist.Options.DelimitedOptions)">
-  DelimitedReader(DelimitedOptions)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedReader.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Archivist_Formats_Delimited_DelimitedReader__ctor_Archivist_Options_DelimitedOptions_Archivist_Converters_Convertinator_" data-uid="Archivist.Formats.Delimited.DelimitedReader.#ctor(Archivist.Options.DelimitedOptions,Archivist.Converters.Convertinator)">
+  DelimitedReader(DelimitedOptions, Convertinator?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedReader.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.Delimited.DelimitedReader.html">DelimitedReader</a> class.</p>
@@ -178,13 +178,17 @@ Class DelimitedReader  <a class="header-action link-secondary" title="View sourc
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DelimitedReader(DelimitedOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public DelimitedReader(DelimitedOptions options, Convertinator? converter)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>options</code> <a class="xref" href="Archivist.Options.DelimitedOptions.html">DelimitedOptions</a></dt>
-    <dd></dd>
+    <dd><p>The options.</p>
+</dd>
+    <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
+    <dd><p>The converter.</p>
+</dd>
   </dl>
 
 
@@ -206,7 +210,7 @@ Class DelimitedReader  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Archivist_Formats_Delimited_DelimitedReader_HeaderInfo" data-uid="Archivist.Formats.Delimited.DelimitedReader.HeaderInfo">
   HeaderInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedReader.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedReader.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the header information.</p>
@@ -242,7 +246,7 @@ Class DelimitedReader  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Archivist_Formats_Delimited_DelimitedReader_ReadAsync_System_IO_Stream_" data-uid="Archivist.Formats.Delimited.DelimitedReader.ReadAsync(System.IO.Stream)">
   ReadAsync(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedReader.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedReader.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads the specified stream.</p>
@@ -285,7 +289,7 @@ Class DelimitedReader  <a class="header-action link-secondary" title="View sourc
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedReader.cs/#L21" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/Delimited/DelimitedReader.cs/#L22" class="edit-link">Edit this page</a>
         </div>
 
 

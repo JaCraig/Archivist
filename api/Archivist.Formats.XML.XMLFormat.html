@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_XML_XMLFormat" data-uid="Archivist.Formats.XML.XMLFormat" class="text-break">
-Class XMLFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLFormat.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class XMLFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLFormat.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -201,9 +201,9 @@ Class XMLFormat  <a class="header-action link-secondary" title="View source" hre
 
   <a id="Archivist_Formats_XML_XMLFormat__ctor_" data-uid="Archivist.Formats.XML.XMLFormat.#ctor*"></a>
 
-  <h3 id="Archivist_Formats_XML_XMLFormat__ctor_Newtonsoft_Json_JsonSerializerSettings_" data-uid="Archivist.Formats.XML.XMLFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings)">
-  XMLFormat(JsonSerializerSettings?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLFormat.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Archivist_Formats_XML_XMLFormat__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_" data-uid="Archivist.Formats.XML.XMLFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator)">
+  XMLFormat(JsonSerializerSettings?, Convertinator?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLFormat.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.XML.XMLFormat.html">XMLFormat</a> class.</p>
@@ -211,13 +211,16 @@ Class XMLFormat  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public XMLFormat(JsonSerializerSettings? options)</code></pre>
+    <pre><code class="lang-csharp hljs">public XMLFormat(JsonSerializerSettings? options, Convertinator? converter)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>options</code> <span class="xref">JsonSerializerSettings</span></dt>
     <dd><p>The options to use when serializing and deserializing JSON.</p>
+</dd>
+    <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
+    <dd><p>The converter used to convert between IGenericFile objects.</p>
 </dd>
   </dl>
 
@@ -240,7 +243,7 @@ Class XMLFormat  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_Formats_XML_XMLFormat_Extensions" data-uid="Archivist.Formats.XML.XMLFormat.Extensions">
   Extensions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLFormat.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLFormat.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the file extensions associated with the XML format.</p>
@@ -272,7 +275,7 @@ Class XMLFormat  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_Formats_XML_XMLFormat_MimeTypes" data-uid="Archivist.Formats.XML.XMLFormat.MimeTypes">
   MimeTypes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLFormat.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLFormat.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the MIME types associated with the XML format.</p>
@@ -304,7 +307,7 @@ Class XMLFormat  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLFormat.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLFormat.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 
