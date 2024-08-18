@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.6.0"></a>
+## [0.6.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.6.0) (2024-08-18)
+
+### Features
+
+* Finishing vcal/ical integration ([dc8c582](https://www.github.com/JaCraig/Archivist/commit/dc8c5820368aa7168a5810b266b9c6bb8415691f))
+
+### Bug Fixes
+
+* Finishing rework of calendar object and injecting converters into data types ([867213a](https://www.github.com/JaCraig/Archivist/commit/867213ab89f667e5b85c5aca212ed0e127f7a4e0))
+* Fixing iCal tests ([508c9ab](https://www.github.com/JaCraig/Archivist/commit/508c9ab874074de6ca8da9ed8cd91a06a305cd48))
+* Fixing tests so it compiles and can start fixing issues ([88ceb6c](https://www.github.com/JaCraig/Archivist/commit/88ceb6c20a61c626177c372788a942ec76dc02cb))
+* More test fixes ([d295c37](https://www.github.com/JaCraig/Archivist/commit/d295c37f7d104e9daf8e1e232fc6bcdfce76f3df))
+
+### Other
+
+* Merge pull request #39 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-54ce44ee3e ([d610e6a](https://www.github.com/JaCraig/Archivist/commit/d610e6ad7aeb94c241d4a98bdb587ad03ed57e87))
+* Merge pull request #40 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-1861451e44 ([1fe5382](https://www.github.com/JaCraig/Archivist/commit/1fe538283e89d02d0c2d43d1d0466b47cad88ef0))
+* Merge pull request #41 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-7519b5a5de ([9538528](https://www.github.com/JaCraig/Archivist/commit/9538528d9e472da283f78f21f8394be8c48c3036))
+* Merge pull request #42 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-be36b3769a ([a441411](https://www.github.com/JaCraig/Archivist/commit/a44141124e203ee64b39599deb09ed4a40864176))
+* Merge pull request #43 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-0abfb65c46 ([45d8d88](https://www.github.com/JaCraig/Archivist/commit/45d8d885f897380b27c8913486b6e5a326fd0fc8))
+* Merge pull request #44 from JaCraig/AddingCalendar ([bdf17af](https://www.github.com/JaCraig/Archivist/commit/bdf17af13192ba35ab3e9fc53b4452ae4573a68e))
+* Adding calendar type and ical/vcal file types ([677445d](https://www.github.com/JaCraig/Archivist/commit/677445de42c40eb4058b4a96e38b5bd6a230630e))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([811cdd4](https://www.github.com/JaCraig/Archivist/commit/811cdd4109eaa850f9c734b4d0ca775cc88e5a35))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([1669ab9](https://www.github.com/JaCraig/Archivist/commit/1669ab9a3d719b2abdea8abcb4cac013c263e961))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([50a2ba9](https://www.github.com/JaCraig/Archivist/commit/50a2ba9177292c2716728f891b9b62c3d8ba398d))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([2412052](https://www.github.com/JaCraig/Archivist/commit/2412052a926c1f448b68ee899b39aef50e37c497))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([c8d00ff](https://www.github.com/JaCraig/Archivist/commit/c8d00ff6aa9a817d1b506547ad68d28d668f1a0e))
+* Rethinking calendar layout to better get other components ([3ccfa1b](https://www.github.com/JaCraig/Archivist/commit/3ccfa1b6aac0a57d551ca0a0ace5113102df4b7f))
+* Updating tools ([062b8ef](https://www.github.com/JaCraig/Archivist/commit/062b8eff553c2f2ee29dd170a6ac2c1a728fb420))
+
 <a name="0.5.9"></a>
 ## [0.5.9](https://www.github.com/JaCraig/Archivist/releases/tag/v0.5.9) (2024-08-02)
 
