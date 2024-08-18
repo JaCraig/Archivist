@@ -35,6 +35,7 @@ namespace Archivist.Tests.Converters
         {
             // Arrange
             var File = new Tables();
+            _ = File.AddTable();
 
             // Act
             Calendar? Result = TablesToCalendarConverter.Convert(File);
@@ -62,13 +63,16 @@ namespace Archivist.Tests.Converters
         {
             // Arrange
             var File = new Tables();
+            Table TempTable = File.AddTable();
+            TempTable.Columns.Add("Summary");
+            TempTable.AddRow().Add("Test");
 
             // Act
             Calendar? Result = TablesToCalendarConverter.Convert(File);
 
             // Assert
             Assert.NotNull(Result);
-            Assert.Equal(File.Count, Result.Events[0].Count);
+            Assert.Equal("Test", Result.Events[0].Summary);
         }
     }
 }

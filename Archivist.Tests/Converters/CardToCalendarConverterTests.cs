@@ -63,6 +63,7 @@ namespace Archivist.Tests.Converters
         {
             // Arrange
             var File = new Card();
+            File.Fields.Add(new KeyValueField("Summary", null, "Test"));
 
             // Act
             Calendar? Result = CardToCalendarConverter.Convert(File);
@@ -70,7 +71,7 @@ namespace Archivist.Tests.Converters
             // Assert
             Assert.NotNull(Result);
             Assert.Equal(File.Count, Result.Events[0].Count);
-            Assert.Same(File.Fields, Result.Events[0].Fields);
+            Assert.Equal("Test", Result.Events[0].Summary);
         }
     }
 }

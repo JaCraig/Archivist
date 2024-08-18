@@ -2,6 +2,7 @@
 using Archivist.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Archivist.Converters
 {
@@ -33,7 +34,7 @@ namespace Archivist.Converters
             {
                 ReturnValue.Metadata[Metadata.Key] = Metadata.Value;
             }
-            ReturnValue.Title = file.Title;
+            ReturnValue.Title = file.Title ?? file.Events.FirstOrDefault()?.Summary;
             return ReturnValue;
         }
 

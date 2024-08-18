@@ -347,6 +347,8 @@ namespace Archivist.DataTypes
             IGenericFile? ReturnValue;
             if (FileType == typeof(Calendar))
                 ReturnValue = (IGenericFile?)this;
+            else if (FileType == typeof(Card))
+                ReturnValue = (Card?)this;
             else if (FileType == typeof(Table))
                 ReturnValue = (Table?)this;
             else if (FileType == typeof(Tables))

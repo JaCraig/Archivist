@@ -20,7 +20,8 @@ namespace Archivist.Converters
             if (file is null)
                 return null;
             var ReturnValue = new Calendar() { Title = file.Title };
-            CalendarComponent Component = ReturnValue.AddEvent("", "", "", DateTime.Now, DateTime.Now);
+            var Component = new CalendarComponent(ReturnValue);
+            ReturnValue.Events.Add(Component);
             foreach (KeyValuePair<string, string> Metadata in file.Metadata)
             {
                 ReturnValue.Metadata.Add(Metadata.Key, Metadata.Value);

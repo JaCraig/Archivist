@@ -45,6 +45,8 @@ namespace Archivist.Tests.DataTypes
             const string Location = "TestValue1208207011";
             DateTime Start = DateTime.UtcNow;
             DateTime End = DateTime.UtcNow;
+            Start = new DateTime(Start.Year, Start.Month, Start.Day, Start.Hour, Start.Minute, 0, DateTimeKind.Utc);
+            End = new DateTime(End.Year, End.Month, End.Day, End.Hour, End.Minute, 0, DateTimeKind.Utc);
 
             // Act
             CalendarComponent Result = _TestClass.AddEvent(Summary, Description, Location, Start, End);
@@ -205,7 +207,7 @@ namespace Archivist.Tests.DataTypes
             // Act
             var TestClass = new Calendar();
             _ = TestClass.AddEvent("TestValue1", "TestValue2", "TestValue3", DateTime.UtcNow, DateTime.UtcNow);
-            TestClass? Result = _TestClass.ConvertTo<TestClass>();
+            TestClass? Result = TestClass.ConvertTo<TestClass>();
 
             // Assert
             Assert.NotNull(Result);
@@ -244,14 +246,14 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var TestClass = new Calendar();
-            _ = TestClass.AddEvent("TestValue1", "TestValue2", "TestValue3", DateTime.UtcNow, DateTime.UtcNow);
+            _ = TestClass.AddEvent("TestValue1", "TestValue2", "TestValue3", new DateTime(2021, 9, 1, 0, 0, 0, DateTimeKind.Utc), new DateTime(2021, 9, 1, 0, 0, 0, DateTimeKind.Utc));
 
             // Act
             var Result = TestClass.GetContent();
 
             // Assert
             Assert.NotNull(Result);
-            Assert.Equal("SUMMARY:TestValue1\r\nDESCRIPTION:TestValue2\r\nLOCATION:TestValue3\r\nSTART:2021-09-01T00:00:00Z\r\nEND:2021-09-01T00:00:00Z\r\n", Result);
+            Assert.Equal("SUMMARY: TestValue1\nDESCRIPTION: TestValue2\nLOCATION: TestValue3\nDTSTART: 20210901T000000\nDTEND: 20210901T000000\n\n", Result);
         }
 
         [Fact]
@@ -430,13 +432,13 @@ namespace Archivist.Tests.DataTypes
             _ = BaseValue.AddEvent("TestValue1", "TestValue2", "TestValue3", DateTime.UtcNow, DateTime.UtcNow);
             var EqualToBaseValue = new Calendar();
             _ = EqualToBaseValue.AddEvent("TestValue1", "TestValue2", "TestValue3", DateTime.UtcNow, DateTime.UtcNow);
-            var GreaterThanBaseValue = new Calendar();
-            _ = GreaterThanBaseValue.AddEvent("TestValue2", "TestValue2", "TestValue3", DateTime.UtcNow, DateTime.UtcNow);
+            var LessThanBaseValue = new Calendar();
+            _ = LessThanBaseValue.AddEvent("TestValue2", "TestValue2", "TestValue3", DateTime.UtcNow, DateTime.UtcNow);
 
             // Assert
             Assert.Equal(0, BaseValue.CompareTo(EqualToBaseValue));
-            Assert.True(BaseValue.CompareTo(GreaterThanBaseValue) < 0);
-            Assert.True(GreaterThanBaseValue.CompareTo(BaseValue) > 0);
+            Assert.True(BaseValue.CompareTo(LessThanBaseValue) > 0);
+            Assert.True(LessThanBaseValue.CompareTo(BaseValue) < 0);
         }
 
         [Fact]

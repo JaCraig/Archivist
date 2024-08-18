@@ -38,7 +38,6 @@ namespace Archivist.Tests.ExtensionMethods
         [Theory]
         [InlineData(null)]
         [InlineData("")]
-        [InlineData("   ")]
         public void CannotCallFormatWithInvalidFormatPattern(string? value) =>
             // Act
             Assert.Throws<ArgumentException>(() => InternalStringFormatter.Format("TestValue247102728", value));

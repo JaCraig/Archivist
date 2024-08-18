@@ -14,7 +14,7 @@ namespace Archivist.DataTypes
     /// Represents a Calendar (vCalendar, etc.) file.
     /// </summary>
     /// <seealso cref="FileBaseClass{Calendar}"/>
-    public class CalendarComponent : IComparable<CalendarComponent>, IEquatable<CalendarComponent>, IEnumerable<KeyValueField?>, IEnumerable, IObjectConvertable
+    public class CalendarComponent : IComparable<CalendarComponent>, IEquatable<CalendarComponent>, IEnumerable<KeyValueField?>, IObjectConvertable
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CalendarComponent"/> class.
@@ -106,8 +106,8 @@ namespace Archivist.DataTypes
             get
             {
                 if (DateTime.TryParse(this[CommonCalendarFields.Created].FirstOrDefault()?.Value.FormatString("####/##/## ##:##"), CultureInfo.CurrentCulture, DateTimeStyles.None, out DateTime Result))
-                    return Result + CurrentTimeZone.BaseUtcOffset;
-                return DateTime.UtcNow + CurrentTimeZone.BaseUtcOffset;
+                    return Result + CurrentTimeZone.GetUtcOffset(Result);
+                return DateTime.UtcNow + CurrentTimeZone.GetUtcOffset(DateTime.Now);
             }
             set
             {
@@ -147,8 +147,8 @@ namespace Archivist.DataTypes
             get
             {
                 if (DateTime.TryParse(this[CommonCalendarFields.DateStamp].FirstOrDefault()?.Value.FormatString("####/##/## ##:##"), CultureInfo.CurrentCulture, DateTimeStyles.None, out DateTime Result))
-                    return Result + CurrentTimeZone.BaseUtcOffset;
-                return DateTime.UtcNow + CurrentTimeZone.BaseUtcOffset;
+                    return Result + CurrentTimeZone.GetUtcOffset(Result); ;
+                return DateTime.UtcNow + CurrentTimeZone.GetUtcOffset(DateTime.Now);
             }
             set
             {
@@ -218,7 +218,7 @@ namespace Archivist.DataTypes
             get
             {
                 if (DateTime.TryParse(this[CommonCalendarFields.EndDate].FirstOrDefault()?.Value.FormatString("####/##/## ##:##"), CultureInfo.CurrentCulture, DateTimeStyles.None, out DateTime Result))
-                    return Result + CurrentTimeZone.BaseUtcOffset;
+                    return Result + CurrentTimeZone.GetUtcOffset(Result);
                 return StartDate;
             }
             set
@@ -284,7 +284,7 @@ namespace Archivist.DataTypes
             get
             {
                 if (DateTime.TryParse(this[CommonCalendarFields.LastModified].FirstOrDefault()?.Value.FormatString("####/##/## ##:##"), CultureInfo.CurrentCulture, DateTimeStyles.None, out DateTime Result))
-                    return Result + CurrentTimeZone.BaseUtcOffset;
+                    return Result + CurrentTimeZone.GetUtcOffset(Result);
                 return DateTime.Now;
             }
             set
@@ -417,7 +417,7 @@ namespace Archivist.DataTypes
             get
             {
                 if (DateTime.TryParse(this[CommonCalendarFields.StartDate].FirstOrDefault()?.Value.FormatString("####/##/## ##:##"), CultureInfo.CurrentCulture, DateTimeStyles.None, out DateTime Result))
-                    return Result + CurrentTimeZone.BaseUtcOffset;
+                    return Result + CurrentTimeZone.GetUtcOffset(Result);
                 return DateTime.Now;
             }
             set
@@ -615,7 +615,7 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <param name="property">The property name of the fields.</param>
         /// <returns>The fields with the specified property name.</returns>
-        public IEnumerable<KeyValueField?> this[string property] => Fields.Where(field => field?.Property == property).ToList();
+        public IEnumerable<KeyValueField?> this[string property] => Fields.Where(field => string.Equals(field?.Property, property, StringComparison.InvariantCultureIgnoreCase)).ToList();
 
         /// <summary>
         /// Gets the fields with the specified property name and parameter.
@@ -623,7 +623,7 @@ namespace Archivist.DataTypes
         /// <param name="property">The property name of the fields.</param>
         /// <param name="parameter">The parameter of the fields.</param>
         /// <returns>The fields with the specified property name and parameter.</returns>
-        public IEnumerable<KeyValueField?> this[string property, string? parameter] => Fields.Where(field => field?.Property == property && (field?.Parameters.Any(fieldParam => fieldParam.ToString() == parameter) ?? false)).ToList();
+        public IEnumerable<KeyValueField?> this[string property, string? parameter] => Fields.Where(field => string.Equals(field?.Property, property, StringComparison.InvariantCultureIgnoreCase) && (field?.Parameters.Any(fieldParam => string.Equals(fieldParam.ToString(), parameter, StringComparison.InvariantCultureIgnoreCase)) ?? false)).ToList();
 
         /// <summary>
         /// Determines whether two Calendar objects are not equal.

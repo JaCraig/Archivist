@@ -131,7 +131,7 @@ namespace Archivist.Formats.ICalendar
             // If the file already contains Microsoft/Outlook specific fields, do not add them again.
             if (fileCal.Fields.Any(field => field?.Property.StartsWith("X-MICROSOFT-CDO-") ?? false))
                 return;
-            var CurrentDateTime = fileCal.LastModifiedUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture);
+            var CurrentDateTime = fileCal.LastModifiedUtc.ToString("yyyyMMddTHHmmssZ");
             // Add the Microsoft/Outlook specific fields.
             _ = fileContent.AppendFormat("X-MICROSOFT-CDO-BUSYSTATUS:{0}", fileCal.Statuses.FirstOrDefault()?.Value ?? "BUSY")
                         .AppendLine()
@@ -164,10 +164,10 @@ namespace Archivist.Formats.ICalendar
             {
                 _ = fileContent.Append("BEGIN:VEVENT\r\n")
                 .AppendFormat("CLASS:{0}\r\n", Event.Class)
-                .AppendFormat("DTSTAMP:{0}\r\n", Event.DateStampUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
-                .AppendFormat("CREATED:{0}\r\n", Event.CreatedUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
-                .AppendFormat("DTSTART:{0}\r\n", Event.StartDateUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
-                .AppendFormat("DTEND:{0}\r\n", Event.EndDateUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
+                .AppendFormat("DTSTAMP:{0}\r\n", Event.DateStampUtc.ToString("yyyyMMddTHHmmssZ"))
+                .AppendFormat("CREATED:{0}\r\n", Event.CreatedUtc.ToString("yyyyMMddTHHmmssZ"))
+                .AppendFormat("DTSTART:{0}\r\n", Event.StartDateUtc.ToString("yyyyMMddTHHmmssZ"))
+                .AppendFormat("DTEND:{0}\r\n", Event.EndDateUtc.ToString("yyyyMMddTHHmmssZ"))
                 .AppendFormat("LOCATION:{0}\r\n", Event.Location)
                 .AppendFormat("UID:{0}\r\n", Event.UID)
                 .AppendFormat("SEQUENCE:{0}\r\n", Event.Sequence)
@@ -184,7 +184,7 @@ namespace Archivist.Formats.ICalendar
                     _ = fileContent.AppendFormat("X-ALT-DESC;FMTTYPE=text/html:{0}\r\n", Event.Description.Replace("\n", ""));
                 else if (!string.IsNullOrEmpty(Event.Description))
                     _ = fileContent.AppendFormat("DESCRIPTION:{0}\r\n", Event.Description);
-                _ = fileContent.AppendFormat("LAST-MODIFIED:{0}\r\n", Event.LastModifiedUtc.ToString("yyyyMMddTHHmmssZ", System.Globalization.CultureInfo.InvariantCulture))
+                _ = fileContent.AppendFormat("LAST-MODIFIED:{0}\r\n", Event.LastModifiedUtc.ToString("yyyyMMddTHHmmssZ"))
                     .AppendFormat("STATUS:{0}\r\n", Event.Status)
                     .AppendFormat("TRANSP:{0}\r\n", Event.Transp);
 

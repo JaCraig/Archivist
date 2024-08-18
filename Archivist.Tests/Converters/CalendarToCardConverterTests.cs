@@ -1,5 +1,6 @@
 using Archivist.Converters;
 using Archivist.DataTypes;
+using Archivist.ExtensionMethods;
 using Archivist.Tests.BaseClasses;
 using System;
 using Xunit;
@@ -70,8 +71,12 @@ namespace Archivist.Tests.Converters
 
             // Assert
             Assert.NotNull(Result);
-            Assert.Equal(File.Events.Count, Result.Count);
-            Assert.Same(File.Events[0].Fields, Result.Fields);
+            Assert.Equal(File.Events[0].Count, Result.Count);
+            Assert.Equal(File.Events[0].Summary, Result.Fields[0]?.Value);
+            Assert.Equal(File.Events[0].Description, Result.Fields[1]?.Value);
+            Assert.Equal(File.Events[0].Location, Result.Fields[2]?.Value);
+            Assert.Equal(File.Events[0].StartDateUtc.ToString("yyyyMMddTHHmm"), Result.Fields[3]?.Value.Left(13));
+            Assert.Equal(File.Events[0].EndDateUtc.ToString("yyyyMMddTHHmm"), Result.Fields[4]?.Value.Left(13));
         }
     }
 }

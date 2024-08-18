@@ -20,7 +20,8 @@ namespace Archivist.Converters
             if (file is null)
                 return null;
             var ReturnValue = new Calendar();
-            CalendarComponent Component = ReturnValue.AddEvent("", "", "", DateTime.Now, DateTime.Now);
+            var Component = new CalendarComponent(ReturnValue);
+            ReturnValue.Events.Add(Component);
             foreach (KeyValueField? Field in file.Fields)
             {
                 if (Field is null)

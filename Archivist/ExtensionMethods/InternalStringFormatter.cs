@@ -35,6 +35,8 @@ namespace Archivist.ExtensionMethods
             {
                 throw new ArgumentException("Format pattern is not valid.", nameof(formatPattern));
             }
+            if (string.IsNullOrEmpty(input))
+                return "";
 
             var ReturnValue = new StringBuilder();
             for (var X = 0; X < formatPattern.Length; ++X)
@@ -54,6 +56,38 @@ namespace Archivist.ExtensionMethods
                 }
             }
             return ReturnValue.ToString();
+        }
+
+        /// <summary>
+        /// Checks if the format pattern is valid
+        /// </summary>
+        /// <param name="formatPattern">Format pattern</param>
+        /// <returns>Returns true if it's valid, otherwise false</returns>
+        internal static bool IsValid(string? formatPattern)
+        {
+            if (string.IsNullOrEmpty(formatPattern))
+                return false;
+
+            var EscapeCharFound = false;
+            for (var X = 0; X < formatPattern.Length; ++X)
+            {
+                if (EscapeCharFound && formatPattern[X] != _DigitChar
+                        && formatPattern[X] != _AlphaChar
+                        && formatPattern[X] != _EscapeChar)
+                {
+                    return false;
+                }
+
+                if (EscapeCharFound)
+                {
+                    EscapeCharFound = false;
+                }
+                else
+                {
+                    EscapeCharFound |= formatPattern[X] == _EscapeChar;
+                }
+            }
+            return !EscapeCharFound;
         }
 
         /// <summary>
@@ -84,38 +118,6 @@ namespace Archivist.ExtensionMethods
                 }
             }
             return input?[Index..];
-        }
-
-        /// <summary>
-        /// Checks if the format pattern is valid
-        /// </summary>
-        /// <param name="formatPattern">Format pattern</param>
-        /// <returns>Returns true if it's valid, otherwise false</returns>
-        private static bool IsValid(string? formatPattern)
-        {
-            if (string.IsNullOrEmpty(formatPattern))
-                return false;
-
-            var EscapeCharFound = false;
-            for (var X = 0; X < formatPattern.Length; ++X)
-            {
-                if (EscapeCharFound && formatPattern[X] != _DigitChar
-                        && formatPattern[X] != _AlphaChar
-                        && formatPattern[X] != _EscapeChar)
-                {
-                    return false;
-                }
-
-                if (EscapeCharFound)
-                {
-                    EscapeCharFound = false;
-                }
-                else
-                {
-                    EscapeCharFound |= formatPattern[X] == _EscapeChar;
-                }
-            }
-            return !EscapeCharFound;
         }
     }
 }

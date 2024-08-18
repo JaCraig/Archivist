@@ -95,22 +95,28 @@ namespace Archivist.Formats.ICalendar
                     case "BEGIN" or "END" when Value is "VCALENDAR":
                         continue;
                     case "BEGIN" when Value is "VALARM":
-                        CurrentComponent = ReturnValue.AddAlarm("", "", "");
+                        CurrentComponent = new CalendarComponent(ReturnValue);
+                        ReturnValue.Alarms.Add(CurrentComponent);
                         continue;
                     case "BEGIN" when Value is "VEVENT":
-                        CurrentComponent = ReturnValue.AddEvent("", "", "", DateTime.Now, DateTime.Now);
+                        CurrentComponent = new CalendarComponent(ReturnValue);
+                        ReturnValue.Events.Add(CurrentComponent);
                         continue;
                     case "BEGIN" when Value is "VTODO":
-                        CurrentComponent = ReturnValue.AddToDo();
+                        CurrentComponent = new CalendarComponent(ReturnValue);
+                        ReturnValue.ToDos.Add(CurrentComponent);
                         continue;
                     case "BEGIN" when Value is "VJOURNAL":
-                        CurrentComponent = ReturnValue.AddJournal();
+                        CurrentComponent = new CalendarComponent(ReturnValue);
+                        ReturnValue.Journals.Add(CurrentComponent);
                         continue;
                     case "BEGIN" when Value is "VFREEBUSY":
-                        CurrentComponent = ReturnValue.AddFreeBusy();
+                        CurrentComponent = new CalendarComponent(ReturnValue);
+                        ReturnValue.FreeBusy.Add(CurrentComponent);
                         continue;
                     case "BEGIN" when Value is "VTIMEZONE":
-                        CurrentComponent = ReturnValue.AddTimeZone();
+                        CurrentComponent = new CalendarComponent(ReturnValue);
+                        ReturnValue.TimeZones.Add(CurrentComponent);
                         continue;
                 }
                 IEnumerable<KeyValueParameter>? Parameters = ParseParameters(LineProperty.Groups["Parameters"]?.Value);

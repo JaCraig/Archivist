@@ -27,8 +27,8 @@ namespace Archivist.DataTypes
         /// Initializes a new instance of the <see cref="KeyValueField"/> class.
         /// </summary>
         /// <param name="field">The field to copy.</param>
-        public KeyValueField(KeyValueField field)
-            : this(field.Property, field.Parameters, field.Value)
+        public KeyValueField(KeyValueField? field)
+            : this(field?.Property, field?.Parameters, field?.Value)
         {
         }
 

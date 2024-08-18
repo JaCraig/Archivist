@@ -83,7 +83,7 @@ namespace Archivist.Tests.DataTypes
             var Result = default == new CalendarComponent(_Parent);
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -93,7 +93,7 @@ namespace Archivist.Tests.DataTypes
             var Result = new CalendarComponent(_Parent) == default;
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -151,7 +151,7 @@ namespace Archivist.Tests.DataTypes
             var Result = TestClass.GetContent();
 
             // Assert
-            Assert.Equal("SUMMARY:TestValue1453032876", Result);
+            Assert.Equal("SUMMARY (LANGUAGE=en-us): TestValue1453032876", Result);
         }
 
         [Fact]
@@ -205,7 +205,7 @@ namespace Archivist.Tests.DataTypes
             var Result = default(CalendarComponent) >= new CalendarComponent(_Parent);
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -215,7 +215,7 @@ namespace Archivist.Tests.DataTypes
             var Result = new CalendarComponent(_Parent) >= default(CalendarComponent);
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -351,7 +351,7 @@ namespace Archivist.Tests.DataTypes
             var Result = new CalendarComponent(_Parent) < default(CalendarComponent);
 
             // Assert
-            Assert.False(Result);
+            Assert.True(Result);
         }
 
         [Fact]
@@ -840,7 +840,8 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var TestClass = new CalendarComponent(_Parent);
-            DateTime TestValue = DateTime.UtcNow;
+            DateTime TestValue = DateTime.Now;
+            TestValue = new DateTime(TestValue.Year, TestValue.Month, TestValue.Day, TestValue.Hour, TestValue.Minute, 0, DateTimeKind.Local);
 
             // Act
             TestClass.Created = TestValue;
@@ -854,7 +855,8 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var TestClass = new CalendarComponent(_Parent);
-            DateTime TestValue = DateTime.UtcNow;
+            DateTime TestValue = DateTime.Now;
+            TestValue = new DateTime(TestValue.Year, TestValue.Month, TestValue.Day, TestValue.Hour, TestValue.Minute, 0, DateTimeKind.Local);
 
             // Act
             TestClass.DateStamp = TestValue;
@@ -882,7 +884,8 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var TestClass = new CalendarComponent(_Parent);
-            DateTime TestValue = DateTime.UtcNow;
+            DateTime TestValue = DateTime.Now;
+            TestValue = new DateTime(TestValue.Year, TestValue.Month, TestValue.Day, TestValue.Hour, TestValue.Minute, 0, DateTimeKind.Local);
 
             // Act
             TestClass.EndDate = TestValue;
@@ -914,7 +917,8 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var TestClass = new CalendarComponent(_Parent);
-            DateTime TestValue = DateTime.UtcNow;
+            DateTime TestValue = DateTime.Now;
+            TestValue = new DateTime(TestValue.Year, TestValue.Month, TestValue.Day, TestValue.Hour, TestValue.Minute, 0, DateTimeKind.Local);
 
             // Act
             TestClass.LastModified = TestValue;
@@ -970,7 +974,8 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var TestClass = new CalendarComponent(_Parent);
-            DateTime TestValue = DateTime.UtcNow;
+            DateTime TestValue = DateTime.Now;
+            TestValue = new DateTime(TestValue.Year, TestValue.Month, TestValue.Day, TestValue.Hour, TestValue.Minute, 0, DateTimeKind.Local);
 
             // Act
             TestClass.StartDate = TestValue;
@@ -1064,7 +1069,7 @@ namespace Archivist.Tests.DataTypes
                 Summary = "A",
                 StartDate = DateTime.UtcNow.Date.AddDays(1)
             };
-            var GreaterThanBaseValue = new CalendarComponent(_Parent)
+            var LessThanBaseValue = new CalendarComponent(_Parent)
             {
                 Summary = "B",
                 StartDate = DateTime.UtcNow.Date.AddDays(2)
@@ -1072,8 +1077,8 @@ namespace Archivist.Tests.DataTypes
 
             // Assert
             Assert.Equal(0, BaseValue.CompareTo(EqualToBaseValue));
-            Assert.True(BaseValue.CompareTo(GreaterThanBaseValue) < 0);
-            Assert.True(GreaterThanBaseValue.CompareTo(BaseValue) > 0);
+            Assert.True(BaseValue.CompareTo(LessThanBaseValue) > 0);
+            Assert.True(LessThanBaseValue.CompareTo(BaseValue) < 0);
         }
 
         [Fact]
