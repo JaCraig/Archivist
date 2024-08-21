@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.6.1"></a>
+## [0.6.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.6.1) (2024-08-21)
+
+### Bug Fixes
+
+* Fixing build and updating packages ([0545497](https://www.github.com/JaCraig/Archivist/commit/05454979c721749ec311cda9975fd6b589d5c819))
+
+### Other
+
+* Merge pull request #45 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-762b859dbf ([f87ae90](https://www.github.com/JaCraig/Archivist/commit/f87ae90d502472c71e8a9e00954b7899e750375a))
+* Merge pull request #46 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-5251f5199c ([475107d](https://www.github.com/JaCraig/Archivist/commit/475107defa1016ae3cc8943da9bcb62bb366122f))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([f4aec1d](https://www.github.com/JaCraig/Archivist/commit/f4aec1dd6008a876e2e4bd0cc4384ae6b927778f))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([0683d12](https://www.github.com/JaCraig/Archivist/commit/0683d126fecde509b05c10438abec236ec398194))
+
 <a name="0.6.0"></a>
 ## [0.6.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.6.0) (2024-08-18)
 
