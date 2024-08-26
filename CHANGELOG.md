@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.6.3"></a>
+## [0.6.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.6.3) (2024-08-26)
+
+### Bug Fixes
+
+* bump ObjectCartographer in /Archivist in the dependencies group ([77386f7](https://www.github.com/JaCraig/Archivist/commit/77386f754e0b3ab06d0ae5974825d699b6b45815))
+
+### Other
+
+* Merge pull request #49 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-179c4a69ad ([7179226](https://www.github.com/JaCraig/Archivist/commit/7179226b734e13bc8d97dcc30e5bceebf873208c))
+* Merge pull request #50 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-85934dc443 ([c28cb37](https://www.github.com/JaCraig/Archivist/commit/c28cb379672467b0913db2e7c54c8c2758b2bcee))
+* Merge pull request #51 from JaCraig/dependabot/nuget/Archivist/dependencies-263b72e342 ([18336ce](https://www.github.com/JaCraig/Archivist/commit/18336cee3f3bd436242b9827781c62867c726963))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([c3e210d](https://www.github.com/JaCraig/Archivist/commit/c3e210d85387a9a32f2b3211d0cbe39768e8e5ec))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([ae442f4](https://www.github.com/JaCraig/Archivist/commit/ae442f4cce872b347dabedbff4be2b76c475c223))
+
 <a name="0.6.2"></a>
 ## [0.6.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.6.2) (2024-08-22)
 
