@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.6.5"></a>
+## [0.6.5](https://www.github.com/JaCraig/Archivist/releases/tag/v0.6.5) (2024-09-02)
+
+### Bug Fixes
+
+* bump YamlDotNet in /Archivist in the dependencies group ([9ae0b87](https://www.github.com/JaCraig/Archivist/commit/9ae0b87bef36098223355b8762fe0fc5b16cbcaf))
+
+### Other
+
+* Merge pull request #55 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-d145a1dea9 ([0780159](https://www.github.com/JaCraig/Archivist/commit/0780159a71e73d68dca6560b46d172a90bd6d8b5))
+* Merge pull request #56 from JaCraig/dependabot/nuget/Archivist/dependencies-a97e9ce8dc ([e88c7c9](https://www.github.com/JaCraig/Archivist/commit/e88c7c9ab73ba84734f4163071482f1122a5baa3))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([6885d7d](https://www.github.com/JaCraig/Archivist/commit/6885d7df868c55368c157f9b1b0f951ad268e4e1))
+
 <a name="0.6.4"></a>
 ## [0.6.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.6.4) (2024-08-29)
 
