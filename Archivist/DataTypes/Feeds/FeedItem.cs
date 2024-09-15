@@ -1,76 +1,14 @@
-﻿using DocumentFormat.OpenXml.Drawing;
-using DocumentFormat.OpenXml.Spreadsheet;
+﻿using Archivist.ExtensionMethods;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
-using System.Xml;
-using System.Xml.XPath;
 
 namespace Archivist.DataTypes.Feeds
 {
     /// <summary>
     /// Feed item
     /// </summary>
-    /// <seealso cref="IFeedItem"/>
-    public class FeedItem : IFeedItem
+    public class FeedItem : IComparable<FeedItem>, IEquatable<FeedItem>
     {
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        public FeedItem()
-        {
-        }
-
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="doc">XML element containing the item content</param>
-        public FeedItem(IXPathNavigable doc)
-            : this()
-        {
-            if (doc is null)
-                throw new ArgumentNullException(nameof(doc));
-            var Element = doc.CreateNavigator();
-            var NamespaceManager = new XmlNamespaceManager(Element.NameTable);
-            NamespaceManager.AddNamespace("media", "http://search.yahoo.com/mrss/");
-            Title = Element.SelectSingleNode("./title", NamespaceManager)?.Value ?? "";
-            Link = Element.SelectSingleNode("./link", NamespaceManager)?.Value ?? "";
-            Description = Element.SelectSingleNode("./description", NamespaceManager)?.Value ?? "";
-            Author = Element.SelectSingleNode("./author", NamespaceManager)?.Value ?? "";
-            foreach (XPathNavigator TempNode in Element.Select("./category", NamespaceManager))
-            {
-                Categories.Add(Utils.StripIllegalCharacters(TempNode.Value));
-            }
-            var Node = Element.SelectSingleNode("./enclosure", NamespaceManager);
-            if (Node != null)
-            {
-                Enclosure = new Enclosure(Node);
-            }
-            Node = Element.SelectSingleNode("./pubDate", NamespaceManager);
-            if (Node != null)
-            {
-                if (DateTime.TryParse(Node.Value.Replace("PDT", "-0700"), out var TempDate))
-                {
-                    PubDate = TempDate;
-                }
-                else
-                {
-                    PubDate = DateTime.Now;
-                }
-            }
-            Node = Element.SelectSingleNode("./media:thumbnail", NamespaceManager);
-            if (Node != null)
-            {
-                Thumbnail = new Thumbnail(Node);
-            }
-            Node = Element.SelectSingleNode("./guid", NamespaceManager);
-            if (Node != null)
-            {
-                GUID = new FeedGuid(Node);
-            }
-        }
-
         /// <summary>
         /// Author
         /// </summary>
@@ -79,13 +17,7 @@ namespace Archivist.DataTypes.Feeds
         /// <summary>
         /// Categories
         /// </summary>
-        public IList<string> Categories { get; } = new List<string>();
-
-        /// <summary>
-        /// Gets the content.
-        /// </summary>
-        /// <value>The content.</value>
-        public string Content => Description ?? "";
+        public List<string> Categories { get; } = new List<string>();
 
         /// <summary>
         /// Description
@@ -95,12 +27,12 @@ namespace Archivist.DataTypes.Feeds
         /// <summary>
         /// Enclosure
         /// </summary>
-        public IEnclosure? Enclosure { get; set; }
+        public Enclosure? Enclosure { get; set; }
 
         /// <summary>
         /// GUID for the item
         /// </summary>
-        public virtual IFeedGuid? GUID { get; set; }
+        public FeedGuid? GUID { get; set; }
 
         /// <summary>
         /// Link
@@ -115,7 +47,7 @@ namespace Archivist.DataTypes.Feeds
         /// <summary>
         /// Thumbnail
         /// </summary>
-        public IThumbnail? Thumbnail { get; set; }
+        public Thumbnail? Thumbnail { get; set; }
 
         /// <summary>
         /// Title
@@ -123,31 +55,188 @@ namespace Archivist.DataTypes.Feeds
         public string? Title { get; set; }
 
         /// <summary>
+        /// Determines whether two instances of <see cref="FeedItem"/> are not equal.
+        /// </summary>
+        /// <param name="left">The first <see cref="FeedItem"/> to compare.</param>
+        /// <param name="right">The second <see cref="FeedItem"/> to compare.</param>
+        /// <returns><c>true</c> if the two instances are not equal; otherwise, <c>false</c>.</returns>
+        public static bool operator !=(FeedItem? left, FeedItem? right)
+        {
+            return !(left == right);
+        }
+
+        /// <summary>
+        /// Determines whether the specified <see cref="FeedItem"/> is less than another specified
+        /// <see cref="FeedItem"/>.
+        /// </summary>
+        /// <param name="left">The first <see cref="FeedItem"/> to compare.</param>
+        /// <param name="right">The second <see cref="FeedItem"/> to compare.</param>
+        /// <returns>
+        /// <c>true</c> if the first <see cref="FeedItem"/> is less than the second <see
+        /// cref="FeedItem"/>; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool operator <(FeedItem? left, FeedItem? right)
+        {
+            return left is null ? right is not null : left.CompareTo(right) < 0;
+        }
+
+        /// <summary>
+        /// Determines whether the specified <see cref="FeedItem"/> is less than or equal to another
+        /// specified <see cref="FeedItem"/>.
+        /// </summary>
+        /// <param name="left">The first <see cref="FeedItem"/> to compare.</param>
+        /// <param name="right">The second <see cref="FeedItem"/> to compare.</param>
+        /// <returns>
+        /// <c>true</c> if the first <see cref="FeedItem"/> is less than or equal to the second <see
+        /// cref="FeedItem"/>; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool operator <=(FeedItem? left, FeedItem? right)
+        {
+            return left is null || left.CompareTo(right) <= 0;
+        }
+
+        /// <summary>
+        /// Determines whether two instances of <see cref="FeedItem"/> are equal.
+        /// </summary>
+        /// <param name="left">The first <see cref="FeedItem"/> to compare.</param>
+        /// <param name="right">The second <see cref="FeedItem"/> to compare.</param>
+        /// <returns><c>true</c> if the two instances are equal; otherwise, <c>false</c>.</returns>
+        public static bool operator ==(FeedItem? left, FeedItem? right)
+        {
+            if (left is null)
+                return right is null;
+
+            return left.Equals(right);
+        }
+
+        /// <summary>
+        /// Determines whether the specified <see cref="FeedItem"/> is greater than another
+        /// specified <see cref="FeedItem"/>.
+        /// </summary>
+        /// <param name="left">The first <see cref="FeedItem"/> to compare.</param>
+        /// <param name="right">The second <see cref="FeedItem"/> to compare.</param>
+        /// <returns>
+        /// <c>true</c> if the first <see cref="FeedItem"/> is greater than the second <see
+        /// cref="FeedItem"/>; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool operator >(FeedItem? left, FeedItem? right)
+        {
+            return left?.CompareTo(right) > 0;
+        }
+
+        /// <summary>
+        /// Determines whether the specified <see cref="FeedItem"/> is greater than or equal to
+        /// another specified <see cref="FeedItem"/>.
+        /// </summary>
+        /// <param name="left">The first <see cref="FeedItem"/> to compare.</param>
+        /// <param name="right">The second <see cref="FeedItem"/> to compare.</param>
+        /// <returns>
+        /// <c>true</c> if the first <see cref="FeedItem"/> is greater than or equal to the second
+        /// <see cref="FeedItem"/>; otherwise, <c>false</c>.
+        /// </returns>
+        public static bool operator >=(FeedItem? left, FeedItem? right)
+        {
+            return left is null ? right is null : left.CompareTo(right) >= 0;
+        }
+
+        /// <summary>
+        /// Compares the current instance with another <see cref="FeedItem"/> and returns an integer
+        /// that indicates whether the current instance precedes, follows, or occurs in the same
+        /// position in the sort order as the other <see cref="FeedItem"/>.
+        /// </summary>
+        /// <param name="other">The <see cref="FeedItem"/> to compare with the current instance.</param>
+        /// <returns>
+        /// A value that indicates the relative order of the objects being compared. The return
+        /// value has the following meanings: Value Meaning Less than zero This instance precedes
+        /// <paramref name="other"/> in the sort order. Zero This instance occurs in the same
+        /// position in the sort order as <paramref name="other"/>. Greater than zero This instance
+        /// follows <paramref name="other"/> in the sort order.
+        /// </returns>
+        public int CompareTo(FeedItem? other)
+        {
+            if (ReferenceEquals(this, other))
+                return 0;
+            if (other is null)
+                return 1;
+            if (PubDate < other.PubDate)
+                return -1;
+            if (PubDate > other.PubDate)
+                return 1;
+            return string.CompareOrdinal(Title, other.Title);
+        }
+
+        /// <summary>
+        /// Determines whether the specified <see cref="FeedItem"/> is equal to the current <see cref="FeedItem"/>.
+        /// </summary>
+        /// <param name="obj">The object to compare with the current <see cref="FeedItem"/>.</param>
+        /// <returns>
+        /// <c>true</c> if the specified object is equal to the current <see cref="FeedItem"/>;
+        /// otherwise, <c>false</c>.
+        /// </returns>
+        public override bool Equals(object? obj)
+        {
+            if (ReferenceEquals(this, obj))
+                return true;
+
+            if (obj is null)
+                return false;
+
+            return obj is FeedItem Other && Equals(Other);
+        }
+
+        /// <summary>
+        /// Determines whether the specified <see cref="FeedItem"/> is equal to the current <see cref="FeedItem"/>.
+        /// </summary>
+        /// <param name="other">The object to compare with the current <see cref="FeedItem"/>.</param>
+        /// <returns>
+        /// <c>true</c> if the specified object is equal to the current <see cref="FeedItem"/>;
+        /// otherwise, <c>false</c>.
+        /// </returns>
+        public bool Equals(FeedItem? other)
+        {
+            if (ReferenceEquals(this, other))
+                return true;
+            if (other is null)
+                return false;
+            if (PubDate != other.PubDate)
+                return false;
+            if (Title != other.Title)
+                return false;
+            if (Link != other.Link)
+                return false;
+            if (Author != other.Author)
+                return false;
+            if (Description != other.Description)
+                return false;
+            if (Enclosure != other.Enclosure)
+                return false;
+            if (Thumbnail != other.Thumbnail)
+                return false;
+            if (GUID != other.GUID)
+                return false;
+            return Categories.Equals(other.Categories);
+        }
+
+        /// <summary>
+        /// Calculates the hash code for the current <see cref="FeedItem"/> instance.
+        /// </summary>
+        /// <returns>The calculated hash code.</returns>
+        public override int GetHashCode()
+        {
+            var Hash1 = HashCode.Combine(Author, Description, Enclosure, GUID, Link);
+            var Hash2 = HashCode.Combine(PubDate, Thumbnail, Title);
+            var ReturnValue = HashCode.Combine(Hash1, Hash2);
+            foreach (var Category in Categories)
+            {
+                ReturnValue = HashCode.Combine(ReturnValue, Category);
+            }
+            return ReturnValue;
+        }
+
+        /// <summary>
         /// Outputs a string ready for RSS
         /// </summary>
         /// <returns>A string formatted for RSS</returns>
-        public override string ToString()
-        {
-            var ItemString = new StringBuilder();
-            ItemString.Append("<item><title>").Append(Utils.StripIllegalCharacters(Title ?? "")).Append("</title>\r\n<link>")
-            .Append(Link).Append("</link>\r\n<author>").Append(Utils.StripIllegalCharacters(Author ?? ""))
-                .Append("</author>\r\n");
-            foreach (var Category in Categories)
-            {
-                ItemString.Append("<category>").Append(Utils.StripIllegalCharacters(Category)).Append("</category>\r\n");
-            }
-            ItemString.Append("<pubDate>").Append(PubDate.ToString("r", CultureInfo.InvariantCulture)).Append("</pubDate>\r\n");
-            if (Enclosure != null)
-                ItemString.Append(Enclosure.ToString());
-            if (Thumbnail != null)
-                ItemString.Append(Thumbnail.ToString());
-            ItemString.Append("<description><![CDATA[").Append(Description).Append("]]></description>\r\n");
-            if (GUID != null)
-                ItemString.Append(GUID.ToString());
-            ItemString.Append("<itunes:subtitle>").Append(Utils.StripIllegalCharacters(Title)).Append("</itunes:subtitle>");
-            ItemString.Append("<itunes:summary><![CDATA[").Append(Description).Append("]]></itunes:summary>");
-            ItemString.Append("</item>\r\n");
-            return ItemString.ToString();
-        }
+        public override string ToString() => $@"FeedItem:Begin\r\nTitle: {Title.StripIllegalCharacters()}\r\nLink: {Link}\r\nAuthor: {Author.StripIllegalCharacters()}\r\nCategories: {string.Join(", ", Categories)}\r\nPubDate: {PubDate:R}\r\n{Enclosure}\r\n{Thumbnail}\r\nDescription: {Description}\r\n{GUID}\r\nFeedItem:End";
     }
 }

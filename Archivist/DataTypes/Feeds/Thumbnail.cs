@@ -1,40 +1,29 @@
 ﻿using System;
-using System.Globalization;
-using System.Xml.XPath;
 
 namespace Archivist.DataTypes.Feeds
 {
     /// <summary>
     /// Thumbnail
     /// </summary>
-    /// <seealso cref="IThumbnail"/>
-    public class Thumbnail : IThumbnail
+    public class Thumbnail : IComparable<Thumbnail>, IEquatable<Thumbnail>
     {
         /// <summary>
-        /// Constructor
+        /// Initializes a new instance of the Thumbnail class.
         /// </summary>
         public Thumbnail()
-        {
-        }
+        { }
 
         /// <summary>
-        /// Constructor
+        /// Initializes a new instance of the Thumbnail class.
         /// </summary>
-        /// <param name="doc">XML element holding info for the enclosure</param>
-        public Thumbnail(IXPathNavigable doc)
+        /// <param name="url">The url</param>
+        /// <param name="height">The height</param>
+        /// <param name="width">The width</param>
+        public Thumbnail(string? url, int height = 0, int width = 0)
         {
-            if (doc is null)
-                throw new ArgumentNullException(nameof(doc));
-            XPathNavigator? Element = doc.CreateNavigator();
-            Url = Element.GetAttribute("url", "");
-            if (!string.IsNullOrEmpty(Element.GetAttribute("width", "")))
-            {
-                Width = int.Parse(Element.GetAttribute("width", ""), CultureInfo.InvariantCulture);
-            }
-            if (!string.IsNullOrEmpty(Element.GetAttribute("height", "")))
-            {
-                Height = int.Parse(Element.GetAttribute("height", ""), CultureInfo.InvariantCulture);
-            }
+            Url = url;
+            Height = height;
+            Width = width;
         }
 
         /// <summary>
@@ -53,16 +42,153 @@ namespace Archivist.DataTypes.Feeds
         public int Width { get; set; }
 
         /// <summary>
-        /// to string item. Used for outputting the item to RSS.
+        /// Determines whether two Thumbnail objects are not equal.
         /// </summary>
-        /// <returns>A string formatted for RSS output</returns>
-        public override string ToString()
+        /// <param name="left">The first Thumbnail object to compare.</param>
+        /// <param name="right">The second Thumbnail object to compare.</param>
+        /// <returns>true if the two Thumbnail objects are not equal; otherwise, false.</returns>
+        public static bool operator !=(Thumbnail? left, Thumbnail? right)
         {
-            if (!string.IsNullOrEmpty(Url))
-            {
-                return $"<media:thumbnail url=\"{Url}\" width=\"{Width.ToString(CultureInfo.InvariantCulture)}\" height=\"{Height}\" />\r\n";
-            }
-            return string.Empty;
+            return !(left == right);
         }
+
+        /// <summary>
+        /// Determines whether the first Thumbnail object is less than the second Thumbnail object.
+        /// </summary>
+        /// <param name="left">The first Thumbnail object to compare.</param>
+        /// <param name="right">The second Thumbnail object to compare.</param>
+        /// <returns>
+        /// true if the first Thumbnail object is less than the second Thumbnail object; otherwise, false.
+        /// </returns>
+        public static bool operator <(Thumbnail? left, Thumbnail? right)
+        {
+            return left is null ? right is not null : left.CompareTo(right) < 0;
+        }
+
+        /// <summary>
+        /// Determines whether the first Thumbnail object is less than or equal to the second
+        /// Thumbnail object.
+        /// </summary>
+        /// <param name="left">The first Thumbnail object to compare.</param>
+        /// <param name="right">The second Thumbnail object to compare.</param>
+        /// <returns>
+        /// true if the first Thumbnail object is less than or equal to the second Thumbnail object;
+        /// otherwise, false.
+        /// </returns>
+        public static bool operator <=(Thumbnail? left, Thumbnail? right)
+        {
+            return left is null || left.CompareTo(right) <= 0;
+        }
+
+        /// <summary>
+        /// Determines whether two Thumbnail objects are equal.
+        /// </summary>
+        /// <param name="left">The first Thumbnail object to compare.</param>
+        /// <param name="right">The second Thumbnail object to compare.</param>
+        /// <returns>true if the two Thumbnail objects are equal; otherwise, false.</returns>
+        public static bool operator ==(Thumbnail? left, Thumbnail? right)
+        {
+            if (left is null)
+                return right is null;
+
+            return left.Equals(right);
+        }
+
+        /// <summary>
+        /// Determines whether the first Thumbnail object is greater than the second Thumbnail object.
+        /// </summary>
+        /// <param name="left">The first Thumbnail object to compare.</param>
+        /// <param name="right">The second Thumbnail object to compare.</param>
+        /// <returns>
+        /// true if the first Thumbnail object is greater than the second Thumbnail object;
+        /// otherwise, false.
+        /// </returns>
+        public static bool operator >(Thumbnail? left, Thumbnail? right)
+        {
+            return left?.CompareTo(right) > 0;
+        }
+
+        /// <summary>
+        /// Determines whether the first Thumbnail object is greater than or equal to the second
+        /// Thumbnail object.
+        /// </summary>
+        /// <param name="left">The first Thumbnail object to compare.</param>
+        /// <param name="right">The second Thumbnail object to compare.</param>
+        /// <returns>
+        /// true if the first Thumbnail object is greater than or equal to the second Thumbnail
+        /// object; otherwise, false.
+        /// </returns>
+        public static bool operator >=(Thumbnail? left, Thumbnail? right)
+        {
+            return left is null ? right is null : left.CompareTo(right) >= 0;
+        }
+
+        /// <summary>
+        /// Compares the current Thumbnail object with another Thumbnail object.
+        /// </summary>
+        /// <param name="other">The Thumbnail object to compare with the current object.</param>
+        /// <returns>A value that indicates the relative order of the objects being compared.</returns>
+        public int CompareTo(Thumbnail? other)
+        {
+            if (ReferenceEquals(this, other))
+                return 0;
+            if (other is null)
+                return 1;
+            if (Height < other.Height)
+                return -1;
+            if (Height > other.Height)
+                return 1;
+            if (Width < other.Width)
+                return -1;
+            if (Width > other.Width)
+                return 1;
+            return string.CompareOrdinal(Url, other.Url);
+        }
+
+        /// <summary>
+        /// Determines whether the current Thumbnail object is equal to another Thumbnail object.
+        /// </summary>
+        /// <param name="other">The Thumbnail object to compare with the current object.</param>
+        /// <returns>
+        /// true if the current Thumbnail object is equal to the other parameter; otherwise, false.
+        /// </returns>
+        public bool Equals(Thumbnail? other)
+        {
+            if (ReferenceEquals(this, other))
+                return true;
+            if (other is null)
+                return false;
+            return Height == other.Height && Width == other.Width && Url == other.Url;
+        }
+
+        /// <summary>
+        /// Determines whether the current Thumbnail object is equal to another object.
+        /// </summary>
+        /// <param name="obj">The object to compare with the current object.</param>
+        /// <returns>
+        /// true if the current Thumbnail object is equal to the other parameter; otherwise, false.
+        /// </returns>
+        public override bool Equals(object? obj)
+        {
+            if (ReferenceEquals(this, obj))
+                return true;
+
+            if (obj is null)
+                return false;
+
+            return obj is Thumbnail Other && Equals(Other);
+        }
+
+        /// <summary>
+        /// Returns the hash code for the current Thumbnail object.
+        /// </summary>
+        /// <returns>A 32-bit signed integer hash code.</returns>
+        public override int GetHashCode() => HashCode.Combine(Height, Width, Url);
+
+        /// <summary>
+        /// Returns a string that represents the current Thumbnail object.
+        /// </summary>
+        /// <returns>A string that represents the current Thumbnail object.</returns>
+        public override string ToString() => $"Image (Height={Height}; Width={Width}): {Url}\r\n";
     }
 }

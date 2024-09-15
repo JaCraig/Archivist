@@ -164,7 +164,7 @@ namespace Archivist.ExtensionMethods
         /// </summary>
         /// <param name="original">Original text</param>
         /// <returns>string stripped of certain characters.</returns>
-        public static string StripIllegalCharacters(string original)
+        public static string StripIllegalCharacters(this string? original)
         {
             return original?.Replace("&nbsp;", " ")
                 .Replace("&#160;", string.Empty)

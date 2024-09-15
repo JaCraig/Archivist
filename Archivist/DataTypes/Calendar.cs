@@ -102,6 +102,16 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Converts the Calendar to a Feed.
+        /// </summary>
+        /// <param name="file">The Calendar to convert.</param>
+        /// <returns>The Feed representation of the Calendar.</returns>
+        public static implicit operator Feed?(Calendar? file)
+        {
+            return CalendarToFeedConverter.Convert(file);
+        }
+
+        /// <summary>
         /// Converts the Calendar to a structured object.
         /// </summary>
         /// <param name="file">The Calendar to convert.</param>
@@ -347,6 +357,8 @@ namespace Archivist.DataTypes
             IGenericFile? ReturnValue;
             if (FileType == typeof(Calendar))
                 ReturnValue = (IGenericFile?)this;
+            else if (FileType == typeof(Feed))
+                ReturnValue = (Feed?)this;
             else if (FileType == typeof(Card))
                 ReturnValue = (Card?)this;
             else if (FileType == typeof(Table))

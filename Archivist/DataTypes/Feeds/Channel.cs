@@ -1,77 +1,27 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
-using System.Xml;
-using System.Xml.XPath;
 
 namespace Archivist.DataTypes.Feeds
 {
     /// <summary>
     /// Channel
     /// </summary>
-    public class Channel
+    public class Channel : IList<FeedItem>, IComparable<Channel>, IEquatable<Channel>
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Channel"/> class.
-        /// </summary>
-        public Channel()
-        {
-        }
-
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="doc">XML representation of the channel</param>
-        public Channel(IXPathNavigable doc)
-        {
-            XPathNavigator? Element = doc.CreateNavigator();
-            if (!Element.Name.Equals("channel", StringComparison.CurrentCultureIgnoreCase))
-                throw new ArgumentException("Element is not a channel");
-            var NamespaceManager = new XmlNamespaceManager(Element.NameTable);
-            Title = Element.SelectSingleNode("./title", NamespaceManager)?.Value ?? "";
-            Link = Element.SelectSingleNode("./link", NamespaceManager)?.Value ?? "";
-            Description = Element.SelectSingleNode("./description", NamespaceManager)?.Value ?? "";
-            Copyright = Element.SelectSingleNode("./copyright", NamespaceManager)?.Value ?? "";
-            Language = Element.SelectSingleNode("./language", NamespaceManager)?.Value ?? "";
-            WebMaster = Element.SelectSingleNode("./webmaster", NamespaceManager)?.Value ?? "";
-            if (DateTime.TryParse(Element.SelectSingleNode("./pubDate", NamespaceManager)?.Value.Replace("PDT", "-0700"), out DateTime TempDate))
-                PubDate = TempDate;
-            else
-                PubDate = DateTime.Now;
-            XPathNodeIterator Nodes = Element.Select("./category", NamespaceManager);
-            foreach (XPathNavigator TempNode in Nodes)
-            {
-                Categories.Add(Utils.StripIllegalCharacters(TempNode.Value));
-            }
-            Docs = Element.SelectSingleNode("./docs", NamespaceManager)?.Value ?? "";
-            if (int.TryParse(Element.SelectSingleNode("./ttl", NamespaceManager)?.Value, out var TempTTL))
-                TTL = TempTTL;
-            ImageUrl = Element.SelectSingleNode("./image/url", NamespaceManager)?.Value ?? "";
-            Nodes = Element.Select("./item", NamespaceManager);
-            foreach (XPathNavigator TempNode in Nodes)
-            {
-                Items.Add(new FeedItem(TempNode));
-            }
-        }
-
         /// <summary>
         /// Gets the categories.
         /// </summary>
         /// <value>The categories.</value>
-        public IList<string> Categories { get; } = new List<string>();
+        public List<string> Categories { get; } = new List<string>();
 
         /// <summary>
         /// Gets the cloud.
         /// </summary>
         /// <value>The cloud.</value>
-        public string? Cloud { get; set; }
-
-        /// <summary>
-        /// Gets the content.
-        /// </summary>
-        /// <value>The content.</value>
-        public string Content => Items.ToString(x => x.Content, "\n");
+        public string? Cloud { get; set; } = "";
 
         /// <summary>
         /// Gets the copyright.
@@ -88,7 +38,7 @@ namespace Archivist.DataTypes.Feeds
         /// Gets the description.
         /// </summary>
         /// <value>The description.</value>
-        public string? Description { get; set; }
+        public string? Description { get; set; } = "";
 
         /// <summary>
         /// Gets the docs.
@@ -107,19 +57,19 @@ namespace Archivist.DataTypes.Feeds
         /// Gets or sets the image URL.
         /// </summary>
         /// <value>The image URL.</value>
-        public string? ImageUrl { get; set; }
+        public string? ImageUrl { get; set; } = "";
 
         /// <summary>
         /// Gets a value indicating whether the <see
         /// cref="T:System.Collections.Generic.ICollection`1"/> is read-only.
         /// </summary>
-        public bool IsReadOnly => Items.IsReadOnly;
+        public bool IsReadOnly => false;
 
         /// <summary>
         /// Gets the items.
         /// </summary>
         /// <value>The items.</value>
-        public IList<IFeedItem> Items { get; } = new List<IFeedItem>();
+        public List<FeedItem> Items { get; } = new List<FeedItem>();
 
         /// <summary>
         /// Gets or sets the language.
@@ -131,19 +81,19 @@ namespace Archivist.DataTypes.Feeds
         /// Gets or sets the link.
         /// </summary>
         /// <value>The link.</value>
-        public string? Link { get; set; }
+        public string? Link { get; set; } = "";
 
         /// <summary>
         /// Gets or sets the pub date.
         /// </summary>
         /// <value>The pub date.</value>
-        public DateTime PubDate { get; set; } = DateTime.Now;
+        public DateTime PubDate { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Gets or sets the title.
         /// </summary>
         /// <value>The title.</value>
-        public string? Title { get; set; }
+        public string? Title { get; set; } = "";
 
         /// <summary>
         /// Gets or sets the TTL.
@@ -155,30 +105,184 @@ namespace Archivist.DataTypes.Feeds
         /// Gets or sets the web master.
         /// </summary>
         /// <value>The web master.</value>
-        public string? WebMaster { get; set; }
+        public string? WebMaster { get; set; } = "";
 
         /// <summary>
-        /// Gets or sets the <see cref="IFeedItem"/> at the specified index.
+        /// Gets or sets the <see cref="FeedItem"/> at the specified index.
         /// </summary>
-        /// <value>The <see cref="IFeedItem"/>.</value>
+        /// <value>The <see cref="FeedItem"/>.</value>
         /// <param name="index">The index.</param>
-        /// <returns></returns>
-        public IFeedItem this[int index]
+        /// <returns>The <see cref="FeedItem"/>.</returns>
+        public FeedItem this[int index]
         {
-            get => Items[index];
-            set => Items[index] = value;
+            get
+            {
+                if (index < 0 || index >= Items.Count)
+                    throw new ArgumentOutOfRangeException(nameof(index));
+                return Items[index];
+            }
+            set
+            {
+                if (index < 0 || index >= Items.Count)
+                    throw new ArgumentOutOfRangeException(nameof(index));
+                Items[index] = value;
+            }
+        }
+
+        /// <summary>
+        /// Are the two channels not equal each other.
+        /// </summary>
+        /// <param name="left">The first channel to compare.</param>
+        /// <param name="right">The second channel to compare.</param>
+        /// <returns>True if the two channels are not equal; otherwise, false.</returns>
+        public static bool operator !=(Channel? left, Channel? right)
+        {
+            return !(left == right);
+        }
+
+        /// <summary>
+        /// Is the first channel less than the second channel.
+        /// </summary>
+        /// <param name="left">The first channel to compare.</param>
+        /// <param name="right">The second channel to compare.</param>
+        /// <returns>True if the first channel is less than the second channel; otherwise, false.</returns>
+        public static bool operator <(Channel? left, Channel? right)
+        {
+            return left is null ? right is not null : left.CompareTo(right) < 0;
+        }
+
+        /// <summary>
+        /// Is the first channel less than or equal to the second channel.
+        /// </summary>
+        /// <param name="left">The first channel to compare.</param>
+        /// <param name="right">The second channel to compare.</param>
+        /// <returns>
+        /// True if the first channel is less than or equal to the second channel; otherwise, false.
+        /// </returns>
+        public static bool operator <=(Channel? left, Channel? right)
+        {
+            return left is null || left.CompareTo(right) <= 0;
+        }
+
+        /// <summary>
+        /// Are the two channels equal each other.
+        /// </summary>
+        /// <param name="left">The first channel to compare.</param>
+        /// <param name="right">The second channel to compare.</param>
+        /// <returns>True if the two channels are equal; otherwise, false.</returns>
+        public static bool operator ==(Channel? left, Channel? right)
+        {
+            return (left is null) ? right is null : left.Equals(right);
+        }
+
+        /// <summary>
+        /// Is the first channel greater than the second channel.
+        /// </summary>
+        /// <param name="left">The first channel to compare.</param>
+        /// <param name="right">The second channel to compare.</param>
+        /// <returns>
+        /// True if the first channel is greater than the second channel; otherwise, false.
+        /// </returns>
+        public static bool operator >(Channel? left, Channel? right)
+        {
+            return left?.CompareTo(right) > 0;
+        }
+
+        /// <summary>
+        /// Is the first channel greater than or equal to the second channel.
+        /// </summary>
+        /// <param name="left">The first channel to compare.</param>
+        /// <param name="right">The second channel to compare.</param>
+        /// <returns>
+        /// True if the first channel is greater than or equal to the second channel; otherwise, false.
+        /// </returns>
+        public static bool operator >=(Channel? left, Channel? right)
+        {
+            return left is null ? right is null : left.CompareTo(right) >= 0;
         }
 
         /// <summary>
         /// Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1"/>.
         /// </summary>
         /// <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1"/>.</param>
-        public void Add(IFeedItem item) => Items.Add(item);
+        public void Add(FeedItem? item)
+        {
+            if (item is null)
+                return;
+            Items.Add(item);
+        }
+
+        /// <summary>
+        /// Adds the list of items to the <see cref="T:System.Collections.Generic.ICollection`1"/>.
+        /// </summary>
+        /// <param name="items">The items to add.</param>
+        public void AddRange(IEnumerable<FeedItem>? items)
+        {
+            if (items is null)
+                return;
+            Items.AddRange(items);
+        }
 
         /// <summary>
         /// Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1"/>.
         /// </summary>
         public void Clear() => Items.Clear();
+
+        /// <summary>
+        /// Compares the current <see cref="Channel"/> object with another <see cref="Channel"/> object.
+        /// </summary>
+        /// <param name="other">
+        /// The <see cref="Channel"/> object to compare with the current <see cref="Channel"/> object.
+        /// </param>
+        /// <returns>
+        /// A value indicating the relative order of the objects being compared. The return value
+        /// has the following meanings:
+        /// - Less than zero: The current object is less than the <paramref name="other"/> object.
+        /// - Zero: The current object is equal to the <paramref name="other"/> object.
+        /// - Greater than zero: The current object is greater than the <paramref name="other"/> object.
+        /// </returns>
+        public int CompareTo(Channel? other)
+        {
+            if (other is null)
+                return 1;
+            if (ReferenceEquals(this, other))
+                return 0;
+            if (Equals(other))
+                return 0;
+            if (Items.Count != other.Items.Count)
+                return Items.Count.CompareTo(other.Items.Count);
+            for (var X = 0; X < Items.Count; ++X)
+            {
+                var Result = Items[X].CompareTo(other.Items[X]);
+                if (Result != 0)
+                    return Result;
+            }
+            if (Cloud != other.Cloud)
+                return Cloud?.CompareTo(other.Cloud) ?? -1;
+            if (Copyright != other.Copyright)
+                return Copyright?.CompareTo(other.Copyright) ?? -1;
+            if (Description != other.Description)
+                return Description?.CompareTo(other.Description) ?? -1;
+            if (Docs != other.Docs)
+                return Docs?.CompareTo(other.Docs) ?? -1;
+            if (Explicit != other.Explicit)
+                return Explicit.CompareTo(other.Explicit);
+            if (ImageUrl != other.ImageUrl)
+                return ImageUrl?.CompareTo(other.ImageUrl) ?? -1;
+            if (Language != other.Language)
+                return Language?.CompareTo(other.Language) ?? -1;
+            if (Link != other.Link)
+                return Link?.CompareTo(other.Link) ?? -1;
+            if (PubDate != other.PubDate)
+                return PubDate.CompareTo(other.PubDate);
+            if (Title != other.Title)
+                return Title?.CompareTo(other.Title) ?? -1;
+            if (TTL != other.TTL)
+                return TTL.CompareTo(other.TTL);
+            if (WebMaster != other.WebMaster)
+                return WebMaster?.CompareTo(other.WebMaster) ?? -1;
+            return 0;
+        }
 
         /// <summary>
         /// Determines whether the <see cref="T:System.Collections.Generic.ICollection`1"/> contains
@@ -189,7 +293,12 @@ namespace Archivist.DataTypes.Feeds
         /// true if <paramref name="item"/> is found in the <see
         /// cref="T:System.Collections.Generic.ICollection`1"/>; otherwise, false.
         /// </returns>
-        public bool Contains(IFeedItem item) => Items.Contains(item);
+        public bool Contains(FeedItem? item)
+        {
+            if (item is null)
+                return false;
+            return Items.Contains(item);
+        }
 
         /// <summary>
         /// Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1"/> to
@@ -203,13 +312,77 @@ namespace Archivist.DataTypes.Feeds
         /// <param name="arrayIndex">
         /// The zero-based index in <paramref name="array"/> at which copying begins.
         /// </param>
-        public void CopyTo(IFeedItem[] array, int arrayIndex) => Items.CopyTo(array, arrayIndex);
+        public void CopyTo(FeedItem[] array, int arrayIndex)
+        {
+            if (array is null)
+                return;
+            if (arrayIndex < 0 || arrayIndex >= array.Length)
+                return;
+            Items.CopyTo(array, arrayIndex);
+        }
+
+        /// <summary>
+        /// Determines whether the specified object is equal to the current object.
+        /// </summary>
+        /// <param name="obj">The object to compare with the current object.</param>
+        /// <returns>
+        /// true if the specified object is equal to the current object; otherwise, false.
+        /// </returns>
+        public override bool Equals(object? obj) => ReferenceEquals(this, obj) || (obj is not null && Equals(obj as Channel));
+
+        /// <summary>
+        /// Determines whether the specified <see cref="Channel"/> object is equal to the current
+        /// <see cref="Channel"/> object.
+        /// </summary>
+        /// <param name="other">
+        /// The <see cref="Channel"/> object to compare with the current <see cref="Channel"/> object.
+        /// </param>
+        /// <returns>
+        /// true if the specified <see cref="Channel"/> object is equal to the current <see
+        /// cref="Channel"/> object; otherwise, false.
+        /// </returns>
+        public bool Equals(Channel? other)
+        {
+            if (other is null)
+                return false;
+            if (Cloud != other.Cloud || Copyright != other.Copyright ||
+                Description != other.Description || Docs != other.Docs ||
+                Explicit != other.Explicit || ImageUrl != other.ImageUrl ||
+                Language != other.Language || Link != other.Link || PubDate != other.PubDate ||
+                Title != other.Title || TTL != other.TTL || WebMaster != other.WebMaster)
+            {
+                return false;
+            }
+
+            foreach (var Category in Categories)
+            {
+                if (!other.Categories.Contains(Category))
+                    return false;
+            }
+            foreach (var Category in other.Categories)
+            {
+                if (!Categories.Contains(Category))
+                    return false;
+            }
+
+            foreach (FeedItem Item in Items)
+            {
+                if (!other.Items.Contains(Item))
+                    return false;
+            }
+            foreach (FeedItem Item in other.Items)
+            {
+                if (!Items.Contains(Item))
+                    return false;
+            }
+            return true;
+        }
 
         /// <summary>
         /// Returns an enumerator that iterates through the collection.
         /// </summary>
         /// <returns>An enumerator that can be used to iterate through the collection.</returns>
-        public IEnumerator<IFeedItem> GetEnumerator() => Items.GetEnumerator();
+        public IEnumerator<FeedItem> GetEnumerator() => Items.GetEnumerator();
 
         /// <summary>
         /// Returns an enumerator that iterates through a collection.
@@ -221,11 +394,36 @@ namespace Archivist.DataTypes.Feeds
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
         /// <summary>
+        /// Computes the hash code for the current <see cref="Channel"/> object.
+        /// </summary>
+        /// <returns>The computed hash code.</returns>
+        public override int GetHashCode()
+        {
+            var Hash1 = HashCode.Combine(Cloud, Copyright, Description, Docs, Explicit, ImageUrl);
+            var Hash2 = HashCode.Combine(Language, Link, PubDate, Title, TTL, WebMaster);
+            var ReturnValue = HashCode.Combine(Hash1, Hash2);
+            foreach (var Category in Categories)
+            {
+                ReturnValue = HashCode.Combine(ReturnValue, Category);
+            }
+            foreach (FeedItem Item in Items)
+            {
+                ReturnValue = HashCode.Combine(ReturnValue, Item);
+            }
+            return ReturnValue;
+        }
+
+        /// <summary>
         /// Determines the index of a specific item in the <see cref="T:System.Collections.Generic.IList`1"/>.
         /// </summary>
         /// <param name="item">The object to locate in the <see cref="T:System.Collections.Generic.IList`1"/>.</param>
         /// <returns>The index of <paramref name="item"/> if found in the list; otherwise, -1.</returns>
-        public int IndexOf(IFeedItem item) => Items.IndexOf(item);
+        public int IndexOf(FeedItem? item)
+        {
+            if (item is null)
+                return -1;
+            return Items.IndexOf(item);
+        }
 
         /// <summary>
         /// Inserts an item to the <see cref="T:System.Collections.Generic.IList`1"/> at the
@@ -235,7 +433,14 @@ namespace Archivist.DataTypes.Feeds
         /// The zero-based index at which <paramref name="item"/> should be inserted.
         /// </param>
         /// <param name="item">The object to insert into the <see cref="T:System.Collections.Generic.IList`1"/>.</param>
-        public void Insert(int index, IFeedItem item) => Items.Insert(index, item);
+        public void Insert(int index, FeedItem? item)
+        {
+            if (item is null)
+                return;
+            if (index < 0 || index > Items.Count)
+                return;
+            Items.Insert(index, item);
+        }
 
         /// <summary>
         /// Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1"/>.
@@ -246,52 +451,49 @@ namespace Archivist.DataTypes.Feeds
         /// cref="T:System.Collections.Generic.ICollection`1"/>; otherwise, false. This method also
         /// returns false if <paramref name="item"/> is not found in the original <see cref="T:System.Collections.Generic.ICollection`1"/>.
         /// </returns>
-        public bool Remove(IFeedItem item) => Items.Remove(item);
+        public bool Remove(FeedItem? item)
+        {
+            if (item is null)
+                return false;
+            return Items.Remove(item);
+        }
 
         /// <summary>
         /// Removes the <see cref="T:System.Collections.Generic.IList`1"/> item at the specified index.
         /// </summary>
         /// <param name="index">The zero-based index of the item to remove.</param>
-        public void RemoveAt(int index) => Items.RemoveAt(index);
+        public void RemoveAt(int index)
+        {
+            if (index < 0 || index >= Items.Count)
+                return;
+            Items.RemoveAt(index);
+        }
 
         /// <summary>
-        /// Converts the channel to a string
+        /// Converts the <see cref="Channel"/> object to its string representation.
         /// </summary>
-        /// <returns>The channel as a string</returns>
+        /// <returns>A string that represents the current <see cref="Channel"/> object.</returns>
         public override string ToString()
         {
-            var ChannelString = new StringBuilder();
-            _ = ChannelString.Append("<channel>");
-            _ = ChannelString.Append("<title>").Append(Utils.StripIllegalCharacters(Title ?? "")).Append("</title>\r\n");
-            _ = ChannelString.Append("<link>").Append(Link).Append("</link>\r\n");
-            _ = ChannelString.Append("<atom:link xmlns:atom=\"http://www.w3.org/2005/Atom\" rel=\"self\" href=\"").Append(Link).Append("\" type=\"application/rss+xml\" />");
-
-            _ = ChannelString.Append("<description><![CDATA[").Append(Utils.StripIllegalCharacters(Description ?? "")).Append("]]></description>\r\n");
-            _ = ChannelString.Append("<language>").Append(Language).Append("</language>\r\n");
-            _ = ChannelString.Append("<copyright>").Append(Utils.StripIllegalCharacters(Copyright)).Append("</copyright>\r\n");
-            _ = ChannelString.Append("<webMaster>").Append(Utils.StripIllegalCharacters(WebMaster ?? "")).Append("</webMaster>\r\n");
-            _ = ChannelString.Append("<pubDate>").Append(PubDate.ToString("Ddd, dd MMM yyyy HH':'mm':'ss", CultureInfo.InvariantCulture)).Append("</pubDate>\r\n");
-            _ = ChannelString.Append("<itunes:explicit>").Append(Explicit ? "yes" : "no").Append("</itunes:explicit>");
-            _ = ChannelString.Append("<itunes:subtitle>").Append(Utils.StripIllegalCharacters(Title ?? "")).Append("</itunes:subtitle>");
-            _ = ChannelString.Append("<itunes:summary><![CDATA[").Append(Utils.StripIllegalCharacters(Description ?? "")).Append("]]></itunes:summary>");
-
-            foreach (var Category in Categories)
-            {
-                _ = ChannelString.Append("<category>").Append(Utils.StripIllegalCharacters(Category)).Append("</category>\r\n");
-                _ = ChannelString.Append("<itunes:category text=\"").Append(Category).Append("\" />\r\n");
-            }
-            _ = ChannelString.Append("<docs>").Append(Docs).Append("</docs>\r\n");
-            _ = ChannelString.Append("<ttl>").Append(TTL.ToString(CultureInfo.InvariantCulture)).Append("</ttl>\r\n");
-            if (!string.IsNullOrEmpty(ImageUrl))
-            {
-                _ = ChannelString.Append("<image><url>").Append(ImageUrl).Append("</url>\r\n<title>").Append(Utils.StripIllegalCharacters(Title ?? "")).Append("</title>\r\n<link>").Append(Link).Append("</link>\r\n</image>\r\n");
-            }
-            foreach (var CurrentItem in Items)
-            {
-                _ = ChannelString.Append(CurrentItem.ToString());
-            }
-            _ = ChannelString.Append("</channel>\r\n");
-            return ChannelString.ToString();
+            return new StringBuilder()
+                .Append("Channel:Begin\r\n")
+                .Append("Title: " + (Title ?? "No Title") + "\r\n")
+                .Append("Description: " + (Description ?? "No Description") + "\r\n")
+                .Append("Link: " + (Link ?? "No Link") + "\r\n")
+                .Append("Language: " + Language + "\r\n")
+                .Append("PubDate: " + PubDate.ToString("R") + "\r\n")
+                .Append("WebMaster: " + (WebMaster ?? "No WebMaster") + "\r\n")
+                .Append("Cloud: " + (Cloud ?? "No Cloud") + "\r\n")
+                .Append("Docs: " + Docs + "\r\n")
+                .Append("Explicit: " + Explicit + "\r\n")
+                .Append("ImageUrl: " + (ImageUrl ?? "No ImageUrl") + "\r\n")
+                .Append("TTL: " + TTL + "\r\n")
+                .Append("Categories: " + string.Join(", ", Categories) + "\r\n")
+                .Append("FeedItems:Begin\r\n")
+                .Append(string.Join("\r\n", Items) + "\r\n")
+                .Append("FeedItems:End\r\n")
+                .Append("Channel:End")
+                .ToString();
         }
     }
 }

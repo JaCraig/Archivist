@@ -1,61 +1,170 @@
 ﻿using System;
-using System.Xml.XPath;
 
 namespace Archivist.DataTypes.Feeds
 {
     /// <summary>
     /// Enclosure
     /// </summary>
-    /// <seealso cref="IEnclosure"/>
-    public class Enclosure : IEnclosure
+    public class Enclosure : IComparable<Enclosure>, IEquatable<Enclosure>
     {
         /// <summary>
-        /// Constructor
+        /// Initializes a new instance of the <see cref="Enclosure"/> class.
         /// </summary>
         public Enclosure()
-        {
-        }
+        { }
 
         /// <summary>
-        /// Constructor
+        /// Initializes a new instance of the <see cref="Enclosure"/> class.
         /// </summary>
-        /// <param name="doc">XML element holding info for the enclosure</param>
-        public Enclosure(IXPathNavigable doc)
+        /// <param name="type">The file type.</param>
+        /// <param name="url">The location of the item.</param>
+        /// <param name="length">The size in bytes.</param>
+        public Enclosure(string? type, string? url, int length)
         {
-            if (doc is null)
-                throw new ArgumentNullException(nameof(doc));
-            XPathNavigator? Element = doc.CreateNavigator();
-            Url = Element.GetAttribute("url", "") ?? string.Empty;
-            if (int.TryParse(Element.GetAttribute("length", ""), out var TempLength))
-                Length = TempLength;
-            Type = Element.GetAttribute("type", "") ?? string.Empty;
+            Type = type;
+            Url = url;
+            Length = length;
         }
 
         /// <summary>
-        /// Size in bytes
+        /// Gets or sets the size in bytes.
         /// </summary>
         public int Length { get; set; }
 
         /// <summary>
-        /// File type
+        /// Gets or sets the file type.
         /// </summary>
         public string? Type { get; set; }
 
         /// <summary>
-        /// Location of the item
+        /// Gets or sets the location of the item.
         /// </summary>
         public string? Url { get; set; }
 
         /// <summary>
-        /// to string item. Used for outputting the item to RSS.
+        /// Determines whether two enclosures are not equal.
         /// </summary>
-        /// <returns>A string formatted for RSS output</returns>
-        public override string ToString()
+        /// <param name="left">The first enclosure to compare.</param>
+        /// <param name="right">The second enclosure to compare.</param>
+        /// <returns>True if the two enclosures are not equal; otherwise, false.</returns>
+        public static bool operator !=(Enclosure? left, Enclosure? right)
         {
-            if (string.IsNullOrEmpty(Url) || string.IsNullOrEmpty(Type))
-                return string.Empty;
-            return "<enclosure url=\"" + Url + "\" length=\"" + Length + "\" type=\"" + Type + "\" />\r\n"
-                + "<media:content url=\"" + Url + "\" fileSize=\"" + Length + "\" type=\"" + Type + "\" />";
+            return !(left == right);
         }
+
+        /// <summary>
+        /// Determines whether the first enclosure is less than the second enclosure.
+        /// </summary>
+        /// <param name="left">The first enclosure to compare.</param>
+        /// <param name="right">The second enclosure to compare.</param>
+        /// <returns>
+        /// True if the first enclosure is less than the second enclosure; otherwise, false.
+        /// </returns>
+        public static bool operator <(Enclosure? left, Enclosure? right)
+        {
+            return left is null ? right is not null : left.CompareTo(right) < 0;
+        }
+
+        /// <summary>
+        /// Determines whether the first enclosure is less than or equal to the second enclosure.
+        /// </summary>
+        /// <param name="left">The first enclosure to compare.</param>
+        /// <param name="right">The second enclosure to compare.</param>
+        /// <returns>
+        /// True if the first enclosure is less than or equal to the second enclosure; otherwise, false.
+        /// </returns>
+        public static bool operator <=(Enclosure? left, Enclosure? right)
+        {
+            return left is null || left.CompareTo(right) <= 0;
+        }
+
+        /// <summary>
+        /// Determines whether two enclosures are equal.
+        /// </summary>
+        /// <param name="left">The first enclosure to compare.</param>
+        /// <param name="right">The second enclosure to compare.</param>
+        /// <returns>True if the two enclosures are equal; otherwise, false.</returns>
+        public static bool operator ==(Enclosure? left, Enclosure? right)
+        {
+            if (left is null)
+                return right is null;
+
+            return left.Equals(right);
+        }
+
+        /// <summary>
+        /// Determines whether the first enclosure is greater than the second enclosure.
+        /// </summary>
+        /// <param name="left">The first enclosure to compare.</param>
+        /// <param name="right">The second enclosure to compare.</param>
+        /// <returns>
+        /// True if the first enclosure is greater than the second enclosure; otherwise, false.
+        /// </returns>
+        public static bool operator >(Enclosure? left, Enclosure? right)
+        {
+            return left?.CompareTo(right) > 0;
+        }
+
+        /// <summary>
+        /// Determines whether the first enclosure is greater than or equal to the second enclosure.
+        /// </summary>
+        /// <param name="left">The first enclosure to compare.</param>
+        /// <param name="right">The second enclosure to compare.</param>
+        /// <returns>
+        /// True if the first enclosure is greater than or equal to the second enclosure; otherwise, false.
+        /// </returns>
+        public static bool operator >=(Enclosure? left, Enclosure? right)
+        {
+            return left is null ? right is null : left.CompareTo(right) >= 0;
+        }
+
+        /// <summary>
+        /// Compares the enclosure to another enclosure based on their content.
+        /// </summary>
+        /// <param name="other">The other enclosure to compare.</param>
+        /// <returns>An integer that indicates the relative order of the enclosures.</returns>
+        public int CompareTo(Enclosure? other)
+        {
+            if (other is null)
+                return 1;
+            var ReturnValue = Length.CompareTo(other.Length);
+            if (ReturnValue != 0)
+                return ReturnValue;
+            ReturnValue = string.CompareOrdinal(Type, other.Type);
+            if (ReturnValue != 0)
+                return ReturnValue;
+            return string.CompareOrdinal(Url, other.Url);
+        }
+
+        /// <summary>
+        /// Determines whether two enclosures are equal.
+        /// </summary>
+        /// <param name="obj">The object to compare.</param>
+        /// <returns>True if the two enclosures are equal; otherwise, false.</returns>
+        public override bool Equals(object? obj) => ReferenceEquals(this, obj) || (obj is not null && Equals(obj as Enclosure));
+
+        /// <summary>
+        /// Determines whether two enclosures are equal.
+        /// </summary>
+        /// <param name="other">The object to compare.</param>
+        /// <returns>True if the two enclosures are equal; otherwise, false.</returns>
+        public bool Equals(Enclosure? other)
+        {
+            if (other is null)
+                return false;
+            return Length == other.Length && Type == other.Type && Url == other.Url;
+        }
+
+        /// <summary>
+        /// Gets the hash code for the enclosure.
+        /// </summary>
+        /// <returns>The hash code for the enclosure.</returns>
+        public override int GetHashCode() => HashCode.Combine(Length, Type, Url);
+
+        /// <summary>
+        /// Returns a string that represents the current enclosure.
+        /// </summary>
+        /// <returns>A string that represents the current enclosure.</returns>
+        public override string ToString() => $"Enclosure (Type={Type}; Length={Length}): {Url}\r\n";
     }
 }

@@ -8,39 +8,39 @@ using System.Linq;
 namespace Archivist.Converters
 {
     /// <summary>
-    /// Converts a <see cref="Feed"/> object to a <see cref="Card"/> object.
+    /// Converts a <see cref="CalendarComponent"/> object to a <see cref="Feed"/> object.
     /// </summary>
-    public class FeedToCardConverter : IDataConverter
+    public class CalendarToFeedConverter : IDataConverter
     {
         /// <summary>
-        /// Converts a <see cref="Feed"/> object to a <see cref="Card"/> object.
+        /// Converts a <see cref="CalendarComponent"/> object to a <see cref="Feed"/> object.
         /// </summary>
-        /// <param name="file">The <see cref="Feed"/> object to convert.</param>
-        /// <returns>The converted <see cref="Card"/> object.</returns>
-        public static Card? Convert(Feed? file)
+        /// <param name="file">The <see cref="CalendarComponent"/> object to convert.</param>
+        /// <returns>The converted <see cref="Feed"/> object.</returns>
+        public static Feed? Convert(Calendar? file)
         {
             if (file is null)
                 return null;
-            var ReturnValue = new Card();
-            foreach (Channel? Channel in file)
+            var ReturnValue = new Feed
             {
-                if (Channel is null)
-                    continue;
-                foreach (FeedItem? Item in Channel)
+                new Channel()
+            };
+            foreach (CalendarComponent Event in file.Events)
+            {
+                var Item = new FeedItem
                 {
-                    if (Item is null)
-                        continue;
-                    ReturnValue.Fields.Add(new KeyValueField("Title", Array.Empty<KeyValueParameter>(), Item.Title));
-                    ReturnValue.Fields.Add(new KeyValueField("Description", Array.Empty<KeyValueParameter>(), Item.Description));
-                    ReturnValue.Fields.Add(new KeyValueField("StartDateUtc", Array.Empty<KeyValueParameter>(), Item.PubDate.ToUniversalTime().ToString()));
-                    ReturnValue.Fields.Add(new KeyValueField("URLs", Array.Empty<KeyValueParameter>(), Item.Link));
-                }
+                    Title = Event.Summary,
+                    Description = Event.Description,
+                    PubDate = Event.StartDateUtc,
+                    Link = Event.URLs.FirstOrDefault()?.Value ?? "",
+                };
+                ReturnValue[0].Add(Item);
             }
             foreach (KeyValuePair<string, string> Metadata in file.Metadata)
             {
                 ReturnValue.Metadata[Metadata.Key] = Metadata.Value;
             }
-            ReturnValue.Title = file.Title ?? file.Channels.FirstOrDefault()?.Title ?? "";
+            ReturnValue.Title = file.Title ?? file.Events.FirstOrDefault()?.Summary;
             return ReturnValue;
         }
 
@@ -54,7 +54,7 @@ namespace Archivist.Converters
         /// <c>true</c> if this converter can convert from the specified source type to the
         /// specified destination type; otherwise, <c>false</c>.
         /// </returns>
-        public bool CanConvert(Type? source, Type? destination) => source == typeof(Feed) && destination == typeof(Card);
+        public bool CanConvert(Type? source, Type? destination) => source == typeof(Calendar) && destination == typeof(Feed);
 
         /// <summary>
         /// Converts the specified object to the specified destination type.
@@ -64,7 +64,7 @@ namespace Archivist.Converters
         /// <returns>The converted object.</returns>
         public object? Convert(object? source, Type? destination)
         {
-            if (source is not Feed File || destination is null)
+            if (source is not Calendar File || destination is null)
                 return null;
             return Convert(File);
         }

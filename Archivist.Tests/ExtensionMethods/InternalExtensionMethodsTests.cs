@@ -26,6 +26,24 @@ namespace Archivist.Tests.ExtensionMethods
             Assert.Equal("Test2092", Result);
         }
 
+        [Fact]
+        public static void CanCallStripIllegalCharacters()
+        {
+            // Arrange
+            const string Original = "Test&nbsp;Value924019433&^%$#";
+
+            // Act
+            var Result = Original.StripIllegalCharacters();
+
+            // Assert
+            Assert.Equal("Test Value924019433and^%$#", Result);
+        }
+
+        [Theory]
+        [InlineData("")]
+        [InlineData("   ")]
+        public static void CanCallStripIllegalCharactersWithInvalidOriginal(string value) => value.StripIllegalCharacters();
+
         [Theory]
         [InlineData(null)]
         [InlineData("")]

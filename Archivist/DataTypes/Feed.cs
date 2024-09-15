@@ -1,19 +1,22 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Converters;
+using Archivist.DataTypes.Feeds;
 using Archivist.Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Channels;
 
 namespace Archivist.DataTypes
 {
     /// <summary>
     /// Represents a Feed object.
     /// </summary>
-    public class Feed : FileBaseClass<Feed>, IComparable<Feed>, IEquatable<Feed>, IObjectConvertable, IEnumerable<Channel>
+    /// <seealso cref="FileBaseClass{Feed}"/>
+    /// <seealso cref="IComparable{Feed}"/>
+    /// <seealso cref="IEquatable{Feed}"/>
+    /// <seealso cref="IList{Feed}"/>
+    public class Feed : FileBaseClass<Feed>, IComparable<Feed>, IEquatable<Feed>, IList<Channel>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Feed"/> class.
@@ -43,11 +46,35 @@ namespace Archivist.DataTypes
         /// </summary>
         public int Count => Channels.Count;
 
+        /// <inheritdoc/>
+        public bool IsReadOnly => ((ICollection<Channel>)Channels).IsReadOnly;
+
+        /// <inheritdoc/>
+        public Channel this[int index]
+        {
+            get
+            {
+                if (index < 0 || index >= Channels.Count)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(index));
+                }
+                return Channels[index];
+            }
+            set
+            {
+                if (index < 0 || index >= Channels.Count)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(index));
+                }
+                Channels[index] = value;
+            }
+        }
+
         /// <summary>
         /// Converts the Feed to a Calendar.
         /// </summary>
         /// <param name="file">The Feed to convert.</param>
-        public static implicit operator Calendar(Feed? file)
+        public static implicit operator Calendar?(Feed? file)
         {
             return FeedToCalendarConverter.Convert(file);
         }
@@ -108,60 +135,112 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Determines whether two Feed objects are not equal.
+        /// </summary>
+        /// <param name="left">The first Feed to compare.</param>
+        /// <param name="right">The second Feed to compare.</param>
+        /// <returns>True if the Feed objects are not equal; otherwise, false.</returns>
+        public static bool operator !=(Feed? left, Feed? right)
+        {
+            return !(left == right);
+        }
+
+        /// <summary>
+        /// Determines whether one Feed object is less than another Feed object.
+        /// </summary>
+        /// <param name="left">The first Feed to compare.</param>
+        /// <param name="right">The second Feed to compare.</param>
+        /// <returns>True if the first Feed is less than the second Feed; otherwise, false.</returns>
+        public static bool operator <(Feed? left, Feed? right)
+        {
+            return left is null ? right is not null : left.CompareTo(right) < 0;
+        }
+
+        /// <summary>
+        /// Determines whether one Feed object is less than or equal to another Feed object.
+        /// </summary>
+        /// <param name="left">The first Feed to compare.</param>
+        /// <param name="right">The second Feed to compare.</param>
+        /// <returns>
+        /// True if the first Feed is less than or equal to the second Feed; otherwise, false.
+        /// </returns>
+        public static bool operator <=(Feed? left, Feed? right)
+        {
+            return left is null || left.CompareTo(right) <= 0;
+        }
+
+        /// <summary>
+        /// Determines whether two Feed objects are equal.
+        /// </summary>
+        /// <param name="left">The first Feed to compare.</param>
+        /// <param name="right">The second Feed to compare.</param>
+        /// <returns>True if the Feed objects are equal; otherwise, false.</returns>
+        public static bool operator ==(Feed? left, Feed? right)
+        {
+            if (left is null)
+                return right is null;
+
+            return left.Equals(right);
+        }
+
+        /// <summary>
+        /// Determines whether one Feed object is greater than another Feed object.
+        /// </summary>
+        /// <param name="left">The first Feed to compare.</param>
+        /// <param name="right">The second Feed to compare.</param>
+        /// <returns>True if the first Feed is greater than the second Feed; otherwise, false.</returns>
+        public static bool operator >(Feed? left, Feed? right)
+        {
+            return left?.CompareTo(right) > 0;
+        }
+
+        /// <summary>
+        /// Determines whether one Feed object is greater than or equal to another Feed object.
+        /// </summary>
+        /// <param name="left">The first Feed to compare.</param>
+        /// <param name="right">The second Feed to compare.</param>
+        /// <returns>
+        /// True if the first Feed is greater than or equal to the second Feed; otherwise, false.
+        /// </returns>
+        public static bool operator >=(Feed? left, Feed? right)
+        {
+            return left is null ? right is null : left.CompareTo(right) >= 0;
+        }
+
+        /// <inheritdoc/>
+        public void Add(Channel? item)
+        {
+            if (item is null)
+                return;
+            Channels.Add(item);
+        }
+
+        /// <inheritdoc/>
+        public void Clear() => Channels.Clear();
+
+        /// <summary>
         /// Compares the Feed to another Feed based on their content.
         /// </summary>
         /// <param name="other">The other Feed to compare.</param>
         /// <returns>An integer that indicates the relative order of the Feeds.</returns>
         public override int CompareTo(Feed? other) => string.Compare(other?.GetContent(), GetContent(), StringComparison.OrdinalIgnoreCase);
 
-        /// <summary>
-        /// Converts the object to the Feed.
-        /// </summary>
-        /// <typeparam name="TObject">The type of object to convert.</typeparam>
-        /// <param name="obj">The object to convert.</param>
-        public void ConvertFrom<TObject>(TObject obj)
+        /// <inheritdoc/>
+        public bool Contains(Channel? item)
         {
-            if (obj is null)
-                return;
-            if (Channels.Count == 0)
-                _ = AddEvent("", "", "", DateTime.Now, DateTime.Now);
-            foreach (System.Reflection.PropertyInfo Property in typeof(TObject).GetProperties())
-            {
-                var Found = false;
-                foreach (FeedComponent Component in Components)
-                {
-                    KeyValueField? Field = Component.Fields.Find(field => string.Equals(field?.Property, Property.Name, StringComparison.OrdinalIgnoreCase));
-                    if (Field is not null)
-                    {
-                        Field.Value = Property.GetValue(obj)?.ToString() ?? "";
-                        Found = true;
-                    }
-                }
-                if (!Found)
-                    Events[0].Fields.Add(new KeyValueField(Property.Name, Array.Empty<KeyValueParameter>(), Property.GetValue(obj)?.ToString() ?? ""));
-            }
+            if (item is null)
+                return false;
+            return Channels.Contains(item);
         }
 
-        /// <summary>
-        /// Converts the Feed to the specified object type.
-        /// </summary>
-        /// <typeparam name="TObject">The type to convert the Feed to.</typeparam>
-        /// <returns>The converted Feed.</returns>
-        public TObject? ConvertTo<TObject>()
+        /// <inheritdoc/>
+        public void CopyTo(Channel[]? array, int arrayIndex)
         {
-            System.Reflection.PropertyInfo[] Properties = typeof(TObject).GetProperties();
-            TObject? Result = Activator.CreateInstance<TObject>();
-            foreach (System.Reflection.PropertyInfo Property in Properties)
-            {
-                foreach (FeedComponent Component in Components)
-                {
-                    KeyValueField? Field = Component.Fields.Find(field => string.Equals(field?.Property, Property.Name, StringComparison.OrdinalIgnoreCase));
-                    if (Field is null)
-                        continue;
-                    Property.SetValue(Result, Field.Value);
-                }
-            }
-            return Result;
+            if (array == null)
+                return;
+            if (arrayIndex < 0 || arrayIndex >= array.Length)
+                return;
+            Channels.CopyTo(array, arrayIndex);
         }
 
         /// <summary>
@@ -182,7 +261,7 @@ namespace Archivist.DataTypes
         /// Gets the content of the Feed.
         /// </summary>
         /// <returns>The content of the Feed.</returns>
-        public override string? GetContent() => (Channels?.Count ?? 0) == 0 ? "" : string.Join('\n', Channels.Select(channel => channel.GetContent()));
+        public override string? GetContent() => string.Join("\r\n", Channels);
 
         /// <inheritdoc/>
         public IEnumerator<Channel> GetEnumerator() => Channels.GetEnumerator();
@@ -195,6 +274,38 @@ namespace Archivist.DataTypes
         /// </summary>
         /// <returns>The hash code of the Feed.</returns>
         public override int GetHashCode() => GetContent()?.GetHashCode(StringComparison.OrdinalIgnoreCase) ?? 0;
+
+        /// <inheritdoc/>
+        public int IndexOf(Channel? item)
+        {
+            if (item is null)
+                return -1;
+            return Channels.IndexOf(item);
+        }
+
+        /// <inheritdoc/>
+        public void Insert(int index, Channel? item)
+        {
+            if (item is null || index < 0 || index > Channels.Count)
+                return;
+            Channels.Insert(index, item);
+        }
+
+        /// <inheritdoc/>
+        public bool Remove(Channel? item)
+        {
+            if (item is null)
+                return false;
+            return Channels.Remove(item);
+        }
+
+        /// <inheritdoc/>
+        public void RemoveAt(int index)
+        {
+            if (index < 0 || index >= Channels.Count)
+                return;
+            Channels.RemoveAt(index);
+        }
 
         /// <summary>
         /// Converts the Feed to the specified object type.
