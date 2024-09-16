@@ -69,10 +69,11 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallEqualsWithFeedGuid()
         {
             // Arrange
+            var TestClass = new FeedGuid();
             var Other = new FeedGuid();
 
             // Act
-            var Result = _TestClass.Equals(Other);
+            var Result = TestClass.Equals(Other);
 
             // Assert
             Assert.True(Result);
@@ -88,7 +89,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = _TestClass.Equals(Obj);
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -146,7 +147,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = Left > Right;
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -180,7 +181,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = Left != Right;
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -248,7 +249,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = Left < Right;
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]

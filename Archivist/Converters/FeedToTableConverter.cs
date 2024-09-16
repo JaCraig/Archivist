@@ -47,7 +47,7 @@ namespace Archivist.Converters
                     Row.Add(Item.Enclosure?.Url ?? "");
                     Row.Add(Item.GUID?.GuidText ?? "");
                     Row.Add(Item.Link);
-                    Row.Add(Item.PubDate.ToUniversalTime().ToString());
+                    Row.Add(Item.PubDateUtc.ToUniversalTime().ToString());
                     Row.Add(Item.Thumbnail?.Url ?? "");
                 }
             }

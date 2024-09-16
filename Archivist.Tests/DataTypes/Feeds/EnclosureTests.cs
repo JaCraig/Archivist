@@ -71,10 +71,11 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallEqualsWithEnclosure()
         {
             // Arrange
+            var TestClass = new Enclosure();
             var Other = new Enclosure();
 
             // Act
-            var Result = _TestClass.Equals(Other);
+            var Result = TestClass.Equals(Other);
 
             // Assert
             Assert.True(Result);
@@ -90,7 +91,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = _TestClass.Equals(Obj);
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -148,7 +149,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = Left > Right;
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -182,7 +183,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = Left != Right;
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -250,7 +251,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = Left < Right;
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -391,12 +392,33 @@ namespace Archivist.Tests.DataTypes.Feeds
         }
 
         [Fact]
-        public void LengthIsInitializedCorrectly() => Assert.Equal(_Length, _TestClass.Length);
+        public void LengthIsInitializedCorrectly()
+        {
+            // Arrange
+            var TestClass = new Enclosure(_Type, _Url, _Length);
+
+            // Assert
+            Assert.Equal(_Length, TestClass.Length);
+        }
 
         [Fact]
-        public void TypeIsInitializedCorrectly() => Assert.Equal(_Type, _TestClass.Type);
+        public void TypeIsInitializedCorrectly()
+        {
+            // Arrange
+            var TestClass = new Enclosure(_Type, _Url, _Length);
+
+            // Assert
+            Assert.Equal(_Type, TestClass.Type);
+        }
 
         [Fact]
-        public void UrlIsInitializedCorrectly() => Assert.Equal(_Type, _TestClass.Url);
+        public void UrlIsInitializedCorrectly()
+        {
+            // Arrange
+            var TestClass = new Enclosure(_Type, _Url, _Length);
+
+            // Assert
+            Assert.Equal(_Url, TestClass.Url);
+        }
     }
 }

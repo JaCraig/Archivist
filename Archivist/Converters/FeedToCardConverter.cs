@@ -32,7 +32,7 @@ namespace Archivist.Converters
                         continue;
                     ReturnValue.Fields.Add(new KeyValueField("Title", Array.Empty<KeyValueParameter>(), Item.Title));
                     ReturnValue.Fields.Add(new KeyValueField("Description", Array.Empty<KeyValueParameter>(), Item.Description));
-                    ReturnValue.Fields.Add(new KeyValueField("StartDateUtc", Array.Empty<KeyValueParameter>(), Item.PubDate.ToUniversalTime().ToString()));
+                    ReturnValue.Fields.Add(new KeyValueField("StartDateUtc", Array.Empty<KeyValueParameter>(), Item.PubDateUtc.ToUniversalTime().ToString()));
                     ReturnValue.Fields.Add(new KeyValueField("URLs", Array.Empty<KeyValueParameter>(), Item.Link));
                 }
             }

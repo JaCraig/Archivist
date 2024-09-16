@@ -88,7 +88,10 @@ namespace Archivist.Tests.Formats.RSS
             Assert.NotNull(Result);
             Archivist.DataTypes.Feeds.Channel Channel = Assert.Single(Result.Channels);
             Assert.Equal(10, Channel.Count);
-            Assert.Equal("Test RSS Feed", Result.Title);
+            Assert.Equal("The Underfold", Channel.Title);
+            Assert.Equal("http://theunderfold.com", Channel.Link);
+            Assert.Equal("A comic by Brian Russell where Brian and his bag-faced friend, JB embark on misadventures!", Channel.Description);
+            Assert.Equal("en-US", Channel.Language);
         }
 
         [Property]
@@ -120,6 +123,7 @@ namespace Archivist.Tests.Formats.RSS
 
             // Assert
             Assert.NotNull(NewFeed);
+            Assert.Equal(Feed.GetContent(), NewFeed.GetContent());
             Assert.Equal(Feed, NewFeed);
         }
     }

@@ -159,7 +159,7 @@ namespace Archivist.Formats.RSS
             ReturnValue.Copyright = Element.SelectSingleNode("./copyright", NamespaceManager)?.Value ?? "";
             ReturnValue.Language = Element.SelectSingleNode("./language", NamespaceManager)?.Value ?? "";
             ReturnValue.WebMaster = Element.SelectSingleNode("./webmaster", NamespaceManager)?.Value ?? "";
-            ReturnValue.PubDate = ReadDateTime(Element.SelectSingleNode("./pubDate", NamespaceManager));
+            ReturnValue.PubDateUtc = ReadDateTime(Element.SelectSingleNode("./pubDate", NamespaceManager));
             XPathNodeIterator Nodes = Element.Select("./category", NamespaceManager);
             foreach (XPathNavigator TempNode in Nodes)
             {
@@ -185,8 +185,8 @@ namespace Archivist.Formats.RSS
         private static DateTime ReadDateTime(XPathNavigator? node)
         {
             if (node is null)
-                return DateTime.Now;
-            return DateTime.TryParse(node.Value.Replace("PDT", "-0700"), out DateTime TempDate) ? TempDate : DateTime.Now;
+                return DateTime.UtcNow;
+            return DateTime.TryParse(node.Value.Replace("PDT", "-0700"), out DateTime TempDate) ? TempDate.ToUniversalTime() : DateTime.UtcNow;
         }
 
         /// <summary>
@@ -248,7 +248,7 @@ namespace Archivist.Formats.RSS
                 ReturnValue.Categories.Add(TempNode.Value.StripIllegalCharacters());
             }
             ReturnValue.Enclosure = ReadEnclosure(Element.SelectSingleNode("./enclosure", NamespaceManager));
-            ReturnValue.PubDate = ReadDateTime(Element.SelectSingleNode("./pubDate", NamespaceManager));
+            ReturnValue.PubDateUtc = ReadDateTime(Element.SelectSingleNode("./pubDate", NamespaceManager));
             ReturnValue.Thumbnail = ReadThumbnail(Element.SelectSingleNode("./media:thumbnail", NamespaceManager));
             ReturnValue.GUID = ReadFeedGuid(Element.SelectSingleNode("./guid", NamespaceManager));
             return ReturnValue;

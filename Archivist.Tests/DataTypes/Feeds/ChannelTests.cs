@@ -157,8 +157,8 @@ namespace Archivist.Tests.DataTypes.Feeds
         {
             // Arrange
             var PubDate = DateTime.UtcNow;
-            var Left = new Channel() { PubDate = PubDate };
-            var Right = new Channel() { PubDate = PubDate };
+            var Left = new Channel() { PubDateUtc = PubDate };
+            var Right = new Channel() { PubDateUtc = PubDate };
 
             // Act
             var Result = Left == Right;
@@ -685,10 +685,10 @@ namespace Archivist.Tests.DataTypes.Feeds
             var TestValue = DateTime.UtcNow;
 
             // Act
-            _TestClass.PubDate = TestValue;
+            _TestClass.PubDateUtc = TestValue;
 
             // Assert
-            Assert.Equal(TestValue, _TestClass.PubDate);
+            Assert.Equal(TestValue, _TestClass.PubDateUtc);
         }
 
         [Fact]
@@ -736,9 +736,9 @@ namespace Archivist.Tests.DataTypes.Feeds
             // Arrange
             var FeedItems = new List<FeedItem> { new FeedItem(), new FeedItem() };
             var PubDate = DateTime.UtcNow;
-            Channel BaseValue = new Channel() { PubDate = PubDate };
+            Channel BaseValue = new Channel() { PubDateUtc = PubDate };
             BaseValue.AddRange(FeedItems);
-            Channel EqualToBaseValue = new Channel() { PubDate = PubDate };
+            Channel EqualToBaseValue = new Channel() { PubDateUtc = PubDate };
             EqualToBaseValue.AddRange(FeedItems);
             Channel GreaterThanBaseValue = new Channel { new FeedItem(), new FeedItem(), new FeedItem() };
 
@@ -754,9 +754,9 @@ namespace Archivist.Tests.DataTypes.Feeds
             // Arrange
             var PubDate = DateTime.UtcNow;
             var FeedItems = new[] { new FeedItem(), new FeedItem() };
-            var TestObject = new Channel() { PubDate = PubDate };
+            var TestObject = new Channel() { PubDateUtc = PubDate };
             TestObject.AddRange(FeedItems);
-            var Same = new Channel() { PubDate = PubDate };
+            var Same = new Channel() { PubDateUtc = PubDate };
             Same.AddRange(FeedItems);
             var Different = new Channel() { new FeedItem(), new FeedItem(), new FeedItem() };
 

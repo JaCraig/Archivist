@@ -20,10 +20,12 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallCompareTo()
         {
             // Arrange
-            var Other = new FeedItem();
+            DateTime PubDate = DateTime.UtcNow;
+            var TestClass = new FeedItem() { PubDateUtc = PubDate };
+            var Other = new FeedItem() { PubDateUtc = PubDate };
 
             // Act
-            var Result = _TestClass.CompareTo(Other);
+            var Result = TestClass.CompareTo(Other);
 
             // Assert
             Assert.Equal(0, Result);
@@ -40,7 +42,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = Left == Right;
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -73,7 +75,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = _TestClass.Equals(Other);
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -86,7 +88,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = _TestClass.Equals(Obj);
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -103,8 +105,9 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallGreaterThanEqualToOperator()
         {
             // Arrange
-            var Left = new FeedItem();
-            var Right = new FeedItem();
+            DateTime PubDate = DateTime.UtcNow;
+            var Left = new FeedItem() { PubDateUtc = PubDate };
+            var Right = new FeedItem() { PubDateUtc = PubDate };
 
             // Act
             var Result = Left >= Right;
@@ -137,14 +140,15 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallGreaterThanOperator()
         {
             // Arrange
-            var Left = new FeedItem();
-            var Right = new FeedItem();
+            DateTime PubDate = DateTime.UtcNow;
+            var Left = new FeedItem() { PubDateUtc = PubDate };
+            var Right = new FeedItem() { PubDateUtc = PubDate };
 
             // Act
             var Result = Left > Right;
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -360,10 +364,10 @@ namespace Archivist.Tests.DataTypes.Feeds
             DateTime TestValue = DateTime.UtcNow;
 
             // Act
-            _TestClass.PubDate = TestValue;
+            _TestClass.PubDateUtc = TestValue;
 
             // Assert
-            Assert.Equal(TestValue, _TestClass.PubDate);
+            Assert.Equal(TestValue, _TestClass.PubDateUtc);
         }
 
         [Fact]
@@ -396,9 +400,10 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void ImplementsIComparable_FeedItem()
         {
             // Arrange
-            var BaseValue = new FeedItem() { Author = "Author", Description = "Description", Link = "Link", PubDate = DateTime.Now, Title = "Title", GUID = new FeedGuid("A"), Enclosure = new Enclosure("A", "B", 10), Thumbnail = new Thumbnail("A") };
-            var EqualToBaseValue = new FeedItem() { Author = "Author", Description = "Description", Link = "Link", PubDate = DateTime.Now, Title = "Title", GUID = new FeedGuid("A"), Enclosure = new Enclosure("A", "B", 10), Thumbnail = new Thumbnail("A") };
-            var GreaterThanBaseValue = new FeedItem() { Author = "B", Description = "B", Link = "B", PubDate = DateTime.Now.AddSeconds(1), Title = "B", GUID = new FeedGuid("B"), Enclosure = new Enclosure("B", "B", 11), Thumbnail = new Thumbnail("B") };
+            DateTime PubDate = DateTime.UtcNow;
+            var BaseValue = new FeedItem() { Author = "Author", Description = "Description", Link = "Link", PubDateUtc = PubDate, Title = "Title", GUID = new FeedGuid("A"), Enclosure = new Enclosure("A", "B", 10), Thumbnail = new Thumbnail("A") };
+            var EqualToBaseValue = new FeedItem() { Author = "Author", Description = "Description", Link = "Link", PubDateUtc = PubDate, Title = "Title", GUID = new FeedGuid("A"), Enclosure = new Enclosure("A", "B", 10), Thumbnail = new Thumbnail("A") };
+            var GreaterThanBaseValue = new FeedItem() { Author = "B", Description = "B", Link = "B", PubDateUtc = PubDate.AddSeconds(1), Title = "B", GUID = new FeedGuid("B"), Enclosure = new Enclosure("B", "B", 11), Thumbnail = new Thumbnail("B") };
 
             // Assert
             Assert.Equal(0, BaseValue.CompareTo(EqualToBaseValue));
@@ -410,9 +415,10 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void ImplementsIEquatable_FeedItem()
         {
             // Arrange
-            var TestObject = new FeedItem() { Author = "Author", Description = "Description", Link = "Link", PubDate = DateTime.Now, Title = "Title", GUID = new FeedGuid("A"), Enclosure = new Enclosure("A", "B", 10), Thumbnail = new Thumbnail("A") };
-            var Same = new FeedItem() { Author = "Author", Description = "Description", Link = "Link", PubDate = DateTime.Now, Title = "Title", GUID = new FeedGuid("A"), Enclosure = new Enclosure("A", "B", 10), Thumbnail = new Thumbnail("A") };
-            var Different = new FeedItem() { Author = "B", Description = "B", Link = "B", PubDate = DateTime.Now.AddSeconds(1), Title = "B", GUID = new FeedGuid("B"), Enclosure = new Enclosure("B", "B", 11), Thumbnail = new Thumbnail("B") };
+            DateTime PubDate = DateTime.UtcNow;
+            var TestObject = new FeedItem() { Author = "Author", Description = "Description", Link = "Link", PubDateUtc = PubDate, Title = "Title", GUID = new FeedGuid("A"), Enclosure = new Enclosure("A", "B", 10), Thumbnail = new Thumbnail("A") };
+            var Same = new FeedItem() { Author = "Author", Description = "Description", Link = "Link", PubDateUtc = PubDate, Title = "Title", GUID = new FeedGuid("A"), Enclosure = new Enclosure("A", "B", 10), Thumbnail = new Thumbnail("A") };
+            var Different = new FeedItem() { Author = "B", Description = "B", Link = "B", PubDateUtc = PubDate.AddSeconds(1), Title = "B", GUID = new FeedGuid("B"), Enclosure = new Enclosure("B", "B", 11), Thumbnail = new Thumbnail("B") };
 
             // Assert
             Assert.False(TestObject.Equals(default(object)));

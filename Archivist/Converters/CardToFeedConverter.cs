@@ -33,7 +33,7 @@ namespace Archivist.Converters
             {
                 Title = file.FirstName + " " + file.LastName,
                 Description = "Phone Numbers: " + PhoneNumbers + "\r\nEmails: " + Emails + "\r\nWebsites: " + Websites,
-                PubDate = DateTime.UtcNow,
+                PubDateUtc = DateTime.UtcNow,
                 Link = file.Websites.FirstOrDefault()?.Value ?? "",
             });
             foreach (KeyValuePair<string, string> Metadata in file.Metadata)

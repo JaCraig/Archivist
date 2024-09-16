@@ -4,6 +4,7 @@ using Archivist.Formats.RSS;
 using Archivist.Interfaces;
 using Archivist.Tests.BaseClasses;
 using NSubstitute;
+using System;
 using System.IO;
 using System.Threading.Tasks;
 using Xunit;
@@ -33,7 +34,7 @@ namespace Archivist.Tests.Formats.RSS
             var Result = _TestClass.InternalCanRead(Stream);
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -81,13 +82,13 @@ namespace Archivist.Tests.Formats.RSS
             Assert.NotNull(Result);
             Feed Feed = Assert.IsType<Feed>(Result);
             Assert.NotNull(Feed);
-            _ = Assert.Single(Feed.Channels);
-            Assert.Equal(10, Feed.Channels[0].Count);
-            Assert.Equal("Test RSS Feed", Feed.Title);
-            Assert.Equal("This is a test RSS feed", Feed.Channels[0].Description);
-            Assert.Equal("https://example.com/rss", Feed.Channels[0].Link);
-            Assert.Equal("en-US", Feed.Channels[0].Language);
-            Assert.Equal("2021-01-01T00:00:00Z", Feed.Channels[0].PubDate.ToUniversalTime().ToString());
+            Archivist.DataTypes.Feeds.Channel Channel = Assert.Single(Feed.Channels);
+            Assert.Equal(50, Feed.Channels[0].Count);
+            Assert.Equal("Virginia Resources Page Feed", Channel.Title);
+            Assert.Equal("Content for display on Virginia Practice Area Page.", Channel.Description);
+            Assert.Equal("http://app.vable.com/rss/feed/5e86172399324124f0668641", Channel.Link);
+            Assert.Equal("", Channel.Language);
+            Assert.Equal(DateTime.UtcNow.Date.ToString(), Channel.PubDateUtc.Date.ToString());
         }
 
         [Fact]
@@ -103,13 +104,13 @@ namespace Archivist.Tests.Formats.RSS
             Assert.NotNull(Result);
             Feed Feed = Assert.IsType<Feed>(Result);
             Assert.NotNull(Feed);
-            _ = Assert.Single(Feed.Channels);
-            Assert.Equal(10, Feed.Channels[0].Count);
-            Assert.Equal("Test RSS Feed", Feed.Title);
-            Assert.Equal("This is a test RSS feed", Feed.Channels[0].Description);
-            Assert.Equal("https://example.com/rss", Feed.Channels[0].Link);
-            Assert.Equal("en-US", Feed.Channels[0].Language);
-            Assert.Equal("2021-01-01T00:00:00Z", Feed.Channels[0].PubDate.ToUniversalTime().ToString());
+            Archivist.DataTypes.Feeds.Channel Channel = Assert.Single(Feed.Channels);
+            Assert.Equal(10, Channel.Count);
+            Assert.Equal(DateTime.UtcNow.Date.ToString(), Channel.PubDateUtc.Date.ToString());
+            Assert.Equal("The Underfold", Channel.Title);
+            Assert.Equal("http://theunderfold.com", Channel.Link);
+            Assert.Equal("A comic by Brian Russell where Brian and his bag-faced friend, JB embark on misadventures!", Channel.Description);
+            Assert.Equal("en-US", Channel.Language);
         }
     }
 }

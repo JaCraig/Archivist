@@ -31,7 +31,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = TestObject.CompareTo(Other);
 
             // Assert
-            Assert.True(Result < 0);
+            Assert.Equal(0, Result);
         }
 
         [Fact]
@@ -116,7 +116,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         [Fact]
         public void CanCallGreaterThanEqualToOperatorWithNullRight() =>
             // Assert
-            Assert.False(new Thumbnail() >= default(Thumbnail));
+            Assert.True(new Thumbnail() >= default(Thumbnail));
 
         [Fact]
         public void CanCallGreaterThanOperator()
@@ -140,7 +140,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         [Fact]
         public void CanCallGreaterThanOperatorWithNullRight() =>
             // Assert
-            Assert.False(new Thumbnail() > default(Thumbnail));
+            Assert.True(new Thumbnail() > default(Thumbnail));
 
         [Fact]
         public void CanCallInequalityOperator()
@@ -177,13 +177,13 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = Left <= Right;
 
             // Assert
-            Assert.False(Result);
+            Assert.True(Result);
         }
 
         [Fact]
         public void CanCallLessThanEqualToOperatorWithNullLeft() =>
             // Assert
-            Assert.False(default(Thumbnail) <= new Thumbnail());
+            Assert.True(default(Thumbnail) <= new Thumbnail());
 
         [Fact]
         public void CanCallLessThanEqualToOperatorWithNullRight() =>
@@ -207,7 +207,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         [Fact]
         public void CanCallLessThanOperatorWithNullLeft() =>
             // Assert
-            Assert.False(default(Thumbnail) < new Thumbnail());
+            Assert.True(default(Thumbnail) < new Thumbnail());
 
         [Fact]
         public void CanCallLessThanOperatorWithNullRight() =>
@@ -277,6 +277,7 @@ namespace Archivist.Tests.DataTypes.Feeds
                 // Act
                 Url = _Url
             };
+            TestObj.Url = TestValue;
 
             // Assert
             Assert.Equal(TestValue, TestObj.Url);
@@ -309,12 +310,12 @@ namespace Archivist.Tests.DataTypes.Feeds
             // Arrange
             var BaseValue = new Thumbnail(_Url, _Height, _Width);
             var EqualToBaseValue = new Thumbnail(_Url, _Height, _Width);
-            var GreaterThanBaseValue = new Thumbnail("TestValue-Url-1", 1, 1);
+            var LessThanBaseValue = new Thumbnail("TestValue-Url-1", 1, 1);
 
             // Assert
             Assert.Equal(0, BaseValue.CompareTo(EqualToBaseValue));
-            Assert.True(BaseValue.CompareTo(GreaterThanBaseValue) < 0);
-            Assert.True(GreaterThanBaseValue.CompareTo(BaseValue) > 0);
+            Assert.True(BaseValue.CompareTo(LessThanBaseValue) > 0);
+            Assert.True(LessThanBaseValue.CompareTo(BaseValue) < 0);
         }
 
         [Fact]

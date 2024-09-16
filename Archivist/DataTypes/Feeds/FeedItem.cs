@@ -40,9 +40,14 @@ namespace Archivist.DataTypes.Feeds
         public string? Link { get; set; }
 
         /// <summary>
+        /// Gets the local publication date.
+        /// </summary>
+        public DateTime PubDate => PubDateUtc + TimeZoneInfo.Local.GetUtcOffset(PubDateUtc);
+
+        /// <summary>
         /// Publication date
         /// </summary>
-        public DateTime PubDate { get; set; } = DateTime.Now;
+        public DateTime PubDateUtc { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Thumbnail
@@ -158,9 +163,9 @@ namespace Archivist.DataTypes.Feeds
                 return 0;
             if (other is null)
                 return 1;
-            if (PubDate < other.PubDate)
+            if (PubDateUtc < other.PubDateUtc)
                 return -1;
-            if (PubDate > other.PubDate)
+            if (PubDateUtc > other.PubDateUtc)
                 return 1;
             return string.CompareOrdinal(Title, other.Title);
         }
@@ -198,7 +203,7 @@ namespace Archivist.DataTypes.Feeds
                 return true;
             if (other is null)
                 return false;
-            if (PubDate != other.PubDate)
+            if (PubDateUtc != other.PubDateUtc)
                 return false;
             if (Title != other.Title)
                 return false;
@@ -214,7 +219,17 @@ namespace Archivist.DataTypes.Feeds
                 return false;
             if (GUID != other.GUID)
                 return false;
-            return Categories.Equals(other.Categories);
+            foreach (var Category in Categories)
+            {
+                if (!other.Categories.Contains(Category))
+                    return false;
+            }
+            foreach (var Category in other.Categories)
+            {
+                if (!Categories.Contains(Category))
+                    return false;
+            }
+            return true;
         }
 
         /// <summary>
@@ -224,7 +239,7 @@ namespace Archivist.DataTypes.Feeds
         public override int GetHashCode()
         {
             var Hash1 = HashCode.Combine(Author, Description, Enclosure, GUID, Link);
-            var Hash2 = HashCode.Combine(PubDate, Thumbnail, Title);
+            var Hash2 = HashCode.Combine(PubDateUtc, Thumbnail, Title);
             var ReturnValue = HashCode.Combine(Hash1, Hash2);
             foreach (var Category in Categories)
             {
@@ -237,6 +252,6 @@ namespace Archivist.DataTypes.Feeds
         /// Outputs a string ready for RSS
         /// </summary>
         /// <returns>A string formatted for RSS</returns>
-        public override string ToString() => $@"FeedItem:Begin\r\nTitle: {Title.StripIllegalCharacters()}\r\nLink: {Link}\r\nAuthor: {Author.StripIllegalCharacters()}\r\nCategories: {string.Join(", ", Categories)}\r\nPubDate: {PubDate:R}\r\n{Enclosure}\r\n{Thumbnail}\r\nDescription: {Description}\r\n{GUID}\r\nFeedItem:End";
+        public override string ToString() => $@"FeedItem:Begin\r\nTitle: {Title.StripIllegalCharacters()}\r\nLink: {Link}\r\nAuthor: {Author.StripIllegalCharacters()}\r\nCategories: {string.Join(", ", Categories)}\r\nPubDate: {PubDateUtc:R}\r\n{Enclosure}\r\n{Thumbnail}\r\nDescription: {Description}\r\n{GUID}\r\nFeedItem:End";
     }
 }

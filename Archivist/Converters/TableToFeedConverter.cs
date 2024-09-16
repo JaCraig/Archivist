@@ -50,7 +50,7 @@ namespace Archivist.Converters
                 if (LinkColumn is not null)
                     Item.Link = Row[LinkColumn].Content;
                 if (PubDateColumn is not null && DateTime.TryParse(Row[PubDateColumn].Content, out DateTime PubDate))
-                    Item.PubDate = PubDate;
+                    Item.PubDateUtc = PubDate.ToUniversalTime();
                 if (AuthorColumn is not null)
                     Item.Author = Row[AuthorColumn].Content;
                 if (GUIDColumn is not null)

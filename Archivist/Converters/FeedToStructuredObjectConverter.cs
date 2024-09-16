@@ -43,7 +43,7 @@ namespace Archivist.Converters
                     ChannelItems.Add((ExpandoObject)ItemObject);
                     ItemObject["Title"] = Item.Title;
                     ItemObject["Description"] = Item.Description;
-                    ItemObject["PubDate"] = Item.PubDate.ToUniversalTime().ToString();
+                    ItemObject["PubDate"] = Item.PubDateUtc.ToUniversalTime().ToString();
                     ItemObject["Link"] = Item.Link;
                     ItemObject["Author"] = Item.Author;
                     ItemObject["GUID"] = Item.GUID?.GuidText ?? "";

@@ -31,7 +31,7 @@ namespace Archivist.Converters
                 {
                     Title = Event.Summary,
                     Description = Event.Description,
-                    PubDate = Event.StartDateUtc,
+                    PubDateUtc = Event.StartDateUtc,
                     Link = Event.URLs.FirstOrDefault()?.Value ?? "",
                 };
                 ReturnValue[0].Add(Item);

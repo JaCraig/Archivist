@@ -84,10 +84,15 @@ namespace Archivist.DataTypes.Feeds
         public string? Link { get; set; } = "";
 
         /// <summary>
+        /// Gets the local publication date.
+        /// </summary>
+        public DateTime PubDate => PubDateUtc + TimeZoneInfo.Local.GetUtcOffset(PubDateUtc);
+
+        /// <summary>
         /// Gets or sets the pub date.
         /// </summary>
         /// <value>The pub date.</value>
-        public DateTime PubDate { get; set; } = DateTime.UtcNow;
+        public DateTime PubDateUtc { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Gets or sets the title.
@@ -273,8 +278,8 @@ namespace Archivist.DataTypes.Feeds
                 return Language?.CompareTo(other.Language) ?? -1;
             if (Link != other.Link)
                 return Link?.CompareTo(other.Link) ?? -1;
-            if (PubDate != other.PubDate)
-                return PubDate.CompareTo(other.PubDate);
+            if (PubDateUtc != other.PubDateUtc)
+                return PubDateUtc.CompareTo(other.PubDateUtc);
             if (Title != other.Title)
                 return Title?.CompareTo(other.Title) ?? -1;
             if (TTL != other.TTL)
@@ -348,7 +353,7 @@ namespace Archivist.DataTypes.Feeds
             if (Cloud != other.Cloud || Copyright != other.Copyright ||
                 Description != other.Description || Docs != other.Docs ||
                 Explicit != other.Explicit || ImageUrl != other.ImageUrl ||
-                Language != other.Language || Link != other.Link || PubDate != other.PubDate ||
+                Language != other.Language || Link != other.Link || PubDateUtc != other.PubDateUtc ||
                 Title != other.Title || TTL != other.TTL || WebMaster != other.WebMaster)
             {
                 return false;
@@ -400,7 +405,7 @@ namespace Archivist.DataTypes.Feeds
         public override int GetHashCode()
         {
             var Hash1 = HashCode.Combine(Cloud, Copyright, Description, Docs, Explicit, ImageUrl);
-            var Hash2 = HashCode.Combine(Language, Link, PubDate, Title, TTL, WebMaster);
+            var Hash2 = HashCode.Combine(Language, Link, PubDateUtc, Title, TTL, WebMaster);
             var ReturnValue = HashCode.Combine(Hash1, Hash2);
             foreach (var Category in Categories)
             {
@@ -481,7 +486,7 @@ namespace Archivist.DataTypes.Feeds
                 .Append("Description: " + (Description ?? "No Description") + "\r\n")
                 .Append("Link: " + (Link ?? "No Link") + "\r\n")
                 .Append("Language: " + Language + "\r\n")
-                .Append("PubDate: " + PubDate.ToString("R") + "\r\n")
+                .Append("PubDate: " + PubDateUtc.ToUniversalTime().ToString("R") + "\r\n")
                 .Append("WebMaster: " + (WebMaster ?? "No WebMaster") + "\r\n")
                 .Append("Cloud: " + (Cloud ?? "No Cloud") + "\r\n")
                 .Append("Docs: " + Docs + "\r\n")

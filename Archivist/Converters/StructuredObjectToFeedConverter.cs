@@ -57,7 +57,7 @@ namespace Archivist.Converters
                     if (Item.TryGetValue("Description", out var ItemDescription))
                         NewItem.Description = ItemDescription?.ToString() ?? "";
                     if (Item.TryGetValue("PubDate", out var PubDate) && DateTime.TryParse(PubDate?.ToString(), out DateTime PubDateValue))
-                        NewItem.PubDate = PubDateValue;
+                        NewItem.PubDateUtc = PubDateValue.ToUniversalTime();
                     if (Item.TryGetValue("Link", out var Link))
                         NewItem.Link = Link?.ToString() ?? "";
                     if (Item.TryGetValue("Author", out var Author))

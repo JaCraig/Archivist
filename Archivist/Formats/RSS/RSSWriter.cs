@@ -57,8 +57,8 @@ namespace Archivist.Formats.RSS
             _ = builder.Append("<language>").Append(channel.Language).Append("</language>\r\n");
             _ = builder.Append("<copyright>").Append(channel.Copyright.StripIllegalCharacters()).Append("</copyright>\r\n");
             _ = builder.Append("<webMaster>").Append(channel.WebMaster.StripIllegalCharacters()).Append("</webMaster>\r\n");
-            _ = builder.Append("<pubDate>").Append(channel.PubDate.ToString("Ddd, dd MMM yyyy HH':'mm':'ss", CultureInfo.InvariantCulture)).Append("</pubDate>\r\n");
-            _ = builder.Append("<itunes:explicit>").Append(channel.Explicit ? "yes" : "no").Append("</itunes:explicit>");
+            _ = builder.Append("<pubDate>").Append(channel.PubDateUtc.ToString("r", CultureInfo.InvariantCulture)).Append("</pubDate>\r\n");
+            _ = builder.Append("<itunes:explicit>").Append(channel.Explicit ? "true" : "false").Append("</itunes:explicit>");
             _ = builder.Append("<itunes:subtitle>").Append(channel.Title.StripIllegalCharacters()).Append("</itunes:subtitle>");
             _ = builder.Append("<itunes:summary><![CDATA[").Append(channel.Description.StripIllegalCharacters()).Append("]]></itunes:summary>");
 
@@ -103,7 +103,8 @@ namespace Archivist.Formats.RSS
             var ReturnValue = new StringBuilder("<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<rss xmlns:itunes=\"http://www.itunes.com/dtds/podcast-1.0.dtd\" xmlns:media=\"http://search.yahoo.com/mrss/\" version=\"2.0\">\r\n");
             foreach (Channel Channel in feed.Channels)
             {
-                _ = ReturnValue.Append(WriteChannel(Channel, ReturnValue)).Append("\r\n");
+                ReturnValue = WriteChannel(Channel, ReturnValue);
+                _ = ReturnValue.Append("\r\n");
             }
             return ReturnValue.Append("</rss>");
         }
@@ -127,7 +128,7 @@ namespace Archivist.Formats.RSS
                 _ = builder.Append("<category>").Append(Category.StripIllegalCharacters()).Append("</category>\r\n");
             }
 
-            _ = builder.Append("<pubDate>").Append(currentItem.PubDate.ToString("r", CultureInfo.InvariantCulture)).Append("</pubDate>\r\n");
+            _ = builder.Append("<pubDate>").Append(currentItem.PubDateUtc.ToString("r", CultureInfo.InvariantCulture)).Append("</pubDate>\r\n");
             WriteEnclosure(currentItem.Enclosure, builder);
             WriteThumbnail(currentItem.Thumbnail, builder);
             _ = builder.Append("<description><![CDATA[").Append(currentItem.Description).Append("]]></description>\r\n");
