@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.7.0"></a>
+## [0.7.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.7.0) (2024-09-16)
+
+### Features
+
+* Add comprehensive tests and converters for Feed class ([2aaf214](https://www.github.com/JaCraig/Archivist/commit/2aaf2148f9ca2bb4ad93d170723057e9f4f23847))
+* Finishing feed implementation ([3d029de](https://www.github.com/JaCraig/Archivist/commit/3d029dead9609faf25f78d89ab78a2e24e9279fb))
+* Merge pull request [#61](https://www.github.com/JaCraig/Archivist/issues/61) from JaCraig/AddingFeeds ([d1986fd](https://www.github.com/JaCraig/Archivist/commit/d1986fd744b18a2868ac4e194859900156c6dcca))
+* starting to add feeds/RSS ([044dabc](https://www.github.com/JaCraig/Archivist/commit/044dabceaf85ef2cb200b40dfb479b3fd9e8e066))
+
+### Other
+
+* Merge pull request #57 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-48ac8098b3 ([ebda34c](https://www.github.com/JaCraig/Archivist/commit/ebda34c1ecd2ce60d8d2c2a155d9ea2c10669d3c))
+* Merge pull request #58 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-78c52a00e0 ([61e1671](https://www.github.com/JaCraig/Archivist/commit/61e1671645452faac4ca6e54c74e87cacf6ebf5c))
+* Merge pull request #59 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-69124f657d ([dd38021](https://www.github.com/JaCraig/Archivist/commit/dd380213c1ad0e636ef668448f38ad25b2e68ae2))
+* Merge pull request #60 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-fea68d101d ([afec975](https://www.github.com/JaCraig/Archivist/commit/afec9756d1f7e525107e8a5ec1ece70d317bd3be))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([f879b19](https://www.github.com/JaCraig/Archivist/commit/f879b197eaab565b831c4295e835bd3a96cba132))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([ef329aa](https://www.github.com/JaCraig/Archivist/commit/ef329aad247f6dcd4f3c2aff2367ac62e3b5b00d))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([a2c2f5b](https://www.github.com/JaCraig/Archivist/commit/a2c2f5bd9e6b1b4a2279a576397ac7988d3961d2))
+* bump Microsoft.NET.Test.Sdk ([5c20b64](https://www.github.com/JaCraig/Archivist/commit/5c20b6453df3862e7374b59b01a009250b5ba0f8))
+
 <a name="0.6.5"></a>
 ## [0.6.5](https://www.github.com/JaCraig/Archivist/releases/tag/v0.6.5) (2024-09-02)
 
