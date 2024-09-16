@@ -55,7 +55,7 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="ObjectCartographer" Version="3.0.59" />
-    <PackageReference Include="YamlDotNet" Version="16.1.0" />
+    <PackageReference Include="YamlDotNet" Version="16.1.2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Formats\HTML\" />
