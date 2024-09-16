@@ -799,6 +799,53 @@ references:
   isSpec: "True"
   fullName: Archivist.Converters.CalendarToCardConverter.Convert
   nameWithType: CalendarToCardConverter.Convert
+- uid: Archivist.Converters.CalendarToFeedConverter
+  name: CalendarToFeedConverter
+  href: api/Archivist.Converters.CalendarToFeedConverter.html
+  commentId: T:Archivist.Converters.CalendarToFeedConverter
+  fullName: Archivist.Converters.CalendarToFeedConverter
+  nameWithType: CalendarToFeedConverter
+- uid: Archivist.Converters.CalendarToFeedConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.CalendarToFeedConverter.html#Archivist_Converters_CalendarToFeedConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.CalendarToFeedConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.CalendarToFeedConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.CalendarToFeedConverter.CanConvert(System.Type, System.Type)
+  nameWithType: CalendarToFeedConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: CalendarToFeedConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.CalendarToFeedConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.CalendarToFeedConverter.html#Archivist_Converters_CalendarToFeedConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.CalendarToFeedConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.CalendarToFeedConverter.CanConvert
+  nameWithType: CalendarToFeedConverter.CanConvert
+- uid: Archivist.Converters.CalendarToFeedConverter.Convert(Archivist.DataTypes.Calendar)
+  name: Convert(Calendar?)
+  href: api/Archivist.Converters.CalendarToFeedConverter.html#Archivist_Converters_CalendarToFeedConverter_Convert_Archivist_DataTypes_Calendar_
+  commentId: M:Archivist.Converters.CalendarToFeedConverter.Convert(Archivist.DataTypes.Calendar)
+  name.vb: Convert(Calendar)
+  fullName: Archivist.Converters.CalendarToFeedConverter.Convert(Archivist.DataTypes.Calendar?)
+  fullName.vb: Archivist.Converters.CalendarToFeedConverter.Convert(Archivist.DataTypes.Calendar)
+  nameWithType: CalendarToFeedConverter.Convert(Calendar?)
+  nameWithType.vb: CalendarToFeedConverter.Convert(Calendar)
+- uid: Archivist.Converters.CalendarToFeedConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.CalendarToFeedConverter.html#Archivist_Converters_CalendarToFeedConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.CalendarToFeedConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.CalendarToFeedConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.CalendarToFeedConverter.Convert(Object, System.Type)
+  nameWithType: CalendarToFeedConverter.Convert(object?, Type?)
+  nameWithType.vb: CalendarToFeedConverter.Convert(Object, Type)
+- uid: Archivist.Converters.CalendarToFeedConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.CalendarToFeedConverter.html#Archivist_Converters_CalendarToFeedConverter_Convert_
+  commentId: Overload:Archivist.Converters.CalendarToFeedConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.CalendarToFeedConverter.Convert
+  nameWithType: CalendarToFeedConverter.Convert
 - uid: Archivist.Converters.CalendarToStructuredObjectConverter
   name: CalendarToStructuredObjectConverter
   href: api/Archivist.Converters.CalendarToStructuredObjectConverter.html
@@ -987,6 +1034,53 @@ references:
   isSpec: "True"
   fullName: Archivist.Converters.CardToCalendarConverter.Convert
   nameWithType: CardToCalendarConverter.Convert
+- uid: Archivist.Converters.CardToFeedConverter
+  name: CardToFeedConverter
+  href: api/Archivist.Converters.CardToFeedConverter.html
+  commentId: T:Archivist.Converters.CardToFeedConverter
+  fullName: Archivist.Converters.CardToFeedConverter
+  nameWithType: CardToFeedConverter
+- uid: Archivist.Converters.CardToFeedConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.CardToFeedConverter.html#Archivist_Converters_CardToFeedConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.CardToFeedConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.CardToFeedConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.CardToFeedConverter.CanConvert(System.Type, System.Type)
+  nameWithType: CardToFeedConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: CardToFeedConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.CardToFeedConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.CardToFeedConverter.html#Archivist_Converters_CardToFeedConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.CardToFeedConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.CardToFeedConverter.CanConvert
+  nameWithType: CardToFeedConverter.CanConvert
+- uid: Archivist.Converters.CardToFeedConverter.Convert(Archivist.DataTypes.Card)
+  name: Convert(Card?)
+  href: api/Archivist.Converters.CardToFeedConverter.html#Archivist_Converters_CardToFeedConverter_Convert_Archivist_DataTypes_Card_
+  commentId: M:Archivist.Converters.CardToFeedConverter.Convert(Archivist.DataTypes.Card)
+  name.vb: Convert(Card)
+  fullName: Archivist.Converters.CardToFeedConverter.Convert(Archivist.DataTypes.Card?)
+  fullName.vb: Archivist.Converters.CardToFeedConverter.Convert(Archivist.DataTypes.Card)
+  nameWithType: CardToFeedConverter.Convert(Card?)
+  nameWithType.vb: CardToFeedConverter.Convert(Card)
+- uid: Archivist.Converters.CardToFeedConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.CardToFeedConverter.html#Archivist_Converters_CardToFeedConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.CardToFeedConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.CardToFeedConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.CardToFeedConverter.Convert(Object, System.Type)
+  nameWithType: CardToFeedConverter.Convert(object?, Type?)
+  nameWithType.vb: CardToFeedConverter.Convert(Object, Type)
+- uid: Archivist.Converters.CardToFeedConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.CardToFeedConverter.html#Archivist_Converters_CardToFeedConverter_Convert_
+  commentId: Overload:Archivist.Converters.CardToFeedConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.CardToFeedConverter.Convert
+  nameWithType: CardToFeedConverter.Convert
 - uid: Archivist.Converters.CardToStructuredObjectConverter
   name: CardToStructuredObjectConverter
   href: api/Archivist.Converters.CardToStructuredObjectConverter.html
@@ -1169,6 +1263,241 @@ references:
   isSpec: "True"
   fullName: Archivist.Converters.Convertinator.Convert
   nameWithType: Convertinator.Convert
+- uid: Archivist.Converters.FeedToCalendarConverter
+  name: FeedToCalendarConverter
+  href: api/Archivist.Converters.FeedToCalendarConverter.html
+  commentId: T:Archivist.Converters.FeedToCalendarConverter
+  fullName: Archivist.Converters.FeedToCalendarConverter
+  nameWithType: FeedToCalendarConverter
+- uid: Archivist.Converters.FeedToCalendarConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.FeedToCalendarConverter.html#Archivist_Converters_FeedToCalendarConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.FeedToCalendarConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.FeedToCalendarConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.FeedToCalendarConverter.CanConvert(System.Type, System.Type)
+  nameWithType: FeedToCalendarConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: FeedToCalendarConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.FeedToCalendarConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.FeedToCalendarConverter.html#Archivist_Converters_FeedToCalendarConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.FeedToCalendarConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.FeedToCalendarConverter.CanConvert
+  nameWithType: FeedToCalendarConverter.CanConvert
+- uid: Archivist.Converters.FeedToCalendarConverter.Convert(Archivist.DataTypes.Feed)
+  name: Convert(Feed?)
+  href: api/Archivist.Converters.FeedToCalendarConverter.html#Archivist_Converters_FeedToCalendarConverter_Convert_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.Converters.FeedToCalendarConverter.Convert(Archivist.DataTypes.Feed)
+  name.vb: Convert(Feed)
+  fullName: Archivist.Converters.FeedToCalendarConverter.Convert(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.Converters.FeedToCalendarConverter.Convert(Archivist.DataTypes.Feed)
+  nameWithType: FeedToCalendarConverter.Convert(Feed?)
+  nameWithType.vb: FeedToCalendarConverter.Convert(Feed)
+- uid: Archivist.Converters.FeedToCalendarConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.FeedToCalendarConverter.html#Archivist_Converters_FeedToCalendarConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.FeedToCalendarConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.FeedToCalendarConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.FeedToCalendarConverter.Convert(Object, System.Type)
+  nameWithType: FeedToCalendarConverter.Convert(object?, Type?)
+  nameWithType.vb: FeedToCalendarConverter.Convert(Object, Type)
+- uid: Archivist.Converters.FeedToCalendarConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.FeedToCalendarConverter.html#Archivist_Converters_FeedToCalendarConverter_Convert_
+  commentId: Overload:Archivist.Converters.FeedToCalendarConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.FeedToCalendarConverter.Convert
+  nameWithType: FeedToCalendarConverter.Convert
+- uid: Archivist.Converters.FeedToCardConverter
+  name: FeedToCardConverter
+  href: api/Archivist.Converters.FeedToCardConverter.html
+  commentId: T:Archivist.Converters.FeedToCardConverter
+  fullName: Archivist.Converters.FeedToCardConverter
+  nameWithType: FeedToCardConverter
+- uid: Archivist.Converters.FeedToCardConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.FeedToCardConverter.html#Archivist_Converters_FeedToCardConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.FeedToCardConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.FeedToCardConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.FeedToCardConverter.CanConvert(System.Type, System.Type)
+  nameWithType: FeedToCardConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: FeedToCardConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.FeedToCardConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.FeedToCardConverter.html#Archivist_Converters_FeedToCardConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.FeedToCardConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.FeedToCardConverter.CanConvert
+  nameWithType: FeedToCardConverter.CanConvert
+- uid: Archivist.Converters.FeedToCardConverter.Convert(Archivist.DataTypes.Feed)
+  name: Convert(Feed?)
+  href: api/Archivist.Converters.FeedToCardConverter.html#Archivist_Converters_FeedToCardConverter_Convert_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.Converters.FeedToCardConverter.Convert(Archivist.DataTypes.Feed)
+  name.vb: Convert(Feed)
+  fullName: Archivist.Converters.FeedToCardConverter.Convert(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.Converters.FeedToCardConverter.Convert(Archivist.DataTypes.Feed)
+  nameWithType: FeedToCardConverter.Convert(Feed?)
+  nameWithType.vb: FeedToCardConverter.Convert(Feed)
+- uid: Archivist.Converters.FeedToCardConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.FeedToCardConverter.html#Archivist_Converters_FeedToCardConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.FeedToCardConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.FeedToCardConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.FeedToCardConverter.Convert(Object, System.Type)
+  nameWithType: FeedToCardConverter.Convert(object?, Type?)
+  nameWithType.vb: FeedToCardConverter.Convert(Object, Type)
+- uid: Archivist.Converters.FeedToCardConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.FeedToCardConverter.html#Archivist_Converters_FeedToCardConverter_Convert_
+  commentId: Overload:Archivist.Converters.FeedToCardConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.FeedToCardConverter.Convert
+  nameWithType: FeedToCardConverter.Convert
+- uid: Archivist.Converters.FeedToStructuredObjectConverter
+  name: FeedToStructuredObjectConverter
+  href: api/Archivist.Converters.FeedToStructuredObjectConverter.html
+  commentId: T:Archivist.Converters.FeedToStructuredObjectConverter
+  fullName: Archivist.Converters.FeedToStructuredObjectConverter
+  nameWithType: FeedToStructuredObjectConverter
+- uid: Archivist.Converters.FeedToStructuredObjectConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.FeedToStructuredObjectConverter.html#Archivist_Converters_FeedToStructuredObjectConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.FeedToStructuredObjectConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.FeedToStructuredObjectConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.FeedToStructuredObjectConverter.CanConvert(System.Type, System.Type)
+  nameWithType: FeedToStructuredObjectConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: FeedToStructuredObjectConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.FeedToStructuredObjectConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.FeedToStructuredObjectConverter.html#Archivist_Converters_FeedToStructuredObjectConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.FeedToStructuredObjectConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.FeedToStructuredObjectConverter.CanConvert
+  nameWithType: FeedToStructuredObjectConverter.CanConvert
+- uid: Archivist.Converters.FeedToStructuredObjectConverter.Convert(Archivist.DataTypes.Feed)
+  name: Convert(Feed?)
+  href: api/Archivist.Converters.FeedToStructuredObjectConverter.html#Archivist_Converters_FeedToStructuredObjectConverter_Convert_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.Converters.FeedToStructuredObjectConverter.Convert(Archivist.DataTypes.Feed)
+  name.vb: Convert(Feed)
+  fullName: Archivist.Converters.FeedToStructuredObjectConverter.Convert(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.Converters.FeedToStructuredObjectConverter.Convert(Archivist.DataTypes.Feed)
+  nameWithType: FeedToStructuredObjectConverter.Convert(Feed?)
+  nameWithType.vb: FeedToStructuredObjectConverter.Convert(Feed)
+- uid: Archivist.Converters.FeedToStructuredObjectConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.FeedToStructuredObjectConverter.html#Archivist_Converters_FeedToStructuredObjectConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.FeedToStructuredObjectConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.FeedToStructuredObjectConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.FeedToStructuredObjectConverter.Convert(Object, System.Type)
+  nameWithType: FeedToStructuredObjectConverter.Convert(object?, Type?)
+  nameWithType.vb: FeedToStructuredObjectConverter.Convert(Object, Type)
+- uid: Archivist.Converters.FeedToStructuredObjectConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.FeedToStructuredObjectConverter.html#Archivist_Converters_FeedToStructuredObjectConverter_Convert_
+  commentId: Overload:Archivist.Converters.FeedToStructuredObjectConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.FeedToStructuredObjectConverter.Convert
+  nameWithType: FeedToStructuredObjectConverter.Convert
+- uid: Archivist.Converters.FeedToTableConverter
+  name: FeedToTableConverter
+  href: api/Archivist.Converters.FeedToTableConverter.html
+  commentId: T:Archivist.Converters.FeedToTableConverter
+  fullName: Archivist.Converters.FeedToTableConverter
+  nameWithType: FeedToTableConverter
+- uid: Archivist.Converters.FeedToTableConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.FeedToTableConverter.html#Archivist_Converters_FeedToTableConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.FeedToTableConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.FeedToTableConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.FeedToTableConverter.CanConvert(System.Type, System.Type)
+  nameWithType: FeedToTableConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: FeedToTableConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.FeedToTableConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.FeedToTableConverter.html#Archivist_Converters_FeedToTableConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.FeedToTableConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.FeedToTableConverter.CanConvert
+  nameWithType: FeedToTableConverter.CanConvert
+- uid: Archivist.Converters.FeedToTableConverter.Convert(Archivist.DataTypes.Feed)
+  name: Convert(Feed?)
+  href: api/Archivist.Converters.FeedToTableConverter.html#Archivist_Converters_FeedToTableConverter_Convert_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.Converters.FeedToTableConverter.Convert(Archivist.DataTypes.Feed)
+  name.vb: Convert(Feed)
+  fullName: Archivist.Converters.FeedToTableConverter.Convert(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.Converters.FeedToTableConverter.Convert(Archivist.DataTypes.Feed)
+  nameWithType: FeedToTableConverter.Convert(Feed?)
+  nameWithType.vb: FeedToTableConverter.Convert(Feed)
+- uid: Archivist.Converters.FeedToTableConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.FeedToTableConverter.html#Archivist_Converters_FeedToTableConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.FeedToTableConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.FeedToTableConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.FeedToTableConverter.Convert(Object, System.Type)
+  nameWithType: FeedToTableConverter.Convert(object?, Type?)
+  nameWithType.vb: FeedToTableConverter.Convert(Object, Type)
+- uid: Archivist.Converters.FeedToTableConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.FeedToTableConverter.html#Archivist_Converters_FeedToTableConverter_Convert_
+  commentId: Overload:Archivist.Converters.FeedToTableConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.FeedToTableConverter.Convert
+  nameWithType: FeedToTableConverter.Convert
+- uid: Archivist.Converters.FeedToTablesConverter
+  name: FeedToTablesConverter
+  href: api/Archivist.Converters.FeedToTablesConverter.html
+  commentId: T:Archivist.Converters.FeedToTablesConverter
+  fullName: Archivist.Converters.FeedToTablesConverter
+  nameWithType: FeedToTablesConverter
+- uid: Archivist.Converters.FeedToTablesConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.FeedToTablesConverter.html#Archivist_Converters_FeedToTablesConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.FeedToTablesConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.FeedToTablesConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.FeedToTablesConverter.CanConvert(System.Type, System.Type)
+  nameWithType: FeedToTablesConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: FeedToTablesConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.FeedToTablesConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.FeedToTablesConverter.html#Archivist_Converters_FeedToTablesConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.FeedToTablesConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.FeedToTablesConverter.CanConvert
+  nameWithType: FeedToTablesConverter.CanConvert
+- uid: Archivist.Converters.FeedToTablesConverter.Convert(Archivist.DataTypes.Feed)
+  name: Convert(Feed?)
+  href: api/Archivist.Converters.FeedToTablesConverter.html#Archivist_Converters_FeedToTablesConverter_Convert_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.Converters.FeedToTablesConverter.Convert(Archivist.DataTypes.Feed)
+  name.vb: Convert(Feed)
+  fullName: Archivist.Converters.FeedToTablesConverter.Convert(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.Converters.FeedToTablesConverter.Convert(Archivist.DataTypes.Feed)
+  nameWithType: FeedToTablesConverter.Convert(Feed?)
+  nameWithType.vb: FeedToTablesConverter.Convert(Feed)
+- uid: Archivist.Converters.FeedToTablesConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.FeedToTablesConverter.html#Archivist_Converters_FeedToTablesConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.FeedToTablesConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.FeedToTablesConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.FeedToTablesConverter.Convert(Object, System.Type)
+  nameWithType: FeedToTablesConverter.Convert(object?, Type?)
+  nameWithType.vb: FeedToTablesConverter.Convert(Object, Type)
+- uid: Archivist.Converters.FeedToTablesConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.FeedToTablesConverter.html#Archivist_Converters_FeedToTablesConverter_Convert_
+  commentId: Overload:Archivist.Converters.FeedToTablesConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.FeedToTablesConverter.Convert
+  nameWithType: FeedToTablesConverter.Convert
 - uid: Archivist.Converters.StructuredObjectToCalendarConverter
   name: StructuredObjectToCalendarConverter
   href: api/Archivist.Converters.StructuredObjectToCalendarConverter.html
@@ -1263,6 +1592,53 @@ references:
   isSpec: "True"
   fullName: Archivist.Converters.StructuredObjectToCardConverter.Convert
   nameWithType: StructuredObjectToCardConverter.Convert
+- uid: Archivist.Converters.StructuredObjectToFeedConverter
+  name: StructuredObjectToFeedConverter
+  href: api/Archivist.Converters.StructuredObjectToFeedConverter.html
+  commentId: T:Archivist.Converters.StructuredObjectToFeedConverter
+  fullName: Archivist.Converters.StructuredObjectToFeedConverter
+  nameWithType: StructuredObjectToFeedConverter
+- uid: Archivist.Converters.StructuredObjectToFeedConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.StructuredObjectToFeedConverter.html#Archivist_Converters_StructuredObjectToFeedConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.StructuredObjectToFeedConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.StructuredObjectToFeedConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.StructuredObjectToFeedConverter.CanConvert(System.Type, System.Type)
+  nameWithType: StructuredObjectToFeedConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: StructuredObjectToFeedConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.StructuredObjectToFeedConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.StructuredObjectToFeedConverter.html#Archivist_Converters_StructuredObjectToFeedConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.StructuredObjectToFeedConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.StructuredObjectToFeedConverter.CanConvert
+  nameWithType: StructuredObjectToFeedConverter.CanConvert
+- uid: Archivist.Converters.StructuredObjectToFeedConverter.Convert(Archivist.DataTypes.StructuredObject)
+  name: Convert(StructuredObject?)
+  href: api/Archivist.Converters.StructuredObjectToFeedConverter.html#Archivist_Converters_StructuredObjectToFeedConverter_Convert_Archivist_DataTypes_StructuredObject_
+  commentId: M:Archivist.Converters.StructuredObjectToFeedConverter.Convert(Archivist.DataTypes.StructuredObject)
+  name.vb: Convert(StructuredObject)
+  fullName: Archivist.Converters.StructuredObjectToFeedConverter.Convert(Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.Converters.StructuredObjectToFeedConverter.Convert(Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObjectToFeedConverter.Convert(StructuredObject?)
+  nameWithType.vb: StructuredObjectToFeedConverter.Convert(StructuredObject)
+- uid: Archivist.Converters.StructuredObjectToFeedConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.StructuredObjectToFeedConverter.html#Archivist_Converters_StructuredObjectToFeedConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.StructuredObjectToFeedConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.StructuredObjectToFeedConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.StructuredObjectToFeedConverter.Convert(Object, System.Type)
+  nameWithType: StructuredObjectToFeedConverter.Convert(object?, Type?)
+  nameWithType.vb: StructuredObjectToFeedConverter.Convert(Object, Type)
+- uid: Archivist.Converters.StructuredObjectToFeedConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.StructuredObjectToFeedConverter.html#Archivist_Converters_StructuredObjectToFeedConverter_Convert_
+  commentId: Overload:Archivist.Converters.StructuredObjectToFeedConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.StructuredObjectToFeedConverter.Convert
+  nameWithType: StructuredObjectToFeedConverter.Convert
 - uid: Archivist.Converters.StructuredObjectToTableConverter
   name: StructuredObjectToTableConverter
   href: api/Archivist.Converters.StructuredObjectToTableConverter.html
@@ -1451,6 +1827,53 @@ references:
   isSpec: "True"
   fullName: Archivist.Converters.TableToCardConverter.Convert
   nameWithType: TableToCardConverter.Convert
+- uid: Archivist.Converters.TableToFeedConverter
+  name: TableToFeedConverter
+  href: api/Archivist.Converters.TableToFeedConverter.html
+  commentId: T:Archivist.Converters.TableToFeedConverter
+  fullName: Archivist.Converters.TableToFeedConverter
+  nameWithType: TableToFeedConverter
+- uid: Archivist.Converters.TableToFeedConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.TableToFeedConverter.html#Archivist_Converters_TableToFeedConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.TableToFeedConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.TableToFeedConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.TableToFeedConverter.CanConvert(System.Type, System.Type)
+  nameWithType: TableToFeedConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: TableToFeedConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.TableToFeedConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.TableToFeedConverter.html#Archivist_Converters_TableToFeedConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.TableToFeedConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.TableToFeedConverter.CanConvert
+  nameWithType: TableToFeedConverter.CanConvert
+- uid: Archivist.Converters.TableToFeedConverter.Convert(Archivist.DataTypes.Table)
+  name: Convert(Table?)
+  href: api/Archivist.Converters.TableToFeedConverter.html#Archivist_Converters_TableToFeedConverter_Convert_Archivist_DataTypes_Table_
+  commentId: M:Archivist.Converters.TableToFeedConverter.Convert(Archivist.DataTypes.Table)
+  name.vb: Convert(Table)
+  fullName: Archivist.Converters.TableToFeedConverter.Convert(Archivist.DataTypes.Table?)
+  fullName.vb: Archivist.Converters.TableToFeedConverter.Convert(Archivist.DataTypes.Table)
+  nameWithType: TableToFeedConverter.Convert(Table?)
+  nameWithType.vb: TableToFeedConverter.Convert(Table)
+- uid: Archivist.Converters.TableToFeedConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.TableToFeedConverter.html#Archivist_Converters_TableToFeedConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.TableToFeedConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.TableToFeedConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.TableToFeedConverter.Convert(Object, System.Type)
+  nameWithType: TableToFeedConverter.Convert(object?, Type?)
+  nameWithType.vb: TableToFeedConverter.Convert(Object, Type)
+- uid: Archivist.Converters.TableToFeedConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.TableToFeedConverter.html#Archivist_Converters_TableToFeedConverter_Convert_
+  commentId: Overload:Archivist.Converters.TableToFeedConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.TableToFeedConverter.Convert
+  nameWithType: TableToFeedConverter.Convert
 - uid: Archivist.Converters.TableToStructuredObjectConverter
   name: TableToStructuredObjectConverter
   href: api/Archivist.Converters.TableToStructuredObjectConverter.html
@@ -1639,6 +2062,53 @@ references:
   isSpec: "True"
   fullName: Archivist.Converters.TablesToCardConverter.Convert
   nameWithType: TablesToCardConverter.Convert
+- uid: Archivist.Converters.TablesToFeedConverter
+  name: TablesToFeedConverter
+  href: api/Archivist.Converters.TablesToFeedConverter.html
+  commentId: T:Archivist.Converters.TablesToFeedConverter
+  fullName: Archivist.Converters.TablesToFeedConverter
+  nameWithType: TablesToFeedConverter
+- uid: Archivist.Converters.TablesToFeedConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.TablesToFeedConverter.html#Archivist_Converters_TablesToFeedConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.TablesToFeedConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.TablesToFeedConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.TablesToFeedConverter.CanConvert(System.Type, System.Type)
+  nameWithType: TablesToFeedConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: TablesToFeedConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.TablesToFeedConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.TablesToFeedConverter.html#Archivist_Converters_TablesToFeedConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.TablesToFeedConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.TablesToFeedConverter.CanConvert
+  nameWithType: TablesToFeedConverter.CanConvert
+- uid: Archivist.Converters.TablesToFeedConverter.Convert(Archivist.DataTypes.Tables)
+  name: Convert(Tables?)
+  href: api/Archivist.Converters.TablesToFeedConverter.html#Archivist_Converters_TablesToFeedConverter_Convert_Archivist_DataTypes_Tables_
+  commentId: M:Archivist.Converters.TablesToFeedConverter.Convert(Archivist.DataTypes.Tables)
+  name.vb: Convert(Tables)
+  fullName: Archivist.Converters.TablesToFeedConverter.Convert(Archivist.DataTypes.Tables?)
+  fullName.vb: Archivist.Converters.TablesToFeedConverter.Convert(Archivist.DataTypes.Tables)
+  nameWithType: TablesToFeedConverter.Convert(Tables?)
+  nameWithType.vb: TablesToFeedConverter.Convert(Tables)
+- uid: Archivist.Converters.TablesToFeedConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.TablesToFeedConverter.html#Archivist_Converters_TablesToFeedConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.TablesToFeedConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.TablesToFeedConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.TablesToFeedConverter.Convert(Object, System.Type)
+  nameWithType: TablesToFeedConverter.Convert(object?, Type?)
+  nameWithType.vb: TablesToFeedConverter.Convert(Object, Type)
+- uid: Archivist.Converters.TablesToFeedConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.TablesToFeedConverter.html#Archivist_Converters_TablesToFeedConverter_Convert_
+  commentId: Overload:Archivist.Converters.TablesToFeedConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.TablesToFeedConverter.Convert
+  nameWithType: TablesToFeedConverter.Convert
 - uid: Archivist.Converters.TablesToStructuredObjectConverter
   name: TablesToStructuredObjectConverter
   href: api/Archivist.Converters.TablesToStructuredObjectConverter.html
@@ -2136,6 +2606,15 @@ references:
   fullName: Archivist.DataTypes.Calendar.implicit operator Archivist.DataTypes.Card?(Archivist.DataTypes.Calendar?)
   fullName.vb: Archivist.DataTypes.Calendar.CType(Archivist.DataTypes.Calendar)
   nameWithType: Calendar.implicit operator Card?(Calendar?)
+  nameWithType.vb: Calendar.CType(Calendar)
+- uid: Archivist.DataTypes.Calendar.op_Implicit(Archivist.DataTypes.Calendar)~Archivist.DataTypes.Feed
+  name: implicit operator Feed?(Calendar?)
+  href: api/Archivist.DataTypes.Calendar.html#Archivist_DataTypes_Calendar_op_Implicit_Archivist_DataTypes_Calendar__Archivist_DataTypes_Feed
+  commentId: M:Archivist.DataTypes.Calendar.op_Implicit(Archivist.DataTypes.Calendar)~Archivist.DataTypes.Feed
+  name.vb: CType(Calendar)
+  fullName: Archivist.DataTypes.Calendar.implicit operator Archivist.DataTypes.Feed?(Archivist.DataTypes.Calendar?)
+  fullName.vb: Archivist.DataTypes.Calendar.CType(Archivist.DataTypes.Calendar)
+  nameWithType: Calendar.implicit operator Feed?(Calendar?)
   nameWithType.vb: Calendar.CType(Calendar)
 - uid: Archivist.DataTypes.Calendar.op_Implicit(Archivist.DataTypes.Calendar)~Archivist.DataTypes.StructuredObject
   name: implicit operator StructuredObject?(Calendar?)
@@ -3906,6 +4385,15 @@ references:
   fullName.vb: Archivist.DataTypes.Card.CType(Archivist.DataTypes.Card)
   nameWithType: Card.implicit operator Calendar?(Card?)
   nameWithType.vb: Card.CType(Card)
+- uid: Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Feed
+  name: implicit operator Feed?(Card?)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_Feed
+  commentId: M:Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Feed
+  name.vb: CType(Card)
+  fullName: Archivist.DataTypes.Card.implicit operator Archivist.DataTypes.Feed?(Archivist.DataTypes.Card?)
+  fullName.vb: Archivist.DataTypes.Card.CType(Archivist.DataTypes.Card)
+  nameWithType: Card.implicit operator Feed?(Card?)
+  nameWithType.vb: Card.CType(Card)
 - uid: Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.StructuredObject
   name: implicit operator StructuredObject?(Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_StructuredObject
@@ -4009,6 +4497,2150 @@ references:
   fullName.vb: Archivist.DataTypes.Card.<=
   nameWithType: Card.operator <=
   nameWithType.vb: Card.<=
+- uid: Archivist.DataTypes.Feed
+  name: Feed
+  href: api/Archivist.DataTypes.Feed.html
+  commentId: T:Archivist.DataTypes.Feed
+  fullName: Archivist.DataTypes.Feed
+  nameWithType: Feed
+- uid: Archivist.DataTypes.Feed.#ctor
+  name: Feed()
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed__ctor
+  commentId: M:Archivist.DataTypes.Feed.#ctor
+  name.vb: New()
+  fullName: Archivist.DataTypes.Feed.Feed()
+  fullName.vb: Archivist.DataTypes.Feed.New()
+  nameWithType: Feed.Feed()
+  nameWithType.vb: Feed.New()
+- uid: Archivist.DataTypes.Feed.#ctor(Archivist.Converters.Convertinator)
+  name: Feed(Convertinator?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed__ctor_Archivist_Converters_Convertinator_
+  commentId: M:Archivist.DataTypes.Feed.#ctor(Archivist.Converters.Convertinator)
+  name.vb: New(Convertinator)
+  fullName: Archivist.DataTypes.Feed.Feed(Archivist.Converters.Convertinator?)
+  fullName.vb: Archivist.DataTypes.Feed.New(Archivist.Converters.Convertinator)
+  nameWithType: Feed.Feed(Convertinator?)
+  nameWithType.vb: Feed.New(Convertinator)
+- uid: Archivist.DataTypes.Feed.#ctor*
+  name: Feed
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed__ctor_
+  commentId: Overload:Archivist.DataTypes.Feed.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.Feed.Feed
+  fullName.vb: Archivist.DataTypes.Feed.New
+  nameWithType: Feed.Feed
+  nameWithType.vb: Feed.New
+- uid: Archivist.DataTypes.Feed.Add(Archivist.DataTypes.Feeds.Channel)
+  name: Add(Channel?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Add_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feed.Add(Archivist.DataTypes.Feeds.Channel)
+  name.vb: Add(Channel)
+  fullName: Archivist.DataTypes.Feed.Add(Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feed.Add(Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Feed.Add(Channel?)
+  nameWithType.vb: Feed.Add(Channel)
+- uid: Archivist.DataTypes.Feed.Add*
+  name: Add
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Add_
+  commentId: Overload:Archivist.DataTypes.Feed.Add
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.Add
+  nameWithType: Feed.Add
+- uid: Archivist.DataTypes.Feed.Channels
+  name: Channels
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Channels
+  commentId: P:Archivist.DataTypes.Feed.Channels
+  fullName: Archivist.DataTypes.Feed.Channels
+  nameWithType: Feed.Channels
+- uid: Archivist.DataTypes.Feed.Channels*
+  name: Channels
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Channels_
+  commentId: Overload:Archivist.DataTypes.Feed.Channels
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.Channels
+  nameWithType: Feed.Channels
+- uid: Archivist.DataTypes.Feed.Clear
+  name: Clear()
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Clear
+  commentId: M:Archivist.DataTypes.Feed.Clear
+  fullName: Archivist.DataTypes.Feed.Clear()
+  nameWithType: Feed.Clear()
+- uid: Archivist.DataTypes.Feed.Clear*
+  name: Clear
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Clear_
+  commentId: Overload:Archivist.DataTypes.Feed.Clear
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.Clear
+  nameWithType: Feed.Clear
+- uid: Archivist.DataTypes.Feed.CompareTo(Archivist.DataTypes.Feed)
+  name: CompareTo(Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_CompareTo_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.DataTypes.Feed.CompareTo(Archivist.DataTypes.Feed)
+  name.vb: CompareTo(Feed)
+  fullName: Archivist.DataTypes.Feed.CompareTo(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.CompareTo(Archivist.DataTypes.Feed)
+  nameWithType: Feed.CompareTo(Feed?)
+  nameWithType.vb: Feed.CompareTo(Feed)
+- uid: Archivist.DataTypes.Feed.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_CompareTo_
+  commentId: Overload:Archivist.DataTypes.Feed.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.CompareTo
+  nameWithType: Feed.CompareTo
+- uid: Archivist.DataTypes.Feed.Contains(Archivist.DataTypes.Feeds.Channel)
+  name: Contains(Channel?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Contains_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feed.Contains(Archivist.DataTypes.Feeds.Channel)
+  name.vb: Contains(Channel)
+  fullName: Archivist.DataTypes.Feed.Contains(Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feed.Contains(Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Feed.Contains(Channel?)
+  nameWithType.vb: Feed.Contains(Channel)
+- uid: Archivist.DataTypes.Feed.Contains*
+  name: Contains
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Contains_
+  commentId: Overload:Archivist.DataTypes.Feed.Contains
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.Contains
+  nameWithType: Feed.Contains
+- uid: Archivist.DataTypes.Feed.CopyTo(Archivist.DataTypes.Feeds.Channel[],System.Int32)
+  name: CopyTo(Channel[]?, int)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_CopyTo_Archivist_DataTypes_Feeds_Channel___System_Int32_
+  commentId: M:Archivist.DataTypes.Feed.CopyTo(Archivist.DataTypes.Feeds.Channel[],System.Int32)
+  name.vb: CopyTo(Channel(), Integer)
+  fullName: Archivist.DataTypes.Feed.CopyTo(Archivist.DataTypes.Feeds.Channel[]?, int)
+  fullName.vb: Archivist.DataTypes.Feed.CopyTo(Archivist.DataTypes.Feeds.Channel(), Integer)
+  nameWithType: Feed.CopyTo(Channel[]?, int)
+  nameWithType.vb: Feed.CopyTo(Channel(), Integer)
+- uid: Archivist.DataTypes.Feed.CopyTo*
+  name: CopyTo
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_CopyTo_
+  commentId: Overload:Archivist.DataTypes.Feed.CopyTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.CopyTo
+  nameWithType: Feed.CopyTo
+- uid: Archivist.DataTypes.Feed.Count
+  name: Count
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Count
+  commentId: P:Archivist.DataTypes.Feed.Count
+  fullName: Archivist.DataTypes.Feed.Count
+  nameWithType: Feed.Count
+- uid: Archivist.DataTypes.Feed.Count*
+  name: Count
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Count_
+  commentId: Overload:Archivist.DataTypes.Feed.Count
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.Count
+  nameWithType: Feed.Count
+- uid: Archivist.DataTypes.Feed.Equals(Archivist.DataTypes.Feed)
+  name: Equals(Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Equals_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.DataTypes.Feed.Equals(Archivist.DataTypes.Feed)
+  name.vb: Equals(Feed)
+  fullName: Archivist.DataTypes.Feed.Equals(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.Equals(Archivist.DataTypes.Feed)
+  nameWithType: Feed.Equals(Feed?)
+  nameWithType.vb: Feed.Equals(Feed)
+- uid: Archivist.DataTypes.Feed.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.Feed.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.Feed.Equals(object?)
+  fullName.vb: Archivist.DataTypes.Feed.Equals(Object)
+  nameWithType: Feed.Equals(object?)
+  nameWithType.vb: Feed.Equals(Object)
+- uid: Archivist.DataTypes.Feed.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Equals_
+  commentId: Overload:Archivist.DataTypes.Feed.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.Equals
+  nameWithType: Feed.Equals
+- uid: Archivist.DataTypes.Feed.GetContent
+  name: GetContent()
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_GetContent
+  commentId: M:Archivist.DataTypes.Feed.GetContent
+  fullName: Archivist.DataTypes.Feed.GetContent()
+  nameWithType: Feed.GetContent()
+- uid: Archivist.DataTypes.Feed.GetContent*
+  name: GetContent
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_GetContent_
+  commentId: Overload:Archivist.DataTypes.Feed.GetContent
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.GetContent
+  nameWithType: Feed.GetContent
+- uid: Archivist.DataTypes.Feed.GetEnumerator
+  name: GetEnumerator()
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_GetEnumerator
+  commentId: M:Archivist.DataTypes.Feed.GetEnumerator
+  fullName: Archivist.DataTypes.Feed.GetEnumerator()
+  nameWithType: Feed.GetEnumerator()
+- uid: Archivist.DataTypes.Feed.GetEnumerator*
+  name: GetEnumerator
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_GetEnumerator_
+  commentId: Overload:Archivist.DataTypes.Feed.GetEnumerator
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.GetEnumerator
+  nameWithType: Feed.GetEnumerator
+- uid: Archivist.DataTypes.Feed.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_GetHashCode
+  commentId: M:Archivist.DataTypes.Feed.GetHashCode
+  fullName: Archivist.DataTypes.Feed.GetHashCode()
+  nameWithType: Feed.GetHashCode()
+- uid: Archivist.DataTypes.Feed.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.Feed.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.GetHashCode
+  nameWithType: Feed.GetHashCode
+- uid: Archivist.DataTypes.Feed.IndexOf(Archivist.DataTypes.Feeds.Channel)
+  name: IndexOf(Channel?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_IndexOf_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feed.IndexOf(Archivist.DataTypes.Feeds.Channel)
+  name.vb: IndexOf(Channel)
+  fullName: Archivist.DataTypes.Feed.IndexOf(Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feed.IndexOf(Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Feed.IndexOf(Channel?)
+  nameWithType.vb: Feed.IndexOf(Channel)
+- uid: Archivist.DataTypes.Feed.IndexOf*
+  name: IndexOf
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_IndexOf_
+  commentId: Overload:Archivist.DataTypes.Feed.IndexOf
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.IndexOf
+  nameWithType: Feed.IndexOf
+- uid: Archivist.DataTypes.Feed.Insert(System.Int32,Archivist.DataTypes.Feeds.Channel)
+  name: Insert(int, Channel?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Insert_System_Int32_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feed.Insert(System.Int32,Archivist.DataTypes.Feeds.Channel)
+  name.vb: Insert(Integer, Channel)
+  fullName: Archivist.DataTypes.Feed.Insert(int, Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feed.Insert(Integer, Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Feed.Insert(int, Channel?)
+  nameWithType.vb: Feed.Insert(Integer, Channel)
+- uid: Archivist.DataTypes.Feed.Insert*
+  name: Insert
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Insert_
+  commentId: Overload:Archivist.DataTypes.Feed.Insert
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.Insert
+  nameWithType: Feed.Insert
+- uid: Archivist.DataTypes.Feed.IsReadOnly
+  name: IsReadOnly
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_IsReadOnly
+  commentId: P:Archivist.DataTypes.Feed.IsReadOnly
+  fullName: Archivist.DataTypes.Feed.IsReadOnly
+  nameWithType: Feed.IsReadOnly
+- uid: Archivist.DataTypes.Feed.IsReadOnly*
+  name: IsReadOnly
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_IsReadOnly_
+  commentId: Overload:Archivist.DataTypes.Feed.IsReadOnly
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.IsReadOnly
+  nameWithType: Feed.IsReadOnly
+- uid: Archivist.DataTypes.Feed.Item(System.Int32)
+  name: this[int]
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Item_System_Int32_
+  commentId: P:Archivist.DataTypes.Feed.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: Archivist.DataTypes.Feed.this[int]
+  fullName.vb: Archivist.DataTypes.Feed.this[](Integer)
+  nameWithType: Feed.this[int]
+  nameWithType.vb: Feed.this[](Integer)
+- uid: Archivist.DataTypes.Feed.Item*
+  name: this
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Item_
+  commentId: Overload:Archivist.DataTypes.Feed.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: Archivist.DataTypes.Feed.this
+  fullName.vb: Archivist.DataTypes.Feed.this[]
+  nameWithType: Feed.this
+  nameWithType.vb: Feed.this[]
+- uid: Archivist.DataTypes.Feed.Remove(Archivist.DataTypes.Feeds.Channel)
+  name: Remove(Channel?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Remove_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feed.Remove(Archivist.DataTypes.Feeds.Channel)
+  name.vb: Remove(Channel)
+  fullName: Archivist.DataTypes.Feed.Remove(Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feed.Remove(Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Feed.Remove(Channel?)
+  nameWithType.vb: Feed.Remove(Channel)
+- uid: Archivist.DataTypes.Feed.Remove*
+  name: Remove
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_Remove_
+  commentId: Overload:Archivist.DataTypes.Feed.Remove
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.Remove
+  nameWithType: Feed.Remove
+- uid: Archivist.DataTypes.Feed.RemoveAt(System.Int32)
+  name: RemoveAt(int)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_RemoveAt_System_Int32_
+  commentId: M:Archivist.DataTypes.Feed.RemoveAt(System.Int32)
+  name.vb: RemoveAt(Integer)
+  fullName: Archivist.DataTypes.Feed.RemoveAt(int)
+  fullName.vb: Archivist.DataTypes.Feed.RemoveAt(Integer)
+  nameWithType: Feed.RemoveAt(int)
+  nameWithType.vb: Feed.RemoveAt(Integer)
+- uid: Archivist.DataTypes.Feed.RemoveAt*
+  name: RemoveAt
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_RemoveAt_
+  commentId: Overload:Archivist.DataTypes.Feed.RemoveAt
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.RemoveAt
+  nameWithType: Feed.RemoveAt
+- uid: Archivist.DataTypes.Feed.ToFileType*
+  name: ToFileType
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_ToFileType_
+  commentId: Overload:Archivist.DataTypes.Feed.ToFileType
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feed.ToFileType
+  nameWithType: Feed.ToFileType
+- uid: Archivist.DataTypes.Feed.ToFileType``1
+  name: ToFileType<TFile>()
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_ToFileType__1
+  commentId: M:Archivist.DataTypes.Feed.ToFileType``1
+  name.vb: ToFileType(Of TFile)()
+  fullName: Archivist.DataTypes.Feed.ToFileType<TFile>()
+  fullName.vb: Archivist.DataTypes.Feed.ToFileType(Of TFile)()
+  nameWithType: Feed.ToFileType<TFile>()
+  nameWithType.vb: Feed.ToFileType(Of TFile)()
+- uid: Archivist.DataTypes.Feed.op_Equality(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name: operator ==(Feed?, Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Equality_Archivist_DataTypes_Feed_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.DataTypes.Feed.op_Equality(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name.vb: =(Feed, Feed)
+  fullName: Archivist.DataTypes.Feed.operator ==(Archivist.DataTypes.Feed?, Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.=(Archivist.DataTypes.Feed, Archivist.DataTypes.Feed)
+  nameWithType: Feed.operator ==(Feed?, Feed?)
+  nameWithType.vb: Feed.=(Feed, Feed)
+- uid: Archivist.DataTypes.Feed.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Equality_
+  commentId: Overload:Archivist.DataTypes.Feed.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.Feed.operator ==
+  fullName.vb: Archivist.DataTypes.Feed.=
+  nameWithType: Feed.operator ==
+  nameWithType.vb: Feed.=
+- uid: Archivist.DataTypes.Feed.op_GreaterThan(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name: operator >(Feed?, Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_GreaterThan_Archivist_DataTypes_Feed_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.DataTypes.Feed.op_GreaterThan(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name.vb: '>(Feed, Feed)'
+  fullName: Archivist.DataTypes.Feed.operator >(Archivist.DataTypes.Feed?, Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.>(Archivist.DataTypes.Feed, Archivist.DataTypes.Feed)
+  nameWithType: Feed.operator >(Feed?, Feed?)
+  nameWithType.vb: Feed.>(Feed, Feed)
+- uid: Archivist.DataTypes.Feed.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.Feed.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.Feed.operator >
+  fullName.vb: Archivist.DataTypes.Feed.>
+  nameWithType: Feed.operator >
+  nameWithType.vb: Feed.>
+- uid: Archivist.DataTypes.Feed.op_GreaterThanOrEqual(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name: operator >=(Feed?, Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_GreaterThanOrEqual_Archivist_DataTypes_Feed_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.DataTypes.Feed.op_GreaterThanOrEqual(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name.vb: '>=(Feed, Feed)'
+  fullName: Archivist.DataTypes.Feed.operator >=(Archivist.DataTypes.Feed?, Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.>=(Archivist.DataTypes.Feed, Archivist.DataTypes.Feed)
+  nameWithType: Feed.operator >=(Feed?, Feed?)
+  nameWithType.vb: Feed.>=(Feed, Feed)
+- uid: Archivist.DataTypes.Feed.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feed.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.Feed.operator >=
+  fullName.vb: Archivist.DataTypes.Feed.>=
+  nameWithType: Feed.operator >=
+  nameWithType.vb: Feed.>=
+- uid: Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Calendar
+  name: implicit operator Calendar?(Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Implicit_Archivist_DataTypes_Feed__Archivist_DataTypes_Calendar
+  commentId: M:Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Calendar
+  name.vb: CType(Feed)
+  fullName: Archivist.DataTypes.Feed.implicit operator Archivist.DataTypes.Calendar?(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.CType(Archivist.DataTypes.Feed)
+  nameWithType: Feed.implicit operator Calendar?(Feed?)
+  nameWithType.vb: Feed.CType(Feed)
+- uid: Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Card
+  name: implicit operator Card?(Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Implicit_Archivist_DataTypes_Feed__Archivist_DataTypes_Card
+  commentId: M:Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Card
+  name.vb: CType(Feed)
+  fullName: Archivist.DataTypes.Feed.implicit operator Archivist.DataTypes.Card?(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.CType(Archivist.DataTypes.Feed)
+  nameWithType: Feed.implicit operator Card?(Feed?)
+  nameWithType.vb: Feed.CType(Feed)
+- uid: Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.StructuredObject
+  name: implicit operator StructuredObject?(Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Implicit_Archivist_DataTypes_Feed__Archivist_DataTypes_StructuredObject
+  commentId: M:Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.StructuredObject
+  name.vb: CType(Feed)
+  fullName: Archivist.DataTypes.Feed.implicit operator Archivist.DataTypes.StructuredObject?(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.CType(Archivist.DataTypes.Feed)
+  nameWithType: Feed.implicit operator StructuredObject?(Feed?)
+  nameWithType.vb: Feed.CType(Feed)
+- uid: Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Table
+  name: implicit operator Table?(Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Implicit_Archivist_DataTypes_Feed__Archivist_DataTypes_Table
+  commentId: M:Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Table
+  name.vb: CType(Feed)
+  fullName: Archivist.DataTypes.Feed.implicit operator Archivist.DataTypes.Table?(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.CType(Archivist.DataTypes.Feed)
+  nameWithType: Feed.implicit operator Table?(Feed?)
+  nameWithType.vb: Feed.CType(Feed)
+- uid: Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Tables
+  name: implicit operator Tables?(Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Implicit_Archivist_DataTypes_Feed__Archivist_DataTypes_Tables
+  commentId: M:Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Tables
+  name.vb: CType(Feed)
+  fullName: Archivist.DataTypes.Feed.implicit operator Archivist.DataTypes.Tables?(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.CType(Archivist.DataTypes.Feed)
+  nameWithType: Feed.implicit operator Tables?(Feed?)
+  nameWithType.vb: Feed.CType(Feed)
+- uid: Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Text
+  name: implicit operator Text?(Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Implicit_Archivist_DataTypes_Feed__Archivist_DataTypes_Text
+  commentId: M:Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Text
+  name.vb: CType(Feed)
+  fullName: Archivist.DataTypes.Feed.implicit operator Archivist.DataTypes.Text?(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.CType(Archivist.DataTypes.Feed)
+  nameWithType: Feed.implicit operator Text?(Feed?)
+  nameWithType.vb: Feed.CType(Feed)
+- uid: Archivist.DataTypes.Feed.op_Implicit*
+  name: implicit operator
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Implicit_
+  commentId: Overload:Archivist.DataTypes.Feed.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: Archivist.DataTypes.Feed.implicit operator
+  fullName.vb: Archivist.DataTypes.Feed.CType
+  nameWithType: Feed.implicit operator
+  nameWithType.vb: Feed.CType
+- uid: Archivist.DataTypes.Feed.op_Inequality(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name: operator !=(Feed?, Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Inequality_Archivist_DataTypes_Feed_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.DataTypes.Feed.op_Inequality(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name.vb: <>(Feed, Feed)
+  fullName: Archivist.DataTypes.Feed.operator !=(Archivist.DataTypes.Feed?, Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.<>(Archivist.DataTypes.Feed, Archivist.DataTypes.Feed)
+  nameWithType: Feed.operator !=(Feed?, Feed?)
+  nameWithType.vb: Feed.<>(Feed, Feed)
+- uid: Archivist.DataTypes.Feed.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.Feed.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.Feed.operator !=
+  fullName.vb: Archivist.DataTypes.Feed.<>
+  nameWithType: Feed.operator !=
+  nameWithType.vb: Feed.<>
+- uid: Archivist.DataTypes.Feed.op_LessThan(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name: operator <(Feed?, Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_LessThan_Archivist_DataTypes_Feed_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.DataTypes.Feed.op_LessThan(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name.vb: <(Feed, Feed)
+  fullName: Archivist.DataTypes.Feed.operator <(Archivist.DataTypes.Feed?, Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.<(Archivist.DataTypes.Feed, Archivist.DataTypes.Feed)
+  nameWithType: Feed.operator <(Feed?, Feed?)
+  nameWithType.vb: Feed.<(Feed, Feed)
+- uid: Archivist.DataTypes.Feed.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.Feed.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.Feed.operator <
+  fullName.vb: Archivist.DataTypes.Feed.<
+  nameWithType: Feed.operator <
+  nameWithType.vb: Feed.<
+- uid: Archivist.DataTypes.Feed.op_LessThanOrEqual(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name: operator <=(Feed?, Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_LessThanOrEqual_Archivist_DataTypes_Feed_Archivist_DataTypes_Feed_
+  commentId: M:Archivist.DataTypes.Feed.op_LessThanOrEqual(Archivist.DataTypes.Feed,Archivist.DataTypes.Feed)
+  name.vb: <=(Feed, Feed)
+  fullName: Archivist.DataTypes.Feed.operator <=(Archivist.DataTypes.Feed?, Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.<=(Archivist.DataTypes.Feed, Archivist.DataTypes.Feed)
+  nameWithType: Feed.operator <=(Feed?, Feed?)
+  nameWithType.vb: Feed.<=(Feed, Feed)
+- uid: Archivist.DataTypes.Feed.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feed.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.Feed.operator <=
+  fullName.vb: Archivist.DataTypes.Feed.<=
+  nameWithType: Feed.operator <=
+  nameWithType.vb: Feed.<=
+- uid: Archivist.DataTypes.Feeds
+  name: Archivist.DataTypes.Feeds
+  href: api/Archivist.DataTypes.Feeds.html
+  commentId: N:Archivist.DataTypes.Feeds
+  fullName: Archivist.DataTypes.Feeds
+  nameWithType: Archivist.DataTypes.Feeds
+- uid: Archivist.DataTypes.Feeds.Channel
+  name: Channel
+  href: api/Archivist.DataTypes.Feeds.Channel.html
+  commentId: T:Archivist.DataTypes.Feeds.Channel
+  fullName: Archivist.DataTypes.Feeds.Channel
+  nameWithType: Channel
+- uid: Archivist.DataTypes.Feeds.Channel.Add(Archivist.DataTypes.Feeds.FeedItem)
+  name: Add(FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Add_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.Add(Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: Add(FeedItem)
+  fullName: Archivist.DataTypes.Feeds.Channel.Add(Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.Add(Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: Channel.Add(FeedItem?)
+  nameWithType.vb: Channel.Add(FeedItem)
+- uid: Archivist.DataTypes.Feeds.Channel.Add*
+  name: Add
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Add_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Add
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Add
+  nameWithType: Channel.Add
+- uid: Archivist.DataTypes.Feeds.Channel.AddRange(System.Collections.Generic.IEnumerable{Archivist.DataTypes.Feeds.FeedItem})
+  name: AddRange(IEnumerable<FeedItem>?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_AddRange_System_Collections_Generic_IEnumerable_Archivist_DataTypes_Feeds_FeedItem__
+  commentId: M:Archivist.DataTypes.Feeds.Channel.AddRange(System.Collections.Generic.IEnumerable{Archivist.DataTypes.Feeds.FeedItem})
+  name.vb: AddRange(IEnumerable(Of FeedItem))
+  fullName: Archivist.DataTypes.Feeds.Channel.AddRange(System.Collections.Generic.IEnumerable<Archivist.DataTypes.Feeds.FeedItem>?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.AddRange(System.Collections.Generic.IEnumerable(Of Archivist.DataTypes.Feeds.FeedItem))
+  nameWithType: Channel.AddRange(IEnumerable<FeedItem>?)
+  nameWithType.vb: Channel.AddRange(IEnumerable(Of FeedItem))
+- uid: Archivist.DataTypes.Feeds.Channel.AddRange*
+  name: AddRange
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_AddRange_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.AddRange
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.AddRange
+  nameWithType: Channel.AddRange
+- uid: Archivist.DataTypes.Feeds.Channel.Categories
+  name: Categories
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Categories
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Categories
+  fullName: Archivist.DataTypes.Feeds.Channel.Categories
+  nameWithType: Channel.Categories
+- uid: Archivist.DataTypes.Feeds.Channel.Categories*
+  name: Categories
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Categories_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Categories
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Categories
+  nameWithType: Channel.Categories
+- uid: Archivist.DataTypes.Feeds.Channel.Clear
+  name: Clear()
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Clear
+  commentId: M:Archivist.DataTypes.Feeds.Channel.Clear
+  fullName: Archivist.DataTypes.Feeds.Channel.Clear()
+  nameWithType: Channel.Clear()
+- uid: Archivist.DataTypes.Feeds.Channel.Clear*
+  name: Clear
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Clear_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Clear
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Clear
+  nameWithType: Channel.Clear
+- uid: Archivist.DataTypes.Feeds.Channel.Cloud
+  name: Cloud
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Cloud
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Cloud
+  fullName: Archivist.DataTypes.Feeds.Channel.Cloud
+  nameWithType: Channel.Cloud
+- uid: Archivist.DataTypes.Feeds.Channel.Cloud*
+  name: Cloud
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Cloud_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Cloud
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Cloud
+  nameWithType: Channel.Cloud
+- uid: Archivist.DataTypes.Feeds.Channel.CompareTo(Archivist.DataTypes.Feeds.Channel)
+  name: CompareTo(Channel?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_CompareTo_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.CompareTo(Archivist.DataTypes.Feeds.Channel)
+  name.vb: CompareTo(Channel)
+  fullName: Archivist.DataTypes.Feeds.Channel.CompareTo(Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.CompareTo(Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Channel.CompareTo(Channel?)
+  nameWithType.vb: Channel.CompareTo(Channel)
+- uid: Archivist.DataTypes.Feeds.Channel.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_CompareTo_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.CompareTo
+  nameWithType: Channel.CompareTo
+- uid: Archivist.DataTypes.Feeds.Channel.Contains(Archivist.DataTypes.Feeds.FeedItem)
+  name: Contains(FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Contains_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.Contains(Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: Contains(FeedItem)
+  fullName: Archivist.DataTypes.Feeds.Channel.Contains(Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.Contains(Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: Channel.Contains(FeedItem?)
+  nameWithType.vb: Channel.Contains(FeedItem)
+- uid: Archivist.DataTypes.Feeds.Channel.Contains*
+  name: Contains
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Contains_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Contains
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Contains
+  nameWithType: Channel.Contains
+- uid: Archivist.DataTypes.Feeds.Channel.CopyTo(Archivist.DataTypes.Feeds.FeedItem[],System.Int32)
+  name: CopyTo(FeedItem[], int)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_CopyTo_Archivist_DataTypes_Feeds_FeedItem___System_Int32_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.CopyTo(Archivist.DataTypes.Feeds.FeedItem[],System.Int32)
+  name.vb: CopyTo(FeedItem(), Integer)
+  fullName: Archivist.DataTypes.Feeds.Channel.CopyTo(Archivist.DataTypes.Feeds.FeedItem[], int)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.CopyTo(Archivist.DataTypes.Feeds.FeedItem(), Integer)
+  nameWithType: Channel.CopyTo(FeedItem[], int)
+  nameWithType.vb: Channel.CopyTo(FeedItem(), Integer)
+- uid: Archivist.DataTypes.Feeds.Channel.CopyTo*
+  name: CopyTo
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_CopyTo_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.CopyTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.CopyTo
+  nameWithType: Channel.CopyTo
+- uid: Archivist.DataTypes.Feeds.Channel.Copyright
+  name: Copyright
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Copyright
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Copyright
+  fullName: Archivist.DataTypes.Feeds.Channel.Copyright
+  nameWithType: Channel.Copyright
+- uid: Archivist.DataTypes.Feeds.Channel.Copyright*
+  name: Copyright
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Copyright_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Copyright
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Copyright
+  nameWithType: Channel.Copyright
+- uid: Archivist.DataTypes.Feeds.Channel.Count
+  name: Count
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Count
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Count
+  fullName: Archivist.DataTypes.Feeds.Channel.Count
+  nameWithType: Channel.Count
+- uid: Archivist.DataTypes.Feeds.Channel.Count*
+  name: Count
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Count_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Count
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Count
+  nameWithType: Channel.Count
+- uid: Archivist.DataTypes.Feeds.Channel.Description
+  name: Description
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Description
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Description
+  fullName: Archivist.DataTypes.Feeds.Channel.Description
+  nameWithType: Channel.Description
+- uid: Archivist.DataTypes.Feeds.Channel.Description*
+  name: Description
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Description_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Description
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Description
+  nameWithType: Channel.Description
+- uid: Archivist.DataTypes.Feeds.Channel.Docs
+  name: Docs
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Docs
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Docs
+  fullName: Archivist.DataTypes.Feeds.Channel.Docs
+  nameWithType: Channel.Docs
+- uid: Archivist.DataTypes.Feeds.Channel.Docs*
+  name: Docs
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Docs_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Docs
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Docs
+  nameWithType: Channel.Docs
+- uid: Archivist.DataTypes.Feeds.Channel.Equals(Archivist.DataTypes.Feeds.Channel)
+  name: Equals(Channel?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Equals_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.Equals(Archivist.DataTypes.Feeds.Channel)
+  name.vb: Equals(Channel)
+  fullName: Archivist.DataTypes.Feeds.Channel.Equals(Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.Equals(Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Channel.Equals(Channel?)
+  nameWithType.vb: Channel.Equals(Channel)
+- uid: Archivist.DataTypes.Feeds.Channel.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.Feeds.Channel.Equals(object?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.Equals(Object)
+  nameWithType: Channel.Equals(object?)
+  nameWithType.vb: Channel.Equals(Object)
+- uid: Archivist.DataTypes.Feeds.Channel.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Equals_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Equals
+  nameWithType: Channel.Equals
+- uid: Archivist.DataTypes.Feeds.Channel.Explicit
+  name: Explicit
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Explicit
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Explicit
+  fullName: Archivist.DataTypes.Feeds.Channel.Explicit
+  nameWithType: Channel.Explicit
+- uid: Archivist.DataTypes.Feeds.Channel.Explicit*
+  name: Explicit
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Explicit_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Explicit
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Explicit
+  nameWithType: Channel.Explicit
+- uid: Archivist.DataTypes.Feeds.Channel.GetEnumerator
+  name: GetEnumerator()
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_GetEnumerator
+  commentId: M:Archivist.DataTypes.Feeds.Channel.GetEnumerator
+  fullName: Archivist.DataTypes.Feeds.Channel.GetEnumerator()
+  nameWithType: Channel.GetEnumerator()
+- uid: Archivist.DataTypes.Feeds.Channel.GetEnumerator*
+  name: GetEnumerator
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_GetEnumerator_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.GetEnumerator
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.GetEnumerator
+  nameWithType: Channel.GetEnumerator
+- uid: Archivist.DataTypes.Feeds.Channel.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_GetHashCode
+  commentId: M:Archivist.DataTypes.Feeds.Channel.GetHashCode
+  fullName: Archivist.DataTypes.Feeds.Channel.GetHashCode()
+  nameWithType: Channel.GetHashCode()
+- uid: Archivist.DataTypes.Feeds.Channel.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.GetHashCode
+  nameWithType: Channel.GetHashCode
+- uid: Archivist.DataTypes.Feeds.Channel.ImageUrl
+  name: ImageUrl
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_ImageUrl
+  commentId: P:Archivist.DataTypes.Feeds.Channel.ImageUrl
+  fullName: Archivist.DataTypes.Feeds.Channel.ImageUrl
+  nameWithType: Channel.ImageUrl
+- uid: Archivist.DataTypes.Feeds.Channel.ImageUrl*
+  name: ImageUrl
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_ImageUrl_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.ImageUrl
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.ImageUrl
+  nameWithType: Channel.ImageUrl
+- uid: Archivist.DataTypes.Feeds.Channel.IndexOf(Archivist.DataTypes.Feeds.FeedItem)
+  name: IndexOf(FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_IndexOf_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.IndexOf(Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: IndexOf(FeedItem)
+  fullName: Archivist.DataTypes.Feeds.Channel.IndexOf(Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.IndexOf(Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: Channel.IndexOf(FeedItem?)
+  nameWithType.vb: Channel.IndexOf(FeedItem)
+- uid: Archivist.DataTypes.Feeds.Channel.IndexOf*
+  name: IndexOf
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_IndexOf_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.IndexOf
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.IndexOf
+  nameWithType: Channel.IndexOf
+- uid: Archivist.DataTypes.Feeds.Channel.Insert(System.Int32,Archivist.DataTypes.Feeds.FeedItem)
+  name: Insert(int, FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Insert_System_Int32_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.Insert(System.Int32,Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: Insert(Integer, FeedItem)
+  fullName: Archivist.DataTypes.Feeds.Channel.Insert(int, Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.Insert(Integer, Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: Channel.Insert(int, FeedItem?)
+  nameWithType.vb: Channel.Insert(Integer, FeedItem)
+- uid: Archivist.DataTypes.Feeds.Channel.Insert*
+  name: Insert
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Insert_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Insert
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Insert
+  nameWithType: Channel.Insert
+- uid: Archivist.DataTypes.Feeds.Channel.IsReadOnly
+  name: IsReadOnly
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_IsReadOnly
+  commentId: P:Archivist.DataTypes.Feeds.Channel.IsReadOnly
+  fullName: Archivist.DataTypes.Feeds.Channel.IsReadOnly
+  nameWithType: Channel.IsReadOnly
+- uid: Archivist.DataTypes.Feeds.Channel.IsReadOnly*
+  name: IsReadOnly
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_IsReadOnly_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.IsReadOnly
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.IsReadOnly
+  nameWithType: Channel.IsReadOnly
+- uid: Archivist.DataTypes.Feeds.Channel.Item(System.Int32)
+  name: this[int]
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Item_System_Int32_
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: Archivist.DataTypes.Feeds.Channel.this[int]
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.this[](Integer)
+  nameWithType: Channel.this[int]
+  nameWithType.vb: Channel.this[](Integer)
+- uid: Archivist.DataTypes.Feeds.Channel.Item*
+  name: this
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Item_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: Archivist.DataTypes.Feeds.Channel.this
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.this[]
+  nameWithType: Channel.this
+  nameWithType.vb: Channel.this[]
+- uid: Archivist.DataTypes.Feeds.Channel.Items
+  name: Items
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Items
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Items
+  fullName: Archivist.DataTypes.Feeds.Channel.Items
+  nameWithType: Channel.Items
+- uid: Archivist.DataTypes.Feeds.Channel.Items*
+  name: Items
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Items_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Items
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Items
+  nameWithType: Channel.Items
+- uid: Archivist.DataTypes.Feeds.Channel.Language
+  name: Language
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Language
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Language
+  fullName: Archivist.DataTypes.Feeds.Channel.Language
+  nameWithType: Channel.Language
+- uid: Archivist.DataTypes.Feeds.Channel.Language*
+  name: Language
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Language_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Language
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Language
+  nameWithType: Channel.Language
+- uid: Archivist.DataTypes.Feeds.Channel.Link
+  name: Link
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Link
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Link
+  fullName: Archivist.DataTypes.Feeds.Channel.Link
+  nameWithType: Channel.Link
+- uid: Archivist.DataTypes.Feeds.Channel.Link*
+  name: Link
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Link_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Link
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Link
+  nameWithType: Channel.Link
+- uid: Archivist.DataTypes.Feeds.Channel.PubDate
+  name: PubDate
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_PubDate
+  commentId: P:Archivist.DataTypes.Feeds.Channel.PubDate
+  fullName: Archivist.DataTypes.Feeds.Channel.PubDate
+  nameWithType: Channel.PubDate
+- uid: Archivist.DataTypes.Feeds.Channel.PubDate*
+  name: PubDate
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_PubDate_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.PubDate
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.PubDate
+  nameWithType: Channel.PubDate
+- uid: Archivist.DataTypes.Feeds.Channel.PubDateUtc
+  name: PubDateUtc
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_PubDateUtc
+  commentId: P:Archivist.DataTypes.Feeds.Channel.PubDateUtc
+  fullName: Archivist.DataTypes.Feeds.Channel.PubDateUtc
+  nameWithType: Channel.PubDateUtc
+- uid: Archivist.DataTypes.Feeds.Channel.PubDateUtc*
+  name: PubDateUtc
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_PubDateUtc_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.PubDateUtc
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.PubDateUtc
+  nameWithType: Channel.PubDateUtc
+- uid: Archivist.DataTypes.Feeds.Channel.Remove(Archivist.DataTypes.Feeds.FeedItem)
+  name: Remove(FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Remove_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.Remove(Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: Remove(FeedItem)
+  fullName: Archivist.DataTypes.Feeds.Channel.Remove(Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.Remove(Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: Channel.Remove(FeedItem?)
+  nameWithType.vb: Channel.Remove(FeedItem)
+- uid: Archivist.DataTypes.Feeds.Channel.Remove*
+  name: Remove
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Remove_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Remove
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Remove
+  nameWithType: Channel.Remove
+- uid: Archivist.DataTypes.Feeds.Channel.RemoveAt(System.Int32)
+  name: RemoveAt(int)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_RemoveAt_System_Int32_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.RemoveAt(System.Int32)
+  name.vb: RemoveAt(Integer)
+  fullName: Archivist.DataTypes.Feeds.Channel.RemoveAt(int)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.RemoveAt(Integer)
+  nameWithType: Channel.RemoveAt(int)
+  nameWithType.vb: Channel.RemoveAt(Integer)
+- uid: Archivist.DataTypes.Feeds.Channel.RemoveAt*
+  name: RemoveAt
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_RemoveAt_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.RemoveAt
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.RemoveAt
+  nameWithType: Channel.RemoveAt
+- uid: Archivist.DataTypes.Feeds.Channel.TTL
+  name: TTL
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_TTL
+  commentId: P:Archivist.DataTypes.Feeds.Channel.TTL
+  fullName: Archivist.DataTypes.Feeds.Channel.TTL
+  nameWithType: Channel.TTL
+- uid: Archivist.DataTypes.Feeds.Channel.TTL*
+  name: TTL
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_TTL_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.TTL
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.TTL
+  nameWithType: Channel.TTL
+- uid: Archivist.DataTypes.Feeds.Channel.Title
+  name: Title
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Title
+  commentId: P:Archivist.DataTypes.Feeds.Channel.Title
+  fullName: Archivist.DataTypes.Feeds.Channel.Title
+  nameWithType: Channel.Title
+- uid: Archivist.DataTypes.Feeds.Channel.Title*
+  name: Title
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_Title_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.Title
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.Title
+  nameWithType: Channel.Title
+- uid: Archivist.DataTypes.Feeds.Channel.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_ToString
+  commentId: M:Archivist.DataTypes.Feeds.Channel.ToString
+  fullName: Archivist.DataTypes.Feeds.Channel.ToString()
+  nameWithType: Channel.ToString()
+- uid: Archivist.DataTypes.Feeds.Channel.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_ToString_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.ToString
+  nameWithType: Channel.ToString
+- uid: Archivist.DataTypes.Feeds.Channel.WebMaster
+  name: WebMaster
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_WebMaster
+  commentId: P:Archivist.DataTypes.Feeds.Channel.WebMaster
+  fullName: Archivist.DataTypes.Feeds.Channel.WebMaster
+  nameWithType: Channel.WebMaster
+- uid: Archivist.DataTypes.Feeds.Channel.WebMaster*
+  name: WebMaster
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_WebMaster_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.WebMaster
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Channel.WebMaster
+  nameWithType: Channel.WebMaster
+- uid: Archivist.DataTypes.Feeds.Channel.op_Equality(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name: operator ==(Channel?, Channel?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_Equality_Archivist_DataTypes_Feeds_Channel_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.op_Equality(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name.vb: =(Channel, Channel)
+  fullName: Archivist.DataTypes.Feeds.Channel.operator ==(Archivist.DataTypes.Feeds.Channel?, Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.=(Archivist.DataTypes.Feeds.Channel, Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Channel.operator ==(Channel?, Channel?)
+  nameWithType.vb: Channel.=(Channel, Channel)
+- uid: Archivist.DataTypes.Feeds.Channel.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_Equality_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.Feeds.Channel.operator ==
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.=
+  nameWithType: Channel.operator ==
+  nameWithType.vb: Channel.=
+- uid: Archivist.DataTypes.Feeds.Channel.op_GreaterThan(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name: operator >(Channel?, Channel?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_GreaterThan_Archivist_DataTypes_Feeds_Channel_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.op_GreaterThan(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name.vb: '>(Channel, Channel)'
+  fullName: Archivist.DataTypes.Feeds.Channel.operator >(Archivist.DataTypes.Feeds.Channel?, Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.>(Archivist.DataTypes.Feeds.Channel, Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Channel.operator >(Channel?, Channel?)
+  nameWithType.vb: Channel.>(Channel, Channel)
+- uid: Archivist.DataTypes.Feeds.Channel.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.Feeds.Channel.operator >
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.>
+  nameWithType: Channel.operator >
+  nameWithType.vb: Channel.>
+- uid: Archivist.DataTypes.Feeds.Channel.op_GreaterThanOrEqual(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name: operator >=(Channel?, Channel?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_GreaterThanOrEqual_Archivist_DataTypes_Feeds_Channel_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.op_GreaterThanOrEqual(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name.vb: '>=(Channel, Channel)'
+  fullName: Archivist.DataTypes.Feeds.Channel.operator >=(Archivist.DataTypes.Feeds.Channel?, Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.>=(Archivist.DataTypes.Feeds.Channel, Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Channel.operator >=(Channel?, Channel?)
+  nameWithType.vb: Channel.>=(Channel, Channel)
+- uid: Archivist.DataTypes.Feeds.Channel.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.Feeds.Channel.operator >=
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.>=
+  nameWithType: Channel.operator >=
+  nameWithType.vb: Channel.>=
+- uid: Archivist.DataTypes.Feeds.Channel.op_Inequality(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name: operator !=(Channel?, Channel?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_Inequality_Archivist_DataTypes_Feeds_Channel_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.op_Inequality(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name.vb: <>(Channel, Channel)
+  fullName: Archivist.DataTypes.Feeds.Channel.operator !=(Archivist.DataTypes.Feeds.Channel?, Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.<>(Archivist.DataTypes.Feeds.Channel, Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Channel.operator !=(Channel?, Channel?)
+  nameWithType.vb: Channel.<>(Channel, Channel)
+- uid: Archivist.DataTypes.Feeds.Channel.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.Feeds.Channel.operator !=
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.<>
+  nameWithType: Channel.operator !=
+  nameWithType.vb: Channel.<>
+- uid: Archivist.DataTypes.Feeds.Channel.op_LessThan(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name: operator <(Channel?, Channel?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_LessThan_Archivist_DataTypes_Feeds_Channel_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.op_LessThan(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name.vb: <(Channel, Channel)
+  fullName: Archivist.DataTypes.Feeds.Channel.operator <(Archivist.DataTypes.Feeds.Channel?, Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.<(Archivist.DataTypes.Feeds.Channel, Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Channel.operator <(Channel?, Channel?)
+  nameWithType.vb: Channel.<(Channel, Channel)
+- uid: Archivist.DataTypes.Feeds.Channel.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.Feeds.Channel.operator <
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.<
+  nameWithType: Channel.operator <
+  nameWithType.vb: Channel.<
+- uid: Archivist.DataTypes.Feeds.Channel.op_LessThanOrEqual(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name: operator <=(Channel?, Channel?)
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_LessThanOrEqual_Archivist_DataTypes_Feeds_Channel_Archivist_DataTypes_Feeds_Channel_
+  commentId: M:Archivist.DataTypes.Feeds.Channel.op_LessThanOrEqual(Archivist.DataTypes.Feeds.Channel,Archivist.DataTypes.Feeds.Channel)
+  name.vb: <=(Channel, Channel)
+  fullName: Archivist.DataTypes.Feeds.Channel.operator <=(Archivist.DataTypes.Feeds.Channel?, Archivist.DataTypes.Feeds.Channel?)
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.<=(Archivist.DataTypes.Feeds.Channel, Archivist.DataTypes.Feeds.Channel)
+  nameWithType: Channel.operator <=(Channel?, Channel?)
+  nameWithType.vb: Channel.<=(Channel, Channel)
+- uid: Archivist.DataTypes.Feeds.Channel.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feeds.Channel.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.Feeds.Channel.operator <=
+  fullName.vb: Archivist.DataTypes.Feeds.Channel.<=
+  nameWithType: Channel.operator <=
+  nameWithType.vb: Channel.<=
+- uid: Archivist.DataTypes.Feeds.Enclosure
+  name: Enclosure
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html
+  commentId: T:Archivist.DataTypes.Feeds.Enclosure
+  fullName: Archivist.DataTypes.Feeds.Enclosure
+  nameWithType: Enclosure
+- uid: Archivist.DataTypes.Feeds.Enclosure.#ctor
+  name: Enclosure()
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure__ctor
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.#ctor
+  name.vb: New()
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Enclosure()
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.New()
+  nameWithType: Enclosure.Enclosure()
+  nameWithType.vb: Enclosure.New()
+- uid: Archivist.DataTypes.Feeds.Enclosure.#ctor(System.String,System.String,System.Int32)
+  name: Enclosure(string?, string?, int)
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure__ctor_System_String_System_String_System_Int32_
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.#ctor(System.String,System.String,System.Int32)
+  name.vb: New(String, String, Integer)
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Enclosure(string?, string?, int)
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.New(String, String, Integer)
+  nameWithType: Enclosure.Enclosure(string?, string?, int)
+  nameWithType.vb: Enclosure.New(String, String, Integer)
+- uid: Archivist.DataTypes.Feeds.Enclosure.#ctor*
+  name: Enclosure
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure__ctor_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Enclosure
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.New
+  nameWithType: Enclosure.Enclosure
+  nameWithType.vb: Enclosure.New
+- uid: Archivist.DataTypes.Feeds.Enclosure.CompareTo(Archivist.DataTypes.Feeds.Enclosure)
+  name: CompareTo(Enclosure?)
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_CompareTo_Archivist_DataTypes_Feeds_Enclosure_
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.CompareTo(Archivist.DataTypes.Feeds.Enclosure)
+  name.vb: CompareTo(Enclosure)
+  fullName: Archivist.DataTypes.Feeds.Enclosure.CompareTo(Archivist.DataTypes.Feeds.Enclosure?)
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.CompareTo(Archivist.DataTypes.Feeds.Enclosure)
+  nameWithType: Enclosure.CompareTo(Enclosure?)
+  nameWithType.vb: Enclosure.CompareTo(Enclosure)
+- uid: Archivist.DataTypes.Feeds.Enclosure.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_CompareTo_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Enclosure.CompareTo
+  nameWithType: Enclosure.CompareTo
+- uid: Archivist.DataTypes.Feeds.Enclosure.Equals(Archivist.DataTypes.Feeds.Enclosure)
+  name: Equals(Enclosure?)
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_Equals_Archivist_DataTypes_Feeds_Enclosure_
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.Equals(Archivist.DataTypes.Feeds.Enclosure)
+  name.vb: Equals(Enclosure)
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Equals(Archivist.DataTypes.Feeds.Enclosure?)
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.Equals(Archivist.DataTypes.Feeds.Enclosure)
+  nameWithType: Enclosure.Equals(Enclosure?)
+  nameWithType.vb: Enclosure.Equals(Enclosure)
+- uid: Archivist.DataTypes.Feeds.Enclosure.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Equals(object?)
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.Equals(Object)
+  nameWithType: Enclosure.Equals(object?)
+  nameWithType.vb: Enclosure.Equals(Object)
+- uid: Archivist.DataTypes.Feeds.Enclosure.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_Equals_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Equals
+  nameWithType: Enclosure.Equals
+- uid: Archivist.DataTypes.Feeds.Enclosure.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_GetHashCode
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.GetHashCode
+  fullName: Archivist.DataTypes.Feeds.Enclosure.GetHashCode()
+  nameWithType: Enclosure.GetHashCode()
+- uid: Archivist.DataTypes.Feeds.Enclosure.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Enclosure.GetHashCode
+  nameWithType: Enclosure.GetHashCode
+- uid: Archivist.DataTypes.Feeds.Enclosure.Length
+  name: Length
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_Length
+  commentId: P:Archivist.DataTypes.Feeds.Enclosure.Length
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Length
+  nameWithType: Enclosure.Length
+- uid: Archivist.DataTypes.Feeds.Enclosure.Length*
+  name: Length
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_Length_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.Length
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Length
+  nameWithType: Enclosure.Length
+- uid: Archivist.DataTypes.Feeds.Enclosure.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_ToString
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.ToString
+  fullName: Archivist.DataTypes.Feeds.Enclosure.ToString()
+  nameWithType: Enclosure.ToString()
+- uid: Archivist.DataTypes.Feeds.Enclosure.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_ToString_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Enclosure.ToString
+  nameWithType: Enclosure.ToString
+- uid: Archivist.DataTypes.Feeds.Enclosure.Type
+  name: Type
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_Type
+  commentId: P:Archivist.DataTypes.Feeds.Enclosure.Type
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Type
+  nameWithType: Enclosure.Type
+- uid: Archivist.DataTypes.Feeds.Enclosure.Type*
+  name: Type
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_Type_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.Type
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Type
+  nameWithType: Enclosure.Type
+- uid: Archivist.DataTypes.Feeds.Enclosure.Url
+  name: Url
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_Url
+  commentId: P:Archivist.DataTypes.Feeds.Enclosure.Url
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Url
+  nameWithType: Enclosure.Url
+- uid: Archivist.DataTypes.Feeds.Enclosure.Url*
+  name: Url
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_Url_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.Url
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Enclosure.Url
+  nameWithType: Enclosure.Url
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_Equality(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name: operator ==(Enclosure?, Enclosure?)
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_Equality_Archivist_DataTypes_Feeds_Enclosure_Archivist_DataTypes_Feeds_Enclosure_
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.op_Equality(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name.vb: =(Enclosure, Enclosure)
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator ==(Archivist.DataTypes.Feeds.Enclosure?, Archivist.DataTypes.Feeds.Enclosure?)
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.=(Archivist.DataTypes.Feeds.Enclosure, Archivist.DataTypes.Feeds.Enclosure)
+  nameWithType: Enclosure.operator ==(Enclosure?, Enclosure?)
+  nameWithType.vb: Enclosure.=(Enclosure, Enclosure)
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_Equality_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator ==
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.=
+  nameWithType: Enclosure.operator ==
+  nameWithType.vb: Enclosure.=
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_GreaterThan(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name: operator >(Enclosure?, Enclosure?)
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_GreaterThan_Archivist_DataTypes_Feeds_Enclosure_Archivist_DataTypes_Feeds_Enclosure_
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.op_GreaterThan(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name.vb: '>(Enclosure, Enclosure)'
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator >(Archivist.DataTypes.Feeds.Enclosure?, Archivist.DataTypes.Feeds.Enclosure?)
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.>(Archivist.DataTypes.Feeds.Enclosure, Archivist.DataTypes.Feeds.Enclosure)
+  nameWithType: Enclosure.operator >(Enclosure?, Enclosure?)
+  nameWithType.vb: Enclosure.>(Enclosure, Enclosure)
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator >
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.>
+  nameWithType: Enclosure.operator >
+  nameWithType.vb: Enclosure.>
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_GreaterThanOrEqual(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name: operator >=(Enclosure?, Enclosure?)
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_GreaterThanOrEqual_Archivist_DataTypes_Feeds_Enclosure_Archivist_DataTypes_Feeds_Enclosure_
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.op_GreaterThanOrEqual(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name.vb: '>=(Enclosure, Enclosure)'
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator >=(Archivist.DataTypes.Feeds.Enclosure?, Archivist.DataTypes.Feeds.Enclosure?)
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.>=(Archivist.DataTypes.Feeds.Enclosure, Archivist.DataTypes.Feeds.Enclosure)
+  nameWithType: Enclosure.operator >=(Enclosure?, Enclosure?)
+  nameWithType.vb: Enclosure.>=(Enclosure, Enclosure)
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator >=
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.>=
+  nameWithType: Enclosure.operator >=
+  nameWithType.vb: Enclosure.>=
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_Inequality(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name: operator !=(Enclosure?, Enclosure?)
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_Inequality_Archivist_DataTypes_Feeds_Enclosure_Archivist_DataTypes_Feeds_Enclosure_
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.op_Inequality(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name.vb: <>(Enclosure, Enclosure)
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator !=(Archivist.DataTypes.Feeds.Enclosure?, Archivist.DataTypes.Feeds.Enclosure?)
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.<>(Archivist.DataTypes.Feeds.Enclosure, Archivist.DataTypes.Feeds.Enclosure)
+  nameWithType: Enclosure.operator !=(Enclosure?, Enclosure?)
+  nameWithType.vb: Enclosure.<>(Enclosure, Enclosure)
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator !=
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.<>
+  nameWithType: Enclosure.operator !=
+  nameWithType.vb: Enclosure.<>
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_LessThan(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name: operator <(Enclosure?, Enclosure?)
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_LessThan_Archivist_DataTypes_Feeds_Enclosure_Archivist_DataTypes_Feeds_Enclosure_
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.op_LessThan(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name.vb: <(Enclosure, Enclosure)
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator <(Archivist.DataTypes.Feeds.Enclosure?, Archivist.DataTypes.Feeds.Enclosure?)
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.<(Archivist.DataTypes.Feeds.Enclosure, Archivist.DataTypes.Feeds.Enclosure)
+  nameWithType: Enclosure.operator <(Enclosure?, Enclosure?)
+  nameWithType.vb: Enclosure.<(Enclosure, Enclosure)
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator <
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.<
+  nameWithType: Enclosure.operator <
+  nameWithType.vb: Enclosure.<
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_LessThanOrEqual(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name: operator <=(Enclosure?, Enclosure?)
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_LessThanOrEqual_Archivist_DataTypes_Feeds_Enclosure_Archivist_DataTypes_Feeds_Enclosure_
+  commentId: M:Archivist.DataTypes.Feeds.Enclosure.op_LessThanOrEqual(Archivist.DataTypes.Feeds.Enclosure,Archivist.DataTypes.Feeds.Enclosure)
+  name.vb: <=(Enclosure, Enclosure)
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator <=(Archivist.DataTypes.Feeds.Enclosure?, Archivist.DataTypes.Feeds.Enclosure?)
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.<=(Archivist.DataTypes.Feeds.Enclosure, Archivist.DataTypes.Feeds.Enclosure)
+  nameWithType: Enclosure.operator <=(Enclosure?, Enclosure?)
+  nameWithType.vb: Enclosure.<=(Enclosure, Enclosure)
+- uid: Archivist.DataTypes.Feeds.Enclosure.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.Feeds.Enclosure.html#Archivist_DataTypes_Feeds_Enclosure_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feeds.Enclosure.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.Feeds.Enclosure.operator <=
+  fullName.vb: Archivist.DataTypes.Feeds.Enclosure.<=
+  nameWithType: Enclosure.operator <=
+  nameWithType.vb: Enclosure.<=
+- uid: Archivist.DataTypes.Feeds.FeedGuid
+  name: FeedGuid
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html
+  commentId: T:Archivist.DataTypes.Feeds.FeedGuid
+  fullName: Archivist.DataTypes.Feeds.FeedGuid
+  nameWithType: FeedGuid
+- uid: Archivist.DataTypes.Feeds.FeedGuid.#ctor
+  name: FeedGuid()
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid__ctor
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.#ctor
+  name.vb: New()
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.FeedGuid()
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.New()
+  nameWithType: FeedGuid.FeedGuid()
+  nameWithType.vb: FeedGuid.New()
+- uid: Archivist.DataTypes.Feeds.FeedGuid.#ctor(System.String,System.Boolean)
+  name: FeedGuid(string?, bool)
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid__ctor_System_String_System_Boolean_
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.#ctor(System.String,System.Boolean)
+  name.vb: New(String, Boolean)
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.FeedGuid(string?, bool)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.New(String, Boolean)
+  nameWithType: FeedGuid.FeedGuid(string?, bool)
+  nameWithType.vb: FeedGuid.New(String, Boolean)
+- uid: Archivist.DataTypes.Feeds.FeedGuid.#ctor*
+  name: FeedGuid
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid__ctor_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.FeedGuid
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.New
+  nameWithType: FeedGuid.FeedGuid
+  nameWithType.vb: FeedGuid.New
+- uid: Archivist.DataTypes.Feeds.FeedGuid.CompareTo(Archivist.DataTypes.Feeds.FeedGuid)
+  name: CompareTo(FeedGuid?)
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_CompareTo_Archivist_DataTypes_Feeds_FeedGuid_
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.CompareTo(Archivist.DataTypes.Feeds.FeedGuid)
+  name.vb: CompareTo(FeedGuid)
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.CompareTo(Archivist.DataTypes.Feeds.FeedGuid?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.CompareTo(Archivist.DataTypes.Feeds.FeedGuid)
+  nameWithType: FeedGuid.CompareTo(FeedGuid?)
+  nameWithType.vb: FeedGuid.CompareTo(FeedGuid)
+- uid: Archivist.DataTypes.Feeds.FeedGuid.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_CompareTo_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.CompareTo
+  nameWithType: FeedGuid.CompareTo
+- uid: Archivist.DataTypes.Feeds.FeedGuid.Equals(Archivist.DataTypes.Feeds.FeedGuid)
+  name: Equals(FeedGuid?)
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_Equals_Archivist_DataTypes_Feeds_FeedGuid_
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.Equals(Archivist.DataTypes.Feeds.FeedGuid)
+  name.vb: Equals(FeedGuid)
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.Equals(Archivist.DataTypes.Feeds.FeedGuid?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.Equals(Archivist.DataTypes.Feeds.FeedGuid)
+  nameWithType: FeedGuid.Equals(FeedGuid?)
+  nameWithType.vb: FeedGuid.Equals(FeedGuid)
+- uid: Archivist.DataTypes.Feeds.FeedGuid.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.Equals(object?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.Equals(Object)
+  nameWithType: FeedGuid.Equals(object?)
+  nameWithType.vb: FeedGuid.Equals(Object)
+- uid: Archivist.DataTypes.Feeds.FeedGuid.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_Equals_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.Equals
+  nameWithType: FeedGuid.Equals
+- uid: Archivist.DataTypes.Feeds.FeedGuid.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_GetHashCode
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.GetHashCode
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.GetHashCode()
+  nameWithType: FeedGuid.GetHashCode()
+- uid: Archivist.DataTypes.Feeds.FeedGuid.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.GetHashCode
+  nameWithType: FeedGuid.GetHashCode
+- uid: Archivist.DataTypes.Feeds.FeedGuid.GuidText
+  name: GuidText
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_GuidText
+  commentId: P:Archivist.DataTypes.Feeds.FeedGuid.GuidText
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.GuidText
+  nameWithType: FeedGuid.GuidText
+- uid: Archivist.DataTypes.Feeds.FeedGuid.GuidText*
+  name: GuidText
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_GuidText_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.GuidText
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.GuidText
+  nameWithType: FeedGuid.GuidText
+- uid: Archivist.DataTypes.Feeds.FeedGuid.IsPermaLink
+  name: IsPermaLink
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_IsPermaLink
+  commentId: P:Archivist.DataTypes.Feeds.FeedGuid.IsPermaLink
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.IsPermaLink
+  nameWithType: FeedGuid.IsPermaLink
+- uid: Archivist.DataTypes.Feeds.FeedGuid.IsPermaLink*
+  name: IsPermaLink
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_IsPermaLink_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.IsPermaLink
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.IsPermaLink
+  nameWithType: FeedGuid.IsPermaLink
+- uid: Archivist.DataTypes.Feeds.FeedGuid.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_ToString
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.ToString
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.ToString()
+  nameWithType: FeedGuid.ToString()
+- uid: Archivist.DataTypes.Feeds.FeedGuid.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_ToString_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.ToString
+  nameWithType: FeedGuid.ToString
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_Equality(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name: operator ==(FeedGuid?, FeedGuid?)
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_Equality_Archivist_DataTypes_Feeds_FeedGuid_Archivist_DataTypes_Feeds_FeedGuid_
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.op_Equality(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name.vb: =(FeedGuid, FeedGuid)
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator ==(Archivist.DataTypes.Feeds.FeedGuid?, Archivist.DataTypes.Feeds.FeedGuid?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.=(Archivist.DataTypes.Feeds.FeedGuid, Archivist.DataTypes.Feeds.FeedGuid)
+  nameWithType: FeedGuid.operator ==(FeedGuid?, FeedGuid?)
+  nameWithType.vb: FeedGuid.=(FeedGuid, FeedGuid)
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_Equality_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator ==
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.=
+  nameWithType: FeedGuid.operator ==
+  nameWithType.vb: FeedGuid.=
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_GreaterThan(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name: operator >(FeedGuid?, FeedGuid?)
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_GreaterThan_Archivist_DataTypes_Feeds_FeedGuid_Archivist_DataTypes_Feeds_FeedGuid_
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.op_GreaterThan(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name.vb: '>(FeedGuid, FeedGuid)'
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator >(Archivist.DataTypes.Feeds.FeedGuid?, Archivist.DataTypes.Feeds.FeedGuid?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.>(Archivist.DataTypes.Feeds.FeedGuid, Archivist.DataTypes.Feeds.FeedGuid)
+  nameWithType: FeedGuid.operator >(FeedGuid?, FeedGuid?)
+  nameWithType.vb: FeedGuid.>(FeedGuid, FeedGuid)
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator >
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.>
+  nameWithType: FeedGuid.operator >
+  nameWithType.vb: FeedGuid.>
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_GreaterThanOrEqual(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name: operator >=(FeedGuid?, FeedGuid?)
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_GreaterThanOrEqual_Archivist_DataTypes_Feeds_FeedGuid_Archivist_DataTypes_Feeds_FeedGuid_
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.op_GreaterThanOrEqual(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name.vb: '>=(FeedGuid, FeedGuid)'
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator >=(Archivist.DataTypes.Feeds.FeedGuid?, Archivist.DataTypes.Feeds.FeedGuid?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.>=(Archivist.DataTypes.Feeds.FeedGuid, Archivist.DataTypes.Feeds.FeedGuid)
+  nameWithType: FeedGuid.operator >=(FeedGuid?, FeedGuid?)
+  nameWithType.vb: FeedGuid.>=(FeedGuid, FeedGuid)
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator >=
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.>=
+  nameWithType: FeedGuid.operator >=
+  nameWithType.vb: FeedGuid.>=
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_Inequality(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name: operator !=(FeedGuid?, FeedGuid?)
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_Inequality_Archivist_DataTypes_Feeds_FeedGuid_Archivist_DataTypes_Feeds_FeedGuid_
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.op_Inequality(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name.vb: <>(FeedGuid, FeedGuid)
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator !=(Archivist.DataTypes.Feeds.FeedGuid?, Archivist.DataTypes.Feeds.FeedGuid?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.<>(Archivist.DataTypes.Feeds.FeedGuid, Archivist.DataTypes.Feeds.FeedGuid)
+  nameWithType: FeedGuid.operator !=(FeedGuid?, FeedGuid?)
+  nameWithType.vb: FeedGuid.<>(FeedGuid, FeedGuid)
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator !=
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.<>
+  nameWithType: FeedGuid.operator !=
+  nameWithType.vb: FeedGuid.<>
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_LessThan(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name: operator <(FeedGuid?, FeedGuid?)
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_LessThan_Archivist_DataTypes_Feeds_FeedGuid_Archivist_DataTypes_Feeds_FeedGuid_
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.op_LessThan(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name.vb: <(FeedGuid, FeedGuid)
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator <(Archivist.DataTypes.Feeds.FeedGuid?, Archivist.DataTypes.Feeds.FeedGuid?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.<(Archivist.DataTypes.Feeds.FeedGuid, Archivist.DataTypes.Feeds.FeedGuid)
+  nameWithType: FeedGuid.operator <(FeedGuid?, FeedGuid?)
+  nameWithType.vb: FeedGuid.<(FeedGuid, FeedGuid)
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator <
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.<
+  nameWithType: FeedGuid.operator <
+  nameWithType.vb: FeedGuid.<
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_LessThanOrEqual(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name: operator <=(FeedGuid?, FeedGuid?)
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_LessThanOrEqual_Archivist_DataTypes_Feeds_FeedGuid_Archivist_DataTypes_Feeds_FeedGuid_
+  commentId: M:Archivist.DataTypes.Feeds.FeedGuid.op_LessThanOrEqual(Archivist.DataTypes.Feeds.FeedGuid,Archivist.DataTypes.Feeds.FeedGuid)
+  name.vb: <=(FeedGuid, FeedGuid)
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator <=(Archivist.DataTypes.Feeds.FeedGuid?, Archivist.DataTypes.Feeds.FeedGuid?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.<=(Archivist.DataTypes.Feeds.FeedGuid, Archivist.DataTypes.Feeds.FeedGuid)
+  nameWithType: FeedGuid.operator <=(FeedGuid?, FeedGuid?)
+  nameWithType.vb: FeedGuid.<=(FeedGuid, FeedGuid)
+- uid: Archivist.DataTypes.Feeds.FeedGuid.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.Feeds.FeedGuid.html#Archivist_DataTypes_Feeds_FeedGuid_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedGuid.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.Feeds.FeedGuid.operator <=
+  fullName.vb: Archivist.DataTypes.Feeds.FeedGuid.<=
+  nameWithType: FeedGuid.operator <=
+  nameWithType.vb: FeedGuid.<=
+- uid: Archivist.DataTypes.Feeds.FeedItem
+  name: FeedItem
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html
+  commentId: T:Archivist.DataTypes.Feeds.FeedItem
+  fullName: Archivist.DataTypes.Feeds.FeedItem
+  nameWithType: FeedItem
+- uid: Archivist.DataTypes.Feeds.FeedItem.Author
+  name: Author
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Author
+  commentId: P:Archivist.DataTypes.Feeds.FeedItem.Author
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Author
+  nameWithType: FeedItem.Author
+- uid: Archivist.DataTypes.Feeds.FeedItem.Author*
+  name: Author
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Author_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.Author
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Author
+  nameWithType: FeedItem.Author
+- uid: Archivist.DataTypes.Feeds.FeedItem.Categories
+  name: Categories
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Categories
+  commentId: P:Archivist.DataTypes.Feeds.FeedItem.Categories
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Categories
+  nameWithType: FeedItem.Categories
+- uid: Archivist.DataTypes.Feeds.FeedItem.Categories*
+  name: Categories
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Categories_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.Categories
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Categories
+  nameWithType: FeedItem.Categories
+- uid: Archivist.DataTypes.Feeds.FeedItem.CompareTo(Archivist.DataTypes.Feeds.FeedItem)
+  name: CompareTo(FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_CompareTo_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.FeedItem.CompareTo(Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: CompareTo(FeedItem)
+  fullName: Archivist.DataTypes.Feeds.FeedItem.CompareTo(Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.CompareTo(Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: FeedItem.CompareTo(FeedItem?)
+  nameWithType.vb: FeedItem.CompareTo(FeedItem)
+- uid: Archivist.DataTypes.Feeds.FeedItem.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_CompareTo_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.CompareTo
+  nameWithType: FeedItem.CompareTo
+- uid: Archivist.DataTypes.Feeds.FeedItem.Description
+  name: Description
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Description
+  commentId: P:Archivist.DataTypes.Feeds.FeedItem.Description
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Description
+  nameWithType: FeedItem.Description
+- uid: Archivist.DataTypes.Feeds.FeedItem.Description*
+  name: Description
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Description_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.Description
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Description
+  nameWithType: FeedItem.Description
+- uid: Archivist.DataTypes.Feeds.FeedItem.Enclosure
+  name: Enclosure
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Enclosure
+  commentId: P:Archivist.DataTypes.Feeds.FeedItem.Enclosure
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Enclosure
+  nameWithType: FeedItem.Enclosure
+- uid: Archivist.DataTypes.Feeds.FeedItem.Enclosure*
+  name: Enclosure
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Enclosure_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.Enclosure
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Enclosure
+  nameWithType: FeedItem.Enclosure
+- uid: Archivist.DataTypes.Feeds.FeedItem.Equals(Archivist.DataTypes.Feeds.FeedItem)
+  name: Equals(FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Equals_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.FeedItem.Equals(Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: Equals(FeedItem)
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Equals(Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.Equals(Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: FeedItem.Equals(FeedItem?)
+  nameWithType.vb: FeedItem.Equals(FeedItem)
+- uid: Archivist.DataTypes.Feeds.FeedItem.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.Feeds.FeedItem.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Equals(object?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.Equals(Object)
+  nameWithType: FeedItem.Equals(object?)
+  nameWithType.vb: FeedItem.Equals(Object)
+- uid: Archivist.DataTypes.Feeds.FeedItem.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Equals_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Equals
+  nameWithType: FeedItem.Equals
+- uid: Archivist.DataTypes.Feeds.FeedItem.GUID
+  name: GUID
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_GUID
+  commentId: P:Archivist.DataTypes.Feeds.FeedItem.GUID
+  fullName: Archivist.DataTypes.Feeds.FeedItem.GUID
+  nameWithType: FeedItem.GUID
+- uid: Archivist.DataTypes.Feeds.FeedItem.GUID*
+  name: GUID
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_GUID_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.GUID
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.GUID
+  nameWithType: FeedItem.GUID
+- uid: Archivist.DataTypes.Feeds.FeedItem.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_GetHashCode
+  commentId: M:Archivist.DataTypes.Feeds.FeedItem.GetHashCode
+  fullName: Archivist.DataTypes.Feeds.FeedItem.GetHashCode()
+  nameWithType: FeedItem.GetHashCode()
+- uid: Archivist.DataTypes.Feeds.FeedItem.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.GetHashCode
+  nameWithType: FeedItem.GetHashCode
+- uid: Archivist.DataTypes.Feeds.FeedItem.Link
+  name: Link
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Link
+  commentId: P:Archivist.DataTypes.Feeds.FeedItem.Link
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Link
+  nameWithType: FeedItem.Link
+- uid: Archivist.DataTypes.Feeds.FeedItem.Link*
+  name: Link
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Link_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.Link
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Link
+  nameWithType: FeedItem.Link
+- uid: Archivist.DataTypes.Feeds.FeedItem.PubDate
+  name: PubDate
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_PubDate
+  commentId: P:Archivist.DataTypes.Feeds.FeedItem.PubDate
+  fullName: Archivist.DataTypes.Feeds.FeedItem.PubDate
+  nameWithType: FeedItem.PubDate
+- uid: Archivist.DataTypes.Feeds.FeedItem.PubDate*
+  name: PubDate
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_PubDate_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.PubDate
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.PubDate
+  nameWithType: FeedItem.PubDate
+- uid: Archivist.DataTypes.Feeds.FeedItem.PubDateUtc
+  name: PubDateUtc
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_PubDateUtc
+  commentId: P:Archivist.DataTypes.Feeds.FeedItem.PubDateUtc
+  fullName: Archivist.DataTypes.Feeds.FeedItem.PubDateUtc
+  nameWithType: FeedItem.PubDateUtc
+- uid: Archivist.DataTypes.Feeds.FeedItem.PubDateUtc*
+  name: PubDateUtc
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_PubDateUtc_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.PubDateUtc
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.PubDateUtc
+  nameWithType: FeedItem.PubDateUtc
+- uid: Archivist.DataTypes.Feeds.FeedItem.Thumbnail
+  name: Thumbnail
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Thumbnail
+  commentId: P:Archivist.DataTypes.Feeds.FeedItem.Thumbnail
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Thumbnail
+  nameWithType: FeedItem.Thumbnail
+- uid: Archivist.DataTypes.Feeds.FeedItem.Thumbnail*
+  name: Thumbnail
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Thumbnail_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.Thumbnail
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Thumbnail
+  nameWithType: FeedItem.Thumbnail
+- uid: Archivist.DataTypes.Feeds.FeedItem.Title
+  name: Title
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Title
+  commentId: P:Archivist.DataTypes.Feeds.FeedItem.Title
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Title
+  nameWithType: FeedItem.Title
+- uid: Archivist.DataTypes.Feeds.FeedItem.Title*
+  name: Title
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_Title_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.Title
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.Title
+  nameWithType: FeedItem.Title
+- uid: Archivist.DataTypes.Feeds.FeedItem.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_ToString
+  commentId: M:Archivist.DataTypes.Feeds.FeedItem.ToString
+  fullName: Archivist.DataTypes.Feeds.FeedItem.ToString()
+  nameWithType: FeedItem.ToString()
+- uid: Archivist.DataTypes.Feeds.FeedItem.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_ToString_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.FeedItem.ToString
+  nameWithType: FeedItem.ToString
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_Equality(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name: operator ==(FeedItem?, FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_Equality_Archivist_DataTypes_Feeds_FeedItem_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.FeedItem.op_Equality(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: =(FeedItem, FeedItem)
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator ==(Archivist.DataTypes.Feeds.FeedItem?, Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.=(Archivist.DataTypes.Feeds.FeedItem, Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: FeedItem.operator ==(FeedItem?, FeedItem?)
+  nameWithType.vb: FeedItem.=(FeedItem, FeedItem)
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_Equality_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator ==
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.=
+  nameWithType: FeedItem.operator ==
+  nameWithType.vb: FeedItem.=
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_GreaterThan(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name: operator >(FeedItem?, FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_GreaterThan_Archivist_DataTypes_Feeds_FeedItem_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.FeedItem.op_GreaterThan(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: '>(FeedItem, FeedItem)'
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator >(Archivist.DataTypes.Feeds.FeedItem?, Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.>(Archivist.DataTypes.Feeds.FeedItem, Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: FeedItem.operator >(FeedItem?, FeedItem?)
+  nameWithType.vb: FeedItem.>(FeedItem, FeedItem)
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator >
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.>
+  nameWithType: FeedItem.operator >
+  nameWithType.vb: FeedItem.>
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_GreaterThanOrEqual(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name: operator >=(FeedItem?, FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_GreaterThanOrEqual_Archivist_DataTypes_Feeds_FeedItem_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.FeedItem.op_GreaterThanOrEqual(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: '>=(FeedItem, FeedItem)'
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator >=(Archivist.DataTypes.Feeds.FeedItem?, Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.>=(Archivist.DataTypes.Feeds.FeedItem, Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: FeedItem.operator >=(FeedItem?, FeedItem?)
+  nameWithType.vb: FeedItem.>=(FeedItem, FeedItem)
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator >=
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.>=
+  nameWithType: FeedItem.operator >=
+  nameWithType.vb: FeedItem.>=
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_Inequality(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name: operator !=(FeedItem?, FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_Inequality_Archivist_DataTypes_Feeds_FeedItem_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.FeedItem.op_Inequality(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: <>(FeedItem, FeedItem)
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator !=(Archivist.DataTypes.Feeds.FeedItem?, Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.<>(Archivist.DataTypes.Feeds.FeedItem, Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: FeedItem.operator !=(FeedItem?, FeedItem?)
+  nameWithType.vb: FeedItem.<>(FeedItem, FeedItem)
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator !=
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.<>
+  nameWithType: FeedItem.operator !=
+  nameWithType.vb: FeedItem.<>
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_LessThan(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name: operator <(FeedItem?, FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_LessThan_Archivist_DataTypes_Feeds_FeedItem_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.FeedItem.op_LessThan(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: <(FeedItem, FeedItem)
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator <(Archivist.DataTypes.Feeds.FeedItem?, Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.<(Archivist.DataTypes.Feeds.FeedItem, Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: FeedItem.operator <(FeedItem?, FeedItem?)
+  nameWithType.vb: FeedItem.<(FeedItem, FeedItem)
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator <
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.<
+  nameWithType: FeedItem.operator <
+  nameWithType.vb: FeedItem.<
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_LessThanOrEqual(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name: operator <=(FeedItem?, FeedItem?)
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_LessThanOrEqual_Archivist_DataTypes_Feeds_FeedItem_Archivist_DataTypes_Feeds_FeedItem_
+  commentId: M:Archivist.DataTypes.Feeds.FeedItem.op_LessThanOrEqual(Archivist.DataTypes.Feeds.FeedItem,Archivist.DataTypes.Feeds.FeedItem)
+  name.vb: <=(FeedItem, FeedItem)
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator <=(Archivist.DataTypes.Feeds.FeedItem?, Archivist.DataTypes.Feeds.FeedItem?)
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.<=(Archivist.DataTypes.Feeds.FeedItem, Archivist.DataTypes.Feeds.FeedItem)
+  nameWithType: FeedItem.operator <=(FeedItem?, FeedItem?)
+  nameWithType.vb: FeedItem.<=(FeedItem, FeedItem)
+- uid: Archivist.DataTypes.Feeds.FeedItem.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.Feeds.FeedItem.html#Archivist_DataTypes_Feeds_FeedItem_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feeds.FeedItem.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.Feeds.FeedItem.operator <=
+  fullName.vb: Archivist.DataTypes.Feeds.FeedItem.<=
+  nameWithType: FeedItem.operator <=
+  nameWithType.vb: FeedItem.<=
+- uid: Archivist.DataTypes.Feeds.Thumbnail
+  name: Thumbnail
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html
+  commentId: T:Archivist.DataTypes.Feeds.Thumbnail
+  fullName: Archivist.DataTypes.Feeds.Thumbnail
+  nameWithType: Thumbnail
+- uid: Archivist.DataTypes.Feeds.Thumbnail.#ctor
+  name: Thumbnail()
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail__ctor
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.#ctor
+  name.vb: New()
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Thumbnail()
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.New()
+  nameWithType: Thumbnail.Thumbnail()
+  nameWithType.vb: Thumbnail.New()
+- uid: Archivist.DataTypes.Feeds.Thumbnail.#ctor(System.String,System.Int32,System.Int32)
+  name: Thumbnail(string?, int, int)
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail__ctor_System_String_System_Int32_System_Int32_
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.#ctor(System.String,System.Int32,System.Int32)
+  name.vb: New(String, Integer, Integer)
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Thumbnail(string?, int, int)
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.New(String, Integer, Integer)
+  nameWithType: Thumbnail.Thumbnail(string?, int, int)
+  nameWithType.vb: Thumbnail.New(String, Integer, Integer)
+- uid: Archivist.DataTypes.Feeds.Thumbnail.#ctor*
+  name: Thumbnail
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail__ctor_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Thumbnail
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.New
+  nameWithType: Thumbnail.Thumbnail
+  nameWithType.vb: Thumbnail.New
+- uid: Archivist.DataTypes.Feeds.Thumbnail.CompareTo(Archivist.DataTypes.Feeds.Thumbnail)
+  name: CompareTo(Thumbnail?)
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_CompareTo_Archivist_DataTypes_Feeds_Thumbnail_
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.CompareTo(Archivist.DataTypes.Feeds.Thumbnail)
+  name.vb: CompareTo(Thumbnail)
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.CompareTo(Archivist.DataTypes.Feeds.Thumbnail?)
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.CompareTo(Archivist.DataTypes.Feeds.Thumbnail)
+  nameWithType: Thumbnail.CompareTo(Thumbnail?)
+  nameWithType.vb: Thumbnail.CompareTo(Thumbnail)
+- uid: Archivist.DataTypes.Feeds.Thumbnail.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_CompareTo_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.CompareTo
+  nameWithType: Thumbnail.CompareTo
+- uid: Archivist.DataTypes.Feeds.Thumbnail.Equals(Archivist.DataTypes.Feeds.Thumbnail)
+  name: Equals(Thumbnail?)
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_Equals_Archivist_DataTypes_Feeds_Thumbnail_
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.Equals(Archivist.DataTypes.Feeds.Thumbnail)
+  name.vb: Equals(Thumbnail)
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Equals(Archivist.DataTypes.Feeds.Thumbnail?)
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.Equals(Archivist.DataTypes.Feeds.Thumbnail)
+  nameWithType: Thumbnail.Equals(Thumbnail?)
+  nameWithType.vb: Thumbnail.Equals(Thumbnail)
+- uid: Archivist.DataTypes.Feeds.Thumbnail.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Equals(object?)
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.Equals(Object)
+  nameWithType: Thumbnail.Equals(object?)
+  nameWithType.vb: Thumbnail.Equals(Object)
+- uid: Archivist.DataTypes.Feeds.Thumbnail.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_Equals_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Equals
+  nameWithType: Thumbnail.Equals
+- uid: Archivist.DataTypes.Feeds.Thumbnail.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_GetHashCode
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.GetHashCode
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.GetHashCode()
+  nameWithType: Thumbnail.GetHashCode()
+- uid: Archivist.DataTypes.Feeds.Thumbnail.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.GetHashCode
+  nameWithType: Thumbnail.GetHashCode
+- uid: Archivist.DataTypes.Feeds.Thumbnail.Height
+  name: Height
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_Height
+  commentId: P:Archivist.DataTypes.Feeds.Thumbnail.Height
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Height
+  nameWithType: Thumbnail.Height
+- uid: Archivist.DataTypes.Feeds.Thumbnail.Height*
+  name: Height
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_Height_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.Height
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Height
+  nameWithType: Thumbnail.Height
+- uid: Archivist.DataTypes.Feeds.Thumbnail.ToString
+  name: ToString()
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_ToString
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.ToString
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.ToString()
+  nameWithType: Thumbnail.ToString()
+- uid: Archivist.DataTypes.Feeds.Thumbnail.ToString*
+  name: ToString
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_ToString_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.ToString
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.ToString
+  nameWithType: Thumbnail.ToString
+- uid: Archivist.DataTypes.Feeds.Thumbnail.Url
+  name: Url
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_Url
+  commentId: P:Archivist.DataTypes.Feeds.Thumbnail.Url
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Url
+  nameWithType: Thumbnail.Url
+- uid: Archivist.DataTypes.Feeds.Thumbnail.Url*
+  name: Url
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_Url_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.Url
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Url
+  nameWithType: Thumbnail.Url
+- uid: Archivist.DataTypes.Feeds.Thumbnail.Width
+  name: Width
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_Width
+  commentId: P:Archivist.DataTypes.Feeds.Thumbnail.Width
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Width
+  nameWithType: Thumbnail.Width
+- uid: Archivist.DataTypes.Feeds.Thumbnail.Width*
+  name: Width
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_Width_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.Width
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.Width
+  nameWithType: Thumbnail.Width
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_Equality(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name: operator ==(Thumbnail?, Thumbnail?)
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_Equality_Archivist_DataTypes_Feeds_Thumbnail_Archivist_DataTypes_Feeds_Thumbnail_
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.op_Equality(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name.vb: =(Thumbnail, Thumbnail)
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator ==(Archivist.DataTypes.Feeds.Thumbnail?, Archivist.DataTypes.Feeds.Thumbnail?)
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.=(Archivist.DataTypes.Feeds.Thumbnail, Archivist.DataTypes.Feeds.Thumbnail)
+  nameWithType: Thumbnail.operator ==(Thumbnail?, Thumbnail?)
+  nameWithType.vb: Thumbnail.=(Thumbnail, Thumbnail)
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_Equality_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator ==
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.=
+  nameWithType: Thumbnail.operator ==
+  nameWithType.vb: Thumbnail.=
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_GreaterThan(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name: operator >(Thumbnail?, Thumbnail?)
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_GreaterThan_Archivist_DataTypes_Feeds_Thumbnail_Archivist_DataTypes_Feeds_Thumbnail_
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.op_GreaterThan(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name.vb: '>(Thumbnail, Thumbnail)'
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator >(Archivist.DataTypes.Feeds.Thumbnail?, Archivist.DataTypes.Feeds.Thumbnail?)
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.>(Archivist.DataTypes.Feeds.Thumbnail, Archivist.DataTypes.Feeds.Thumbnail)
+  nameWithType: Thumbnail.operator >(Thumbnail?, Thumbnail?)
+  nameWithType.vb: Thumbnail.>(Thumbnail, Thumbnail)
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator >
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.>
+  nameWithType: Thumbnail.operator >
+  nameWithType.vb: Thumbnail.>
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_GreaterThanOrEqual(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name: operator >=(Thumbnail?, Thumbnail?)
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_GreaterThanOrEqual_Archivist_DataTypes_Feeds_Thumbnail_Archivist_DataTypes_Feeds_Thumbnail_
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.op_GreaterThanOrEqual(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name.vb: '>=(Thumbnail, Thumbnail)'
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator >=(Archivist.DataTypes.Feeds.Thumbnail?, Archivist.DataTypes.Feeds.Thumbnail?)
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.>=(Archivist.DataTypes.Feeds.Thumbnail, Archivist.DataTypes.Feeds.Thumbnail)
+  nameWithType: Thumbnail.operator >=(Thumbnail?, Thumbnail?)
+  nameWithType.vb: Thumbnail.>=(Thumbnail, Thumbnail)
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator >=
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.>=
+  nameWithType: Thumbnail.operator >=
+  nameWithType.vb: Thumbnail.>=
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_Inequality(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name: operator !=(Thumbnail?, Thumbnail?)
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_Inequality_Archivist_DataTypes_Feeds_Thumbnail_Archivist_DataTypes_Feeds_Thumbnail_
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.op_Inequality(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name.vb: <>(Thumbnail, Thumbnail)
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator !=(Archivist.DataTypes.Feeds.Thumbnail?, Archivist.DataTypes.Feeds.Thumbnail?)
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.<>(Archivist.DataTypes.Feeds.Thumbnail, Archivist.DataTypes.Feeds.Thumbnail)
+  nameWithType: Thumbnail.operator !=(Thumbnail?, Thumbnail?)
+  nameWithType.vb: Thumbnail.<>(Thumbnail, Thumbnail)
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator !=
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.<>
+  nameWithType: Thumbnail.operator !=
+  nameWithType.vb: Thumbnail.<>
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_LessThan(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name: operator <(Thumbnail?, Thumbnail?)
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_LessThan_Archivist_DataTypes_Feeds_Thumbnail_Archivist_DataTypes_Feeds_Thumbnail_
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.op_LessThan(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name.vb: <(Thumbnail, Thumbnail)
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator <(Archivist.DataTypes.Feeds.Thumbnail?, Archivist.DataTypes.Feeds.Thumbnail?)
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.<(Archivist.DataTypes.Feeds.Thumbnail, Archivist.DataTypes.Feeds.Thumbnail)
+  nameWithType: Thumbnail.operator <(Thumbnail?, Thumbnail?)
+  nameWithType.vb: Thumbnail.<(Thumbnail, Thumbnail)
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator <
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.<
+  nameWithType: Thumbnail.operator <
+  nameWithType.vb: Thumbnail.<
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_LessThanOrEqual(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name: operator <=(Thumbnail?, Thumbnail?)
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_LessThanOrEqual_Archivist_DataTypes_Feeds_Thumbnail_Archivist_DataTypes_Feeds_Thumbnail_
+  commentId: M:Archivist.DataTypes.Feeds.Thumbnail.op_LessThanOrEqual(Archivist.DataTypes.Feeds.Thumbnail,Archivist.DataTypes.Feeds.Thumbnail)
+  name.vb: <=(Thumbnail, Thumbnail)
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator <=(Archivist.DataTypes.Feeds.Thumbnail?, Archivist.DataTypes.Feeds.Thumbnail?)
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.<=(Archivist.DataTypes.Feeds.Thumbnail, Archivist.DataTypes.Feeds.Thumbnail)
+  nameWithType: Thumbnail.operator <=(Thumbnail?, Thumbnail?)
+  nameWithType.vb: Thumbnail.<=(Thumbnail, Thumbnail)
+- uid: Archivist.DataTypes.Feeds.Thumbnail.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.Feeds.Thumbnail.html#Archivist_DataTypes_Feeds_Thumbnail_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Feeds.Thumbnail.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.Feeds.Thumbnail.operator <=
+  fullName.vb: Archivist.DataTypes.Feeds.Thumbnail.<=
+  nameWithType: Thumbnail.operator <=
+  nameWithType.vb: Thumbnail.<=
 - uid: Archivist.DataTypes.FixedLengthField
   name: FixedLengthField
   href: api/Archivist.DataTypes.FixedLengthField.html
@@ -5804,6 +8436,15 @@ references:
   fullName.vb: Archivist.DataTypes.StructuredObject.CType(Archivist.DataTypes.StructuredObject)
   nameWithType: StructuredObject.implicit operator Card?(StructuredObject?)
   nameWithType.vb: StructuredObject.CType(StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Feed
+  name: implicit operator Feed?(StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Feed
+  commentId: M:Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Feed
+  name.vb: CType(StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.implicit operator Archivist.DataTypes.Feed?(Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.CType(Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.implicit operator Feed?(StructuredObject?)
+  nameWithType.vb: StructuredObject.CType(StructuredObject)
 - uid: Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Table
   name: implicit operator Table?(StructuredObject?)
   href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Table
@@ -6352,6 +8993,15 @@ references:
   fullName: Archivist.DataTypes.Table.implicit operator Archivist.DataTypes.Card?(Archivist.DataTypes.Table?)
   fullName.vb: Archivist.DataTypes.Table.CType(Archivist.DataTypes.Table)
   nameWithType: Table.implicit operator Card?(Table?)
+  nameWithType.vb: Table.CType(Table)
+- uid: Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Feed
+  name: implicit operator Feed?(Table?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Implicit_Archivist_DataTypes_Table__Archivist_DataTypes_Feed
+  commentId: M:Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Feed
+  name.vb: CType(Table)
+  fullName: Archivist.DataTypes.Table.implicit operator Archivist.DataTypes.Feed?(Archivist.DataTypes.Table?)
+  fullName.vb: Archivist.DataTypes.Table.CType(Archivist.DataTypes.Table)
+  nameWithType: Table.implicit operator Feed?(Table?)
   nameWithType.vb: Table.CType(Table)
 - uid: Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.StructuredObject
   name: implicit operator StructuredObject?(Table?)
@@ -7581,6 +10231,15 @@ references:
   fullName: Archivist.DataTypes.Tables.implicit operator Archivist.DataTypes.Card?(Archivist.DataTypes.Tables?)
   fullName.vb: Archivist.DataTypes.Tables.CType(Archivist.DataTypes.Tables)
   nameWithType: Tables.implicit operator Card?(Tables?)
+  nameWithType.vb: Tables.CType(Tables)
+- uid: Archivist.DataTypes.Tables.op_Implicit(Archivist.DataTypes.Tables)~Archivist.DataTypes.Feed
+  name: implicit operator Feed?(Tables?)
+  href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables_op_Implicit_Archivist_DataTypes_Tables__Archivist_DataTypes_Feed
+  commentId: M:Archivist.DataTypes.Tables.op_Implicit(Archivist.DataTypes.Tables)~Archivist.DataTypes.Feed
+  name.vb: CType(Tables)
+  fullName: Archivist.DataTypes.Tables.implicit operator Archivist.DataTypes.Feed?(Archivist.DataTypes.Tables?)
+  fullName.vb: Archivist.DataTypes.Tables.CType(Archivist.DataTypes.Tables)
+  nameWithType: Tables.implicit operator Feed?(Tables?)
   nameWithType.vb: Tables.CType(Tables)
 - uid: Archivist.DataTypes.Tables.op_Implicit(Archivist.DataTypes.Tables)~Archivist.DataTypes.StructuredObject
   name: implicit operator StructuredObject?(Tables?)
@@ -9062,6 +11721,22 @@ references:
   isSpec: "True"
   fullName: Archivist.ExtensionMethods.InternalExtensionMethods.ReadAllBinaryAsync
   nameWithType: InternalExtensionMethods.ReadAllBinaryAsync
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.StripIllegalCharacters(System.String)
+  name: StripIllegalCharacters(string?)
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_StripIllegalCharacters_System_String_
+  commentId: M:Archivist.ExtensionMethods.InternalExtensionMethods.StripIllegalCharacters(System.String)
+  name.vb: StripIllegalCharacters(String)
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.StripIllegalCharacters(string?)
+  fullName.vb: Archivist.ExtensionMethods.InternalExtensionMethods.StripIllegalCharacters(String)
+  nameWithType: InternalExtensionMethods.StripIllegalCharacters(string?)
+  nameWithType.vb: InternalExtensionMethods.StripIllegalCharacters(String)
+- uid: Archivist.ExtensionMethods.InternalExtensionMethods.StripIllegalCharacters*
+  name: StripIllegalCharacters
+  href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_StripIllegalCharacters_
+  commentId: Overload:Archivist.ExtensionMethods.InternalExtensionMethods.StripIllegalCharacters
+  isSpec: "True"
+  fullName: Archivist.ExtensionMethods.InternalExtensionMethods.StripIllegalCharacters
+  nameWithType: InternalExtensionMethods.StripIllegalCharacters
 - uid: Archivist.ExtensionMethods.InternalExtensionMethods.ToByteArray(System.String,System.Text.Encoding)
   name: ToByteArray(string?, Encoding?)
   href: api/Archivist.ExtensionMethods.InternalExtensionMethods.html#Archivist_ExtensionMethods_InternalExtensionMethods_ToByteArray_System_String_System_Text_Encoding_
@@ -9841,6 +12516,155 @@ references:
   isSpec: "True"
   fullName: Archivist.Formats.JSON.JsonWriter.WriteAsync
   nameWithType: JsonWriter.WriteAsync
+- uid: Archivist.Formats.RSS
+  name: Archivist.Formats.RSS
+  href: api/Archivist.Formats.RSS.html
+  commentId: N:Archivist.Formats.RSS
+  fullName: Archivist.Formats.RSS
+  nameWithType: Archivist.Formats.RSS
+- uid: Archivist.Formats.RSS.RSSFormat
+  name: RSSFormat
+  href: api/Archivist.Formats.RSS.RSSFormat.html
+  commentId: T:Archivist.Formats.RSS.RSSFormat
+  fullName: Archivist.Formats.RSS.RSSFormat
+  nameWithType: RSSFormat
+- uid: Archivist.Formats.RSS.RSSFormat.#ctor(Archivist.Converters.Convertinator)
+  name: RSSFormat(Convertinator?)
+  href: api/Archivist.Formats.RSS.RSSFormat.html#Archivist_Formats_RSS_RSSFormat__ctor_Archivist_Converters_Convertinator_
+  commentId: M:Archivist.Formats.RSS.RSSFormat.#ctor(Archivist.Converters.Convertinator)
+  name.vb: New(Convertinator)
+  fullName: Archivist.Formats.RSS.RSSFormat.RSSFormat(Archivist.Converters.Convertinator?)
+  fullName.vb: Archivist.Formats.RSS.RSSFormat.New(Archivist.Converters.Convertinator)
+  nameWithType: RSSFormat.RSSFormat(Convertinator?)
+  nameWithType.vb: RSSFormat.New(Convertinator)
+- uid: Archivist.Formats.RSS.RSSFormat.#ctor*
+  name: RSSFormat
+  href: api/Archivist.Formats.RSS.RSSFormat.html#Archivist_Formats_RSS_RSSFormat__ctor_
+  commentId: Overload:Archivist.Formats.RSS.RSSFormat.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.RSS.RSSFormat.RSSFormat
+  fullName.vb: Archivist.Formats.RSS.RSSFormat.New
+  nameWithType: RSSFormat.RSSFormat
+  nameWithType.vb: RSSFormat.New
+- uid: Archivist.Formats.RSS.RSSFormat.Extensions
+  name: Extensions
+  href: api/Archivist.Formats.RSS.RSSFormat.html#Archivist_Formats_RSS_RSSFormat_Extensions
+  commentId: P:Archivist.Formats.RSS.RSSFormat.Extensions
+  fullName: Archivist.Formats.RSS.RSSFormat.Extensions
+  nameWithType: RSSFormat.Extensions
+- uid: Archivist.Formats.RSS.RSSFormat.Extensions*
+  name: Extensions
+  href: api/Archivist.Formats.RSS.RSSFormat.html#Archivist_Formats_RSS_RSSFormat_Extensions_
+  commentId: Overload:Archivist.Formats.RSS.RSSFormat.Extensions
+  isSpec: "True"
+  fullName: Archivist.Formats.RSS.RSSFormat.Extensions
+  nameWithType: RSSFormat.Extensions
+- uid: Archivist.Formats.RSS.RSSFormat.MimeTypes
+  name: MimeTypes
+  href: api/Archivist.Formats.RSS.RSSFormat.html#Archivist_Formats_RSS_RSSFormat_MimeTypes
+  commentId: P:Archivist.Formats.RSS.RSSFormat.MimeTypes
+  fullName: Archivist.Formats.RSS.RSSFormat.MimeTypes
+  nameWithType: RSSFormat.MimeTypes
+- uid: Archivist.Formats.RSS.RSSFormat.MimeTypes*
+  name: MimeTypes
+  href: api/Archivist.Formats.RSS.RSSFormat.html#Archivist_Formats_RSS_RSSFormat_MimeTypes_
+  commentId: Overload:Archivist.Formats.RSS.RSSFormat.MimeTypes
+  isSpec: "True"
+  fullName: Archivist.Formats.RSS.RSSFormat.MimeTypes
+  nameWithType: RSSFormat.MimeTypes
+- uid: Archivist.Formats.RSS.RSSReader
+  name: RSSReader
+  href: api/Archivist.Formats.RSS.RSSReader.html
+  commentId: T:Archivist.Formats.RSS.RSSReader
+  fullName: Archivist.Formats.RSS.RSSReader
+  nameWithType: RSSReader
+- uid: Archivist.Formats.RSS.RSSReader.#ctor(Archivist.Converters.Convertinator)
+  name: RSSReader(Convertinator?)
+  href: api/Archivist.Formats.RSS.RSSReader.html#Archivist_Formats_RSS_RSSReader__ctor_Archivist_Converters_Convertinator_
+  commentId: M:Archivist.Formats.RSS.RSSReader.#ctor(Archivist.Converters.Convertinator)
+  name.vb: New(Convertinator)
+  fullName: Archivist.Formats.RSS.RSSReader.RSSReader(Archivist.Converters.Convertinator?)
+  fullName.vb: Archivist.Formats.RSS.RSSReader.New(Archivist.Converters.Convertinator)
+  nameWithType: RSSReader.RSSReader(Convertinator?)
+  nameWithType.vb: RSSReader.New(Convertinator)
+- uid: Archivist.Formats.RSS.RSSReader.#ctor*
+  name: RSSReader
+  href: api/Archivist.Formats.RSS.RSSReader.html#Archivist_Formats_RSS_RSSReader__ctor_
+  commentId: Overload:Archivist.Formats.RSS.RSSReader.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.RSS.RSSReader.RSSReader
+  fullName.vb: Archivist.Formats.RSS.RSSReader.New
+  nameWithType: RSSReader.RSSReader
+  nameWithType.vb: RSSReader.New
+- uid: Archivist.Formats.RSS.RSSReader.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.Formats.RSS.RSSReader.html#Archivist_Formats_RSS_RSSReader_HeaderInfo
+  commentId: P:Archivist.Formats.RSS.RSSReader.HeaderInfo
+  fullName: Archivist.Formats.RSS.RSSReader.HeaderInfo
+  nameWithType: RSSReader.HeaderInfo
+- uid: Archivist.Formats.RSS.RSSReader.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.Formats.RSS.RSSReader.html#Archivist_Formats_RSS_RSSReader_HeaderInfo_
+  commentId: Overload:Archivist.Formats.RSS.RSSReader.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.Formats.RSS.RSSReader.HeaderInfo
+  nameWithType: RSSReader.HeaderInfo
+- uid: Archivist.Formats.RSS.RSSReader.InternalCanRead(System.IO.Stream)
+  name: InternalCanRead(Stream?)
+  href: api/Archivist.Formats.RSS.RSSReader.html#Archivist_Formats_RSS_RSSReader_InternalCanRead_System_IO_Stream_
+  commentId: M:Archivist.Formats.RSS.RSSReader.InternalCanRead(System.IO.Stream)
+  name.vb: InternalCanRead(Stream)
+  fullName: Archivist.Formats.RSS.RSSReader.InternalCanRead(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.RSS.RSSReader.InternalCanRead(System.IO.Stream)
+  nameWithType: RSSReader.InternalCanRead(Stream?)
+  nameWithType.vb: RSSReader.InternalCanRead(Stream)
+- uid: Archivist.Formats.RSS.RSSReader.InternalCanRead*
+  name: InternalCanRead
+  href: api/Archivist.Formats.RSS.RSSReader.html#Archivist_Formats_RSS_RSSReader_InternalCanRead_
+  commentId: Overload:Archivist.Formats.RSS.RSSReader.InternalCanRead
+  isSpec: "True"
+  fullName: Archivist.Formats.RSS.RSSReader.InternalCanRead
+  nameWithType: RSSReader.InternalCanRead
+- uid: Archivist.Formats.RSS.RSSReader.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream?)
+  href: api/Archivist.Formats.RSS.RSSReader.html#Archivist_Formats_RSS_RSSReader_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.Formats.RSS.RSSReader.ReadAsync(System.IO.Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.Formats.RSS.RSSReader.ReadAsync(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.RSS.RSSReader.ReadAsync(System.IO.Stream)
+  nameWithType: RSSReader.ReadAsync(Stream?)
+  nameWithType.vb: RSSReader.ReadAsync(Stream)
+- uid: Archivist.Formats.RSS.RSSReader.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.Formats.RSS.RSSReader.html#Archivist_Formats_RSS_RSSReader_ReadAsync_
+  commentId: Overload:Archivist.Formats.RSS.RSSReader.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.RSS.RSSReader.ReadAsync
+  nameWithType: RSSReader.ReadAsync
+- uid: Archivist.Formats.RSS.RSSWriter
+  name: RSSWriter
+  href: api/Archivist.Formats.RSS.RSSWriter.html
+  commentId: T:Archivist.Formats.RSS.RSSWriter
+  fullName: Archivist.Formats.RSS.RSSWriter
+  nameWithType: RSSWriter
+- uid: Archivist.Formats.RSS.RSSWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: WriteAsync(IGenericFile?, Stream?)
+  href: api/Archivist.Formats.RSS.RSSWriter.html#Archivist_Formats_RSS_RSSWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.Formats.RSS.RSSWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name.vb: WriteAsync(IGenericFile, Stream)
+  fullName: Archivist.Formats.RSS.RSSWriter.WriteAsync(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.Formats.RSS.RSSWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: RSSWriter.WriteAsync(IGenericFile?, Stream?)
+  nameWithType.vb: RSSWriter.WriteAsync(IGenericFile, Stream)
+- uid: Archivist.Formats.RSS.RSSWriter.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.Formats.RSS.RSSWriter.html#Archivist_Formats_RSS_RSSWriter_WriteAsync_
+  commentId: Overload:Archivist.Formats.RSS.RSSWriter.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.RSS.RSSWriter.WriteAsync
+  nameWithType: RSSWriter.WriteAsync
 - uid: Archivist.Formats.Txt
   name: Archivist.Formats.Txt
   href: api/Archivist.Formats.Txt.html
