@@ -232,6 +232,16 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Converts the card to a feed file.
+        /// </summary>
+        /// <param name="file">The card to convert.</param>
+        /// <returns>The feed representation of the card.</returns>
+        public static implicit operator Feed?(Card? file)
+        {
+            return CardToFeedConverter.Convert(file);
+        }
+
+        /// <summary>
         /// Converts the card to a structured object.
         /// </summary>
         /// <param name="file">The card to convert.</param>
@@ -447,6 +457,8 @@ namespace Archivist.DataTypes
                 ReturnValue = this;
             else if (FileType == typeof(Calendar))
                 ReturnValue = (Calendar?)this;
+            else if (FileType == typeof(Feed))
+                ReturnValue = (Feed?)this;
             else if (FileType == typeof(Table))
                 ReturnValue = (Table?)this;
             else if (FileType == typeof(Tables))

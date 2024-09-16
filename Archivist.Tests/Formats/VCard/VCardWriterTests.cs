@@ -37,7 +37,7 @@ namespace Archivist.Tests.Formats.VCard
         public async Task CanCallWriteAsyncWithNullFileAsync()
         {
             // Arrange
-            IGenericFile File = null!;
+            IGenericFile? File = null;
             var Stream = new MemoryStream();
 
             // Act

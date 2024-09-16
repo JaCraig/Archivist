@@ -118,6 +118,16 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Converts the table to a feed.
+        /// </summary>
+        /// <param name="file">The table to convert.</param>
+        /// <returns>The feed representation of the table.</returns>
+        public static implicit operator Feed?(Table? file)
+        {
+            return TableToFeedConverter.Convert(file);
+        }
+
+        /// <summary>
         /// Converts the table to a structured object.
         /// </summary>
         /// <param name="file">The table to convert.</param>
@@ -433,6 +443,8 @@ namespace Archivist.DataTypes
                 ReturnValue = (Calendar?)this;
             else if (FileType == typeof(Table))
                 ReturnValue = this;
+            else if (FileType == typeof(Feed))
+                ReturnValue = (Feed?)this;
             else if (FileType == typeof(Tables))
                 ReturnValue = (Tables?)this;
             else if (FileType == typeof(Text))

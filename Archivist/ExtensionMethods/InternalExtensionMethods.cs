@@ -160,6 +160,19 @@ namespace Archivist.ExtensionMethods
         }
 
         /// <summary>
+        /// Strips illegal characters from RSS items
+        /// </summary>
+        /// <param name="original">Original text</param>
+        /// <returns>string stripped of certain characters.</returns>
+        public static string StripIllegalCharacters(this string? original)
+        {
+            return original?.Replace("&nbsp;", " ")
+                .Replace("&#160;", string.Empty)
+                .Trim()
+                .Replace("&", "and") ?? "";
+        }
+
+        /// <summary>
         /// Converts a string to a byte array using the specified encoding.
         /// </summary>
         /// <param name="input">The input string</param>

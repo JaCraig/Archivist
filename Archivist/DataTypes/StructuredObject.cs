@@ -112,6 +112,16 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Converts the structured object to a feed.
+        /// </summary>
+        /// <param name="structuredObject">The structured object to convert.</param>
+        /// <returns>The feed representation of the structured object.</returns>
+        public static implicit operator Feed?(StructuredObject? structuredObject)
+        {
+            return StructuredObjectToFeedConverter.Convert(structuredObject);
+        }
+
+        /// <summary>
         /// Converts the structured object to a table.
         /// </summary>
         /// <param name="structuredObject">The structured object to convert.</param>
@@ -452,6 +462,8 @@ namespace Archivist.DataTypes
             IGenericFile? ReturnValue;
             if (FileType == typeof(Card))
                 ReturnValue = (Card?)this;
+            else if (FileType == typeof(Feed))
+                ReturnValue = (Feed?)this;
             else if (FileType == typeof(Calendar))
                 ReturnValue = (Calendar?)this;
             else if (FileType == typeof(Table))
