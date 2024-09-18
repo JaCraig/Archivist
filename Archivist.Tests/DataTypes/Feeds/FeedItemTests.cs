@@ -35,8 +35,8 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallEqualityOperator()
         {
             // Arrange
-            var Left = new FeedItem();
-            var Right = new FeedItem();
+            var Left = new FeedItem() { PubDateUtc = DateTime.Today };
+            var Right = new FeedItem() { PubDateUtc = DateTime.Today };
 
             // Act
             var Result = Left == Right;
@@ -175,14 +175,14 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallInequalityOperator()
         {
             // Arrange
-            var Left = new FeedItem();
-            var Right = new FeedItem();
+            var Left = new FeedItem() { PubDateUtc = DateTime.Today };
+            var Right = new FeedItem() { PubDateUtc = DateTime.Today };
 
             // Act
             var Result = Left != Right;
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
@@ -209,8 +209,8 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallLessThanEqualToOperator()
         {
             // Arrange
-            var Left = new FeedItem();
-            var Right = new FeedItem();
+            var Left = new FeedItem() { PubDateUtc = DateTime.Today };
+            var Right = new FeedItem() { PubDateUtc = DateTime.Today };
 
             // Act
             var Result = Left <= Right;
@@ -243,8 +243,8 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallLessThanOperator()
         {
             // Arrange
-            var Left = new FeedItem();
-            var Right = new FeedItem();
+            var Left = new FeedItem() { PubDateUtc = DateTime.Today };
+            var Right = new FeedItem() { PubDateUtc = DateTime.Today };
 
             // Act
             var Result = Left < Right;
