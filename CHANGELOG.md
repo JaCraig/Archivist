@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.7.1"></a>
+## [0.7.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.7.1) (2024-09-18)
+
+### Bug Fixes
+
+*  Update FeedItemTests with specific PubDateUtc and assertion ([feda00e](https://www.github.com/JaCraig/Archivist/commit/feda00eb3a147af64231aca20c54c2e346870fa7))
+* bump YamlDotNet in /Archivist in the dependencies group ([bb7c1ca](https://www.github.com/JaCraig/Archivist/commit/bb7c1ca5bc43b2f4b7a37b6deb038e0f23ad4a5d))
+
+### Other
+
+* Merge pull request #62 from JaCraig/dependabot/nuget/Archivist/dependencies-75cf382fd8 ([b574925](https://www.github.com/JaCraig/Archivist/commit/b574925bdd4f5c8d57d22e5deb1f1556c247867d))
+* Updating tests ([ad722af](https://www.github.com/JaCraig/Archivist/commit/ad722af6a33e48d28468337ca01025754fb9cca2))
+
 <a name="0.7.0"></a>
 ## [0.7.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.7.0) (2024-09-16)
 
