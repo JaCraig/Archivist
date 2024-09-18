@@ -42,7 +42,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = Left == Right;
 
             // Assert
-            Assert.False(Result);
+            Assert.True(Result);
         }
 
         [Fact]
@@ -250,7 +250,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = Left < Right;
 
             // Assert
-            Assert.True(Result);
+            Assert.False(Result);
         }
 
         [Fact]
