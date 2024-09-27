@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.7.2"></a>
+## [0.7.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.7.2) (2024-09-27)
+
+### Bug Fixes
+
+* bump YamlDotNet in /Archivist in the dependencies group ([649f34e](https://www.github.com/JaCraig/Archivist/commit/649f34eb499367ef68f59164e0d7cc2df64e8fed))
+
+### Other
+
+* Merge pull request #63 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-0a3d0dcfc4 ([462a23c](https://www.github.com/JaCraig/Archivist/commit/462a23c669bfbc277557df27ac4ace457e39d4c2))
+* Merge pull request #64 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-e833257e60 ([b25a111](https://www.github.com/JaCraig/Archivist/commit/b25a111e6002df3b75eb1337266cb568c6c18332))
+* Merge pull request #65 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-15f3a94963 ([8c29fb3](https://www.github.com/JaCraig/Archivist/commit/8c29fb31d38e64fdb17383ee16a4dbeb085dc15e))
+* Merge pull request #66 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-e8514b389a ([a593565](https://www.github.com/JaCraig/Archivist/commit/a59356521e752d1cfed8ecb43cfc2e4a21adef46))
+* Merge pull request #67 from JaCraig/dependabot/nuget/Archivist/dependencies-4b698e5f0e ([7560c2b](https://www.github.com/JaCraig/Archivist/commit/7560c2b27a4c7a12d7f60e30fb1457e277bd3ebe))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([0d9d80a](https://www.github.com/JaCraig/Archivist/commit/0d9d80a20c4df6467f50356ac9365fabea3db8be))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([04d624c](https://www.github.com/JaCraig/Archivist/commit/04d624c3d55696e63e3a0510498fde961c6fa23a))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([c054782](https://www.github.com/JaCraig/Archivist/commit/c054782bc2432f90a4be77c50a78e60b708662e7))
+* bump xunit in /Archivist.Tests in the dependencies group ([72ed64b](https://www.github.com/JaCraig/Archivist/commit/72ed64bb227904214ed735f54ee6f711046c8a61))
+
 <a name="0.7.1"></a>
 ## [0.7.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.7.1) (2024-09-18)
 
