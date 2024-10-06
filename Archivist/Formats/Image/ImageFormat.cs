@@ -21,11 +21,11 @@ namespace Archivist.Formats.Image
         /// <summary>
         /// Gets the file extensions associated with the Image format.
         /// </summary>
-        public override string[] Extensions { get; } = new[] { "GIF", "JPG", "JPEG", "BMP" };
+        public override string[] Extensions { get; } = new[] { "GIF", "JPG", "JPEG", "BMP", "PNG", "WEBP", "ICO", "WBMP", "HEIF" };
 
         /// <summary>
         /// Gets the MIME types associated with the Image format.
         /// </summary>
-        public override string[] MimeTypes { get; } = new[] { "IMAGE/GIF", "IMAGE/JPEG", "IMAGE/BMP" };
+        public override string[] MimeTypes { get; } = new[] { "IMAGE/GIF", "IMAGE/JPEG", "IMAGE/BMP", "IMAGE/PNG", "IMAGE/WEBP", "IMAGE/ICO", "IMAGE/WBMP", "IMAGE/HEIF" };
     }
 }

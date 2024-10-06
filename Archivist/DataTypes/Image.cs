@@ -1,5 +1,6 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Converters;
+using Archivist.Enums;
 using Archivist.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,11 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Gets or sets the number of bytes per pixel.
+        /// </summary>
+        public int BytesPerPixel { get; set; }
+
+        /// <summary>
         /// Gets or sets the data of the image.
         /// </summary>
         public byte[] Data { get; set; } = Array.Empty<byte>();
@@ -43,12 +49,12 @@ namespace Archivist.DataTypes
         /// </summary>
         public string Description
         {
-            get => Metadata?.GetValueOrDefault("Description") ?? "";
+            get => Metadata?.GetValueOrDefault(CommonImageMetadataFields.Description) ?? "";
             set
             {
                 if (Metadata is null)
                     return;
-                Metadata["Description"] = value ?? "";
+                Metadata[CommonImageMetadataFields.Description] = value ?? "";
             }
         }
 
@@ -62,12 +68,12 @@ namespace Archivist.DataTypes
         /// </summary>
         public string ImageType
         {
-            get => Metadata?.GetValueOrDefault("ImageType") ?? "";
+            get => Metadata?.GetValueOrDefault(CommonImageMetadataFields.ImageType) ?? "";
             set
             {
                 if (Metadata is null)
                     return;
-                Metadata["ImageType"] = value ?? "";
+                Metadata[CommonImageMetadataFields.ImageType] = value ?? "";
             }
         }
 
