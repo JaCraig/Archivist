@@ -20,7 +20,7 @@ namespace Archivist.Converters
         {
             if (file is null)
                 return null;
-            var ReturnValue = new Tables
+            var ReturnValue = new Tables()
             {
                 file
             };

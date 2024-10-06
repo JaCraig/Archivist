@@ -20,7 +20,7 @@ namespace Archivist.Converters
         {
             if (file is null)
                 return null;
-            var Table = new Table
+            var Table = new Table()
             {
                 Title = file.Title ?? file.Events?.FirstOrDefault()?.Summary
             };

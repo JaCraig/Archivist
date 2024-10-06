@@ -21,7 +21,7 @@ namespace Archivist.Converters
         {
             if (file is null)
                 return null;
-            var ReturnValue = new Feed
+            var ReturnValue = new Feed()
             {
                 new Channel()
             };

@@ -12,21 +12,20 @@ namespace Archivist.Formats.Image
         /// <summary>
         /// Initializes a new instance of the <see cref="ImageFormat"/> class.
         /// </summary>
-        /// <param name="options">The options to use when deserializing Image.</param>
         /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public ImageFormat(ImageSerializerSettings? options, Convertinator? converter)
-            : base(new ImageReader(options, converter), new ImageWriter(options))
+        public ImageFormat(Convertinator? converter)
+            : base(new ImageReader(converter), new ImageWriter())
         {
         }
 
         /// <summary>
         /// Gets the file extensions associated with the Image format.
         /// </summary>
-        public override string[] Extensions { get; } = new[] { "Image" };
+        public override string[] Extensions { get; } = new[] { "GIF", "JPG", "JPEG", "BMP" };
 
         /// <summary>
-        /// Gets the MIME types associated with the Excel format.
+        /// Gets the MIME types associated with the Image format.
         /// </summary>
-        public override string[] MimeTypes { get; } = new[] { "APPLICATION/Image" };
+        public override string[] MimeTypes { get; } = new[] { "IMAGE/GIF", "IMAGE/JPEG", "IMAGE/BMP" };
     }
 }

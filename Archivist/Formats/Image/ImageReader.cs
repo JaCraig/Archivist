@@ -3,7 +3,6 @@ using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
-using Newtonsoft.Image;
 using System;
 using System.Dynamic;
 using System.IO;
@@ -19,11 +18,9 @@ namespace Archivist.Formats.Image
         /// <summary>
         /// Initializes a new instance of the <see cref="ImageReader"/> class.
         /// </summary>
-        /// <param name="options">The options to use when deserializing Image.</param>
         /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public ImageReader(ImageSerializerSettings? options, Convertinator? converter)
+        public ImageReader(Convertinator? converter)
         {
-            Options = options ?? new ImageSerializerSettings();
             _Converter = converter;
         }
 
@@ -31,11 +28,6 @@ namespace Archivist.Formats.Image
         /// Gets the header information for the Image format.
         /// </summary>
         public override byte[] HeaderInfo => Array.Empty<byte>();
-
-        /// <summary>
-        /// The options to use when deserializing Image.
-        /// </summary>
-        private ImageSerializerSettings Options { get; }
 
         /// <summary>
         /// The converter used to convert between IGenericFile objects.

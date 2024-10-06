@@ -18,16 +18,9 @@ namespace Archivist.Formats.Image
         /// <summary>
         /// Initializes a new instance of the <see cref="ImageWriter"/> class.
         /// </summary>
-        /// <param name="options">The options to use when serializing Image.</param>
-        public ImageWriter(ImageSerializerSettings? options)
+        public ImageWriter()
         {
-            Options = options ?? new ImageSerializerSettings();
         }
-
-        /// <summary>
-        /// ImageSerializer options
-        /// </summary>
-        private ImageSerializerSettings Options { get; }
 
         /// <summary>
         /// Writes the structured object to the specified stream as Image.
