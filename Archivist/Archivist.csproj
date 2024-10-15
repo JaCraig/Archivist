@@ -54,7 +54,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="ObjectCartographer" Version="3.0.60" />
+    <PackageReference Include="ObjectCartographer" Version="3.0.61" />
     <PackageReference Include="YamlDotNet" Version="16.1.3" />
   </ItemGroup>
   <ItemGroup>
