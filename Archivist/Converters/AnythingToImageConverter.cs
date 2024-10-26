@@ -19,7 +19,10 @@ namespace Archivist.Converters
         {
             if (file is null)
                 return null;
-            var ReturnValue = new Image();
+            var ReturnValue = new Image
+            {
+                Title = file.Title
+            };
             if (file.Metadata is null)
                 return ReturnValue;
             foreach (KeyValuePair<string, string> Metadata in file.Metadata)

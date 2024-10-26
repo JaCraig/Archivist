@@ -317,7 +317,7 @@ namespace Archivist.DataTypes.Feeds
         /// <param name="arrayIndex">
         /// The zero-based index in <paramref name="array"/> at which copying begins.
         /// </param>
-        public void CopyTo(FeedItem[] array, int arrayIndex)
+        public void CopyTo(FeedItem[]? array, int arrayIndex)
         {
             if (array is null)
                 return;

@@ -1,69 +1,91 @@
+using Archivist.Converters;
+using Archivist.Enums;
+using Archivist.Formats.Image;
+using Archivist.Interfaces;
+using Archivist.Tests.BaseClasses;
+using NSubstitute;
+using System.IO;
+using System.Threading.Tasks;
+using Xunit;
+
 namespace Archivist.Tests.Formats.Image
 {
-    using Archivist.Converters;
-    using Archivist.Formats.Image;
-    using Archivist.Interfaces;
-    using NSubstitute;
-    using System;
-    using System.Collections.Generic;
-    using Xunit;
-
-    public class ImageFormatTests
+    public class ImageFormatTests : TestBaseClass<ImageFormat>
     {
-        private readonly ImageFormat _testClass;
-        private Convertinator _converter;
-
         public ImageFormatTests()
         {
-            _converter = new Convertinator(new[] { Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>() });
-            _testClass = new ImageFormat(_converter);
+            _Converter = new Convertinator(new[] { Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>() });
+            _TestClass = new ImageFormat(_Converter);
+            TestObject = new ImageFormat(_Converter);
+        }
+
+        private readonly Convertinator _Converter;
+        private readonly ImageFormat _TestClass;
+
+        [Fact]
+        public async Task CanCallReadAsyncFromFileAsync()
+        {
+            // Arrange
+            var TestData = new FileStream("./TestData/TestJPG.jpg", FileMode.Open);
+
+            // Act
+            IGenericFile? Result = await _TestClass.ReadAsync(TestData);
+
+            // Assert
+            Assert.NotNull(Result);
+            Archivist.DataTypes.Image ResultImage = Assert.IsType<Archivist.DataTypes.Image>(Result);
+            Assert.Equal(1024, ResultImage.Width);
+            Assert.Equal(1024, ResultImage.Height);
+            Assert.Equal(4, ResultImage.BytesPerPixel);
+            Assert.Equal(ImageTypes.Jpg, ResultImage.ImageType);
+            Assert.NotEmpty(ResultImage.Data);
         }
 
         [Fact]
         public void CanConstruct()
         {
             // Act
-            var instance = new ImageFormat(_converter);
+            var Instance = new ImageFormat(_Converter);
 
             // Assert
-            Assert.NotNull(instance);
+            Assert.NotNull(Instance);
         }
 
         [Fact]
         public void CanGetExtensions()
         {
             // Act
-            var result = _testClass.Extensions;
+            var Result = _TestClass.Extensions;
 
             // Assert
-            Assert.NotNull(result);
-            Assert.Contains("GIF", result);
-            Assert.Contains("JPG", result);
-            Assert.Contains("JPEG", result);
-            Assert.Contains("BMP", result);
-            Assert.Contains("PNG", result);
-            Assert.Contains("WEBP", result);
-            Assert.Contains("ICO", result);
-            Assert.Contains("WBMP", result);
-            Assert.Contains("HEIF", result);
+            Assert.NotNull(Result);
+            Assert.Contains("GIF", Result);
+            Assert.Contains("JPG", Result);
+            Assert.Contains("JPEG", Result);
+            Assert.Contains("BMP", Result);
+            Assert.Contains("PNG", Result);
+            Assert.Contains("WEBP", Result);
+            Assert.Contains("ICO", Result);
+            Assert.Contains("WBMP", Result);
+            Assert.Contains("HEIF", Result);
         }
 
         [Fact]
         public void CanGetMimeTypes()
         {
             // Act
-            var result = _testClass.MimeTypes;
+            var Result = _TestClass.MimeTypes;
 
             // Assert
-            Assert.NotNull(result);
-            Assert.Contains("IMAGE/GIF", result);
-            Assert.Contains("IMAGE/JPEG", result);
-            Assert.Contains("IMAGE/BMP", result);
-            Assert.Contains("IMAGE/PNG", result);
-            Assert.Contains("IMAGE/WEBP", result);
-            Assert.Contains("IMAGE/ICO", result);
-            Assert.Contains("IMAGE/WBMP", result);
-            Assert.Contains("IMAGE/HEIF", result);
+            Assert.NotNull(Result);
+            Assert.Contains("IMAGE/GIF", Result);
+            Assert.Contains("IMAGE/JPEG", Result);
+            Assert.Contains("IMAGE/BMP", Result);
+            Assert.Contains("IMAGE/PNG", Result);
+            Assert.Contains("IMAGE/WEBP", Result);
+            Assert.Contains("IMAGE/ICO", Result);
+            Assert.Contains("IMAGE/WBMP", Result);
+            Assert.Contains("IMAGE/HEIF", Result);
         }
     }
 }

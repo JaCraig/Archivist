@@ -1,37 +1,26 @@
+using Archivist.Formats.Image;
+using Archivist.Tests.BaseClasses;
+using System.IO;
+using System.Threading.Tasks;
+using Xunit;
+
 namespace Archivist.Tests.Formats.Image
 {
-    using Archivist.DataTypes;
-    using Archivist.Formats.Image;
-    using Archivist.Interfaces;
-    using NSubstitute;
-    using System.IO;
-    using System.Threading.Tasks;
-    using Xunit;
-
-    public class ImageWriterTests
+    public class ImageWriterTests : TestBaseClass<ImageWriter>
     {
-        private readonly ImageWriter _testClass;
-
         public ImageWriterTests()
         {
-            _testClass = new ImageWriter();
+            _TestClass = new ImageWriter();
+            TestObject = new ImageWriter();
         }
 
-        [Fact]
-        public void CanConstruct()
-        {
-            // Act
-            var instance = new ImageWriter();
-
-            // Assert
-            Assert.NotNull(instance);
-        }
+        private readonly ImageWriter _TestClass;
 
         [Fact]
         public async Task CanCallWriteAsync()
         {
             // Arrange
-            var file = new Image
+            var File = new Archivist.DataTypes.Image
             {
                 Width = 2,
                 Height = 2,
@@ -45,14 +34,24 @@ namespace Archivist.Tests.Formats.Image
                 },
                 ImageType = "png"
             };
-            var stream = new MemoryStream();
+            var Stream = new MemoryStream();
 
             // Act
-            var result = await _testClass.WriteAsync(file, stream);
+            var Result = await _TestClass.WriteAsync(File, Stream);
 
             // Assert
-            Assert.True(result);
-            Assert.NotEqual(0, stream.Length);
+            Assert.True(Result);
+            Assert.NotEqual(0, Stream.Length);
+        }
+
+        [Fact]
+        public void CanConstruct()
+        {
+            // Act
+            var Instance = new ImageWriter();
+
+            // Assert
+            Assert.NotNull(Instance);
         }
     }
 }

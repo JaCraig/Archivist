@@ -1,68 +1,88 @@
+using Archivist.Converters;
+using Archivist.Enums;
+using Archivist.Formats.Image;
+using Archivist.Interfaces;
+using Archivist.Tests.BaseClasses;
+using NSubstitute;
+using System.IO;
+using System.Threading.Tasks;
+using Xunit;
+
 namespace Archivist.Tests.Formats.Image
 {
-    using Archivist.Converters;
-    using Archivist.Formats.Image;
-    using Archivist.Interfaces;
-    using NSubstitute;
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Threading.Tasks;
-    using Xunit;
-
-    public class ImageReaderTests
+    public class ImageReaderTests : TestBaseClass<ImageReader>
     {
-        private readonly ImageReader _testClass;
-        private Convertinator _converter;
-
         public ImageReaderTests()
         {
-            _converter = new Convertinator(new[] { Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>() });
-            _testClass = new ImageReader(_converter);
+            _Converter = new Convertinator(new[] { Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>() });
+            _TestClass = new ImageReader(_Converter);
+            TestObject = new ImageReader(_Converter);
         }
 
-        [Fact]
-        public void CanConstruct()
-        {
-            // Act
-            var instance = new ImageReader(_converter);
-
-            // Assert
-            Assert.NotNull(instance);
-        }
+        private readonly Convertinator _Converter;
+        private readonly ImageReader _TestClass;
 
         [Fact]
         public void CanCallInternalCanRead()
         {
             // Arrange
-            var stream = new MemoryStream();
+            var Stream = new MemoryStream();
 
             // Act
-            var result = _testClass.InternalCanRead(stream);
+            var Result = _TestClass.InternalCanRead(Stream);
 
             // Assert
-            Assert.True(result);
+            Assert.False(Result);
         }
 
         [Fact]
         public async Task CanCallReadAsync()
         {
             // Arrange
-            var stream = new MemoryStream();
+            var Stream = new MemoryStream();
 
             // Act
-            var result = await _testClass.ReadAsync(stream);
+            IGenericFile? Result = await _TestClass.ReadAsync(Stream);
 
             // Assert
-            Assert.NotNull(result);
+            Assert.NotNull(Result);
+        }
+
+        [Fact]
+        public async Task CanCallReadAsyncFromFileAsync()
+        {
+            // Arrange
+            var TestData = new FileStream("./TestData/TestJPG.jpg", FileMode.Open);
+
+            // Act
+            IGenericFile? Result = await _TestClass.ReadAsync(TestData);
+
+            // Assert
+            Assert.NotNull(Result);
+            Archivist.DataTypes.Image ResultImage = Assert.IsType<Archivist.DataTypes.Image>(Result);
+            Assert.Equal(1024, ResultImage.Width);
+            Assert.Equal(1024, ResultImage.Height);
+            Assert.Equal(4, ResultImage.BytesPerPixel);
+            Assert.Equal(ImageTypes.Jpg, ResultImage.ImageType);
+            Assert.NotEmpty(ResultImage.Data);
+        }
+
+        [Fact]
+        public void CanConstruct()
+        {
+            // Act
+            var Instance = new ImageReader(_Converter);
+
+            // Assert
+            Assert.NotNull(Instance);
         }
 
         [Fact]
         public void CanGetHeaderInfo()
         {
             // Assert
-            Assert.IsType<byte[]>(_testClass.HeaderInfo);
-            Assert.Empty(_testClass.HeaderInfo);
+            _ = Assert.IsType<byte[]>(_TestClass.HeaderInfo);
+            Assert.Empty(_TestClass.HeaderInfo);
         }
     }
 }

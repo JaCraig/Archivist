@@ -19,7 +19,7 @@ namespace Archivist.Formats.ICalendar
         /// <summary>
         /// The strip HTML regex
         /// </summary>
-        private static readonly Regex STRIP_HTML_REGEX = new("<[^>]*>", RegexOptions.Compiled);
+        private static readonly Regex _STRIP_HTML_REGEX = new("<[^>]*>", RegexOptions.Compiled);
 
         /// <summary>
         /// Fields to skip when writing the ICal file.
@@ -148,7 +148,7 @@ namespace Archivist.Formats.ICalendar
         /// </summary>
         /// <param name="input">The input string.</param>
         /// <returns><c>true</c> if the specified input contains HTML; otherwise, <c>false</c>.</returns>
-        private static bool ContainsHTML(string? input) => !string.IsNullOrEmpty(input) && STRIP_HTML_REGEX.IsMatch(input);
+        private static bool ContainsHTML(string? input) => !string.IsNullOrEmpty(input) && _STRIP_HTML_REGEX.IsMatch(input);
 
         /// <summary>
         /// Adds the events to the ICal file.

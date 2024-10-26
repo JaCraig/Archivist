@@ -36,7 +36,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         {
             // Arrange
             var TestObject = new Channel();
-            var Items = new[] { new FeedItem(), new FeedItem(), new FeedItem() };
+            FeedItem[] Items = new[] { new FeedItem(), new FeedItem(), new FeedItem() };
 
             // Act
             TestObject.AddRange(Items);
@@ -128,7 +128,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         {
             // Arrange
             var TestObject = new Channel() { new FeedItem(), new FeedItem(), new FeedItem() };
-            var Array = new[] { new FeedItem(), new FeedItem(), new FeedItem() };
+            FeedItem[] Array = new[] { new FeedItem(), new FeedItem(), new FeedItem() };
             const int ArrayIndex = 0;
 
             // Act
@@ -156,7 +156,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallEqualityOperator()
         {
             // Arrange
-            var PubDate = DateTime.UtcNow;
+            DateTime PubDate = DateTime.UtcNow;
             var Left = new Channel() { PubDateUtc = PubDate };
             var Right = new Channel() { PubDateUtc = PubDate };
 
@@ -220,7 +220,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallGetEnumeratorForIEnumerableWithNoParameters()
         {
             // Act
-            var Result = ((IEnumerable)_TestClass).GetEnumerator();
+            IEnumerator Result = ((IEnumerable)_TestClass).GetEnumerator();
 
             // Assert
             Assert.NotNull(Result);
@@ -230,7 +230,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanCallGetEnumeratorWithNoParameters()
         {
             // Act
-            var Result = _TestClass.GetEnumerator();
+            IEnumerator<FeedItem> Result = _TestClass.GetEnumerator();
 
             // Assert
             Assert.NotNull(Result);
@@ -243,7 +243,7 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = _TestClass.GetHashCode();
 
             // Assert
-            Assert.IsType<int>(Result);
+            _ = Assert.IsType<int>(Result);
         }
 
         [Fact]
@@ -520,14 +520,14 @@ namespace Archivist.Tests.DataTypes.Feeds
             var Result = _TestClass.ToString();
 
             // Assert
-            Assert.IsType<string>(Result);
+            _ = Assert.IsType<string>(Result);
         }
 
         [Fact]
         public void CanGetCategories()
         {
             // Assert
-            Assert.IsType<List<string>>(_TestClass.Categories);
+            _ = Assert.IsType<List<string>>(_TestClass.Categories);
 
             Assert.Empty(_TestClass.Categories);
         }
@@ -536,7 +536,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanGetCount()
         {
             // Assert
-            Assert.IsType<int>(_TestClass.Count);
+            _ = Assert.IsType<int>(_TestClass.Count);
 
             Assert.Empty(_TestClass);
         }
@@ -545,7 +545,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanGetIsReadOnly()
         {
             // Assert
-            Assert.IsType<bool>(_TestClass.IsReadOnly);
+            _ = Assert.IsType<bool>(_TestClass.IsReadOnly);
 
             Assert.False(_TestClass.IsReadOnly);
         }
@@ -554,7 +554,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanGetItems()
         {
             // Assert
-            Assert.IsType<List<FeedItem>>(_TestClass.Items);
+            _ = Assert.IsType<List<FeedItem>>(_TestClass.Items);
 
             Assert.Empty(_TestClass.Items);
         }
@@ -682,7 +682,7 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void CanSetAndGetPubDate()
         {
             // Arrange
-            var TestValue = DateTime.UtcNow;
+            DateTime TestValue = DateTime.UtcNow;
 
             // Act
             _TestClass.PubDateUtc = TestValue;
@@ -734,13 +734,13 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void ImplementsIComparable_Channel()
         {
             // Arrange
-            var FeedItems = new List<FeedItem> { new FeedItem(), new FeedItem() };
-            var PubDate = DateTime.UtcNow;
-            Channel BaseValue = new Channel() { PubDateUtc = PubDate };
+            var FeedItems = new List<FeedItem> { new(), new() };
+            DateTime PubDate = DateTime.UtcNow;
+            var BaseValue = new Channel() { PubDateUtc = PubDate };
             BaseValue.AddRange(FeedItems);
-            Channel EqualToBaseValue = new Channel() { PubDateUtc = PubDate };
+            var EqualToBaseValue = new Channel() { PubDateUtc = PubDate };
             EqualToBaseValue.AddRange(FeedItems);
-            Channel GreaterThanBaseValue = new Channel { new FeedItem(), new FeedItem(), new FeedItem() };
+            var GreaterThanBaseValue = new Channel { new FeedItem(), new FeedItem(), new FeedItem() };
 
             // Assert
             Assert.Equal(0, BaseValue.CompareTo(EqualToBaseValue));
@@ -752,8 +752,8 @@ namespace Archivist.Tests.DataTypes.Feeds
         public void ImplementsIEquatable_Channel()
         {
             // Arrange
-            var PubDate = DateTime.UtcNow;
-            var FeedItems = new[] { new FeedItem(), new FeedItem() };
+            DateTime PubDate = DateTime.UtcNow;
+            FeedItem[] FeedItems = new[] { new FeedItem(), new FeedItem() };
             var TestObject = new Channel() { PubDateUtc = PubDate };
             TestObject.AddRange(FeedItems);
             var Same = new Channel() { PubDateUtc = PubDate };

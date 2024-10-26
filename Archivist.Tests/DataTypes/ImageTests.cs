@@ -3,7 +3,6 @@ using Archivist.DataTypes;
 using Archivist.Interfaces;
 using Archivist.Tests.BaseClasses;
 using NSubstitute;
-using System;
 using Xunit;
 
 namespace Archivist.Tests.DataTypes
@@ -46,6 +45,24 @@ namespace Archivist.Tests.DataTypes
 
             // Assert
             Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallEqualityOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default == new Image();
+            // Assert
+            Assert.False(Result);
+        }
+
+        [Fact]
+        public void CanCallEqualityOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Image() == default;
+            // Assert
+            Assert.False(Result);
         }
 
         [Fact]
@@ -110,6 +127,24 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanCallGreaterThanEqualToOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default(Image) >= new Image();
+            // Assert
+            Assert.False(Result);
+        }
+
+        [Fact]
+        public void CanCallGreaterThanEqualToOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Image() >= default(Image);
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
         public void CanCallGreaterThanOperator()
         {
             // Arrange
@@ -124,221 +159,297 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
+        public void CanCallGreaterThanOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default(Image) > new Image();
+            // Assert
+            Assert.False(Result);
+        }
+
+        [Fact]
+        public void CanCallGreaterThanOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Image() > default(Image);
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
         public void CanCallInequalityOperator()
         {
             // Arrange
-            var left = new Image();
-            var right = new Image();
+            var Left = new Image();
+            var Right = new Image();
 
             // Act
-            var result = left != right;
+            var Result = Left != Right;
 
             // Assert
-            Assert.True(result);
+            Assert.False(Result);
+        }
+
+        [Fact]
+        public void CanCallInequalityOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default != new Image();
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallInequalityOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Image() != default;
+            // Assert
+            Assert.True(Result);
         }
 
         [Fact]
         public void CanCallLessThanEqualToOperator()
         {
             // Arrange
-            var left = new Image();
-            var right = new Image();
+            var Left = new Image();
+            var Right = new Image();
 
             // Act
-            var result = left <= right;
+            var Result = Left <= Right;
 
             // Assert
-            Assert.True(result);
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallLessThanEqualToOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default(Image) <= new Image();
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallLessThanEqualToOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Image() <= default(Image);
+            // Assert
+            Assert.False(Result);
         }
 
         [Fact]
         public void CanCallLessThanOperator()
         {
             // Arrange
-            var left = new Image();
-            var right = new Image();
+            var Left = new Image();
+            var Right = new Image();
 
             // Act
-            var result = left < right;
+            var Result = Left < Right;
 
             // Assert
-            Assert.False(result);
+            Assert.False(Result);
+        }
+
+        [Fact]
+        public void CanCallLessThanOperatorWithNullLeft()
+        {
+            // Act
+            var Result = default(Image) < new Image();
+            // Assert
+            Assert.True(Result);
+        }
+
+        [Fact]
+        public void CanCallLessThanOperatorWithNullRight()
+        {
+            // Act
+            var Result = new Image() < default(Image);
+            // Assert
+            Assert.False(Result);
         }
 
         [Fact]
         public void CanCallToFileType()
         {
             // Act
-            var result = _TestClass.ToFileType<Image>();
+            Image? Result = _TestClass.ToFileType<Image>();
 
             // Assert
-            Assert.NotNull(result);
+            Assert.NotNull(Result);
         }
 
         [Fact]
         public void CanConstruct()
         {
             // Act
-            var instance = new Image();
+            var Instance = new Image();
 
             // Assert
-            Assert.NotNull(instance);
+            Assert.NotNull(Instance);
 
             // Act
-            instance = new Image(_Converter);
+            Instance = new Image(_Converter);
 
             // Assert
-            Assert.NotNull(instance);
+            Assert.NotNull(Instance);
         }
-
-        [Fact]
-        public void CannotCallEqualityOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default == new Image(); });
-
-        [Fact]
-        public void CannotCallEqualityOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Image() == default; });
-
-        [Fact]
-        public void CannotCallGreaterThanEqualToOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default(Image) >= new Image(); });
-
-        [Fact]
-        public void CannotCallGreaterThanEqualToOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Image() >= default(Image); });
-
-        [Fact]
-        public void CannotCallGreaterThanOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default(Image) > new Image(); });
-
-        [Fact]
-        public void CannotCallGreaterThanOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Image() > default(Image); });
-
-        [Fact]
-        public void CannotCallInequalityOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default != new Image(); });
-
-        [Fact]
-        public void CannotCallInequalityOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Image() != default; });
-
-        [Fact]
-        public void CannotCallLessThanEqualToOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default(Image) <= new Image(); });
-
-        [Fact]
-        public void CannotCallLessThanEqualToOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Image() <= default(Image); });
-
-        [Fact]
-        public void CannotCallLessThanOperatorWithNullLeft() => Assert.Throws<ArgumentNullException>(() => { var result = default(Image) < new Image(); });
-
-        [Fact]
-        public void CannotCallLessThanOperatorWithNullRight() => Assert.Throws<ArgumentNullException>(() => { var result = new Image() < default(Image); });
 
         [Fact]
         public void CanSetAndGetBytesPerPixel()
         {
             // Arrange
-            var testValue = 1705941639;
+            const int TestValue = 1705941639;
 
             // Act
-            _TestClass.BytesPerPixel = testValue;
+            _TestClass.BytesPerPixel = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.BytesPerPixel);
+            Assert.Equal(TestValue, _TestClass.BytesPerPixel);
         }
 
         [Fact]
         public void CanSetAndGetData()
         {
             // Arrange
-            var testValue = new byte[] { 226, 77, 47, 157 };
+            var TestValue = new byte[] { 226, 77, 47, 157 };
 
             // Act
-            _TestClass.Data = testValue;
+            _TestClass.Data = TestValue;
 
             // Assert
-            Assert.Same(testValue, _TestClass.Data);
+            Assert.Same(TestValue, _TestClass.Data);
         }
 
         [Fact]
         public void CanSetAndGetDescription()
         {
             // Arrange
-            var testValue = "TestValue1140185640";
+            const string TestValue = "TestValue1140185640";
 
             // Act
-            _TestClass.Description = testValue;
+            _TestClass.Description = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Description);
+            Assert.Equal(TestValue, _TestClass.Description);
         }
 
         [Fact]
         public void CanSetAndGetHeight()
         {
             // Arrange
-            var testValue = 1299733747;
+            const int TestValue = 1299733747;
 
             // Act
-            _TestClass.Height = testValue;
+            _TestClass.Height = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Height);
+            Assert.Equal(TestValue, _TestClass.Height);
         }
 
         [Fact]
         public void CanSetAndGetImageType()
         {
             // Arrange
-            var testValue = "TestValue1850853053";
+            const string TestValue = "TestValue1850853053";
 
             // Act
-            _TestClass.ImageType = testValue;
+            _TestClass.ImageType = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.ImageType);
+            Assert.Equal(TestValue, _TestClass.ImageType);
         }
 
         [Fact]
         public void CanSetAndGetWidth()
         {
             // Arrange
-            var testValue = 1265887064;
+            const int TestValue = 1265887064;
 
             // Act
-            _TestClass.Width = testValue;
+            _TestClass.Width = TestValue;
 
             // Assert
-            Assert.Equal(testValue, _TestClass.Width);
+            Assert.Equal(TestValue, _TestClass.Width);
         }
 
         [Fact]
         public void ImplementsIComparable_Image()
         {
             // Arrange
-            var baseValue = default(Image);
-            var equalToBaseValue = default(Image);
-            var greaterThanBaseValue = default(Image);
+            var BaseValue = new Image
+            {
+                BytesPerPixel = 1,
+                Width = 1,
+                Data = new byte[] { 1, 2, 3, 4 },
+                Description = "Description"
+            };
+
+            var EqualToBaseValue = new Image
+            {
+                BytesPerPixel = 1,
+                Width = 1,
+                Data = new byte[] { 1, 2, 3, 4 },
+                Description = "Description"
+            };
+
+            var GreaterThanBaseValue = new Image
+            {
+                BytesPerPixel = BaseValue.BytesPerPixel + 1,
+                Width = BaseValue.Width + 1,
+                Data = new byte[] { 1, 2, 3, 4 },
+                Description = "Description"
+            };
 
             // Assert
-            Assert.Equal(0, baseValue.CompareTo(equalToBaseValue));
-            Assert.True(baseValue.CompareTo(greaterThanBaseValue) < 0);
-            Assert.True(greaterThanBaseValue.CompareTo(baseValue) > 0);
+            Assert.Equal(0, BaseValue.CompareTo(EqualToBaseValue));
+            Assert.True(BaseValue.CompareTo(GreaterThanBaseValue) < 0);
+            Assert.True(GreaterThanBaseValue.CompareTo(BaseValue) > 0);
         }
 
         [Fact]
         public void ImplementsIEquatable_Image()
         {
             // Arrange
-            var same = new Image();
-            var different = new Image();
+            var TestClass = new Image
+            {
+                BytesPerPixel = 1,
+                Width = 1,
+                Data = new byte[] { 1, 2, 3, 4 },
+                Description = "Description"
+            };
+            var Same = new Image
+            {
+                BytesPerPixel = 1,
+                Width = 1,
+                Data = new byte[] { 1, 2, 3, 4 },
+                Description = "Description"
+            };
+
+            var Different = new Image
+            {
+                BytesPerPixel = 2,
+                Width = 2,
+                Data = new byte[] { 5, 6, 7, 8 },
+                Description = "Different"
+            };
 
             // Assert
-            Assert.False(_TestClass.Equals(default(object)));
-            Assert.False(_TestClass.Equals(new object()));
-            Assert.True(_TestClass.Equals((object)same));
-            Assert.False(_TestClass.Equals((object)different));
-            Assert.True(_TestClass.Equals(same));
-            Assert.False(_TestClass.Equals(different));
-            Assert.Equal(same.GetHashCode(), _TestClass.GetHashCode());
-            Assert.NotEqual(different.GetHashCode(), _TestClass.GetHashCode());
-            Assert.True(_TestClass == same);
-            Assert.False(_TestClass == different);
-            Assert.False(_TestClass != same);
-            Assert.True(_TestClass != different);
+            Assert.False(TestClass.Equals(default(object)));
+            Assert.False(TestClass.Equals(new object()));
+            Assert.True(TestClass.Equals((object)Same));
+            Assert.False(TestClass.Equals((object)Different));
+            Assert.True(TestClass.Equals(Same));
+            Assert.False(TestClass.Equals(Different));
+            Assert.Equal(Same.GetHashCode(), TestClass.GetHashCode());
+            Assert.NotEqual(Different.GetHashCode(), TestClass.GetHashCode());
+            Assert.True(TestClass == Same);
+            Assert.False(TestClass == Different);
+            Assert.False(TestClass != Same);
+            Assert.True(TestClass != Different);
         }
     }
 }

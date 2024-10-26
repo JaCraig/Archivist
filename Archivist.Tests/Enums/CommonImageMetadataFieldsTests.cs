@@ -1,232 +1,235 @@
+using Archivist.Enums;
+using Archivist.Tests.BaseClasses;
+using System;
+using Xunit;
+
 namespace Archivist.Tests.Enums
 {
-    using Archivist.Enums;
-    using System;
-    using Xunit;
-
-    public static class CommonImageMetadataFieldsTests
+    public class CommonImageMetadataFieldsTests : TestBaseClass
     {
+        protected override Type? ObjectType => typeof(CommonImageMetadataFields);
+
         [Fact]
-        public static void CanGetArtist()
+        public void CanGetArtist()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Artist);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Artist);
             Assert.Equal("Artist", CommonImageMetadataFields.Artist);
         }
 
         [Fact]
-        public static void CanGetBrightness()
+        public void CanGetBrightness()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Brightness);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Brightness);
             Assert.Equal("Brightness", CommonImageMetadataFields.Brightness);
         }
 
         [Fact]
-        public static void CanGetContrast()
+        public void CanGetContrast()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Contrast);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Contrast);
             Assert.Equal("Contrast", CommonImageMetadataFields.Contrast);
         }
 
         [Fact]
-        public static void CanGetConverter()
+        public void CanGetConverter()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Converter);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Converter);
             Assert.Equal("Converter", CommonImageMetadataFields.Converter);
         }
 
         [Fact]
-        public static void CanGetCopyright()
+        public void CanGetCopyright()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Copyright);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Copyright);
             Assert.Equal("Copyright", CommonImageMetadataFields.Copyright);
         }
 
         [Fact]
-        public static void CanGetDateTimeOriginal()
+        public void CanGetDateTimeOriginal()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.DateTimeOriginal);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.DateTimeOriginal);
             Assert.Equal("DateTimeOriginal", CommonImageMetadataFields.DateTimeOriginal);
         }
 
         [Fact]
-        public static void CanGetDescription()
+        public void CanGetDescription()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Description);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Description);
             Assert.Equal("ImageDescription", CommonImageMetadataFields.Description);
         }
 
         [Fact]
-        public static void CanGetDocumentName()
+        public void CanGetDocumentName()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.DocumentName);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.DocumentName);
             Assert.Equal("DocumentName", CommonImageMetadataFields.DocumentName);
         }
 
         [Fact]
-        public static void CanGetExposure()
+        public void CanGetExposure()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Exposure);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Exposure);
             Assert.Equal("Exposure", CommonImageMetadataFields.Exposure);
         }
 
         [Fact]
-        public static void CanGetHostComputer()
+        public void CanGetHostComputer()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.HostComputer);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.HostComputer);
             Assert.Equal("HostComputer", CommonImageMetadataFields.HostComputer);
         }
 
         [Fact]
-        public static void CanGetImageType()
+        public void CanGetImageType()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.ImageType);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.ImageType);
             Assert.Equal("ImageType", CommonImageMetadataFields.ImageType);
         }
 
         [Fact]
-        public static void CanGetMake()
+        public void CanGetMake()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Make);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Make);
             Assert.Equal("Make", CommonImageMetadataFields.Make);
         }
 
         [Fact]
-        public static void CanGetModel()
+        public void CanGetModel()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Model);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Model);
             Assert.Equal("Model", CommonImageMetadataFields.Model);
         }
 
         [Fact]
-        public static void CanGetMoireFilter()
+        public void CanGetMoireFilter()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.MoireFilter);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.MoireFilter);
             Assert.Equal("MoireFilter", CommonImageMetadataFields.MoireFilter);
         }
 
         [Fact]
-        public static void CanGetOffsetTimeOriginal()
+        public void CanGetOffsetTimeOriginal()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.OffsetTimeOriginal);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.OffsetTimeOriginal);
             Assert.Equal("OffsetTimeOriginal", CommonImageMetadataFields.OffsetTimeOriginal);
         }
 
         [Fact]
-        public static void CanGetOrientation()
+        public void CanGetOrientation()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Orientation);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Orientation);
             Assert.Equal("Orientation", CommonImageMetadataFields.Orientation);
         }
 
         [Fact]
-        public static void CanGetOwnerName()
+        public void CanGetOwnerName()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.OwnerName);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.OwnerName);
             Assert.Equal("OwnerName", CommonImageMetadataFields.OwnerName);
         }
 
         [Fact]
-        public static void CanGetPhotographer()
+        public void CanGetPhotographer()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Photographer);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Photographer);
             Assert.Equal("Photographer", CommonImageMetadataFields.Photographer);
         }
 
         [Fact]
-        public static void CanGetProcessingSoftware()
+        public void CanGetProcessingSoftware()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.ProcessingSoftware);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.ProcessingSoftware);
             Assert.Equal("ProcessingSoftware", CommonImageMetadataFields.ProcessingSoftware);
         }
 
         [Fact]
-        public static void CanGetRawFile()
+        public void CanGetRawFile()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.RawFile);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.RawFile);
             Assert.Equal("RawFile", CommonImageMetadataFields.RawFile);
         }
 
         [Fact]
-        public static void CanGetSaturation()
+        public void CanGetSaturation()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Saturation);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Saturation);
             Assert.Equal("Saturation", CommonImageMetadataFields.Saturation);
         }
 
         [Fact]
-        public static void CanGetSecurityClassification()
+        public void CanGetSecurityClassification()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.SecurityClassification);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.SecurityClassification);
             Assert.Equal("SecurityClassification", CommonImageMetadataFields.SecurityClassification);
         }
 
         [Fact]
-        public static void CanGetSerialNumber()
+        public void CanGetSerialNumber()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.SerialNumber);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.SerialNumber);
             Assert.Equal("SerialNumber", CommonImageMetadataFields.SerialNumber);
         }
 
         [Fact]
-        public static void CanGetShadows()
+        public void CanGetShadows()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Shadows);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Shadows);
             Assert.Equal("Shadows", CommonImageMetadataFields.Shadows);
         }
 
         [Fact]
-        public static void CanGetSharpness()
+        public void CanGetSharpness()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Sharpness);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Sharpness);
             Assert.Equal("Sharpness", CommonImageMetadataFields.Sharpness);
         }
 
         [Fact]
-        public static void CanGetSmoothness()
+        public void CanGetSmoothness()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Smoothness);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Smoothness);
             Assert.Equal("Smoothness", CommonImageMetadataFields.Smoothness);
         }
 
         [Fact]
-        public static void CanGetSoftware()
+        public void CanGetSoftware()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.Software);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.Software);
             Assert.Equal("Software", CommonImageMetadataFields.Software);
         }
 
         [Fact]
-        public static void CanGetWhiteBalance()
+        public void CanGetWhiteBalance()
         {
             // Assert
-            Assert.IsType<string>(CommonImageMetadataFields.WhiteBalance);
+            _ = Assert.IsType<string>(CommonImageMetadataFields.WhiteBalance);
             Assert.Equal("WhiteBalance", CommonImageMetadataFields.WhiteBalance);
         }
     }

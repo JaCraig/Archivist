@@ -1,72 +1,75 @@
+using Archivist.Enums;
+using Archivist.Tests.BaseClasses;
+using System;
+using Xunit;
+
 namespace Archivist.Tests.Enums
 {
-    using Archivist.Enums;
-    using System;
-    using Xunit;
-
-    public static class ImageTypesTests
+    public class ImageTypesTests : TestBaseClass
     {
+        protected override Type? ObjectType => typeof(ImageTypes);
+
         [Fact]
-        public static void CanGetBmp()
+        public void CanGetBmp()
         {
             // Assert
-            Assert.IsType<string>(ImageTypes.Bmp);
+            _ = Assert.IsType<string>(ImageTypes.Bmp);
             Assert.Equal("bmp", ImageTypes.Bmp);
         }
 
         [Fact]
-        public static void CanGetGif()
+        public void CanGetGif()
         {
             // Assert
-            Assert.IsType<string>(ImageTypes.Gif);
+            _ = Assert.IsType<string>(ImageTypes.Gif);
             Assert.Equal("gif", ImageTypes.Gif);
         }
 
         [Fact]
-        public static void CanGetHeif()
+        public void CanGetHeif()
         {
             // Assert
-            Assert.IsType<string>(ImageTypes.Heif);
+            _ = Assert.IsType<string>(ImageTypes.Heif);
             Assert.Equal("heif", ImageTypes.Heif);
         }
 
         [Fact]
-        public static void CanGetIco()
+        public void CanGetIco()
         {
             // Assert
-            Assert.IsType<string>(ImageTypes.Ico);
+            _ = Assert.IsType<string>(ImageTypes.Ico);
             Assert.Equal("ico", ImageTypes.Ico);
         }
 
         [Fact]
-        public static void CanGetJpg()
+        public void CanGetJpg()
         {
             // Assert
-            Assert.IsType<string>(ImageTypes.Jpg);
+            _ = Assert.IsType<string>(ImageTypes.Jpg);
             Assert.Equal("jpg", ImageTypes.Jpg);
         }
 
         [Fact]
-        public static void CanGetPng()
+        public void CanGetPng()
         {
             // Assert
-            Assert.IsType<string>(ImageTypes.Png);
+            _ = Assert.IsType<string>(ImageTypes.Png);
             Assert.Equal("png", ImageTypes.Png);
         }
 
         [Fact]
-        public static void CanGetWbmp()
+        public void CanGetWbmp()
         {
             // Assert
-            Assert.IsType<string>(ImageTypes.Wbmp);
+            _ = Assert.IsType<string>(ImageTypes.Wbmp);
             Assert.Equal("wbmp", ImageTypes.Wbmp);
         }
 
         [Fact]
-        public static void CanGetWebp()
+        public void CanGetWebp()
         {
             // Assert
-            Assert.IsType<string>(ImageTypes.Webp);
+            _ = Assert.IsType<string>(ImageTypes.Webp);
             Assert.Equal("webp", ImageTypes.Webp);
         }
     }

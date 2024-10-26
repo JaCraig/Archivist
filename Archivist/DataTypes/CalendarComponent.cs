@@ -147,7 +147,7 @@ namespace Archivist.DataTypes
             get
             {
                 if (DateTime.TryParse(this[CommonCalendarFields.DateStamp].FirstOrDefault()?.Value.FormatString("####/##/## ##:##"), CultureInfo.CurrentCulture, DateTimeStyles.None, out DateTime Result))
-                    return Result + CurrentTimeZone.GetUtcOffset(Result); ;
+                    return Result + CurrentTimeZone.GetUtcOffset(Result);
                 return DateTime.UtcNow + CurrentTimeZone.GetUtcOffset(DateTime.Now);
             }
             set
