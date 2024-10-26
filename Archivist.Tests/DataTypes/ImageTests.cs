@@ -145,10 +145,10 @@ namespace Archivist.Tests.DataTypes
             var right = new Image();
 
             // Act
-            _ = left <= right;
+            var result = left <= right;
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.True(result);
         }
 
         [Fact]
@@ -159,20 +159,20 @@ namespace Archivist.Tests.DataTypes
             var right = new Image();
 
             // Act
-            _ = left < right;
+            var result = left < right;
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.False(result);
         }
 
         [Fact]
         public void CanCallToFileType()
         {
             // Act
-            _ = _TestClass.ToFileType<TFile>();
+            var result = _TestClass.ToFileType<Image>();
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(result);
         }
 
         [Fact]

@@ -32,19 +32,38 @@ namespace Archivist.Tests.Formats.Image
         [Fact]
         public void CanGetExtensions()
         {
-            // Assert
-            Assert.IsType<string[]>(_testClass.Extensions);
+            // Act
+            var result = _testClass.Extensions;
 
-            throw new NotImplementedException("Create or modify test");
+            // Assert
+            Assert.NotNull(result);
+            Assert.Contains("GIF", result);
+            Assert.Contains("JPG", result);
+            Assert.Contains("JPEG", result);
+            Assert.Contains("BMP", result);
+            Assert.Contains("PNG", result);
+            Assert.Contains("WEBP", result);
+            Assert.Contains("ICO", result);
+            Assert.Contains("WBMP", result);
+            Assert.Contains("HEIF", result);
         }
 
         [Fact]
         public void CanGetMimeTypes()
         {
-            // Assert
-            Assert.IsType<string[]>(_testClass.MimeTypes);
+            // Act
+            var result = _testClass.MimeTypes;
 
-            throw new NotImplementedException("Create or modify test");
+            // Assert
+            Assert.NotNull(result);
+            Assert.Contains("IMAGE/GIF", result);
+            Assert.Contains("IMAGE/JPEG", result);
+            Assert.Contains("IMAGE/BMP", result);
+            Assert.Contains("IMAGE/PNG", result);
+            Assert.Contains("IMAGE/WEBP", result);
+            Assert.Contains("IMAGE/ICO", result);
+            Assert.Contains("IMAGE/WBMP", result);
+            Assert.Contains("IMAGE/HEIF", result);
         }
     }
 }

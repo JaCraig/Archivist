@@ -41,7 +41,7 @@ namespace Archivist.Tests.Formats.Image
             var result = _testClass.InternalCanRead(stream);
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.True(result);
         }
 
         [Fact]
@@ -54,7 +54,7 @@ namespace Archivist.Tests.Formats.Image
             var result = await _testClass.ReadAsync(stream);
 
             // Assert
-            throw new NotImplementedException("Create or modify test");
+            Assert.NotNull(result);
         }
 
         [Fact]
@@ -62,8 +62,7 @@ namespace Archivist.Tests.Formats.Image
         {
             // Assert
             Assert.IsType<byte[]>(_testClass.HeaderInfo);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Empty(_testClass.HeaderInfo);
         }
     }
 }

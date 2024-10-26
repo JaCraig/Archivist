@@ -11,8 +11,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(ImageTypes.Bmp);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("bmp", ImageTypes.Bmp);
         }
 
         [Fact]
@@ -20,8 +19,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(ImageTypes.Gif);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("gif", ImageTypes.Gif);
         }
 
         [Fact]
@@ -29,8 +27,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(ImageTypes.Heif);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("heif", ImageTypes.Heif);
         }
 
         [Fact]
@@ -38,8 +35,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(ImageTypes.Ico);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("ico", ImageTypes.Ico);
         }
 
         [Fact]
@@ -47,8 +43,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(ImageTypes.Jpg);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("jpg", ImageTypes.Jpg);
         }
 
         [Fact]
@@ -56,8 +51,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(ImageTypes.Png);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("png", ImageTypes.Png);
         }
 
         [Fact]
@@ -65,8 +59,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(ImageTypes.Wbmp);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("wbmp", ImageTypes.Wbmp);
         }
 
         [Fact]
@@ -74,8 +67,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(ImageTypes.Webp);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("webp", ImageTypes.Webp);
         }
     }
 }

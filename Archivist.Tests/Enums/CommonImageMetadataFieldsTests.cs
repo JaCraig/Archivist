@@ -11,8 +11,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Artist);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Artist", CommonImageMetadataFields.Artist);
         }
 
         [Fact]
@@ -20,8 +19,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Brightness);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Brightness", CommonImageMetadataFields.Brightness);
         }
 
         [Fact]
@@ -29,8 +27,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Contrast);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Contrast", CommonImageMetadataFields.Contrast);
         }
 
         [Fact]
@@ -38,8 +35,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Converter);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Converter", CommonImageMetadataFields.Converter);
         }
 
         [Fact]
@@ -47,8 +43,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Copyright);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Copyright", CommonImageMetadataFields.Copyright);
         }
 
         [Fact]
@@ -56,8 +51,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.DateTimeOriginal);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("DateTimeOriginal", CommonImageMetadataFields.DateTimeOriginal);
         }
 
         [Fact]
@@ -65,8 +59,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Description);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("ImageDescription", CommonImageMetadataFields.Description);
         }
 
         [Fact]
@@ -74,8 +67,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.DocumentName);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("DocumentName", CommonImageMetadataFields.DocumentName);
         }
 
         [Fact]
@@ -83,8 +75,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Exposure);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Exposure", CommonImageMetadataFields.Exposure);
         }
 
         [Fact]
@@ -92,8 +83,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.HostComputer);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("HostComputer", CommonImageMetadataFields.HostComputer);
         }
 
         [Fact]
@@ -101,8 +91,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.ImageType);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("ImageType", CommonImageMetadataFields.ImageType);
         }
 
         [Fact]
@@ -110,8 +99,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Make);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Make", CommonImageMetadataFields.Make);
         }
 
         [Fact]
@@ -119,8 +107,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Model);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Model", CommonImageMetadataFields.Model);
         }
 
         [Fact]
@@ -128,8 +115,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.MoireFilter);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("MoireFilter", CommonImageMetadataFields.MoireFilter);
         }
 
         [Fact]
@@ -137,8 +123,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.OffsetTimeOriginal);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("OffsetTimeOriginal", CommonImageMetadataFields.OffsetTimeOriginal);
         }
 
         [Fact]
@@ -146,8 +131,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Orientation);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Orientation", CommonImageMetadataFields.Orientation);
         }
 
         [Fact]
@@ -155,8 +139,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.OwnerName);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("OwnerName", CommonImageMetadataFields.OwnerName);
         }
 
         [Fact]
@@ -164,8 +147,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Photographer);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Photographer", CommonImageMetadataFields.Photographer);
         }
 
         [Fact]
@@ -173,8 +155,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.ProcessingSoftware);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("ProcessingSoftware", CommonImageMetadataFields.ProcessingSoftware);
         }
 
         [Fact]
@@ -182,8 +163,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.RawFile);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("RawFile", CommonImageMetadataFields.RawFile);
         }
 
         [Fact]
@@ -191,8 +171,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Saturation);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Saturation", CommonImageMetadataFields.Saturation);
         }
 
         [Fact]
@@ -200,8 +179,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.SecurityClassification);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("SecurityClassification", CommonImageMetadataFields.SecurityClassification);
         }
 
         [Fact]
@@ -209,8 +187,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.SerialNumber);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("SerialNumber", CommonImageMetadataFields.SerialNumber);
         }
 
         [Fact]
@@ -218,8 +195,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Shadows);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Shadows", CommonImageMetadataFields.Shadows);
         }
 
         [Fact]
@@ -227,8 +203,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Sharpness);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Sharpness", CommonImageMetadataFields.Sharpness);
         }
 
         [Fact]
@@ -236,8 +211,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Smoothness);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Smoothness", CommonImageMetadataFields.Smoothness);
         }
 
         [Fact]
@@ -245,8 +219,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.Software);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("Software", CommonImageMetadataFields.Software);
         }
 
         [Fact]
@@ -254,8 +227,7 @@ namespace Archivist.Tests.Enums
         {
             // Assert
             Assert.IsType<string>(CommonImageMetadataFields.WhiteBalance);
-
-            throw new NotImplementedException("Create or modify test");
+            Assert.Equal("WhiteBalance", CommonImageMetadataFields.WhiteBalance);
         }
     }
 }
