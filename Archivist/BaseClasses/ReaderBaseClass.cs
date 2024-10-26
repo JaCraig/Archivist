@@ -23,7 +23,7 @@ namespace Archivist.BaseClasses
         /// <returns><c>true</c> if the reader can read the stream; otherwise, <c>false</c>.</returns>
         public bool CanRead(Stream? stream)
         {
-            if (stream is null)
+            if (stream is null || !IsValidStream(stream))
                 return false;
             if (HeaderInfo.Length == 0)
                 return InternalCanRead(stream);
@@ -67,6 +67,33 @@ namespace Archivist.BaseClasses
         /// A task representing the asynchronous operation that returns the generic file.
         /// </returns>
         public abstract Task<IGenericFile?> ReadAsync(Stream? stream);
+
+        /// <summary>
+        /// Validates if the provided stream is readable, has a non-zero length, and supports seeking.
+        /// </summary>
+        /// <param name="stream">The stream to validate.</param>
+        /// <returns><c>true</c> if the stream is valid; otherwise, <c>false</c>.</returns>
+        protected static bool IsValidStream(Stream? stream)
+        {
+            if (stream?.CanRead != true)
+                return false;
+            if (stream.Length == 0)
+                return false;
+            if (!stream.CanSeek)
+                return false;
+            try
+            {
+                var TempBuffer = ArrayPool<byte>.Shared.Rent(1);
+                _ = stream.Seek(0, SeekOrigin.Begin);
+                _ = stream.Read(TempBuffer, 0, 1);
+                _ = stream.Seek(0, SeekOrigin.Begin);
+            }
+            catch
+            {
+                return false;
+            }
+            return true;
+        }
 
         /// <summary>
         /// Finds the start index of the file.

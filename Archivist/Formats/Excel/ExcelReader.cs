@@ -72,7 +72,7 @@ namespace Archivist.Formats.Excel
         /// <returns>True if the reader can read the file, false otherwise.</returns>
         public override bool InternalCanRead(Stream? stream)
         {
-            if (stream?.CanRead != true)
+            if (stream is null || !IsValidStream(stream))
                 return false;
             try
             {
@@ -97,7 +97,7 @@ namespace Archivist.Formats.Excel
         public override Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             var ReturnValue = new DataTypes.Tables(_Converter);
-            if (stream?.CanRead != true)
+            if (stream is null || !IsValidStream(stream))
                 return Task.FromResult<IGenericFile?>(ReturnValue);
 
             // Open the excel document

@@ -49,7 +49,7 @@ namespace Archivist.Formats.JSON
         /// <returns><c>true</c> if the reader can read the stream; otherwise, <c>false</c>.</returns>
         public override bool InternalCanRead(Stream? stream)
         {
-            if (stream is null)
+            if (stream is null || !IsValidStream(stream))
                 return false;
             try
             {
@@ -73,7 +73,7 @@ namespace Archivist.Formats.JSON
         /// <returns>The parsed JSON file.</returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            if (stream?.CanRead != true)
+            if (stream is null || !IsValidStream(stream))
                 return new StructuredObject(_Converter, new ExpandoObject());
             var StreamData = await stream.ReadAllAsync().ConfigureAwait(false);
             if (string.IsNullOrEmpty(StreamData))

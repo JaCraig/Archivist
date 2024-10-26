@@ -70,7 +70,7 @@ namespace Archivist.Formats.Delimited
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             var ReturnValue = new Table(_Converter);
-            if (stream?.CanRead != true)
+            if (stream is null || !IsValidStream(stream))
                 return ReturnValue;
             var FileContent = await stream.ReadAllAsync().ConfigureAwait(false);
             var Delimiter = "";
