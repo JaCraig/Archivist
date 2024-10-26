@@ -645,6 +645,22 @@ references:
   isSpec: "True"
   fullName: Archivist.BaseClasses.ReaderBaseClass.InternalCanRead
   nameWithType: ReaderBaseClass.InternalCanRead
+- uid: Archivist.BaseClasses.ReaderBaseClass.IsValidStream(System.IO.Stream)
+  name: IsValidStream(Stream?)
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_IsValidStream_System_IO_Stream_
+  commentId: M:Archivist.BaseClasses.ReaderBaseClass.IsValidStream(System.IO.Stream)
+  name.vb: IsValidStream(Stream)
+  fullName: Archivist.BaseClasses.ReaderBaseClass.IsValidStream(System.IO.Stream?)
+  fullName.vb: Archivist.BaseClasses.ReaderBaseClass.IsValidStream(System.IO.Stream)
+  nameWithType: ReaderBaseClass.IsValidStream(Stream?)
+  nameWithType.vb: ReaderBaseClass.IsValidStream(Stream)
+- uid: Archivist.BaseClasses.ReaderBaseClass.IsValidStream*
+  name: IsValidStream
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_IsValidStream_
+  commentId: Overload:Archivist.BaseClasses.ReaderBaseClass.IsValidStream
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.ReaderBaseClass.IsValidStream
+  nameWithType: ReaderBaseClass.IsValidStream
 - uid: Archivist.BaseClasses.ReaderBaseClass.ReadAsync(System.IO.Stream)
   name: ReadAsync(Stream?)
   href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_ReadAsync_System_IO_Stream_
@@ -12829,15 +12845,15 @@ references:
   commentId: T:Archivist.FormatManager
   fullName: Archivist.FormatManager
   nameWithType: FormatManager
-- uid: Archivist.FormatManager.#ctor(System.Collections.Generic.IEnumerable{Archivist.Interfaces.IFormat})
-  name: FormatManager(IEnumerable<IFormat>?)
-  href: api/Archivist.FormatManager.html#Archivist_FormatManager__ctor_System_Collections_Generic_IEnumerable_Archivist_Interfaces_IFormat__
-  commentId: M:Archivist.FormatManager.#ctor(System.Collections.Generic.IEnumerable{Archivist.Interfaces.IFormat})
-  name.vb: New(IEnumerable(Of IFormat))
-  fullName: Archivist.FormatManager.FormatManager(System.Collections.Generic.IEnumerable<Archivist.Interfaces.IFormat>?)
-  fullName.vb: Archivist.FormatManager.New(System.Collections.Generic.IEnumerable(Of Archivist.Interfaces.IFormat))
-  nameWithType: FormatManager.FormatManager(IEnumerable<IFormat>?)
-  nameWithType.vb: FormatManager.New(IEnumerable(Of IFormat))
+- uid: Archivist.FormatManager.#ctor(System.Collections.Generic.IEnumerable{Archivist.Interfaces.IFormat},System.Collections.Generic.IEnumerable{Archivist.Interfaces.ISubProcessor})
+  name: FormatManager(IEnumerable<IFormat>?, IEnumerable<ISubProcessor>?)
+  href: api/Archivist.FormatManager.html#Archivist_FormatManager__ctor_System_Collections_Generic_IEnumerable_Archivist_Interfaces_IFormat__System_Collections_Generic_IEnumerable_Archivist_Interfaces_ISubProcessor__
+  commentId: M:Archivist.FormatManager.#ctor(System.Collections.Generic.IEnumerable{Archivist.Interfaces.IFormat},System.Collections.Generic.IEnumerable{Archivist.Interfaces.ISubProcessor})
+  name.vb: New(IEnumerable(Of IFormat), IEnumerable(Of ISubProcessor))
+  fullName: Archivist.FormatManager.FormatManager(System.Collections.Generic.IEnumerable<Archivist.Interfaces.IFormat>?, System.Collections.Generic.IEnumerable<Archivist.Interfaces.ISubProcessor>?)
+  fullName.vb: Archivist.FormatManager.New(System.Collections.Generic.IEnumerable(Of Archivist.Interfaces.IFormat), System.Collections.Generic.IEnumerable(Of Archivist.Interfaces.ISubProcessor))
+  nameWithType: FormatManager.FormatManager(IEnumerable<IFormat>?, IEnumerable<ISubProcessor>?)
+  nameWithType.vb: FormatManager.New(IEnumerable(Of IFormat), IEnumerable(Of ISubProcessor))
 - uid: Archivist.FormatManager.#ctor*
   name: FormatManager
   href: api/Archivist.FormatManager.html#Archivist_FormatManager__ctor_
@@ -14846,6 +14862,25 @@ references:
   fullName.vb: Archivist.Interfaces.IObjectConvertable.ConvertTo(Of TObject)()
   nameWithType: IObjectConvertable.ConvertTo<TObject>()
   nameWithType.vb: IObjectConvertable.ConvertTo(Of TObject)()
+- uid: Archivist.Interfaces.ISubProcessor
+  name: ISubProcessor
+  href: api/Archivist.Interfaces.ISubProcessor.html
+  commentId: T:Archivist.Interfaces.ISubProcessor
+  fullName: Archivist.Interfaces.ISubProcessor
+  nameWithType: ISubProcessor
+- uid: Archivist.Interfaces.ISubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: Process(IGenericFile, Stream)
+  href: api/Archivist.Interfaces.ISubProcessor.html#Archivist_Interfaces_ISubProcessor_Process_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.Interfaces.ISubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  fullName: Archivist.Interfaces.ISubProcessor.Process(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: ISubProcessor.Process(IGenericFile, Stream)
+- uid: Archivist.Interfaces.ISubProcessor.Process*
+  name: Process
+  href: api/Archivist.Interfaces.ISubProcessor.html#Archivist_Interfaces_ISubProcessor_Process_
+  commentId: Overload:Archivist.Interfaces.ISubProcessor.Process
+  isSpec: "True"
+  fullName: Archivist.Interfaces.ISubProcessor.Process
+  nameWithType: ISubProcessor.Process
 - uid: Archivist.Modules
   name: Archivist.Modules
   href: api/Archivist.Modules.html
@@ -14983,3 +15018,47 @@ references:
   isSpec: "True"
   fullName: Archivist.Options.ExcelOptions.FirstRowIsColumnHeaders
   nameWithType: ExcelOptions.FirstRowIsColumnHeaders
+- uid: Archivist.SubProcessors
+  name: Archivist.SubProcessors
+  href: api/Archivist.SubProcessors.html
+  commentId: N:Archivist.SubProcessors
+  fullName: Archivist.SubProcessors
+  nameWithType: Archivist.SubProcessors
+- uid: Archivist.SubProcessors.MetadataSubProcessor
+  name: MetadataSubProcessor
+  href: api/Archivist.SubProcessors.MetadataSubProcessor.html
+  commentId: T:Archivist.SubProcessors.MetadataSubProcessor
+  fullName: Archivist.SubProcessors.MetadataSubProcessor
+  nameWithType: MetadataSubProcessor
+- uid: Archivist.SubProcessors.MetadataSubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: Process(IGenericFile, Stream)
+  href: api/Archivist.SubProcessors.MetadataSubProcessor.html#Archivist_SubProcessors_MetadataSubProcessor_Process_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.SubProcessors.MetadataSubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  fullName: Archivist.SubProcessors.MetadataSubProcessor.Process(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: MetadataSubProcessor.Process(IGenericFile, Stream)
+- uid: Archivist.SubProcessors.MetadataSubProcessor.Process*
+  name: Process
+  href: api/Archivist.SubProcessors.MetadataSubProcessor.html#Archivist_SubProcessors_MetadataSubProcessor_Process_
+  commentId: Overload:Archivist.SubProcessors.MetadataSubProcessor.Process
+  isSpec: "True"
+  fullName: Archivist.SubProcessors.MetadataSubProcessor.Process
+  nameWithType: MetadataSubProcessor.Process
+- uid: Archivist.SubProcessors.OcrSubProcessor
+  name: OcrSubProcessor
+  href: api/Archivist.SubProcessors.OcrSubProcessor.html
+  commentId: T:Archivist.SubProcessors.OcrSubProcessor
+  fullName: Archivist.SubProcessors.OcrSubProcessor
+  nameWithType: OcrSubProcessor
+- uid: Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: Process(IGenericFile, Stream)
+  href: api/Archivist.SubProcessors.OcrSubProcessor.html#Archivist_SubProcessors_OcrSubProcessor_Process_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  fullName: Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: OcrSubProcessor.Process(IGenericFile, Stream)
+- uid: Archivist.SubProcessors.OcrSubProcessor.Process*
+  name: Process
+  href: api/Archivist.SubProcessors.OcrSubProcessor.html#Archivist_SubProcessors_OcrSubProcessor_Process_
+  commentId: Overload:Archivist.SubProcessors.OcrSubProcessor.Process
+  isSpec: "True"
+  fullName: Archivist.SubProcessors.OcrSubProcessor.Process
+  nameWithType: OcrSubProcessor.Process
