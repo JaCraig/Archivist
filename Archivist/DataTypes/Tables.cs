@@ -99,6 +99,16 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Converts the Tables to an Image.
+        /// </summary>
+        /// <param name="file">The Tables to convert.</param>
+        /// <returns>The Image converted from the Tables.</returns>
+        public static implicit operator Image?(Tables? file)
+        {
+            return AnythingToImageConverter.Convert(file);
+        }
+
+        /// <summary>
         /// Converts the Tables to a StructuredObject.
         /// </summary>
         /// <param name="file">The Tables to convert.</param>
@@ -395,12 +405,14 @@ namespace Archivist.DataTypes
                 ReturnValue = (Card?)this;
             else if (FileType == typeof(Calendar))
                 ReturnValue = (Calendar?)this;
+            else if (FileType == typeof(Feed))
+                ReturnValue = (Feed?)this;
+            else if (FileType == typeof(Image))
+                ReturnValue = (Image?)this;
             else if (FileType == typeof(Tables))
                 ReturnValue = this;
             else if (FileType == typeof(Table))
                 ReturnValue = (Table?)this;
-            else if (FileType == typeof(Feed))
-                ReturnValue = (Feed?)this;
             else if (FileType == typeof(Text))
                 ReturnValue = (Text?)this;
             else if (FileType == typeof(StructuredObject))

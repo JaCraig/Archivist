@@ -112,6 +112,16 @@ namespace Archivist.DataTypes
         }
 
         /// <summary>
+        /// Converts the Calendar to an image.
+        /// </summary>
+        /// <param name="file">The Calendar to convert.</param>
+        /// <returns>The image representation of the Calendar.</returns>
+        public static implicit operator Image?(Calendar? file)
+        {
+            return AnythingToImageConverter.Convert(file);
+        }
+
+        /// <summary>
         /// Converts the Calendar to a structured object.
         /// </summary>
         /// <param name="file">The Calendar to convert.</param>
@@ -361,6 +371,8 @@ namespace Archivist.DataTypes
                 ReturnValue = (Feed?)this;
             else if (FileType == typeof(Card))
                 ReturnValue = (Card?)this;
+            else if (FileType == typeof(Image))
+                ReturnValue = (Image?)this;
             else if (FileType == typeof(Table))
                 ReturnValue = (Table?)this;
             else if (FileType == typeof(Tables))

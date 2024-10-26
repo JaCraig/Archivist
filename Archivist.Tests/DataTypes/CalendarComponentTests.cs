@@ -899,7 +899,7 @@ namespace Archivist.Tests.DataTypes
         {
             // Arrange
             var TestClass = new CalendarComponent(_Parent);
-            var TestValue = new KeyValueField(default!);
+            var TestValue = new KeyValueField(default);
             TestClass.Fields.Add(new KeyValueField("A", Array.Empty<KeyValueParameter>(), "B"));
 
             // Assert

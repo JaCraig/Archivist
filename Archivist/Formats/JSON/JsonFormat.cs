@@ -26,7 +26,7 @@ namespace Archivist.Formats.JSON
         public override string[] Extensions { get; } = new[] { "JSON" };
 
         /// <summary>
-        /// Gets the MIME types associated with the Excel format.
+        /// Gets the MIME types associated with the JSON format.
         /// </summary>
         public override string[] MimeTypes { get; } = new[] { "APPLICATION/JSON" };
     }
