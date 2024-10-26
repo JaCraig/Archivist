@@ -50,7 +50,7 @@ namespace Archivist.Formats.XML
         /// <returns>The parsed JSON file.</returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            if (stream?.CanRead != true)
+            if (stream is null || !IsValidStream(stream))
                 return new StructuredObject(_Converter, new ExpandoObject());
             var StreamData = await stream.ReadAllAsync().ConfigureAwait(false);
             if (string.IsNullOrEmpty(StreamData))

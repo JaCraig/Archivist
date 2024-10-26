@@ -41,7 +41,7 @@ namespace Archivist.Formats.Image
         /// <returns><c>true</c> if the reader can read the stream; otherwise, <c>false</c>.</returns>
         public override bool InternalCanRead(Stream? stream)
         {
-            if (stream?.CanRead != true)
+            if (stream is null || !IsValidStream(stream))
                 return false;
             try
             {
@@ -63,7 +63,7 @@ namespace Archivist.Formats.Image
         public override Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             var ReturnValue = new DataTypes.Image(_Converter);
-            if (stream?.CanRead != true || (stream?.Length ?? 0) == 0)
+            if (stream is null || !IsValidStream(stream))
                 return Task.FromResult<IGenericFile?>(ReturnValue);
             try
             {
@@ -85,7 +85,7 @@ namespace Archivist.Formats.Image
         /// <param name="returnValue">The image object</param>
         private static void GetImageData(Stream? stream, DataTypes.Image returnValue)
         {
-            if (stream?.CanRead != true || stream?.CanSeek != true)
+            if (stream is null || !IsValidStream(stream))
                 return;
             // Get the image data
             _ = stream.Seek(0, SeekOrigin.Begin);
@@ -105,7 +105,7 @@ namespace Archivist.Formats.Image
         /// <param name="returnValue">The image object</param>
         private static void GetImageFormat(Stream? stream, DataTypes.Image returnValue)
         {
-            if (stream?.CanRead != true || stream?.CanSeek != true)
+            if (stream is null || !IsValidStream(stream))
                 return;
             // Get the image type
             _ = stream.Seek(0, SeekOrigin.Begin);
@@ -125,7 +125,7 @@ namespace Archivist.Formats.Image
         /// <param name="returnValue">The image object</param>
         private static void GetImageMetadata(Stream? stream, DataTypes.Image returnValue)
         {
-            if (stream?.CanRead != true || stream?.CanSeek != true)
+            if (stream is null || !IsValidStream(stream))
                 return;
             _ = stream.Seek(0, SeekOrigin.Begin);
             foreach (MetadataExtractor.Directory Directory in ImageMetadataReader.ReadMetadata(stream))

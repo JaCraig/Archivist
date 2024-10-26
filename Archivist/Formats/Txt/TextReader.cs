@@ -43,6 +43,8 @@ namespace Archivist.Formats.Txt
         /// </returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
+            if (stream is null || !IsValidStream(stream))
+                return new Text(_Converter, "", "");
             var Content = await GetDataAsync(stream).ConfigureAwait(false);
             return new Text(_Converter, Content, Content.Left(30));
         }
@@ -57,7 +59,7 @@ namespace Archivist.Formats.Txt
         /// </returns>
         private static async Task<string> GetDataAsync(Stream? stream)
         {
-            if (stream?.CanRead != true)
+            if (stream is null || !IsValidStream(stream))
                 return "";
             try
             {

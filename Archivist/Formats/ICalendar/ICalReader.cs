@@ -59,7 +59,7 @@ namespace Archivist.Formats.ICalendar
         /// </returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            if (stream?.CanRead != true)
+            if (stream is null || !IsValidStream(stream))
                 return new Calendar(Converter);
             var ReturnValue = new Calendar(Converter);
             var Content = await GetDataAsync(stream).ConfigureAwait(false);
