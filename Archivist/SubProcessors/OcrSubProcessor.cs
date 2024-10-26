@@ -1,6 +1,7 @@
 using Archivist.Interfaces;
 using System.IO;
 using Tesseract;
+using System;
 
 namespace Archivist.SubProcessors
 {

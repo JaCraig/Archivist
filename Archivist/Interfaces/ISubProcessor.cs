@@ -1,3 +1,5 @@
+using System.IO;
+
 namespace Archivist.Interfaces
 {
     /// <summary>

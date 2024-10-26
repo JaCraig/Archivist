@@ -1,4 +1,5 @@
 using Archivist.Interfaces;
+using System;
 using System.IO;
 
 namespace Archivist.SubProcessors
@@ -26,7 +27,7 @@ namespace Archivist.SubProcessors
                 // Extract metadata from the image file and add it to the file's metadata
                 file.Metadata["Width"] = imageFile.Width.ToString();
                 file.Metadata["Height"] = imageFile.Height.ToString();
-                file.Metadata["Format"] = imageFile.Format.ToString();
+                file.Metadata["Format"] = imageFile.ImageType.ToString();
             }
 
             return file;
