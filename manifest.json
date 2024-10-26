@@ -72,6 +72,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.AnythingToImageConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.AnythingToImageConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.Converters.AnythingToTextConverter.yml",
       "output": {
         ".html": {
@@ -236,6 +246,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.Converters.FeedToTablesConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Converters.ImageToAnythingConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Converters.ImageToAnythingConverter.html"
         }
       },
       "version": ""
@@ -532,6 +552,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.DataTypes.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.DataTypes.Image.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.DataTypes.KeyValueField.yml",
       "output": {
         ".html": {
@@ -656,6 +686,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.Enums.CommonCardFields.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Enums.CommonImageMetadataFields.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Enums.CommonImageMetadataFields.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Enums.ImageTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Enums.ImageTypes.html"
         }
       },
       "version": ""
@@ -856,6 +906,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.Formats.ICalendar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Image.ImageFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Image.ImageFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Image.ImageReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Image.ImageReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Image.ImageWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Image.ImageWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.Image.html"
         }
       },
       "version": ""

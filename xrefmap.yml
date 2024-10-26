@@ -705,6 +705,53 @@ references:
   commentId: N:Archivist.Converters
   fullName: Archivist.Converters
   nameWithType: Archivist.Converters
+- uid: Archivist.Converters.AnythingToImageConverter
+  name: AnythingToImageConverter
+  href: api/Archivist.Converters.AnythingToImageConverter.html
+  commentId: T:Archivist.Converters.AnythingToImageConverter
+  fullName: Archivist.Converters.AnythingToImageConverter
+  nameWithType: AnythingToImageConverter
+- uid: Archivist.Converters.AnythingToImageConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.AnythingToImageConverter.html#Archivist_Converters_AnythingToImageConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.AnythingToImageConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.AnythingToImageConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.AnythingToImageConverter.CanConvert(System.Type, System.Type)
+  nameWithType: AnythingToImageConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: AnythingToImageConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.AnythingToImageConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.AnythingToImageConverter.html#Archivist_Converters_AnythingToImageConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.AnythingToImageConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.AnythingToImageConverter.CanConvert
+  nameWithType: AnythingToImageConverter.CanConvert
+- uid: Archivist.Converters.AnythingToImageConverter.Convert(Archivist.Interfaces.IGenericFile)
+  name: Convert(IGenericFile?)
+  href: api/Archivist.Converters.AnythingToImageConverter.html#Archivist_Converters_AnythingToImageConverter_Convert_Archivist_Interfaces_IGenericFile_
+  commentId: M:Archivist.Converters.AnythingToImageConverter.Convert(Archivist.Interfaces.IGenericFile)
+  name.vb: Convert(IGenericFile)
+  fullName: Archivist.Converters.AnythingToImageConverter.Convert(Archivist.Interfaces.IGenericFile?)
+  fullName.vb: Archivist.Converters.AnythingToImageConverter.Convert(Archivist.Interfaces.IGenericFile)
+  nameWithType: AnythingToImageConverter.Convert(IGenericFile?)
+  nameWithType.vb: AnythingToImageConverter.Convert(IGenericFile)
+- uid: Archivist.Converters.AnythingToImageConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.AnythingToImageConverter.html#Archivist_Converters_AnythingToImageConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.AnythingToImageConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.AnythingToImageConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.AnythingToImageConverter.Convert(Object, System.Type)
+  nameWithType: AnythingToImageConverter.Convert(object?, Type?)
+  nameWithType.vb: AnythingToImageConverter.Convert(Object, Type)
+- uid: Archivist.Converters.AnythingToImageConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.AnythingToImageConverter.html#Archivist_Converters_AnythingToImageConverter_Convert_
+  commentId: Overload:Archivist.Converters.AnythingToImageConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.AnythingToImageConverter.Convert
+  nameWithType: AnythingToImageConverter.Convert
 - uid: Archivist.Converters.AnythingToTextConverter
   name: AnythingToTextConverter
   href: api/Archivist.Converters.AnythingToTextConverter.html
@@ -1498,6 +1545,53 @@ references:
   isSpec: "True"
   fullName: Archivist.Converters.FeedToTablesConverter.Convert
   nameWithType: FeedToTablesConverter.Convert
+- uid: Archivist.Converters.ImageToAnythingConverter
+  name: ImageToAnythingConverter
+  href: api/Archivist.Converters.ImageToAnythingConverter.html
+  commentId: T:Archivist.Converters.ImageToAnythingConverter
+  fullName: Archivist.Converters.ImageToAnythingConverter
+  nameWithType: ImageToAnythingConverter
+- uid: Archivist.Converters.ImageToAnythingConverter.CanConvert(System.Type,System.Type)
+  name: CanConvert(Type?, Type?)
+  href: api/Archivist.Converters.ImageToAnythingConverter.html#Archivist_Converters_ImageToAnythingConverter_CanConvert_System_Type_System_Type_
+  commentId: M:Archivist.Converters.ImageToAnythingConverter.CanConvert(System.Type,System.Type)
+  name.vb: CanConvert(Type, Type)
+  fullName: Archivist.Converters.ImageToAnythingConverter.CanConvert(System.Type?, System.Type?)
+  fullName.vb: Archivist.Converters.ImageToAnythingConverter.CanConvert(System.Type, System.Type)
+  nameWithType: ImageToAnythingConverter.CanConvert(Type?, Type?)
+  nameWithType.vb: ImageToAnythingConverter.CanConvert(Type, Type)
+- uid: Archivist.Converters.ImageToAnythingConverter.CanConvert*
+  name: CanConvert
+  href: api/Archivist.Converters.ImageToAnythingConverter.html#Archivist_Converters_ImageToAnythingConverter_CanConvert_
+  commentId: Overload:Archivist.Converters.ImageToAnythingConverter.CanConvert
+  isSpec: "True"
+  fullName: Archivist.Converters.ImageToAnythingConverter.CanConvert
+  nameWithType: ImageToAnythingConverter.CanConvert
+- uid: Archivist.Converters.ImageToAnythingConverter.Convert(Archivist.DataTypes.Image,System.Type)
+  name: Convert(Image?, Type?)
+  href: api/Archivist.Converters.ImageToAnythingConverter.html#Archivist_Converters_ImageToAnythingConverter_Convert_Archivist_DataTypes_Image_System_Type_
+  commentId: M:Archivist.Converters.ImageToAnythingConverter.Convert(Archivist.DataTypes.Image,System.Type)
+  name.vb: Convert(Image, Type)
+  fullName: Archivist.Converters.ImageToAnythingConverter.Convert(Archivist.DataTypes.Image?, System.Type?)
+  fullName.vb: Archivist.Converters.ImageToAnythingConverter.Convert(Archivist.DataTypes.Image, System.Type)
+  nameWithType: ImageToAnythingConverter.Convert(Image?, Type?)
+  nameWithType.vb: ImageToAnythingConverter.Convert(Image, Type)
+- uid: Archivist.Converters.ImageToAnythingConverter.Convert(System.Object,System.Type)
+  name: Convert(object?, Type?)
+  href: api/Archivist.Converters.ImageToAnythingConverter.html#Archivist_Converters_ImageToAnythingConverter_Convert_System_Object_System_Type_
+  commentId: M:Archivist.Converters.ImageToAnythingConverter.Convert(System.Object,System.Type)
+  name.vb: Convert(Object, Type)
+  fullName: Archivist.Converters.ImageToAnythingConverter.Convert(object?, System.Type?)
+  fullName.vb: Archivist.Converters.ImageToAnythingConverter.Convert(Object, System.Type)
+  nameWithType: ImageToAnythingConverter.Convert(object?, Type?)
+  nameWithType.vb: ImageToAnythingConverter.Convert(Object, Type)
+- uid: Archivist.Converters.ImageToAnythingConverter.Convert*
+  name: Convert
+  href: api/Archivist.Converters.ImageToAnythingConverter.html#Archivist_Converters_ImageToAnythingConverter_Convert_
+  commentId: Overload:Archivist.Converters.ImageToAnythingConverter.Convert
+  isSpec: "True"
+  fullName: Archivist.Converters.ImageToAnythingConverter.Convert
+  nameWithType: ImageToAnythingConverter.Convert
 - uid: Archivist.Converters.StructuredObjectToCalendarConverter
   name: StructuredObjectToCalendarConverter
   href: api/Archivist.Converters.StructuredObjectToCalendarConverter.html
@@ -2615,6 +2709,15 @@ references:
   fullName: Archivist.DataTypes.Calendar.implicit operator Archivist.DataTypes.Feed?(Archivist.DataTypes.Calendar?)
   fullName.vb: Archivist.DataTypes.Calendar.CType(Archivist.DataTypes.Calendar)
   nameWithType: Calendar.implicit operator Feed?(Calendar?)
+  nameWithType.vb: Calendar.CType(Calendar)
+- uid: Archivist.DataTypes.Calendar.op_Implicit(Archivist.DataTypes.Calendar)~Archivist.DataTypes.Image
+  name: implicit operator Image?(Calendar?)
+  href: api/Archivist.DataTypes.Calendar.html#Archivist_DataTypes_Calendar_op_Implicit_Archivist_DataTypes_Calendar__Archivist_DataTypes_Image
+  commentId: M:Archivist.DataTypes.Calendar.op_Implicit(Archivist.DataTypes.Calendar)~Archivist.DataTypes.Image
+  name.vb: CType(Calendar)
+  fullName: Archivist.DataTypes.Calendar.implicit operator Archivist.DataTypes.Image?(Archivist.DataTypes.Calendar?)
+  fullName.vb: Archivist.DataTypes.Calendar.CType(Archivist.DataTypes.Calendar)
+  nameWithType: Calendar.implicit operator Image?(Calendar?)
   nameWithType.vb: Calendar.CType(Calendar)
 - uid: Archivist.DataTypes.Calendar.op_Implicit(Archivist.DataTypes.Calendar)~Archivist.DataTypes.StructuredObject
   name: implicit operator StructuredObject?(Calendar?)
@@ -4394,6 +4497,15 @@ references:
   fullName.vb: Archivist.DataTypes.Card.CType(Archivist.DataTypes.Card)
   nameWithType: Card.implicit operator Feed?(Card?)
   nameWithType.vb: Card.CType(Card)
+- uid: Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Image
+  name: implicit operator Image?(Card?)
+  href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_Image
+  commentId: M:Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.Image
+  name.vb: CType(Card)
+  fullName: Archivist.DataTypes.Card.implicit operator Archivist.DataTypes.Image?(Archivist.DataTypes.Card?)
+  fullName.vb: Archivist.DataTypes.Card.CType(Archivist.DataTypes.Card)
+  nameWithType: Card.implicit operator Image?(Card?)
+  nameWithType.vb: Card.CType(Card)
 - uid: Archivist.DataTypes.Card.op_Implicit(Archivist.DataTypes.Card)~Archivist.DataTypes.StructuredObject
   name: implicit operator StructuredObject?(Card?)
   href: api/Archivist.DataTypes.Card.html#Archivist_DataTypes_Card_op_Implicit_Archivist_DataTypes_Card__Archivist_DataTypes_StructuredObject
@@ -4885,6 +4997,15 @@ references:
   fullName.vb: Archivist.DataTypes.Feed.CType(Archivist.DataTypes.Feed)
   nameWithType: Feed.implicit operator Card?(Feed?)
   nameWithType.vb: Feed.CType(Feed)
+- uid: Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Image
+  name: implicit operator Image?(Feed?)
+  href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Implicit_Archivist_DataTypes_Feed__Archivist_DataTypes_Image
+  commentId: M:Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.Image
+  name.vb: CType(Feed)
+  fullName: Archivist.DataTypes.Feed.implicit operator Archivist.DataTypes.Image?(Archivist.DataTypes.Feed?)
+  fullName.vb: Archivist.DataTypes.Feed.CType(Archivist.DataTypes.Feed)
+  nameWithType: Feed.implicit operator Image?(Feed?)
+  nameWithType.vb: Feed.CType(Feed)
 - uid: Archivist.DataTypes.Feed.op_Implicit(Archivist.DataTypes.Feed)~Archivist.DataTypes.StructuredObject
   name: implicit operator StructuredObject?(Feed?)
   href: api/Archivist.DataTypes.Feed.html#Archivist_DataTypes_Feed_op_Implicit_Archivist_DataTypes_Feed__Archivist_DataTypes_StructuredObject
@@ -5104,13 +5225,13 @@ references:
   fullName: Archivist.DataTypes.Feeds.Channel.Contains
   nameWithType: Channel.Contains
 - uid: Archivist.DataTypes.Feeds.Channel.CopyTo(Archivist.DataTypes.Feeds.FeedItem[],System.Int32)
-  name: CopyTo(FeedItem[], int)
+  name: CopyTo(FeedItem[]?, int)
   href: api/Archivist.DataTypes.Feeds.Channel.html#Archivist_DataTypes_Feeds_Channel_CopyTo_Archivist_DataTypes_Feeds_FeedItem___System_Int32_
   commentId: M:Archivist.DataTypes.Feeds.Channel.CopyTo(Archivist.DataTypes.Feeds.FeedItem[],System.Int32)
   name.vb: CopyTo(FeedItem(), Integer)
-  fullName: Archivist.DataTypes.Feeds.Channel.CopyTo(Archivist.DataTypes.Feeds.FeedItem[], int)
+  fullName: Archivist.DataTypes.Feeds.Channel.CopyTo(Archivist.DataTypes.Feeds.FeedItem[]?, int)
   fullName.vb: Archivist.DataTypes.Feeds.Channel.CopyTo(Archivist.DataTypes.Feeds.FeedItem(), Integer)
-  nameWithType: Channel.CopyTo(FeedItem[], int)
+  nameWithType: Channel.CopyTo(FeedItem[]?, int)
   nameWithType.vb: Channel.CopyTo(FeedItem(), Integer)
 - uid: Archivist.DataTypes.Feeds.Channel.CopyTo*
   name: CopyTo
@@ -7433,6 +7554,388 @@ references:
   fullName.vb: Archivist.DataTypes.FixedLengthRecord.<=
   nameWithType: FixedLengthRecord.operator <=
   nameWithType.vb: FixedLengthRecord.<=
+- uid: Archivist.DataTypes.Image
+  name: Image
+  href: api/Archivist.DataTypes.Image.html
+  commentId: T:Archivist.DataTypes.Image
+  fullName: Archivist.DataTypes.Image
+  nameWithType: Image
+- uid: Archivist.DataTypes.Image.#ctor
+  name: Image()
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image__ctor
+  commentId: M:Archivist.DataTypes.Image.#ctor
+  name.vb: New()
+  fullName: Archivist.DataTypes.Image.Image()
+  fullName.vb: Archivist.DataTypes.Image.New()
+  nameWithType: Image.Image()
+  nameWithType.vb: Image.New()
+- uid: Archivist.DataTypes.Image.#ctor(Archivist.Converters.Convertinator)
+  name: Image(Convertinator?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image__ctor_Archivist_Converters_Convertinator_
+  commentId: M:Archivist.DataTypes.Image.#ctor(Archivist.Converters.Convertinator)
+  name.vb: New(Convertinator)
+  fullName: Archivist.DataTypes.Image.Image(Archivist.Converters.Convertinator?)
+  fullName.vb: Archivist.DataTypes.Image.New(Archivist.Converters.Convertinator)
+  nameWithType: Image.Image(Convertinator?)
+  nameWithType.vb: Image.New(Convertinator)
+- uid: Archivist.DataTypes.Image.#ctor*
+  name: Image
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image__ctor_
+  commentId: Overload:Archivist.DataTypes.Image.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.DataTypes.Image.Image
+  fullName.vb: Archivist.DataTypes.Image.New
+  nameWithType: Image.Image
+  nameWithType.vb: Image.New
+- uid: Archivist.DataTypes.Image.BytesPerPixel
+  name: BytesPerPixel
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_BytesPerPixel
+  commentId: P:Archivist.DataTypes.Image.BytesPerPixel
+  fullName: Archivist.DataTypes.Image.BytesPerPixel
+  nameWithType: Image.BytesPerPixel
+- uid: Archivist.DataTypes.Image.BytesPerPixel*
+  name: BytesPerPixel
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_BytesPerPixel_
+  commentId: Overload:Archivist.DataTypes.Image.BytesPerPixel
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Image.BytesPerPixel
+  nameWithType: Image.BytesPerPixel
+- uid: Archivist.DataTypes.Image.CompareTo(Archivist.DataTypes.Image)
+  name: CompareTo(Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_CompareTo_Archivist_DataTypes_Image_
+  commentId: M:Archivist.DataTypes.Image.CompareTo(Archivist.DataTypes.Image)
+  name.vb: CompareTo(Image)
+  fullName: Archivist.DataTypes.Image.CompareTo(Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.CompareTo(Archivist.DataTypes.Image)
+  nameWithType: Image.CompareTo(Image?)
+  nameWithType.vb: Image.CompareTo(Image)
+- uid: Archivist.DataTypes.Image.CompareTo*
+  name: CompareTo
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_CompareTo_
+  commentId: Overload:Archivist.DataTypes.Image.CompareTo
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Image.CompareTo
+  nameWithType: Image.CompareTo
+- uid: Archivist.DataTypes.Image.Data
+  name: Data
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_Data
+  commentId: P:Archivist.DataTypes.Image.Data
+  fullName: Archivist.DataTypes.Image.Data
+  nameWithType: Image.Data
+- uid: Archivist.DataTypes.Image.Data*
+  name: Data
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_Data_
+  commentId: Overload:Archivist.DataTypes.Image.Data
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Image.Data
+  nameWithType: Image.Data
+- uid: Archivist.DataTypes.Image.Description
+  name: Description
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_Description
+  commentId: P:Archivist.DataTypes.Image.Description
+  fullName: Archivist.DataTypes.Image.Description
+  nameWithType: Image.Description
+- uid: Archivist.DataTypes.Image.Description*
+  name: Description
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_Description_
+  commentId: Overload:Archivist.DataTypes.Image.Description
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Image.Description
+  nameWithType: Image.Description
+- uid: Archivist.DataTypes.Image.Equals(Archivist.DataTypes.Image)
+  name: Equals(Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_Equals_Archivist_DataTypes_Image_
+  commentId: M:Archivist.DataTypes.Image.Equals(Archivist.DataTypes.Image)
+  name.vb: Equals(Image)
+  fullName: Archivist.DataTypes.Image.Equals(Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.Equals(Archivist.DataTypes.Image)
+  nameWithType: Image.Equals(Image?)
+  nameWithType.vb: Image.Equals(Image)
+- uid: Archivist.DataTypes.Image.Equals(System.Object)
+  name: Equals(object?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_Equals_System_Object_
+  commentId: M:Archivist.DataTypes.Image.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: Archivist.DataTypes.Image.Equals(object?)
+  fullName.vb: Archivist.DataTypes.Image.Equals(Object)
+  nameWithType: Image.Equals(object?)
+  nameWithType.vb: Image.Equals(Object)
+- uid: Archivist.DataTypes.Image.Equals*
+  name: Equals
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_Equals_
+  commentId: Overload:Archivist.DataTypes.Image.Equals
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Image.Equals
+  nameWithType: Image.Equals
+- uid: Archivist.DataTypes.Image.GetContent
+  name: GetContent()
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_GetContent
+  commentId: M:Archivist.DataTypes.Image.GetContent
+  fullName: Archivist.DataTypes.Image.GetContent()
+  nameWithType: Image.GetContent()
+- uid: Archivist.DataTypes.Image.GetContent*
+  name: GetContent
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_GetContent_
+  commentId: Overload:Archivist.DataTypes.Image.GetContent
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Image.GetContent
+  nameWithType: Image.GetContent
+- uid: Archivist.DataTypes.Image.GetHashCode
+  name: GetHashCode()
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_GetHashCode
+  commentId: M:Archivist.DataTypes.Image.GetHashCode
+  fullName: Archivist.DataTypes.Image.GetHashCode()
+  nameWithType: Image.GetHashCode()
+- uid: Archivist.DataTypes.Image.GetHashCode*
+  name: GetHashCode
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_GetHashCode_
+  commentId: Overload:Archivist.DataTypes.Image.GetHashCode
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Image.GetHashCode
+  nameWithType: Image.GetHashCode
+- uid: Archivist.DataTypes.Image.Height
+  name: Height
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_Height
+  commentId: P:Archivist.DataTypes.Image.Height
+  fullName: Archivist.DataTypes.Image.Height
+  nameWithType: Image.Height
+- uid: Archivist.DataTypes.Image.Height*
+  name: Height
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_Height_
+  commentId: Overload:Archivist.DataTypes.Image.Height
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Image.Height
+  nameWithType: Image.Height
+- uid: Archivist.DataTypes.Image.ImageType
+  name: ImageType
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_ImageType
+  commentId: P:Archivist.DataTypes.Image.ImageType
+  fullName: Archivist.DataTypes.Image.ImageType
+  nameWithType: Image.ImageType
+- uid: Archivist.DataTypes.Image.ImageType*
+  name: ImageType
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_ImageType_
+  commentId: Overload:Archivist.DataTypes.Image.ImageType
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Image.ImageType
+  nameWithType: Image.ImageType
+- uid: Archivist.DataTypes.Image.ToFileType*
+  name: ToFileType
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_ToFileType_
+  commentId: Overload:Archivist.DataTypes.Image.ToFileType
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Image.ToFileType
+  nameWithType: Image.ToFileType
+- uid: Archivist.DataTypes.Image.ToFileType``1
+  name: ToFileType<TFile>()
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_ToFileType__1
+  commentId: M:Archivist.DataTypes.Image.ToFileType``1
+  name.vb: ToFileType(Of TFile)()
+  fullName: Archivist.DataTypes.Image.ToFileType<TFile>()
+  fullName.vb: Archivist.DataTypes.Image.ToFileType(Of TFile)()
+  nameWithType: Image.ToFileType<TFile>()
+  nameWithType.vb: Image.ToFileType(Of TFile)()
+- uid: Archivist.DataTypes.Image.Width
+  name: Width
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_Width
+  commentId: P:Archivist.DataTypes.Image.Width
+  fullName: Archivist.DataTypes.Image.Width
+  nameWithType: Image.Width
+- uid: Archivist.DataTypes.Image.Width*
+  name: Width
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_Width_
+  commentId: Overload:Archivist.DataTypes.Image.Width
+  isSpec: "True"
+  fullName: Archivist.DataTypes.Image.Width
+  nameWithType: Image.Width
+- uid: Archivist.DataTypes.Image.op_Equality(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name: operator ==(Image?, Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Equality_Archivist_DataTypes_Image_Archivist_DataTypes_Image_
+  commentId: M:Archivist.DataTypes.Image.op_Equality(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name.vb: =(Image, Image)
+  fullName: Archivist.DataTypes.Image.operator ==(Archivist.DataTypes.Image?, Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.=(Archivist.DataTypes.Image, Archivist.DataTypes.Image)
+  nameWithType: Image.operator ==(Image?, Image?)
+  nameWithType.vb: Image.=(Image, Image)
+- uid: Archivist.DataTypes.Image.op_Equality*
+  name: operator ==
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Equality_
+  commentId: Overload:Archivist.DataTypes.Image.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: Archivist.DataTypes.Image.operator ==
+  fullName.vb: Archivist.DataTypes.Image.=
+  nameWithType: Image.operator ==
+  nameWithType.vb: Image.=
+- uid: Archivist.DataTypes.Image.op_GreaterThan(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name: operator >(Image?, Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_GreaterThan_Archivist_DataTypes_Image_Archivist_DataTypes_Image_
+  commentId: M:Archivist.DataTypes.Image.op_GreaterThan(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name.vb: '>(Image, Image)'
+  fullName: Archivist.DataTypes.Image.operator >(Archivist.DataTypes.Image?, Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.>(Archivist.DataTypes.Image, Archivist.DataTypes.Image)
+  nameWithType: Image.operator >(Image?, Image?)
+  nameWithType.vb: Image.>(Image, Image)
+- uid: Archivist.DataTypes.Image.op_GreaterThan*
+  name: operator >
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_GreaterThan_
+  commentId: Overload:Archivist.DataTypes.Image.op_GreaterThan
+  isSpec: "True"
+  name.vb: '>'
+  fullName: Archivist.DataTypes.Image.operator >
+  fullName.vb: Archivist.DataTypes.Image.>
+  nameWithType: Image.operator >
+  nameWithType.vb: Image.>
+- uid: Archivist.DataTypes.Image.op_GreaterThanOrEqual(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name: operator >=(Image?, Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_GreaterThanOrEqual_Archivist_DataTypes_Image_Archivist_DataTypes_Image_
+  commentId: M:Archivist.DataTypes.Image.op_GreaterThanOrEqual(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name.vb: '>=(Image, Image)'
+  fullName: Archivist.DataTypes.Image.operator >=(Archivist.DataTypes.Image?, Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.>=(Archivist.DataTypes.Image, Archivist.DataTypes.Image)
+  nameWithType: Image.operator >=(Image?, Image?)
+  nameWithType.vb: Image.>=(Image, Image)
+- uid: Archivist.DataTypes.Image.op_GreaterThanOrEqual*
+  name: operator >=
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_GreaterThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Image.op_GreaterThanOrEqual
+  isSpec: "True"
+  name.vb: '>='
+  fullName: Archivist.DataTypes.Image.operator >=
+  fullName.vb: Archivist.DataTypes.Image.>=
+  nameWithType: Image.operator >=
+  nameWithType.vb: Image.>=
+- uid: Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Calendar
+  name: implicit operator Calendar?(Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Calendar
+  commentId: M:Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Calendar
+  name.vb: CType(Image)
+  fullName: Archivist.DataTypes.Image.implicit operator Archivist.DataTypes.Calendar?(Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.CType(Archivist.DataTypes.Image)
+  nameWithType: Image.implicit operator Calendar?(Image?)
+  nameWithType.vb: Image.CType(Image)
+- uid: Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Card
+  name: implicit operator Card?(Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Card
+  commentId: M:Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Card
+  name.vb: CType(Image)
+  fullName: Archivist.DataTypes.Image.implicit operator Archivist.DataTypes.Card?(Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.CType(Archivist.DataTypes.Image)
+  nameWithType: Image.implicit operator Card?(Image?)
+  nameWithType.vb: Image.CType(Image)
+- uid: Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Feed
+  name: implicit operator Feed?(Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Feed
+  commentId: M:Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Feed
+  name.vb: CType(Image)
+  fullName: Archivist.DataTypes.Image.implicit operator Archivist.DataTypes.Feed?(Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.CType(Archivist.DataTypes.Image)
+  nameWithType: Image.implicit operator Feed?(Image?)
+  nameWithType.vb: Image.CType(Image)
+- uid: Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.StructuredObject
+  name: implicit operator StructuredObject?(Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_StructuredObject
+  commentId: M:Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.StructuredObject
+  name.vb: CType(Image)
+  fullName: Archivist.DataTypes.Image.implicit operator Archivist.DataTypes.StructuredObject?(Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.CType(Archivist.DataTypes.Image)
+  nameWithType: Image.implicit operator StructuredObject?(Image?)
+  nameWithType.vb: Image.CType(Image)
+- uid: Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Table
+  name: implicit operator Table?(Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Table
+  commentId: M:Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Table
+  name.vb: CType(Image)
+  fullName: Archivist.DataTypes.Image.implicit operator Archivist.DataTypes.Table?(Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.CType(Archivist.DataTypes.Image)
+  nameWithType: Image.implicit operator Table?(Image?)
+  nameWithType.vb: Image.CType(Image)
+- uid: Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Tables
+  name: implicit operator Tables?(Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Tables
+  commentId: M:Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Tables
+  name.vb: CType(Image)
+  fullName: Archivist.DataTypes.Image.implicit operator Archivist.DataTypes.Tables?(Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.CType(Archivist.DataTypes.Image)
+  nameWithType: Image.implicit operator Tables?(Image?)
+  nameWithType.vb: Image.CType(Image)
+- uid: Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Text
+  name: implicit operator Text?(Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Text
+  commentId: M:Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Text
+  name.vb: CType(Image)
+  fullName: Archivist.DataTypes.Image.implicit operator Archivist.DataTypes.Text?(Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.CType(Archivist.DataTypes.Image)
+  nameWithType: Image.implicit operator Text?(Image?)
+  nameWithType.vb: Image.CType(Image)
+- uid: Archivist.DataTypes.Image.op_Implicit*
+  name: implicit operator
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Implicit_
+  commentId: Overload:Archivist.DataTypes.Image.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: Archivist.DataTypes.Image.implicit operator
+  fullName.vb: Archivist.DataTypes.Image.CType
+  nameWithType: Image.implicit operator
+  nameWithType.vb: Image.CType
+- uid: Archivist.DataTypes.Image.op_Inequality(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name: operator !=(Image?, Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Inequality_Archivist_DataTypes_Image_Archivist_DataTypes_Image_
+  commentId: M:Archivist.DataTypes.Image.op_Inequality(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name.vb: <>(Image, Image)
+  fullName: Archivist.DataTypes.Image.operator !=(Archivist.DataTypes.Image?, Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.<>(Archivist.DataTypes.Image, Archivist.DataTypes.Image)
+  nameWithType: Image.operator !=(Image?, Image?)
+  nameWithType.vb: Image.<>(Image, Image)
+- uid: Archivist.DataTypes.Image.op_Inequality*
+  name: operator !=
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_Inequality_
+  commentId: Overload:Archivist.DataTypes.Image.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: Archivist.DataTypes.Image.operator !=
+  fullName.vb: Archivist.DataTypes.Image.<>
+  nameWithType: Image.operator !=
+  nameWithType.vb: Image.<>
+- uid: Archivist.DataTypes.Image.op_LessThan(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name: operator <(Image?, Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_LessThan_Archivist_DataTypes_Image_Archivist_DataTypes_Image_
+  commentId: M:Archivist.DataTypes.Image.op_LessThan(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name.vb: <(Image, Image)
+  fullName: Archivist.DataTypes.Image.operator <(Archivist.DataTypes.Image?, Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.<(Archivist.DataTypes.Image, Archivist.DataTypes.Image)
+  nameWithType: Image.operator <(Image?, Image?)
+  nameWithType.vb: Image.<(Image, Image)
+- uid: Archivist.DataTypes.Image.op_LessThan*
+  name: operator <
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_LessThan_
+  commentId: Overload:Archivist.DataTypes.Image.op_LessThan
+  isSpec: "True"
+  name.vb: <
+  fullName: Archivist.DataTypes.Image.operator <
+  fullName.vb: Archivist.DataTypes.Image.<
+  nameWithType: Image.operator <
+  nameWithType.vb: Image.<
+- uid: Archivist.DataTypes.Image.op_LessThanOrEqual(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name: operator <=(Image?, Image?)
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_LessThanOrEqual_Archivist_DataTypes_Image_Archivist_DataTypes_Image_
+  commentId: M:Archivist.DataTypes.Image.op_LessThanOrEqual(Archivist.DataTypes.Image,Archivist.DataTypes.Image)
+  name.vb: <=(Image, Image)
+  fullName: Archivist.DataTypes.Image.operator <=(Archivist.DataTypes.Image?, Archivist.DataTypes.Image?)
+  fullName.vb: Archivist.DataTypes.Image.<=(Archivist.DataTypes.Image, Archivist.DataTypes.Image)
+  nameWithType: Image.operator <=(Image?, Image?)
+  nameWithType.vb: Image.<=(Image, Image)
+- uid: Archivist.DataTypes.Image.op_LessThanOrEqual*
+  name: operator <=
+  href: api/Archivist.DataTypes.Image.html#Archivist_DataTypes_Image_op_LessThanOrEqual_
+  commentId: Overload:Archivist.DataTypes.Image.op_LessThanOrEqual
+  isSpec: "True"
+  name.vb: <=
+  fullName: Archivist.DataTypes.Image.operator <=
+  fullName.vb: Archivist.DataTypes.Image.<=
+  nameWithType: Image.operator <=
+  nameWithType.vb: Image.<=
 - uid: Archivist.DataTypes.KeyValueField
   name: KeyValueField
   href: api/Archivist.DataTypes.KeyValueField.html
@@ -8445,6 +8948,15 @@ references:
   fullName.vb: Archivist.DataTypes.StructuredObject.CType(Archivist.DataTypes.StructuredObject)
   nameWithType: StructuredObject.implicit operator Feed?(StructuredObject?)
   nameWithType.vb: StructuredObject.CType(StructuredObject)
+- uid: Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Image
+  name: implicit operator Image?(StructuredObject?)
+  href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Image
+  commentId: M:Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Image
+  name.vb: CType(StructuredObject)
+  fullName: Archivist.DataTypes.StructuredObject.implicit operator Archivist.DataTypes.Image?(Archivist.DataTypes.StructuredObject?)
+  fullName.vb: Archivist.DataTypes.StructuredObject.CType(Archivist.DataTypes.StructuredObject)
+  nameWithType: StructuredObject.implicit operator Image?(StructuredObject?)
+  nameWithType.vb: StructuredObject.CType(StructuredObject)
 - uid: Archivist.DataTypes.StructuredObject.op_Implicit(Archivist.DataTypes.StructuredObject)~Archivist.DataTypes.Table
   name: implicit operator Table?(StructuredObject?)
   href: api/Archivist.DataTypes.StructuredObject.html#Archivist_DataTypes_StructuredObject_op_Implicit_Archivist_DataTypes_StructuredObject__Archivist_DataTypes_Table
@@ -9002,6 +9514,15 @@ references:
   fullName: Archivist.DataTypes.Table.implicit operator Archivist.DataTypes.Feed?(Archivist.DataTypes.Table?)
   fullName.vb: Archivist.DataTypes.Table.CType(Archivist.DataTypes.Table)
   nameWithType: Table.implicit operator Feed?(Table?)
+  nameWithType.vb: Table.CType(Table)
+- uid: Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Image
+  name: implicit operator Image?(Table?)
+  href: api/Archivist.DataTypes.Table.html#Archivist_DataTypes_Table_op_Implicit_Archivist_DataTypes_Table__Archivist_DataTypes_Image
+  commentId: M:Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.Image
+  name.vb: CType(Table)
+  fullName: Archivist.DataTypes.Table.implicit operator Archivist.DataTypes.Image?(Archivist.DataTypes.Table?)
+  fullName.vb: Archivist.DataTypes.Table.CType(Archivist.DataTypes.Table)
+  nameWithType: Table.implicit operator Image?(Table?)
   nameWithType.vb: Table.CType(Table)
 - uid: Archivist.DataTypes.Table.op_Implicit(Archivist.DataTypes.Table)~Archivist.DataTypes.StructuredObject
   name: implicit operator StructuredObject?(Table?)
@@ -10240,6 +10761,15 @@ references:
   fullName: Archivist.DataTypes.Tables.implicit operator Archivist.DataTypes.Feed?(Archivist.DataTypes.Tables?)
   fullName.vb: Archivist.DataTypes.Tables.CType(Archivist.DataTypes.Tables)
   nameWithType: Tables.implicit operator Feed?(Tables?)
+  nameWithType.vb: Tables.CType(Tables)
+- uid: Archivist.DataTypes.Tables.op_Implicit(Archivist.DataTypes.Tables)~Archivist.DataTypes.Image
+  name: implicit operator Image?(Tables?)
+  href: api/Archivist.DataTypes.Tables.html#Archivist_DataTypes_Tables_op_Implicit_Archivist_DataTypes_Tables__Archivist_DataTypes_Image
+  commentId: M:Archivist.DataTypes.Tables.op_Implicit(Archivist.DataTypes.Tables)~Archivist.DataTypes.Image
+  name.vb: CType(Tables)
+  fullName: Archivist.DataTypes.Tables.implicit operator Archivist.DataTypes.Image?(Archivist.DataTypes.Tables?)
+  fullName.vb: Archivist.DataTypes.Tables.CType(Archivist.DataTypes.Tables)
+  nameWithType: Tables.implicit operator Image?(Tables?)
   nameWithType.vb: Tables.CType(Tables)
 - uid: Archivist.DataTypes.Tables.op_Implicit(Archivist.DataTypes.Tables)~Archivist.DataTypes.StructuredObject
   name: implicit operator StructuredObject?(Tables?)
@@ -11597,6 +12127,486 @@ references:
   isSpec: "True"
   fullName: Archivist.Enums.CommonCardFields.URL
   nameWithType: CommonCardFields.URL
+- uid: Archivist.Enums.CommonImageMetadataFields
+  name: CommonImageMetadataFields
+  href: api/Archivist.Enums.CommonImageMetadataFields.html
+  commentId: T:Archivist.Enums.CommonImageMetadataFields
+  fullName: Archivist.Enums.CommonImageMetadataFields
+  nameWithType: CommonImageMetadataFields
+- uid: Archivist.Enums.CommonImageMetadataFields.Artist
+  name: Artist
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Artist
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Artist
+  fullName: Archivist.Enums.CommonImageMetadataFields.Artist
+  nameWithType: CommonImageMetadataFields.Artist
+- uid: Archivist.Enums.CommonImageMetadataFields.Artist*
+  name: Artist
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Artist_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Artist
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Artist
+  nameWithType: CommonImageMetadataFields.Artist
+- uid: Archivist.Enums.CommonImageMetadataFields.Brightness
+  name: Brightness
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Brightness
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Brightness
+  fullName: Archivist.Enums.CommonImageMetadataFields.Brightness
+  nameWithType: CommonImageMetadataFields.Brightness
+- uid: Archivist.Enums.CommonImageMetadataFields.Brightness*
+  name: Brightness
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Brightness_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Brightness
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Brightness
+  nameWithType: CommonImageMetadataFields.Brightness
+- uid: Archivist.Enums.CommonImageMetadataFields.Contrast
+  name: Contrast
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Contrast
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Contrast
+  fullName: Archivist.Enums.CommonImageMetadataFields.Contrast
+  nameWithType: CommonImageMetadataFields.Contrast
+- uid: Archivist.Enums.CommonImageMetadataFields.Contrast*
+  name: Contrast
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Contrast_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Contrast
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Contrast
+  nameWithType: CommonImageMetadataFields.Contrast
+- uid: Archivist.Enums.CommonImageMetadataFields.Converter
+  name: Converter
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Converter
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Converter
+  fullName: Archivist.Enums.CommonImageMetadataFields.Converter
+  nameWithType: CommonImageMetadataFields.Converter
+- uid: Archivist.Enums.CommonImageMetadataFields.Converter*
+  name: Converter
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Converter_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Converter
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Converter
+  nameWithType: CommonImageMetadataFields.Converter
+- uid: Archivist.Enums.CommonImageMetadataFields.Copyright
+  name: Copyright
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Copyright
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Copyright
+  fullName: Archivist.Enums.CommonImageMetadataFields.Copyright
+  nameWithType: CommonImageMetadataFields.Copyright
+- uid: Archivist.Enums.CommonImageMetadataFields.Copyright*
+  name: Copyright
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Copyright_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Copyright
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Copyright
+  nameWithType: CommonImageMetadataFields.Copyright
+- uid: Archivist.Enums.CommonImageMetadataFields.DateTimeOriginal
+  name: DateTimeOriginal
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_DateTimeOriginal
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.DateTimeOriginal
+  fullName: Archivist.Enums.CommonImageMetadataFields.DateTimeOriginal
+  nameWithType: CommonImageMetadataFields.DateTimeOriginal
+- uid: Archivist.Enums.CommonImageMetadataFields.DateTimeOriginal*
+  name: DateTimeOriginal
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_DateTimeOriginal_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.DateTimeOriginal
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.DateTimeOriginal
+  nameWithType: CommonImageMetadataFields.DateTimeOriginal
+- uid: Archivist.Enums.CommonImageMetadataFields.Description
+  name: Description
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Description
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Description
+  fullName: Archivist.Enums.CommonImageMetadataFields.Description
+  nameWithType: CommonImageMetadataFields.Description
+- uid: Archivist.Enums.CommonImageMetadataFields.Description*
+  name: Description
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Description_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Description
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Description
+  nameWithType: CommonImageMetadataFields.Description
+- uid: Archivist.Enums.CommonImageMetadataFields.DocumentName
+  name: DocumentName
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_DocumentName
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.DocumentName
+  fullName: Archivist.Enums.CommonImageMetadataFields.DocumentName
+  nameWithType: CommonImageMetadataFields.DocumentName
+- uid: Archivist.Enums.CommonImageMetadataFields.DocumentName*
+  name: DocumentName
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_DocumentName_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.DocumentName
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.DocumentName
+  nameWithType: CommonImageMetadataFields.DocumentName
+- uid: Archivist.Enums.CommonImageMetadataFields.Exposure
+  name: Exposure
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Exposure
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Exposure
+  fullName: Archivist.Enums.CommonImageMetadataFields.Exposure
+  nameWithType: CommonImageMetadataFields.Exposure
+- uid: Archivist.Enums.CommonImageMetadataFields.Exposure*
+  name: Exposure
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Exposure_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Exposure
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Exposure
+  nameWithType: CommonImageMetadataFields.Exposure
+- uid: Archivist.Enums.CommonImageMetadataFields.HostComputer
+  name: HostComputer
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_HostComputer
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.HostComputer
+  fullName: Archivist.Enums.CommonImageMetadataFields.HostComputer
+  nameWithType: CommonImageMetadataFields.HostComputer
+- uid: Archivist.Enums.CommonImageMetadataFields.HostComputer*
+  name: HostComputer
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_HostComputer_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.HostComputer
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.HostComputer
+  nameWithType: CommonImageMetadataFields.HostComputer
+- uid: Archivist.Enums.CommonImageMetadataFields.ImageType
+  name: ImageType
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_ImageType
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.ImageType
+  fullName: Archivist.Enums.CommonImageMetadataFields.ImageType
+  nameWithType: CommonImageMetadataFields.ImageType
+- uid: Archivist.Enums.CommonImageMetadataFields.ImageType*
+  name: ImageType
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_ImageType_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.ImageType
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.ImageType
+  nameWithType: CommonImageMetadataFields.ImageType
+- uid: Archivist.Enums.CommonImageMetadataFields.Make
+  name: Make
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Make
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Make
+  fullName: Archivist.Enums.CommonImageMetadataFields.Make
+  nameWithType: CommonImageMetadataFields.Make
+- uid: Archivist.Enums.CommonImageMetadataFields.Make*
+  name: Make
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Make_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Make
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Make
+  nameWithType: CommonImageMetadataFields.Make
+- uid: Archivist.Enums.CommonImageMetadataFields.Model
+  name: Model
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Model
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Model
+  fullName: Archivist.Enums.CommonImageMetadataFields.Model
+  nameWithType: CommonImageMetadataFields.Model
+- uid: Archivist.Enums.CommonImageMetadataFields.Model*
+  name: Model
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Model_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Model
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Model
+  nameWithType: CommonImageMetadataFields.Model
+- uid: Archivist.Enums.CommonImageMetadataFields.MoireFilter
+  name: MoireFilter
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_MoireFilter
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.MoireFilter
+  fullName: Archivist.Enums.CommonImageMetadataFields.MoireFilter
+  nameWithType: CommonImageMetadataFields.MoireFilter
+- uid: Archivist.Enums.CommonImageMetadataFields.MoireFilter*
+  name: MoireFilter
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_MoireFilter_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.MoireFilter
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.MoireFilter
+  nameWithType: CommonImageMetadataFields.MoireFilter
+- uid: Archivist.Enums.CommonImageMetadataFields.OffsetTimeOriginal
+  name: OffsetTimeOriginal
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_OffsetTimeOriginal
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.OffsetTimeOriginal
+  fullName: Archivist.Enums.CommonImageMetadataFields.OffsetTimeOriginal
+  nameWithType: CommonImageMetadataFields.OffsetTimeOriginal
+- uid: Archivist.Enums.CommonImageMetadataFields.OffsetTimeOriginal*
+  name: OffsetTimeOriginal
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_OffsetTimeOriginal_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.OffsetTimeOriginal
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.OffsetTimeOriginal
+  nameWithType: CommonImageMetadataFields.OffsetTimeOriginal
+- uid: Archivist.Enums.CommonImageMetadataFields.Orientation
+  name: Orientation
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Orientation
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Orientation
+  fullName: Archivist.Enums.CommonImageMetadataFields.Orientation
+  nameWithType: CommonImageMetadataFields.Orientation
+- uid: Archivist.Enums.CommonImageMetadataFields.Orientation*
+  name: Orientation
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Orientation_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Orientation
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Orientation
+  nameWithType: CommonImageMetadataFields.Orientation
+- uid: Archivist.Enums.CommonImageMetadataFields.OwnerName
+  name: OwnerName
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_OwnerName
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.OwnerName
+  fullName: Archivist.Enums.CommonImageMetadataFields.OwnerName
+  nameWithType: CommonImageMetadataFields.OwnerName
+- uid: Archivist.Enums.CommonImageMetadataFields.OwnerName*
+  name: OwnerName
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_OwnerName_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.OwnerName
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.OwnerName
+  nameWithType: CommonImageMetadataFields.OwnerName
+- uid: Archivist.Enums.CommonImageMetadataFields.Photographer
+  name: Photographer
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Photographer
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Photographer
+  fullName: Archivist.Enums.CommonImageMetadataFields.Photographer
+  nameWithType: CommonImageMetadataFields.Photographer
+- uid: Archivist.Enums.CommonImageMetadataFields.Photographer*
+  name: Photographer
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Photographer_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Photographer
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Photographer
+  nameWithType: CommonImageMetadataFields.Photographer
+- uid: Archivist.Enums.CommonImageMetadataFields.ProcessingSoftware
+  name: ProcessingSoftware
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_ProcessingSoftware
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.ProcessingSoftware
+  fullName: Archivist.Enums.CommonImageMetadataFields.ProcessingSoftware
+  nameWithType: CommonImageMetadataFields.ProcessingSoftware
+- uid: Archivist.Enums.CommonImageMetadataFields.ProcessingSoftware*
+  name: ProcessingSoftware
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_ProcessingSoftware_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.ProcessingSoftware
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.ProcessingSoftware
+  nameWithType: CommonImageMetadataFields.ProcessingSoftware
+- uid: Archivist.Enums.CommonImageMetadataFields.RawFile
+  name: RawFile
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_RawFile
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.RawFile
+  fullName: Archivist.Enums.CommonImageMetadataFields.RawFile
+  nameWithType: CommonImageMetadataFields.RawFile
+- uid: Archivist.Enums.CommonImageMetadataFields.RawFile*
+  name: RawFile
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_RawFile_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.RawFile
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.RawFile
+  nameWithType: CommonImageMetadataFields.RawFile
+- uid: Archivist.Enums.CommonImageMetadataFields.Saturation
+  name: Saturation
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Saturation
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Saturation
+  fullName: Archivist.Enums.CommonImageMetadataFields.Saturation
+  nameWithType: CommonImageMetadataFields.Saturation
+- uid: Archivist.Enums.CommonImageMetadataFields.Saturation*
+  name: Saturation
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Saturation_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Saturation
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Saturation
+  nameWithType: CommonImageMetadataFields.Saturation
+- uid: Archivist.Enums.CommonImageMetadataFields.SecurityClassification
+  name: SecurityClassification
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_SecurityClassification
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.SecurityClassification
+  fullName: Archivist.Enums.CommonImageMetadataFields.SecurityClassification
+  nameWithType: CommonImageMetadataFields.SecurityClassification
+- uid: Archivist.Enums.CommonImageMetadataFields.SecurityClassification*
+  name: SecurityClassification
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_SecurityClassification_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.SecurityClassification
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.SecurityClassification
+  nameWithType: CommonImageMetadataFields.SecurityClassification
+- uid: Archivist.Enums.CommonImageMetadataFields.SerialNumber
+  name: SerialNumber
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_SerialNumber
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.SerialNumber
+  fullName: Archivist.Enums.CommonImageMetadataFields.SerialNumber
+  nameWithType: CommonImageMetadataFields.SerialNumber
+- uid: Archivist.Enums.CommonImageMetadataFields.SerialNumber*
+  name: SerialNumber
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_SerialNumber_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.SerialNumber
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.SerialNumber
+  nameWithType: CommonImageMetadataFields.SerialNumber
+- uid: Archivist.Enums.CommonImageMetadataFields.Shadows
+  name: Shadows
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Shadows
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Shadows
+  fullName: Archivist.Enums.CommonImageMetadataFields.Shadows
+  nameWithType: CommonImageMetadataFields.Shadows
+- uid: Archivist.Enums.CommonImageMetadataFields.Shadows*
+  name: Shadows
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Shadows_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Shadows
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Shadows
+  nameWithType: CommonImageMetadataFields.Shadows
+- uid: Archivist.Enums.CommonImageMetadataFields.Sharpness
+  name: Sharpness
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Sharpness
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Sharpness
+  fullName: Archivist.Enums.CommonImageMetadataFields.Sharpness
+  nameWithType: CommonImageMetadataFields.Sharpness
+- uid: Archivist.Enums.CommonImageMetadataFields.Sharpness*
+  name: Sharpness
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Sharpness_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Sharpness
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Sharpness
+  nameWithType: CommonImageMetadataFields.Sharpness
+- uid: Archivist.Enums.CommonImageMetadataFields.Smoothness
+  name: Smoothness
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Smoothness
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Smoothness
+  fullName: Archivist.Enums.CommonImageMetadataFields.Smoothness
+  nameWithType: CommonImageMetadataFields.Smoothness
+- uid: Archivist.Enums.CommonImageMetadataFields.Smoothness*
+  name: Smoothness
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Smoothness_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Smoothness
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Smoothness
+  nameWithType: CommonImageMetadataFields.Smoothness
+- uid: Archivist.Enums.CommonImageMetadataFields.Software
+  name: Software
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Software
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.Software
+  fullName: Archivist.Enums.CommonImageMetadataFields.Software
+  nameWithType: CommonImageMetadataFields.Software
+- uid: Archivist.Enums.CommonImageMetadataFields.Software*
+  name: Software
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_Software_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.Software
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.Software
+  nameWithType: CommonImageMetadataFields.Software
+- uid: Archivist.Enums.CommonImageMetadataFields.WhiteBalance
+  name: WhiteBalance
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_WhiteBalance
+  commentId: P:Archivist.Enums.CommonImageMetadataFields.WhiteBalance
+  fullName: Archivist.Enums.CommonImageMetadataFields.WhiteBalance
+  nameWithType: CommonImageMetadataFields.WhiteBalance
+- uid: Archivist.Enums.CommonImageMetadataFields.WhiteBalance*
+  name: WhiteBalance
+  href: api/Archivist.Enums.CommonImageMetadataFields.html#Archivist_Enums_CommonImageMetadataFields_WhiteBalance_
+  commentId: Overload:Archivist.Enums.CommonImageMetadataFields.WhiteBalance
+  isSpec: "True"
+  fullName: Archivist.Enums.CommonImageMetadataFields.WhiteBalance
+  nameWithType: CommonImageMetadataFields.WhiteBalance
+- uid: Archivist.Enums.ImageTypes
+  name: ImageTypes
+  href: api/Archivist.Enums.ImageTypes.html
+  commentId: T:Archivist.Enums.ImageTypes
+  fullName: Archivist.Enums.ImageTypes
+  nameWithType: ImageTypes
+- uid: Archivist.Enums.ImageTypes.Bmp
+  name: Bmp
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Bmp
+  commentId: P:Archivist.Enums.ImageTypes.Bmp
+  fullName: Archivist.Enums.ImageTypes.Bmp
+  nameWithType: ImageTypes.Bmp
+- uid: Archivist.Enums.ImageTypes.Bmp*
+  name: Bmp
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Bmp_
+  commentId: Overload:Archivist.Enums.ImageTypes.Bmp
+  isSpec: "True"
+  fullName: Archivist.Enums.ImageTypes.Bmp
+  nameWithType: ImageTypes.Bmp
+- uid: Archivist.Enums.ImageTypes.Gif
+  name: Gif
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Gif
+  commentId: P:Archivist.Enums.ImageTypes.Gif
+  fullName: Archivist.Enums.ImageTypes.Gif
+  nameWithType: ImageTypes.Gif
+- uid: Archivist.Enums.ImageTypes.Gif*
+  name: Gif
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Gif_
+  commentId: Overload:Archivist.Enums.ImageTypes.Gif
+  isSpec: "True"
+  fullName: Archivist.Enums.ImageTypes.Gif
+  nameWithType: ImageTypes.Gif
+- uid: Archivist.Enums.ImageTypes.Heif
+  name: Heif
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Heif
+  commentId: P:Archivist.Enums.ImageTypes.Heif
+  fullName: Archivist.Enums.ImageTypes.Heif
+  nameWithType: ImageTypes.Heif
+- uid: Archivist.Enums.ImageTypes.Heif*
+  name: Heif
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Heif_
+  commentId: Overload:Archivist.Enums.ImageTypes.Heif
+  isSpec: "True"
+  fullName: Archivist.Enums.ImageTypes.Heif
+  nameWithType: ImageTypes.Heif
+- uid: Archivist.Enums.ImageTypes.Ico
+  name: Ico
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Ico
+  commentId: P:Archivist.Enums.ImageTypes.Ico
+  fullName: Archivist.Enums.ImageTypes.Ico
+  nameWithType: ImageTypes.Ico
+- uid: Archivist.Enums.ImageTypes.Ico*
+  name: Ico
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Ico_
+  commentId: Overload:Archivist.Enums.ImageTypes.Ico
+  isSpec: "True"
+  fullName: Archivist.Enums.ImageTypes.Ico
+  nameWithType: ImageTypes.Ico
+- uid: Archivist.Enums.ImageTypes.Jpg
+  name: Jpg
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Jpg
+  commentId: P:Archivist.Enums.ImageTypes.Jpg
+  fullName: Archivist.Enums.ImageTypes.Jpg
+  nameWithType: ImageTypes.Jpg
+- uid: Archivist.Enums.ImageTypes.Jpg*
+  name: Jpg
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Jpg_
+  commentId: Overload:Archivist.Enums.ImageTypes.Jpg
+  isSpec: "True"
+  fullName: Archivist.Enums.ImageTypes.Jpg
+  nameWithType: ImageTypes.Jpg
+- uid: Archivist.Enums.ImageTypes.Png
+  name: Png
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Png
+  commentId: P:Archivist.Enums.ImageTypes.Png
+  fullName: Archivist.Enums.ImageTypes.Png
+  nameWithType: ImageTypes.Png
+- uid: Archivist.Enums.ImageTypes.Png*
+  name: Png
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Png_
+  commentId: Overload:Archivist.Enums.ImageTypes.Png
+  isSpec: "True"
+  fullName: Archivist.Enums.ImageTypes.Png
+  nameWithType: ImageTypes.Png
+- uid: Archivist.Enums.ImageTypes.Wbmp
+  name: Wbmp
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Wbmp
+  commentId: P:Archivist.Enums.ImageTypes.Wbmp
+  fullName: Archivist.Enums.ImageTypes.Wbmp
+  nameWithType: ImageTypes.Wbmp
+- uid: Archivist.Enums.ImageTypes.Wbmp*
+  name: Wbmp
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Wbmp_
+  commentId: Overload:Archivist.Enums.ImageTypes.Wbmp
+  isSpec: "True"
+  fullName: Archivist.Enums.ImageTypes.Wbmp
+  nameWithType: ImageTypes.Wbmp
+- uid: Archivist.Enums.ImageTypes.Webp
+  name: Webp
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Webp
+  commentId: P:Archivist.Enums.ImageTypes.Webp
+  fullName: Archivist.Enums.ImageTypes.Webp
+  nameWithType: ImageTypes.Webp
+- uid: Archivist.Enums.ImageTypes.Webp*
+  name: Webp
+  href: api/Archivist.Enums.ImageTypes.html#Archivist_Enums_ImageTypes_Webp_
+  commentId: Overload:Archivist.Enums.ImageTypes.Webp
+  isSpec: "True"
+  fullName: Archivist.Enums.ImageTypes.Webp
+  nameWithType: ImageTypes.Webp
 - uid: Archivist.ExtensionMethods
   name: Archivist.ExtensionMethods
   href: api/Archivist.ExtensionMethods.html
@@ -12348,6 +13358,174 @@ references:
   isSpec: "True"
   fullName: Archivist.Formats.ICalendar.ICalWriter.WriteAsync
   nameWithType: ICalWriter.WriteAsync
+- uid: Archivist.Formats.Image
+  name: Archivist.Formats.Image
+  href: api/Archivist.Formats.Image.html
+  commentId: N:Archivist.Formats.Image
+  fullName: Archivist.Formats.Image
+  nameWithType: Archivist.Formats.Image
+- uid: Archivist.Formats.Image.ImageFormat
+  name: ImageFormat
+  href: api/Archivist.Formats.Image.ImageFormat.html
+  commentId: T:Archivist.Formats.Image.ImageFormat
+  fullName: Archivist.Formats.Image.ImageFormat
+  nameWithType: ImageFormat
+- uid: Archivist.Formats.Image.ImageFormat.#ctor(Archivist.Converters.Convertinator)
+  name: ImageFormat(Convertinator?)
+  href: api/Archivist.Formats.Image.ImageFormat.html#Archivist_Formats_Image_ImageFormat__ctor_Archivist_Converters_Convertinator_
+  commentId: M:Archivist.Formats.Image.ImageFormat.#ctor(Archivist.Converters.Convertinator)
+  name.vb: New(Convertinator)
+  fullName: Archivist.Formats.Image.ImageFormat.ImageFormat(Archivist.Converters.Convertinator?)
+  fullName.vb: Archivist.Formats.Image.ImageFormat.New(Archivist.Converters.Convertinator)
+  nameWithType: ImageFormat.ImageFormat(Convertinator?)
+  nameWithType.vb: ImageFormat.New(Convertinator)
+- uid: Archivist.Formats.Image.ImageFormat.#ctor*
+  name: ImageFormat
+  href: api/Archivist.Formats.Image.ImageFormat.html#Archivist_Formats_Image_ImageFormat__ctor_
+  commentId: Overload:Archivist.Formats.Image.ImageFormat.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.Image.ImageFormat.ImageFormat
+  fullName.vb: Archivist.Formats.Image.ImageFormat.New
+  nameWithType: ImageFormat.ImageFormat
+  nameWithType.vb: ImageFormat.New
+- uid: Archivist.Formats.Image.ImageFormat.Extensions
+  name: Extensions
+  href: api/Archivist.Formats.Image.ImageFormat.html#Archivist_Formats_Image_ImageFormat_Extensions
+  commentId: P:Archivist.Formats.Image.ImageFormat.Extensions
+  fullName: Archivist.Formats.Image.ImageFormat.Extensions
+  nameWithType: ImageFormat.Extensions
+- uid: Archivist.Formats.Image.ImageFormat.Extensions*
+  name: Extensions
+  href: api/Archivist.Formats.Image.ImageFormat.html#Archivist_Formats_Image_ImageFormat_Extensions_
+  commentId: Overload:Archivist.Formats.Image.ImageFormat.Extensions
+  isSpec: "True"
+  fullName: Archivist.Formats.Image.ImageFormat.Extensions
+  nameWithType: ImageFormat.Extensions
+- uid: Archivist.Formats.Image.ImageFormat.MimeTypes
+  name: MimeTypes
+  href: api/Archivist.Formats.Image.ImageFormat.html#Archivist_Formats_Image_ImageFormat_MimeTypes
+  commentId: P:Archivist.Formats.Image.ImageFormat.MimeTypes
+  fullName: Archivist.Formats.Image.ImageFormat.MimeTypes
+  nameWithType: ImageFormat.MimeTypes
+- uid: Archivist.Formats.Image.ImageFormat.MimeTypes*
+  name: MimeTypes
+  href: api/Archivist.Formats.Image.ImageFormat.html#Archivist_Formats_Image_ImageFormat_MimeTypes_
+  commentId: Overload:Archivist.Formats.Image.ImageFormat.MimeTypes
+  isSpec: "True"
+  fullName: Archivist.Formats.Image.ImageFormat.MimeTypes
+  nameWithType: ImageFormat.MimeTypes
+- uid: Archivist.Formats.Image.ImageReader
+  name: ImageReader
+  href: api/Archivist.Formats.Image.ImageReader.html
+  commentId: T:Archivist.Formats.Image.ImageReader
+  fullName: Archivist.Formats.Image.ImageReader
+  nameWithType: ImageReader
+- uid: Archivist.Formats.Image.ImageReader.#ctor(Archivist.Converters.Convertinator)
+  name: ImageReader(Convertinator?)
+  href: api/Archivist.Formats.Image.ImageReader.html#Archivist_Formats_Image_ImageReader__ctor_Archivist_Converters_Convertinator_
+  commentId: M:Archivist.Formats.Image.ImageReader.#ctor(Archivist.Converters.Convertinator)
+  name.vb: New(Convertinator)
+  fullName: Archivist.Formats.Image.ImageReader.ImageReader(Archivist.Converters.Convertinator?)
+  fullName.vb: Archivist.Formats.Image.ImageReader.New(Archivist.Converters.Convertinator)
+  nameWithType: ImageReader.ImageReader(Convertinator?)
+  nameWithType.vb: ImageReader.New(Convertinator)
+- uid: Archivist.Formats.Image.ImageReader.#ctor*
+  name: ImageReader
+  href: api/Archivist.Formats.Image.ImageReader.html#Archivist_Formats_Image_ImageReader__ctor_
+  commentId: Overload:Archivist.Formats.Image.ImageReader.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.Image.ImageReader.ImageReader
+  fullName.vb: Archivist.Formats.Image.ImageReader.New
+  nameWithType: ImageReader.ImageReader
+  nameWithType.vb: ImageReader.New
+- uid: Archivist.Formats.Image.ImageReader.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.Formats.Image.ImageReader.html#Archivist_Formats_Image_ImageReader_HeaderInfo
+  commentId: P:Archivist.Formats.Image.ImageReader.HeaderInfo
+  fullName: Archivist.Formats.Image.ImageReader.HeaderInfo
+  nameWithType: ImageReader.HeaderInfo
+- uid: Archivist.Formats.Image.ImageReader.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.Formats.Image.ImageReader.html#Archivist_Formats_Image_ImageReader_HeaderInfo_
+  commentId: Overload:Archivist.Formats.Image.ImageReader.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.Formats.Image.ImageReader.HeaderInfo
+  nameWithType: ImageReader.HeaderInfo
+- uid: Archivist.Formats.Image.ImageReader.InternalCanRead(System.IO.Stream)
+  name: InternalCanRead(Stream?)
+  href: api/Archivist.Formats.Image.ImageReader.html#Archivist_Formats_Image_ImageReader_InternalCanRead_System_IO_Stream_
+  commentId: M:Archivist.Formats.Image.ImageReader.InternalCanRead(System.IO.Stream)
+  name.vb: InternalCanRead(Stream)
+  fullName: Archivist.Formats.Image.ImageReader.InternalCanRead(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.Image.ImageReader.InternalCanRead(System.IO.Stream)
+  nameWithType: ImageReader.InternalCanRead(Stream?)
+  nameWithType.vb: ImageReader.InternalCanRead(Stream)
+- uid: Archivist.Formats.Image.ImageReader.InternalCanRead*
+  name: InternalCanRead
+  href: api/Archivist.Formats.Image.ImageReader.html#Archivist_Formats_Image_ImageReader_InternalCanRead_
+  commentId: Overload:Archivist.Formats.Image.ImageReader.InternalCanRead
+  isSpec: "True"
+  fullName: Archivist.Formats.Image.ImageReader.InternalCanRead
+  nameWithType: ImageReader.InternalCanRead
+- uid: Archivist.Formats.Image.ImageReader.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream?)
+  href: api/Archivist.Formats.Image.ImageReader.html#Archivist_Formats_Image_ImageReader_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.Formats.Image.ImageReader.ReadAsync(System.IO.Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.Formats.Image.ImageReader.ReadAsync(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.Image.ImageReader.ReadAsync(System.IO.Stream)
+  nameWithType: ImageReader.ReadAsync(Stream?)
+  nameWithType.vb: ImageReader.ReadAsync(Stream)
+- uid: Archivist.Formats.Image.ImageReader.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.Formats.Image.ImageReader.html#Archivist_Formats_Image_ImageReader_ReadAsync_
+  commentId: Overload:Archivist.Formats.Image.ImageReader.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.Image.ImageReader.ReadAsync
+  nameWithType: ImageReader.ReadAsync
+- uid: Archivist.Formats.Image.ImageWriter
+  name: ImageWriter
+  href: api/Archivist.Formats.Image.ImageWriter.html
+  commentId: T:Archivist.Formats.Image.ImageWriter
+  fullName: Archivist.Formats.Image.ImageWriter
+  nameWithType: ImageWriter
+- uid: Archivist.Formats.Image.ImageWriter.#ctor
+  name: ImageWriter()
+  href: api/Archivist.Formats.Image.ImageWriter.html#Archivist_Formats_Image_ImageWriter__ctor
+  commentId: M:Archivist.Formats.Image.ImageWriter.#ctor
+  name.vb: New()
+  fullName: Archivist.Formats.Image.ImageWriter.ImageWriter()
+  fullName.vb: Archivist.Formats.Image.ImageWriter.New()
+  nameWithType: ImageWriter.ImageWriter()
+  nameWithType.vb: ImageWriter.New()
+- uid: Archivist.Formats.Image.ImageWriter.#ctor*
+  name: ImageWriter
+  href: api/Archivist.Formats.Image.ImageWriter.html#Archivist_Formats_Image_ImageWriter__ctor_
+  commentId: Overload:Archivist.Formats.Image.ImageWriter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.Image.ImageWriter.ImageWriter
+  fullName.vb: Archivist.Formats.Image.ImageWriter.New
+  nameWithType: ImageWriter.ImageWriter
+  nameWithType.vb: ImageWriter.New
+- uid: Archivist.Formats.Image.ImageWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: WriteAsync(IGenericFile?, Stream?)
+  href: api/Archivist.Formats.Image.ImageWriter.html#Archivist_Formats_Image_ImageWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.Formats.Image.ImageWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name.vb: WriteAsync(IGenericFile, Stream)
+  fullName: Archivist.Formats.Image.ImageWriter.WriteAsync(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.Formats.Image.ImageWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: ImageWriter.WriteAsync(IGenericFile?, Stream?)
+  nameWithType.vb: ImageWriter.WriteAsync(IGenericFile, Stream)
+- uid: Archivist.Formats.Image.ImageWriter.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.Formats.Image.ImageWriter.html#Archivist_Formats_Image_ImageWriter_WriteAsync_
+  commentId: Overload:Archivist.Formats.Image.ImageWriter.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.Image.ImageWriter.WriteAsync
+  nameWithType: ImageWriter.WriteAsync
 - uid: Archivist.Formats.JSON
   name: Archivist.Formats.JSON
   href: api/Archivist.Formats.JSON.html

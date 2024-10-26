@@ -1,0 +1,1213 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Image | Archivist API Reference </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Image | Archivist API Reference ">
+      
+      <meta name="description" content="Image data type.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JaCraig/Archivist/new/main/apiSpec/new?filename=Archivist_DataTypes_Image.md&amp;value=---%0Auid%3A%20Archivist.DataTypes.Image%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/icon.png" alt="Archivist">
+            Archivist
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Archivist.DataTypes.Image">
+
+
+
+  <h1 id="Archivist_DataTypes_Image" data-uid="Archivist.DataTypes.Image" class="text-break">
+Class Image  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Archivist.html">Archivist</a>.<a class="xref" href="Archivist.DataTypes.html">DataTypes</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Archivist.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Image data type.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Image : FileBaseClass&lt;Image&gt;, IGenericFile, IComparable&lt;Image&gt;, IEquatable&lt;Image&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html">FileBaseClass</a>&lt;<a class="xref" href="Archivist.DataTypes.Image.html">Image</a>&gt;</div>
+      <div><span class="xref">Image</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Archivist.Interfaces.IGenericFile.html">IGenericFile</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="Archivist.DataTypes.Image.html">Image</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Archivist.DataTypes.Image.html">Image</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Metadata">FileBaseClass&lt;Image&gt;.Metadata</a>
+    </div>
+    <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Title">FileBaseClass&lt;Image&gt;.Title</a>
+    </div>
+    <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_Converter">FileBaseClass&lt;Image&gt;.Converter</a>
+    </div>
+    <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_CompareTo_System_Object_">FileBaseClass&lt;Image&gt;.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html#Archivist_BaseClasses_FileBaseClass_1_ToString">FileBaseClass&lt;Image&gt;.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Archivist_DataTypes_Image__ctor_" data-uid="Archivist.DataTypes.Image.#ctor*"></a>
+
+  <h3 id="Archivist_DataTypes_Image__ctor" data-uid="Archivist.DataTypes.Image.#ctor">
+  Image()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.Image.html">Image</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image__ctor_" data-uid="Archivist.DataTypes.Image.#ctor*"></a>
+
+  <h3 id="Archivist_DataTypes_Image__ctor_Archivist_Converters_Convertinator_" data-uid="Archivist.DataTypes.Image.#ctor(Archivist.Converters.Convertinator)">
+  Image(Convertinator?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.DataTypes.Image.html">Image</a> class with the specified converter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image(Convertinator? converter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
+    <dd><p>The converter to use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Archivist_DataTypes_Image_BytesPerPixel_" data-uid="Archivist.DataTypes.Image.BytesPerPixel*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_BytesPerPixel" data-uid="Archivist.DataTypes.Image.BytesPerPixel">
+  BytesPerPixel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the number of bytes per pixel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BytesPerPixel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_Data_" data-uid="Archivist.DataTypes.Image.Data*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_Data" data-uid="Archivist.DataTypes.Image.Data">
+  Data
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the data of the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Data { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_Description_" data-uid="Archivist.DataTypes.Image.Description*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_Description" data-uid="Archivist.DataTypes.Image.Description">
+  Description
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The description of the image (if using OCR/LLM processor, that information will be
+stored here).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_Height_" data-uid="Archivist.DataTypes.Image.Height*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_Height" data-uid="Archivist.DataTypes.Image.Height">
+  Height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the height of the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Height { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_ImageType_" data-uid="Archivist.DataTypes.Image.ImageType*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_ImageType" data-uid="Archivist.DataTypes.Image.ImageType">
+  ImageType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the type of the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ImageType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_Width_" data-uid="Archivist.DataTypes.Image.Width*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_Width" data-uid="Archivist.DataTypes.Image.Width">
+  Width
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the width of the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Width { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Archivist_DataTypes_Image_CompareTo_" data-uid="Archivist.DataTypes.Image.CompareTo*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_CompareTo_Archivist_DataTypes_Image_" data-uid="Archivist.DataTypes.Image.CompareTo(Archivist.DataTypes.Image)">
+  CompareTo(Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares the Image to another Image based on their content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int CompareTo(Image? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The other Image to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer that indicates the relative order of the Images.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_Equals_" data-uid="Archivist.DataTypes.Image.Equals*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_Equals_Archivist_DataTypes_Image_" data-uid="Archivist.DataTypes.Image.Equals(Archivist.DataTypes.Image)">
+  Equals(Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the Image is equal to another Image based on their content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(Image? other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The other Image to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the Images are equal; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_Equals_" data-uid="Archivist.DataTypes.Image.Equals*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_Equals_System_Object_" data-uid="Archivist.DataTypes.Image.Equals(System.Object)">
+  Equals(object?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the Image is equal to another object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the Image is equal to the object; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_GetContent_" data-uid="Archivist.DataTypes.Image.GetContent*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_GetContent" data-uid="Archivist.DataTypes.Image.GetContent">
+  GetContent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the content of the Image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string? GetContent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The content of the Image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_GetHashCode_" data-uid="Archivist.DataTypes.Image.GetHashCode*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_GetHashCode" data-uid="Archivist.DataTypes.Image.GetHashCode">
+  GetHashCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the hash code of the Image based on its content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The hash code of the Image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_ToFileType_" data-uid="Archivist.DataTypes.Image.ToFileType*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_ToFileType__1" data-uid="Archivist.DataTypes.Image.ToFileType``1">
+  ToFileType&lt;TFile&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the Image to the specified object type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TFile? ToFileType&lt;TFile&gt;() where TFile : IGenericFile</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TFile</span></dt>
+    <dd><p>The converted Image.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TFile</code></dt>
+    <dd><p>The type to convert the Image to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Archivist_DataTypes_Image_op_Equality_" data-uid="Archivist.DataTypes.Image.op_Equality*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_Equality_Archivist_DataTypes_Image_Archivist_DataTypes_Image_" data-uid="Archivist.DataTypes.Image.op_Equality(Archivist.DataTypes.Image,Archivist.DataTypes.Image)">
+  operator ==(Image?, Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two Image objects are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Image? left, Image? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The first Image to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The second Image to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the Image objects are equal; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_GreaterThan_" data-uid="Archivist.DataTypes.Image.op_GreaterThan*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_GreaterThan_Archivist_DataTypes_Image_Archivist_DataTypes_Image_" data-uid="Archivist.DataTypes.Image.op_GreaterThan(Archivist.DataTypes.Image,Archivist.DataTypes.Image)">
+  operator &gt;(Image?, Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one Image object is greater than another Image object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(Image? left, Image? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The first Image to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The second Image to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the first Image is greater than the second Image; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_GreaterThanOrEqual_" data-uid="Archivist.DataTypes.Image.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_GreaterThanOrEqual_Archivist_DataTypes_Image_Archivist_DataTypes_Image_" data-uid="Archivist.DataTypes.Image.op_GreaterThanOrEqual(Archivist.DataTypes.Image,Archivist.DataTypes.Image)">
+  operator &gt;=(Image?, Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one Image object is greater than or equal to another Image object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(Image? left, Image? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The first Image to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The second Image to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the first Image is greater than or equal to the second Image; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_Implicit_" data-uid="Archivist.DataTypes.Image.op_Implicit*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Calendar" data-uid="Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Calendar">
+  implicit operator Calendar?(Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the Image to a Calendar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Calendar?(Image? file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The Image to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.Calendar.html">Calendar</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_Implicit_" data-uid="Archivist.DataTypes.Image.op_Implicit*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Card" data-uid="Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Card">
+  implicit operator Card?(Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the Image to a Card.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Card?(Image? file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The Image to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.Card.html">Card</a></dt>
+    <dd><p>The Card representation of the Image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_Implicit_" data-uid="Archivist.DataTypes.Image.op_Implicit*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Feed" data-uid="Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Feed">
+  implicit operator Feed?(Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the Image to a Feed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Feed?(Image? file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The Image to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.Feed.html">Feed</a></dt>
+    <dd><p>The Feed representation of the Image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_Implicit_" data-uid="Archivist.DataTypes.Image.op_Implicit*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_StructuredObject" data-uid="Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.StructuredObject">
+  implicit operator StructuredObject?(Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the Image to a structured object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator StructuredObject?(Image? file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The Image to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.StructuredObject.html">StructuredObject</a></dt>
+    <dd><p>The structured object representation of the Image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_Implicit_" data-uid="Archivist.DataTypes.Image.op_Implicit*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Table" data-uid="Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Table">
+  implicit operator Table?(Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the Image to a table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Table?(Image? file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The Image to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.Table.html">Table</a></dt>
+    <dd><p>The table representation of the Image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_Implicit_" data-uid="Archivist.DataTypes.Image.op_Implicit*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Tables" data-uid="Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Tables">
+  implicit operator Tables?(Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the Image to a Tables file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Tables?(Image? file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The Image to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.Tables.html">Tables</a></dt>
+    <dd><p>The Tables representation of the Image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_Implicit_" data-uid="Archivist.DataTypes.Image.op_Implicit*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_Implicit_Archivist_DataTypes_Image__Archivist_DataTypes_Text" data-uid="Archivist.DataTypes.Image.op_Implicit(Archivist.DataTypes.Image)~Archivist.DataTypes.Text">
+  implicit operator Text?(Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the Image to text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Text?(Image? file)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The Image to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Archivist.DataTypes.Text.html">Text</a></dt>
+    <dd><p>The text representation of the Image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_Inequality_" data-uid="Archivist.DataTypes.Image.op_Inequality*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_Inequality_Archivist_DataTypes_Image_Archivist_DataTypes_Image_" data-uid="Archivist.DataTypes.Image.op_Inequality(Archivist.DataTypes.Image,Archivist.DataTypes.Image)">
+  operator !=(Image?, Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether two Image objects are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Image? left, Image? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The first Image to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The second Image to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the Image objects are not equal; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_LessThan_" data-uid="Archivist.DataTypes.Image.op_LessThan*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_LessThan_Archivist_DataTypes_Image_Archivist_DataTypes_Image_" data-uid="Archivist.DataTypes.Image.op_LessThan(Archivist.DataTypes.Image,Archivist.DataTypes.Image)">
+  operator &lt;(Image?, Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one Image object is less than another Image object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Image? left, Image? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The first Image to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The second Image to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the first Image is less than the second Image; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Archivist_DataTypes_Image_op_LessThanOrEqual_" data-uid="Archivist.DataTypes.Image.op_LessThanOrEqual*"></a>
+
+  <h3 id="Archivist_DataTypes_Image_op_LessThanOrEqual_Archivist_DataTypes_Image_Archivist_DataTypes_Image_" data-uid="Archivist.DataTypes.Image.op_LessThanOrEqual(Archivist.DataTypes.Image,Archivist.DataTypes.Image)">
+  operator &lt;=(Image?, Image?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether one Image object is less than or equal to another Image object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(Image? left, Image? right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The first Image to compare.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="Archivist.DataTypes.Image.html">Image</a></dt>
+    <dd><p>The second Image to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the first Image is less than or equal to the second Image; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="seealso">See Also</h2>
+  <div class="seealso">
+      <div><a class="xref" href="Archivist.BaseClasses.FileBaseClass-1.html">FileBaseClass</a>&lt;TFileType&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;T&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;T&gt;</div>
+  </div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/DataTypes/Image.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <strong><a href='https://github.com/JaCraig/Archivist'>Open in Github</a></strong>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
