@@ -35,6 +35,22 @@
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="tessdata\eng.traineddata" />
+    <None Remove="tessdata\pdf.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tessdata\eng.traineddata">
+      <Pack>True</Pack>
+      <PackagePath>tessdata\</PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\pdf.ttf">
+      <Pack>True</Pack>
+      <PackagePath>tessdata\</PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="..\Icon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

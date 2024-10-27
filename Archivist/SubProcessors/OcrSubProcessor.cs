@@ -1,7 +1,6 @@
 using Archivist.Interfaces;
 using System.IO;
 using Tesseract;
-using System;
 
 namespace Archivist.SubProcessors
 {
@@ -16,20 +15,19 @@ namespace Archivist.SubProcessors
         /// <param name="file">The file to process.</param>
         /// <param name="stream">The stream to process.</param>
         /// <returns>The processed file object.</returns>
-        public IGenericFile Process(IGenericFile file, Stream stream)
+        public IGenericFile? Process(IGenericFile? file, Stream? stream)
         {
             if (file is null)
-                throw new ArgumentNullException(nameof(file));
-
-            if (file is not DataTypes.Image imageFile)
                 return file;
 
-            using var engine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default);
-            using var img = Pix.LoadFromMemory(imageFile.Data);
-            using var page = engine.Process(img);
-            var text = page.GetText();
+            if (file is not DataTypes.Image ImageFile)
+                return file;
 
-            file.Metadata["OCRText"] = text;
+            using var Engine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default);
+            using var Img = Pix.LoadFromMemory(ImageFile.Data);
+            using Page Page = Engine.Process(Img);
+            var Content = Page.GetText();
+            file.Metadata["OCRText"] = ImageFile.Description = Content;
 
             return file;
         }

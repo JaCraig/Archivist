@@ -13,6 +13,6 @@ namespace Archivist.Interfaces
         /// <param name="file">The file to process.</param>
         /// <param name="stream">The stream to process.</param>
         /// <returns>The processed file object.</returns>
-        IGenericFile Process(IGenericFile file, Stream stream);
+        IGenericFile? Process(IGenericFile? file, Stream? stream);
     }
 }
