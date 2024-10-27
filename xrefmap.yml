@@ -14869,11 +14869,14 @@ references:
   fullName: Archivist.Interfaces.ISubProcessor
   nameWithType: ISubProcessor
 - uid: Archivist.Interfaces.ISubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  name: Process(IGenericFile, Stream)
+  name: Process(IGenericFile?, Stream?)
   href: api/Archivist.Interfaces.ISubProcessor.html#Archivist_Interfaces_ISubProcessor_Process_Archivist_Interfaces_IGenericFile_System_IO_Stream_
   commentId: M:Archivist.Interfaces.ISubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  fullName: Archivist.Interfaces.ISubProcessor.Process(Archivist.Interfaces.IGenericFile, System.IO.Stream)
-  nameWithType: ISubProcessor.Process(IGenericFile, Stream)
+  name.vb: Process(IGenericFile, Stream)
+  fullName: Archivist.Interfaces.ISubProcessor.Process(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.Interfaces.ISubProcessor.Process(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: ISubProcessor.Process(IGenericFile?, Stream?)
+  nameWithType.vb: ISubProcessor.Process(IGenericFile, Stream)
 - uid: Archivist.Interfaces.ISubProcessor.Process*
   name: Process
   href: api/Archivist.Interfaces.ISubProcessor.html#Archivist_Interfaces_ISubProcessor_Process_
@@ -15024,25 +15027,6 @@ references:
   commentId: N:Archivist.SubProcessors
   fullName: Archivist.SubProcessors
   nameWithType: Archivist.SubProcessors
-- uid: Archivist.SubProcessors.MetadataSubProcessor
-  name: MetadataSubProcessor
-  href: api/Archivist.SubProcessors.MetadataSubProcessor.html
-  commentId: T:Archivist.SubProcessors.MetadataSubProcessor
-  fullName: Archivist.SubProcessors.MetadataSubProcessor
-  nameWithType: MetadataSubProcessor
-- uid: Archivist.SubProcessors.MetadataSubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  name: Process(IGenericFile, Stream)
-  href: api/Archivist.SubProcessors.MetadataSubProcessor.html#Archivist_SubProcessors_MetadataSubProcessor_Process_Archivist_Interfaces_IGenericFile_System_IO_Stream_
-  commentId: M:Archivist.SubProcessors.MetadataSubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  fullName: Archivist.SubProcessors.MetadataSubProcessor.Process(Archivist.Interfaces.IGenericFile, System.IO.Stream)
-  nameWithType: MetadataSubProcessor.Process(IGenericFile, Stream)
-- uid: Archivist.SubProcessors.MetadataSubProcessor.Process*
-  name: Process
-  href: api/Archivist.SubProcessors.MetadataSubProcessor.html#Archivist_SubProcessors_MetadataSubProcessor_Process_
-  commentId: Overload:Archivist.SubProcessors.MetadataSubProcessor.Process
-  isSpec: "True"
-  fullName: Archivist.SubProcessors.MetadataSubProcessor.Process
-  nameWithType: MetadataSubProcessor.Process
 - uid: Archivist.SubProcessors.OcrSubProcessor
   name: OcrSubProcessor
   href: api/Archivist.SubProcessors.OcrSubProcessor.html
@@ -15050,11 +15034,14 @@ references:
   fullName: Archivist.SubProcessors.OcrSubProcessor
   nameWithType: OcrSubProcessor
 - uid: Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  name: Process(IGenericFile, Stream)
+  name: Process(IGenericFile?, Stream?)
   href: api/Archivist.SubProcessors.OcrSubProcessor.html#Archivist_SubProcessors_OcrSubProcessor_Process_Archivist_Interfaces_IGenericFile_System_IO_Stream_
   commentId: M:Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  fullName: Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile, System.IO.Stream)
-  nameWithType: OcrSubProcessor.Process(IGenericFile, Stream)
+  name.vb: Process(IGenericFile, Stream)
+  fullName: Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: OcrSubProcessor.Process(IGenericFile?, Stream?)
+  nameWithType.vb: OcrSubProcessor.Process(IGenericFile, Stream)
 - uid: Archivist.SubProcessors.OcrSubProcessor.Process*
   name: Process
   href: api/Archivist.SubProcessors.OcrSubProcessor.html#Archivist_SubProcessors_OcrSubProcessor_Process_
