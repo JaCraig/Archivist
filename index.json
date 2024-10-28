@@ -659,16 +659,6 @@
     "title": "Namespace Archivist.Options | Archivist API Reference",
     "keywords": "Namespace Archivist.Options Classes DelimitedOptions Represents the options for handling delimited data. ExcelOptions Represents the options for Excel files."
   },
-  "api/Archivist.SubProcessors.OcrSubProcessor.html": {
-    "href": "api/Archivist.SubProcessors.OcrSubProcessor.html",
-    "title": "Class OcrSubProcessor | Archivist API Reference",
-    "keywords": "Class OcrSubProcessor Namespace Archivist.SubProcessors Assembly Archivist.dll OCR sub-processor implementation. public class OcrSubProcessor : ISubProcessor Inheritance object OcrSubProcessor Implements ISubProcessor Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Process(IGenericFile?, Stream?) Processes the given file to perform OCR. public IGenericFile? Process(IGenericFile? file, Stream? stream) Parameters file IGenericFile The file to process. stream Stream The stream to process. Returns IGenericFile The processed file object."
-  },
-  "api/Archivist.SubProcessors.html": {
-    "href": "api/Archivist.SubProcessors.html",
-    "title": "Namespace Archivist.SubProcessors | Archivist API Reference",
-    "keywords": "Namespace Archivist.SubProcessors Classes OcrSubProcessor OCR sub-processor implementation."
-  },
   "api/Archivist.html": {
     "href": "api/Archivist.html",
     "title": "Namespace Archivist | Archivist API Reference",

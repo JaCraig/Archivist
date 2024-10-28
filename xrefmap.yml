@@ -15021,31 +15021,3 @@ references:
   isSpec: "True"
   fullName: Archivist.Options.ExcelOptions.FirstRowIsColumnHeaders
   nameWithType: ExcelOptions.FirstRowIsColumnHeaders
-- uid: Archivist.SubProcessors
-  name: Archivist.SubProcessors
-  href: api/Archivist.SubProcessors.html
-  commentId: N:Archivist.SubProcessors
-  fullName: Archivist.SubProcessors
-  nameWithType: Archivist.SubProcessors
-- uid: Archivist.SubProcessors.OcrSubProcessor
-  name: OcrSubProcessor
-  href: api/Archivist.SubProcessors.OcrSubProcessor.html
-  commentId: T:Archivist.SubProcessors.OcrSubProcessor
-  fullName: Archivist.SubProcessors.OcrSubProcessor
-  nameWithType: OcrSubProcessor
-- uid: Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  name: Process(IGenericFile?, Stream?)
-  href: api/Archivist.SubProcessors.OcrSubProcessor.html#Archivist_SubProcessors_OcrSubProcessor_Process_Archivist_Interfaces_IGenericFile_System_IO_Stream_
-  commentId: M:Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile,System.IO.Stream)
-  name.vb: Process(IGenericFile, Stream)
-  fullName: Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
-  fullName.vb: Archivist.SubProcessors.OcrSubProcessor.Process(Archivist.Interfaces.IGenericFile, System.IO.Stream)
-  nameWithType: OcrSubProcessor.Process(IGenericFile?, Stream?)
-  nameWithType.vb: OcrSubProcessor.Process(IGenericFile, Stream)
-- uid: Archivist.SubProcessors.OcrSubProcessor.Process*
-  name: Process
-  href: api/Archivist.SubProcessors.OcrSubProcessor.html#Archivist_SubProcessors_OcrSubProcessor_Process_
-  commentId: Overload:Archivist.SubProcessors.OcrSubProcessor.Process
-  isSpec: "True"
-  fullName: Archivist.SubProcessors.OcrSubProcessor.Process
-  nameWithType: OcrSubProcessor.Process
