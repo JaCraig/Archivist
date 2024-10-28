@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.8.0"></a>
+## [0.8.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.0) (2024-10-28)
+
+### Features
+
+* Add sub-processors for file types ([21a1f42](https://www.github.com/JaCraig/Archivist/commit/21a1f42835aee8e439b1a81e5a2102db92ac8f11))
+* Merge pull request [#80](https://www.github.com/JaCraig/Archivist/issues/80) from JaCraig/AddingImageSupport ([15f1923](https://www.github.com/JaCraig/Archivist/commit/15f1923368d3a6cb81d716d88a3424708c5a99df))
+
+### Bug Fixes
+
+* Add SkiaSharp.NativeAssets.Linux to Archivist.csproj ([6cd590b](https://www.github.com/JaCraig/Archivist/commit/6cd590b61220f6ff4585f9050e9e5e2140d8e51f))
+* build fix ([d7c46fe](https://www.github.com/JaCraig/Archivist/commit/d7c46fe1f7573c4584fa6d682413bbe093ff991e))
+* bump DocumentFormat.OpenXml in /Archivist in the dependencies group ([4372767](https://www.github.com/JaCraig/Archivist/commit/4372767b0226c607d08e0f49966e81279189f0bc))
+* Centralize stream validation logic in IsValidStream method ([6efc464](https://www.github.com/JaCraig/Archivist/commit/6efc464658c697507a208aaad6c8f370fcfa80fe))
+* Finishing tests for images ([86ff3d5](https://www.github.com/JaCraig/Archivist/commit/86ff3d55ac894abc045b5b6d4ebdd39c84f3a349))
+* Fix for versionize ([feefa79](https://www.github.com/JaCraig/Archivist/commit/feefa7984cc3d0d209d0cc8e03955d95d537195d))
+* Fixing build and hopefully finishing migration ([a977c8f](https://www.github.com/JaCraig/Archivist/commit/a977c8f05d8b018e4b32a67ca0eb27972c46633f))
+* Fixing versioning ([3d7b8be](https://www.github.com/JaCraig/Archivist/commit/3d7b8beb27e4ddfe3e22f4fc543583e642135fe1))
+* Refactor file handling and update OCR processing ([8b6d68e](https://www.github.com/JaCraig/Archivist/commit/8b6d68e98278c692da32f8e37081321a9fc5e44b))
+
+### Other
+
+* Add support for sub-processors in FormatManager and update tests ([97ce9bc](https://www.github.com/JaCraig/Archivist/commit/97ce9bc2ec57bf699170ccc348ea4ed783d8de5a))
+* Merge branch 'main' into AddingImageSupport ([c551d5e](https://www.github.com/JaCraig/Archivist/commit/c551d5e66696553f141751aa0161306202a8af76))
+* Merge pull request #78 from JaCraig/dependabot/nuget/Archivist/dependencies-e7692e75d8 ([bf7f729](https://www.github.com/JaCraig/Archivist/commit/bf7f7296365d7cab9b1e8f353e4b2c7942752a27))
+* Merge pull request #79 from JaCraig/dependabot/github_actions/dependencies-18190d55f2 ([3f8a629](https://www.github.com/JaCraig/Archivist/commit/3f8a6293d19e5d4ca190e5fe3d1af2e253433239))
+* Merge pull request #81 from JaCraig/add-sub-processors ([88ad591](https://www.github.com/JaCraig/Archivist/commit/88ad59102fc857b19b0b752cc064a2229546360e))
+* Add MetadataExtractor, refactor image handling ([b4fd223](https://www.github.com/JaCraig/Archivist/commit/b4fd22332add892ded7aea1cead7caefa6526559))
+* Add new image types and extensive unit tests ([3501a26](https://www.github.com/JaCraig/Archivist/commit/3501a26068720fd13c2040e6ea47ce1db48aca1e))
+* bump actions/setup-dotnet in the dependencies group ([e82e7ea](https://www.github.com/JaCraig/Archivist/commit/e82e7ea85f4b8a3ab78138e4331eaff2dd50d50c))
+* Enhance image handling and conversion capabilities ([d9f21a7](https://www.github.com/JaCraig/Archivist/commit/d9f21a715aa1984dbb8e817e7d58cedc52a48e93))
+* Implement tests for various image-related functionalities ([34972ad](https://www.github.com/JaCraig/Archivist/commit/34972ad141773e3b52b097029d556c0c3b16aa54))
+* Migrating OCR to own DLL and attempting to get build running ([2e88f6e](https://www.github.com/JaCraig/Archivist/commit/2e88f6e06155b8d352e2764bbef15ab4276d506b))
+* Starting on image formats ([499bfa5](https://www.github.com/JaCraig/Archivist/commit/499bfa5a37c2925d88c90c8807552daa30668677))
+* Update husky and versionize tool versions ([56e0bb0](https://www.github.com/JaCraig/Archivist/commit/56e0bb0b8516ea5aed27f5f70aeda3175bf2e985))
+* Update workflows, version, and changelog ([699ff75](https://www.github.com/JaCraig/Archivist/commit/699ff75205dca0cff7ac178540f5c501b6b7d10d))
+
 <a name="0.7.5"></a>
 ## [0.7.5](https://www.github.com/JaCraig/Archivist/releases/tag/v0.7.5) (2024-10-15)
 
