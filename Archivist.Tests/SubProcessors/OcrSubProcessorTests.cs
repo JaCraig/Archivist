@@ -1,7 +1,7 @@
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
-using Archivist.SubProcessors;
+using Archivist.OCR.SubProcessors;
 using Archivist.Tests.BaseClasses;
 using NSubstitute;
 using System.IO;

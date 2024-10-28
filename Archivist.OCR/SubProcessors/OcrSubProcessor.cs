@@ -2,7 +2,7 @@ using Archivist.Interfaces;
 using System.IO;
 using Tesseract;
 
-namespace Archivist.SubProcessors
+namespace Archivist.OCR.SubProcessors
 {
     /// <summary>
     /// OCR sub-processor implementation.

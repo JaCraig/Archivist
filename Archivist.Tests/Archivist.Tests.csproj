@@ -131,6 +131,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Archivist.OCR\Archivist.OCR.csproj" />
     <ProjectReference Include="..\Archivist\Archivist.csproj" />
   </ItemGroup>
 </Project>
