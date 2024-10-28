@@ -26,15 +26,6 @@ jobs:
       uses: actions/setup-dotnet@v4.1.0
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
-
-    - name: Install Tesseract
-      run: |
-            mkdir x64
-            cd x64
-            sudo apt install libleptonica-dev
-            ln -s /usr/lib/x86_64-linux-gnu/liblept.so.5 libleptonica-1.82.0.so
-            sudo apt install libtesseract-dev
-            ln -s /usr/lib/x86_64-linux-gnu/libtesseract.so.4.0.1 libtesseract41.so
         
     - name: Install Versionize
       run: dotnet tool install --global Versionize
@@ -56,7 +47,7 @@ jobs:
       run: dotnet build --no-restore --configuration $BUILD_CONFIG
       
     - name: Test
-      run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults-${{ matrix.dotnet-version }}/ /p:CoverletOutputFormat=lcov /p:Configuration=$BUILD_CONFIG --no-build --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
+      run: dotnet test ./Archivist.Tests/Archivist.Tests.csproj /p:CollectCoverage=true /p:CoverletOutput=TestResults-${{ matrix.dotnet-version }}/ /p:CoverletOutputFormat=lcov /p:Configuration=$BUILD_CONFIG --no-build --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
     
     - name: Upload test results
       uses: actions/upload-artifact@v4

@@ -2,12 +2,10 @@ using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
 using Archivist.OCR.SubProcessors;
-using Archivist.Tests.BaseClasses;
+using Archivist.OCR.Tests.BaseClasses;
 using NSubstitute;
-using System.IO;
-using Xunit;
 
-namespace Archivist.Tests.SubProcessors
+namespace Archivist.OCR.Tests.SubProcessors
 {
     public class OcrSubProcessorTests : TestBaseClass<OcrSubProcessor>
     {

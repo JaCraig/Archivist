@@ -17,6 +17,8 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -131,7 +133,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Archivist.OCR\Archivist.OCR.csproj" />
     <ProjectReference Include="..\Archivist\Archivist.csproj" />
   </ItemGroup>
 </Project>
