@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.8.2"></a>
+## [0.8.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.2) (2024-10-30)
+
+### Bug Fixes
+
+* bump ObjectCartographer in /Archivist in the dependencies group ([da33bd9](https://www.github.com/JaCraig/Archivist/commit/da33bd9fcb2a808303b308414d6f8a88eed52a59))
+
+### Other
+
+* Merge pull request #84 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-ea33c2afa0 ([1096a72](https://www.github.com/JaCraig/Archivist/commit/1096a7259ad306c4e080964fa0e5e3691511a79b))
+* Merge pull request #85 from JaCraig/dependabot/nuget/Archivist/dependencies-52fcd07a57 ([7eb4852](https://www.github.com/JaCraig/Archivist/commit/7eb48521119394a3ebff747a700fb2b3282d4d1d))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([a306d87](https://www.github.com/JaCraig/Archivist/commit/a306d87964c2fdbdc7fae2283a8ff8bd7a8bd981))
+
 <a name="0.8.1"></a>
 ## [0.8.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.1) (2024-10-29)
 
