@@ -37,6 +37,8 @@
   <ItemGroup>
     <None Remove="tessdata\eng.traineddata" />
     <None Remove="tessdata\pdf.ttf" />
+    <None Remove="x64\libleptonica-1.82.0.so" />
+    <None Remove="x64\libtesseract50.so" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="tessdata\eng.traineddata">
@@ -49,6 +51,12 @@
       <PackagePath>tessdata\</PackagePath>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="x64\libleptonica-1.82.0.so" Pack="true" PackagePath="x64">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libtesseract50.so" Pack="true" PackagePath="x64">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Icon.png">
@@ -59,8 +67,6 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="runtimes/linux-x64/native/libleptonica-1.82.0.so" Pack="true" PackagePath="runtimes/linux-x64/native/" />
-    <None Include="runtimes/linux-x64/native/libtesseract50.so" Pack="true" PackagePath="runtimes/linux-x64/native/" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
