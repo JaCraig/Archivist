@@ -59,6 +59,8 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <None Include="runtimes/linux-x64/native/libleptonica-1.82.0.so" Pack="true" PackagePath="runtimes/linux-x64/native/" />
+    <None Include="runtimes/linux-x64/native/libtesseract50.so" Pack="true" PackagePath="runtimes/linux-x64/native/" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
