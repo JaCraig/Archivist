@@ -8,13 +8,6 @@ on:
     branches: [ "main" ]
 
 jobs:
-  setup:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libc6
   build:
     uses: 'JaCraig/Centralized-Workflows/.github/workflows/dotnet-publish.yml@main'
     with:
@@ -22,6 +15,7 @@ jobs:
       user: 'JaCraig'
       user-email: 'JaCraig@users.noreply.github.com'
       coveralls-upload: true
+      test-filter: "Archivist.Tests"
     secrets:
       PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
