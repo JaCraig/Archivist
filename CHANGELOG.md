@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.8.3"></a>
+## [0.8.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.3) (2024-11-04)
+
+### Bug Fixes
+
+* Update FileStream usage in tests for read-only access ([dedf644](https://www.github.com/JaCraig/Archivist/commit/dedf64403a57b3d95467fe3dcd14393c06abbec0))
+
+### Other
+
+* Merge pull request #86 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-e7a9e0d4f6 ([7d1e95e](https://www.github.com/JaCraig/Archivist/commit/7d1e95e918c30c0063a4e2c5fb706f291218e3b3))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([37ec6d2](https://www.github.com/JaCraig/Archivist/commit/37ec6d21eba1885e3b53a10d9f2699a22095cfaf))
+
 <a name="0.8.2"></a>
 ## [0.8.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.2) (2024-10-30)
 
