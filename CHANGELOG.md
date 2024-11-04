@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.8.4"></a>
+## [0.8.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.4) (2024-11-04)
+
+### Bug Fixes
+
+* Add native Linux libraries to OCR project ([1dfc6b5](https://www.github.com/JaCraig/Archivist/commit/1dfc6b5a80d0b169e4fa4470db9c7759d488e5ba))
+* Add new job to dotnet-publish.yml for dependency install ([873dc05](https://www.github.com/JaCraig/Archivist/commit/873dc054b74e372e929d80fd36994fdb26286673))
+* Adding files ([12cb8fb](https://www.github.com/JaCraig/Archivist/commit/12cb8fb9ab5591e1ab95cfc041e4c570043642b4))
+* remove GITHUB_TOKEN from dotnet-publish workflow secrets ([65a64d9](https://www.github.com/JaCraig/Archivist/commit/65a64d9ebe73be57583ced22a0ef828bad3aad4d))
+* Remove setup job from dotnet-publish.yml and add test filter ([d46012b](https://www.github.com/JaCraig/Archivist/commit/d46012b2f9462f67a719ebe4195dd3d1359764b7))
+* Trying to get tesseract to recognize libraries ([a451e84](https://www.github.com/JaCraig/Archivist/commit/a451e8455ce32b9d05dfacb6434b95c850de70d2))
+* Update coveralls upload path in dotnet-publish.yml ([e644c80](https://www.github.com/JaCraig/Archivist/commit/e644c80d40f48e450ae0ee10c1460c118601cecb))
+* **build:** centralize workflow configurations by using shared templates ([b0ff5cd](https://www.github.com/JaCraig/Archivist/commit/b0ff5cdd9c07d3686c24209d379ef125d9515207))
+
+### Other
+
+* Merge branch 'main' of https://github.com/JaCraig/Archivist ([15824f8](https://www.github.com/JaCraig/Archivist/commit/15824f8bfca9391ebcc1ba5a0c4b8cd50a1df137))
+
 <a name="0.8.3"></a>
 ## [0.8.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.3) (2024-11-04)
 
