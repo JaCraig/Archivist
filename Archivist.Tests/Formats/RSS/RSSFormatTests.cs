@@ -78,7 +78,7 @@ namespace Archivist.Tests.Formats.RSS
         public async Task CanReadAsync()
         {
             // Arrange
-            var TestData = new FileStream("./TestData/TestRSS.rss", FileMode.Open);
+            var TestData = new FileStream("./TestData/TestRSS.rss", FileMode.Open, FileAccess.Read, FileShare.Read);
             var TestObject = new RSSFormat(_Converter);
 
             // Act
@@ -109,7 +109,7 @@ namespace Archivist.Tests.Formats.RSS
         public async Task CanWriteAsync()
         {
             // Arrange
-            var TestData = new FileStream("./TestData/TestRSS.rss", FileMode.Open);
+            var TestData = new FileStream("./TestData/TestRSS.rss", FileMode.Open, FileAccess.Read, FileShare.Read);
             Feed Feed = Assert.IsType<Feed>(await _TestClass.ReadAsync(TestData));
             var NewStream = new MemoryStream();
 

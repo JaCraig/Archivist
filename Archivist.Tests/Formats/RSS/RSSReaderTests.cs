@@ -73,7 +73,7 @@ namespace Archivist.Tests.Formats.RSS
         public async Task Read_From_File2Async()
         {
             // Arrange
-            var Stream = new FileStream("./TestData/TestRSS2.rss", FileMode.Open);
+            var Stream = new FileStream("./TestData/TestRSS2.rss", FileMode.Open, FileAccess.Read, FileShare.Read);
 
             // Act
             IGenericFile? Result = await _TestClass.ReadAsync(Stream);
@@ -95,7 +95,7 @@ namespace Archivist.Tests.Formats.RSS
         public async Task Read_From_FileStreamAsync()
         {
             // Arrange
-            var Stream = new FileStream("./TestData/TestRSS.rss", FileMode.Open);
+            var Stream = new FileStream("./TestData/TestRSS.rss", FileMode.Open, FileAccess.Read, FileShare.Read);
 
             // Act
             IGenericFile? Result = await _TestClass.ReadAsync(Stream);

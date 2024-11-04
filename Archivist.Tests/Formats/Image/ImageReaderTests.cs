@@ -52,7 +52,7 @@ namespace Archivist.Tests.Formats.Image
         public async Task CanCallReadAsyncFromFileAsync()
         {
             // Arrange
-            var TestData = new FileStream("./TestData/TestJPG.jpg", FileMode.Open);
+            var TestData = new FileStream("./TestData/TestJPG.jpg", FileMode.Open, FileAccess.Read, FileShare.Read);
 
             // Act
             IGenericFile? Result = await _TestClass.ReadAsync(TestData);
