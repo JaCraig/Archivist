@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.8.6"></a>
+## [0.8.6](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.6) (2024-11-05)
+
+### Bug Fixes
+
+* bump the dependencies group in /Archivist with 2 updates ([056774b](https://www.github.com/JaCraig/Archivist/commit/056774b008a697813b29028081ec95215adaf4ec))
+
+### Other
+
+* Merge pull request #87 from JaCraig/dependabot/nuget/Archivist/dependencies-346a8ff0a9 ([52227fc](https://www.github.com/JaCraig/Archivist/commit/52227fc9b0389e47015b70f81ba176accac3142d))
+
 <a name="0.8.5"></a>
 ## [0.8.5](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.5) (2024-11-05)
 
