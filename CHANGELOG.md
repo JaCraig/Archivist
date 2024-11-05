@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.8.5"></a>
+## [0.8.5](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.5) (2024-11-05)
+
+### Bug Fixes
+
+* Add devcontainer configuration and VSCode settings ([ed81ce8](https://www.github.com/JaCraig/Archivist/commit/ed81ce86a398154a5bd669904e7f28fc43c32d00))
+
+### Other
+
+* Merge branch 'main' of https://github.com/JaCraig/Archivist ([2c46ee4](https://www.github.com/JaCraig/Archivist/commit/2c46ee4266b26ece96e9b1c6ae3cd8b5084cc47c))
+
 <a name="0.8.4"></a>
 ## [0.8.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.4) (2024-11-04)
 
