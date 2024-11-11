@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.8.8"></a>
+## [0.8.8](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.8) (2024-11-11)
+
+### Bug Fixes
+
+* bump YamlDotNet in /Archivist in the dependencies group ([f8d7cdd](https://www.github.com/JaCraig/Archivist/commit/f8d7cdd5779fd8c205034ad06c4133a02f5c240b))
+
+### Other
+
+* Merge pull request #91 from JaCraig/dependabot/nuget/Archivist/dependencies-b0c9451ed6 ([b82e763](https://www.github.com/JaCraig/Archivist/commit/b82e7634f867778cc6133e7e7b9beaf8bbba93dd))
+
 <a name="0.8.7"></a>
 ## [0.8.7](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.7) (2024-11-08)
 
