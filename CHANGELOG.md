@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.8.9"></a>
+## [0.8.9](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.9) (2024-11-12)
+
+### Bug Fixes
+
+* bump the dependencies group in /Archivist with 2 updates ([4c58e17](https://www.github.com/JaCraig/Archivist/commit/4c58e17507e70ec3ee3e45e055603de36f121ebb))
+
+### Other
+
+* Merge pull request #92 from JaCraig/dependabot/nuget/Archivist/dependencies-85a35cea3d ([86816c0](https://www.github.com/JaCraig/Archivist/commit/86816c083d4d0a712ec4a614274ade83dec2056a))
+* Merge pull request #93 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-23db35b6a2 ([edf5f25](https://www.github.com/JaCraig/Archivist/commit/edf5f25cd37276e972135f8230c0fb84faf8dd8e))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([3d1596b](https://www.github.com/JaCraig/Archivist/commit/3d1596beed4546ca9835b7b50ef22112a6e70995))
+
 <a name="0.8.8"></a>
 ## [0.8.8](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.8) (2024-11-11)
 
