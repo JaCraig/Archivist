@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.9.0"></a>
+## [0.9.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.0) (2024-11-23)
+
+### Features
+
+* Update dependencies and target frameworks ([7aee202](https://www.github.com/JaCraig/Archivist/commit/7aee202f7f4affd7cb63b0d8e886095f052ed775))
+
+### Other
+
+* Merge pull request #94 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-956fc5c724 ([7206b77](https://www.github.com/JaCraig/Archivist/commit/7206b77fa8bab7104be7c7c00d0ae52a4d97a3e3))
+* Merge pull request #96 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-617062173c ([921aae6](https://www.github.com/JaCraig/Archivist/commit/921aae62a051e108fbe618a33e74746c0380c427))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([8894505](https://www.github.com/JaCraig/Archivist/commit/88945050ffcdea1f3bf767151667d2a97fe40f6a))
+* bump Microsoft.NET.Test.Sdk ([ce26a46](https://www.github.com/JaCraig/Archivist/commit/ce26a46495f5aacad188676b593d0a32600e874c))
+* remove dotnet-version specification from workflow files ([3cf9169](https://www.github.com/JaCraig/Archivist/commit/3cf9169fb8d966dcd33c66f3ebfe587dd734cede))
+* update coveralls upload path for test results ([dbfe2c1](https://www.github.com/JaCraig/Archivist/commit/dbfe2c119bb6af13be19bfa3555eb3409a1117cf))
+
 <a name="0.8.9"></a>
 ## [0.8.9](https://www.github.com/JaCraig/Archivist/releases/tag/v0.8.9) (2024-11-12)
 
