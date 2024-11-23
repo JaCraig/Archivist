@@ -13,7 +13,7 @@ jobs:
     with:
       user: 'JaCraig'
       user-email: 'JaCraig@users.noreply.github.com'
-      coveralls-upload: "./Archivist.Tests/TestResults-8.0.x/coverage.net8.0.info"
+      coveralls-upload: "./Archivist.Tests/TestResults-9.0.x/coverage.net8.0.info"
       test-filter: "Archivist.Tests"
     secrets:
       PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
