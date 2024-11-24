@@ -364,15 +364,10 @@
     "title": "Class InternalStringFormatter | Archivist API Reference",
     "keywords": "Class InternalStringFormatter Namespace Archivist.ExtensionMethods Assembly Archivist.dll Generic string formatter public static class InternalStringFormatter Inheritance object InternalStringFormatter Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Format(string?, string?) Formats the string based on the pattern public static string Format(string? input, string? formatPattern) Parameters input string Input string formatPattern string Format pattern Returns string The formatted string"
   },
-  "api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.html": {
-    "href": "api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.html",
-    "title": "Class ServiceCollectionExtensionMethods | Archivist API Reference",
-    "keywords": "Class ServiceCollectionExtensionMethods Namespace Archivist.ExtensionMethods Assembly Archivist.dll Extension methods for IServiceCollection to add Archivist services. public static class ServiceCollectionExtensionMethods Inheritance object ServiceCollectionExtensionMethods Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddArchivist(IServiceCollection?) Adds Archivist services to the specified IServiceCollection. public static IServiceCollection? AddArchivist(this IServiceCollection? services) Parameters services IServiceCollection The IServiceCollection to add the services to. Returns IServiceCollection The modified IServiceCollection."
-  },
   "api/Archivist.ExtensionMethods.html": {
     "href": "api/Archivist.ExtensionMethods.html",
     "title": "Namespace Archivist.ExtensionMethods | Archivist API Reference",
-    "keywords": "Namespace Archivist.ExtensionMethods Classes InternalExtensionMethods Internal extension methods. InternalStringFormatter Generic string formatter ServiceCollectionExtensionMethods Extension methods for IServiceCollection to add Archivist services."
+    "keywords": "Namespace Archivist.ExtensionMethods Classes InternalExtensionMethods Internal extension methods. InternalStringFormatter Generic string formatter"
   },
   "api/Archivist.FormatManager.html": {
     "href": "api/Archivist.FormatManager.html",
@@ -663,6 +658,16 @@
     "href": "api/Archivist.html",
     "title": "Namespace Archivist | Archivist API Reference",
     "keywords": "Namespace Archivist Classes FormatManager Represents a manager for handling different file formats."
+  },
+  "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.html": {
+    "href": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.html",
+    "title": "Class ServiceCollectionExtensionMethods | Archivist API Reference",
+    "keywords": "Class ServiceCollectionExtensionMethods Namespace Microsoft.Extensions.DependencyInjection Assembly Archivist.dll Extension methods for IServiceCollection to add Archivist services. public static class ServiceCollectionExtensionMethods Inheritance object ServiceCollectionExtensionMethods Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods AddArchivist(IServiceCollection?) Adds Archivist services to the specified IServiceCollection. public static IServiceCollection? AddArchivist(this IServiceCollection? services) Parameters services IServiceCollection The IServiceCollection to add the services to. Returns IServiceCollection The modified IServiceCollection."
+  },
+  "api/Microsoft.Extensions.DependencyInjection.html": {
+    "href": "api/Microsoft.Extensions.DependencyInjection.html",
+    "title": "Namespace Microsoft.Extensions.DependencyInjection | Archivist API Reference",
+    "keywords": "Namespace Microsoft.Extensions.DependencyInjection Classes ServiceCollectionExtensionMethods Extension methods for IServiceCollection to add Archivist services."
   },
   "api/index.html": {
     "href": "api/index.html",

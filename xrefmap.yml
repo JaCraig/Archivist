@@ -12817,28 +12817,6 @@ references:
   isSpec: "True"
   fullName: Archivist.ExtensionMethods.InternalStringFormatter.Format
   nameWithType: InternalStringFormatter.Format
-- uid: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods
-  name: ServiceCollectionExtensionMethods
-  href: api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.html
-  commentId: T:Archivist.ExtensionMethods.ServiceCollectionExtensionMethods
-  fullName: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods
-  nameWithType: ServiceCollectionExtensionMethods
-- uid: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name: AddArchivist(IServiceCollection?)
-  href: api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.html#Archivist_ExtensionMethods_ServiceCollectionExtensionMethods_AddArchivist_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name.vb: AddArchivist(IServiceCollection)
-  fullName: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection?)
-  fullName.vb: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  nameWithType: ServiceCollectionExtensionMethods.AddArchivist(IServiceCollection?)
-  nameWithType.vb: ServiceCollectionExtensionMethods.AddArchivist(IServiceCollection)
-- uid: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist*
-  name: AddArchivist
-  href: api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.html#Archivist_ExtensionMethods_ServiceCollectionExtensionMethods_AddArchivist_
-  commentId: Overload:Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist
-  isSpec: "True"
-  fullName: Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.AddArchivist
-  nameWithType: ServiceCollectionExtensionMethods.AddArchivist
 - uid: Archivist.FormatManager
   name: FormatManager
   href: api/Archivist.FormatManager.html
@@ -15021,3 +14999,31 @@ references:
   isSpec: "True"
   fullName: Archivist.Options.ExcelOptions.FirstRowIsColumnHeaders
   nameWithType: ExcelOptions.FirstRowIsColumnHeaders
+- uid: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  href: api/Microsoft.Extensions.DependencyInjection.html
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods
+  name: ServiceCollectionExtensionMethods
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods
+  nameWithType: ServiceCollectionExtensionMethods
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddArchivist(IServiceCollection?)
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensionMethods_AddArchivist_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddArchivist(IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection?)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.AddArchivist(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ServiceCollectionExtensionMethods.AddArchivist(IServiceCollection?)
+  nameWithType.vb: ServiceCollectionExtensionMethods.AddArchivist(IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.AddArchivist*
+  name: AddArchivist
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensionMethods_AddArchivist_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.AddArchivist
+  isSpec: "True"
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.AddArchivist
+  nameWithType: ServiceCollectionExtensionMethods.AddArchivist

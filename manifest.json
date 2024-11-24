@@ -742,16 +742,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Archivist.ExtensionMethods.ServiceCollectionExtensionMethods.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.ExtensionMethods.yml",
       "output": {
         ".html": {
@@ -1336,6 +1326,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Archivist.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html"
         }
       },
       "version": ""
