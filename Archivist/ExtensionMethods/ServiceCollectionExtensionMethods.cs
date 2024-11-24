@@ -1,8 +1,8 @@
 ﻿using Archivist.Converters;
 using Archivist.Interfaces;
-using Microsoft.Extensions.DependencyInjection;
+using ObjectCartographer.ExtensionMethods;
 
-namespace Archivist.ExtensionMethods
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// Extension methods for IServiceCollection to add Archivist services.
@@ -16,9 +16,12 @@ namespace Archivist.ExtensionMethods
         /// <returns>The modified IServiceCollection.</returns>
         public static IServiceCollection? AddArchivist(this IServiceCollection? services)
         {
+            if (services.Exists<Convertinator>())
+                return services;
             return services?.AddSingleton<Convertinator>()
                 ?.AddAllSingleton<IDataConverter>()
-                ?.AddAllSingleton<IFormat>();
+                ?.AddAllSingleton<IFormat>()
+                ?.RegisterObjectCartographer();
         }
     }
 }
