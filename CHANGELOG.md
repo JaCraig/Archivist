@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.9.1"></a>
+## [0.9.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.1) (2024-11-24)
+
+### Bug Fixes
+
+* Update .editorconfig, solution, and service extensions ([94b7177](https://www.github.com/JaCraig/Archivist/commit/94b7177ccf567e61a92994f8a4d97c3fc0b3ca02))
+
 <a name="0.9.0"></a>
 ## [0.9.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.0) (2024-11-23)
 
