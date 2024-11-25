@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.9.2"></a>
+## [0.9.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.2) (2024-11-25)
+
+### Bug Fixes
+
+* bump the dependencies group in /Archivist.OCR with 2 updates ([cc9bf75](https://www.github.com/JaCraig/Archivist/commit/cc9bf75bcccef6bd0031bb24e95b7ff1115d6eb1))
+
+### Other
+
+* Merge pull request #97 from JaCraig/dependabot/nuget/Archivist.Example/dependencies-3804dc17ad ([8eca900](https://www.github.com/JaCraig/Archivist/commit/8eca900924e97715fccc96576f0c12d3b1e615ad))
+* Merge pull request #98 from JaCraig/dependabot/nuget/Archivist.OCR/dependencies-3804dc17ad ([7887d1f](https://www.github.com/JaCraig/Archivist/commit/7887d1f18a41f81026c27f41e8c6e564f974ed9a))
+* bump the dependencies group in /Archivist.Example with 2 updates ([4a9c6e4](https://www.github.com/JaCraig/Archivist/commit/4a9c6e4783b406eddc76b5405ea3ba0650e97be3))
+
 <a name="0.9.1"></a>
 ## [0.9.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.1) (2024-11-24)
 
