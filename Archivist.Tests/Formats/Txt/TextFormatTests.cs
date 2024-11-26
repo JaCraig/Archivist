@@ -2,6 +2,7 @@ using Archivist.DataTypes;
 using Archivist.Formats.Txt;
 using Archivist.Tests.BaseClasses;
 using BigBook;
+using BigBook.ExtensionMethods;
 using System.IO;
 using System.Threading.Tasks;
 using Xunit;

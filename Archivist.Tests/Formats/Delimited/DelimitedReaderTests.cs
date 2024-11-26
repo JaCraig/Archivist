@@ -2,7 +2,7 @@ using Archivist.Formats.Delimited;
 using Archivist.Options;
 using Archivist.Tests.BaseClasses;
 using Archivist.Tests.Utils;
-using BigBook;
+using BigBook.ExtensionMethods;
 using System.IO;
 using System.Threading.Tasks;
 using Xunit;

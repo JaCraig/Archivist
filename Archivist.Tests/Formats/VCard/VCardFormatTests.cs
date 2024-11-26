@@ -3,6 +3,7 @@ using Archivist.Formats.VCard;
 using Archivist.Tests.BaseClasses;
 using Archivist.Tests.Utils;
 using BigBook;
+using BigBook.ExtensionMethods;
 using Mecha.xUnit;
 using System.ComponentModel.DataAnnotations;
 using System.IO;

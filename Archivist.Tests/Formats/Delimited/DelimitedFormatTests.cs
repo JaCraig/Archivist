@@ -4,6 +4,7 @@ using Archivist.Interfaces;
 using Archivist.Options;
 using Archivist.Tests.BaseClasses;
 using BigBook;
+using BigBook.ExtensionMethods;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System;
