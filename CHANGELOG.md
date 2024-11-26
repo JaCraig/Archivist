@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.9.3"></a>
+## [0.9.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.3) (2024-11-26)
+
+### Bug Fixes
+
+* Update package version and namespace imports ([4c69442](https://www.github.com/JaCraig/Archivist/commit/4c69442b399ec5088e7a22d43b0510cac3fc8e6c))
+
+### Other
+
+* Merge pull request #99 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-6c34fbe01a ([5314393](https://www.github.com/JaCraig/Archivist/commit/531439398888617a477883ea1099af94d3a815b3))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([82a1ac1](https://www.github.com/JaCraig/Archivist/commit/82a1ac16a1d71e90363d429f9181034fa609684d))
+* Update dotnet-test.yml ([664ebcf](https://www.github.com/JaCraig/Archivist/commit/664ebcf939f89f1d71dd58d77e78ff3ab163db24))
+
 <a name="0.9.2"></a>
 ## [0.9.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.2) (2024-11-25)
 
