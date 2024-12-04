@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.9.4"></a>
+## [0.9.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.4) (2024-12-04)
+
+### Bug Fixes
+
+* bump the dependencies group in /Archivist.OCR with 2 updates ([3c43e7a](https://www.github.com/JaCraig/Archivist/commit/3c43e7a8c4ff762b570fd7207860976f03582cb5))
+
+### Other
+
+* Merge pull request #101 from JaCraig/dependabot/nuget/Archivist.Example/dependencies-475212e321 ([3662789](https://www.github.com/JaCraig/Archivist/commit/36627894f44187f2fa0f4e0e860091067a464f08))
+* Merge pull request #102 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-6b212ef64a ([a2d0a25](https://www.github.com/JaCraig/Archivist/commit/a2d0a2546687e8ea668d674fb61a53fa83319735))
+* Merge pull request #103 from JaCraig/dependabot/nuget/Archivist.OCR/dependencies-6b212ef64a ([7bb4a7d](https://www.github.com/JaCraig/Archivist/commit/7bb4a7d7aa797eeeeccecf4146084e89b0a7fd59))
+* Merge pull request #104 from JaCraig/dependabot/nuget/Archivist.Example/dependencies-6b212ef64a ([8499c48](https://www.github.com/JaCraig/Archivist/commit/8499c486f44371a0fd22725d687654aea87b325a))
+* bump the dependencies group in /Archivist.Example with 2 updates ([75e27e7](https://www.github.com/JaCraig/Archivist/commit/75e27e7a54e7c84098c375553055ae2eff96d69f))
+* bump the dependencies group in /Archivist.Tests with 2 updates ([5450ad5](https://www.github.com/JaCraig/Archivist/commit/5450ad5ba54f172d6dbedf352267eabd5ad7e5c5))
+* bump YamlDotNet in /Archivist.Example in the dependencies group ([ea88c5a](https://www.github.com/JaCraig/Archivist/commit/ea88c5a073e6f57807a289e3259ec3f67563f9c4))
+
 <a name="0.9.3"></a>
 ## [0.9.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.3) (2024-11-26)
 
