@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.9.5"></a>
+## [0.9.5](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.5) (2024-12-05)
+
+### Bug Fixes
+
+* Remove net8.0 target from Archivist.Tests project ([95237f2](https://www.github.com/JaCraig/Archivist/commit/95237f2e9a939845bbdbe0bbd863d4acf6b347cd))
+* Update coveralls upload path to use net9.0 coverage file ([781642a](https://www.github.com/JaCraig/Archivist/commit/781642a008d627ad332171c9ffecbc4456692457))
+
 <a name="0.9.4"></a>
 ## [0.9.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.4) (2024-12-04)
 
