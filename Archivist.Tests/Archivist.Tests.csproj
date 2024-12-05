@@ -4,7 +4,7 @@
     <Description>Tests for Archivist</Description>
     <AssemblyTitle>Archivist.Tests</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net9.0</TargetFrameworks>
     <DebugType>portable</DebugType>
     <AssemblyName>Archivist.Tests</AssemblyName>
     <PackageId>Archivist.Tests</PackageId>
