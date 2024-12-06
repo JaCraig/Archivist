@@ -56,8 +56,8 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="ObjectCartographer" Version="4.0.2" />
-    <PackageReference Include="SkiaSharp" Version="3.116.0" />
-    <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="3.116.0" />
+    <PackageReference Include="SkiaSharp" Version="3.116.1" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="3.116.1" />
     <PackageReference Include="Tesseract" Version="5.2.0" />
     <PackageReference Include="YamlDotNet" Version="16.2.1" />
   </ItemGroup>
