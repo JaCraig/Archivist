@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.10.0"></a>
+## [0.10.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.0) (2024-12-07)
+
+### Features
+
+* Add XLS format support with tests and dependencies ([5af3162](https://www.github.com/JaCraig/Archivist/commit/5af3162e05cc89faca679e9b06560316b1c6a8e8))
+
+### Other
+
+* Merge pull request #108 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-6cebdb081c ([3f6595b](https://www.github.com/JaCraig/Archivist/commit/3f6595b8059b0d840afa30cf8a5ae9a3a76fe3cb))
+* bump the dependencies group ([b708e11](https://www.github.com/JaCraig/Archivist/commit/b708e11acb67998ffbb576bc9650cb9569690fb6))
+
 <a name="0.9.5"></a>
 ## [0.9.5](https://www.github.com/JaCraig/Archivist/releases/tag/v0.9.5) (2024-12-05)
 
