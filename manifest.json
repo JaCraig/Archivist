@@ -1102,6 +1102,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.XLS.XLSFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.XLS.XLSFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.XLS.XLSReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.XLS.XLSReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.XLS.XLSWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.XLS.XLSWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Archivist.Formats.XLS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Archivist.Formats.XLS.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Archivist.Formats.XML.XMLFormat.yml",
       "output": {
         ".html": {

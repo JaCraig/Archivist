@@ -14116,6 +14116,174 @@ references:
   isSpec: "True"
   fullName: Archivist.Formats.VCard.VCardWriter.WriteAsync
   nameWithType: VCardWriter.WriteAsync
+- uid: Archivist.Formats.XLS
+  name: Archivist.Formats.XLS
+  href: api/Archivist.Formats.XLS.html
+  commentId: N:Archivist.Formats.XLS
+  fullName: Archivist.Formats.XLS
+  nameWithType: Archivist.Formats.XLS
+- uid: Archivist.Formats.XLS.XLSFormat
+  name: XLSFormat
+  href: api/Archivist.Formats.XLS.XLSFormat.html
+  commentId: T:Archivist.Formats.XLS.XLSFormat
+  fullName: Archivist.Formats.XLS.XLSFormat
+  nameWithType: XLSFormat
+- uid: Archivist.Formats.XLS.XLSFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions},Archivist.Converters.Convertinator)
+  name: XLSFormat(IOptions<ExcelOptions>?, Convertinator?)
+  href: api/Archivist.Formats.XLS.XLSFormat.html#Archivist_Formats_XLS_XLSFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_ExcelOptions__Archivist_Converters_Convertinator_
+  commentId: M:Archivist.Formats.XLS.XLSFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions},Archivist.Converters.Convertinator)
+  name.vb: New(IOptions(Of ExcelOptions), Convertinator)
+  fullName: Archivist.Formats.XLS.XLSFormat.XLSFormat(Microsoft.Extensions.Options.IOptions<Archivist.Options.ExcelOptions>?, Archivist.Converters.Convertinator?)
+  fullName.vb: Archivist.Formats.XLS.XLSFormat.New(Microsoft.Extensions.Options.IOptions(Of Archivist.Options.ExcelOptions), Archivist.Converters.Convertinator)
+  nameWithType: XLSFormat.XLSFormat(IOptions<ExcelOptions>?, Convertinator?)
+  nameWithType.vb: XLSFormat.New(IOptions(Of ExcelOptions), Convertinator)
+- uid: Archivist.Formats.XLS.XLSFormat.#ctor*
+  name: XLSFormat
+  href: api/Archivist.Formats.XLS.XLSFormat.html#Archivist_Formats_XLS_XLSFormat__ctor_
+  commentId: Overload:Archivist.Formats.XLS.XLSFormat.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.XLS.XLSFormat.XLSFormat
+  fullName.vb: Archivist.Formats.XLS.XLSFormat.New
+  nameWithType: XLSFormat.XLSFormat
+  nameWithType.vb: XLSFormat.New
+- uid: Archivist.Formats.XLS.XLSFormat.Extensions
+  name: Extensions
+  href: api/Archivist.Formats.XLS.XLSFormat.html#Archivist_Formats_XLS_XLSFormat_Extensions
+  commentId: P:Archivist.Formats.XLS.XLSFormat.Extensions
+  fullName: Archivist.Formats.XLS.XLSFormat.Extensions
+  nameWithType: XLSFormat.Extensions
+- uid: Archivist.Formats.XLS.XLSFormat.Extensions*
+  name: Extensions
+  href: api/Archivist.Formats.XLS.XLSFormat.html#Archivist_Formats_XLS_XLSFormat_Extensions_
+  commentId: Overload:Archivist.Formats.XLS.XLSFormat.Extensions
+  isSpec: "True"
+  fullName: Archivist.Formats.XLS.XLSFormat.Extensions
+  nameWithType: XLSFormat.Extensions
+- uid: Archivist.Formats.XLS.XLSFormat.MimeTypes
+  name: MimeTypes
+  href: api/Archivist.Formats.XLS.XLSFormat.html#Archivist_Formats_XLS_XLSFormat_MimeTypes
+  commentId: P:Archivist.Formats.XLS.XLSFormat.MimeTypes
+  fullName: Archivist.Formats.XLS.XLSFormat.MimeTypes
+  nameWithType: XLSFormat.MimeTypes
+- uid: Archivist.Formats.XLS.XLSFormat.MimeTypes*
+  name: MimeTypes
+  href: api/Archivist.Formats.XLS.XLSFormat.html#Archivist_Formats_XLS_XLSFormat_MimeTypes_
+  commentId: Overload:Archivist.Formats.XLS.XLSFormat.MimeTypes
+  isSpec: "True"
+  fullName: Archivist.Formats.XLS.XLSFormat.MimeTypes
+  nameWithType: XLSFormat.MimeTypes
+- uid: Archivist.Formats.XLS.XLSReader
+  name: XLSReader
+  href: api/Archivist.Formats.XLS.XLSReader.html
+  commentId: T:Archivist.Formats.XLS.XLSReader
+  fullName: Archivist.Formats.XLS.XLSReader
+  nameWithType: XLSReader
+- uid: Archivist.Formats.XLS.XLSReader.#ctor(Archivist.Options.ExcelOptions,Archivist.Converters.Convertinator)
+  name: XLSReader(ExcelOptions?, Convertinator?)
+  href: api/Archivist.Formats.XLS.XLSReader.html#Archivist_Formats_XLS_XLSReader__ctor_Archivist_Options_ExcelOptions_Archivist_Converters_Convertinator_
+  commentId: M:Archivist.Formats.XLS.XLSReader.#ctor(Archivist.Options.ExcelOptions,Archivist.Converters.Convertinator)
+  name.vb: New(ExcelOptions, Convertinator)
+  fullName: Archivist.Formats.XLS.XLSReader.XLSReader(Archivist.Options.ExcelOptions?, Archivist.Converters.Convertinator?)
+  fullName.vb: Archivist.Formats.XLS.XLSReader.New(Archivist.Options.ExcelOptions, Archivist.Converters.Convertinator)
+  nameWithType: XLSReader.XLSReader(ExcelOptions?, Convertinator?)
+  nameWithType.vb: XLSReader.New(ExcelOptions, Convertinator)
+- uid: Archivist.Formats.XLS.XLSReader.#ctor*
+  name: XLSReader
+  href: api/Archivist.Formats.XLS.XLSReader.html#Archivist_Formats_XLS_XLSReader__ctor_
+  commentId: Overload:Archivist.Formats.XLS.XLSReader.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.XLS.XLSReader.XLSReader
+  fullName.vb: Archivist.Formats.XLS.XLSReader.New
+  nameWithType: XLSReader.XLSReader
+  nameWithType.vb: XLSReader.New
+- uid: Archivist.Formats.XLS.XLSReader.HeaderInfo
+  name: HeaderInfo
+  href: api/Archivist.Formats.XLS.XLSReader.html#Archivist_Formats_XLS_XLSReader_HeaderInfo
+  commentId: P:Archivist.Formats.XLS.XLSReader.HeaderInfo
+  fullName: Archivist.Formats.XLS.XLSReader.HeaderInfo
+  nameWithType: XLSReader.HeaderInfo
+- uid: Archivist.Formats.XLS.XLSReader.HeaderInfo*
+  name: HeaderInfo
+  href: api/Archivist.Formats.XLS.XLSReader.html#Archivist_Formats_XLS_XLSReader_HeaderInfo_
+  commentId: Overload:Archivist.Formats.XLS.XLSReader.HeaderInfo
+  isSpec: "True"
+  fullName: Archivist.Formats.XLS.XLSReader.HeaderInfo
+  nameWithType: XLSReader.HeaderInfo
+- uid: Archivist.Formats.XLS.XLSReader.InternalCanRead(System.IO.Stream)
+  name: InternalCanRead(Stream?)
+  href: api/Archivist.Formats.XLS.XLSReader.html#Archivist_Formats_XLS_XLSReader_InternalCanRead_System_IO_Stream_
+  commentId: M:Archivist.Formats.XLS.XLSReader.InternalCanRead(System.IO.Stream)
+  name.vb: InternalCanRead(Stream)
+  fullName: Archivist.Formats.XLS.XLSReader.InternalCanRead(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.XLS.XLSReader.InternalCanRead(System.IO.Stream)
+  nameWithType: XLSReader.InternalCanRead(Stream?)
+  nameWithType.vb: XLSReader.InternalCanRead(Stream)
+- uid: Archivist.Formats.XLS.XLSReader.InternalCanRead*
+  name: InternalCanRead
+  href: api/Archivist.Formats.XLS.XLSReader.html#Archivist_Formats_XLS_XLSReader_InternalCanRead_
+  commentId: Overload:Archivist.Formats.XLS.XLSReader.InternalCanRead
+  isSpec: "True"
+  fullName: Archivist.Formats.XLS.XLSReader.InternalCanRead
+  nameWithType: XLSReader.InternalCanRead
+- uid: Archivist.Formats.XLS.XLSReader.ReadAsync(System.IO.Stream)
+  name: ReadAsync(Stream?)
+  href: api/Archivist.Formats.XLS.XLSReader.html#Archivist_Formats_XLS_XLSReader_ReadAsync_System_IO_Stream_
+  commentId: M:Archivist.Formats.XLS.XLSReader.ReadAsync(System.IO.Stream)
+  name.vb: ReadAsync(Stream)
+  fullName: Archivist.Formats.XLS.XLSReader.ReadAsync(System.IO.Stream?)
+  fullName.vb: Archivist.Formats.XLS.XLSReader.ReadAsync(System.IO.Stream)
+  nameWithType: XLSReader.ReadAsync(Stream?)
+  nameWithType.vb: XLSReader.ReadAsync(Stream)
+- uid: Archivist.Formats.XLS.XLSReader.ReadAsync*
+  name: ReadAsync
+  href: api/Archivist.Formats.XLS.XLSReader.html#Archivist_Formats_XLS_XLSReader_ReadAsync_
+  commentId: Overload:Archivist.Formats.XLS.XLSReader.ReadAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.XLS.XLSReader.ReadAsync
+  nameWithType: XLSReader.ReadAsync
+- uid: Archivist.Formats.XLS.XLSWriter
+  name: XLSWriter
+  href: api/Archivist.Formats.XLS.XLSWriter.html
+  commentId: T:Archivist.Formats.XLS.XLSWriter
+  fullName: Archivist.Formats.XLS.XLSWriter
+  nameWithType: XLSWriter
+- uid: Archivist.Formats.XLS.XLSWriter.#ctor
+  name: XLSWriter()
+  href: api/Archivist.Formats.XLS.XLSWriter.html#Archivist_Formats_XLS_XLSWriter__ctor
+  commentId: M:Archivist.Formats.XLS.XLSWriter.#ctor
+  name.vb: New()
+  fullName: Archivist.Formats.XLS.XLSWriter.XLSWriter()
+  fullName.vb: Archivist.Formats.XLS.XLSWriter.New()
+  nameWithType: XLSWriter.XLSWriter()
+  nameWithType.vb: XLSWriter.New()
+- uid: Archivist.Formats.XLS.XLSWriter.#ctor*
+  name: XLSWriter
+  href: api/Archivist.Formats.XLS.XLSWriter.html#Archivist_Formats_XLS_XLSWriter__ctor_
+  commentId: Overload:Archivist.Formats.XLS.XLSWriter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.XLS.XLSWriter.XLSWriter
+  fullName.vb: Archivist.Formats.XLS.XLSWriter.New
+  nameWithType: XLSWriter.XLSWriter
+  nameWithType.vb: XLSWriter.New
+- uid: Archivist.Formats.XLS.XLSWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name: WriteAsync(IGenericFile?, Stream?)
+  href: api/Archivist.Formats.XLS.XLSWriter.html#Archivist_Formats_XLS_XLSWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
+  commentId: M:Archivist.Formats.XLS.XLSWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
+  name.vb: WriteAsync(IGenericFile, Stream)
+  fullName: Archivist.Formats.XLS.XLSWriter.WriteAsync(Archivist.Interfaces.IGenericFile?, System.IO.Stream?)
+  fullName.vb: Archivist.Formats.XLS.XLSWriter.WriteAsync(Archivist.Interfaces.IGenericFile, System.IO.Stream)
+  nameWithType: XLSWriter.WriteAsync(IGenericFile?, Stream?)
+  nameWithType.vb: XLSWriter.WriteAsync(IGenericFile, Stream)
+- uid: Archivist.Formats.XLS.XLSWriter.WriteAsync*
+  name: WriteAsync
+  href: api/Archivist.Formats.XLS.XLSWriter.html#Archivist_Formats_XLS_XLSWriter_WriteAsync_
+  commentId: Overload:Archivist.Formats.XLS.XLSWriter.WriteAsync
+  isSpec: "True"
+  fullName: Archivist.Formats.XLS.XLSWriter.WriteAsync
+  nameWithType: XLSWriter.WriteAsync
 - uid: Archivist.Formats.XML
   name: Archivist.Formats.XML
   href: api/Archivist.Formats.XML.html
