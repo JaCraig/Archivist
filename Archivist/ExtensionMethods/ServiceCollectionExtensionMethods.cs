@@ -18,6 +18,7 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             if (services.Exists<Convertinator>())
                 return services;
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
             return services?.AddSingleton<Convertinator>()
                 ?.AddAllSingleton<IDataConverter>()
                 ?.AddAllSingleton<IFormat>()
