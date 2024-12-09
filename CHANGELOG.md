@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.10.1"></a>
+## [0.10.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.1) (2024-12-09)
+
+### Bug Fixes
+
+* bump husky in /Archivist.OCR in the dependencies group ([0297ef4](https://www.github.com/JaCraig/Archivist/commit/0297ef4447770f290e1cc97d3e29947692a67951))
+
+### Other
+
+* Merge pull request #109 from JaCraig/dependabot/nuget/Archivist.OCR/dependencies-0eb5dce03c ([223f637](https://www.github.com/JaCraig/Archivist/commit/223f63728a51c32f5538b7ab56ba3239e098e64c))
+
 <a name="0.10.0"></a>
 ## [0.10.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.0) (2024-12-07)
 
