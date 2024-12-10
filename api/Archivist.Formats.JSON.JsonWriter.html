@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_JSON_JsonWriter" data-uid="Archivist.Formats.JSON.JsonWriter" class="text-break">
-Class JsonWriter  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonWriter.cs/#L15"><i class="bi bi-code-slash"></i></a>
+Class JsonWriter  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonWriter.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -129,7 +129,13 @@ Class JsonWriter  <a class="header-action link-secondary" title="View source" hr
     <dt>Inherited Members</dt>
     <dd>
     <div>
+      <a class="xref" href="Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_Logger">WriterBaseClass.Logger</a>
+    </div>
+    <div>
       <a class="xref" href="Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_CanWrite_Archivist_Interfaces_IGenericFile_">WriterBaseClass.CanWrite(IGenericFile)</a>
+    </div>
+    <div>
+      <a class="xref" href="Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_IsValidStream_System_IO_Stream_">WriterBaseClass.IsValidStream(Stream)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -157,6 +163,9 @@ Class JsonWriter  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h2 id="Archivist_Formats_JSON_JsonWriter_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.JSON.JsonWriter.html">JsonWriter</a> class.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -165,23 +174,26 @@ Class JsonWriter  <a class="header-action link-secondary" title="View source" hr
 
   <a id="Archivist_Formats_JSON_JsonWriter__ctor_" data-uid="Archivist.Formats.JSON.JsonWriter.#ctor*"></a>
 
-  <h3 id="Archivist_Formats_JSON_JsonWriter__ctor_Newtonsoft_Json_JsonSerializerSettings_" data-uid="Archivist.Formats.JSON.JsonWriter.#ctor(Newtonsoft.Json.JsonSerializerSettings)">
-  JsonWriter(JsonSerializerSettings?)
+  <h3 id="Archivist_Formats_JSON_JsonWriter__ctor_Newtonsoft_Json_JsonSerializerSettings_Microsoft_Extensions_Logging_ILogger_" data-uid="Archivist.Formats.JSON.JsonWriter.#ctor(Newtonsoft.Json.JsonSerializerSettings,Microsoft.Extensions.Logging.ILogger)">
+  JsonWriter(JsonSerializerSettings?, ILogger?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonWriter.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.JSON.JsonWriter.html">JsonWriter</a> class.</p>
+  <div class="markdown level1 summary"><p>Represents a JSON writer for serializing structured objects.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public JsonWriter(JsonSerializerSettings? options)</code></pre>
+    <pre><code class="lang-csharp hljs">public JsonWriter(JsonSerializerSettings? options, ILogger? logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>options</code> <span class="xref">JsonSerializerSettings</span></dt>
     <dd><p>The options to use when serializing JSON.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>The logger to use for logging.</p>
 </dd>
   </dl>
 
@@ -192,6 +204,9 @@ Class JsonWriter  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h4 class="section" id="Archivist_Formats_JSON_JsonWriter__ctor_Newtonsoft_Json_JsonSerializerSettings_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.JSON.JsonWriter.html">JsonWriter</a> class.</p>
+</div>
 
 
 
@@ -204,7 +219,7 @@ Class JsonWriter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Archivist_Formats_JSON_JsonWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_" data-uid="Archivist.Formats.JSON.JsonWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)">
   WriteAsync(IGenericFile?, Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonWriter.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonWriter.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Writes the structured object to the specified stream as JSON.</p>
@@ -247,7 +262,7 @@ whether the write operation was successful.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonWriter.cs/#L15" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonWriter.cs/#L21" class="edit-link">Edit this page</a>
         </div>
 
 

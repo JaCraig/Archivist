@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_XML_XMLReader" data-uid="Archivist.Formats.XML.XMLReader" class="text-break">
-Class XMLReader  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLReader.cs/#L18"><i class="bi bi-code-slash"></i></a>
+Class XMLReader  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLReader.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -129,6 +129,9 @@ Class XMLReader  <a class="header-action link-secondary" title="View source" hre
     <dt>Inherited Members</dt>
     <dd>
     <div>
+      <a class="xref" href="Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_Logger">ReaderBaseClass.Logger</a>
+    </div>
+    <div>
       <a class="xref" href="Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_CanRead_System_IO_Stream_">ReaderBaseClass.CanRead(Stream)</a>
     </div>
     <div>
@@ -163,6 +166,9 @@ Class XMLReader  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h2 id="Archivist_Formats_XML_XMLReader_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Initializes a new instance of the <span class="xref">Newtonsoft.Json.JsonReader</span> class.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -171,17 +177,17 @@ Class XMLReader  <a class="header-action link-secondary" title="View source" hre
 
   <a id="Archivist_Formats_XML_XMLReader__ctor_" data-uid="Archivist.Formats.XML.XMLReader.#ctor*"></a>
 
-  <h3 id="Archivist_Formats_XML_XMLReader__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_" data-uid="Archivist.Formats.XML.XMLReader.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator)">
-  XMLReader(JsonSerializerSettings?, Convertinator?)
+  <h3 id="Archivist_Formats_XML_XMLReader__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_" data-uid="Archivist.Formats.XML.XMLReader.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)">
+  XMLReader(JsonSerializerSettings?, Convertinator?, ILogger?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLReader.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <span class="xref">Newtonsoft.Json.JsonReader</span> class.</p>
+  <div class="markdown level1 summary"><p>Represents a reader for XML files.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public XMLReader(JsonSerializerSettings? options, Convertinator? converter)</code></pre>
+    <pre><code class="lang-csharp hljs">public XMLReader(JsonSerializerSettings? options, Convertinator? converter, ILogger? logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -192,6 +198,9 @@ Class XMLReader  <a class="header-action link-secondary" title="View source" hre
     <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
     <dd><p>The converter used to convert between IGenericFile objects.</p>
 </dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>The logger.</p>
+</dd>
   </dl>
 
 
@@ -201,6 +210,9 @@ Class XMLReader  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="Archivist_Formats_XML_XMLReader__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Initializes a new instance of the <span class="xref">Newtonsoft.Json.JsonReader</span> class.</p>
+</div>
 
 
 
@@ -213,7 +225,7 @@ Class XMLReader  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_Formats_XML_XMLReader_HeaderInfo" data-uid="Archivist.Formats.XML.XMLReader.HeaderInfo">
   HeaderInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLReader.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLReader.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the header information of the XML file.</p>
@@ -249,7 +261,7 @@ Class XMLReader  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_Formats_XML_XMLReader_ReadAsync_System_IO_Stream_" data-uid="Archivist.Formats.XML.XMLReader.ReadAsync(System.IO.Stream)">
   ReadAsync(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLReader.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLReader.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads a JSON file asynchronously from the specified stream.</p>
@@ -288,7 +300,7 @@ Class XMLReader  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLReader.cs/#L18" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/XML/XMLReader.cs/#L25" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_JSON_JsonFormat" data-uid="Archivist.Formats.JSON.JsonFormat" class="text-break">
-Class JsonFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonFormat.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class JsonFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonFormat.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -193,6 +193,9 @@ Class JsonFormat  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h2 id="Archivist_Formats_JSON_JsonFormat_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.JSON.JsonFormat.html">JsonFormat</a> class.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -201,17 +204,17 @@ Class JsonFormat  <a class="header-action link-secondary" title="View source" hr
 
   <a id="Archivist_Formats_JSON_JsonFormat__ctor_" data-uid="Archivist.Formats.JSON.JsonFormat.#ctor*"></a>
 
-  <h3 id="Archivist_Formats_JSON_JsonFormat__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_" data-uid="Archivist.Formats.JSON.JsonFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator)">
-  JsonFormat(JsonSerializerSettings?, Convertinator?)
+  <h3 id="Archivist_Formats_JSON_JsonFormat__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_JSON_JsonFormat__" data-uid="Archivist.Formats.JSON.JsonFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.JSON.JsonFormat})">
+  JsonFormat(JsonSerializerSettings?, Convertinator?, ILogger&lt;JsonFormat&gt;?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonFormat.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.JSON.JsonFormat.html">JsonFormat</a> class.</p>
+  <div class="markdown level1 summary"><p>Represents the JSON format.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public JsonFormat(JsonSerializerSettings? options, Convertinator? converter)</code></pre>
+    <pre><code class="lang-csharp hljs">public JsonFormat(JsonSerializerSettings? options, Convertinator? converter, ILogger&lt;JsonFormat&gt;? logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -222,6 +225,9 @@ Class JsonFormat  <a class="header-action link-secondary" title="View source" hr
     <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
     <dd><p>The converter used to convert between IGenericFile objects.</p>
 </dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Archivist.Formats.JSON.JsonFormat.html">JsonFormat</a>&gt;</dt>
+    <dd><p>The logger.</p>
+</dd>
   </dl>
 
 
@@ -231,8 +237,17 @@ Class JsonFormat  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h4 class="section" id="Archivist_Formats_JSON_JsonFormat__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_JSON_JsonFormat___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.JSON.JsonFormat.html">JsonFormat</a> class.</p>
+</div>
 
 
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="Archivist.BaseClasses.FormatBaseClass-3.html">FormatBaseClass</a>&lt;TFormat, TFileReader, TFileWriter&gt;</div>
+    </dd>
+  </dl>
 
 
   <h2 class="section" id="properties">Properties
@@ -243,7 +258,7 @@ Class JsonFormat  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Archivist_Formats_JSON_JsonFormat_Extensions" data-uid="Archivist.Formats.JSON.JsonFormat.Extensions">
   Extensions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonFormat.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonFormat.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the file extensions associated with the JSON format.</p>
@@ -275,7 +290,7 @@ Class JsonFormat  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Archivist_Formats_JSON_JsonFormat_MimeTypes" data-uid="Archivist.Formats.JSON.JsonFormat.MimeTypes">
   MimeTypes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonFormat.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonFormat.cs/#L28"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the MIME types associated with the JSON format.</p>
@@ -311,7 +326,7 @@ Class JsonFormat  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonFormat.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/JSON/JsonFormat.cs/#L18" class="edit-link">Edit this page</a>
         </div>
 
 

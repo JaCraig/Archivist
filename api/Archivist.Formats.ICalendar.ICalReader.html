@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_ICalendar_ICalReader" data-uid="Archivist.Formats.ICalendar.ICalReader" class="text-break">
-Class ICalReader  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/ICalendar/ICalReader.cs/#L17"><i class="bi bi-code-slash"></i></a>
+Class ICalReader  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/ICalendar/ICalReader.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -129,6 +129,9 @@ Class ICalReader  <a class="header-action link-secondary" title="View source" hr
     <dt>Inherited Members</dt>
     <dd>
     <div>
+      <a class="xref" href="Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_Logger">ReaderBaseClass.Logger</a>
+    </div>
+    <div>
       <a class="xref" href="Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_CanRead_System_IO_Stream_">ReaderBaseClass.CanRead(Stream)</a>
     </div>
     <div>
@@ -163,6 +166,9 @@ Class ICalReader  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h2 id="Archivist_Formats_ICalendar_ICalReader_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.ICalendar.ICalReader.html">ICalReader</a> class.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -171,23 +177,26 @@ Class ICalReader  <a class="header-action link-secondary" title="View source" hr
 
   <a id="Archivist_Formats_ICalendar_ICalReader__ctor_" data-uid="Archivist.Formats.ICalendar.ICalReader.#ctor*"></a>
 
-  <h3 id="Archivist_Formats_ICalendar_ICalReader__ctor_Archivist_Converters_Convertinator_" data-uid="Archivist.Formats.ICalendar.ICalReader.#ctor(Archivist.Converters.Convertinator)">
-  ICalReader(Convertinator?)
+  <h3 id="Archivist_Formats_ICalendar_ICalReader__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_" data-uid="Archivist.Formats.ICalendar.ICalReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)">
+  ICalReader(Convertinator?, ILogger?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/ICalendar/ICalReader.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.ICalendar.ICalReader.html">ICalReader</a> class.</p>
+  <div class="markdown level1 summary"><p>Represents a reader for ICal files.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ICalReader(Convertinator? converter)</code></pre>
+    <pre><code class="lang-csharp hljs">public ICalReader(Convertinator? converter, ILogger? logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
     <dd><p>The converter used to convert between IGenericFile objects.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>The logger.</p>
 </dd>
   </dl>
 
@@ -198,6 +207,9 @@ Class ICalReader  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <h4 class="section" id="Archivist_Formats_ICalendar_ICalReader__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.ICalendar.ICalReader.html">ICalReader</a> class.</p>
+</div>
 
 
 
@@ -210,7 +222,7 @@ Class ICalReader  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Archivist_Formats_ICalendar_ICalReader_HeaderInfo" data-uid="Archivist.Formats.ICalendar.ICalReader.HeaderInfo">
   HeaderInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/ICalendar/ICalReader.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/ICalendar/ICalReader.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the header information of the ICal file.</p>
@@ -246,7 +258,7 @@ Class ICalReader  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Archivist_Formats_ICalendar_ICalReader_ReadAsync_System_IO_Stream_" data-uid="Archivist.Formats.ICalendar.ICalReader.ReadAsync(System.IO.Stream)">
   ReadAsync(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/ICalendar/ICalReader.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/ICalendar/ICalReader.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads a ICal file asynchronously from the specified stream.</p>
@@ -285,7 +297,7 @@ Class ICalReader  <a class="header-action link-secondary" title="View source" hr
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/ICalendar/ICalReader.cs/#L17" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/ICalendar/ICalReader.cs/#L23" class="edit-link">Edit this page</a>
         </div>
 
 

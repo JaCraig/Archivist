@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_VCard_VCardFormat" data-uid="Archivist.Formats.VCard.VCardFormat" class="text-break">
-Class VCardFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/VCard/VCardFormat.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class VCardFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/VCard/VCardFormat.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -193,6 +193,9 @@ Class VCardFormat  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h2 id="Archivist_Formats_VCard_VCardFormat_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.VCard.VCardFormat.html">VCardFormat</a> class.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -201,23 +204,26 @@ Class VCardFormat  <a class="header-action link-secondary" title="View source" h
 
   <a id="Archivist_Formats_VCard_VCardFormat__ctor_" data-uid="Archivist.Formats.VCard.VCardFormat.#ctor*"></a>
 
-  <h3 id="Archivist_Formats_VCard_VCardFormat__ctor_Archivist_Converters_Convertinator_" data-uid="Archivist.Formats.VCard.VCardFormat.#ctor(Archivist.Converters.Convertinator)">
-  VCardFormat(Convertinator?)
+  <h3 id="Archivist_Formats_VCard_VCardFormat__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_VCard_VCardFormat__" data-uid="Archivist.Formats.VCard.VCardFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.VCard.VCardFormat})">
+  VCardFormat(Convertinator?, ILogger&lt;VCardFormat&gt;?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/VCard/VCardFormat.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.VCard.VCardFormat.html">VCardFormat</a> class.</p>
+  <div class="markdown level1 summary"><p>Represents a VCard format for storing contact information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VCardFormat(Convertinator? converter)</code></pre>
+    <pre><code class="lang-csharp hljs">public VCardFormat(Convertinator? converter, ILogger&lt;VCardFormat&gt;? logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
     <dd><p>The converter used to convert between IGenericFile objects.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Archivist.Formats.VCard.VCardFormat.html">VCardFormat</a>&gt;</dt>
+    <dd><p>The logger.</p>
 </dd>
   </dl>
 
@@ -228,6 +234,9 @@ Class VCardFormat  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section" id="Archivist_Formats_VCard_VCardFormat__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_VCard_VCardFormat___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.VCard.VCardFormat.html">VCardFormat</a> class.</p>
+</div>
 
 
 
@@ -240,7 +249,7 @@ Class VCardFormat  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Archivist_Formats_VCard_VCardFormat_Extensions" data-uid="Archivist.Formats.VCard.VCardFormat.Extensions">
   Extensions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/VCard/VCardFormat.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/VCard/VCardFormat.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the file extensions associated with the VCard format.</p>
@@ -272,7 +281,7 @@ Class VCardFormat  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Archivist_Formats_VCard_VCardFormat_MimeTypes" data-uid="Archivist.Formats.VCard.VCardFormat.MimeTypes">
   MimeTypes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/VCard/VCardFormat.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/VCard/VCardFormat.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the MIME types associated with the VCard format.</p>
@@ -304,7 +313,7 @@ Class VCardFormat  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/VCard/VCardFormat.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/VCard/VCardFormat.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -338,15 +338,15 @@ references:
   fullName.vb: Archivist.BaseClasses.FixedLengthFormatBaseClass(Of TFormat, TFileReader)
   nameWithType: FixedLengthFormatBaseClass<TFormat, TFileReader>
   nameWithType.vb: FixedLengthFormatBaseClass(Of TFormat, TFileReader)
-- uid: Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor(`1)
-  name: FixedLengthFormatBaseClass(TFileReader)
-  href: api/Archivist.BaseClasses.FixedLengthFormatBaseClass-2.html#Archivist_BaseClasses_FixedLengthFormatBaseClass_2__ctor__1_
-  commentId: M:Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor(`1)
-  name.vb: New(TFileReader)
-  fullName: Archivist.BaseClasses.FixedLengthFormatBaseClass<TFormat, TFileReader>.FixedLengthFormatBaseClass(TFileReader)
-  fullName.vb: Archivist.BaseClasses.FixedLengthFormatBaseClass(Of TFormat, TFileReader).New(TFileReader)
-  nameWithType: FixedLengthFormatBaseClass<TFormat, TFileReader>.FixedLengthFormatBaseClass(TFileReader)
-  nameWithType.vb: FixedLengthFormatBaseClass(Of TFormat, TFileReader).New(TFileReader)
+- uid: Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor(`1,Microsoft.Extensions.Logging.ILogger)
+  name: FixedLengthFormatBaseClass(TFileReader, ILogger?)
+  href: api/Archivist.BaseClasses.FixedLengthFormatBaseClass-2.html#Archivist_BaseClasses_FixedLengthFormatBaseClass_2__ctor__1_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor(`1,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(TFileReader, ILogger)
+  fullName: Archivist.BaseClasses.FixedLengthFormatBaseClass<TFormat, TFileReader>.FixedLengthFormatBaseClass(TFileReader, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.BaseClasses.FixedLengthFormatBaseClass(Of TFormat, TFileReader).New(TFileReader, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: FixedLengthFormatBaseClass<TFormat, TFileReader>.FixedLengthFormatBaseClass(TFileReader, ILogger?)
+  nameWithType.vb: FixedLengthFormatBaseClass(Of TFormat, TFileReader).New(TFileReader, ILogger)
 - uid: Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor*
   name: FixedLengthFormatBaseClass
   href: api/Archivist.BaseClasses.FixedLengthFormatBaseClass-2.html#Archivist_BaseClasses_FixedLengthFormatBaseClass_2__ctor_
@@ -600,6 +600,25 @@ references:
   commentId: T:Archivist.BaseClasses.ReaderBaseClass
   fullName: Archivist.BaseClasses.ReaderBaseClass
   nameWithType: ReaderBaseClass
+- uid: Archivist.BaseClasses.ReaderBaseClass.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: ReaderBaseClass(ILogger?)
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.BaseClasses.ReaderBaseClass.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.BaseClasses.ReaderBaseClass.ReaderBaseClass(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.BaseClasses.ReaderBaseClass.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: ReaderBaseClass.ReaderBaseClass(ILogger?)
+  nameWithType.vb: ReaderBaseClass.New(ILogger)
+- uid: Archivist.BaseClasses.ReaderBaseClass.#ctor*
+  name: ReaderBaseClass
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass__ctor_
+  commentId: Overload:Archivist.BaseClasses.ReaderBaseClass.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.BaseClasses.ReaderBaseClass.ReaderBaseClass
+  fullName.vb: Archivist.BaseClasses.ReaderBaseClass.New
+  nameWithType: ReaderBaseClass.ReaderBaseClass
+  nameWithType.vb: ReaderBaseClass.New
 - uid: Archivist.BaseClasses.ReaderBaseClass.CanRead(System.IO.Stream)
   name: CanRead(Stream?)
   href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_CanRead_System_IO_Stream_
@@ -661,6 +680,19 @@ references:
   isSpec: "True"
   fullName: Archivist.BaseClasses.ReaderBaseClass.IsValidStream
   nameWithType: ReaderBaseClass.IsValidStream
+- uid: Archivist.BaseClasses.ReaderBaseClass.Logger
+  name: Logger
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_Logger
+  commentId: P:Archivist.BaseClasses.ReaderBaseClass.Logger
+  fullName: Archivist.BaseClasses.ReaderBaseClass.Logger
+  nameWithType: ReaderBaseClass.Logger
+- uid: Archivist.BaseClasses.ReaderBaseClass.Logger*
+  name: Logger
+  href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_Logger_
+  commentId: Overload:Archivist.BaseClasses.ReaderBaseClass.Logger
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.ReaderBaseClass.Logger
+  nameWithType: ReaderBaseClass.Logger
 - uid: Archivist.BaseClasses.ReaderBaseClass.ReadAsync(System.IO.Stream)
   name: ReadAsync(Stream?)
   href: api/Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_ReadAsync_System_IO_Stream_
@@ -683,6 +715,25 @@ references:
   commentId: T:Archivist.BaseClasses.WriterBaseClass
   fullName: Archivist.BaseClasses.WriterBaseClass
   nameWithType: WriterBaseClass
+- uid: Archivist.BaseClasses.WriterBaseClass.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: WriterBaseClass(ILogger?)
+  href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.BaseClasses.WriterBaseClass.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.BaseClasses.WriterBaseClass.WriterBaseClass(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.BaseClasses.WriterBaseClass.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: WriterBaseClass.WriterBaseClass(ILogger?)
+  nameWithType.vb: WriterBaseClass.New(ILogger)
+- uid: Archivist.BaseClasses.WriterBaseClass.#ctor*
+  name: WriterBaseClass
+  href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass__ctor_
+  commentId: Overload:Archivist.BaseClasses.WriterBaseClass.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.BaseClasses.WriterBaseClass.WriterBaseClass
+  fullName.vb: Archivist.BaseClasses.WriterBaseClass.New
+  nameWithType: WriterBaseClass.WriterBaseClass
+  nameWithType.vb: WriterBaseClass.New
 - uid: Archivist.BaseClasses.WriterBaseClass.CanWrite(Archivist.Interfaces.IGenericFile)
   name: CanWrite(IGenericFile?)
   href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_CanWrite_Archivist_Interfaces_IGenericFile_
@@ -699,6 +750,35 @@ references:
   isSpec: "True"
   fullName: Archivist.BaseClasses.WriterBaseClass.CanWrite
   nameWithType: WriterBaseClass.CanWrite
+- uid: Archivist.BaseClasses.WriterBaseClass.IsValidStream(System.IO.Stream)
+  name: IsValidStream(Stream?)
+  href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_IsValidStream_System_IO_Stream_
+  commentId: M:Archivist.BaseClasses.WriterBaseClass.IsValidStream(System.IO.Stream)
+  name.vb: IsValidStream(Stream)
+  fullName: Archivist.BaseClasses.WriterBaseClass.IsValidStream(System.IO.Stream?)
+  fullName.vb: Archivist.BaseClasses.WriterBaseClass.IsValidStream(System.IO.Stream)
+  nameWithType: WriterBaseClass.IsValidStream(Stream?)
+  nameWithType.vb: WriterBaseClass.IsValidStream(Stream)
+- uid: Archivist.BaseClasses.WriterBaseClass.IsValidStream*
+  name: IsValidStream
+  href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_IsValidStream_
+  commentId: Overload:Archivist.BaseClasses.WriterBaseClass.IsValidStream
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.WriterBaseClass.IsValidStream
+  nameWithType: WriterBaseClass.IsValidStream
+- uid: Archivist.BaseClasses.WriterBaseClass.Logger
+  name: Logger
+  href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_Logger
+  commentId: P:Archivist.BaseClasses.WriterBaseClass.Logger
+  fullName: Archivist.BaseClasses.WriterBaseClass.Logger
+  nameWithType: WriterBaseClass.Logger
+- uid: Archivist.BaseClasses.WriterBaseClass.Logger*
+  name: Logger
+  href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_Logger_
+  commentId: Overload:Archivist.BaseClasses.WriterBaseClass.Logger
+  isSpec: "True"
+  fullName: Archivist.BaseClasses.WriterBaseClass.Logger
+  nameWithType: WriterBaseClass.Logger
 - uid: Archivist.BaseClasses.WriterBaseClass.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
   name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.BaseClasses.WriterBaseClass.html#Archivist_BaseClasses_WriterBaseClass_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
@@ -12854,15 +12934,15 @@ references:
   commentId: T:Archivist.Formats.Delimited.DelimitedFormat
   fullName: Archivist.Formats.Delimited.DelimitedFormat
   nameWithType: DelimitedFormat
-- uid: Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions},Archivist.Converters.Convertinator)
-  name: DelimitedFormat(IOptions<DelimitedOptions>?, Convertinator?)
-  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_DelimitedOptions__Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions},Archivist.Converters.Convertinator)
-  name.vb: New(IOptions(Of DelimitedOptions), Convertinator)
-  fullName: Archivist.Formats.Delimited.DelimitedFormat.DelimitedFormat(Microsoft.Extensions.Options.IOptions<Archivist.Options.DelimitedOptions>?, Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.Delimited.DelimitedFormat.New(Microsoft.Extensions.Options.IOptions(Of Archivist.Options.DelimitedOptions), Archivist.Converters.Convertinator)
-  nameWithType: DelimitedFormat.DelimitedFormat(IOptions<DelimitedOptions>?, Convertinator?)
-  nameWithType.vb: DelimitedFormat.New(IOptions(Of DelimitedOptions), Convertinator)
+- uid: Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions},Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: DelimitedFormat(IOptions<DelimitedOptions>?, Convertinator?, ILogger?)
+  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_DelimitedOptions__Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions},Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(IOptions(Of DelimitedOptions), Convertinator, ILogger)
+  fullName: Archivist.Formats.Delimited.DelimitedFormat.DelimitedFormat(Microsoft.Extensions.Options.IOptions<Archivist.Options.DelimitedOptions>?, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.Delimited.DelimitedFormat.New(Microsoft.Extensions.Options.IOptions(Of Archivist.Options.DelimitedOptions), Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: DelimitedFormat.DelimitedFormat(IOptions<DelimitedOptions>?, Convertinator?, ILogger?)
+  nameWithType.vb: DelimitedFormat.New(IOptions(Of DelimitedOptions), Convertinator, ILogger)
 - uid: Archivist.Formats.Delimited.DelimitedFormat.#ctor*
   name: DelimitedFormat
   href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat__ctor_
@@ -12905,15 +12985,15 @@ references:
   commentId: T:Archivist.Formats.Delimited.DelimitedReader
   fullName: Archivist.Formats.Delimited.DelimitedReader
   nameWithType: DelimitedReader
-- uid: Archivist.Formats.Delimited.DelimitedReader.#ctor(Archivist.Options.DelimitedOptions,Archivist.Converters.Convertinator)
-  name: DelimitedReader(DelimitedOptions, Convertinator?)
-  href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader__ctor_Archivist_Options_DelimitedOptions_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.Delimited.DelimitedReader.#ctor(Archivist.Options.DelimitedOptions,Archivist.Converters.Convertinator)
-  name.vb: New(DelimitedOptions, Convertinator)
-  fullName: Archivist.Formats.Delimited.DelimitedReader.DelimitedReader(Archivist.Options.DelimitedOptions, Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.Delimited.DelimitedReader.New(Archivist.Options.DelimitedOptions, Archivist.Converters.Convertinator)
-  nameWithType: DelimitedReader.DelimitedReader(DelimitedOptions, Convertinator?)
-  nameWithType.vb: DelimitedReader.New(DelimitedOptions, Convertinator)
+- uid: Archivist.Formats.Delimited.DelimitedReader.#ctor(Archivist.Options.DelimitedOptions,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: DelimitedReader(DelimitedOptions, Convertinator?, ILogger?)
+  href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader__ctor_Archivist_Options_DelimitedOptions_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.Delimited.DelimitedReader.#ctor(Archivist.Options.DelimitedOptions,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(DelimitedOptions, Convertinator, ILogger)
+  fullName: Archivist.Formats.Delimited.DelimitedReader.DelimitedReader(Archivist.Options.DelimitedOptions, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.Delimited.DelimitedReader.New(Archivist.Options.DelimitedOptions, Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: DelimitedReader.DelimitedReader(DelimitedOptions, Convertinator?, ILogger?)
+  nameWithType.vb: DelimitedReader.New(DelimitedOptions, Convertinator, ILogger)
 - uid: Archivist.Formats.Delimited.DelimitedReader.#ctor*
   name: DelimitedReader
   href: api/Archivist.Formats.Delimited.DelimitedReader.html#Archivist_Formats_Delimited_DelimitedReader__ctor_
@@ -12959,15 +13039,15 @@ references:
   commentId: T:Archivist.Formats.Delimited.DelimitedWriter
   fullName: Archivist.Formats.Delimited.DelimitedWriter
   nameWithType: DelimitedWriter
-- uid: Archivist.Formats.Delimited.DelimitedWriter.#ctor(Archivist.Options.DelimitedOptions)
-  name: DelimitedWriter(DelimitedOptions)
-  href: api/Archivist.Formats.Delimited.DelimitedWriter.html#Archivist_Formats_Delimited_DelimitedWriter__ctor_Archivist_Options_DelimitedOptions_
-  commentId: M:Archivist.Formats.Delimited.DelimitedWriter.#ctor(Archivist.Options.DelimitedOptions)
-  name.vb: New(DelimitedOptions)
-  fullName: Archivist.Formats.Delimited.DelimitedWriter.DelimitedWriter(Archivist.Options.DelimitedOptions)
-  fullName.vb: Archivist.Formats.Delimited.DelimitedWriter.New(Archivist.Options.DelimitedOptions)
-  nameWithType: DelimitedWriter.DelimitedWriter(DelimitedOptions)
-  nameWithType.vb: DelimitedWriter.New(DelimitedOptions)
+- uid: Archivist.Formats.Delimited.DelimitedWriter.#ctor(Archivist.Options.DelimitedOptions,Microsoft.Extensions.Logging.ILogger)
+  name: DelimitedWriter(DelimitedOptions, ILogger?)
+  href: api/Archivist.Formats.Delimited.DelimitedWriter.html#Archivist_Formats_Delimited_DelimitedWriter__ctor_Archivist_Options_DelimitedOptions_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.Delimited.DelimitedWriter.#ctor(Archivist.Options.DelimitedOptions,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(DelimitedOptions, ILogger)
+  fullName: Archivist.Formats.Delimited.DelimitedWriter.DelimitedWriter(Archivist.Options.DelimitedOptions, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.Delimited.DelimitedWriter.New(Archivist.Options.DelimitedOptions, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: DelimitedWriter.DelimitedWriter(DelimitedOptions, ILogger?)
+  nameWithType.vb: DelimitedWriter.New(DelimitedOptions, ILogger)
 - uid: Archivist.Formats.Delimited.DelimitedWriter.#ctor*
   name: DelimitedWriter
   href: api/Archivist.Formats.Delimited.DelimitedWriter.html#Archivist_Formats_Delimited_DelimitedWriter__ctor_
@@ -13006,15 +13086,15 @@ references:
   commentId: T:Archivist.Formats.Excel.ExcelFormat
   fullName: Archivist.Formats.Excel.ExcelFormat
   nameWithType: ExcelFormat
-- uid: Archivist.Formats.Excel.ExcelFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions},Archivist.Converters.Convertinator)
-  name: ExcelFormat(IOptions<ExcelOptions>?, Convertinator?)
-  href: api/Archivist.Formats.Excel.ExcelFormat.html#Archivist_Formats_Excel_ExcelFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_ExcelOptions__Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.Excel.ExcelFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions},Archivist.Converters.Convertinator)
-  name.vb: New(IOptions(Of ExcelOptions), Convertinator)
-  fullName: Archivist.Formats.Excel.ExcelFormat.ExcelFormat(Microsoft.Extensions.Options.IOptions<Archivist.Options.ExcelOptions>?, Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.Excel.ExcelFormat.New(Microsoft.Extensions.Options.IOptions(Of Archivist.Options.ExcelOptions), Archivist.Converters.Convertinator)
-  nameWithType: ExcelFormat.ExcelFormat(IOptions<ExcelOptions>?, Convertinator?)
-  nameWithType.vb: ExcelFormat.New(IOptions(Of ExcelOptions), Convertinator)
+- uid: Archivist.Formats.Excel.ExcelFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions},Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.Excel.ExcelFormat})
+  name: ExcelFormat(IOptions<ExcelOptions>?, Convertinator?, ILogger<ExcelFormat>?)
+  href: api/Archivist.Formats.Excel.ExcelFormat.html#Archivist_Formats_Excel_ExcelFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_ExcelOptions__Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_Excel_ExcelFormat__
+  commentId: M:Archivist.Formats.Excel.ExcelFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions},Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.Excel.ExcelFormat})
+  name.vb: New(IOptions(Of ExcelOptions), Convertinator, ILogger(Of ExcelFormat))
+  fullName: Archivist.Formats.Excel.ExcelFormat.ExcelFormat(Microsoft.Extensions.Options.IOptions<Archivist.Options.ExcelOptions>?, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger<Archivist.Formats.Excel.ExcelFormat>?)
+  fullName.vb: Archivist.Formats.Excel.ExcelFormat.New(Microsoft.Extensions.Options.IOptions(Of Archivist.Options.ExcelOptions), Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger(Of Archivist.Formats.Excel.ExcelFormat))
+  nameWithType: ExcelFormat.ExcelFormat(IOptions<ExcelOptions>?, Convertinator?, ILogger<ExcelFormat>?)
+  nameWithType.vb: ExcelFormat.New(IOptions(Of ExcelOptions), Convertinator, ILogger(Of ExcelFormat))
 - uid: Archivist.Formats.Excel.ExcelFormat.#ctor*
   name: ExcelFormat
   href: api/Archivist.Formats.Excel.ExcelFormat.html#Archivist_Formats_Excel_ExcelFormat__ctor_
@@ -13057,15 +13137,15 @@ references:
   commentId: T:Archivist.Formats.Excel.ExcelReader
   fullName: Archivist.Formats.Excel.ExcelReader
   nameWithType: ExcelReader
-- uid: Archivist.Formats.Excel.ExcelReader.#ctor(Archivist.Options.ExcelOptions,Archivist.Converters.Convertinator)
-  name: ExcelReader(ExcelOptions, Convertinator?)
-  href: api/Archivist.Formats.Excel.ExcelReader.html#Archivist_Formats_Excel_ExcelReader__ctor_Archivist_Options_ExcelOptions_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.Excel.ExcelReader.#ctor(Archivist.Options.ExcelOptions,Archivist.Converters.Convertinator)
-  name.vb: New(ExcelOptions, Convertinator)
-  fullName: Archivist.Formats.Excel.ExcelReader.ExcelReader(Archivist.Options.ExcelOptions, Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.Excel.ExcelReader.New(Archivist.Options.ExcelOptions, Archivist.Converters.Convertinator)
-  nameWithType: ExcelReader.ExcelReader(ExcelOptions, Convertinator?)
-  nameWithType.vb: ExcelReader.New(ExcelOptions, Convertinator)
+- uid: Archivist.Formats.Excel.ExcelReader.#ctor(Archivist.Options.ExcelOptions,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: ExcelReader(ExcelOptions, Convertinator?, ILogger?)
+  href: api/Archivist.Formats.Excel.ExcelReader.html#Archivist_Formats_Excel_ExcelReader__ctor_Archivist_Options_ExcelOptions_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.Excel.ExcelReader.#ctor(Archivist.Options.ExcelOptions,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ExcelOptions, Convertinator, ILogger)
+  fullName: Archivist.Formats.Excel.ExcelReader.ExcelReader(Archivist.Options.ExcelOptions, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.Excel.ExcelReader.New(Archivist.Options.ExcelOptions, Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: ExcelReader.ExcelReader(ExcelOptions, Convertinator?, ILogger?)
+  nameWithType.vb: ExcelReader.New(ExcelOptions, Convertinator, ILogger)
 - uid: Archivist.Formats.Excel.ExcelReader.#ctor*
   name: ExcelReader
   href: api/Archivist.Formats.Excel.ExcelReader.html#Archivist_Formats_Excel_ExcelReader__ctor_
@@ -13140,15 +13220,15 @@ references:
   commentId: T:Archivist.Formats.Excel.ExcelWriter
   fullName: Archivist.Formats.Excel.ExcelWriter
   nameWithType: ExcelWriter
-- uid: Archivist.Formats.Excel.ExcelWriter.#ctor
-  name: ExcelWriter()
-  href: api/Archivist.Formats.Excel.ExcelWriter.html#Archivist_Formats_Excel_ExcelWriter__ctor
-  commentId: M:Archivist.Formats.Excel.ExcelWriter.#ctor
-  name.vb: New()
-  fullName: Archivist.Formats.Excel.ExcelWriter.ExcelWriter()
-  fullName.vb: Archivist.Formats.Excel.ExcelWriter.New()
-  nameWithType: ExcelWriter.ExcelWriter()
-  nameWithType.vb: ExcelWriter.New()
+- uid: Archivist.Formats.Excel.ExcelWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: ExcelWriter(ILogger?)
+  href: api/Archivist.Formats.Excel.ExcelWriter.html#Archivist_Formats_Excel_ExcelWriter__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.Excel.ExcelWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.Formats.Excel.ExcelWriter.ExcelWriter(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.Excel.ExcelWriter.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: ExcelWriter.ExcelWriter(ILogger?)
+  nameWithType.vb: ExcelWriter.New(ILogger)
 - uid: Archivist.Formats.Excel.ExcelWriter.#ctor*
   name: ExcelWriter
   href: api/Archivist.Formats.Excel.ExcelWriter.html#Archivist_Formats_Excel_ExcelWriter__ctor_
@@ -13187,6 +13267,25 @@ references:
   commentId: T:Archivist.Formats.FixedLength.FixedLengthWriter
   fullName: Archivist.Formats.FixedLength.FixedLengthWriter
   nameWithType: FixedLengthWriter
+- uid: Archivist.Formats.FixedLength.FixedLengthWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: FixedLengthWriter(ILogger?)
+  href: api/Archivist.Formats.FixedLength.FixedLengthWriter.html#Archivist_Formats_FixedLength_FixedLengthWriter__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.FixedLength.FixedLengthWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.Formats.FixedLength.FixedLengthWriter.FixedLengthWriter(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.FixedLength.FixedLengthWriter.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: FixedLengthWriter.FixedLengthWriter(ILogger?)
+  nameWithType.vb: FixedLengthWriter.New(ILogger)
+- uid: Archivist.Formats.FixedLength.FixedLengthWriter.#ctor*
+  name: FixedLengthWriter
+  href: api/Archivist.Formats.FixedLength.FixedLengthWriter.html#Archivist_Formats_FixedLength_FixedLengthWriter__ctor_
+  commentId: Overload:Archivist.Formats.FixedLength.FixedLengthWriter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.FixedLength.FixedLengthWriter.FixedLengthWriter
+  fullName.vb: Archivist.Formats.FixedLength.FixedLengthWriter.New
+  nameWithType: FixedLengthWriter.FixedLengthWriter
+  nameWithType.vb: FixedLengthWriter.New
 - uid: Archivist.Formats.FixedLength.FixedLengthWriter.CanWrite(Archivist.Interfaces.IGenericFile)
   name: CanWrite(IGenericFile?)
   href: api/Archivist.Formats.FixedLength.FixedLengthWriter.html#Archivist_Formats_FixedLength_FixedLengthWriter_CanWrite_Archivist_Interfaces_IGenericFile_
@@ -13231,15 +13330,15 @@ references:
   commentId: T:Archivist.Formats.ICalendar.ICalFormat
   fullName: Archivist.Formats.ICalendar.ICalFormat
   nameWithType: ICalFormat
-- uid: Archivist.Formats.ICalendar.ICalFormat.#ctor(Archivist.Converters.Convertinator)
-  name: ICalFormat(Convertinator?)
-  href: api/Archivist.Formats.ICalendar.ICalFormat.html#Archivist_Formats_ICalendar_ICalFormat__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.ICalendar.ICalFormat.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.ICalendar.ICalFormat.ICalFormat(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.ICalendar.ICalFormat.New(Archivist.Converters.Convertinator)
-  nameWithType: ICalFormat.ICalFormat(Convertinator?)
-  nameWithType.vb: ICalFormat.New(Convertinator)
+- uid: Archivist.Formats.ICalendar.ICalFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.ICalendar.ICalFormat})
+  name: ICalFormat(Convertinator?, ILogger<ICalFormat>?)
+  href: api/Archivist.Formats.ICalendar.ICalFormat.html#Archivist_Formats_ICalendar_ICalFormat__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_ICalendar_ICalFormat__
+  commentId: M:Archivist.Formats.ICalendar.ICalFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.ICalendar.ICalFormat})
+  name.vb: New(Convertinator, ILogger(Of ICalFormat))
+  fullName: Archivist.Formats.ICalendar.ICalFormat.ICalFormat(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger<Archivist.Formats.ICalendar.ICalFormat>?)
+  fullName.vb: Archivist.Formats.ICalendar.ICalFormat.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger(Of Archivist.Formats.ICalendar.ICalFormat))
+  nameWithType: ICalFormat.ICalFormat(Convertinator?, ILogger<ICalFormat>?)
+  nameWithType.vb: ICalFormat.New(Convertinator, ILogger(Of ICalFormat))
 - uid: Archivist.Formats.ICalendar.ICalFormat.#ctor*
   name: ICalFormat
   href: api/Archivist.Formats.ICalendar.ICalFormat.html#Archivist_Formats_ICalendar_ICalFormat__ctor_
@@ -13282,15 +13381,15 @@ references:
   commentId: T:Archivist.Formats.ICalendar.ICalReader
   fullName: Archivist.Formats.ICalendar.ICalReader
   nameWithType: ICalReader
-- uid: Archivist.Formats.ICalendar.ICalReader.#ctor(Archivist.Converters.Convertinator)
-  name: ICalReader(Convertinator?)
-  href: api/Archivist.Formats.ICalendar.ICalReader.html#Archivist_Formats_ICalendar_ICalReader__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.ICalendar.ICalReader.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.ICalendar.ICalReader.ICalReader(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.ICalendar.ICalReader.New(Archivist.Converters.Convertinator)
-  nameWithType: ICalReader.ICalReader(Convertinator?)
-  nameWithType.vb: ICalReader.New(Convertinator)
+- uid: Archivist.Formats.ICalendar.ICalReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: ICalReader(Convertinator?, ILogger?)
+  href: api/Archivist.Formats.ICalendar.ICalReader.html#Archivist_Formats_ICalendar_ICalReader__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.ICalendar.ICalReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(Convertinator, ILogger)
+  fullName: Archivist.Formats.ICalendar.ICalReader.ICalReader(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.ICalendar.ICalReader.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: ICalReader.ICalReader(Convertinator?, ILogger?)
+  nameWithType.vb: ICalReader.New(Convertinator, ILogger)
 - uid: Archivist.Formats.ICalendar.ICalReader.#ctor*
   name: ICalReader
   href: api/Archivist.Formats.ICalendar.ICalReader.html#Archivist_Formats_ICalendar_ICalReader__ctor_
@@ -13336,6 +13435,25 @@ references:
   commentId: T:Archivist.Formats.ICalendar.ICalWriter
   fullName: Archivist.Formats.ICalendar.ICalWriter
   nameWithType: ICalWriter
+- uid: Archivist.Formats.ICalendar.ICalWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: ICalWriter(ILogger?)
+  href: api/Archivist.Formats.ICalendar.ICalWriter.html#Archivist_Formats_ICalendar_ICalWriter__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.ICalendar.ICalWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.Formats.ICalendar.ICalWriter.ICalWriter(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.ICalendar.ICalWriter.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: ICalWriter.ICalWriter(ILogger?)
+  nameWithType.vb: ICalWriter.New(ILogger)
+- uid: Archivist.Formats.ICalendar.ICalWriter.#ctor*
+  name: ICalWriter
+  href: api/Archivist.Formats.ICalendar.ICalWriter.html#Archivist_Formats_ICalendar_ICalWriter__ctor_
+  commentId: Overload:Archivist.Formats.ICalendar.ICalWriter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.ICalendar.ICalWriter.ICalWriter
+  fullName.vb: Archivist.Formats.ICalendar.ICalWriter.New
+  nameWithType: ICalWriter.ICalWriter
+  nameWithType.vb: ICalWriter.New
 - uid: Archivist.Formats.ICalendar.ICalWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
   name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.Formats.ICalendar.ICalWriter.html#Archivist_Formats_ICalendar_ICalWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
@@ -13364,15 +13482,15 @@ references:
   commentId: T:Archivist.Formats.Image.ImageFormat
   fullName: Archivist.Formats.Image.ImageFormat
   nameWithType: ImageFormat
-- uid: Archivist.Formats.Image.ImageFormat.#ctor(Archivist.Converters.Convertinator)
-  name: ImageFormat(Convertinator?)
-  href: api/Archivist.Formats.Image.ImageFormat.html#Archivist_Formats_Image_ImageFormat__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.Image.ImageFormat.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.Image.ImageFormat.ImageFormat(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.Image.ImageFormat.New(Archivist.Converters.Convertinator)
-  nameWithType: ImageFormat.ImageFormat(Convertinator?)
-  nameWithType.vb: ImageFormat.New(Convertinator)
+- uid: Archivist.Formats.Image.ImageFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.Image.ImageFormat})
+  name: ImageFormat(Convertinator?, ILogger<ImageFormat>?)
+  href: api/Archivist.Formats.Image.ImageFormat.html#Archivist_Formats_Image_ImageFormat__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_Image_ImageFormat__
+  commentId: M:Archivist.Formats.Image.ImageFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.Image.ImageFormat})
+  name.vb: New(Convertinator, ILogger(Of ImageFormat))
+  fullName: Archivist.Formats.Image.ImageFormat.ImageFormat(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger<Archivist.Formats.Image.ImageFormat>?)
+  fullName.vb: Archivist.Formats.Image.ImageFormat.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger(Of Archivist.Formats.Image.ImageFormat))
+  nameWithType: ImageFormat.ImageFormat(Convertinator?, ILogger<ImageFormat>?)
+  nameWithType.vb: ImageFormat.New(Convertinator, ILogger(Of ImageFormat))
 - uid: Archivist.Formats.Image.ImageFormat.#ctor*
   name: ImageFormat
   href: api/Archivist.Formats.Image.ImageFormat.html#Archivist_Formats_Image_ImageFormat__ctor_
@@ -13415,15 +13533,15 @@ references:
   commentId: T:Archivist.Formats.Image.ImageReader
   fullName: Archivist.Formats.Image.ImageReader
   nameWithType: ImageReader
-- uid: Archivist.Formats.Image.ImageReader.#ctor(Archivist.Converters.Convertinator)
-  name: ImageReader(Convertinator?)
-  href: api/Archivist.Formats.Image.ImageReader.html#Archivist_Formats_Image_ImageReader__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.Image.ImageReader.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.Image.ImageReader.ImageReader(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.Image.ImageReader.New(Archivist.Converters.Convertinator)
-  nameWithType: ImageReader.ImageReader(Convertinator?)
-  nameWithType.vb: ImageReader.New(Convertinator)
+- uid: Archivist.Formats.Image.ImageReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: ImageReader(Convertinator?, ILogger?)
+  href: api/Archivist.Formats.Image.ImageReader.html#Archivist_Formats_Image_ImageReader__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.Image.ImageReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(Convertinator, ILogger)
+  fullName: Archivist.Formats.Image.ImageReader.ImageReader(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.Image.ImageReader.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: ImageReader.ImageReader(Convertinator?, ILogger?)
+  nameWithType.vb: ImageReader.New(Convertinator, ILogger)
 - uid: Archivist.Formats.Image.ImageReader.#ctor*
   name: ImageReader
   href: api/Archivist.Formats.Image.ImageReader.html#Archivist_Formats_Image_ImageReader__ctor_
@@ -13485,15 +13603,15 @@ references:
   commentId: T:Archivist.Formats.Image.ImageWriter
   fullName: Archivist.Formats.Image.ImageWriter
   nameWithType: ImageWriter
-- uid: Archivist.Formats.Image.ImageWriter.#ctor
-  name: ImageWriter()
-  href: api/Archivist.Formats.Image.ImageWriter.html#Archivist_Formats_Image_ImageWriter__ctor
-  commentId: M:Archivist.Formats.Image.ImageWriter.#ctor
-  name.vb: New()
-  fullName: Archivist.Formats.Image.ImageWriter.ImageWriter()
-  fullName.vb: Archivist.Formats.Image.ImageWriter.New()
-  nameWithType: ImageWriter.ImageWriter()
-  nameWithType.vb: ImageWriter.New()
+- uid: Archivist.Formats.Image.ImageWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: ImageWriter(ILogger?)
+  href: api/Archivist.Formats.Image.ImageWriter.html#Archivist_Formats_Image_ImageWriter__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.Image.ImageWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.Formats.Image.ImageWriter.ImageWriter(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.Image.ImageWriter.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: ImageWriter.ImageWriter(ILogger?)
+  nameWithType.vb: ImageWriter.New(ILogger)
 - uid: Archivist.Formats.Image.ImageWriter.#ctor*
   name: ImageWriter
   href: api/Archivist.Formats.Image.ImageWriter.html#Archivist_Formats_Image_ImageWriter__ctor_
@@ -13532,15 +13650,15 @@ references:
   commentId: T:Archivist.Formats.JSON.JsonFormat
   fullName: Archivist.Formats.JSON.JsonFormat
   nameWithType: JsonFormat
-- uid: Archivist.Formats.JSON.JsonFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator)
-  name: JsonFormat(JsonSerializerSettings?, Convertinator?)
-  href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.JSON.JsonFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator)
-  name.vb: New(JsonSerializerSettings, Convertinator)
-  fullName: Archivist.Formats.JSON.JsonFormat.JsonFormat(Newtonsoft.Json.JsonSerializerSettings?, Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.JSON.JsonFormat.New(Newtonsoft.Json.JsonSerializerSettings, Archivist.Converters.Convertinator)
-  nameWithType: JsonFormat.JsonFormat(JsonSerializerSettings?, Convertinator?)
-  nameWithType.vb: JsonFormat.New(JsonSerializerSettings, Convertinator)
+- uid: Archivist.Formats.JSON.JsonFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.JSON.JsonFormat})
+  name: JsonFormat(JsonSerializerSettings?, Convertinator?, ILogger<JsonFormat>?)
+  href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_JSON_JsonFormat__
+  commentId: M:Archivist.Formats.JSON.JsonFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.JSON.JsonFormat})
+  name.vb: New(JsonSerializerSettings, Convertinator, ILogger(Of JsonFormat))
+  fullName: Archivist.Formats.JSON.JsonFormat.JsonFormat(Newtonsoft.Json.JsonSerializerSettings?, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger<Archivist.Formats.JSON.JsonFormat>?)
+  fullName.vb: Archivist.Formats.JSON.JsonFormat.New(Newtonsoft.Json.JsonSerializerSettings, Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger(Of Archivist.Formats.JSON.JsonFormat))
+  nameWithType: JsonFormat.JsonFormat(JsonSerializerSettings?, Convertinator?, ILogger<JsonFormat>?)
+  nameWithType.vb: JsonFormat.New(JsonSerializerSettings, Convertinator, ILogger(Of JsonFormat))
 - uid: Archivist.Formats.JSON.JsonFormat.#ctor*
   name: JsonFormat
   href: api/Archivist.Formats.JSON.JsonFormat.html#Archivist_Formats_JSON_JsonFormat__ctor_
@@ -13583,15 +13701,15 @@ references:
   commentId: T:Archivist.Formats.JSON.JsonReader
   fullName: Archivist.Formats.JSON.JsonReader
   nameWithType: JsonReader
-- uid: Archivist.Formats.JSON.JsonReader.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator)
-  name: JsonReader(JsonSerializerSettings?, Convertinator?)
-  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.JSON.JsonReader.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator)
-  name.vb: New(JsonSerializerSettings, Convertinator)
-  fullName: Archivist.Formats.JSON.JsonReader.JsonReader(Newtonsoft.Json.JsonSerializerSettings?, Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.JSON.JsonReader.New(Newtonsoft.Json.JsonSerializerSettings, Archivist.Converters.Convertinator)
-  nameWithType: JsonReader.JsonReader(JsonSerializerSettings?, Convertinator?)
-  nameWithType.vb: JsonReader.New(JsonSerializerSettings, Convertinator)
+- uid: Archivist.Formats.JSON.JsonReader.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: JsonReader(JsonSerializerSettings?, Convertinator?, ILogger?)
+  href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.JSON.JsonReader.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(JsonSerializerSettings, Convertinator, ILogger)
+  fullName: Archivist.Formats.JSON.JsonReader.JsonReader(Newtonsoft.Json.JsonSerializerSettings?, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.JSON.JsonReader.New(Newtonsoft.Json.JsonSerializerSettings, Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: JsonReader.JsonReader(JsonSerializerSettings?, Convertinator?, ILogger?)
+  nameWithType.vb: JsonReader.New(JsonSerializerSettings, Convertinator, ILogger)
 - uid: Archivist.Formats.JSON.JsonReader.#ctor*
   name: JsonReader
   href: api/Archivist.Formats.JSON.JsonReader.html#Archivist_Formats_JSON_JsonReader__ctor_
@@ -13653,15 +13771,15 @@ references:
   commentId: T:Archivist.Formats.JSON.JsonWriter
   fullName: Archivist.Formats.JSON.JsonWriter
   nameWithType: JsonWriter
-- uid: Archivist.Formats.JSON.JsonWriter.#ctor(Newtonsoft.Json.JsonSerializerSettings)
-  name: JsonWriter(JsonSerializerSettings?)
-  href: api/Archivist.Formats.JSON.JsonWriter.html#Archivist_Formats_JSON_JsonWriter__ctor_Newtonsoft_Json_JsonSerializerSettings_
-  commentId: M:Archivist.Formats.JSON.JsonWriter.#ctor(Newtonsoft.Json.JsonSerializerSettings)
-  name.vb: New(JsonSerializerSettings)
-  fullName: Archivist.Formats.JSON.JsonWriter.JsonWriter(Newtonsoft.Json.JsonSerializerSettings?)
-  fullName.vb: Archivist.Formats.JSON.JsonWriter.New(Newtonsoft.Json.JsonSerializerSettings)
-  nameWithType: JsonWriter.JsonWriter(JsonSerializerSettings?)
-  nameWithType.vb: JsonWriter.New(JsonSerializerSettings)
+- uid: Archivist.Formats.JSON.JsonWriter.#ctor(Newtonsoft.Json.JsonSerializerSettings,Microsoft.Extensions.Logging.ILogger)
+  name: JsonWriter(JsonSerializerSettings?, ILogger?)
+  href: api/Archivist.Formats.JSON.JsonWriter.html#Archivist_Formats_JSON_JsonWriter__ctor_Newtonsoft_Json_JsonSerializerSettings_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.JSON.JsonWriter.#ctor(Newtonsoft.Json.JsonSerializerSettings,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(JsonSerializerSettings, ILogger)
+  fullName: Archivist.Formats.JSON.JsonWriter.JsonWriter(Newtonsoft.Json.JsonSerializerSettings?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.JSON.JsonWriter.New(Newtonsoft.Json.JsonSerializerSettings, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: JsonWriter.JsonWriter(JsonSerializerSettings?, ILogger?)
+  nameWithType.vb: JsonWriter.New(JsonSerializerSettings, ILogger)
 - uid: Archivist.Formats.JSON.JsonWriter.#ctor*
   name: JsonWriter
   href: api/Archivist.Formats.JSON.JsonWriter.html#Archivist_Formats_JSON_JsonWriter__ctor_
@@ -13700,15 +13818,15 @@ references:
   commentId: T:Archivist.Formats.RSS.RSSFormat
   fullName: Archivist.Formats.RSS.RSSFormat
   nameWithType: RSSFormat
-- uid: Archivist.Formats.RSS.RSSFormat.#ctor(Archivist.Converters.Convertinator)
-  name: RSSFormat(Convertinator?)
-  href: api/Archivist.Formats.RSS.RSSFormat.html#Archivist_Formats_RSS_RSSFormat__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.RSS.RSSFormat.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.RSS.RSSFormat.RSSFormat(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.RSS.RSSFormat.New(Archivist.Converters.Convertinator)
-  nameWithType: RSSFormat.RSSFormat(Convertinator?)
-  nameWithType.vb: RSSFormat.New(Convertinator)
+- uid: Archivist.Formats.RSS.RSSFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.RSS.RSSFormat})
+  name: RSSFormat(Convertinator?, ILogger<RSSFormat>?)
+  href: api/Archivist.Formats.RSS.RSSFormat.html#Archivist_Formats_RSS_RSSFormat__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_RSS_RSSFormat__
+  commentId: M:Archivist.Formats.RSS.RSSFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.RSS.RSSFormat})
+  name.vb: New(Convertinator, ILogger(Of RSSFormat))
+  fullName: Archivist.Formats.RSS.RSSFormat.RSSFormat(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger<Archivist.Formats.RSS.RSSFormat>?)
+  fullName.vb: Archivist.Formats.RSS.RSSFormat.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger(Of Archivist.Formats.RSS.RSSFormat))
+  nameWithType: RSSFormat.RSSFormat(Convertinator?, ILogger<RSSFormat>?)
+  nameWithType.vb: RSSFormat.New(Convertinator, ILogger(Of RSSFormat))
 - uid: Archivist.Formats.RSS.RSSFormat.#ctor*
   name: RSSFormat
   href: api/Archivist.Formats.RSS.RSSFormat.html#Archivist_Formats_RSS_RSSFormat__ctor_
@@ -13751,15 +13869,15 @@ references:
   commentId: T:Archivist.Formats.RSS.RSSReader
   fullName: Archivist.Formats.RSS.RSSReader
   nameWithType: RSSReader
-- uid: Archivist.Formats.RSS.RSSReader.#ctor(Archivist.Converters.Convertinator)
-  name: RSSReader(Convertinator?)
-  href: api/Archivist.Formats.RSS.RSSReader.html#Archivist_Formats_RSS_RSSReader__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.RSS.RSSReader.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.RSS.RSSReader.RSSReader(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.RSS.RSSReader.New(Archivist.Converters.Convertinator)
-  nameWithType: RSSReader.RSSReader(Convertinator?)
-  nameWithType.vb: RSSReader.New(Convertinator)
+- uid: Archivist.Formats.RSS.RSSReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: RSSReader(Convertinator?, ILogger?)
+  href: api/Archivist.Formats.RSS.RSSReader.html#Archivist_Formats_RSS_RSSReader__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.RSS.RSSReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(Convertinator, ILogger)
+  fullName: Archivist.Formats.RSS.RSSReader.RSSReader(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.RSS.RSSReader.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: RSSReader.RSSReader(Convertinator?, ILogger?)
+  nameWithType.vb: RSSReader.New(Convertinator, ILogger)
 - uid: Archivist.Formats.RSS.RSSReader.#ctor*
   name: RSSReader
   href: api/Archivist.Formats.RSS.RSSReader.html#Archivist_Formats_RSS_RSSReader__ctor_
@@ -13821,6 +13939,25 @@ references:
   commentId: T:Archivist.Formats.RSS.RSSWriter
   fullName: Archivist.Formats.RSS.RSSWriter
   nameWithType: RSSWriter
+- uid: Archivist.Formats.RSS.RSSWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: RSSWriter(ILogger?)
+  href: api/Archivist.Formats.RSS.RSSWriter.html#Archivist_Formats_RSS_RSSWriter__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.RSS.RSSWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.Formats.RSS.RSSWriter.RSSWriter(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.RSS.RSSWriter.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: RSSWriter.RSSWriter(ILogger?)
+  nameWithType.vb: RSSWriter.New(ILogger)
+- uid: Archivist.Formats.RSS.RSSWriter.#ctor*
+  name: RSSWriter
+  href: api/Archivist.Formats.RSS.RSSWriter.html#Archivist_Formats_RSS_RSSWriter__ctor_
+  commentId: Overload:Archivist.Formats.RSS.RSSWriter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.RSS.RSSWriter.RSSWriter
+  fullName.vb: Archivist.Formats.RSS.RSSWriter.New
+  nameWithType: RSSWriter.RSSWriter
+  nameWithType.vb: RSSWriter.New
 - uid: Archivist.Formats.RSS.RSSWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
   name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.Formats.RSS.RSSWriter.html#Archivist_Formats_RSS_RSSWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
@@ -13849,15 +13986,15 @@ references:
   commentId: T:Archivist.Formats.Txt.TextFormat
   fullName: Archivist.Formats.Txt.TextFormat
   nameWithType: TextFormat
-- uid: Archivist.Formats.Txt.TextFormat.#ctor(Archivist.Converters.Convertinator)
-  name: TextFormat(Convertinator?)
-  href: api/Archivist.Formats.Txt.TextFormat.html#Archivist_Formats_Txt_TextFormat__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.Txt.TextFormat.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.Txt.TextFormat.TextFormat(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.Txt.TextFormat.New(Archivist.Converters.Convertinator)
-  nameWithType: TextFormat.TextFormat(Convertinator?)
-  nameWithType.vb: TextFormat.New(Convertinator)
+- uid: Archivist.Formats.Txt.TextFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.Txt.TextFormat})
+  name: TextFormat(Convertinator?, ILogger<TextFormat>?)
+  href: api/Archivist.Formats.Txt.TextFormat.html#Archivist_Formats_Txt_TextFormat__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_Txt_TextFormat__
+  commentId: M:Archivist.Formats.Txt.TextFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.Txt.TextFormat})
+  name.vb: New(Convertinator, ILogger(Of TextFormat))
+  fullName: Archivist.Formats.Txt.TextFormat.TextFormat(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger<Archivist.Formats.Txt.TextFormat>?)
+  fullName.vb: Archivist.Formats.Txt.TextFormat.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger(Of Archivist.Formats.Txt.TextFormat))
+  nameWithType: TextFormat.TextFormat(Convertinator?, ILogger<TextFormat>?)
+  nameWithType.vb: TextFormat.New(Convertinator, ILogger(Of TextFormat))
 - uid: Archivist.Formats.Txt.TextFormat.#ctor*
   name: TextFormat
   href: api/Archivist.Formats.Txt.TextFormat.html#Archivist_Formats_Txt_TextFormat__ctor_
@@ -13913,15 +14050,15 @@ references:
   commentId: T:Archivist.Formats.Txt.TextReader
   fullName: Archivist.Formats.Txt.TextReader
   nameWithType: TextReader
-- uid: Archivist.Formats.Txt.TextReader.#ctor(Archivist.Converters.Convertinator)
-  name: TextReader(Convertinator?)
-  href: api/Archivist.Formats.Txt.TextReader.html#Archivist_Formats_Txt_TextReader__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.Txt.TextReader.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.Txt.TextReader.TextReader(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.Txt.TextReader.New(Archivist.Converters.Convertinator)
-  nameWithType: TextReader.TextReader(Convertinator?)
-  nameWithType.vb: TextReader.New(Convertinator)
+- uid: Archivist.Formats.Txt.TextReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: TextReader(Convertinator?, ILogger?)
+  href: api/Archivist.Formats.Txt.TextReader.html#Archivist_Formats_Txt_TextReader__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.Txt.TextReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(Convertinator, ILogger)
+  fullName: Archivist.Formats.Txt.TextReader.TextReader(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.Txt.TextReader.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: TextReader.TextReader(Convertinator?, ILogger?)
+  nameWithType.vb: TextReader.New(Convertinator, ILogger)
 - uid: Archivist.Formats.Txt.TextReader.#ctor*
   name: TextReader
   href: api/Archivist.Formats.Txt.TextReader.html#Archivist_Formats_Txt_TextReader__ctor_
@@ -13967,6 +14104,25 @@ references:
   commentId: T:Archivist.Formats.Txt.TextWriter
   fullName: Archivist.Formats.Txt.TextWriter
   nameWithType: TextWriter
+- uid: Archivist.Formats.Txt.TextWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: TextWriter(ILogger?)
+  href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.Txt.TextWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.Formats.Txt.TextWriter.TextWriter(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.Txt.TextWriter.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: TextWriter.TextWriter(ILogger?)
+  nameWithType.vb: TextWriter.New(ILogger)
+- uid: Archivist.Formats.Txt.TextWriter.#ctor*
+  name: TextWriter
+  href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter__ctor_
+  commentId: Overload:Archivist.Formats.Txt.TextWriter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.Txt.TextWriter.TextWriter
+  fullName.vb: Archivist.Formats.Txt.TextWriter.New
+  nameWithType: TextWriter.TextWriter
+  nameWithType.vb: TextWriter.New
 - uid: Archivist.Formats.Txt.TextWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
   name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.Formats.Txt.TextWriter.html#Archivist_Formats_Txt_TextWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
@@ -13995,15 +14151,15 @@ references:
   commentId: T:Archivist.Formats.VCard.VCardFormat
   fullName: Archivist.Formats.VCard.VCardFormat
   nameWithType: VCardFormat
-- uid: Archivist.Formats.VCard.VCardFormat.#ctor(Archivist.Converters.Convertinator)
-  name: VCardFormat(Convertinator?)
-  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.VCard.VCardFormat.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.VCard.VCardFormat.VCardFormat(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.VCard.VCardFormat.New(Archivist.Converters.Convertinator)
-  nameWithType: VCardFormat.VCardFormat(Convertinator?)
-  nameWithType.vb: VCardFormat.New(Convertinator)
+- uid: Archivist.Formats.VCard.VCardFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.VCard.VCardFormat})
+  name: VCardFormat(Convertinator?, ILogger<VCardFormat>?)
+  href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_VCard_VCardFormat__
+  commentId: M:Archivist.Formats.VCard.VCardFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.VCard.VCardFormat})
+  name.vb: New(Convertinator, ILogger(Of VCardFormat))
+  fullName: Archivist.Formats.VCard.VCardFormat.VCardFormat(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger<Archivist.Formats.VCard.VCardFormat>?)
+  fullName.vb: Archivist.Formats.VCard.VCardFormat.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger(Of Archivist.Formats.VCard.VCardFormat))
+  nameWithType: VCardFormat.VCardFormat(Convertinator?, ILogger<VCardFormat>?)
+  nameWithType.vb: VCardFormat.New(Convertinator, ILogger(Of VCardFormat))
 - uid: Archivist.Formats.VCard.VCardFormat.#ctor*
   name: VCardFormat
   href: api/Archivist.Formats.VCard.VCardFormat.html#Archivist_Formats_VCard_VCardFormat__ctor_
@@ -14046,15 +14202,15 @@ references:
   commentId: T:Archivist.Formats.VCard.VCardReader
   fullName: Archivist.Formats.VCard.VCardReader
   nameWithType: VCardReader
-- uid: Archivist.Formats.VCard.VCardReader.#ctor(Archivist.Converters.Convertinator)
-  name: VCardReader(Convertinator?)
-  href: api/Archivist.Formats.VCard.VCardReader.html#Archivist_Formats_VCard_VCardReader__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.VCard.VCardReader.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.VCard.VCardReader.VCardReader(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.VCard.VCardReader.New(Archivist.Converters.Convertinator)
-  nameWithType: VCardReader.VCardReader(Convertinator?)
-  nameWithType.vb: VCardReader.New(Convertinator)
+- uid: Archivist.Formats.VCard.VCardReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: VCardReader(Convertinator?, ILogger?)
+  href: api/Archivist.Formats.VCard.VCardReader.html#Archivist_Formats_VCard_VCardReader__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.VCard.VCardReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(Convertinator, ILogger)
+  fullName: Archivist.Formats.VCard.VCardReader.VCardReader(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.VCard.VCardReader.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: VCardReader.VCardReader(Convertinator?, ILogger?)
+  nameWithType.vb: VCardReader.New(Convertinator, ILogger)
 - uid: Archivist.Formats.VCard.VCardReader.#ctor*
   name: VCardReader
   href: api/Archivist.Formats.VCard.VCardReader.html#Archivist_Formats_VCard_VCardReader__ctor_
@@ -14100,6 +14256,25 @@ references:
   commentId: T:Archivist.Formats.VCard.VCardWriter
   fullName: Archivist.Formats.VCard.VCardWriter
   nameWithType: VCardWriter
+- uid: Archivist.Formats.VCard.VCardWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: VCardWriter(ILogger?)
+  href: api/Archivist.Formats.VCard.VCardWriter.html#Archivist_Formats_VCard_VCardWriter__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.VCard.VCardWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.Formats.VCard.VCardWriter.VCardWriter(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.VCard.VCardWriter.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: VCardWriter.VCardWriter(ILogger?)
+  nameWithType.vb: VCardWriter.New(ILogger)
+- uid: Archivist.Formats.VCard.VCardWriter.#ctor*
+  name: VCardWriter
+  href: api/Archivist.Formats.VCard.VCardWriter.html#Archivist_Formats_VCard_VCardWriter__ctor_
+  commentId: Overload:Archivist.Formats.VCard.VCardWriter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.VCard.VCardWriter.VCardWriter
+  fullName.vb: Archivist.Formats.VCard.VCardWriter.New
+  nameWithType: VCardWriter.VCardWriter
+  nameWithType.vb: VCardWriter.New
 - uid: Archivist.Formats.VCard.VCardWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
   name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.Formats.VCard.VCardWriter.html#Archivist_Formats_VCard_VCardWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
@@ -14128,15 +14303,15 @@ references:
   commentId: T:Archivist.Formats.XLS.XLSFormat
   fullName: Archivist.Formats.XLS.XLSFormat
   nameWithType: XLSFormat
-- uid: Archivist.Formats.XLS.XLSFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions},Archivist.Converters.Convertinator)
-  name: XLSFormat(IOptions<ExcelOptions>?, Convertinator?)
-  href: api/Archivist.Formats.XLS.XLSFormat.html#Archivist_Formats_XLS_XLSFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_ExcelOptions__Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.XLS.XLSFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions},Archivist.Converters.Convertinator)
-  name.vb: New(IOptions(Of ExcelOptions), Convertinator)
-  fullName: Archivist.Formats.XLS.XLSFormat.XLSFormat(Microsoft.Extensions.Options.IOptions<Archivist.Options.ExcelOptions>?, Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.XLS.XLSFormat.New(Microsoft.Extensions.Options.IOptions(Of Archivist.Options.ExcelOptions), Archivist.Converters.Convertinator)
-  nameWithType: XLSFormat.XLSFormat(IOptions<ExcelOptions>?, Convertinator?)
-  nameWithType.vb: XLSFormat.New(IOptions(Of ExcelOptions), Convertinator)
+- uid: Archivist.Formats.XLS.XLSFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions},Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.XLS.XLSFormat})
+  name: XLSFormat(IOptions<ExcelOptions>?, Convertinator?, ILogger<XLSFormat>?)
+  href: api/Archivist.Formats.XLS.XLSFormat.html#Archivist_Formats_XLS_XLSFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_ExcelOptions__Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_XLS_XLSFormat__
+  commentId: M:Archivist.Formats.XLS.XLSFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.ExcelOptions},Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.XLS.XLSFormat})
+  name.vb: New(IOptions(Of ExcelOptions), Convertinator, ILogger(Of XLSFormat))
+  fullName: Archivist.Formats.XLS.XLSFormat.XLSFormat(Microsoft.Extensions.Options.IOptions<Archivist.Options.ExcelOptions>?, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger<Archivist.Formats.XLS.XLSFormat>?)
+  fullName.vb: Archivist.Formats.XLS.XLSFormat.New(Microsoft.Extensions.Options.IOptions(Of Archivist.Options.ExcelOptions), Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger(Of Archivist.Formats.XLS.XLSFormat))
+  nameWithType: XLSFormat.XLSFormat(IOptions<ExcelOptions>?, Convertinator?, ILogger<XLSFormat>?)
+  nameWithType.vb: XLSFormat.New(IOptions(Of ExcelOptions), Convertinator, ILogger(Of XLSFormat))
 - uid: Archivist.Formats.XLS.XLSFormat.#ctor*
   name: XLSFormat
   href: api/Archivist.Formats.XLS.XLSFormat.html#Archivist_Formats_XLS_XLSFormat__ctor_
@@ -14179,15 +14354,15 @@ references:
   commentId: T:Archivist.Formats.XLS.XLSReader
   fullName: Archivist.Formats.XLS.XLSReader
   nameWithType: XLSReader
-- uid: Archivist.Formats.XLS.XLSReader.#ctor(Archivist.Options.ExcelOptions,Archivist.Converters.Convertinator)
-  name: XLSReader(ExcelOptions?, Convertinator?)
-  href: api/Archivist.Formats.XLS.XLSReader.html#Archivist_Formats_XLS_XLSReader__ctor_Archivist_Options_ExcelOptions_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.XLS.XLSReader.#ctor(Archivist.Options.ExcelOptions,Archivist.Converters.Convertinator)
-  name.vb: New(ExcelOptions, Convertinator)
-  fullName: Archivist.Formats.XLS.XLSReader.XLSReader(Archivist.Options.ExcelOptions?, Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.XLS.XLSReader.New(Archivist.Options.ExcelOptions, Archivist.Converters.Convertinator)
-  nameWithType: XLSReader.XLSReader(ExcelOptions?, Convertinator?)
-  nameWithType.vb: XLSReader.New(ExcelOptions, Convertinator)
+- uid: Archivist.Formats.XLS.XLSReader.#ctor(Archivist.Options.ExcelOptions,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: XLSReader(ExcelOptions?, Convertinator?, ILogger?)
+  href: api/Archivist.Formats.XLS.XLSReader.html#Archivist_Formats_XLS_XLSReader__ctor_Archivist_Options_ExcelOptions_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.XLS.XLSReader.#ctor(Archivist.Options.ExcelOptions,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ExcelOptions, Convertinator, ILogger)
+  fullName: Archivist.Formats.XLS.XLSReader.XLSReader(Archivist.Options.ExcelOptions?, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.XLS.XLSReader.New(Archivist.Options.ExcelOptions, Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: XLSReader.XLSReader(ExcelOptions?, Convertinator?, ILogger?)
+  nameWithType.vb: XLSReader.New(ExcelOptions, Convertinator, ILogger)
 - uid: Archivist.Formats.XLS.XLSReader.#ctor*
   name: XLSReader
   href: api/Archivist.Formats.XLS.XLSReader.html#Archivist_Formats_XLS_XLSReader__ctor_
@@ -14249,15 +14424,15 @@ references:
   commentId: T:Archivist.Formats.XLS.XLSWriter
   fullName: Archivist.Formats.XLS.XLSWriter
   nameWithType: XLSWriter
-- uid: Archivist.Formats.XLS.XLSWriter.#ctor
-  name: XLSWriter()
-  href: api/Archivist.Formats.XLS.XLSWriter.html#Archivist_Formats_XLS_XLSWriter__ctor
-  commentId: M:Archivist.Formats.XLS.XLSWriter.#ctor
-  name.vb: New()
-  fullName: Archivist.Formats.XLS.XLSWriter.XLSWriter()
-  fullName.vb: Archivist.Formats.XLS.XLSWriter.New()
-  nameWithType: XLSWriter.XLSWriter()
-  nameWithType.vb: XLSWriter.New()
+- uid: Archivist.Formats.XLS.XLSWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: XLSWriter(ILogger?)
+  href: api/Archivist.Formats.XLS.XLSWriter.html#Archivist_Formats_XLS_XLSWriter__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.XLS.XLSWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.Formats.XLS.XLSWriter.XLSWriter(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.XLS.XLSWriter.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: XLSWriter.XLSWriter(ILogger?)
+  nameWithType.vb: XLSWriter.New(ILogger)
 - uid: Archivist.Formats.XLS.XLSWriter.#ctor*
   name: XLSWriter
   href: api/Archivist.Formats.XLS.XLSWriter.html#Archivist_Formats_XLS_XLSWriter__ctor_
@@ -14296,15 +14471,15 @@ references:
   commentId: T:Archivist.Formats.XML.XMLFormat
   fullName: Archivist.Formats.XML.XMLFormat
   nameWithType: XMLFormat
-- uid: Archivist.Formats.XML.XMLFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator)
-  name: XMLFormat(JsonSerializerSettings?, Convertinator?)
-  href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.XML.XMLFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator)
-  name.vb: New(JsonSerializerSettings, Convertinator)
-  fullName: Archivist.Formats.XML.XMLFormat.XMLFormat(Newtonsoft.Json.JsonSerializerSettings?, Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.XML.XMLFormat.New(Newtonsoft.Json.JsonSerializerSettings, Archivist.Converters.Convertinator)
-  nameWithType: XMLFormat.XMLFormat(JsonSerializerSettings?, Convertinator?)
-  nameWithType.vb: XMLFormat.New(JsonSerializerSettings, Convertinator)
+- uid: Archivist.Formats.XML.XMLFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.XML.XMLFormat})
+  name: XMLFormat(JsonSerializerSettings?, Convertinator?, ILogger<XMLFormat>?)
+  href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_XML_XMLFormat__
+  commentId: M:Archivist.Formats.XML.XMLFormat.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.XML.XMLFormat})
+  name.vb: New(JsonSerializerSettings, Convertinator, ILogger(Of XMLFormat))
+  fullName: Archivist.Formats.XML.XMLFormat.XMLFormat(Newtonsoft.Json.JsonSerializerSettings?, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger<Archivist.Formats.XML.XMLFormat>?)
+  fullName.vb: Archivist.Formats.XML.XMLFormat.New(Newtonsoft.Json.JsonSerializerSettings, Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger(Of Archivist.Formats.XML.XMLFormat))
+  nameWithType: XMLFormat.XMLFormat(JsonSerializerSettings?, Convertinator?, ILogger<XMLFormat>?)
+  nameWithType.vb: XMLFormat.New(JsonSerializerSettings, Convertinator, ILogger(Of XMLFormat))
 - uid: Archivist.Formats.XML.XMLFormat.#ctor*
   name: XMLFormat
   href: api/Archivist.Formats.XML.XMLFormat.html#Archivist_Formats_XML_XMLFormat__ctor_
@@ -14347,15 +14522,15 @@ references:
   commentId: T:Archivist.Formats.XML.XMLReader
   fullName: Archivist.Formats.XML.XMLReader
   nameWithType: XMLReader
-- uid: Archivist.Formats.XML.XMLReader.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator)
-  name: XMLReader(JsonSerializerSettings?, Convertinator?)
-  href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.XML.XMLReader.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator)
-  name.vb: New(JsonSerializerSettings, Convertinator)
-  fullName: Archivist.Formats.XML.XMLReader.XMLReader(Newtonsoft.Json.JsonSerializerSettings?, Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.XML.XMLReader.New(Newtonsoft.Json.JsonSerializerSettings, Archivist.Converters.Convertinator)
-  nameWithType: XMLReader.XMLReader(JsonSerializerSettings?, Convertinator?)
-  nameWithType.vb: XMLReader.New(JsonSerializerSettings, Convertinator)
+- uid: Archivist.Formats.XML.XMLReader.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: XMLReader(JsonSerializerSettings?, Convertinator?, ILogger?)
+  href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader__ctor_Newtonsoft_Json_JsonSerializerSettings_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.XML.XMLReader.#ctor(Newtonsoft.Json.JsonSerializerSettings,Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(JsonSerializerSettings, Convertinator, ILogger)
+  fullName: Archivist.Formats.XML.XMLReader.XMLReader(Newtonsoft.Json.JsonSerializerSettings?, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.XML.XMLReader.New(Newtonsoft.Json.JsonSerializerSettings, Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: XMLReader.XMLReader(JsonSerializerSettings?, Convertinator?, ILogger?)
+  nameWithType.vb: XMLReader.New(JsonSerializerSettings, Convertinator, ILogger)
 - uid: Archivist.Formats.XML.XMLReader.#ctor*
   name: XMLReader
   href: api/Archivist.Formats.XML.XMLReader.html#Archivist_Formats_XML_XMLReader__ctor_
@@ -14401,6 +14576,25 @@ references:
   commentId: T:Archivist.Formats.XML.XMLWriter
   fullName: Archivist.Formats.XML.XMLWriter
   nameWithType: XMLWriter
+- uid: Archivist.Formats.XML.XMLWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: XMLWriter(ILogger?)
+  href: api/Archivist.Formats.XML.XMLWriter.html#Archivist_Formats_XML_XMLWriter__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.XML.XMLWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.Formats.XML.XMLWriter.XMLWriter(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.XML.XMLWriter.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: XMLWriter.XMLWriter(ILogger?)
+  nameWithType.vb: XMLWriter.New(ILogger)
+- uid: Archivist.Formats.XML.XMLWriter.#ctor*
+  name: XMLWriter
+  href: api/Archivist.Formats.XML.XMLWriter.html#Archivist_Formats_XML_XMLWriter__ctor_
+  commentId: Overload:Archivist.Formats.XML.XMLWriter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Archivist.Formats.XML.XMLWriter.XMLWriter
+  fullName.vb: Archivist.Formats.XML.XMLWriter.New
+  nameWithType: XMLWriter.XMLWriter
+  nameWithType.vb: XMLWriter.New
 - uid: Archivist.Formats.XML.XMLWriter.WriteAsync(Archivist.Interfaces.IGenericFile,System.IO.Stream)
   name: WriteAsync(IGenericFile?, Stream?)
   href: api/Archivist.Formats.XML.XMLWriter.html#Archivist_Formats_XML_XMLWriter_WriteAsync_Archivist_Interfaces_IGenericFile_System_IO_Stream_
@@ -14429,15 +14623,15 @@ references:
   commentId: T:Archivist.Formats.YAML.YAMLFormat
   fullName: Archivist.Formats.YAML.YAMLFormat
   nameWithType: YAMLFormat
-- uid: Archivist.Formats.YAML.YAMLFormat.#ctor(Archivist.Converters.Convertinator)
-  name: YAMLFormat(Convertinator?)
-  href: api/Archivist.Formats.YAML.YAMLFormat.html#Archivist_Formats_YAML_YAMLFormat__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.YAML.YAMLFormat.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.YAML.YAMLFormat.YAMLFormat(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.YAML.YAMLFormat.New(Archivist.Converters.Convertinator)
-  nameWithType: YAMLFormat.YAMLFormat(Convertinator?)
-  nameWithType.vb: YAMLFormat.New(Convertinator)
+- uid: Archivist.Formats.YAML.YAMLFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.YAML.YAMLFormat})
+  name: YAMLFormat(Convertinator?, ILogger<YAMLFormat>?)
+  href: api/Archivist.Formats.YAML.YAMLFormat.html#Archivist_Formats_YAML_YAMLFormat__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_YAML_YAMLFormat__
+  commentId: M:Archivist.Formats.YAML.YAMLFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.YAML.YAMLFormat})
+  name.vb: New(Convertinator, ILogger(Of YAMLFormat))
+  fullName: Archivist.Formats.YAML.YAMLFormat.YAMLFormat(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger<Archivist.Formats.YAML.YAMLFormat>?)
+  fullName.vb: Archivist.Formats.YAML.YAMLFormat.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger(Of Archivist.Formats.YAML.YAMLFormat))
+  nameWithType: YAMLFormat.YAMLFormat(Convertinator?, ILogger<YAMLFormat>?)
+  nameWithType.vb: YAMLFormat.New(Convertinator, ILogger(Of YAMLFormat))
 - uid: Archivist.Formats.YAML.YAMLFormat.#ctor*
   name: YAMLFormat
   href: api/Archivist.Formats.YAML.YAMLFormat.html#Archivist_Formats_YAML_YAMLFormat__ctor_
@@ -14480,15 +14674,15 @@ references:
   commentId: T:Archivist.Formats.YAML.YAMLReader
   fullName: Archivist.Formats.YAML.YAMLReader
   nameWithType: YAMLReader
-- uid: Archivist.Formats.YAML.YAMLReader.#ctor(Archivist.Converters.Convertinator)
-  name: YAMLReader(Convertinator?)
-  href: api/Archivist.Formats.YAML.YAMLReader.html#Archivist_Formats_YAML_YAMLReader__ctor_Archivist_Converters_Convertinator_
-  commentId: M:Archivist.Formats.YAML.YAMLReader.#ctor(Archivist.Converters.Convertinator)
-  name.vb: New(Convertinator)
-  fullName: Archivist.Formats.YAML.YAMLReader.YAMLReader(Archivist.Converters.Convertinator?)
-  fullName.vb: Archivist.Formats.YAML.YAMLReader.New(Archivist.Converters.Convertinator)
-  nameWithType: YAMLReader.YAMLReader(Convertinator?)
-  nameWithType.vb: YAMLReader.New(Convertinator)
+- uid: Archivist.Formats.YAML.YAMLReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name: YAMLReader(Convertinator?, ILogger?)
+  href: api/Archivist.Formats.YAML.YAMLReader.html#Archivist_Formats_YAML_YAMLReader__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.YAML.YAMLReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(Convertinator, ILogger)
+  fullName: Archivist.Formats.YAML.YAMLReader.YAMLReader(Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.YAML.YAMLReader.New(Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: YAMLReader.YAMLReader(Convertinator?, ILogger?)
+  nameWithType.vb: YAMLReader.New(Convertinator, ILogger)
 - uid: Archivist.Formats.YAML.YAMLReader.#ctor*
   name: YAMLReader
   href: api/Archivist.Formats.YAML.YAMLReader.html#Archivist_Formats_YAML_YAMLReader__ctor_
@@ -14550,15 +14744,15 @@ references:
   commentId: T:Archivist.Formats.YAML.YAMLWriter
   fullName: Archivist.Formats.YAML.YAMLWriter
   nameWithType: YAMLWriter
-- uid: Archivist.Formats.YAML.YAMLWriter.#ctor
-  name: YAMLWriter()
-  href: api/Archivist.Formats.YAML.YAMLWriter.html#Archivist_Formats_YAML_YAMLWriter__ctor
-  commentId: M:Archivist.Formats.YAML.YAMLWriter.#ctor
-  name.vb: New()
-  fullName: Archivist.Formats.YAML.YAMLWriter.YAMLWriter()
-  fullName.vb: Archivist.Formats.YAML.YAMLWriter.New()
-  nameWithType: YAMLWriter.YAMLWriter()
-  nameWithType.vb: YAMLWriter.New()
+- uid: Archivist.Formats.YAML.YAMLWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name: YAMLWriter(ILogger?)
+  href: api/Archivist.Formats.YAML.YAMLWriter.html#Archivist_Formats_YAML_YAMLWriter__ctor_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Archivist.Formats.YAML.YAMLWriter.#ctor(Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ILogger)
+  fullName: Archivist.Formats.YAML.YAMLWriter.YAMLWriter(Microsoft.Extensions.Logging.ILogger?)
+  fullName.vb: Archivist.Formats.YAML.YAMLWriter.New(Microsoft.Extensions.Logging.ILogger)
+  nameWithType: YAMLWriter.YAMLWriter(ILogger?)
+  nameWithType.vb: YAMLWriter.New(ILogger)
 - uid: Archivist.Formats.YAML.YAMLWriter.#ctor*
   name: YAMLWriter
   href: api/Archivist.Formats.YAML.YAMLWriter.html#Archivist_Formats_YAML_YAMLWriter__ctor_

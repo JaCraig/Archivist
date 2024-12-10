@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_BaseClasses_FixedLengthFormatBaseClass_2" data-uid="Archivist.BaseClasses.FixedLengthFormatBaseClass`2" class="text-break">
-Class FixedLengthFormatBaseClass&lt;TFormat, TFileReader&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FixedLengthFormatBaseClass.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class FixedLengthFormatBaseClass&lt;TFormat, TFileReader&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FixedLengthFormatBaseClass.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -202,6 +202,9 @@ Class FixedLengthFormatBaseClass&lt;TFormat, TFileReader&gt;  <a class="header-a
 
 
 
+  <h2 id="Archivist_BaseClasses_FixedLengthFormatBaseClass_2_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.BaseClasses.FixedLengthFormatBaseClass-2.html">FixedLengthFormatBaseClass&lt;TFormat, TFileReader&gt;</a> class.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -210,23 +213,26 @@ Class FixedLengthFormatBaseClass&lt;TFormat, TFileReader&gt;  <a class="header-a
 
   <a id="Archivist_BaseClasses_FixedLengthFormatBaseClass_2__ctor_" data-uid="Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor*"></a>
 
-  <h3 id="Archivist_BaseClasses_FixedLengthFormatBaseClass_2__ctor__1_" data-uid="Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor(`1)">
-  FixedLengthFormatBaseClass(TFileReader)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FixedLengthFormatBaseClass.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Archivist_BaseClasses_FixedLengthFormatBaseClass_2__ctor__1_Microsoft_Extensions_Logging_ILogger_" data-uid="Archivist.BaseClasses.FixedLengthFormatBaseClass`2.#ctor(`1,Microsoft.Extensions.Logging.ILogger)">
+  FixedLengthFormatBaseClass(TFileReader, ILogger?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FixedLengthFormatBaseClass.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.BaseClasses.FixedLengthFormatBaseClass-2.html">FixedLengthFormatBaseClass&lt;TFormat, TFileReader&gt;</a> class.</p>
+  <div class="markdown level1 summary"><p>Base class for fixed-length format classes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected FixedLengthFormatBaseClass(TFileReader reader)</code></pre>
+    <pre><code class="lang-csharp hljs">protected FixedLengthFormatBaseClass(TFileReader reader, ILogger? logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>reader</code> <span class="xref">TFileReader</span></dt>
     <dd><p>The file reader.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>The logger.</p>
 </dd>
   </dl>
 
@@ -237,6 +243,9 @@ Class FixedLengthFormatBaseClass&lt;TFormat, TFileReader&gt;  <a class="header-a
 
 
 
+  <h4 class="section" id="Archivist_BaseClasses_FixedLengthFormatBaseClass_2__ctor__1_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.BaseClasses.FixedLengthFormatBaseClass-2.html">FixedLengthFormatBaseClass&lt;TFormat, TFileReader&gt;</a> class.</p>
+</div>
 
 
 
@@ -245,7 +254,7 @@ Class FixedLengthFormatBaseClass&lt;TFormat, TFileReader&gt;  <a class="header-a
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FixedLengthFormatBaseClass.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/BaseClasses/FixedLengthFormatBaseClass.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_RSS_RSSReader" data-uid="Archivist.Formats.RSS.RSSReader" class="text-break">
-Class RSSReader  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSReader.cs/#L21"><i class="bi bi-code-slash"></i></a>
+Class RSSReader  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSReader.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -129,6 +129,9 @@ Class RSSReader  <a class="header-action link-secondary" title="View source" hre
     <dt>Inherited Members</dt>
     <dd>
     <div>
+      <a class="xref" href="Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_Logger">ReaderBaseClass.Logger</a>
+    </div>
+    <div>
       <a class="xref" href="Archivist.BaseClasses.ReaderBaseClass.html#Archivist_BaseClasses_ReaderBaseClass_CanRead_System_IO_Stream_">ReaderBaseClass.CanRead(Stream)</a>
     </div>
     <div>
@@ -160,6 +163,9 @@ Class RSSReader  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h2 id="Archivist_Formats_RSS_RSSReader_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.RSS.RSSReader.html">RSSReader</a> class.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -168,23 +174,26 @@ Class RSSReader  <a class="header-action link-secondary" title="View source" hre
 
   <a id="Archivist_Formats_RSS_RSSReader__ctor_" data-uid="Archivist.Formats.RSS.RSSReader.#ctor*"></a>
 
-  <h3 id="Archivist_Formats_RSS_RSSReader__ctor_Archivist_Converters_Convertinator_" data-uid="Archivist.Formats.RSS.RSSReader.#ctor(Archivist.Converters.Convertinator)">
-  RSSReader(Convertinator?)
+  <h3 id="Archivist_Formats_RSS_RSSReader__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_" data-uid="Archivist.Formats.RSS.RSSReader.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)">
+  RSSReader(Convertinator?, ILogger?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSReader.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.RSS.RSSReader.html">RSSReader</a> class.</p>
+  <div class="markdown level1 summary"><p>Represents a RSS reader for reading RSS files.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RSSReader(Convertinator? converter)</code></pre>
+    <pre><code class="lang-csharp hljs">public RSSReader(Convertinator? converter, ILogger? logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
     <dd><p>The converter used to convert between IGenericFile objects.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dd><p>The logger.</p>
 </dd>
   </dl>
 
@@ -195,6 +204,9 @@ Class RSSReader  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="Archivist_Formats_RSS_RSSReader__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.RSS.RSSReader.html">RSSReader</a> class.</p>
+</div>
 
 
 
@@ -207,7 +219,7 @@ Class RSSReader  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_Formats_RSS_RSSReader_HeaderInfo" data-uid="Archivist.Formats.RSS.RSSReader.HeaderInfo">
   HeaderInfo
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSReader.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSReader.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the header information of the RSS file.</p>
@@ -243,7 +255,7 @@ Class RSSReader  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_Formats_RSS_RSSReader_InternalCanRead_System_IO_Stream_" data-uid="Archivist.Formats.RSS.RSSReader.InternalCanRead(System.IO.Stream)">
   InternalCanRead(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSReader.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSReader.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines if the reader can read the specified stream.</p>
@@ -282,7 +294,7 @@ Class RSSReader  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_Formats_RSS_RSSReader_ReadAsync_System_IO_Stream_" data-uid="Archivist.Formats.RSS.RSSReader.ReadAsync(System.IO.Stream)">
   ReadAsync(Stream?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSReader.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSReader.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Reads the RSS file asynchronously.</p>
@@ -322,7 +334,7 @@ file representation of the RSS file.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSReader.cs/#L21" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSReader.cs/#L27" class="edit-link">Edit this page</a>
         </div>
 
 

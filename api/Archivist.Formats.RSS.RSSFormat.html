@@ -89,7 +89,7 @@
 
 
   <h1 id="Archivist_Formats_RSS_RSSFormat" data-uid="Archivist.Formats.RSS.RSSFormat" class="text-break">
-Class RSSFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSFormat.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class RSSFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSFormat.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -193,6 +193,9 @@ Class RSSFormat  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h2 id="Archivist_Formats_RSS_RSSFormat_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.RSS.RSSFormat.html">RSSFormat</a> class.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -201,17 +204,17 @@ Class RSSFormat  <a class="header-action link-secondary" title="View source" hre
 
   <a id="Archivist_Formats_RSS_RSSFormat__ctor_" data-uid="Archivist.Formats.RSS.RSSFormat.#ctor*"></a>
 
-  <h3 id="Archivist_Formats_RSS_RSSFormat__ctor_Archivist_Converters_Convertinator_" data-uid="Archivist.Formats.RSS.RSSFormat.#ctor(Archivist.Converters.Convertinator)">
-  RSSFormat(Convertinator?)
+  <h3 id="Archivist_Formats_RSS_RSSFormat__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_RSS_RSSFormat__" data-uid="Archivist.Formats.RSS.RSSFormat.#ctor(Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.RSS.RSSFormat})">
+  RSSFormat(Convertinator?, ILogger&lt;RSSFormat&gt;?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSFormat.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.RSS.RSSFormat.html">RSSFormat</a> class.</p>
+  <div class="markdown level1 summary"><p>Represents a RSS format for archiving.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RSSFormat(Convertinator? converter)</code></pre>
+    <pre><code class="lang-csharp hljs">public RSSFormat(Convertinator? converter, ILogger&lt;RSSFormat&gt;? logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -219,6 +222,8 @@ Class RSSFormat  <a class="header-action link-secondary" title="View source" hre
     <dt><code>converter</code> <a class="xref" href="Archivist.Converters.Convertinator.html">Convertinator</a></dt>
     <dd><p>The converter used to convert between IGenericFile objects.</p>
 </dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Archivist.Formats.RSS.RSSFormat.html">RSSFormat</a>&gt;</dt>
+    <dd></dd>
   </dl>
 
 
@@ -228,6 +233,9 @@ Class RSSFormat  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <h4 class="section" id="Archivist_Formats_RSS_RSSFormat__ctor_Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_RSS_RSSFormat___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Initializes a new instance of the <a class="xref" href="Archivist.Formats.RSS.RSSFormat.html">RSSFormat</a> class.</p>
+</div>
 
 
 
@@ -240,7 +248,7 @@ Class RSSFormat  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_Formats_RSS_RSSFormat_Extensions" data-uid="Archivist.Formats.RSS.RSSFormat.Extensions">
   Extensions
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSFormat.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSFormat.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the file extensions associated with the RSS format.</p>
@@ -272,7 +280,7 @@ Class RSSFormat  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Archivist_Formats_RSS_RSSFormat_MimeTypes" data-uid="Archivist.Formats.RSS.RSSFormat.MimeTypes">
   MimeTypes
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSFormat.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSFormat.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the MIME types associated with the RSS format.</p>
@@ -304,7 +312,7 @@ Class RSSFormat  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSFormat.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JaCraig/Archivist/blob/main/Archivist/Formats/RSS/RSSFormat.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 
