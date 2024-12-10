@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.10.2"></a>
+## [0.10.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.2) (2024-12-10)
+
+### Bug Fixes
+
+* Add logging capabilities and fixed testing issues ([188513b](https://www.github.com/JaCraig/Archivist/commit/188513b981f75defb97ea1bf507ac2c881b7fcb3))
+
+### Other
+
+* Merge pull request #110 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-ae4dc51d69 ([31b2d31](https://www.github.com/JaCraig/Archivist/commit/31b2d312892db819ff9999390be54e79f372bb20))
+* Merge pull request #111 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-ae4dc51d69 ([197038d](https://www.github.com/JaCraig/Archivist/commit/197038d673abb3961462c5d90e7affa843eff69a))
+* bump Mecha.xUnit ([6e6970d](https://www.github.com/JaCraig/Archivist/commit/6e6970d77436657fc21c4f94f7753365229a578e))
+* bump Mecha.xUnit in /Archivist.Tests in the dependencies group ([da8dbe0](https://www.github.com/JaCraig/Archivist/commit/da8dbe004fa13e5cacdf703262444f160aa833c0))
+
 <a name="0.10.1"></a>
 ## [0.10.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.1) (2024-12-09)
 
