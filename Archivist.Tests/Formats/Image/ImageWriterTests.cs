@@ -10,8 +10,8 @@ namespace Archivist.Tests.Formats.Image
     {
         public ImageWriterTests()
         {
-            _TestClass = new ImageWriter();
-            TestObject = new ImageWriter();
+            _TestClass = new ImageWriter(null);
+            TestObject = new ImageWriter(null);
         }
 
         private readonly ImageWriter _TestClass;
@@ -48,7 +48,7 @@ namespace Archivist.Tests.Formats.Image
         public void CanConstruct()
         {
             // Act
-            var Instance = new ImageWriter();
+            var Instance = new ImageWriter(null);
 
             // Assert
             Assert.NotNull(Instance);

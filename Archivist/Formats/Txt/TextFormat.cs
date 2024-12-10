@@ -1,22 +1,19 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Converters;
+using Microsoft.Extensions.Logging;
 
 namespace Archivist.Formats.Txt
 {
     /// <summary>
     /// Represents a text format for archiving.
     /// </summary>
-    public class TextFormat : FormatBaseClass<TextFormat, TextReader, TextWriter>
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="TextFormat"/> class.
+    /// </remarks>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger"></param>
+    public class TextFormat(Convertinator? converter, ILogger<TextFormat>? logger) : FormatBaseClass<TextFormat, TextReader, TextWriter>(new TextReader(converter, logger), new TextWriter(logger))
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="TextFormat"/> class.
-        /// </summary>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public TextFormat(Convertinator? converter)
-            : base(new TextReader(converter), new TextWriter())
-        {
-        }
-
         /// <summary>
         /// Gets the file extensions associated with the text format.
         /// </summary>

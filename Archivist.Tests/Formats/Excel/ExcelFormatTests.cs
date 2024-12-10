@@ -19,8 +19,8 @@ namespace Archivist.Tests.Formats.Excel
             _ = Services.AddSingleton<Convertinator>();
             _ = Services.AddAllSingleton<IDataConverter>();
             _ServiceProvider = Services.BuildServiceProvider();
-            _TestClass = new ExcelFormat(_ServiceProvider.GetRequiredService<Microsoft.Extensions.Options.IOptions<ExcelOptions>>(), _ServiceProvider.GetService<Convertinator>());
-            TestObject = new ExcelFormat(_ServiceProvider.GetRequiredService<Microsoft.Extensions.Options.IOptions<ExcelOptions>>(), _ServiceProvider.GetService<Convertinator>());
+            _TestClass = new ExcelFormat(_ServiceProvider.GetRequiredService<Microsoft.Extensions.Options.IOptions<ExcelOptions>>(), _ServiceProvider.GetService<Convertinator>(), null);
+            TestObject = new ExcelFormat(_ServiceProvider.GetRequiredService<Microsoft.Extensions.Options.IOptions<ExcelOptions>>(), _ServiceProvider.GetService<Convertinator>(), null);
         }
 
         private readonly ServiceProvider _ServiceProvider;
@@ -30,7 +30,7 @@ namespace Archivist.Tests.Formats.Excel
         public void CanConstruct()
         {
             // Act
-            var Instance = new ExcelFormat(_ServiceProvider.GetRequiredService<Microsoft.Extensions.Options.IOptions<ExcelOptions>>(), _ServiceProvider.GetService<Convertinator>());
+            var Instance = new ExcelFormat(_ServiceProvider.GetRequiredService<Microsoft.Extensions.Options.IOptions<ExcelOptions>>(), _ServiceProvider.GetService<Convertinator>(), null);
 
             // Assert
             Assert.NotNull(Instance);

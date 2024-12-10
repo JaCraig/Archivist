@@ -1,6 +1,7 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Converters;
 using Archivist.Options;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
 namespace Archivist.Formats.Excel
@@ -9,18 +10,17 @@ namespace Archivist.Formats.Excel
     /// Represents the Excel format in the Archivist library.
     /// </summary>
     /// <seealso cref="FormatBaseClass{TFormat, TFileReader, TFileWriter}"/>
-    public class ExcelFormat : FormatBaseClass<ExcelFormat, ExcelReader, ExcelWriter>
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="ExcelFormat"/> class.
+    /// </remarks>
+    /// <param name="options">The options to use when deserializing Excel.</param>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger">The logger.</param>
+    public class ExcelFormat(IOptions<ExcelOptions>? options, Convertinator? converter, ILogger<ExcelFormat>? logger)
+        : FormatBaseClass<ExcelFormat, ExcelReader, ExcelWriter>(
+            new ExcelReader(options?.Value ?? ExcelOptions.Default, converter, logger),
+            new ExcelWriter(logger))
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ExcelFormat"/> class.
-        /// </summary>
-        /// <param name="options">The options to use when deserializing Excel.</param>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public ExcelFormat(IOptions<ExcelOptions>? options, Convertinator? converter)
-            : base(new ExcelReader(options?.Value ?? ExcelOptions.Default, converter), new ExcelWriter())
-        {
-        }
-
         /// <summary>
         /// Gets the file extensions associated with the Excel format.
         /// </summary>

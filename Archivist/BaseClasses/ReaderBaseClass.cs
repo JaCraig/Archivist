@@ -1,4 +1,6 @@
 ﻿using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Buffers;
 using System.IO;
 using System.Threading.Tasks;
@@ -9,12 +11,21 @@ namespace Archivist.BaseClasses
     /// Base class for format readers.
     /// </summary>
     /// <seealso cref="IFormatReader"/>
-    public abstract class ReaderBaseClass : IFormatReader
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="ReaderBaseClass"/> class.
+    /// </remarks>
+    /// <param name="logger">The logger to use for logging.</param>
+    public abstract class ReaderBaseClass(ILogger? logger) : IFormatReader
     {
         /// <summary>
         /// Gets the header information for the format.
         /// </summary>
         public abstract byte[] HeaderInfo { get; }
+
+        /// <summary>
+        /// Gets the logger to use for logging.
+        /// </summary>
+        protected ILogger? Logger { get; } = logger;
 
         /// <summary>
         /// Determines whether the reader can read the specified stream.
@@ -24,7 +35,10 @@ namespace Archivist.BaseClasses
         public bool CanRead(Stream? stream)
         {
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.CanRead(): Stream is null or invalid.", GetType().Name);
                 return false;
+            }
             if (HeaderInfo.Length == 0)
                 return InternalCanRead(stream);
             try
@@ -46,8 +60,9 @@ namespace Archivist.BaseClasses
                 ArrayPool<byte>.Shared.Return(Buffer);
                 return InternalCanRead(stream);
             }
-            catch
+            catch (Exception Ex)
             {
+                Logger?.LogError(Ex, "{readerName}.CanRead(): Error occurred while checking if the reader can read the stream.", GetType().Name);
                 return false;
             }
         }
@@ -87,6 +102,7 @@ namespace Archivist.BaseClasses
                 _ = stream.Seek(0, SeekOrigin.Begin);
                 _ = stream.Read(TempBuffer, 0, 1);
                 _ = stream.Seek(0, SeekOrigin.Begin);
+                ArrayPool<byte>.Shared.Return(TempBuffer);
             }
             catch
             {

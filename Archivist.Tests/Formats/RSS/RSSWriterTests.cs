@@ -13,8 +13,8 @@ namespace Archivist.Tests.Formats.RSS
     {
         public RSSWriterTests()
         {
-            _TestClass = new RSSWriter();
-            TestObject = new RSSWriter();
+            _TestClass = new RSSWriter(null);
+            TestObject = new RSSWriter(null);
         }
 
         private readonly RSSWriter _TestClass;

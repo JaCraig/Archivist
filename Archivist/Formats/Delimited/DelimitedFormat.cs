@@ -1,6 +1,7 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Converters;
 using Archivist.Options;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
 namespace Archivist.Formats.Delimited
@@ -9,18 +10,17 @@ namespace Archivist.Formats.Delimited
     /// Delimited file format
     /// </summary>
     /// <seealso cref="FormatBaseClass{DelimitedFormat, DelimitedReader, DelimitedWriter}"/>
-    public class DelimitedFormat : FormatBaseClass<DelimitedFormat, DelimitedReader, DelimitedWriter>
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="DelimitedFormat"/> class.
+    /// </remarks>
+    /// <param name="options">The options.</param>
+    /// <param name="converter">The converter.</param>
+    /// <param name="logger">The logger.</param>
+    public class DelimitedFormat(IOptions<DelimitedOptions>? options, Convertinator? converter, ILogger? logger)
+        : FormatBaseClass<DelimitedFormat, DelimitedReader, DelimitedWriter>(
+            new DelimitedReader(options?.Value ?? DelimitedOptions.Default, converter, logger),
+            new DelimitedWriter(options?.Value ?? DelimitedOptions.Default, logger))
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DelimitedFormat"/> class.
-        /// </summary>
-        /// <param name="options">The options.</param>
-        /// <param name="converter">The converter.</param>
-        public DelimitedFormat(IOptions<DelimitedOptions>? options, Convertinator? converter)
-            : base(new DelimitedReader(options?.Value ?? DelimitedOptions.Default, converter), new DelimitedWriter(options?.Value ?? DelimitedOptions.Default))
-        {
-        }
-
         /// <summary>
         /// Gets the extensions associated with the format.
         /// </summary>

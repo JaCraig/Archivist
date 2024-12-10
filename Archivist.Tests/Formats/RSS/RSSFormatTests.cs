@@ -18,8 +18,8 @@ namespace Archivist.Tests.Formats.RSS
         public RSSFormatTests()
         {
             _Converter = new Convertinator(new[] { Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>() });
-            _TestClass = new RSSFormat(_Converter);
-            TestObject = new RSSFormat(_Converter);
+            _TestClass = new RSSFormat(_Converter, null);
+            TestObject = new RSSFormat(_Converter, null);
         }
 
         private static readonly string[] _ExpectedExtensions = new string[] { "RSS" };
@@ -31,7 +31,7 @@ namespace Archivist.Tests.Formats.RSS
         public void CanConstruct()
         {
             // Act
-            var Instance = new RSSFormat(_Converter);
+            var Instance = new RSSFormat(_Converter, null);
 
             // Assert
             Assert.NotNull(Instance);
@@ -79,7 +79,7 @@ namespace Archivist.Tests.Formats.RSS
         {
             // Arrange
             var TestData = new FileStream("./TestData/TestRSS.rss", FileMode.Open, FileAccess.Read, FileShare.Read);
-            var TestObject = new RSSFormat(_Converter);
+            var TestObject = new RSSFormat(_Converter, null);
 
             // Act
             Feed Result = Assert.IsType<Feed>(await TestObject.ReadAsync(TestData));

@@ -15,22 +15,16 @@ namespace Archivist.BaseClasses
     /// <typeparam name="TFileReader">The file reader class.</typeparam>
     /// <typeparam name="TFileWriter">The file writer class.</typeparam>
     /// <seealso cref="IFormat"/>
-    public abstract class FormatBaseClass<TFormat, TFileReader, TFileWriter> : IFormat
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="FormatBaseClass{TFormat, TFileReader, TFileWriter}"/> class.
+    /// </remarks>
+    /// <param name="reader">The file reader instance.</param>
+    /// <param name="writer">The file writer instance.</param>
+    public abstract class FormatBaseClass<TFormat, TFileReader, TFileWriter>(TFileReader reader, TFileWriter writer) : IFormat
         where TFormat : FormatBaseClass<TFormat, TFileReader, TFileWriter>
         where TFileReader : IFormatReader
         where TFileWriter : IFormatWriter
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="FormatBaseClass{TFormat, TFileReader, TFileWriter}"/> class.
-        /// </summary>
-        /// <param name="reader">The file reader instance.</param>
-        /// <param name="writer">The file writer instance.</param>
-        protected FormatBaseClass(TFileReader reader, TFileWriter writer)
-        {
-            Reader = reader;
-            Writer = writer;
-        }
-
         /// <summary>
         /// Gets the display name of the format.
         /// </summary>
@@ -61,12 +55,12 @@ namespace Archivist.BaseClasses
         /// <summary>
         /// Gets the file reader instance.
         /// </summary>
-        protected TFileReader Reader { get; }
+        protected TFileReader Reader { get; } = reader;
 
         /// <summary>
         /// Gets the file writer instance.
         /// </summary>
-        protected TFileWriter Writer { get; }
+        protected TFileWriter Writer { get; } = writer;
 
         /// <summary>
         /// Determines whether the format can read the specified file.

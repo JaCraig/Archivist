@@ -13,8 +13,8 @@ namespace Archivist.Tests.Formats.JSON
         public JsonWriterTests()
         {
             _Options = new JsonSerializerSettings();
-            _TestClass = new Archivist.Formats.JSON.JsonWriter(_Options);
-            TestObject = new Archivist.Formats.JSON.JsonWriter(_Options);
+            _TestClass = new Archivist.Formats.JSON.JsonWriter(_Options, null);
+            TestObject = new Archivist.Formats.JSON.JsonWriter(_Options, null);
         }
 
         private readonly JsonSerializerSettings _Options;
@@ -31,14 +31,14 @@ namespace Archivist.Tests.Formats.JSON
             var Result = await _TestClass.WriteAsync(File, Stream);
 
             // Assert
-            Assert.True(Result);
+            Assert.True(Result, null);
         }
 
         [Fact]
         public void CanConstruct()
         {
             // Act
-            var Instance = new Archivist.Formats.JSON.JsonWriter(_Options);
+            var Instance = new Archivist.Formats.JSON.JsonWriter(_Options, null);
 
             // Assert
             Assert.NotNull(Instance);

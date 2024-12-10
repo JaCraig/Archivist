@@ -1,5 +1,6 @@
 using Archivist.BaseClasses;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
 using NSubstitute;
 using System;
 using Xunit;
@@ -10,7 +11,7 @@ namespace Archivist.Tests.BaseClasses
     {
         public FixedLengthFormatBaseClassTests()
         {
-            TestObject = new TestFixedLengthFormatBaseClass(Substitute.For<IFormatReader>());
+            TestObject = new TestFixedLengthFormatBaseClass(Substitute.For<IFormatReader>(), Substitute.For<ILogger>());
         }
 
         [Fact]
@@ -18,9 +19,10 @@ namespace Archivist.Tests.BaseClasses
         {
             // Arrange
             IFormatReader ReaderMock = Substitute.For<IFormatReader>();
+            ILogger LoggerMock = Substitute.For<ILogger>();
 
             // Act
-            var Result = new TestFixedLengthFormatBaseClass(ReaderMock);
+            var Result = new TestFixedLengthFormatBaseClass(ReaderMock, LoggerMock);
 
             // Assert
             Assert.NotNull(Result);
@@ -28,8 +30,8 @@ namespace Archivist.Tests.BaseClasses
 
         public class TestFixedLengthFormatBaseClass : FixedLengthFormatBaseClass<TestFixedLengthFormatBaseClass, IFormatReader>
         {
-            public TestFixedLengthFormatBaseClass(IFormatReader reader)
-                : base(reader)
+            public TestFixedLengthFormatBaseClass(IFormatReader reader, ILogger? logger)
+                : base(reader, logger)
             {
             }
 

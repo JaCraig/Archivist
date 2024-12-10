@@ -14,10 +14,10 @@ namespace Archivist.Tests.Formats.FixedLength
     {
         public FixedLengthWriterTests()
         {
-            TestObject = new FixedLengthWriter();
+            TestObject = new FixedLengthWriter(null);
         }
 
-        private readonly FixedLengthWriter _TestClass = new();
+        private readonly FixedLengthWriter _TestClass = new(null);
 
         [Fact]
         public void CanCallCanWrite()
@@ -51,7 +51,7 @@ namespace Archivist.Tests.Formats.FixedLength
         {
             // Arrange
             var Stream = new MemoryStream();
-            var Writer = new FixedLengthWriter();
+            var Writer = new FixedLengthWriter(null);
 
             // Act
             var Result = await Writer.WriteAsync(null, Stream);
@@ -65,7 +65,7 @@ namespace Archivist.Tests.Formats.FixedLength
         {
             // Arrange
             var File = new FixedLengthFile();
-            var Writer = new FixedLengthWriter();
+            var Writer = new FixedLengthWriter(null);
 
             // Act
             var Result = await Writer.WriteAsync(File, null);
@@ -83,7 +83,7 @@ namespace Archivist.Tests.Formats.FixedLength
             File.Records[0].Fields.Add(new FixedLengthField("Field 1", 10));
             File.Records[0].Fields.Add(new FixedLengthField("Field 2", 10));
             var Stream = new MemoryStream();
-            var Writer = new FixedLengthWriter();
+            var Writer = new FixedLengthWriter(null);
             const string ExpectedContent = "Field 1   Field 2   ";
 
             // Act

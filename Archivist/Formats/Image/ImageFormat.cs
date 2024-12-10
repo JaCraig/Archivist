@@ -1,5 +1,6 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Converters;
+using Microsoft.Extensions.Logging;
 
 namespace Archivist.Formats.Image
 {
@@ -7,17 +8,13 @@ namespace Archivist.Formats.Image
     /// Represents the Image format.
     /// </summary>
     /// <seealso cref="FormatBaseClass{TFormat, TFileReader, TFileWriter}"/>
-    public class ImageFormat : FormatBaseClass<ImageFormat, ImageReader, ImageWriter>
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="ImageFormat"/> class.
+    /// </remarks>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger">The logger.</param>
+    public class ImageFormat(Convertinator? converter, ILogger<ImageFormat>? logger) : FormatBaseClass<ImageFormat, ImageReader, ImageWriter>(new ImageReader(converter, logger), new ImageWriter(logger))
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ImageFormat"/> class.
-        /// </summary>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public ImageFormat(Convertinator? converter)
-            : base(new ImageReader(converter), new ImageWriter())
-        {
-        }
-
         /// <summary>
         /// Gets the file extensions associated with the Image format.
         /// </summary>

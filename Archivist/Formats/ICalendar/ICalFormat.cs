@@ -1,5 +1,6 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Converters;
+using Microsoft.Extensions.Logging;
 
 namespace Archivist.Formats.ICalendar
 {
@@ -7,17 +8,13 @@ namespace Archivist.Formats.ICalendar
     /// Represents the ICal format.
     /// </summary>
     /// <seealso cref="FormatBaseClass{TFormat, TFileReader, TFileWriter}"/>
-    public class ICalFormat : FormatBaseClass<ICalFormat, ICalReader, ICalWriter>
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="ICalFormat"/> class.
+    /// </remarks>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger">The logger.</param>
+    public class ICalFormat(Convertinator? converter, ILogger<ICalFormat>? logger) : FormatBaseClass<ICalFormat, ICalReader, ICalWriter>(new ICalReader(converter, logger), new ICalWriter(logger))
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ICalFormat"/> class.
-        /// </summary>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public ICalFormat(Convertinator? converter)
-            : base(new ICalReader(converter), new ICalWriter())
-        {
-        }
-
         /// <summary>
         /// Gets the file extensions associated with the ICal format.
         /// </summary>

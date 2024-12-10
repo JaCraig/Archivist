@@ -3,6 +3,7 @@ using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Dynamic;
 using System.IO;
@@ -15,17 +16,17 @@ namespace Archivist.Formats.YAML
     /// <summary>
     /// Represents a reader for YAML files.
     /// </summary>
-    public class YAMLReader : ReaderBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="YAMLReader"/> class.
+    /// </remarks>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger">The logger.</param>
+    public class YAMLReader(Convertinator? converter, ILogger? logger) : ReaderBaseClass(logger)
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="YAMLReader"/> class.
+        /// The converter used to convert between IGenericFile objects.
         /// </summary>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public YAMLReader(Convertinator? converter)
-        {
-            _Converter = converter;
-            Deserializer = new DeserializerBuilder().WithNamingConvention(CamelCaseNamingConvention.Instance).Build();
-        }
+        private readonly Convertinator? _Converter = converter;
 
         /// <summary>
         /// Gets the header information for the YAML format.
@@ -35,12 +36,7 @@ namespace Archivist.Formats.YAML
         /// <summary>
         /// The deserializer to use when deserializing YAML.
         /// </summary>
-        private IDeserializer Deserializer { get; }
-
-        /// <summary>
-        /// The converter used to convert between IGenericFile objects.
-        /// </summary>
-        private readonly Convertinator? _Converter;
+        private IDeserializer Deserializer { get; } = new DeserializerBuilder().WithNamingConvention(CamelCaseNamingConvention.Instance).Build();
 
         /// <summary>
         /// Determines if the reader can read the specified stream.
@@ -50,7 +46,10 @@ namespace Archivist.Formats.YAML
         public override bool InternalCanRead(Stream? stream)
         {
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.InternalCanRead(): Stream is null or invalid.", nameof(YAMLReader));
                 return false;
+            }
             try
             {
                 var Value = stream.ReadAll();
@@ -60,8 +59,9 @@ namespace Archivist.Formats.YAML
                 _ = stream.Seek(0, SeekOrigin.Begin);
                 return true;
             }
-            catch
+            catch (Exception Ex)
             {
+                Logger?.LogDebug(Ex, "{readerName}.InternalCanRead(): Exception occurred.", nameof(YAMLReader));
                 return false;
             }
         }
@@ -74,10 +74,16 @@ namespace Archivist.Formats.YAML
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(YAMLReader));
                 return new StructuredObject();
+            }
             var StreamData = await stream.ReadAllAsync().ConfigureAwait(false);
             if (string.IsNullOrEmpty(StreamData))
+            {
+                Logger?.LogDebug("{readerName}.ReadAsync(): Stream data is null or empty.", nameof(YAMLReader));
                 return new StructuredObject();
+            }
             ExpandoObject? Data = Deserializer.Deserialize<ExpandoObject>(StreamData);
             return new StructuredObject(_Converter, Data ?? new ExpandoObject());
         }

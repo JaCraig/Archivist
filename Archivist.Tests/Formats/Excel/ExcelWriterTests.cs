@@ -14,8 +14,8 @@ namespace Archivist.Tests.Formats.Excel
     {
         public ExcelWriterTests()
         {
-            _TestClass = new ExcelWriter();
-            TestObject = new ExcelWriter();
+            _TestClass = new ExcelWriter(null);
+            TestObject = new ExcelWriter(null);
         }
 
         private readonly ExcelWriter _TestClass;

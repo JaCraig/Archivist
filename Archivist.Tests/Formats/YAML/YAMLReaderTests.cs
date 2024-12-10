@@ -11,8 +11,8 @@ namespace Archivist.Tests.Formats.YAML
     {
         public YAMLReaderTests()
         {
-            _TestClass = new YAMLReader(null);
-            TestObject = new YAMLReader(null);
+            _TestClass = new YAMLReader(null, null);
+            TestObject = new YAMLReader(null, null);
         }
 
         private readonly YAMLReader _TestClass;
@@ -47,7 +47,7 @@ namespace Archivist.Tests.Formats.YAML
         public void CanConstruct()
         {
             // Act
-            var Instance = new YAMLReader(null);
+            var Instance = new YAMLReader(null, null);
 
             // Assert
             Assert.NotNull(Instance);

@@ -3,6 +3,7 @@ using Archivist.Converters;
 using Archivist.Interfaces;
 using Archivist.Options;
 using ExcelDataReader;
+using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
 using System.Linq;
@@ -18,9 +19,15 @@ namespace Archivist.Formats.XLS
     /// <remarks>Initializes a new instance of the <see cref="XLSReader"/> class.</remarks>
     /// <param name="options">The XLS options.</param>
     /// <param name="converter">The converter.</param>
-    public class XLSReader(ExcelOptions? options, Convertinator? converter)
-        : ReaderBaseClass
+    /// <param name="logger">The logger.</param>
+    public class XLSReader(ExcelOptions? options, Convertinator? converter, ILogger? logger)
+        : ReaderBaseClass(logger)
     {
+        /// <summary>
+        /// The converter.
+        /// </summary>
+        private readonly Convertinator? _Converter = converter;
+
         /// <summary>
         /// Gets the header information for XLS files.
         /// </summary>
@@ -32,11 +39,6 @@ namespace Archivist.Formats.XLS
         private ExcelOptions Options { get; } = options ?? ExcelOptions.Default;
 
         /// <summary>
-        /// The converter.
-        /// </summary>
-        private readonly Convertinator? _Converter = converter;
-
-        /// <summary>
         /// Determines if the reader can read the given stream as an XLS file.
         /// </summary>
         /// <param name="stream">The stream to read.</param>
@@ -44,14 +46,18 @@ namespace Archivist.Formats.XLS
         public override bool InternalCanRead(Stream? stream)
         {
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.InternalCanRead(): Stream is null or invalid.", nameof(XLSReader));
                 return false;
+            }
             try
             {
                 using IExcelDataReader Reader = ExcelReaderFactory.CreateReader(stream);
                 return Reader.Read();
             }
-            catch
+            catch (Exception Ex)
             {
+                Logger?.LogDebug(Ex, "{readerName}.InternalCanRead(): Error reading stream.", nameof(XLSReader));
                 return false;
             }
         }
@@ -67,7 +73,10 @@ namespace Archivist.Formats.XLS
         {
             var ReturnValue = new DataTypes.Tables(_Converter);
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(XLSReader));
                 return Task.FromResult<IGenericFile?>(ReturnValue);
+            }
             try
             {
                 using IExcelDataReader Reader = ExcelReaderFactory.CreateReader(stream, new ExcelReaderConfiguration()
@@ -100,8 +109,9 @@ namespace Archivist.Formats.XLS
                     }
                 } while (Reader.NextResult());
             }
-            catch (Exception)
+            catch (Exception Ex)
             {
+                Logger?.LogError(Ex, "{readerName}.ReadAsync(): Error reading stream.", nameof(XLSReader));
                 return Task.FromResult<IGenericFile?>(ReturnValue);
             }
 

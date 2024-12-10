@@ -12,8 +12,8 @@ namespace Archivist.Tests.Formats.XLS
     {
         public XLSWriterTests()
         {
-            _TestClass = new XLSWriter();
-            TestObject = new XLSWriter();
+            _TestClass = new XLSWriter(null);
+            TestObject = new XLSWriter(null);
         }
 
         private readonly XLSWriter _TestClass;
@@ -36,7 +36,7 @@ namespace Archivist.Tests.Formats.XLS
         public void CanConstruct()
         {
             // Act
-            var Instance = new XLSWriter();
+            var Instance = new XLSWriter(null);
 
             // Assert
             Assert.NotNull(Instance);

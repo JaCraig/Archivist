@@ -17,8 +17,8 @@ namespace Archivist.Tests.Formats.VCard
     {
         public VCardFormatTests()
         {
-            _TestClass = new VCardFormat(null);
-            TestObject = new VCardFormat(null);
+            _TestClass = new VCardFormat(null, null);
+            TestObject = new VCardFormat(null, null);
         }
 
         private readonly VCardFormat _TestClass;
@@ -27,7 +27,7 @@ namespace Archivist.Tests.Formats.VCard
         public void CanConstruct()
         {
             // Act
-            var Instance = new VCardFormat(null);
+            var Instance = new VCardFormat(null, null);
 
             // Assert
             Assert.NotNull(Instance);
@@ -94,7 +94,7 @@ namespace Archivist.Tests.Formats.VCard
             // Arrange
             var TestData = VCardFileData.ExampleVCard1;
             var Stream = new MemoryStream(TestData.ToByteArray());
-            var TestObject = new VCardFormat(null);
+            var TestObject = new VCardFormat(null, null);
 
             // Act
             Card Result = Assert.IsType<Card>(await TestObject.ReadAsync(Stream));

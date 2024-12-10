@@ -12,8 +12,8 @@ namespace Archivist.Tests.Formats.ICalendar
     {
         public ICalWriterTests()
         {
-            _TestClass = new ICalWriter();
-            TestObject = new ICalWriter();
+            _TestClass = new ICalWriter(null);
+            TestObject = new ICalWriter(null);
         }
 
         private readonly ICalWriter _TestClass;

@@ -13,8 +13,8 @@ namespace Archivist.Tests.Formats.XML
         public XMLReaderTests()
         {
             _Options = new JsonSerializerSettings();
-            _TestClass = new XMLReader(_Options, null);
-            TestObject = new XMLReader(_Options, null);
+            _TestClass = new XMLReader(_Options, null, null);
+            TestObject = new XMLReader(_Options, null, null);
         }
 
         private readonly JsonSerializerSettings _Options;
@@ -37,7 +37,7 @@ namespace Archivist.Tests.Formats.XML
         public void CanConstruct()
         {
             // Act
-            var Instance = new XMLReader(_Options, null);
+            var Instance = new XMLReader(_Options, null, null);
 
             // Assert
             Assert.NotNull(Instance);
@@ -73,7 +73,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task ReadAsync_ReturnsEmptyStructuredObject_WhenDataIsInvalidAsync()
         {
             // Arrange
-            var Reader = new XMLReader(_Options, null);
+            var Reader = new XMLReader(_Options, null, null);
             Stream Stream = new MemoryStream();
             Stream.Write(new byte[] { 0x3C, 0x3F, 0x78, 0x6D, 0x6C, 0x20, 0x76, 0x65, 0x72, 0x73, 0x69, 0x6F, 0x6E, 0x3D, 0x22, 0x31, 0x2E, 0x30, 0x22 }, 0, 19);
             Stream.Write(new byte[] { 0x3E }, 0, 1);
@@ -94,7 +94,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task ReadAsync_ReturnsEmptyStructuredObject_WhenDataIsNotStructuredObjectAsync()
         {
             // Arrange
-            var Reader = new XMLReader(_Options, null);
+            var Reader = new XMLReader(_Options, null, null);
             Stream Stream = new MemoryStream();
             Stream.Write(new byte[] { 0x3C, 0x3F, 0x78, 0x6D, 0x6C, 0x20, 0x76, 0x65, 0x72, 0x73, 0x69, 0x6F, 0x6E, 0x3D, 0x22, 0x31, 0x2E, 0x30, 0x22 }, 0, 19);
             Stream.Write(new byte[] { 0x3E, 0x3C, 0x2F, 0x3F, 0x3E }, 0, 5);
@@ -115,7 +115,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task ReadAsync_ReturnsEmptyStructuredObject_WhenDataIsNullAsync()
         {
             // Arrange
-            var Reader = new XMLReader(_Options, null);
+            var Reader = new XMLReader(_Options, null, null);
             Stream Stream = new MemoryStream();
             Stream.Write(new byte[] { 0x3C, 0x3F, 0x78, 0x6D, 0x6C, 0x20, 0x76, 0x65, 0x72, 0x73, 0x69, 0x6F, 0x6E, 0x3D, 0x22, 0x31, 0x2E, 0x30, 0x22 }, 0, 19);
             Stream.Close();
@@ -135,7 +135,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task ReadAsync_ReturnsEmptyStructuredObject_WhenStreamCannotReadAsync()
         {
             // Arrange
-            var Reader = new XMLReader(_Options, null);
+            var Reader = new XMLReader(_Options, null, null);
             Stream Stream = new MemoryStream();
             Stream.Close();
 
@@ -154,7 +154,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task ReadAsync_ReturnsEmptyStructuredObject_WhenStreamDataIsNullOrEmptyAsync()
         {
             // Arrange
-            var Reader = new XMLReader(_Options, null);
+            var Reader = new XMLReader(_Options, null, null);
             Stream Stream = new MemoryStream();
 
             // Act

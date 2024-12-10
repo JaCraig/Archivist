@@ -6,6 +6,7 @@ using DocumentFormat.OpenXml.ExtendedProperties;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 using DocumentFormat.OpenXml.VariantTypes;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -18,15 +19,12 @@ namespace Archivist.Formats.Excel
     /// Writes an Excel file.
     /// </summary>
     /// <seealso cref="WriterBaseClass"/>
-    public class ExcelWriter : WriterBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="ExcelWriter"/> class.
+    /// </remarks>
+    /// <param name="logger">The logger to use for logging.</param>
+    public class ExcelWriter(ILogger? logger) : WriterBaseClass(logger)
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ExcelWriter"/> class.
-        /// </summary>
-        public ExcelWriter()
-        {
-        }
-
         /// <summary>
         /// The default metadata.
         /// </summary>
@@ -48,7 +46,10 @@ namespace Archivist.Formats.Excel
         public override Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
             if (stream?.CanWrite != true || file is null)
+            {
+                Logger?.LogDebug("ExcelWriter.WriteAsync(): Stream is null or cannot write.");
                 return Task.FromResult(false);
+            }
             try
             {
                 DataTypes.Tables? TablesFile = file.ToFileType<DataTypes.Tables>();
@@ -59,7 +60,11 @@ namespace Archivist.Formats.Excel
                     return Task.FromResult(WriteTable(stream, TableFile));
                 return Task.FromResult(WriteFile(stream, file));
             }
-            catch { return Task.FromResult(false); }
+            catch (Exception Ex)
+            {
+                Logger?.LogError(Ex, "ExcelWriter.WriteAsync(): An error occurred while writing the file.");
+                return Task.FromResult(false);
+            }
         }
 
         /// <summary>

@@ -1,22 +1,19 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Converters;
+using Microsoft.Extensions.Logging;
 
 namespace Archivist.Formats.RSS
 {
     /// <summary>
     /// Represents a RSS format for archiving.
     /// </summary>
-    public class RSSFormat : FormatBaseClass<RSSFormat, RSSReader, RSSWriter>
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="RSSFormat"/> class.
+    /// </remarks>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger"></param>
+    public class RSSFormat(Convertinator? converter, ILogger<RSSFormat>? logger) : FormatBaseClass<RSSFormat, RSSReader, RSSWriter>(new RSSReader(converter, logger), new RSSWriter(logger))
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="RSSFormat"/> class.
-        /// </summary>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public RSSFormat(Convertinator? converter)
-            : base(new RSSReader(converter), new RSSWriter())
-        {
-        }
-
         /// <summary>
         /// Gets the file extensions associated with the RSS format.
         /// </summary>

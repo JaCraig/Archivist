@@ -1,5 +1,6 @@
 ﻿using Archivist.Formats.FixedLength;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
 
 namespace Archivist.BaseClasses
 {
@@ -8,17 +9,15 @@ namespace Archivist.BaseClasses
     /// </summary>
     /// <typeparam name="TFormat">The type of the derived fixed-length format class.</typeparam>
     /// <typeparam name="TFileReader">The type of the file reader.</typeparam>
-    public abstract class FixedLengthFormatBaseClass<TFormat, TFileReader> : FormatBaseClass<TFormat, TFileReader, FixedLengthWriter>
-        where TFormat : FixedLengthFormatBaseClass<TFormat, TFileReader>
-        where TFileReader : IFormatReader
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="FixedLengthFormatBaseClass{TFormat, TFileReader}"/> class.
+    /// </remarks>
+    /// <param name="reader">The file reader.</param>
+    /// <param name="logger">The logger.</param>"
+    public abstract class FixedLengthFormatBaseClass<TFormat, TFileReader>(TFileReader reader, ILogger? logger)
+        : FormatBaseClass<TFormat, TFileReader, FixedLengthWriter>(reader, new FixedLengthWriter(logger))
+            where TFormat : FixedLengthFormatBaseClass<TFormat, TFileReader>
+            where TFileReader : IFormatReader
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="FixedLengthFormatBaseClass{TFormat, TFileReader}"/> class.
-        /// </summary>
-        /// <param name="reader">The file reader.</param>
-        protected FixedLengthFormatBaseClass(TFileReader reader)
-            : base(reader, new FixedLengthWriter())
-        {
-        }
     }
 }

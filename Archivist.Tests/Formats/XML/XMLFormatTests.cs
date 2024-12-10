@@ -14,8 +14,8 @@ namespace Archivist.Tests.Formats.XML
         public XMLFormatTests()
         {
             _Options = new JsonSerializerSettings();
-            _TestClass = new XMLFormat(_Options, null);
-            TestObject = new XMLFormat(_Options, null);
+            _TestClass = new XMLFormat(_Options, null, null);
+            TestObject = new XMLFormat(_Options, null, null);
         }
 
         private static readonly string[] _ExpectedExtensions = new[] { "XML" };
@@ -27,14 +27,14 @@ namespace Archivist.Tests.Formats.XML
         public void CanConstruct()
         {
             // Act
-            var Instance = new XMLFormat(_Options, null);
+            var Instance = new XMLFormat(_Options, null, null);
 
             // Assert
             Assert.NotNull(Instance);
         }
 
         [Fact]
-        public void CanConstructWithNullOptions() => _ = new XMLFormat(default, null);
+        public void CanConstructWithNullOptions() => _ = new XMLFormat(default, null, null);
 
         [Fact]
         public void CanGetExtensions()

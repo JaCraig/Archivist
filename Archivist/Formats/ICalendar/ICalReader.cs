@@ -3,6 +3,7 @@ using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,21 +15,22 @@ namespace Archivist.Formats.ICalendar
     /// <summary>
     /// Represents a reader for ICal files.
     /// </summary>
-    public class ICalReader : ReaderBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="ICalReader"/> class.
+    /// </remarks>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger">The logger.</param>
+    public class ICalReader(Convertinator? converter, ILogger? logger) : ReaderBaseClass(logger)
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ICalReader"/> class.
+        /// Represents the separator used to split the lines of the ICal file.
         /// </summary>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public ICalReader(Convertinator? converter)
-        {
-            Converter = converter;
-        }
+        private static readonly string[] _Separator = new string[] { "\r\n", Environment.NewLine };
 
         /// <summary>
         /// Gets the header information of the ICal file.
         /// </summary>
-        public override byte[] HeaderInfo { get; } = new byte[] { 0x42, 0x45, 0x47, 0x49, 0x4E, 0x3A, 0x56, 0x43, 0x41, 0x4C, 0x45, 0x4E, 0x44, 0x41, 0x52 };
+        public override byte[] HeaderInfo { get; } = "BEGIN:VCALENDAR"u8.ToArray();
 
         /// <summary>
         /// Gets the regular expression used to split the parameters of the ICal property.
@@ -43,12 +45,7 @@ namespace Archivist.Formats.ICalendar
         /// <summary>
         /// Gets the converter used to convert between IGenericFile objects.
         /// </summary>
-        private Convertinator? Converter { get; }
-
-        /// <summary>
-        /// Represents the separator used to split the lines of the ICal file.
-        /// </summary>
-        private static readonly string[] _Separator = new string[] { "\r\n", Environment.NewLine };
+        private Convertinator? Converter { get; } = converter;
 
         /// <summary>
         /// Reads a ICal file asynchronously from the specified stream.
@@ -60,7 +57,10 @@ namespace Archivist.Formats.ICalendar
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(ICalReader));
                 return new Calendar(Converter);
+            }
             var ReturnValue = new Calendar(Converter);
             var Content = await GetDataAsync(stream).ConfigureAwait(false);
             var Lines = Content.Split(_Separator, StringSplitOptions.RemoveEmptyEntries);
@@ -129,24 +129,6 @@ namespace Archivist.Formats.ICalendar
         }
 
         /// <summary>
-        /// Gets the data from the specified stream.
-        /// </summary>
-        /// <param name="stream">The stream.</param>
-        /// <returns>The data from the specified stream.</returns>
-        private static async Task<string> GetDataAsync(Stream? stream)
-        {
-            try
-            {
-                var Content = await stream.ReadAllAsync().ConfigureAwait(false);
-                return Content?.Replace("\r\n ", "").Replace(Environment.NewLine + " ", "") ?? "";
-            }
-            catch
-            {
-                return "";
-            }
-        }
-
-        /// <summary>
         /// Parses the parameters of a ICal property.
         /// </summary>
         /// <param name="value">The parameter value.</param>
@@ -163,6 +145,25 @@ namespace Archivist.Formats.ICalendar
                 ReturnValue.Add(new KeyValueParameter(Name, Value));
             }
             return ReturnValue;
+        }
+
+        /// <summary>
+        /// Gets the data from the specified stream.
+        /// </summary>
+        /// <param name="stream">The stream.</param>
+        /// <returns>The data from the specified stream.</returns>
+        private async Task<string> GetDataAsync(Stream? stream)
+        {
+            try
+            {
+                var Content = await stream.ReadAllAsync().ConfigureAwait(false);
+                return Content?.Replace("\r\n ", "").Replace(Environment.NewLine + " ", "") ?? "";
+            }
+            catch (Exception Ex)
+            {
+                Logger?.LogError(Ex, "{readerName}.GetDataAsync(): Error occurred while getting data from the stream.", nameof(ICalReader));
+                return "";
+            }
         }
     }
 }

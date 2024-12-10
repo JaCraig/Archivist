@@ -12,8 +12,8 @@ namespace Archivist.Tests.Formats.JSON
         public JsonFormatTests()
         {
             _Options = new JsonSerializerSettings();
-            _TestClass = new JsonFormat(_Options, null);
-            TestObject = new JsonFormat(_Options, null);
+            _TestClass = new JsonFormat(_Options, null, null);
+            TestObject = new JsonFormat(_Options, null, null);
         }
 
         private static readonly string[] _Expected = new[] { "JSON" };
@@ -25,7 +25,7 @@ namespace Archivist.Tests.Formats.JSON
         public void CanConstruct()
         {
             // Act
-            var Instance = new JsonFormat(_Options, null);
+            var Instance = new JsonFormat(_Options, null, null);
 
             // Assert
             Assert.NotNull(Instance);
@@ -35,7 +35,7 @@ namespace Archivist.Tests.Formats.JSON
         public void CanConstructWithNullOptions()
         {
             // Act
-            var Result = new JsonFormat(default, null);
+            var Result = new JsonFormat(default, null, null);
 
             // Assert
             Assert.NotNull(Result);

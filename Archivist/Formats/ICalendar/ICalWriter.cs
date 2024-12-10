@@ -1,6 +1,7 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.DataTypes;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,7 +15,11 @@ namespace Archivist.Formats.ICalendar
     /// <summary>
     /// Represents a writer for ICal files.
     /// </summary>
-    public class ICalWriter : WriterBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="ICalWriter"/> class.
+    /// </remarks>
+    /// <param name="logger">The logger to use for logging.</param>
+    public class ICalWriter(ILogger? logger) : WriterBaseClass(logger)
     {
         /// <summary>
         /// The strip HTML regex
@@ -38,7 +43,10 @@ namespace Archivist.Formats.ICalendar
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
             if (stream?.CanWrite != true || file is null)
+            {
+                Logger?.LogDebug("{writerName}.WriteAsync(): Stream is null or invalid.", nameof(ICalWriter));
                 return false;
+            }
             Calendar? FileCal = file.ToFileType<Calendar>();
             if (FileCal is null)
                 return false;
@@ -58,8 +66,9 @@ namespace Archivist.Formats.ICalendar
             {
                 await stream.WriteAsync(TempData).ConfigureAwait(false);
             }
-            catch
+            catch (Exception Ex)
             {
+                Logger?.LogError(Ex, "{writerName}.WriteAsync(): Error occurred while writing the ICal file.", nameof(ICalWriter));
                 return false;
             }
             return true;

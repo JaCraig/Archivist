@@ -4,6 +4,7 @@ using Archivist.DataTypes;
 using Archivist.DataTypes.Feeds;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -18,26 +19,23 @@ namespace Archivist.Formats.RSS
     /// <summary>
     /// Represents a RSS reader for reading RSS files.
     /// </summary>
-    public class RSSReader : ReaderBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="RSSReader"/> class.
+    /// </remarks>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger">The logger.</param>
+    public class RSSReader(Convertinator? converter, ILogger? logger)
+        : ReaderBaseClass(logger)
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="RSSReader"/> class.
+        /// The converter used to convert between IGenericFile objects.
         /// </summary>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public RSSReader(Convertinator? converter)
-        {
-            _Converter = converter;
-        }
+        private readonly Convertinator? _Converter = converter;
 
         /// <summary>
         /// Gets the header information of the RSS file.
         /// </summary>
-        public override byte[] HeaderInfo { get; } = new byte[] { 0x3C, 0x3F, 0x78, 0x6D, 0x6C, 0x20, 0x76, 0x65, 0x72, 0x73, 0x69, 0x6F, 0x6E, 0x3D, 0x22, 0x31, 0x2E, 0x30, 0x22, 0x20 };
-
-        /// <summary>
-        /// The converter used to convert between IGenericFile objects.
-        /// </summary>
-        private readonly Convertinator? _Converter;
+        public override byte[] HeaderInfo { get; } = "<?xml version=\"1.0\" "u8.ToArray();
 
         /// <summary>
         /// Determines if the reader can read the specified stream.
@@ -47,7 +45,10 @@ namespace Archivist.Formats.RSS
         public override bool InternalCanRead(Stream? stream)
         {
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.InternalCanRead(): Stream is null or invalid.", nameof(RSSReader));
                 return false;
+            }
             try
             {
                 var Document = new XmlDocument();
@@ -56,7 +57,10 @@ namespace Archivist.Formats.RSS
                 if (TempFeed.Channels.Count > 0 && TempFeed.Channels[0].Count > 0)
                     return true;
             }
-            catch { }
+            catch (Exception Ex)
+            {
+                Logger?.LogError(Ex, "{readerName}.InternalCanRead(): Error reading RSS file.", nameof(RSSReader));
+            }
             return false;
         }
 
@@ -71,8 +75,11 @@ namespace Archivist.Formats.RSS
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(RSSReader));
                 return new Feed(_Converter);
-            var Data = await GetDataAsync(stream).ConfigureAwait(false);
+            }
+            var Data = await GetDataAsync(stream, Logger).ConfigureAwait(false);
             if (string.IsNullOrEmpty(Data))
                 return new Feed(_Converter);
             var Document = new XmlDocument();
@@ -84,11 +91,12 @@ namespace Archivist.Formats.RSS
         /// Reads the RSS file asynchronously.
         /// </summary>
         /// <param name="stream">The stream to read the RSS file from.</param>
+        /// <param name="logger">The logger.</param>
         /// <returns>
         /// A task representing the asynchronous operation. The task result contains the generic
         /// file representation of the RSS file.
         /// </returns>
-        private static async Task<string> GetDataAsync(Stream? stream)
+        private static async Task<string> GetDataAsync(Stream? stream, ILogger? logger)
         {
             if (stream is null || !IsValidStream(stream))
                 return "";
@@ -96,8 +104,9 @@ namespace Archivist.Formats.RSS
             {
                 return await stream.ReadAllAsync().ConfigureAwait(false) ?? "";
             }
-            catch
+            catch (Exception Ex)
             {
+                logger?.LogError(Ex, "{readerName}.GetDataAsync(): Error reading RSS file.", nameof(RSSReader));
                 return "";
             }
         }

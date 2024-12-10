@@ -24,19 +24,18 @@ namespace Archivist.Tests.Formats.Delimited
             _ = Services.AddSingleton<Convertinator>();
             _ = Services.AddAllSingleton<IDataConverter>();
             ServiceProvider = Services.BuildServiceProvider();
-            _TestClass = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>(), ServiceProvider.GetService<Convertinator>());
-            TestObject = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>(), ServiceProvider.GetService<Convertinator>());
+            _TestClass = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>(), ServiceProvider.GetService<Convertinator>(), null);
+            TestObject = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>(), ServiceProvider.GetService<Convertinator>(), null);
         }
 
-        private ServiceProvider ServiceProvider { get; }
-
         private readonly DelimitedFormat _TestClass;
+        private ServiceProvider ServiceProvider { get; }
 
         [Fact]
         public void CanConstruct()
         {
             // Act
-            var Instance = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>(), ServiceProvider.GetService<Convertinator>());
+            var Instance = new DelimitedFormat(ServiceProvider.GetService<IOptions<DelimitedOptions>>(), ServiceProvider.GetService<Convertinator>(), null);
 
             // Assert
             Assert.NotNull(Instance);

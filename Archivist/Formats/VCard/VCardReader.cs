@@ -3,6 +3,7 @@ using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,21 +15,27 @@ namespace Archivist.Formats.VCard
     /// <summary>
     /// Represents a reader for VCard files.
     /// </summary>
-    public class VCardReader : ReaderBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="VCardReader"/> class.
+    /// </remarks>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger">The logger.</param>
+    public class VCardReader(Convertinator? converter, ILogger? logger) : ReaderBaseClass(logger)
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="VCardReader"/> class.
+        /// Represents the separator used to split the lines of the VCard file.
         /// </summary>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public VCardReader(Convertinator? converter)
-        {
-            _Converter = converter;
-        }
+        private static readonly string[] _Separator = new string[] { "\r\n", Environment.NewLine };
+
+        /// <summary>
+        /// The converter used to convert between IGenericFile objects.
+        /// </summary>
+        private readonly Convertinator? _Converter = converter;
 
         /// <summary>
         /// Gets the header information of the VCard file.
         /// </summary>
-        public override byte[] HeaderInfo { get; } = new byte[] { 0x42, 0x45, 0x47, 0x49, 0x4E, 0x3A, 0x56, 0x43, 0x41, 0x52, 0x44 };
+        public override byte[] HeaderInfo { get; } = "BEGIN:VCARD"u8.ToArray();
 
         /// <summary>
         /// Gets the regular expression used to split the parameters of the VCard property.
@@ -39,16 +46,6 @@ namespace Archivist.Formats.VCard
         /// Gets the regular expression used to split the properties of the VCard file.
         /// </summary>
         private static Regex PropertySplitter { get; } = new Regex("(?<Property>[^;:]+);?(?<Parameters>[^:]+)?:(?<Value>.*)", RegexOptions.Compiled);
-
-        /// <summary>
-        /// Represents the separator used to split the lines of the VCard file.
-        /// </summary>
-        private static readonly string[] _Separator = new string[] { "\r\n", Environment.NewLine };
-
-        /// <summary>
-        /// The converter used to convert between IGenericFile objects.
-        /// </summary>
-        private readonly Convertinator? _Converter;
 
         /// <summary>
         /// Reads a VCard file asynchronously from the specified stream.

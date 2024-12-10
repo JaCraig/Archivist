@@ -17,8 +17,8 @@ namespace Archivist.Tests.Formats.XLS
         {
             _Options = new ExcelOptions();
             _Converter = new Convertinator(new List<IDataConverter>());
-            _TestClass = new XLSReader(_Options, _Converter);
-            TestObject = new XLSReader(_Options, _Converter);
+            _TestClass = new XLSReader(_Options, _Converter, null);
+            TestObject = new XLSReader(_Options, _Converter, null);
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
         }
 
@@ -56,17 +56,17 @@ namespace Archivist.Tests.Formats.XLS
         public void CanConstruct()
         {
             // Act
-            var Instance = new XLSReader(_Options, _Converter);
+            var Instance = new XLSReader(_Options, _Converter, null);
 
             // Assert
             Assert.NotNull(Instance);
         }
 
         [Fact]
-        public void CanConstructWithNullConverter() => _ = new XLSReader(_Options, default);
+        public void CanConstructWithNullConverter() => _ = new XLSReader(_Options, default, null);
 
         [Fact]
-        public void CanConstructWithNullOptions() => _ = new XLSReader(default, _Converter);
+        public void CanConstructWithNullOptions() => _ = new XLSReader(default, _Converter, null);
 
         [Fact]
         public void CanGetHeaderInfo()

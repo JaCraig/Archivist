@@ -394,7 +394,12 @@ namespace Archivist.DataTypes
         /// Gets the enumerator for the structured object.
         /// </summary>
         /// <returns>The enumerator for the structured object.</returns>
-        public IEnumerator<KeyValuePair<string, object?>> GetEnumerator() => Content.GetEnumerator();
+        public IEnumerator<KeyValuePair<string, object?>> GetEnumerator()
+        {
+            if (Content is null)
+                return new Dictionary<string, object?>().GetEnumerator();
+            return Content.GetEnumerator();
+        }
 
         /// <summary>
         /// Gets the enumerator for the structured object.

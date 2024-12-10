@@ -8,8 +8,8 @@ namespace Archivist.Tests.Formats.ICalendar
     {
         public ICalFormatTests()
         {
-            _TestClass = new ICalFormat(null);
-            TestObject = new ICalFormat(null);
+            _TestClass = new ICalFormat(null, null);
+            TestObject = new ICalFormat(null, null);
         }
 
         private readonly ICalFormat _TestClass;
@@ -18,7 +18,7 @@ namespace Archivist.Tests.Formats.ICalendar
         public void CanConstruct()
         {
             // Act
-            var Instance = new ICalFormat(null);
+            var Instance = new ICalFormat(null, null);
 
             // Assert
             Assert.NotNull(Instance);

@@ -5,6 +5,7 @@ using Archivist.Options;
 using DocumentFormat.OpenXml.CustomProperties;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -18,18 +19,18 @@ namespace Archivist.Formats.Excel
     /// Represents a reader for Excel files.
     /// </summary>
     /// <seealso cref="ReaderBaseClass"/>
-    public class ExcelReader : ReaderBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="ExcelReader"/> class.
+    /// </remarks>
+    /// <param name="options">The Excel options.</param>
+    /// <param name="converter">The converter.</param>
+    /// <param name="logger">The logger.</param>
+    public class ExcelReader(ExcelOptions options, Convertinator? converter, ILogger? logger) : ReaderBaseClass(logger)
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ExcelReader"/> class.
+        /// The converter.
         /// </summary>
-        /// <param name="options">The Excel options.</param>
-        /// <param name="converter">The converter.</param>
-        public ExcelReader(ExcelOptions options, Convertinator? converter)
-        {
-            Options = options;
-            _Converter = converter;
-        }
+        private readonly Convertinator? _Converter = converter;
 
         /// <summary>
         /// Gets the header information for Excel files.
@@ -39,7 +40,7 @@ namespace Archivist.Formats.Excel
         /// <summary>
         /// Gets the Excel options.
         /// </summary>
-        public ExcelOptions Options { get; }
+        public ExcelOptions Options { get; } = options;
 
         /// <summary>
         /// Gets the regular expression pattern for matching alphabetic strings.
@@ -61,11 +62,6 @@ namespace Archivist.Formats.Excel
         };
 
         /// <summary>
-        /// The converter.
-        /// </summary>
-        private readonly Convertinator? _Converter;
-
-        /// <summary>
         /// Determines if the reader can read the given stream as an Excel file.
         /// </summary>
         /// <param name="stream">The stream to read.</param>
@@ -73,15 +69,19 @@ namespace Archivist.Formats.Excel
         public override bool InternalCanRead(Stream? stream)
         {
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.InternalCanRead(): Stream is null or invalid.", nameof(ExcelReader));
                 return false;
+            }
             try
             {
                 var Document = SpreadsheetDocument.Open(stream, false);
                 if (Document.RootPart?.ContentType != "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml")
                     return false;
             }
-            catch
+            catch (Exception Ex)
             {
+                Logger?.LogDebug(Ex, "{readerName}.InternalCanRead(): Error occurred while checking if the reader can read the stream.", nameof(ExcelReader));
                 return false;
             }
             return true;
@@ -98,7 +98,10 @@ namespace Archivist.Formats.Excel
         {
             var ReturnValue = new DataTypes.Tables(_Converter);
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(ExcelReader));
                 return Task.FromResult<IGenericFile?>(ReturnValue);
+            }
 
             // Open the excel document
             WorkbookPart? WorkbookPart;
@@ -169,8 +172,9 @@ namespace Archivist.Formats.Excel
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception Ex)
             {
+                Logger?.LogError(Ex, "{readerName}.ReadAsync(): Error occurred while reading the Excel file.", nameof(ExcelReader));
                 return Task.FromResult<IGenericFile?>(ReturnValue);
             }
 

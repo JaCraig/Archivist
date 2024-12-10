@@ -3,6 +3,8 @@ using Archivist.DataTypes;
 using Archivist.DataTypes.Feeds;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Globalization;
 using System.IO;
 using System.Text;
@@ -13,7 +15,11 @@ namespace Archivist.Formats.RSS
     /// <summary>
     /// Represents a RSS writer for the Txt format.
     /// </summary>
-    public class RSSWriter : WriterBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="RSSWriter"/> class.
+    /// </remarks>
+    /// <param name="logger">The logger to use for logging.</param>
+    public class RSSWriter(ILogger? logger) : WriterBaseClass(logger)
     {
         /// <summary>
         /// Writes the content of the specified file to the provided stream asynchronously.
@@ -24,15 +30,19 @@ namespace Archivist.Formats.RSS
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
             Feed? FeedFile = file?.ToFileType<Feed>();
-            if (stream?.CanWrite != true || FeedFile is null)
+            if (!IsValidStream(stream) || stream is null || FeedFile is null)
+            {
+                Logger?.LogDebug("{writerName}.WriteAsync(): Stream is null or invalid.", nameof(RSSWriter));
                 return false;
+            }
             var TempData = Encoding.UTF8.GetBytes(WriteFeed(FeedFile).ToString());
             try
             {
                 await stream.WriteAsync(TempData).ConfigureAwait(false);
             }
-            catch
+            catch (Exception Ex)
             {
+                Logger?.LogError(Ex, "{writerName}.WriteAsync(): Error writing to stream.", nameof(RSSWriter));
                 return false;
             }
             return true;

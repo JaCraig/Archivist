@@ -13,8 +13,8 @@ namespace Archivist.Tests.Formats.VCard
     {
         public VCardWriterTests()
         {
-            _TestClass = new VCardWriter();
-            TestObject = new VCardWriter();
+            _TestClass = new VCardWriter(null);
+            TestObject = new VCardWriter(null);
         }
 
         private readonly VCardWriter _TestClass;

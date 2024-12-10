@@ -11,8 +11,8 @@ namespace Archivist.Tests.Formats.JSON
         public JsonReaderTests()
         {
             _Options = new JsonSerializerSettings();
-            _TestClass = new Archivist.Formats.JSON.JsonReader(_Options, null);
-            TestObject = new Archivist.Formats.JSON.JsonReader(_Options, null);
+            _TestClass = new Archivist.Formats.JSON.JsonReader(_Options, null, null);
+            TestObject = new Archivist.Formats.JSON.JsonReader(_Options, null, null);
         }
 
         private readonly JsonSerializerSettings _Options;
@@ -52,7 +52,7 @@ namespace Archivist.Tests.Formats.JSON
         public void CanConstruct()
         {
             // Act
-            var Instance = new Archivist.Formats.JSON.JsonReader(_Options, null);
+            var Instance = new Archivist.Formats.JSON.JsonReader(_Options, null, null);
 
             // Assert
             Assert.NotNull(Instance);

@@ -4,6 +4,7 @@ using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
 using Archivist.Options;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Buffers;
 using System.Collections.Generic;
@@ -26,7 +27,9 @@ namespace Archivist.Formats.Delimited
         /// </summary>
         /// <param name="options">The options.</param>
         /// <param name="converter">The converter.</param>
-        public DelimitedReader(DelimitedOptions options, Convertinator? converter)
+        /// <param name="logger">The logger.</param>
+        public DelimitedReader(DelimitedOptions options, Convertinator? converter, ILogger? logger)
+            : base(logger)
         {
             string[] Delimiters = { ",", "|", "\t", "$", ";", ":" };
             foreach (var Delimiter in Delimiters)
@@ -36,6 +39,16 @@ namespace Archivist.Formats.Delimited
             Options = options;
             _Converter = converter;
         }
+
+        /// <summary>
+        /// The converter
+        /// </summary>
+        private readonly Convertinator? _Converter;
+
+        /// <summary>
+        /// Gets the delimiter splitters.
+        /// </summary>
+        private readonly Dictionary<string, Regex> _DelimiterSplitters = new();
 
         /// <summary>
         /// Gets the header information.
@@ -53,16 +66,6 @@ namespace Archivist.Formats.Delimited
         private DelimitedOptions Options { get; }
 
         /// <summary>
-        /// The converter
-        /// </summary>
-        private readonly Convertinator? _Converter;
-
-        /// <summary>
-        /// Gets the delimiter splitters.
-        /// </summary>
-        private readonly Dictionary<string, Regex> _DelimiterSplitters = new();
-
-        /// <summary>
         /// Reads the specified stream.
         /// </summary>
         /// <param name="stream">The stream.</param>
@@ -71,7 +74,10 @@ namespace Archivist.Formats.Delimited
         {
             var ReturnValue = new Table(_Converter);
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(DelimitedReader));
                 return ReturnValue;
+            }
             var FileContent = await stream.ReadAllAsync().ConfigureAwait(false);
             var Delimiter = "";
             if (string.IsNullOrEmpty(FileContent))

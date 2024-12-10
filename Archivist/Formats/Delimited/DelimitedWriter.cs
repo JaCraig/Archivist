@@ -2,6 +2,8 @@
 using Archivist.DataTypes;
 using Archivist.Interfaces;
 using Archivist.Options;
+using Microsoft.Extensions.Logging;
+using System;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,21 +14,17 @@ namespace Archivist.Formats.Delimited
     /// Delimited file writer
     /// </summary>
     /// <seealso cref="WriterBaseClass"/>
-    public class DelimitedWriter : WriterBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="DelimitedWriter"/> class.
+    /// </remarks>
+    /// <param name="options">The options for the delimited writer.</param>
+    /// <param name="logger">The logger to use for logging.</param>
+    public class DelimitedWriter(DelimitedOptions options, ILogger? logger) : WriterBaseClass(logger)
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DelimitedWriter"/> class.
-        /// </summary>
-        /// <param name="options">The options for the delimited writer.</param>
-        public DelimitedWriter(DelimitedOptions options)
-        {
-            Options = options ?? DelimitedOptions.Default;
-        }
-
         /// <summary>
         /// The options for the delimited writer.
         /// </summary>
-        private DelimitedOptions Options { get; }
+        private DelimitedOptions Options { get; } = options ?? DelimitedOptions.Default;
 
         /// <summary>
         /// Writes the content of the file to the specified stream asynchronously.
@@ -40,7 +38,10 @@ namespace Archivist.Formats.Delimited
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
             if (stream?.CanWrite != true || file is null)
+            {
+                Logger?.LogDebug("DelimitedWriter.WriteAsync(): Stream is null or invalid.");
                 return false;
+            }
             var Builder = new StringBuilder();
             Table? FileTable = file.ToFileType<Table>();
             if (FileTable is not null)
@@ -56,8 +57,9 @@ namespace Archivist.Formats.Delimited
             {
                 await stream.WriteAsync(ByteData).ConfigureAwait(false);
             }
-            catch
+            catch (Exception Ex)
             {
+                Logger?.LogError(Ex, "DelimitedWriter.WriteAsync(): Error writing to stream.");
                 return false;
             }
             return true;

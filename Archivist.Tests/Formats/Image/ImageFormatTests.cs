@@ -15,8 +15,8 @@ namespace Archivist.Tests.Formats.Image
         public ImageFormatTests()
         {
             _Converter = new Convertinator(new[] { Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>(), Substitute.For<IDataConverter>() });
-            _TestClass = new ImageFormat(_Converter);
-            TestObject = new ImageFormat(_Converter);
+            _TestClass = new ImageFormat(_Converter, null);
+            TestObject = new ImageFormat(_Converter, null);
         }
 
         private readonly Convertinator _Converter;
@@ -45,7 +45,7 @@ namespace Archivist.Tests.Formats.Image
         public void CanConstruct()
         {
             // Act
-            var Instance = new ImageFormat(_Converter);
+            var Instance = new ImageFormat(_Converter, null);
 
             // Assert
             Assert.NotNull(Instance);

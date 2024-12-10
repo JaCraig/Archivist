@@ -13,6 +13,7 @@ namespace Archivist.Tests.Converters
     {
         public TablesToStructuredObjectConverterTests()
         {
+            _ = GetServiceProvider();
             _Converter = new TablesToStructuredObjectConverter();
             TestObject = new TablesToStructuredObjectConverter();
         }

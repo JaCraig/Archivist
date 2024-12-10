@@ -1,6 +1,8 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.DataTypes;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
+using System;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +12,11 @@ namespace Archivist.Formats.VCard
     /// <summary>
     /// Represents a writer for VCard files.
     /// </summary>
-    public class VCardWriter : WriterBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="VCardWriter"/> class.
+    /// </remarks>
+    /// <param name="logger">The logger to use for logging.</param>
+    public class VCardWriter(ILogger? logger) : WriterBaseClass(logger)
     {
         /// <summary>
         /// Writes the VCard file asynchronously.
@@ -23,11 +29,17 @@ namespace Archivist.Formats.VCard
         /// </returns>
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
-            if (stream?.CanWrite != true || file is null)
+            if (!IsValidStream(stream) || file is null || stream is null)
+            {
+                Logger?.LogDebug("{writerName}.WriteAsync(): Stream is null or invalid.", nameof(VCardWriter));
                 return false;
+            }
             Card? FileCard = file.ToFileType<Card>();
             if (FileCard is null)
+            {
+                Logger?.LogDebug("{writerName}.WriteAsync(): File is null or not convertable to a card.", nameof(VCardWriter));
                 return false;
+            }
             var FileContent = new StringBuilder("BEGIN:VCARD\r\nVERSION:4.0\r\n");
             foreach (KeyValueField? Field in FileCard.Fields)
             {
@@ -46,8 +58,9 @@ namespace Archivist.Formats.VCard
             {
                 await stream.WriteAsync(TempData).ConfigureAwait(false);
             }
-            catch
+            catch (Exception Ex)
             {
+                Logger?.LogError(Ex, "{writerName}.WriteAsync(): Error occurred while writing the VCard file.", nameof(VCardWriter));
                 return false;
             }
             return true;

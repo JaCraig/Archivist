@@ -12,8 +12,8 @@ namespace Archivist.Tests.Formats.VCard
     {
         public VCardReaderTests()
         {
-            _TestClass = new VCardReader(null);
-            TestObject = new VCardReader(null);
+            _TestClass = new VCardReader(null, null);
+            TestObject = new VCardReader(null, null);
         }
 
         private readonly VCardReader _TestClass;

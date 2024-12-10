@@ -230,8 +230,11 @@ namespace Archivist.Tests.DataTypes
         [Fact]
         public void CanCallGetEnumeratorForIEnumerableWithNoParameters()
         {
+            // Arrange
+            var TestClass = new StructuredObject();
+
             // Act
-            IEnumerator Result = ((IEnumerable)_TestClass).GetEnumerator();
+            IEnumerator Result = ((IEnumerable)TestClass).GetEnumerator();
 
             // Assert
             Assert.NotNull(Result);
@@ -240,8 +243,11 @@ namespace Archivist.Tests.DataTypes
         [Fact]
         public void CanCallGetEnumeratorWithNoParameters()
         {
+            // Arrange
+            var TestClass = new StructuredObject();
+
             // Act
-            IEnumerator<KeyValuePair<string, object?>> Result = _TestClass.GetEnumerator();
+            IEnumerator<KeyValuePair<string, object?>> Result = TestClass.GetEnumerator();
 
             // Assert
             Assert.NotNull(Result);

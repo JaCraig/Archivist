@@ -4,7 +4,7 @@
     <Description>Tests for Archivist</Description>
     <AssemblyTitle>Archivist.Tests</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFrameworks>net9.0</TargetFrameworks>
+    <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
     <DebugType>portable</DebugType>
     <AssemblyName>Archivist.Tests</AssemblyName>
     <PackageId>Archivist.Tests</PackageId>
@@ -126,6 +126,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
       <PrivateAssets>all</PrivateAssets>

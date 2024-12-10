@@ -1,5 +1,6 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Converters;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace Archivist.Formats.JSON
@@ -8,18 +9,14 @@ namespace Archivist.Formats.JSON
     /// Represents the JSON format.
     /// </summary>
     /// <seealso cref="FormatBaseClass{TFormat, TFileReader, TFileWriter}"/>
-    public class JsonFormat : FormatBaseClass<JsonFormat, JsonReader, JsonWriter>
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="JsonFormat"/> class.
+    /// </remarks>
+    /// <param name="options">The options to use when deserializing JSON.</param>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger">The logger.</param>
+    public class JsonFormat(JsonSerializerSettings? options, Convertinator? converter, ILogger<JsonFormat>? logger) : FormatBaseClass<JsonFormat, JsonReader, JsonWriter>(new JsonReader(options, converter, logger), new JsonWriter(options, logger))
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="JsonFormat"/> class.
-        /// </summary>
-        /// <param name="options">The options to use when deserializing JSON.</param>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public JsonFormat(JsonSerializerSettings? options, Convertinator? converter)
-            : base(new JsonReader(options, converter), new JsonWriter(options))
-        {
-        }
-
         /// <summary>
         /// Gets the file extensions associated with the JSON format.
         /// </summary>

@@ -13,8 +13,8 @@ namespace Archivist.Tests.Formats.XML
     {
         public XMLWriterTests()
         {
-            _TestClass = new XMLWriter();
-            TestObject = new XMLWriter();
+            _TestClass = new XMLWriter(null);
+            TestObject = new XMLWriter(null);
         }
 
         private readonly XMLWriter _TestClass;
@@ -37,7 +37,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task WriteAsync_ReturnsFalse_WhenFileIsNotStructuredObjectAsync()
         {
             // Arrange
-            var Writer = new XMLWriter();
+            var Writer = new XMLWriter(null);
             IGenericFile File = Substitute.For<IGenericFile>();
             Stream Stream = new MemoryStream();
             _ = File.ToFileType<StructuredObject>().Returns((StructuredObject?)null);
@@ -53,7 +53,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task WriteAsync_ReturnsFalse_WhenFileIsNullAsync()
         {
             // Arrange
-            var Writer = new XMLWriter();
+            var Writer = new XMLWriter(null);
             Stream Stream = new MemoryStream();
 
             // Act
@@ -67,7 +67,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task WriteAsync_ReturnsFalse_WhenStreamCannotWriteAsync()
         {
             // Arrange
-            var Writer = new XMLWriter();
+            var Writer = new XMLWriter(null);
             IGenericFile File = Substitute.For<IGenericFile>();
             Stream Stream = Substitute.For<Stream>();
             _ = Stream.CanWrite.Returns(false);
@@ -83,7 +83,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task WriteAsync_ReturnsFalse_WhenStreamIsNullAsync()
         {
             // Arrange
-            var Writer = new XMLWriter();
+            var Writer = new XMLWriter(null);
             IGenericFile File = Substitute.For<IGenericFile>();
 
             // Act
@@ -97,7 +97,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task WriteAsync_ReturnsTrue_WhenContentIsNullAsync()
         {
             // Arrange
-            var Writer = new XMLWriter();
+            var Writer = new XMLWriter(null);
             Stream Stream = new MemoryStream();
             var StructuredObject = new StructuredObject();
 
@@ -112,7 +112,7 @@ namespace Archivist.Tests.Formats.XML
         public async Task WriteAsync_ReturnsTrue_WhenWriteObjectIsSuccessfulAsync()
         {
             // Arrange
-            var Writer = new XMLWriter();
+            var Writer = new XMLWriter(null);
             Stream Stream = new MemoryStream();
             var StructuredObject = new StructuredObject();
             _ = StructuredObject.SetValue("TestProperty", "TestValue");

@@ -13,8 +13,8 @@ namespace Archivist.Tests.Formats.ICalendar
     {
         public ICalReaderTests()
         {
-            _TestClass = new ICalReader(null);
-            TestObject = new ICalReader(null);
+            _TestClass = new ICalReader(null, null);
+            TestObject = new ICalReader(null, null);
         }
 
         private readonly ICalReader _TestClass;

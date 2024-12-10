@@ -14,8 +14,8 @@ namespace Archivist.Tests.Formats.Delimited
     {
         public DelimitedWriterTests()
         {
-            _TestClass = new DelimitedWriter(DelimitedOptions.Default);
-            TestObject = new DelimitedWriter(DelimitedOptions.Default);
+            _TestClass = new DelimitedWriter(DelimitedOptions.Default, null);
+            TestObject = new DelimitedWriter(DelimitedOptions.Default, null);
         }
 
         private readonly DelimitedWriter _TestClass;

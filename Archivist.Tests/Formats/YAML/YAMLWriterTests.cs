@@ -13,8 +13,8 @@ namespace Archivist.Tests.Formats.YAML
     {
         public YAMLWriterTests()
         {
-            _TestClass = new YAMLWriter();
-            TestObject = new YAMLWriter();
+            _TestClass = new YAMLWriter(null);
+            TestObject = new YAMLWriter(null);
         }
 
         private readonly YAMLWriter _TestClass;
@@ -42,7 +42,7 @@ namespace Archivist.Tests.Formats.YAML
         public void CanConstruct()
         {
             // Act
-            var Instance = new YAMLWriter();
+            var Instance = new YAMLWriter(null);
 
             // Assert
             Assert.NotNull(Instance);

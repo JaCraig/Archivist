@@ -1,22 +1,19 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Converters;
+using Microsoft.Extensions.Logging;
 
 namespace Archivist.Formats.VCard
 {
     /// <summary>
     /// Represents a VCard format for storing contact information.
     /// </summary>
-    public class VCardFormat : FormatBaseClass<VCardFormat, VCardReader, VCardWriter>
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="VCardFormat"/> class.
+    /// </remarks>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger">The logger.</param>
+    public class VCardFormat(Convertinator? converter, ILogger<VCardFormat>? logger) : FormatBaseClass<VCardFormat, VCardReader, VCardWriter>(new VCardReader(converter, logger), new VCardWriter(logger))
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="VCardFormat"/> class.
-        /// </summary>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public VCardFormat(Convertinator? converter)
-            : base(new VCardReader(converter), new VCardWriter())
-        {
-        }
-
         /// <summary>
         /// Gets the file extensions associated with the VCard format.
         /// </summary>

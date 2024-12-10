@@ -1,5 +1,6 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
 using SkiaSharp;
 using System.IO;
 using System.Threading.Tasks;
@@ -10,15 +11,12 @@ namespace Archivist.Formats.Image
     /// Represents a writer for Image files.
     /// </summary>
     /// <seealso cref="WriterBaseClass"/>
-    public class ImageWriter : WriterBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="ImageWriter"/> class.
+    /// </remarks>
+    /// <param name="logger">The logger to use for logging.</param>
+    public class ImageWriter(ILogger? logger) : WriterBaseClass(logger)
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ImageWriter"/> class.
-        /// </summary>
-        public ImageWriter()
-        {
-        }
-
         /// <summary>
         /// Writes the structured object to the specified stream as Image.
         /// </summary>
@@ -30,14 +28,18 @@ namespace Archivist.Formats.Image
         /// </returns>
         public override Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
-            if (file is null || stream is null)
+            if (file is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{writerName}.WriteAsync(): File or stream is null.", nameof(ImageWriter));
                 return Task.FromResult(false);
-            if (!stream.CanWrite)
-                return Task.FromResult(false);
+            }
             if (file is not DataTypes.Image Image)
                 Image = file.ToFileType<DataTypes.Image>()!;
             if (Image is null)
+            {
+                Logger?.LogDebug("{writerName}.WriteAsync(): File is not an Image.", nameof(ImageWriter));
                 return Task.FromResult(false);
+            }
             SKColorType ColorType = Image.BytesPerPixel switch
             {
                 1 => SKColorType.Gray8,

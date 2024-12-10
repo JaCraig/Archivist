@@ -3,6 +3,7 @@ using Archivist.Converters;
 using Archivist.DataTypes;
 using Archivist.ExtensionMethods;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Dynamic;
@@ -15,18 +16,18 @@ namespace Archivist.Formats.XML
     /// <summary>
     /// Represents a reader for XML files.
     /// </summary>
-    public class XMLReader : ReaderBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="JsonReader"/> class.
+    /// </remarks>
+    /// <param name="options">The options to use when deserializing JSON.</param>
+    /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
+    /// <param name="logger">The logger.</param>
+    public class XMLReader(JsonSerializerSettings? options, Convertinator? converter, ILogger? logger) : ReaderBaseClass(logger)
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="JsonReader"/> class.
+        /// The converter used to convert between IGenericFile objects.
         /// </summary>
-        /// <param name="options">The options to use when deserializing JSON.</param>
-        /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
-        public XMLReader(JsonSerializerSettings? options, Convertinator? converter)
-        {
-            Options = options ?? new JsonSerializerSettings();
-            _Converter = converter;
-        }
+        private readonly Convertinator? _Converter = converter;
 
         /// <summary>
         /// Gets the header information of the XML file.
@@ -36,12 +37,7 @@ namespace Archivist.Formats.XML
         /// <summary>
         /// The options to use when deserializing JSON.
         /// </summary>
-        private JsonSerializerSettings Options { get; }
-
-        /// <summary>
-        /// The converter used to convert between IGenericFile objects.
-        /// </summary>
-        private readonly Convertinator? _Converter;
+        private JsonSerializerSettings Options { get; } = options ?? new JsonSerializerSettings();
 
         /// <summary>
         /// Reads a JSON file asynchronously from the specified stream.
@@ -51,7 +47,10 @@ namespace Archivist.Formats.XML
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             if (stream is null || !IsValidStream(stream))
+            {
+                Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(XMLReader));
                 return new StructuredObject(_Converter, new ExpandoObject());
+            }
             var StreamData = await stream.ReadAllAsync().ConfigureAwait(false);
             if (string.IsNullOrEmpty(StreamData))
                 return new StructuredObject(_Converter, new ExpandoObject());
@@ -78,8 +77,7 @@ namespace Archivist.Formats.XML
             if (data is null)
                 return new ExpandoObject();
             var DataDictionary = data as IDictionary<string, object>;
-            if (DataDictionary.ContainsKey("?xml"))
-                _ = DataDictionary.Remove("?xml");
+            _ = DataDictionary.Remove("?xml");
 
             if (DataDictionary.Count == 1 && DataDictionary.TryGetValue("root", out var Value) && Value is ExpandoObject Root)
                 return Root;

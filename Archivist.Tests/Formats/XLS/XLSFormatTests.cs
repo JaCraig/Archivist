@@ -18,8 +18,8 @@ namespace Archivist.Tests.Formats.XLS
         {
             _Options = Microsoft.Extensions.Options.Options.Create(new ExcelOptions());
             _Converter = new Convertinator(new List<IDataConverter>());
-            _TestClass = new XLSFormat(_Options, _Converter);
-            TestObject = new XLSFormat(_Options, _Converter);
+            _TestClass = new XLSFormat(_Options, _Converter, null);
+            TestObject = new XLSFormat(_Options, _Converter, null);
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
         }
 
@@ -31,7 +31,7 @@ namespace Archivist.Tests.Formats.XLS
         public void CanConstruct()
         {
             // Act
-            var Instance = new XLSFormat(_Options, _Converter);
+            var Instance = new XLSFormat(_Options, _Converter, null);
 
             // Assert
             Assert.NotNull(Instance);

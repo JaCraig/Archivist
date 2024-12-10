@@ -1,6 +1,8 @@
 ﻿using Archivist.BaseClasses;
 using Archivist.DataTypes;
 using Archivist.Interfaces;
+using Microsoft.Extensions.Logging;
+using System;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +12,11 @@ namespace Archivist.Formats.FixedLength
     /// <summary>
     /// Represents a writer for fixed-length files.
     /// </summary>
-    public class FixedLengthWriter : WriterBaseClass
+    /// <remarks>
+    /// Initializes a new instance of the <see cref="FixedLengthWriter"/> class.
+    /// </remarks>
+    /// <param name="logger">The logger to use for logging.</param>
+    public class FixedLengthWriter(ILogger? logger) : WriterBaseClass(logger)
     {
         /// <summary>
         /// Determines if the writer can write the specified file.
@@ -28,14 +34,18 @@ namespace Archivist.Formats.FixedLength
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
             if (file is not FixedLengthFile FixedLengthFile || stream is null)
+            {
+                Logger?.LogDebug("{writerName}.WriteAsync(): File is null or invalid.", nameof(FixedLengthWriter));
                 return false;
+            }
             var TempData = Encoding.UTF8.GetBytes(FixedLengthFile.GetContent() ?? "");
             try
             {
                 await stream.WriteAsync(TempData).ConfigureAwait(false);
             }
-            catch
+            catch (Exception Ex)
             {
+                Logger?.LogError(Ex, "{writerName}.WriteAsync(): An error occurred while writing the file.", nameof(FixedLengthWriter));
                 return false;
             }
             return true;

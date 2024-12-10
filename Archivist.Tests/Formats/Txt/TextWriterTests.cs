@@ -12,8 +12,8 @@ namespace Archivist.Tests.Formats.Txt
     {
         public TextWriterTests()
         {
-            _TestClass = new Archivist.Formats.Txt.TextWriter();
-            TestObject = new Archivist.Formats.Txt.TextWriter();
+            _TestClass = new Archivist.Formats.Txt.TextWriter(null);
+            TestObject = new Archivist.Formats.Txt.TextWriter(null);
         }
 
         private readonly Archivist.Formats.Txt.TextWriter _TestClass;
