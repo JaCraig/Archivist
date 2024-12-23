@@ -16,19 +16,12 @@ namespace Archivist.Formats.XML
     /// <summary>
     /// Represents a reader for XML files.
     /// </summary>
-    /// <remarks>
-    /// Initializes a new instance of the <see cref="JsonReader"/> class.
-    /// </remarks>
+    /// <remarks>Initializes a new instance of the <see cref="JsonReader"/> class.</remarks>
     /// <param name="options">The options to use when deserializing JSON.</param>
     /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
     /// <param name="logger">The logger.</param>
     public class XMLReader(JsonSerializerSettings? options, Convertinator? converter, ILogger? logger) : ReaderBaseClass(logger)
     {
-        /// <summary>
-        /// The converter used to convert between IGenericFile objects.
-        /// </summary>
-        private readonly Convertinator? _Converter = converter;
-
         /// <summary>
         /// Gets the header information of the XML file.
         /// </summary>
@@ -40,13 +33,18 @@ namespace Archivist.Formats.XML
         private JsonSerializerSettings Options { get; } = options ?? new JsonSerializerSettings();
 
         /// <summary>
+        /// The converter used to convert between IGenericFile objects.
+        /// </summary>
+        private readonly Convertinator? _Converter = converter;
+
+        /// <summary>
         /// Reads a JSON file asynchronously from the specified stream.
         /// </summary>
         /// <param name="stream">The stream to read the JSON file from.</param>
         /// <returns>The parsed JSON file.</returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(XMLReader));
                 return new StructuredObject(_Converter, new ExpandoObject());

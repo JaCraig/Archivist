@@ -24,11 +24,6 @@ namespace Archivist.Formats.XLS
         : ReaderBaseClass(logger)
     {
         /// <summary>
-        /// The converter.
-        /// </summary>
-        private readonly Convertinator? _Converter = converter;
-
-        /// <summary>
         /// Gets the header information for XLS files.
         /// </summary>
         public override byte[] HeaderInfo { get; } = new byte[] { 0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1 };
@@ -39,13 +34,18 @@ namespace Archivist.Formats.XLS
         private ExcelOptions Options { get; } = options ?? ExcelOptions.Default;
 
         /// <summary>
+        /// The converter.
+        /// </summary>
+        private readonly Convertinator? _Converter = converter;
+
+        /// <summary>
         /// Determines if the reader can read the given stream as an XLS file.
         /// </summary>
         /// <param name="stream">The stream to read.</param>
         /// <returns>True if the reader can read the file, false otherwise.</returns>
         public override bool InternalCanRead(Stream? stream)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.InternalCanRead(): Stream is null or invalid.", nameof(XLSReader));
                 return false;
@@ -72,7 +72,7 @@ namespace Archivist.Formats.XLS
         public override Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             var ReturnValue = new DataTypes.Tables(_Converter);
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(XLSReader));
                 return Task.FromResult<IGenericFile?>(ReturnValue);

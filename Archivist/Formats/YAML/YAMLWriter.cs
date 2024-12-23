@@ -14,9 +14,7 @@ namespace Archivist.Formats.YAML
     /// <summary>
     /// Represents a YAML writer for serializing structured objects.
     /// </summary>
-    /// <remarks>
-    /// Initializes a new instance of the <see cref="YAMLWriter"/> class.
-    /// </remarks>
+    /// <remarks>Initializes a new instance of the <see cref="YAMLWriter"/> class.</remarks>
     /// <param name="logger">The logger to use for logging.</param>
     public class YAMLWriter(ILogger? logger) : WriterBaseClass(logger)
     {
@@ -36,7 +34,7 @@ namespace Archivist.Formats.YAML
         /// </returns>
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
-            if (file is null || !IsValidStream(stream) || stream is null)
+            if (file is null || !IsValidStream(stream))
             {
                 Logger?.LogDebug("{writerName}.WriteAsync(): File or stream is null or invalid.", nameof(YAMLWriter));
                 return false;

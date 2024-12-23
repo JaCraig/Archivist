@@ -41,16 +41,6 @@ namespace Archivist.Formats.Delimited
         }
 
         /// <summary>
-        /// The converter
-        /// </summary>
-        private readonly Convertinator? _Converter;
-
-        /// <summary>
-        /// Gets the delimiter splitters.
-        /// </summary>
-        private readonly Dictionary<string, Regex> _DelimiterSplitters = new();
-
-        /// <summary>
         /// Gets the header information.
         /// </summary>
         public override byte[] HeaderInfo { get; } = Array.Empty<byte>();
@@ -66,6 +56,16 @@ namespace Archivist.Formats.Delimited
         private DelimitedOptions Options { get; }
 
         /// <summary>
+        /// The converter
+        /// </summary>
+        private readonly Convertinator? _Converter;
+
+        /// <summary>
+        /// Gets the delimiter splitters.
+        /// </summary>
+        private readonly Dictionary<string, Regex> _DelimiterSplitters = new();
+
+        /// <summary>
         /// Reads the specified stream.
         /// </summary>
         /// <param name="stream">The stream.</param>
@@ -73,7 +73,7 @@ namespace Archivist.Formats.Delimited
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             var ReturnValue = new Table(_Converter);
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(DelimitedReader));
                 return ReturnValue;

@@ -14,22 +14,20 @@ namespace Archivist.Formats.Image
     /// <summary>
     /// Represents a reader for Image files.
     /// </summary>
-    /// <remarks>
-    /// Initializes a new instance of the <see cref="ImageReader"/> class.
-    /// </remarks>
+    /// <remarks>Initializes a new instance of the <see cref="ImageReader"/> class.</remarks>
     /// <param name="converter">The converter used to convert between IGenericFile objects.</param>
     /// <param name="logger">The logger.</param>
     public class ImageReader(Convertinator? converter, ILogger? logger) : ReaderBaseClass(logger)
     {
         /// <summary>
-        /// The converter used to convert between IGenericFile objects.
-        /// </summary>
-        private readonly Convertinator? _Converter = converter;
-
-        /// <summary>
         /// Gets the header information for the Image format.
         /// </summary>
         public override byte[] HeaderInfo => Array.Empty<byte>();
+
+        /// <summary>
+        /// The converter used to convert between IGenericFile objects.
+        /// </summary>
+        private readonly Convertinator? _Converter = converter;
 
         /// <summary>
         /// Determines if the reader can read the specified stream.
@@ -38,7 +36,7 @@ namespace Archivist.Formats.Image
         /// <returns><c>true</c> if the reader can read the stream; otherwise, <c>false</c>.</returns>
         public override bool InternalCanRead(Stream? stream)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.CanRead(): Stream is null or invalid.", nameof(ImageReader));
                 return false;
@@ -64,7 +62,7 @@ namespace Archivist.Formats.Image
         public override Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             var ReturnValue = new DataTypes.Image(_Converter);
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(ImageReader));
                 return Task.FromResult<IGenericFile?>(ReturnValue);
@@ -91,7 +89,7 @@ namespace Archivist.Formats.Image
         /// <param name="logger">The logger.</param>
         private static void GetImageData(Stream? stream, DataTypes.Image returnValue, ILogger? logger)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 logger?.LogDebug("{readerName}.GetImageData(): Stream is null or invalid.", nameof(ImageReader));
                 return;
@@ -118,7 +116,7 @@ namespace Archivist.Formats.Image
         /// <param name="logger">The logger.</param>
         private static void GetImageFormat(Stream? stream, DataTypes.Image returnValue, ILogger? logger)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 logger?.LogDebug("{readerName}.GetImageFormat(): Stream is null or invalid.", nameof(ImageReader));
                 return;
@@ -145,7 +143,7 @@ namespace Archivist.Formats.Image
         /// <param name="logger">The logger.</param>
         private static void GetImageMetadata(Stream? stream, DataTypes.Image returnValue, ILogger? logger)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 logger?.LogDebug("{readerName}.GetImageMetadata(): Stream is null or invalid.", nameof(ImageReader));
                 return;

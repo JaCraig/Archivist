@@ -11,9 +11,7 @@ namespace Archivist.Formats.Txt
     /// <summary>
     /// Represents a text writer for the Txt format.
     /// </summary>
-    /// <remarks>
-    /// Initializes a new instance of the <see cref="TextWriter"/> class.
-    /// </remarks>
+    /// <remarks>Initializes a new instance of the <see cref="TextWriter"/> class.</remarks>
     /// <param name="logger">The logger to use for logging.</param>
     public class TextWriter(ILogger? logger) : WriterBaseClass(logger)
     {
@@ -25,7 +23,7 @@ namespace Archivist.Formats.Txt
         /// <returns>True if the file was written successfully; otherwise, false.</returns>
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
-            if (!IsValidStream(stream) || stream is null)
+            if (!IsValidStream(stream))
             {
                 Logger?.LogError("TextWriter.WriteAsync(): Stream is null or invalid.");
                 return false;

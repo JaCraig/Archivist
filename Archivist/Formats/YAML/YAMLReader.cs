@@ -45,7 +45,7 @@ namespace Archivist.Formats.YAML
         /// <returns><c>true</c> if the reader can read the stream; otherwise, <c>false</c>.</returns>
         public override bool InternalCanRead(Stream? stream)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.InternalCanRead(): Stream is null or invalid.", nameof(YAMLReader));
                 return false;
@@ -73,7 +73,7 @@ namespace Archivist.Formats.YAML
         /// <returns>The parsed YAML file.</returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(YAMLReader));
                 return new StructuredObject();

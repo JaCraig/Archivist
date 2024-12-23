@@ -1,5 +1,6 @@
 ﻿using Archivist.Interfaces;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Threading.Tasks;
 
@@ -8,9 +9,7 @@ namespace Archivist.BaseClasses
     /// <summary>
     /// Base class for format writers.
     /// </summary>
-    /// <remarks>
-    /// Initializes a new instance of the <see cref="WriterBaseClass"/> class.
-    /// </remarks>
+    /// <remarks>Initializes a new instance of the <see cref="WriterBaseClass"/> class.</remarks>
     /// <param name="logger">The logger to use for logging.</param>
     public abstract class WriterBaseClass(ILogger? logger) : IFormatWriter
     {
@@ -31,7 +30,10 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="file">The file to be written.</param>
         /// <param name="stream">The stream to write the file to.</param>
-        /// <returns>A task representing the asynchronous write operation. The task result is <c>true</c> if the write operation is successful; otherwise, <c>false</c>.</returns>
+        /// <returns>
+        /// A task representing the asynchronous write operation. The task result is <c>true</c> if
+        /// the write operation is successful; otherwise, <c>false</c>.
+        /// </returns>
         public abstract Task<bool> WriteAsync(IGenericFile? file, Stream? stream);
 
         /// <summary>
@@ -39,6 +41,6 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="stream">The stream to write to.</param>
         /// <returns><c>true</c> if the stream is valid for writing; otherwise, <c>false</c>.</returns>
-        protected static bool IsValidStream(Stream? stream) => stream?.CanWrite ?? false;
+        protected static bool IsValidStream([NotNullWhen(true)] Stream? stream) => stream?.CanWrite ?? false;
     }
 }

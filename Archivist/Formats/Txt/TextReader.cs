@@ -40,7 +40,7 @@ namespace Archivist.Formats.Txt
         /// </returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(TextReader));
                 return new Text(_Converter, "", "");
@@ -60,7 +60,7 @@ namespace Archivist.Formats.Txt
         /// </returns>
         private static async Task<string> GetDataAsync(Stream? stream, ILogger? logger)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
                 return "";
             try
             {

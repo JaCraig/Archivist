@@ -19,19 +19,12 @@ namespace Archivist.Formats.Excel
     /// Represents a reader for Excel files.
     /// </summary>
     /// <seealso cref="ReaderBaseClass"/>
-    /// <remarks>
-    /// Initializes a new instance of the <see cref="ExcelReader"/> class.
-    /// </remarks>
+    /// <remarks>Initializes a new instance of the <see cref="ExcelReader"/> class.</remarks>
     /// <param name="options">The Excel options.</param>
     /// <param name="converter">The converter.</param>
     /// <param name="logger">The logger.</param>
     public class ExcelReader(ExcelOptions options, Convertinator? converter, ILogger? logger) : ReaderBaseClass(logger)
     {
-        /// <summary>
-        /// The converter.
-        /// </summary>
-        private readonly Convertinator? _Converter = converter;
-
         /// <summary>
         /// Gets the header information for Excel files.
         /// </summary>
@@ -62,13 +55,18 @@ namespace Archivist.Formats.Excel
         };
 
         /// <summary>
+        /// The converter.
+        /// </summary>
+        private readonly Convertinator? _Converter = converter;
+
+        /// <summary>
         /// Determines if the reader can read the given stream as an Excel file.
         /// </summary>
         /// <param name="stream">The stream to read.</param>
         /// <returns>True if the reader can read the file, false otherwise.</returns>
         public override bool InternalCanRead(Stream? stream)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.InternalCanRead(): Stream is null or invalid.", nameof(ExcelReader));
                 return false;
@@ -97,7 +95,7 @@ namespace Archivist.Formats.Excel
         public override Task<IGenericFile?> ReadAsync(Stream? stream)
         {
             var ReturnValue = new DataTypes.Tables(_Converter);
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(ExcelReader));
                 return Task.FromResult<IGenericFile?>(ReturnValue);

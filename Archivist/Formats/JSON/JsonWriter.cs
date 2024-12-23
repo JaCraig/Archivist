@@ -36,7 +36,7 @@ namespace Archivist.Formats.JSON
         /// </returns>
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
-            if (file is null || stream is null || !IsValidStream(stream))
+            if (file is null || !IsValidStream(stream))
             {
                 Logger?.LogDebug("{writerName}.WriteAsync(): File is null or stream is invalid.", nameof(JsonWriter));
                 return false;

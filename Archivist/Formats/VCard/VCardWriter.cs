@@ -12,9 +12,7 @@ namespace Archivist.Formats.VCard
     /// <summary>
     /// Represents a writer for VCard files.
     /// </summary>
-    /// <remarks>
-    /// Initializes a new instance of the <see cref="VCardWriter"/> class.
-    /// </remarks>
+    /// <remarks>Initializes a new instance of the <see cref="VCardWriter"/> class.</remarks>
     /// <param name="logger">The logger to use for logging.</param>
     public class VCardWriter(ILogger? logger) : WriterBaseClass(logger)
     {
@@ -29,7 +27,7 @@ namespace Archivist.Formats.VCard
         /// </returns>
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
-            if (!IsValidStream(stream) || file is null || stream is null)
+            if (!IsValidStream(stream) || file is null)
             {
                 Logger?.LogDebug("{writerName}.WriteAsync(): Stream is null or invalid.", nameof(VCardWriter));
                 return false;

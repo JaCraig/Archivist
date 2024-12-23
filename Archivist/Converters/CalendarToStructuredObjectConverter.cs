@@ -2,6 +2,7 @@
 using Archivist.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace Archivist.Converters
@@ -16,6 +17,7 @@ namespace Archivist.Converters
         /// </summary>
         /// <param name="file">The Calendar object to convert.</param>
         /// <returns>The converted StructuredObject object.</returns>
+        [return: NotNullIfNotNull(nameof(file))]
         public static StructuredObject? Convert(Calendar? file)
         {
             if (file is null)
@@ -52,6 +54,8 @@ namespace Archivist.Converters
         /// <param name="source">The source object to convert.</param>
         /// <param name="destination">The destination type.</param>
         /// <returns>The converted object.</returns>
+        [return: NotNullIfNotNull(nameof(source))]
+        [return: NotNullIfNotNull(nameof(destination))]
         public object? Convert(object? source, Type? destination)
         {
             if (source is not Calendar File || destination is null)

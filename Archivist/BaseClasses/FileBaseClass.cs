@@ -9,18 +9,11 @@ namespace Archivist.BaseClasses
     /// Base class for file types in the Archivist library.
     /// </summary>
     /// <typeparam name="TFileType">The specific file type derived from this base class.</typeparam>
-    public abstract class FileBaseClass<TFileType> : IGenericFile
+    /// <remarks>Initializes a new instance of the FileBaseClass class.</remarks>
+    /// <param name="converter">The type converter.</param>
+    public abstract class FileBaseClass<TFileType>(Convertinator? converter) : IGenericFile
         where TFileType : FileBaseClass<TFileType>
     {
-        /// <summary>
-        /// Initializes a new instance of the FileBaseClass class.
-        /// </summary>
-        /// <param name="converter">The type converter.</param>
-        protected FileBaseClass(Convertinator? converter)
-        {
-            Converter = converter ?? Convertinator.Instance;
-        }
-
         /// <summary>
         /// Gets or sets the metadata associated with the file.
         /// </summary>
@@ -34,7 +27,7 @@ namespace Archivist.BaseClasses
         /// <summary>
         /// Gets the type converter.
         /// </summary>
-        protected Convertinator? Converter { get; }
+        protected Convertinator? Converter { get; } = converter ?? Convertinator.Instance;
 
         /// <summary>
         /// Determines if the two file objects are not equal.

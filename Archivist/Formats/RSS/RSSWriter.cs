@@ -15,9 +15,7 @@ namespace Archivist.Formats.RSS
     /// <summary>
     /// Represents a RSS writer for the Txt format.
     /// </summary>
-    /// <remarks>
-    /// Initializes a new instance of the <see cref="RSSWriter"/> class.
-    /// </remarks>
+    /// <remarks>Initializes a new instance of the <see cref="RSSWriter"/> class.</remarks>
     /// <param name="logger">The logger to use for logging.</param>
     public class RSSWriter(ILogger? logger) : WriterBaseClass(logger)
     {
@@ -30,7 +28,7 @@ namespace Archivist.Formats.RSS
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
             Feed? FeedFile = file?.ToFileType<Feed>();
-            if (!IsValidStream(stream) || stream is null || FeedFile is null)
+            if (!IsValidStream(stream) || FeedFile is null)
             {
                 Logger?.LogDebug("{writerName}.WriteAsync(): Stream is null or invalid.", nameof(RSSWriter));
                 return false;

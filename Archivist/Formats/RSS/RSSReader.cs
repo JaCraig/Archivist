@@ -44,7 +44,7 @@ namespace Archivist.Formats.RSS
         /// <returns><c>true</c> if the reader can read the stream; otherwise, <c>false</c>.</returns>
         public override bool InternalCanRead(Stream? stream)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.InternalCanRead(): Stream is null or invalid.", nameof(RSSReader));
                 return false;
@@ -74,7 +74,7 @@ namespace Archivist.Formats.RSS
         /// </returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(RSSReader));
                 return new Feed(_Converter);
@@ -98,7 +98,7 @@ namespace Archivist.Formats.RSS
         /// </returns>
         private static async Task<string> GetDataAsync(Stream? stream, ILogger? logger)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
                 return "";
             try
             {

@@ -56,7 +56,7 @@ namespace Archivist.Formats.ICalendar
         /// </returns>
         public override async Task<IGenericFile?> ReadAsync(Stream? stream)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.ReadAsync(): Stream is null or invalid.", nameof(ICalReader));
                 return new Calendar(Converter);

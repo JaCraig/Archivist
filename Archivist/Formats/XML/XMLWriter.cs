@@ -13,9 +13,7 @@ namespace Archivist.Formats.XML
     /// <summary>
     /// Represents a writer for XML files.
     /// </summary>
-    /// <remarks>
-    /// Initializes a new instance of the <see cref="XMLWriter"/> class.
-    /// </remarks>
+    /// <remarks>Initializes a new instance of the <see cref="XMLWriter"/> class.</remarks>
     /// <param name="logger">The logger to use for logging.</param>
     public class XMLWriter(ILogger? logger) : WriterBaseClass(logger)
     {
@@ -30,7 +28,7 @@ namespace Archivist.Formats.XML
         /// </returns>
         public override async Task<bool> WriteAsync(IGenericFile? file, Stream? stream)
         {
-            if (file is null || !IsValidStream(stream) || stream is null)
+            if (file is null || !IsValidStream(stream))
                 return false;
             if (file is not StructuredObject StructuredObject)
                 StructuredObject = file.ToFileType<StructuredObject>()!;

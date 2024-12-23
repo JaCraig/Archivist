@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System;
 using System.Buffers;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Threading.Tasks;
 
@@ -11,9 +12,7 @@ namespace Archivist.BaseClasses
     /// Base class for format readers.
     /// </summary>
     /// <seealso cref="IFormatReader"/>
-    /// <remarks>
-    /// Initializes a new instance of the <see cref="ReaderBaseClass"/> class.
-    /// </remarks>
+    /// <remarks>Initializes a new instance of the <see cref="ReaderBaseClass"/> class.</remarks>
     /// <param name="logger">The logger to use for logging.</param>
     public abstract class ReaderBaseClass(ILogger? logger) : IFormatReader
     {
@@ -34,7 +33,7 @@ namespace Archivist.BaseClasses
         /// <returns><c>true</c> if the reader can read the stream; otherwise, <c>false</c>.</returns>
         public bool CanRead(Stream? stream)
         {
-            if (stream is null || !IsValidStream(stream))
+            if (!IsValidStream(stream))
             {
                 Logger?.LogDebug("{readerName}.CanRead(): Stream is null or invalid.", GetType().Name);
                 return false;
@@ -72,7 +71,7 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="stream">The stream to read.</param>
         /// <returns><c>true</c> if the reader can read the file; otherwise, <c>false</c>.</returns>
-        public virtual bool InternalCanRead(Stream? stream) => true;
+        public virtual bool InternalCanRead([NotNullWhen(true)] Stream? stream) => true;
 
         /// <summary>
         /// Reads the file asynchronously.
@@ -88,7 +87,7 @@ namespace Archivist.BaseClasses
         /// </summary>
         /// <param name="stream">The stream to validate.</param>
         /// <returns><c>true</c> if the stream is valid; otherwise, <c>false</c>.</returns>
-        protected static bool IsValidStream(Stream? stream)
+        protected static bool IsValidStream([NotNullWhen(true)] Stream? stream)
         {
             if (stream?.CanRead != true)
                 return false;
