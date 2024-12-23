@@ -18,6 +18,7 @@ namespace Archivist.Tests.BaseClasses
         protected TestBaseClass()
         {
             ObjectType = null;
+            _ = GetServiceProvider();
         }
 
         /// <summary>
@@ -54,6 +55,12 @@ namespace Archivist.Tests.BaseClasses
         }
 
         /// <summary>
+        /// Gets the type of the object.
+        /// </summary>
+        /// <value>The type of the object.</value>
+        protected abstract Type? ObjectType { get; }
+
+        /// <summary>
         /// The service provider lock
         /// </summary>
         private static readonly object _ServiceProviderLock = new();
@@ -62,12 +69,6 @@ namespace Archivist.Tests.BaseClasses
         /// The service provider
         /// </summary>
         private static IServiceProvider? _ServiceProvider;
-
-        /// <summary>
-        /// Gets the type of the object.
-        /// </summary>
-        /// <value>The type of the object.</value>
-        protected abstract Type? ObjectType { get; }
 
         /// <summary>
         /// Attempts to break the object.
