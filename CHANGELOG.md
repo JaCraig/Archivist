@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.10.3"></a>
+## [0.10.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.3) (2024-12-24)
+
+### Bug Fixes
+
+* bump YamlDotNet in /Archivist in the dependencies group ([93c7f24](https://www.github.com/JaCraig/Archivist/commit/93c7f24348cedc861720c1be8a17c5882c7f9344))
+
+### Other
+
+* Merge pull request #112 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-637ad84d5b ([6bac049](https://www.github.com/JaCraig/Archivist/commit/6bac049078e253d80b2fc85ebacde7865029e8b2))
+* Merge pull request #113 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-637ad84d5b ([c4feffa](https://www.github.com/JaCraig/Archivist/commit/c4feffaca9f55caaf05d3b12b9bc7e9f4db8cd98))
+* Merge pull request #114 from JaCraig/dependabot/nuget/Archivist/dependencies-a91fa8372e ([cc0d276](https://www.github.com/JaCraig/Archivist/commit/cc0d276ee19d441aa5898d2591978874034819d7))
+* bump xunit.runner.visualstudio ([96b6ac3](https://www.github.com/JaCraig/Archivist/commit/96b6ac34aa9149c12811d11220d1fce9d5fa512a))
+* bump xunit.runner.visualstudio ([a362480](https://www.github.com/JaCraig/Archivist/commit/a3624809cbe019518065ad581f14c7f800243b29))
+* **core:** code clean up ([614ff81](https://www.github.com/JaCraig/Archivist/commit/614ff818c0f6ea1b53d0543b6766e6d263fddf7d))
+* **TestBaseClass:** test fix ([6c98b80](https://www.github.com/JaCraig/Archivist/commit/6c98b80d678c3f4bd8c0d72edc5a927140653dfe))
+
 <a name="0.10.2"></a>
 ## [0.10.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.2) (2024-12-10)
 
