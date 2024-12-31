@@ -1,8 +1,6 @@
 using Archivist.Modules;
 using Archivist.Tests.BaseClasses;
 using Microsoft.Extensions.DependencyInjection;
-using NSubstitute;
-using System;
 using Xunit;
 
 namespace Archivist.Tests.Modules
@@ -21,7 +19,7 @@ namespace Archivist.Tests.Modules
         public void CanCallLoad()
         {
             // Arrange
-            IServiceCollection ServiceDescriptors = Substitute.For<IServiceCollection>();
+            IServiceCollection ServiceDescriptors = new ServiceCollection();
 
             // Act
             _TestClass.Load(ServiceDescriptors);

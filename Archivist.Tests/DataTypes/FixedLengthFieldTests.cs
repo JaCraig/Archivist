@@ -9,6 +9,7 @@ namespace Archivist.Tests.DataTypes
     {
         public FixedLengthFieldTests()
         {
+            _ = GetServiceProvider();
             _Value = "TestValue667958263";
             _MaxLength = 17;
             _FillerCharacter = 'u';

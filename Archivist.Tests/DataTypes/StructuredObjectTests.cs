@@ -10,6 +10,7 @@ namespace Archivist.Tests.DataTypes
     {
         public StructuredObjectTests()
         {
+            GetServiceProvider();
             _TestClass = new StructuredObject();
             TestObject = new StructuredObject();
         }

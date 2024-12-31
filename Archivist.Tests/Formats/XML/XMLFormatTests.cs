@@ -13,6 +13,7 @@ namespace Archivist.Tests.Formats.XML
     {
         public XMLFormatTests()
         {
+            _ = GetServiceProvider();
             _Options = new JsonSerializerSettings();
             _TestClass = new XMLFormat(_Options, null, null);
             TestObject = new XMLFormat(_Options, null, null);

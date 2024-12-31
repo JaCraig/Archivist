@@ -9,6 +9,7 @@ namespace Archivist.Tests.DataTypes
     {
         public KeyValueFieldTests()
         {
+            GetServiceProvider();
             _Property = "TestValue1888918131";
             _Parameters = new[] { new KeyValueParameter("TestValue685308228", "TestValue180072147"), new KeyValueParameter("TestValue90202416", "TestValue350054617"), new KeyValueParameter("TestValue2036030522", "TestValue437133569") };
             _Value = "TestValue1524892779";

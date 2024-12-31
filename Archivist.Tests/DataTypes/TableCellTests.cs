@@ -8,6 +8,7 @@ namespace Archivist.Tests.DataTypes
     {
         public TableCellTests()
         {
+            _ = GetServiceProvider();
             _Content = "TestValue388175019";
             _TestClass = new TableCell(_Content);
             TestObject = new TableCell(_Content);

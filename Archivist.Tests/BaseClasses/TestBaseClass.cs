@@ -1,5 +1,6 @@
 ﻿using Mecha.Core;
 using Microsoft.Extensions.DependencyInjection;
+using ObjectCartographer.ExtensionMethods;
 using System;
 using System.Threading.Tasks;
 using Xunit;
@@ -51,14 +52,9 @@ namespace Archivist.Tests.BaseClasses
         /// </summary>
         protected TestBaseClass()
         {
+            _ = GetServiceProvider();
             _ = Mech.Default;
         }
-
-        /// <summary>
-        /// Gets the type of the object.
-        /// </summary>
-        /// <value>The type of the object.</value>
-        protected abstract Type? ObjectType { get; }
 
         /// <summary>
         /// The service provider lock
@@ -69,6 +65,12 @@ namespace Archivist.Tests.BaseClasses
         /// The service provider
         /// </summary>
         private static IServiceProvider? _ServiceProvider;
+
+        /// <summary>
+        /// Gets the type of the object.
+        /// </summary>
+        /// <value>The type of the object.</value>
+        protected abstract Type? ObjectType { get; }
 
         /// <summary>
         /// Attempts to break the object.
@@ -89,7 +91,7 @@ namespace Archivist.Tests.BaseClasses
             {
                 if (_ServiceProvider is not null)
                     return _ServiceProvider;
-                _ServiceProvider = new ServiceCollection().AddLogging().AddCanisterModules()?.BuildServiceProvider();
+                _ServiceProvider = new ServiceCollection().AddLogging().RegisterObjectCartographer().AddCanisterModules()?.BuildServiceProvider();
             }
             return _ServiceProvider;
         }

@@ -10,6 +10,7 @@ namespace Archivist.Tests.DataTypes
     {
         public TableTests()
         {
+            _ = GetServiceProvider();
             _TestClass = new Table();
             TestObject = new Table();
         }

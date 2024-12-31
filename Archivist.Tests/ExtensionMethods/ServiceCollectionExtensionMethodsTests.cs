@@ -1,7 +1,5 @@
-using Archivist.ExtensionMethods;
 using Archivist.Tests.BaseClasses;
 using Microsoft.Extensions.DependencyInjection;
-using NSubstitute;
 using System;
 using Xunit;
 
@@ -15,7 +13,7 @@ namespace Archivist.Tests.ExtensionMethods
         public void CanCallAddArchivist()
         {
             // Arrange
-            IServiceCollection Services = Substitute.For<IServiceCollection>();
+            IServiceCollection Services = new ServiceCollection();
 
             // Act
             IServiceCollection? Result = Services.AddArchivist();
