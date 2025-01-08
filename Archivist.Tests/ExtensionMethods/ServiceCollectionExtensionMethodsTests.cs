@@ -7,7 +7,12 @@ namespace Archivist.Tests.ExtensionMethods
 {
     public class ServiceCollectionExtensionMethodsTests : TestBaseClass
     {
-        protected override Type? ObjectType { get; } = typeof(ServiceCollectionExtensionMethods);
+        public ServiceCollectionExtensionMethodsTests()
+        {
+            _ = GetServiceProvider();
+        }
+
+        protected override Type? ObjectType { get; } = null;
 
         [Fact]
         public void CanCallAddArchivist()
