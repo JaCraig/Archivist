@@ -12934,15 +12934,15 @@ references:
   commentId: T:Archivist.Formats.Delimited.DelimitedFormat
   fullName: Archivist.Formats.Delimited.DelimitedFormat
   nameWithType: DelimitedFormat
-- uid: Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions},Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
-  name: DelimitedFormat(IOptions<DelimitedOptions>?, Convertinator?, ILogger?)
-  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_DelimitedOptions__Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_
-  commentId: M:Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions},Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger)
-  name.vb: New(IOptions(Of DelimitedOptions), Convertinator, ILogger)
-  fullName: Archivist.Formats.Delimited.DelimitedFormat.DelimitedFormat(Microsoft.Extensions.Options.IOptions<Archivist.Options.DelimitedOptions>?, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger?)
-  fullName.vb: Archivist.Formats.Delimited.DelimitedFormat.New(Microsoft.Extensions.Options.IOptions(Of Archivist.Options.DelimitedOptions), Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger)
-  nameWithType: DelimitedFormat.DelimitedFormat(IOptions<DelimitedOptions>?, Convertinator?, ILogger?)
-  nameWithType.vb: DelimitedFormat.New(IOptions(Of DelimitedOptions), Convertinator, ILogger)
+- uid: Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions},Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.Delimited.DelimitedFormat})
+  name: DelimitedFormat(IOptions<DelimitedOptions>?, Convertinator?, ILogger<DelimitedFormat>?)
+  href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat__ctor_Microsoft_Extensions_Options_IOptions_Archivist_Options_DelimitedOptions__Archivist_Converters_Convertinator_Microsoft_Extensions_Logging_ILogger_Archivist_Formats_Delimited_DelimitedFormat__
+  commentId: M:Archivist.Formats.Delimited.DelimitedFormat.#ctor(Microsoft.Extensions.Options.IOptions{Archivist.Options.DelimitedOptions},Archivist.Converters.Convertinator,Microsoft.Extensions.Logging.ILogger{Archivist.Formats.Delimited.DelimitedFormat})
+  name.vb: New(IOptions(Of DelimitedOptions), Convertinator, ILogger(Of DelimitedFormat))
+  fullName: Archivist.Formats.Delimited.DelimitedFormat.DelimitedFormat(Microsoft.Extensions.Options.IOptions<Archivist.Options.DelimitedOptions>?, Archivist.Converters.Convertinator?, Microsoft.Extensions.Logging.ILogger<Archivist.Formats.Delimited.DelimitedFormat>?)
+  fullName.vb: Archivist.Formats.Delimited.DelimitedFormat.New(Microsoft.Extensions.Options.IOptions(Of Archivist.Options.DelimitedOptions), Archivist.Converters.Convertinator, Microsoft.Extensions.Logging.ILogger(Of Archivist.Formats.Delimited.DelimitedFormat))
+  nameWithType: DelimitedFormat.DelimitedFormat(IOptions<DelimitedOptions>?, Convertinator?, ILogger<DelimitedFormat>?)
+  nameWithType.vb: DelimitedFormat.New(IOptions(Of DelimitedOptions), Convertinator, ILogger(Of DelimitedFormat))
 - uid: Archivist.Formats.Delimited.DelimitedFormat.#ctor*
   name: DelimitedFormat
   href: api/Archivist.Formats.Delimited.DelimitedFormat.html#Archivist_Formats_Delimited_DelimitedFormat__ctor_
