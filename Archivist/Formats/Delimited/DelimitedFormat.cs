@@ -16,7 +16,7 @@ namespace Archivist.Formats.Delimited
     /// <param name="options">The options.</param>
     /// <param name="converter">The converter.</param>
     /// <param name="logger">The logger.</param>
-    public class DelimitedFormat(IOptions<DelimitedOptions>? options, Convertinator? converter, ILogger? logger)
+    public class DelimitedFormat(IOptions<DelimitedOptions>? options, Convertinator? converter, ILogger<DelimitedFormat>? logger)
         : FormatBaseClass<DelimitedFormat, DelimitedReader, DelimitedWriter>(
             new DelimitedReader(options?.Value ?? DelimitedOptions.Default, converter, logger),
             new DelimitedWriter(options?.Value ?? DelimitedOptions.Default, logger))
