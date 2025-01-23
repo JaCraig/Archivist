@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.10.5"></a>
+## [0.10.5](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.5) (2025-01-23)
+
+### Bug Fixes
+
+* **logging:** update logger type in DelimitedFormat ([13d035f](https://www.github.com/JaCraig/Archivist/commit/13d035f49a7f0e756350087f582da88491af9f01))
+
 <a name="0.10.4"></a>
 ## [0.10.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.4) (2025-01-23)
 
