@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.10.8"></a>
+## [0.10.8](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.8) (2025-02-12)
+
+### Bug Fixes
+
+* **dependencies:** update test and logging package versions ([e92586e](https://www.github.com/JaCraig/Archivist/commit/e92586ebff2b0ffeb07adefe7e0d1c6b3b92f7f1))
+
 <a name="0.10.7"></a>
 ## [0.10.7](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.7) (2025-02-12)
 
