@@ -18,7 +18,11 @@
           "relative_path": "api/Archivist.BaseClasses.FileBaseClass-1.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.BaseClasses.FileBaseClass<TFileType>",
+      "Summary": "<p sourcefile=\"api/Archivist.BaseClasses.FileBaseClass-1.yml\" sourcestartlinenumber=\"1\">Base class for file types in the Archivist library.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -28,7 +32,11 @@
           "relative_path": "api/Archivist.BaseClasses.FixedLengthFormatBaseClass-2.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.BaseClasses.FixedLengthFormatBaseClass<TFormat, TFileReader>",
+      "Summary": "<p sourcefile=\"api/Archivist.BaseClasses.FixedLengthFormatBaseClass-2.yml\" sourcestartlinenumber=\"1\">Base class for fixed-length format classes.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -38,7 +46,11 @@
           "relative_path": "api/Archivist.BaseClasses.FormatBaseClass-3.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.BaseClasses.FormatBaseClass<TFormat, TFileReader, TFileWriter>",
+      "Summary": "<p sourcefile=\"api/Archivist.BaseClasses.FormatBaseClass-3.yml\" sourcestartlinenumber=\"1\">Base class for file formats.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -48,7 +60,11 @@
           "relative_path": "api/Archivist.BaseClasses.ReaderBaseClass.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.BaseClasses.ReaderBaseClass",
+      "Summary": "<p sourcefile=\"api/Archivist.BaseClasses.ReaderBaseClass.yml\" sourcestartlinenumber=\"1\">Base class for format readers.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -58,7 +74,11 @@
           "relative_path": "api/Archivist.BaseClasses.WriterBaseClass.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.BaseClasses.WriterBaseClass",
+      "Summary": "<p sourcefile=\"api/Archivist.BaseClasses.WriterBaseClass.yml\" sourcestartlinenumber=\"1\">Base class for format writers.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -68,7 +88,11 @@
           "relative_path": "api/Archivist.BaseClasses.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.BaseClasses",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -78,7 +102,11 @@
           "relative_path": "api/Archivist.Converters.AnythingToImageConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.AnythingToImageConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.AnythingToImageConverter.yml\" sourcestartlinenumber=\"1\">Converts any object to Image type.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -88,7 +116,11 @@
           "relative_path": "api/Archivist.Converters.AnythingToTextConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.AnythingToTextConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.AnythingToTextConverter.yml\" sourcestartlinenumber=\"1\">Converts any object to Text type.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -98,7 +130,11 @@
           "relative_path": "api/Archivist.Converters.CalendarToCardConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.CalendarToCardConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.CalendarToCardConverter.yml\" sourcestartlinenumber=\"1\">Converts a <xref href=\"Archivist.DataTypes.CalendarComponent\" data-throw-if-not-resolved=\"false\"></xref> object to a <xref href=\"Archivist.DataTypes.Card\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -108,7 +144,11 @@
           "relative_path": "api/Archivist.Converters.CalendarToFeedConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.CalendarToFeedConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.CalendarToFeedConverter.yml\" sourcestartlinenumber=\"1\">Converts a <xref href=\"Archivist.DataTypes.CalendarComponent\" data-throw-if-not-resolved=\"false\"></xref> object to a <xref href=\"Archivist.DataTypes.Feed\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -118,7 +158,11 @@
           "relative_path": "api/Archivist.Converters.CalendarToStructuredObjectConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.CalendarToStructuredObjectConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.CalendarToStructuredObjectConverter.yml\" sourcestartlinenumber=\"1\">Converts a Calendar object to a StructuredObject object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -128,7 +172,11 @@
           "relative_path": "api/Archivist.Converters.CalendarToTableConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.CalendarToTableConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.CalendarToTableConverter.yml\" sourcestartlinenumber=\"1\">Converts a Calendar object to a Table object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -138,7 +186,11 @@
           "relative_path": "api/Archivist.Converters.CalendarToTablesConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.CalendarToTablesConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.CalendarToTablesConverter.yml\" sourcestartlinenumber=\"1\">Converts a Calendar object to Tables object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -148,7 +200,11 @@
           "relative_path": "api/Archivist.Converters.CardToCalendarConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.CardToCalendarConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.CardToCalendarConverter.yml\" sourcestartlinenumber=\"1\">Converts a Card object to a Calendar object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -158,7 +214,11 @@
           "relative_path": "api/Archivist.Converters.CardToFeedConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.CardToFeedConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.CardToFeedConverter.yml\" sourcestartlinenumber=\"1\">Converts a Card object to a Feed object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -168,7 +228,11 @@
           "relative_path": "api/Archivist.Converters.CardToStructuredObjectConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.CardToStructuredObjectConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.CardToStructuredObjectConverter.yml\" sourcestartlinenumber=\"1\">Converts a Card object to a StructuredObject object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -178,7 +242,11 @@
           "relative_path": "api/Archivist.Converters.CardToTableConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.CardToTableConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.CardToTableConverter.yml\" sourcestartlinenumber=\"1\">Converts a Card object to a Table object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -188,7 +256,11 @@
           "relative_path": "api/Archivist.Converters.CardToTablesConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.CardToTablesConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.CardToTablesConverter.yml\" sourcestartlinenumber=\"1\">Converts a Card object to Tables object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -198,7 +270,11 @@
           "relative_path": "api/Archivist.Converters.Convertinator.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.Convertinator",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.Convertinator.yml\" sourcestartlinenumber=\"1\">Converts data from one type to another using a collection of IDataConverter implementations.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -208,7 +284,11 @@
           "relative_path": "api/Archivist.Converters.FeedToCalendarConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.FeedToCalendarConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.FeedToCalendarConverter.yml\" sourcestartlinenumber=\"1\">Converts a Feed object to a Calendar object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -218,7 +298,11 @@
           "relative_path": "api/Archivist.Converters.FeedToCardConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.FeedToCardConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.FeedToCardConverter.yml\" sourcestartlinenumber=\"1\">Converts a <xref href=\"Archivist.DataTypes.Feed\" data-throw-if-not-resolved=\"false\"></xref> object to a <xref href=\"Archivist.DataTypes.Card\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -228,7 +312,11 @@
           "relative_path": "api/Archivist.Converters.FeedToStructuredObjectConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.FeedToStructuredObjectConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.FeedToStructuredObjectConverter.yml\" sourcestartlinenumber=\"1\">Converts a Feed object to a StructuredObject object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -238,7 +326,11 @@
           "relative_path": "api/Archivist.Converters.FeedToTableConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.FeedToTableConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.FeedToTableConverter.yml\" sourcestartlinenumber=\"1\">Converts a Feed object to a Table object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -248,7 +340,11 @@
           "relative_path": "api/Archivist.Converters.FeedToTablesConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.FeedToTablesConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.FeedToTablesConverter.yml\" sourcestartlinenumber=\"1\">Converts a Feed object to Tables object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -258,7 +354,11 @@
           "relative_path": "api/Archivist.Converters.ImageToAnythingConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.ImageToAnythingConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.ImageToAnythingConverter.yml\" sourcestartlinenumber=\"1\">Converts a Image object to a Anything object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -268,7 +368,11 @@
           "relative_path": "api/Archivist.Converters.StructuredObjectToCalendarConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.StructuredObjectToCalendarConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.StructuredObjectToCalendarConverter.yml\" sourcestartlinenumber=\"1\">Converts a StructuredObject to a Calendar.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -278,7 +382,11 @@
           "relative_path": "api/Archivist.Converters.StructuredObjectToCardConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.StructuredObjectToCardConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.StructuredObjectToCardConverter.yml\" sourcestartlinenumber=\"1\">Converts a StructuredObject to a Card.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -288,7 +396,11 @@
           "relative_path": "api/Archivist.Converters.StructuredObjectToFeedConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.StructuredObjectToFeedConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.StructuredObjectToFeedConverter.yml\" sourcestartlinenumber=\"1\">Converts a StructuredObject to a Feed.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -298,7 +410,11 @@
           "relative_path": "api/Archivist.Converters.StructuredObjectToTableConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.StructuredObjectToTableConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.StructuredObjectToTableConverter.yml\" sourcestartlinenumber=\"1\">Converts a StructuredObject to a Table.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -308,7 +424,11 @@
           "relative_path": "api/Archivist.Converters.StructuredObjectToTablesConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.StructuredObjectToTablesConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.StructuredObjectToTablesConverter.yml\" sourcestartlinenumber=\"1\">Converts a StructuredObject to Tables.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -318,7 +438,11 @@
           "relative_path": "api/Archivist.Converters.TableToCalendarConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.TableToCalendarConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.TableToCalendarConverter.yml\" sourcestartlinenumber=\"1\">Converts a Table object to a Calendar object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -328,7 +452,11 @@
           "relative_path": "api/Archivist.Converters.TableToCardConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.TableToCardConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.TableToCardConverter.yml\" sourcestartlinenumber=\"1\">Converts a Table object to a Card object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -338,7 +466,11 @@
           "relative_path": "api/Archivist.Converters.TableToFeedConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.TableToFeedConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.TableToFeedConverter.yml\" sourcestartlinenumber=\"1\">Converts a Table object to a Feed object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -348,7 +480,11 @@
           "relative_path": "api/Archivist.Converters.TableToStructuredObjectConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.TableToStructuredObjectConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.TableToStructuredObjectConverter.yml\" sourcestartlinenumber=\"1\">Converts a Table object to a StructuredObject object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -358,7 +494,11 @@
           "relative_path": "api/Archivist.Converters.TableToTablesConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.TableToTablesConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.TableToTablesConverter.yml\" sourcestartlinenumber=\"1\">Converts a single <xref href=\"Archivist.DataTypes.Table\" data-throw-if-not-resolved=\"false\"></xref> object to a collection of <xref href=\"Archivist.DataTypes.Tables\" data-throw-if-not-resolved=\"false\"></xref> objects.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -368,7 +508,11 @@
           "relative_path": "api/Archivist.Converters.TablesToCalendarConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.TablesToCalendarConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.TablesToCalendarConverter.yml\" sourcestartlinenumber=\"1\">Converts Tables to Calendar.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -378,7 +522,11 @@
           "relative_path": "api/Archivist.Converters.TablesToCardConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.TablesToCardConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.TablesToCardConverter.yml\" sourcestartlinenumber=\"1\">Converts Tables to Card.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -388,7 +536,11 @@
           "relative_path": "api/Archivist.Converters.TablesToFeedConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.TablesToFeedConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.TablesToFeedConverter.yml\" sourcestartlinenumber=\"1\">Converts Tables to Feed.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -398,7 +550,11 @@
           "relative_path": "api/Archivist.Converters.TablesToStructuredObjectConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.TablesToStructuredObjectConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.TablesToStructuredObjectConverter.yml\" sourcestartlinenumber=\"1\">Converts Tables to StructuredObject.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -408,7 +564,11 @@
           "relative_path": "api/Archivist.Converters.TablesToTableConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters.TablesToTableConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Converters.TablesToTableConverter.yml\" sourcestartlinenumber=\"1\">Converts a collection of Tables to a single Table.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -418,7 +578,11 @@
           "relative_path": "api/Archivist.Converters.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Converters",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -428,7 +592,11 @@
           "relative_path": "api/Archivist.DataTypes.Calendar.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Calendar",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Calendar.yml\" sourcestartlinenumber=\"1\">Represents a calendar object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -438,7 +606,11 @@
           "relative_path": "api/Archivist.DataTypes.CalendarComponent.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.CalendarComponent",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.CalendarComponent.yml\" sourcestartlinenumber=\"1\">Represents a Calendar (vCalendar, etc.) file.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -448,7 +620,11 @@
           "relative_path": "api/Archivist.DataTypes.Card.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Card",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Card.yml\" sourcestartlinenumber=\"1\">Represents a card (vCard, etc.) file.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -458,7 +634,11 @@
           "relative_path": "api/Archivist.DataTypes.Feed.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Feed",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Feed.yml\" sourcestartlinenumber=\"1\">Represents a Feed object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -468,7 +648,11 @@
           "relative_path": "api/Archivist.DataTypes.Feeds.Channel.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Feeds.Channel",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Feeds.Channel.yml\" sourcestartlinenumber=\"1\">Channel</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -478,7 +662,11 @@
           "relative_path": "api/Archivist.DataTypes.Feeds.Enclosure.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Feeds.Enclosure",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Feeds.Enclosure.yml\" sourcestartlinenumber=\"1\">Enclosure</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -488,7 +676,11 @@
           "relative_path": "api/Archivist.DataTypes.Feeds.FeedGuid.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Feeds.FeedGuid",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Feeds.FeedGuid.yml\" sourcestartlinenumber=\"1\">Feed GUID for RSS feeds.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -498,7 +690,11 @@
           "relative_path": "api/Archivist.DataTypes.Feeds.FeedItem.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Feeds.FeedItem",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Feeds.FeedItem.yml\" sourcestartlinenumber=\"1\">Feed item</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -508,7 +704,11 @@
           "relative_path": "api/Archivist.DataTypes.Feeds.Thumbnail.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Feeds.Thumbnail",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Feeds.Thumbnail.yml\" sourcestartlinenumber=\"1\">Thumbnail</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -518,7 +718,11 @@
           "relative_path": "api/Archivist.DataTypes.Feeds.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Feeds",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -528,7 +732,11 @@
           "relative_path": "api/Archivist.DataTypes.FixedLengthField.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.FixedLengthField",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.FixedLengthField.yml\" sourcestartlinenumber=\"1\">Represents a fixed-length field.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -538,7 +746,11 @@
           "relative_path": "api/Archivist.DataTypes.FixedLengthFile.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.FixedLengthFile",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.FixedLengthFile.yml\" sourcestartlinenumber=\"1\">Represents a fixed-length file.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -548,7 +760,11 @@
           "relative_path": "api/Archivist.DataTypes.FixedLengthRecord.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.FixedLengthRecord",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.FixedLengthRecord.yml\" sourcestartlinenumber=\"1\">Represents a fixed-length record.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -558,7 +774,11 @@
           "relative_path": "api/Archivist.DataTypes.Image.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Image",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Image.yml\" sourcestartlinenumber=\"1\">Image data type.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -568,7 +788,11 @@
           "relative_path": "api/Archivist.DataTypes.KeyValueField.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.KeyValueField",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.KeyValueField.yml\" sourcestartlinenumber=\"1\">Represents a field in a card.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -578,7 +802,11 @@
           "relative_path": "api/Archivist.DataTypes.KeyValueParameter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.KeyValueParameter",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.KeyValueParameter.yml\" sourcestartlinenumber=\"1\">Represents a parameter for a card field.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -588,7 +816,11 @@
           "relative_path": "api/Archivist.DataTypes.StructuredObject.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.StructuredObject",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.StructuredObject.yml\" sourcestartlinenumber=\"1\">Represents a structured object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -598,7 +830,11 @@
           "relative_path": "api/Archivist.DataTypes.Table.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Table",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Table.yml\" sourcestartlinenumber=\"1\">Represents a table in the Archivist system.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -608,7 +844,11 @@
           "relative_path": "api/Archivist.DataTypes.TableCell.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.TableCell",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.TableCell.yml\" sourcestartlinenumber=\"1\">Represents a cell in a table.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -618,7 +858,11 @@
           "relative_path": "api/Archivist.DataTypes.TableRow.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.TableRow",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.TableRow.yml\" sourcestartlinenumber=\"1\">Represents a table row.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -628,7 +872,11 @@
           "relative_path": "api/Archivist.DataTypes.Tables.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Tables",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Tables.yml\" sourcestartlinenumber=\"1\">Represents a collection of tables.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -638,7 +886,11 @@
           "relative_path": "api/Archivist.DataTypes.Text.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes.Text",
+      "Summary": "<p sourcefile=\"api/Archivist.DataTypes.Text.yml\" sourcestartlinenumber=\"1\">Represents a text file.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -648,7 +900,11 @@
           "relative_path": "api/Archivist.DataTypes.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.DataTypes",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -658,7 +914,11 @@
           "relative_path": "api/Archivist.Enums.CalendarMethods.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Enums.CalendarMethods",
+      "Summary": "<p sourcefile=\"api/Archivist.Enums.CalendarMethods.yml\" sourcestartlinenumber=\"1\">Represents the methods of a calendar item.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -668,7 +928,11 @@
           "relative_path": "api/Archivist.Enums.CalendarStatuses.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Enums.CalendarStatuses",
+      "Summary": "<p sourcefile=\"api/Archivist.Enums.CalendarStatuses.yml\" sourcestartlinenumber=\"1\">Represents the possible statuses of a calendar.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -678,7 +942,11 @@
           "relative_path": "api/Archivist.Enums.CommonCalendarFields.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Enums.CommonCalendarFields",
+      "Summary": "<p sourcefile=\"api/Archivist.Enums.CommonCalendarFields.yml\" sourcestartlinenumber=\"1\">Common ICal/VCal fields.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -688,7 +956,11 @@
           "relative_path": "api/Archivist.Enums.CommonCardFields.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Enums.CommonCardFields",
+      "Summary": "<p sourcefile=\"api/Archivist.Enums.CommonCardFields.yml\" sourcestartlinenumber=\"1\">Represents the common fields for a card.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -698,7 +970,11 @@
           "relative_path": "api/Archivist.Enums.CommonImageMetadataFields.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Enums.CommonImageMetadataFields",
+      "Summary": "<p sourcefile=\"api/Archivist.Enums.CommonImageMetadataFields.yml\" sourcestartlinenumber=\"1\">Common image metadata fields.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -708,7 +984,11 @@
           "relative_path": "api/Archivist.Enums.ImageTypes.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Enums.ImageTypes",
+      "Summary": "<p sourcefile=\"api/Archivist.Enums.ImageTypes.yml\" sourcestartlinenumber=\"1\">Image types.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -718,7 +998,11 @@
           "relative_path": "api/Archivist.Enums.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Enums",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -728,7 +1012,11 @@
           "relative_path": "api/Archivist.ExtensionMethods.InternalExtensionMethods.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.ExtensionMethods.InternalExtensionMethods",
+      "Summary": "<p sourcefile=\"api/Archivist.ExtensionMethods.InternalExtensionMethods.yml\" sourcestartlinenumber=\"1\">Internal extension methods.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -738,7 +1026,11 @@
           "relative_path": "api/Archivist.ExtensionMethods.InternalStringFormatter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.ExtensionMethods.InternalStringFormatter",
+      "Summary": "<p sourcefile=\"api/Archivist.ExtensionMethods.InternalStringFormatter.yml\" sourcestartlinenumber=\"1\">Generic string formatter</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -748,7 +1040,11 @@
           "relative_path": "api/Archivist.ExtensionMethods.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.ExtensionMethods",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -758,7 +1054,11 @@
           "relative_path": "api/Archivist.FormatManager.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.FormatManager",
+      "Summary": "<p sourcefile=\"api/Archivist.FormatManager.yml\" sourcestartlinenumber=\"1\">Represents a manager for handling different file formats.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -768,7 +1068,11 @@
           "relative_path": "api/Archivist.Formats.Delimited.DelimitedFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Delimited.DelimitedFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Delimited.DelimitedFormat.yml\" sourcestartlinenumber=\"1\">Delimited file format</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -778,7 +1082,11 @@
           "relative_path": "api/Archivist.Formats.Delimited.DelimitedReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Delimited.DelimitedReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Delimited.DelimitedReader.yml\" sourcestartlinenumber=\"1\">Delimited file reader</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -788,7 +1096,11 @@
           "relative_path": "api/Archivist.Formats.Delimited.DelimitedWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Delimited.DelimitedWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Delimited.DelimitedWriter.yml\" sourcestartlinenumber=\"1\">Delimited file writer</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -798,7 +1110,11 @@
           "relative_path": "api/Archivist.Formats.Delimited.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Delimited",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -808,7 +1124,11 @@
           "relative_path": "api/Archivist.Formats.Excel.ExcelFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Excel.ExcelFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Excel.ExcelFormat.yml\" sourcestartlinenumber=\"1\">Represents the Excel format in the Archivist library.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -818,7 +1138,11 @@
           "relative_path": "api/Archivist.Formats.Excel.ExcelReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Excel.ExcelReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Excel.ExcelReader.yml\" sourcestartlinenumber=\"1\">Represents a reader for Excel files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -828,7 +1152,11 @@
           "relative_path": "api/Archivist.Formats.Excel.ExcelWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Excel.ExcelWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Excel.ExcelWriter.yml\" sourcestartlinenumber=\"1\">Writes an Excel file.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -838,7 +1166,11 @@
           "relative_path": "api/Archivist.Formats.Excel.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Excel",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -848,7 +1180,11 @@
           "relative_path": "api/Archivist.Formats.FixedLength.FixedLengthWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.FixedLength.FixedLengthWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.FixedLength.FixedLengthWriter.yml\" sourcestartlinenumber=\"1\">Represents a writer for fixed-length files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -858,7 +1194,11 @@
           "relative_path": "api/Archivist.Formats.FixedLength.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.FixedLength",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -868,7 +1208,11 @@
           "relative_path": "api/Archivist.Formats.ICalendar.ICalFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.ICalendar.ICalFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.ICalendar.ICalFormat.yml\" sourcestartlinenumber=\"1\">Represents the ICal format.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -878,7 +1222,11 @@
           "relative_path": "api/Archivist.Formats.ICalendar.ICalReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.ICalendar.ICalReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.ICalendar.ICalReader.yml\" sourcestartlinenumber=\"1\">Represents a reader for ICal files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -888,7 +1236,11 @@
           "relative_path": "api/Archivist.Formats.ICalendar.ICalWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.ICalendar.ICalWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.ICalendar.ICalWriter.yml\" sourcestartlinenumber=\"1\">Represents a writer for ICal files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -898,7 +1250,11 @@
           "relative_path": "api/Archivist.Formats.ICalendar.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.ICalendar",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -908,7 +1264,11 @@
           "relative_path": "api/Archivist.Formats.Image.ImageFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Image.ImageFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Image.ImageFormat.yml\" sourcestartlinenumber=\"1\">Represents the Image format.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -918,7 +1278,11 @@
           "relative_path": "api/Archivist.Formats.Image.ImageReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Image.ImageReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Image.ImageReader.yml\" sourcestartlinenumber=\"1\">Represents a reader for Image files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -928,7 +1292,11 @@
           "relative_path": "api/Archivist.Formats.Image.ImageWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Image.ImageWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Image.ImageWriter.yml\" sourcestartlinenumber=\"1\">Represents a writer for Image files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -938,7 +1306,11 @@
           "relative_path": "api/Archivist.Formats.Image.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Image",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -948,7 +1320,11 @@
           "relative_path": "api/Archivist.Formats.JSON.JsonFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.JSON.JsonFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.JSON.JsonFormat.yml\" sourcestartlinenumber=\"1\">Represents the JSON format.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -958,7 +1334,11 @@
           "relative_path": "api/Archivist.Formats.JSON.JsonReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.JSON.JsonReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.JSON.JsonReader.yml\" sourcestartlinenumber=\"1\">Represents a reader for JSON files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -968,7 +1348,11 @@
           "relative_path": "api/Archivist.Formats.JSON.JsonWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.JSON.JsonWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.JSON.JsonWriter.yml\" sourcestartlinenumber=\"1\">Represents a JSON writer for serializing structured objects.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -978,7 +1362,11 @@
           "relative_path": "api/Archivist.Formats.JSON.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.JSON",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -988,7 +1376,11 @@
           "relative_path": "api/Archivist.Formats.RSS.RSSFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.RSS.RSSFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.RSS.RSSFormat.yml\" sourcestartlinenumber=\"1\">Represents a RSS format for archiving.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -998,7 +1390,11 @@
           "relative_path": "api/Archivist.Formats.RSS.RSSReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.RSS.RSSReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.RSS.RSSReader.yml\" sourcestartlinenumber=\"1\">Represents a RSS reader for reading RSS files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1008,7 +1404,11 @@
           "relative_path": "api/Archivist.Formats.RSS.RSSWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.RSS.RSSWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.RSS.RSSWriter.yml\" sourcestartlinenumber=\"1\">Represents a RSS writer for the Txt format.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1018,7 +1418,11 @@
           "relative_path": "api/Archivist.Formats.RSS.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.RSS",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1028,7 +1432,11 @@
           "relative_path": "api/Archivist.Formats.Txt.TextFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Txt.TextFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Txt.TextFormat.yml\" sourcestartlinenumber=\"1\">Represents a text format for archiving.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1038,7 +1446,11 @@
           "relative_path": "api/Archivist.Formats.Txt.TextReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Txt.TextReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Txt.TextReader.yml\" sourcestartlinenumber=\"1\">Represents a text reader for reading text files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1048,7 +1460,11 @@
           "relative_path": "api/Archivist.Formats.Txt.TextWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Txt.TextWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.Txt.TextWriter.yml\" sourcestartlinenumber=\"1\">Represents a text writer for the Txt format.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1058,7 +1474,11 @@
           "relative_path": "api/Archivist.Formats.Txt.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.Txt",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1068,7 +1488,11 @@
           "relative_path": "api/Archivist.Formats.VCard.VCardFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.VCard.VCardFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.VCard.VCardFormat.yml\" sourcestartlinenumber=\"1\">Represents a VCard format for storing contact information.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1078,7 +1502,11 @@
           "relative_path": "api/Archivist.Formats.VCard.VCardReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.VCard.VCardReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.VCard.VCardReader.yml\" sourcestartlinenumber=\"1\">Represents a reader for VCard files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1088,7 +1516,11 @@
           "relative_path": "api/Archivist.Formats.VCard.VCardWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.VCard.VCardWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.VCard.VCardWriter.yml\" sourcestartlinenumber=\"1\">Represents a writer for VCard files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1098,7 +1530,11 @@
           "relative_path": "api/Archivist.Formats.VCard.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.VCard",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1108,7 +1544,11 @@
           "relative_path": "api/Archivist.Formats.XLS.XLSFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.XLS.XLSFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.XLS.XLSFormat.yml\" sourcestartlinenumber=\"1\">Represents the XLS format in the Archivist library.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1118,7 +1558,11 @@
           "relative_path": "api/Archivist.Formats.XLS.XLSReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.XLS.XLSReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.XLS.XLSReader.yml\" sourcestartlinenumber=\"1\">Represents a reader for XLS files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1128,7 +1572,11 @@
           "relative_path": "api/Archivist.Formats.XLS.XLSWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.XLS.XLSWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.XLS.XLSWriter.yml\" sourcestartlinenumber=\"1\">Writes an XLS file.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1138,7 +1586,11 @@
           "relative_path": "api/Archivist.Formats.XLS.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.XLS",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1148,7 +1600,11 @@
           "relative_path": "api/Archivist.Formats.XML.XMLFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.XML.XMLFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.XML.XMLFormat.yml\" sourcestartlinenumber=\"1\">Represents an XML format for storing data.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1158,7 +1614,11 @@
           "relative_path": "api/Archivist.Formats.XML.XMLReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.XML.XMLReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.XML.XMLReader.yml\" sourcestartlinenumber=\"1\">Represents a reader for XML files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1168,7 +1628,11 @@
           "relative_path": "api/Archivist.Formats.XML.XMLWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.XML.XMLWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.XML.XMLWriter.yml\" sourcestartlinenumber=\"1\">Represents a writer for XML files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1178,7 +1642,11 @@
           "relative_path": "api/Archivist.Formats.XML.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.XML",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1188,7 +1656,11 @@
           "relative_path": "api/Archivist.Formats.YAML.YAMLFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.YAML.YAMLFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.YAML.YAMLFormat.yml\" sourcestartlinenumber=\"1\">Represents an YAML format for storing data.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1198,7 +1670,11 @@
           "relative_path": "api/Archivist.Formats.YAML.YAMLReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.YAML.YAMLReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.YAML.YAMLReader.yml\" sourcestartlinenumber=\"1\">Represents a reader for YAML files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1208,7 +1684,11 @@
           "relative_path": "api/Archivist.Formats.YAML.YAMLWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.YAML.YAMLWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Formats.YAML.YAMLWriter.yml\" sourcestartlinenumber=\"1\">Represents a YAML writer for serializing structured objects.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1218,7 +1698,11 @@
           "relative_path": "api/Archivist.Formats.YAML.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Formats.YAML",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1228,7 +1712,11 @@
           "relative_path": "api/Archivist.Interfaces.IDataConverter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Interfaces.IDataConverter",
+      "Summary": "<p sourcefile=\"api/Archivist.Interfaces.IDataConverter.yml\" sourcestartlinenumber=\"1\">Interface for data converters.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1238,7 +1726,11 @@
           "relative_path": "api/Archivist.Interfaces.IFormat.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Interfaces.IFormat",
+      "Summary": "<p sourcefile=\"api/Archivist.Interfaces.IFormat.yml\" sourcestartlinenumber=\"1\">Represents a file format.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1248,7 +1740,11 @@
           "relative_path": "api/Archivist.Interfaces.IFormatReader.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Interfaces.IFormatReader",
+      "Summary": "<p sourcefile=\"api/Archivist.Interfaces.IFormatReader.yml\" sourcestartlinenumber=\"1\">Represents a format reader.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1258,7 +1754,11 @@
           "relative_path": "api/Archivist.Interfaces.IFormatWriter.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Interfaces.IFormatWriter",
+      "Summary": "<p sourcefile=\"api/Archivist.Interfaces.IFormatWriter.yml\" sourcestartlinenumber=\"1\">Represents a format writer.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1268,7 +1768,11 @@
           "relative_path": "api/Archivist.Interfaces.IGenericFile.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Interfaces.IGenericFile",
+      "Summary": "<p sourcefile=\"api/Archivist.Interfaces.IGenericFile.yml\" sourcestartlinenumber=\"1\">Represents a generic file.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1278,7 +1782,11 @@
           "relative_path": "api/Archivist.Interfaces.IListConvertable.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Interfaces.IListConvertable",
+      "Summary": "<p sourcefile=\"api/Archivist.Interfaces.IListConvertable.yml\" sourcestartlinenumber=\"1\">Represents a list convertable object.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1288,7 +1796,11 @@
           "relative_path": "api/Archivist.Interfaces.IObjectConvertable.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Interfaces.IObjectConvertable",
+      "Summary": "<p sourcefile=\"api/Archivist.Interfaces.IObjectConvertable.yml\" sourcestartlinenumber=\"1\">Represents an object that can be converted to another type.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1298,7 +1810,11 @@
           "relative_path": "api/Archivist.Interfaces.ISubProcessor.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Interfaces.ISubProcessor",
+      "Summary": "<p sourcefile=\"api/Archivist.Interfaces.ISubProcessor.yml\" sourcestartlinenumber=\"1\">Interface for sub-processors.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1308,7 +1824,11 @@
           "relative_path": "api/Archivist.Interfaces.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Interfaces",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1318,7 +1838,11 @@
           "relative_path": "api/Archivist.Modules.CanisterModule.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Modules.CanisterModule",
+      "Summary": "<p sourcefile=\"api/Archivist.Modules.CanisterModule.yml\" sourcestartlinenumber=\"1\">Represents a module for registering services related to Canister.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1328,7 +1852,11 @@
           "relative_path": "api/Archivist.Modules.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Modules",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1338,7 +1866,11 @@
           "relative_path": "api/Archivist.Options.DelimitedOptions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Options.DelimitedOptions",
+      "Summary": "<p sourcefile=\"api/Archivist.Options.DelimitedOptions.yml\" sourcestartlinenumber=\"1\">Represents the options for handling delimited data.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1348,7 +1880,11 @@
           "relative_path": "api/Archivist.Options.ExcelOptions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Options.ExcelOptions",
+      "Summary": "<p sourcefile=\"api/Archivist.Options.ExcelOptions.yml\" sourcestartlinenumber=\"1\">Represents the options for Excel files.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1358,7 +1894,11 @@
           "relative_path": "api/Archivist.Options.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist.Options",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1368,7 +1908,11 @@
           "relative_path": "api/Archivist.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Archivist",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1378,7 +1922,11 @@
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods",
+      "Summary": "<p sourcefile=\"api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensionMethods.yml\" sourcestartlinenumber=\"1\">Extension methods for IServiceCollection to add Archivist services.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1388,7 +1936,11 @@
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection",
+      "Summary": null
     },
     {
       "type": "Conceptual",
