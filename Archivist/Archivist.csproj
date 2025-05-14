@@ -48,8 +48,8 @@
     <PackageReference Include="DocumentFormat.OpenXml" Version="3.3.0" />
     <PackageReference Include="ExcelDataReader" Version="3.7.0" />
     <PackageReference Include="MetadataExtractor" Version="2.8.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.5" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -59,7 +59,7 @@
     <PackageReference Include="ObjectCartographer" Version="4.1.2" />
     <PackageReference Include="SkiaSharp" Version="3.119.0" />
     <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="3.119.0" />
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="9.0.4" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="9.0.5" />
     <PackageReference Include="Tesseract" Version="5.2.0" />
     <PackageReference Include="YamlDotNet" Version="16.3.0" />
   </ItemGroup>
