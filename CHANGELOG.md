@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.10.9"></a>
+## [0.10.9](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.9) (2025-05-14)
+
+### Bug Fixes
+
+* **tests:** update package versions for test projects ([a1925ce](https://www.github.com/JaCraig/Archivist/commit/a1925ce4f7a1615723edc6f8c77d88fe62359e1b))
+
+### Other
+
+* Merge pull request #137 from JaCraig/dependabot/nuget/Archivist.Benchmarks/dependencies-d389a50c21 ([9402796](https://www.github.com/JaCraig/Archivist/commit/9402796de8ea34082ffa2acc8c3a8978e302de13))
+* Merge pull request #138 from JaCraig/dependabot/nuget/Archivist.Benchmarks/dependencies-8e6529ec26 ([cf26c83](https://www.github.com/JaCraig/Archivist/commit/cf26c835a9ee9bb06f58094e0110b22e3412cc0e))
+* Merge pull request #139 from JaCraig/dependabot/nuget/Archivist.Benchmarks/dependencies-cf5c6a25db ([d858953](https://www.github.com/JaCraig/Archivist/commit/d858953fd7f7040f258e68552265f39e8b70fec5))
+* Merge pull request #140 from JaCraig/dependabot/nuget/Archivist.Benchmarks/dependencies-b38da39cfb ([d0c92e7](https://www.github.com/JaCraig/Archivist/commit/d0c92e7f4fac79734bf672e01cb59231c187a80e))
+* Merge pull request #141 from JaCraig/dependabot/nuget/Archivist/multi-c74f1608dc ([7d9c5a6](https://www.github.com/JaCraig/Archivist/commit/7d9c5a6745f496882aed739e86842e6053998d24))
+* Update: ([3abf3a7](https://www.github.com/JaCraig/Archivist/commit/3abf3a7c8f42c73b2dcf7fb0ffa7c4467693cae7))
+* bump DocumentFormat.OpenXml ([5256c10](https://www.github.com/JaCraig/Archivist/commit/5256c10473a4b60bb1e9a52e7001caa77466996e))
+* bump the dependencies group ([31fe927](https://www.github.com/JaCraig/Archivist/commit/31fe927ef3054dd45febaad13e167f603aa63486))
+* bump the dependencies group ([28c95e8](https://www.github.com/JaCraig/Archivist/commit/28c95e8b25d56fd2da969a2f09c8a357978ee862))
+* bump the dependencies group ([ef1cc23](https://www.github.com/JaCraig/Archivist/commit/ef1cc2349c7cd66580a8594d0f725a622db22f2e))
+
 <a name="0.10.8"></a>
 ## [0.10.8](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.8) (2025-02-12)
 
