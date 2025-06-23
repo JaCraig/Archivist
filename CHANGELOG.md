@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.10.11"></a>
+## [0.10.11](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.11) (2025-06-23)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([5dae447](https://www.github.com/JaCraig/Archivist/commit/5dae4474971f6703406680866744c2dcb91e3b02))
+
+### Other
+
+* Merge pull request #143 from JaCraig/dependabot/nuget/Archivist/dependencies-8e5d53f3b2 ([43e8238](https://www.github.com/JaCraig/Archivist/commit/43e8238bc32050be1e8c53e43b4c2aed7393d73a))
+
 <a name="0.10.10"></a>
 ## [0.10.10](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.10) (2025-06-11)
 
