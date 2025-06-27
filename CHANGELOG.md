@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.10.13"></a>
+## [0.10.13](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.13) (2025-06-27)
+
+### Bug Fixes
+
+* **dependabot:** correct formatting of patterns in configuration ([3f2ab5a](https://www.github.com/JaCraig/Archivist/commit/3f2ab5a62b9e049618ae6583867d208abaed7bd0))
+
+### Other
+
+* Merge pull request #145 from JaCraig/dependabot/nuget/Archivist/dependencies-8e5d53f3b2 ([4147835](https://www.github.com/JaCraig/Archivist/commit/4147835146c93f79bb3cb2d5b95e132080fce48f))
+* Merge pull request #146 from JaCraig/dependabot/nuget/Archivist/dependencies-8e5d53f3b2 ([d1f112b](https://www.github.com/JaCraig/Archivist/commit/d1f112b2871a4f5bb551aae30e1b382ce2482e4d))
+* Bump the dependencies group with 1 update ([36b72b8](https://www.github.com/JaCraig/Archivist/commit/36b72b82cdff3bc6f5b8b79fea6d3ae61e49e0bc))
+* Bump the dependencies group with 1 update ([7eb590f](https://www.github.com/JaCraig/Archivist/commit/7eb590f835318c4ec809a96a542cfd8f33c43007))
+* Merge branch 'main' of https://github.com/JaCraig/Archivist ([3b14e66](https://www.github.com/JaCraig/Archivist/commit/3b14e661520b961d81609205a383cdaf121c3215))
+
 <a name="0.10.12"></a>
 ## [0.10.12](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.12) (2025-06-23)
 
