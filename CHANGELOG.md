@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.10.17"></a>
+## [0.10.17](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.17) (2025-08-18)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([b40b74d](https://www.github.com/JaCraig/Archivist/commit/b40b74d0ce532ffbfbd40ada6d5f17a077ccce5a))
+
+### Other
+
+* Merge pull request #165 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-0ef1f239a7 ([510c41b](https://www.github.com/JaCraig/Archivist/commit/510c41bff1f765e7997b757c0d0696859ce6db98))
+* Merge pull request #166 from JaCraig/dependabot/nuget/Archivist/dependencies-c2ef69e022 ([6d9ae41](https://www.github.com/JaCraig/Archivist/commit/6d9ae41f0e5be1467014f827802e27f0a0866af7))
+* Merge pull request #167 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-99070b1a56 ([77fb4b2](https://www.github.com/JaCraig/Archivist/commit/77fb4b270470a4afa6c590e347ac5abc86080388))
+* Merge pull request #168 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-7d3d320c89 ([6bc8bb4](https://www.github.com/JaCraig/Archivist/commit/6bc8bb49cd484bc8f70e76da0fb1eed6d1230116))
+* Merge pull request #169 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-e85e4c29bb ([6d8caa4](https://www.github.com/JaCraig/Archivist/commit/6d8caa456f8e76c5fb41baa2ad42497e4388270d))
+* Merge pull request #170 from JaCraig/dependabot/nuget/Archivist/dependencies-2cc0f4450d ([e28361e](https://www.github.com/JaCraig/Archivist/commit/e28361ea85efab321800a2e9306612bd99cf44ff))
+* Merge pull request #171 from JaCraig/dependabot/nuget/Archivist/dependencies-2cc0f4450d ([b2adf5f](https://www.github.com/JaCraig/Archivist/commit/b2adf5fe5f5159c4f1a4708eff995bb6517f1659))
+* Bump the dependencies group with 1 update ([079dcf7](https://www.github.com/JaCraig/Archivist/commit/079dcf71fdaaed402c0e8cc70057fb0bffbf5638))
+* Bump the dependencies group with 1 update ([24cd2a3](https://www.github.com/JaCraig/Archivist/commit/24cd2a31ca4623c92cd3bfc629b702b8dc61810b))
+* Bump the dependencies group with 2 updates ([84b6436](https://www.github.com/JaCraig/Archivist/commit/84b6436dc7ce59dfccc24a71eb44e96096798c06))
+* Bump the dependencies group with 2 updates ([3f37b50](https://www.github.com/JaCraig/Archivist/commit/3f37b5028115737e47be69537e61445b789ad77c))
+* Bump the dependencies group with 3 updates ([e36aec0](https://www.github.com/JaCraig/Archivist/commit/e36aec0a35c5a99ce07ef42887f8d61c1b9d86f0))
+* Bump the dependencies group with 4 updates ([a4dfd49](https://www.github.com/JaCraig/Archivist/commit/a4dfd49c565b8939d7609cd86baa114a6879bf53))
+
 <a name="0.10.16"></a>
 ## [0.10.16](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.16) (2025-08-05)
 
