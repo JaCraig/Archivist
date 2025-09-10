@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.10.19"></a>
+## [0.10.19](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.19) (2025-09-10)
+
+### Bug Fixes
+
+* Bump the dependencies group with 3 updates ([4ece121](https://www.github.com/JaCraig/Archivist/commit/4ece1219ea15f24c98311468387d5475b3af4f2f))
+
+### Other
+
+* Merge pull request #175 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-c86233ea9b ([0190d08](https://www.github.com/JaCraig/Archivist/commit/0190d08fc9144ee2484be5ef0c69e3d4b55627a9))
+* Merge pull request #176 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-c86233ea9b ([a763ca5](https://www.github.com/JaCraig/Archivist/commit/a763ca5b4298fa72a818e77c128643c839466aee))
+* Merge pull request #177 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-40efe4b6f8 ([5cddf5c](https://www.github.com/JaCraig/Archivist/commit/5cddf5cc82bd1181a6aea510756e16e19ef1d2a0))
+* Merge pull request #178 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-40efe4b6f8 ([fe251e5](https://www.github.com/JaCraig/Archivist/commit/fe251e5ecde68f04d43216a8181899ecc4dc913f))
+* Merge pull request #179 from JaCraig/dependabot/nuget/Archivist/dependencies-4f1074e679 ([4724998](https://www.github.com/JaCraig/Archivist/commit/4724998efe8b7ca28e995e15430869e9b786abb8))
+* Merge pull request #180 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-689259b258 ([1d1def0](https://www.github.com/JaCraig/Archivist/commit/1d1def0ef2942845d5c237e3283edd80ff693345))
+* Merge pull request #181 from JaCraig/dependabot/nuget/Archivist/dependencies-4f1074e679 ([40c4d86](https://www.github.com/JaCraig/Archivist/commit/40c4d86c27a61a8db7d7e89f93b67133ed40be39))
+* Bump the dependencies group with 1 update ([0badbea](https://www.github.com/JaCraig/Archivist/commit/0badbeadafcf7a31a698429c2ba08dc6b11c9d8c))
+* Bump the dependencies group with 1 update ([0d44f01](https://www.github.com/JaCraig/Archivist/commit/0d44f01b636c15e4ec9d5fb4add50dd202a700c4))
+* Bump the dependencies group with 1 update ([24c5224](https://www.github.com/JaCraig/Archivist/commit/24c5224c2e6ef795d0fae3e35a2ebeb5af22a70c))
+* Bump the dependencies group with 1 update ([2a572c3](https://www.github.com/JaCraig/Archivist/commit/2a572c3f358527f89f1c9794a0dfc9710f6a55cc))
+* Bump the dependencies group with 3 updates ([2c30718](https://www.github.com/JaCraig/Archivist/commit/2c307185ff614195078496cf2cec12ca145d246d))
+* Bump the dependencies group with 5 updates ([8bdd096](https://www.github.com/JaCraig/Archivist/commit/8bdd096c2286dbda4739b0a079c8a370f9932df1))
+* merge ([957efe6](https://www.github.com/JaCraig/Archivist/commit/957efe61a20563b1ad0e11ae507928d7798644ab))
+* **tests:** update Mecha.xUnit package version ([1c63433](https://www.github.com/JaCraig/Archivist/commit/1c6343343ceaa48dad1fdc5e10508ed920320baf))
+
 <a name="0.10.18"></a>
 ## [0.10.18](https://www.github.com/JaCraig/Archivist/releases/tag/v0.10.18) (2025-08-18)
 
