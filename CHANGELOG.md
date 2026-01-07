@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.11.4"></a>
+## [0.11.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.11.4) (2026-01-07)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([62ff78a](https://www.github.com/JaCraig/Archivist/commit/62ff78a6de7e2bbcb32d7d10dd011b9980829d0d))
+
+### Other
+
+* Merge pull request #233 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-77641ecd43 ([ecfac11](https://www.github.com/JaCraig/Archivist/commit/ecfac11a24181012e6bce574074122c3920eddb3))
+* Merge pull request #234 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-406f96db61 ([fce002e](https://www.github.com/JaCraig/Archivist/commit/fce002ebe4fb073b6e3ed08769c0b01d1dc81db7))
+* Merge pull request #235 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-515ff5359e ([c4d2a0c](https://www.github.com/JaCraig/Archivist/commit/c4d2a0c54bbe24e13cd922b61e7fea60f9ea564a))
+* Merge pull request #236 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-515ff5359e ([eaea50c](https://www.github.com/JaCraig/Archivist/commit/eaea50cd65406278357a22cf91b22b69e701fb01))
+* Merge pull request #237 from JaCraig/dependabot/nuget/Archivist/dependencies-56af1cdd03 ([0ccbe35](https://www.github.com/JaCraig/Archivist/commit/0ccbe3542b007b8a59c862af5a28b8d2224841d0))
+* Bump the dependencies group with 1 update ([f1d1b03](https://www.github.com/JaCraig/Archivist/commit/f1d1b0373005be1656bf95be1955a22ca2d23eb7))
+* Bump the dependencies group with 1 update ([431e388](https://www.github.com/JaCraig/Archivist/commit/431e38804c5cc8b34b4f64447c3bd17311e52f51))
+* Bump the dependencies group with 1 update ([7e09190](https://www.github.com/JaCraig/Archivist/commit/7e0919046bb04991a79747a069df08b517c0037c))
+* Bump the dependencies group with 2 updates ([69db94c](https://www.github.com/JaCraig/Archivist/commit/69db94c797ad8bd53a7b9daa5f8833bd852aabcb))
+
 <a name="0.11.3"></a>
 ## [0.11.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.11.3) (2025-12-10)
 
