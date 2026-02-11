@@ -48,10 +48,10 @@
     <PackageReference Include="DocumentFormat.OpenXml" Version="3.4.1" />
     <PackageReference Include="ExcelDataReader" Version="3.8.0" />
     <PackageReference Include="MetadataExtractor" Version="2.9.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.2" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.102" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.102">
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.3" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.103" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.103">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -59,7 +59,7 @@
     <PackageReference Include="ObjectCartographer" Version="4.2.1" />
     <PackageReference Include="SkiaSharp" Version="3.119.2" />
     <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="3.119.2" />
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.2" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.3" />
     <PackageReference Include="Tesseract" Version="5.2.0" />
     <PackageReference Include="YamlDotNet" Version="16.3.0" />
   </ItemGroup>
