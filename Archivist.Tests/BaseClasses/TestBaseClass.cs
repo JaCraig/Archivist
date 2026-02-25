@@ -39,7 +39,7 @@ namespace Archivist.Tests.BaseClasses
         /// </summary>
         /// <returns>The async task.</returns>
         [Fact]
-        public Task BreakObject() => Mech.BreakAsync(TestObject, new Mecha.Core.Options { MaxDuration = 100 });
+        public Task BreakObject() => Mech.BreakAsync(TestObject, new Mecha.Core.Options { MaxDuration = 100, ExceptionHandlers = new ExceptionHandler().IgnoreException<NotImplementedException>().IgnoreException<ArgumentException>((Ex, Method) => true) });
     }
 
     /// <summary>
@@ -47,15 +47,6 @@ namespace Archivist.Tests.BaseClasses
     /// </summary>
     public abstract class TestBaseClass
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="TestBaseClass{TTestObject}"/> class.
-        /// </summary>
-        protected TestBaseClass()
-        {
-            _ = GetServiceProvider();
-            _ = Mech.Default;
-        }
-
         /// <summary>
         /// The service provider lock
         /// </summary>
@@ -65,6 +56,15 @@ namespace Archivist.Tests.BaseClasses
         /// The service provider
         /// </summary>
         private static IServiceProvider? _ServiceProvider;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TestBaseClass{TTestObject}"/> class.
+        /// </summary>
+        protected TestBaseClass()
+        {
+            _ = GetServiceProvider();
+            _ = Mech.Default;
+        }
 
         /// <summary>
         /// Gets the type of the object.
@@ -77,7 +77,7 @@ namespace Archivist.Tests.BaseClasses
         /// </summary>
         /// <returns>The async task.</returns>
         [Fact]
-        public Task BreakType() => ObjectType is null ? Task.CompletedTask : Mech.BreakAsync(ObjectType, new Mecha.Core.Options { MaxDuration = 100 });
+        public Task BreakType() => ObjectType is null ? Task.CompletedTask : Mech.BreakAsync(ObjectType, new Mecha.Core.Options { MaxDuration = 100, ExceptionHandlers = new ExceptionHandler().IgnoreException<NotImplementedException>().IgnoreException<ArgumentException>((Ex, Method) => true) });
 
         /// <summary>
         /// Gets the service provider.

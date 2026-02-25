@@ -71,6 +71,8 @@ namespace Archivist.DataTypes
         {
             get
             {
+                if (string.IsNullOrEmpty(column))
+                    return TableCell.Empty;
                 var ColumnIndex = Columns.IndexOf(column);
                 if (ColumnIndex == -1)
                     throw new ArgumentOutOfRangeException(nameof(column));
@@ -78,6 +80,8 @@ namespace Archivist.DataTypes
             }
             set
             {
+                if (string.IsNullOrEmpty(column))
+                    return;
                 var ColumnIndex = Columns.IndexOf(column);
                 if (ColumnIndex == -1)
                     throw new ArgumentOutOfRangeException(nameof(column));

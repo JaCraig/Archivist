@@ -11,21 +11,20 @@ namespace Archivist.Tests.DataTypes
     {
         public TableRowTests()
         {
-            _Columns = new List<string>
+            TestObject = new TableRow(new List<string>
             {
                 "TestValue1"
-            };
-            _TestClass = new TableRow(_Columns);
-            TestObject = new TableRow(_Columns);
+            });
         }
-
-        private readonly List<string> _Columns;
-        private readonly TableRow _TestClass;
 
         [Fact]
         public void CanCallAdd()
         {
             // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
             var Item = new TableCell("TestValue53673051");
 
             // Act
@@ -39,7 +38,7 @@ namespace Archivist.Tests.DataTypes
         public void CanCallAddRange()
         {
             // Arrange
-            var TestClass = new TableRow(_Columns);
+            var TestClass = new TableRow(["TestValue1"]);
             var Items = new List<TableCell> { new("TestValue1") };
 
             // Act
@@ -50,11 +49,19 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanCallAddWithNullItem() => _TestClass.Add(default(TableCell));
+        public void CanCallAddWithNullItem() => new TableRow(new List<string>
+            {
+                "TestValue1"
+            }).Add(default(TableCell));
 
         [Fact]
         public void CanCallClear()
         {
+            // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
             // Act
             _TestClass.Clear();
 
@@ -66,6 +73,10 @@ namespace Archivist.Tests.DataTypes
         public void CanCallCompareTo()
         {
             // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
             var Other = new TableRow(new List<string>());
 
             // Act
@@ -79,6 +90,10 @@ namespace Archivist.Tests.DataTypes
         public void CanCallContains()
         {
             // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
             var Item = new TableCell("TestValue1465860330");
 
             // Act
@@ -89,7 +104,10 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanCallContainsWithNullItem() => _TestClass.Contains(default);
+        public void CanCallContainsWithNullItem() => new TableRow(new List<string>
+            {
+                "TestValue1"
+            }).Contains(default);
 
         [Fact]
         public void CanCallConvertFrom()
@@ -143,7 +161,10 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanCallCopyToWithNullArray() => _TestClass.CopyTo(default, 1840850477);
+        public void CanCallCopyToWithNullArray() => new TableRow(new List<string>
+            {
+                "TestValue1"
+            }).CopyTo(default, 1840850477);
 
         [Fact]
         public void CanCallEqualityOperator()
@@ -183,6 +204,10 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualsWithObj()
         {
             // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
             var Obj = new object();
 
             // Act
@@ -196,6 +221,10 @@ namespace Archivist.Tests.DataTypes
         public void CanCallEqualsWithTableRow()
         {
             // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
             var Other = new TableRow(new List<string>());
 
             // Act
@@ -208,6 +237,11 @@ namespace Archivist.Tests.DataTypes
         [Fact]
         public void CanCallGetEnumeratorForIEnumerable_TableCell_WithNoParameters()
         {
+            // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
             // Act
             IEnumerator<TableCell> Result = ((IEnumerable<TableCell>)_TestClass).GetEnumerator();
 
@@ -218,6 +252,12 @@ namespace Archivist.Tests.DataTypes
         [Fact]
         public void CanCallGetEnumeratorWithNoParameters()
         {
+            // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
+
             // Act
             System.Collections.IEnumerator Result = _TestClass.GetEnumerator();
 
@@ -228,6 +268,12 @@ namespace Archivist.Tests.DataTypes
         [Fact]
         public void CanCallGetHashCode()
         {
+            // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
+
             // Act
             var Result = _TestClass.GetHashCode();
 
@@ -307,6 +353,10 @@ namespace Archivist.Tests.DataTypes
         public void CanCallIndexOf()
         {
             // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
             var Item = new TableCell("TestValue1894265549");
 
             // Act
@@ -317,7 +367,10 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanCallIndexOfWithNullItem() => _TestClass.IndexOf(default);
+        public void CanCallIndexOfWithNullItem() => new TableRow(new List<string>
+            {
+                "TestValue1"
+            }).IndexOf(default);
 
         [Fact]
         public void CanCallInequalityOperator()
@@ -372,7 +425,10 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanCallInsertWithNullItem() => _TestClass.Insert(0, default);
+        public void CanCallInsertWithNullItem() => new TableRow(new List<string>
+            {
+                "TestValue1"
+            }).Insert(0, default);
 
         [Fact]
         public void CanCallLessThanEqualToOperator()
@@ -446,6 +502,10 @@ namespace Archivist.Tests.DataTypes
         public void CanCallRemove()
         {
             // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
             var Item = new TableCell("TestValue410492227");
 
             // Act
@@ -473,11 +533,20 @@ namespace Archivist.Tests.DataTypes
         }
 
         [Fact]
-        public void CanCallRemoveWithNullItem() => _ = _TestClass.Remove(default);
+        public void CanCallRemoveWithNullItem() => _ = new TableRow(new List<string>
+            {
+                "TestValue1"
+            }).Remove(default);
 
         [Fact]
         public void CanCallToString()
         {
+            // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
+
             // Act
             var Result = _TestClass.ToString();
 
@@ -488,8 +557,10 @@ namespace Archivist.Tests.DataTypes
         [Fact]
         public void CanConstruct()
         {
+            // Arrange
+
             // Act
-            var Instance = new TableRow(_Columns);
+            var Instance = new TableRow(["TestValue1"]);
 
             // Assert
             Assert.NotNull(Instance);
@@ -501,6 +572,11 @@ namespace Archivist.Tests.DataTypes
         [Fact]
         public void CanGetCount()
         {
+            // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
             // Assert
             var Result = Assert.IsType<int>(_TestClass.Count);
             Assert.Equal(0, Result);
@@ -509,6 +585,11 @@ namespace Archivist.Tests.DataTypes
         [Fact]
         public void CanGetIsReadOnly()
         {
+            // Arrange
+            var _TestClass = new TableRow(new List<string>
+            {
+                "TestValue1"
+            });
             // Assert
             var Result = Assert.IsType<bool>(_TestClass.IsReadOnly);
 

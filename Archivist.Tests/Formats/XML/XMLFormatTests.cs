@@ -11,6 +11,14 @@ namespace Archivist.Tests.Formats.XML
 {
     public class XMLFormatTests : TestBaseClass<XMLFormat>
     {
+        private static readonly string[] _ExpectedExtensions = new[] { "XML" };
+
+        private static readonly string[] _ExpectedMimeTypes = new[] { "TEXT/XML", "APPLICATION/XML" };
+
+        private readonly JsonSerializerSettings _Options;
+
+        private readonly XMLFormat _TestClass;
+
         public XMLFormatTests()
         {
             _ = GetServiceProvider();
@@ -18,11 +26,6 @@ namespace Archivist.Tests.Formats.XML
             _TestClass = new XMLFormat(_Options, null, null);
             TestObject = new XMLFormat(_Options, null, null);
         }
-
-        private static readonly string[] _ExpectedExtensions = new[] { "XML" };
-        private static readonly string[] _ExpectedMimeTypes = new[] { "TEXT/XML", "APPLICATION/XML" };
-        private readonly JsonSerializerSettings _Options;
-        private readonly XMLFormat _TestClass;
 
         [Fact]
         public void CanConstruct()
