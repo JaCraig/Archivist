@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.12.0"></a>
+## [0.12.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.0) (2026-02-25)
+
+### Features
+
+* **projects:** add net10.0 target framework support ([7dc5111](https://www.github.com/JaCraig/Archivist/commit/7dc5111f6b36afd214b4d5ac40f3549bf6f4b711))
+
+### Bug Fixes
+
+* **tests,TableRow:** improve test isolation & indexer ([b5b8b3f](https://www.github.com/JaCraig/Archivist/commit/b5b8b3f08fa64a3f5e96a7d2e339030e1101284f))
+
+### Other
+
+* Merge pull request #279 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-d57edf430e ([e6660c3](https://www.github.com/JaCraig/Archivist/commit/e6660c34362cff009d4074e3af8ab4c135973cee))
+* Merge pull request #280 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-d57edf430e ([6e6d44b](https://www.github.com/JaCraig/Archivist/commit/6e6d44b89b0f386e37d7c0f67773b50dda9f5c51))
+* Merge pull request #282 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-6899efc6e8 ([538bcf7](https://www.github.com/JaCraig/Archivist/commit/538bcf7be82d1573aa90ef712a823734656404b8))
+* Merge pull request #283 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-6899efc6e8 ([5d8822c](https://www.github.com/JaCraig/Archivist/commit/5d8822c20adbe1e531a1afd7a197e8020d5c58a9))
+* Merge pull request #284 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-a818e12813 ([8e5c962](https://www.github.com/JaCraig/Archivist/commit/8e5c96214d26a2326914dd43d788098355d5f361))
+* Merge pull request #285 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-a818e12813 ([fb73d94](https://www.github.com/JaCraig/Archivist/commit/fb73d941987238dc0055a82b35d8fc588744bb92))
+* Bump the dependencies group with 1 update ([7f1dc7e](https://www.github.com/JaCraig/Archivist/commit/7f1dc7e444c5bd24241a67de8a986e3a913a2d71))
+* Bump the dependencies group with 1 update ([2c6fafa](https://www.github.com/JaCraig/Archivist/commit/2c6fafa0c24bf6745ceef74988563af7fc80049a))
+* Bump the dependencies group with 2 updates ([e7f2ddd](https://www.github.com/JaCraig/Archivist/commit/e7f2dddc721c1e1cddd548e626748f195c6e5ad3))
+* Bump the dependencies group with 2 updates ([f3de702](https://www.github.com/JaCraig/Archivist/commit/f3de702f0ea72e7823233cb4ac36da2df990ba1b))
+* Bump the dependencies group with 3 updates ([81f7ede](https://www.github.com/JaCraig/Archivist/commit/81f7edec9a35ab5725c3ec729d07105cb3d7c40c))
+* Bump the dependencies group with 3 updates ([ff9a014](https://www.github.com/JaCraig/Archivist/commit/ff9a0140c9ec23babe381a6e44cc220c53ef9d40))
+
 <a name="0.11.11"></a>
 ## [0.11.11](https://www.github.com/JaCraig/Archivist/releases/tag/v0.11.11) (2026-02-13)
 
