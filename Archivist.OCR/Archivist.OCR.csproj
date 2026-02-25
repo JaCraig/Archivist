@@ -4,7 +4,7 @@
     <Description>Archivist is a C# open-source library designed to simplify file loading tasks by providing a unified interface for accessing files of various formats. This package adds OCR capabilities to the image processing system.</Description>
     <AssemblyTitle>Archivist.OCR</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net9.0;net8.0;net10.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Archivist.OCR</AssemblyName>
     <PackageId>Archivist.OCR</PackageId>
