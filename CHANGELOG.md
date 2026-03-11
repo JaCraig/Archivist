@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.12.1"></a>
+## [0.12.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.1) (2026-03-11)
+
+### Bug Fixes
+
+* Bump the dependencies group with 5 updates ([8a50033](https://www.github.com/JaCraig/Archivist/commit/8a5003305a691923989e4ca4f34b8089ba1c6839))
+
+### Other
+
+* Merge pull request #286 from JaCraig/dependabot/nuget/Archivist/dependencies-72be12f8a5 ([910d4f4](https://www.github.com/JaCraig/Archivist/commit/910d4f4ea1996b0589073928fd366df5d1a82aa2))
+* Merge pull request #287 from JaCraig/dependabot/nuget/Archivist/dependencies-72be12f8a5 ([562576d](https://www.github.com/JaCraig/Archivist/commit/562576d389d82399f5f6e738671add4b891e8be7))
+* Merge pull request #288 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-f66be42b68 ([f8473c2](https://www.github.com/JaCraig/Archivist/commit/f8473c23cf1b70d583cd45471bfa58865a773b18))
+* Bump the dependencies group with 5 updates ([b457def](https://www.github.com/JaCraig/Archivist/commit/b457def345ef226856cffff7edab82e84d03d068))
+* Bump the dependencies group with 6 updates ([59becef](https://www.github.com/JaCraig/Archivist/commit/59becefd9acccf0801bcd65c12a074a8145a8b43))
+
 <a name="0.12.0"></a>
 ## [0.12.0](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.0) (2026-02-25)
 
