@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.12.2"></a>
+## [0.12.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.2) (2026-03-12)
+
+### Bug Fixes
+
+* Bump the dependencies group with 2 updates ([d46deed](https://www.github.com/JaCraig/Archivist/commit/d46deedf7b127ad912f7bef734be63cfdf51184f))
+* Bump the dependencies group with 4 updates ([723d5a8](https://www.github.com/JaCraig/Archivist/commit/723d5a861996d347fc8146d9cb6972c15aade889))
+
+### Other
+
+* Merge pull request #290 from JaCraig/dependabot/nuget/dot-config/dependencies-ea31c6d4b1 ([22cb3a1](https://www.github.com/JaCraig/Archivist/commit/22cb3a13aa5f7211e8fb2b5f541eab0ad8117432))
+* Merge pull request #291 from JaCraig/dependabot/nuget/dot-config/dependencies-ce0d57c23e ([be2fbd4](https://www.github.com/JaCraig/Archivist/commit/be2fbd4dbde6a4845c2022eb8952036bd8c7d111))
+
 <a name="0.12.1"></a>
 ## [0.12.1](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.1) (2026-03-11)
 
