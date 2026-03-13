@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.12.4"></a>
+## [0.12.4](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.4) (2026-03-13)
+
+### Bug Fixes
+
+* **deps:** update Mecha.xUnit and ObjectCartographer ([25a2e76](https://www.github.com/JaCraig/Archivist/commit/25a2e769aecced1011c6d5f94241f86b055d1f66))
+
 <a name="0.12.3"></a>
 ## [0.12.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.3) (2026-03-13)
 
