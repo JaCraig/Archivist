@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.12.3"></a>
+## [0.12.3](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.3) (2026-03-13)
+
+### Bug Fixes
+
+* Bump the dependencies group with 5 updates ([d345400](https://www.github.com/JaCraig/Archivist/commit/d345400a0ed1931fbaf37587c1b2ab491285fe22))
+* Bump the dependencies group with 5 updates ([a5b8f7f](https://www.github.com/JaCraig/Archivist/commit/a5b8f7fd995a21906af8b9b920e9a839ccac4708))
+
+### Other
+
+* Merge pull request #292 from JaCraig/dependabot/nuget/dot-config/dependencies-1fcecb0391 ([471e72d](https://www.github.com/JaCraig/Archivist/commit/471e72d046c45aabf5a9d2da1325aa3035bd174c))
+* Merge pull request #293 from JaCraig/dependabot/nuget/Archivist/dependencies-255c75a351 ([3a2c561](https://www.github.com/JaCraig/Archivist/commit/3a2c5612f37a05cb8e3119e8c6a83571418f19ee))
+* Merge pull request #294 from JaCraig/dependabot/nuget/Archivist/dependencies-255c75a351 ([99f0752](https://www.github.com/JaCraig/Archivist/commit/99f07528b328d47bfaef7c4ac99e70dd3e2a4f0f))
+* Merge pull request #295 from JaCraig/dependabot/nuget/Archivist.OCR/dependencies-255c75a351 ([37ef0b8](https://www.github.com/JaCraig/Archivist/commit/37ef0b813d76d58a5eb9eaaf3499f3cac3be08a2))
+* Merge pull request #296 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-65a9157da6 ([e0b3d46](https://www.github.com/JaCraig/Archivist/commit/e0b3d46fde706af0ce5e2b1032387ddd328ea987))
+* Bump the dependencies group with 5 updates ([09614df](https://www.github.com/JaCraig/Archivist/commit/09614df9b8e26d85a3dee9ac559f252e336daad9))
+* Bump the dependencies group with 5 updates ([4ec6974](https://www.github.com/JaCraig/Archivist/commit/4ec6974db6822e46c395399b7031ff0b92027e6b))
+* Bump the dependencies group with 7 updates ([2b29aba](https://www.github.com/JaCraig/Archivist/commit/2b29aba612d1286b0e2b50d3937c94972636feeb))
+
 <a name="0.12.2"></a>
 ## [0.12.2](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.2) (2026-03-12)
 
