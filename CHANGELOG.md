@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.12.7"></a>
+## [0.12.7](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.7) (2026-03-18)
+
+### Bug Fixes
+
+* **deps:** update NuGet package versions in projects ([f4d18c8](https://www.github.com/JaCraig/Archivist/commit/f4d18c811f64faa05ce3e514902b0de196e9bf24))
+
 <a name="0.12.6"></a>
 ## [0.12.6](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.6) (2026-03-17)
 
