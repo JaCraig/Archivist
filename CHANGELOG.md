@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.12.8"></a>
+## [0.12.8](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.8) (2026-03-19)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([6cda63e](https://www.github.com/JaCraig/Archivist/commit/6cda63eb7118ff42e6335bf187ad56ad9f269abb))
+
+### Other
+
+* Merge pull request #305 from JaCraig/dependabot/nuget/Archivist/dependencies-b84136b1aa ([1aa8028](https://www.github.com/JaCraig/Archivist/commit/1aa8028b688e75ec0301a24c386c0ce5d5443233))
+* Merge pull request #306 from JaCraig/dependabot/nuget/Archivist/dependencies-b84136b1aa ([3bb9784](https://www.github.com/JaCraig/Archivist/commit/3bb9784ed15d911deee66638e377e8fbf508c7cd))
+* Merge pull request #307 from JaCraig/dependabot/nuget/Archivist/dependencies-b84136b1aa ([a34df3d](https://www.github.com/JaCraig/Archivist/commit/a34df3d16a913eab17a8bbe43106025489bf1c3a))
+* Bump the dependencies group with 1 update ([8c73b97](https://www.github.com/JaCraig/Archivist/commit/8c73b978039f4a6fe5370a788035f050d257b318))
+* Bump the dependencies group with 1 update ([e4922de](https://www.github.com/JaCraig/Archivist/commit/e4922dee63c9774288118b75b0e737dcd45d0702))
+
 <a name="0.12.7"></a>
 ## [0.12.7](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.7) (2026-03-18)
 
