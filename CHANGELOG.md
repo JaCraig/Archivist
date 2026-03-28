@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.12.10"></a>
+## [0.12.10](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.10) (2026-03-28)
+
+### Bug Fixes
+
+* **project:** unify target framework specification ([cc0dbf6](https://www.github.com/JaCraig/Archivist/commit/cc0dbf6501090e2fdd4599b3b5f7e3585ee23ea2))
+
+### Other
+
+* Merge branch 'main' of https://github.com/JaCraig/Archivist ([32ee2b5](https://www.github.com/JaCraig/Archivist/commit/32ee2b5e85f4e10256d3453c7335aefe8009feec))
+
 <a name="0.12.9"></a>
 ## [0.12.9](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.9) (2026-03-28)
 
