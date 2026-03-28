@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.12.9"></a>
+## [0.12.9](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.9) (2026-03-28)
+
+### Bug Fixes
+
+* **dependabot:** update schedule from daily to weekly ([6ba44fa](https://www.github.com/JaCraig/Archivist/commit/6ba44fa0ce95a6f84f5c8635573b4d66ab5023cc))
+
 <a name="0.12.8"></a>
 ## [0.12.8](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.8) (2026-03-19)
 
