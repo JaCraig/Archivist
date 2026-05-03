@@ -56,12 +56,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-    <PackageReference Include="ObjectCartographer" Version="4.3.5" />
+    <PackageReference Include="ObjectCartographer" Version="4.3.7" />
     <PackageReference Include="SkiaSharp" Version="3.119.2" />
     <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="3.119.2" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.7" />
     <PackageReference Include="Tesseract" Version="5.2.0" />
-    <PackageReference Include="YamlDotNet" Version="17.0.1" />
+    <PackageReference Include="YamlDotNet" Version="17.1.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Formats\HTML\" />
