@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.12.16"></a>
+## [0.12.16](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.16) (2026-05-27)
+
+### Bug Fixes
+
+* **workflows:** remove PERSONAL_ACCESS_TOKEN from workflow secrets ([3752bed](https://www.github.com/JaCraig/Archivist/commit/3752bedeb8a93a0e7759d68b75148af64726b685))
+
+### Other
+
+* Merge pull request #340 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-6f47762908 ([87383a5](https://www.github.com/JaCraig/Archivist/commit/87383a501fc45736fd6a8e615b4db9b31f7974a2))
+* Bump the dependencies group with 8 updates ([86177fa](https://www.github.com/JaCraig/Archivist/commit/86177fae51a0314d02123fd8221f6323a444cee2))
+* **copilot:** add commit message guidelines ([67eb143](https://www.github.com/JaCraig/Archivist/commit/67eb143416af36a8ac93e82e71697a05c3ceb85c))
+
 <a name="0.12.15"></a>
 ## [0.12.15](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.15) (2026-05-17)
 
