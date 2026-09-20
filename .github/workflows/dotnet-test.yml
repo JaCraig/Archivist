@@ -9,6 +9,9 @@ on:
 
 jobs:
   build:
+    permissions:
+      actions: read
+      contents: read
     uses: 'JaCraig/Centralized-Workflows/.github/workflows/dotnet-test.yml@main'
     with:
       test-filter: "Archivist.Tests"
