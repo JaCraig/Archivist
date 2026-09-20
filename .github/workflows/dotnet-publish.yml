@@ -9,6 +9,8 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: write
     uses: "JaCraig/Centralized-Workflows/.github/workflows/dotnet-publish.yml@main"
     with:
       user: "JaCraig"
