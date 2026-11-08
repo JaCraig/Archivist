@@ -2,6 +2,53 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.12.20"></a>
+## [0.12.20](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.20) (2026-11-08)
+
+### Bug Fixes
+
+* build process ([d5565ce](https://www.github.com/JaCraig/Archivist/commit/d5565ce582d16b7f976dfe9e41223212a8104465))
+* Bump the dependencies group with 2 updates ([23f9a19](https://www.github.com/JaCraig/Archivist/commit/23f9a19e8c5831ea19836ac669dce45c8f764edb))
+* Bump the dependencies group with 2 updates ([9bbc4ad](https://www.github.com/JaCraig/Archivist/commit/9bbc4adf58c8923b1096ce8efdf5b7109aa691c9))
+* Bump the dependencies group with 5 updates ([d617bb7](https://www.github.com/JaCraig/Archivist/commit/d617bb7f18ba53e697769da4fab6917645adf255))
+* Bump the dependencies group with 7 updates ([997345e](https://www.github.com/JaCraig/Archivist/commit/997345e52209709b7f337cd8f19deaa64b93be8f))
+* **workflow:** remove unnecessary permissions from build job ([dcc09c5](https://www.github.com/JaCraig/Archivist/commit/dcc09c52dbff5ce7ebbd9a36d1fbb4c9612e6a5b))
+
+### Other
+
+* Merge pull request #396 from JaCraig/dependabot/nuget/Archivist/dependencies-09e6e903c2 ([119a76f](https://www.github.com/JaCraig/Archivist/commit/119a76fd0d85214f76750c3ca78323e38e4ef570))
+* Merge pull request #397 from JaCraig/dependabot/nuget/Archivist/dependencies-09e6e903c2 ([fdcaea6](https://www.github.com/JaCraig/Archivist/commit/fdcaea6616d2b26ca47e50402e16ba6ef648126f))
+* Merge pull request #398 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-bd17d0edbb ([75d1694](https://www.github.com/JaCraig/Archivist/commit/75d1694d69c716a610e4262fa162e4383826b5c8))
+* Merge pull request #399 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-bd17d0edbb ([8421af1](https://www.github.com/JaCraig/Archivist/commit/8421af1ca4afb8e1d5214a4df41f7b3637e38e90))
+* Merge pull request #400 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-9d0a37c85b ([c674bd1](https://www.github.com/JaCraig/Archivist/commit/c674bd1f3e4fb5691c9fe18e9895801d574a67ec))
+* Merge pull request #401 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-9d0a37c85b ([2583cac](https://www.github.com/JaCraig/Archivist/commit/2583cacae8ff3fdc5ba3845e538d0d0840d3be80))
+* Merge pull request #402 from JaCraig/dependabot/nuget/Archivist/dependencies-0523818894 ([542e1a3](https://www.github.com/JaCraig/Archivist/commit/542e1a3b6042187d39c1033ed13c06d512b9fc42))
+* Merge pull request #403 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-5ef81b3072 ([7284808](https://www.github.com/JaCraig/Archivist/commit/728480875ba3426b2a0baeec70be48133aefd6b1))
+* Merge pull request #404 from JaCraig/dependabot/nuget/Archivist.OCR/dependencies-0523818894 ([91f301d](https://www.github.com/JaCraig/Archivist/commit/91f301d94000fc2c93c0a1eaeb376e61e07bb583))
+* Merge pull request #405 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-d9cde12109 ([53a0e9a](https://www.github.com/JaCraig/Archivist/commit/53a0e9a2baa2f8f9f8a1285e702baf0ef25a42c7))
+* Merge pull request #406 from JaCraig/dependabot/nuget/Archivist.OCR.Tests/dependencies-efc00d6d39 ([0fef2b7](https://www.github.com/JaCraig/Archivist/commit/0fef2b746c677264121788ab9013c55d5458558b))
+* Merge pull request #407 from JaCraig/dependabot/nuget/Archivist/dependencies-b40e039e11 ([93418e6](https://www.github.com/JaCraig/Archivist/commit/93418e613a11dfa52d67d5b41202b0381f0a0094))
+* Merge pull request #408 from JaCraig/dependabot/nuget/Archivist.Tests/dependencies-f18cb52d6a ([ce2ab9d](https://www.github.com/JaCraig/Archivist/commit/ce2ab9dd6d714633e2eb43da4b20e4126919ad0b))
+* Merge pull request #409 from JaCraig/dependabot/nuget/Archivist/dependencies-b40e039e11 ([29f2900](https://www.github.com/JaCraig/Archivist/commit/29f2900b88cccc65f396dcdf3e810f5bbb58fd40))
+* Merge pull request #410 from JaCraig/dependabot/nuget/Archivist.OCR/dependencies-b40e039e11 ([088e011](https://www.github.com/JaCraig/Archivist/commit/088e0119dfa4ac3322bb5d5e80a61d286b5b4dd3))
+* Merge pull request #411 from JaCraig/dependabot/nuget/Archivist.OCR/dependencies-b40e039e11 ([7f0508a](https://www.github.com/JaCraig/Archivist/commit/7f0508a6c2b49eaf060ac3e2f7e330bc5866335d))
+* Merge pull request #412 from JaCraig/dependabot/nuget/Archivist/dependencies-41c66b5764 ([56c113f](https://www.github.com/JaCraig/Archivist/commit/56c113f6c8983fdc0cbed3d8506ee5ba39b93d44))
+* Merge pull request #413 from JaCraig/dependabot/nuget/Archivist/dependencies-41c66b5764 ([928f2fb](https://www.github.com/JaCraig/Archivist/commit/928f2fb51b8fb7ae54c733f3558beff923103514))
+* Bump Microsoft.NET.Test.Sdk from 18.10.1 to 18.11.0 ([55344ba](https://www.github.com/JaCraig/Archivist/commit/55344ba5bed7b85de2f3531c582b0289104baa48))
+* Bump the dependencies group with 1 update ([ce342ac](https://www.github.com/JaCraig/Archivist/commit/ce342ac87df5a3fedb003cdb6f194e9d8004e704))
+* Bump the dependencies group with 1 update ([211ad2d](https://www.github.com/JaCraig/Archivist/commit/211ad2d659c008490c904680045aa4d34ee31819))
+* Bump the dependencies group with 2 updates ([b70f2e0](https://www.github.com/JaCraig/Archivist/commit/b70f2e0dfa0dbaf6b5101d9dabb5f245b32191e3))
+* Bump the dependencies group with 2 updates ([1bbcd1b](https://www.github.com/JaCraig/Archivist/commit/1bbcd1be7b006927e9b19a6cda21bf0f0e6c358f))
+* Bump the dependencies group with 4 updates ([e80d747](https://www.github.com/JaCraig/Archivist/commit/e80d747303db008e945ee784a976e0911385c2c2))
+* Bump the dependencies group with 4 updates ([56a08f9](https://www.github.com/JaCraig/Archivist/commit/56a08f9ddc2a9e8dea0f7f1ceb088c1b91d1379e))
+* Bump the dependencies group with 5 updates ([2d4f47a](https://www.github.com/JaCraig/Archivist/commit/2d4f47a787811b95b95b23171c0755dc2d649054))
+* Bump the dependencies group with 6 updates ([fa8370b](https://www.github.com/JaCraig/Archivist/commit/fa8370b552e6e539f1e95b8df6bb7e09504d4306))
+* Bump the dependencies group with 7 updates ([35e966f](https://www.github.com/JaCraig/Archivist/commit/35e966f7bb4d547c16db8804ab45fa1736aa92dc))
+* Bump the dependencies group with 7 updates ([dc3e04b](https://www.github.com/JaCraig/Archivist/commit/dc3e04b676c0805ed82bb6ed199698f2df7df3b2))
+* Bump the dependencies group with 7 updates ([3e2c520](https://www.github.com/JaCraig/Archivist/commit/3e2c520942f722b9049ce508723c689f33d8909a))
+* Bump the dependencies group with 7 updates ([e362448](https://www.github.com/JaCraig/Archivist/commit/e362448db57562ded3cfd171823b5b13d8fbffd1))
+* Bump the dependencies group with 8 updates ([1dd5f42](https://www.github.com/JaCraig/Archivist/commit/1dd5f42f55e6becc4be2688b1d959df1ab987e7f))
+
 <a name="0.12.19"></a>
 ## [0.12.19](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.19) (2026-09-20)
 
