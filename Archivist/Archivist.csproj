@@ -4,7 +4,7 @@
     <Description>Archivist is a C# open-source library designed to simplify file loading tasks by providing a unified interface for accessing files of various formats.</Description>
     <AssemblyTitle>Archivist</AssemblyTitle>
     <Authors>James Craig</Authors>
-    <TargetFrameworks>net9.0;net8.0;net10.0</TargetFrameworks>
+    <TargetFrameworks>net11.0;net10.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Archivist</AssemblyName>
     <PackageId>Archivist</PackageId>
@@ -48,18 +48,18 @@
     <PackageReference Include="DocumentFormat.OpenXml" Version="3.5.1" />
     <PackageReference Include="ExcelDataReader" Version="3.9.0" />
     <PackageReference Include="MetadataExtractor" Version="2.9.3" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.14" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.14" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.403" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.403">
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="11.0.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="11.0.100" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="11.0.100">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-    <PackageReference Include="ObjectCartographer" Version="4.3.11" />
+    <PackageReference Include="ObjectCartographer" Version="4.3.12" />
     <PackageReference Include="SkiaSharp" Version="4.155.0" />
     <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="4.155.0" />
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.14" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="11.0.0" />
     <PackageReference Include="Tesseract" Version="5.2.0" />
     <PackageReference Include="YamlDotNet" Version="18.1.0" />
   </ItemGroup>
