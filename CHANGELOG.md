@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://www.github.com/JaCraig/Archivist/releases/tag/v1.0.1) (2026-11-12)
+
+### Bug Fixes
+
+* Merge branch 'main' of https://github.com/JaCraig/Archivist ([f425081](https://www.github.com/JaCraig/Archivist/commit/f42508167e273bb20a4d130f6cd7cf3ca659350e))
+* **docfx:** update target framework and format files section ([8f79030](https://www.github.com/JaCraig/Archivist/commit/8f79030fadaf1034340279e61a0a290fc6519971))
+
 <a name="1.0.0"></a>
 ## [1.0.0](https://www.github.com/JaCraig/Archivist/releases/tag/v1.0.0) (2026-11-11)
 
