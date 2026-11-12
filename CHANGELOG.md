@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="1.0.0"></a>
+## [1.0.0](https://www.github.com/JaCraig/Archivist/releases/tag/v1.0.0) (2026-11-11)
+
+### Features
+
+* **frameworks:** upgrade projects to .NET 10/11 ([52cece4](https://www.github.com/JaCraig/Archivist/commit/52cece49cd1a12d502c249d2a9eb00896048d9eb))
+
+### Breaking Changes
+
+* **frameworks:** upgrade projects to .NET 10/11 ([52cece4](https://www.github.com/JaCraig/Archivist/commit/52cece49cd1a12d502c249d2a9eb00896048d9eb))
+
 <a name="0.12.20"></a>
 ## [0.12.20](https://www.github.com/JaCraig/Archivist/releases/tag/v0.12.20) (2026-11-08)
 
